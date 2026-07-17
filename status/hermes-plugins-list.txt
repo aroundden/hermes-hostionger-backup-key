@@ -451,21 +451,20 @@ exit_code=0
 │                      │             │         │                     │         │
 │ google_chat-platform │ not enabled │ 1.0.0   │ Google Chat gateway │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
-│                      │             │         │ Agent. Connects via │         │
-│                      │             │         │ Cloud Pub/Sub pull  │         │
+│                      │             │         │ Agent. Connects     │         │
+│                      │             │         │ through             │         │
+│                      │             │         │ authenticated HTTP  │         │
+│                      │             │         │ callbacks or an     │         │
+│                      │             │         │ optional Cloud      │         │
+│                      │             │         │ Pub/Sub pull        │         │
 │                      │             │         │ subscription for    │         │
-│                      │             │         │ inbound events and  │         │
-│                      │             │         │ the Google Chat     │         │
-│                      │             │         │ REST API for        │         │
-│                      │             │         │ outbound messages — │         │
-│                      │             │         │ same ergonomics as  │         │
-│                      │             │         │ Slack Socket Mode   │         │
-│                      │             │         │ or Telegram         │         │
-│                      │             │         │ long-polling, no    │         │
-│                      │             │         │ public URL          │         │
-│                      │             │         │ required. Native    │         │
-│                      │             │         │ file attachments    │         │
-│                      │             │         │ are delivered via   │         │
+│                      │             │         │ inbound events, and │         │
+│                      │             │         │ uses the Google     │         │
+│                      │             │         │ Chat REST API for   │         │
+│                      │             │         │ outbound messages.  │         │
+│                      │             │         │ Native file         │         │
+│                      │             │         │ attachments are     │         │
+│                      │             │         │ delivered via       │         │
 │                      │             │         │ per-user OAuth      │         │
 │                      │             │         │ (each user runs     │         │
 │                      │             │         │ /setup-files once   │         │

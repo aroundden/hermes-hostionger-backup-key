@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 985,
+  "count": 990,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784312635
+      "mtime": 1784316276
+    },
+    {
+      "path": "cron/executions.db",
+      "size": 20480,
+      "mtime": 1784316282
     },
     {
       "path": "cron/jobs.json",
-      "size": 3990,
-      "mtime": 1784312635
+      "size": 4046,
+      "mtime": 1784316276
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
       "size": 169,
       "mtime": 1784297564
+    },
+    {
+      "path": "cron/output/9275498a9e95/2026-07-18_03-24-06.md",
+      "size": 217,
+      "mtime": 1784312646
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-17_22-33-32.md",
@@ -140,12 +150,27 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1784312635
+      "mtime": 1784316276
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1784312635
+      "size": 17,
+      "mtime": 1784316276
+    },
+    {
+      "path": "plugins/hermes-achievements/scan_checkpoint.json",
+      "size": 41706,
+      "mtime": 1784313559
+    },
+    {
+      "path": "plugins/hermes-achievements/scan_snapshot.json",
+      "size": 99946,
+      "mtime": 1784313559
+    },
+    {
+      "path": "plugins/hermes-achievements/state.json",
+      "size": 968,
+      "mtime": 1784313559
     },
     {
       "path": "profiles/akii/SOUL.md",
@@ -2540,12 +2565,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784312635
+      "mtime": 1784316275
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784312635
+      "mtime": 1784316275
     },
     {
       "path": "skills/.bundled_manifest",
