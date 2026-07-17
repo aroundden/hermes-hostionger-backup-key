@@ -1,8 +1,8 @@
 # Hermes 상태 백업 — default profile
 
-- 마지막 생성 시각(UTC): `2026-07-17T17:22:26Z`
 - 원본 Hermes Home: `/Users/insideden/.hermes`
 - 대상 저장소: `aroundden/hermes-hostionger-backup-key`
+- 갱신 방식: 의미있는 설정/상태 파일 변경이 있을 때만 새 커밋 생성
 
 ## 포함한 것
 - `config/config.sanitized.yaml`: Hermes 설정 파일에서 토큰/키/비밀번호성 값을 제거한 사본
