@@ -1,7 +1,8 @@
 $ hermes plugins list
 exit_code=0
 
-Plugins                                     
+
+                                    Plugins                                     
 ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Name                 ┃ Status      ┃ Version ┃ Description         ┃ Source  ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
@@ -247,11 +248,371 @@ Plugins
 │                      │             │         │ (FLUX, Qwen-Image,  │         │
 │                      │             │         │ …) via              │         │
 │                      │             │         │ OpenAI-compatible   │         │
-│                      │             │     
-
-... [OUTPUT TRUNCATED - 29,488 chars omitted out of 79,415 total] ...
-
-│ Hermes Agent.       │         │
+│                      │             │         │ /v1/images/generat… │         │
+│                      │             │         │ Catalog discovered  │         │
+│                      │             │         │ live from           │         │
+│                      │             │         │ api.deepinfra.com.  │         │
+│ fal                  │ not enabled │ 1.0.0   │ FAL.ai image        │ bundled │
+│                      │             │         │ generation backend  │         │
+│                      │             │         │ (flux-2-klein,      │         │
+│                      │             │         │ flux-2-pro,         │         │
+│                      │             │         │ nano-banana,        │         │
+│                      │             │         │ gpt-image-1.5,      │         │
+│                      │             │         │ recraft-v3, etc.).  │         │
+│ krea                 │ not enabled │ 1.1.0   │ Krea image          │ bundled │
+│                      │             │         │ generation backend  │         │
+│                      │             │         │ (Krea 2 Large +     │         │
+│                      │             │         │ Medium + Medium     │         │
+│                      │             │         │ Turbo foundation    │         │
+│                      │             │         │ models). Direct     │         │
+│                      │             │         │ KREA_API_KEY or     │         │
+│                      │             │         │ managed Nous        │         │
+│                      │             │         │ Subscription        │         │
+│                      │             │         │ gateway.            │         │
+│ openai               │ not enabled │ 1.0.0   │ OpenAI image        │ bundled │
+│                      │             │         │ generation backend  │         │
+│                      │             │         │ (gpt-image-2).      │         │
+│                      │             │         │ Saves generated     │         │
+│                      │             │         │ images to           │         │
+│                      │             │         │ $HERMES_HOME/cache… │         │
+│ openai-codex         │ not enabled │ 1.0.0   │ OpenAI image        │ bundled │
+│                      │             │         │ generation backed   │         │
+│                      │             │         │ by ChatGPT/Codex    │         │
+│                      │             │         │ OAuth (gpt-image-2  │         │
+│                      │             │         │ via the Responses   │         │
+│                      │             │         │ image_generation    │         │
+│                      │             │         │ tool). Saves        │         │
+│                      │             │         │ generated images to │         │
+│                      │             │         │ $HERMES_HOME/cache… │         │
+│ openrouter           │ not enabled │ 1.0.0   │ OpenRouter + Nous   │ bundled │
+│                      │             │         │ Portal image        │         │
+│                      │             │         │ generation          │         │
+│                      │             │         │ (chat-completions   │         │
+│                      │             │         │ image output;       │         │
+│                      │             │         │ reference-grounded… │         │
+│                      │             │         │ Text-to-image and   │         │
+│                      │             │         │ image-to-image.     │         │
+│ xai                  │ not enabled │ 1.0.0   │ xAI image           │ bundled │
+│                      │             │         │ generation backend  │         │
+│                      │             │         │ (grok-imagine-imag… │         │
+│                      │             │         │ Text-to-image.      │         │
+│ alibaba-provider     │ not enabled │ 1.0.0   │ Alibaba DashScope   │ bundled │
+│                      │             │         │ (international)     │         │
+│ alibaba-coding-plan… │ not enabled │ 1.0.0   │ Alibaba Cloud       │ bundled │
+│                      │             │         │ Coding Plan         │         │
+│ anthropic-provider   │ not enabled │ 1.0.0   │ Anthropic (Claude)  │ bundled │
+│ arcee-provider       │ not enabled │ 1.0.0   │ Arcee AI            │ bundled │
+│ azure-foundry-provi… │ not enabled │ 1.0.0   │ Microsoft Foundry   │ bundled │
+│ bedrock-provider     │ not enabled │ 1.0.0   │ AWS Bedrock         │ bundled │
+│ copilot-provider     │ not enabled │ 1.0.0   │ GitHub Copilot      │ bundled │
+│ copilot-acp-provider │ not enabled │ 1.0.0   │ GitHub Copilot via  │ bundled │
+│                      │             │         │ ACP subprocess      │         │
+│ custom-provider      │ not enabled │ 1.0.0   │ Custom / Ollama /   │ bundled │
+│                      │             │         │ local               │         │
+│                      │             │         │ OpenAI-compatible   │         │
+│                      │             │         │ endpoint            │         │
+│ deepinfra-provider   │ not enabled │ 1.0.0   │ DeepInfra — 100+    │ bundled │
+│                      │             │         │ open models,        │         │
+│                      │             │         │ pay-per-use         │         │
+│ deepseek-provider    │ not enabled │ 1.0.0   │ DeepSeek            │ bundled │
+│ fireworks-provider   │ not enabled │ 1.0.0   │ Fireworks AI — fast │ bundled │
+│                      │             │         │ inference for open  │         │
+│                      │             │         │ and proprietary     │         │
+│                      │             │         │ models              │         │
+│ gemini-provider      │ not enabled │ 1.0.0   │ Google Gemini (API  │ bundled │
+│                      │             │         │ key + Cloud Code    │         │
+│                      │             │         │ OAuth)              │         │
+│ gmi-provider         │ not enabled │ 1.0.0   │ GMI Cloud           │ bundled │
+│ huggingface-provider │ not enabled │ 1.0.0   │ HuggingFace         │ bundled │
+│                      │             │         │ Inference Providers │         │
+│ kilocode-provider    │ not enabled │ 1.0.0   │ Kilo Code           │ bundled │
+│ kimi-coding-provider │ not enabled │ 1.0.0   │ Moonshot Kimi       │ bundled │
+│                      │             │         │ Coding (global +    │         │
+│                      │             │         │ China)              │         │
+│ minimax-provider     │ not enabled │ 1.0.0   │ MiniMax M-series    │ bundled │
+│                      │             │         │ (global + China +   │         │
+│                      │             │         │ OAuth)              │         │
+│ nous-provider        │ not enabled │ 1.0.0   │ Nous Research       │ bundled │
+│                      │             │         │ Portal              │         │
+│ novita-provider      │ not enabled │ 1.0.0   │ NovitaAI AI-native  │ bundled │
+│                      │             │         │ cloud for builders  │         │
+│                      │             │         │ and agents          │         │
+│ nvidia-provider      │ not enabled │ 1.0.0   │ NVIDIA NIM          │ bundled │
+│ ollama-cloud-provid… │ not enabled │ 1.0.0   │ Ollama Cloud        │ bundled │
+│ openai-codex-provid… │ not enabled │ 1.0.0   │ OpenAI Codex        │ bundled │
+│                      │             │         │ (Responses API)     │         │
+│ opencode-zen-provid… │ not enabled │ 1.0.0   │ OpenCode (Zen + Go) │ bundled │
+│ openrouter-provider  │ not enabled │ 1.0.0   │ OpenRouter          │ bundled │
+│                      │             │         │ aggregator          │         │
+│ qwen-oauth-provider  │ not enabled │ 1.0.0   │ Qwen Portal (OAuth) │ bundled │
+│ stepfun-provider     │ not enabled │ 1.0.0   │ StepFun Step Plan   │ bundled │
+│ upstage-provider     │ not enabled │ 1.0.0   │ Upstage (Solar API) │ bundled │
+│ vertex-provider      │ not enabled │ 1.0.0   │ Google Vertex AI    │ bundled │
+│                      │             │         │ (Gemini via         │         │
+│                      │             │         │ OpenAI-compatible   │         │
+│                      │             │         │ endpoint, OAuth2)   │         │
+│ xai-provider         │ not enabled │ 1.0.0   │ xAI Grok (Responses │ bundled │
+│                      │             │         │ API)                │         │
+│ xiaomi-provider      │ not enabled │ 1.0.0   │ Xiaomi MiMo         │ bundled │
+│ zai-provider         │ not enabled │ 1.0.0   │ Z.AI / GLM          │ bundled │
+│ langfuse             │ not enabled │ 1.0.0   │ Optional Langfuse   │ bundled │
+│                      │             │         │ observability for   │         │
+│                      │             │         │ Hermes — traces     │         │
+│                      │             │         │ conversations, LLM  │         │
+│                      │             │         │ calls, and tool     │         │
+│                      │             │         │ usage. Opt-in via   │         │
+│                      │             │         │ `hermes plugins     │         │
+│                      │             │         │ enable              │         │
+│                      │             │         │ observability/lang… │         │
+│                      │             │         │ or `hermes tools →  │         │
+│                      │             │         │ Langfuse            │         │
+│                      │             │         │ Observability`.     │         │
+│ nemo_relay           │ not enabled │ 0.1.0   │ Optional NeMo Relay │ bundled │
+│                      │             │         │ observability for   │         │
+│                      │             │         │ Hermes. Opt in with │         │
+│                      │             │         │ `hermes plugins     │         │
+│                      │             │         │ enable              │         │
+│                      │             │         │ observability/nemo… │         │
+│                      │             │         │ HERMES_NEMO_RELAY_* │         │
+│                      │             │         │ env vars configure  │         │
+│                      │             │         │ exports after the   │         │
+│                      │             │         │ plugin is enabled.  │         │
+│ dingtalk-platform    │ not enabled │ 1.0.0   │ DingTalk gateway    │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects to  │         │
+│                      │             │         │ DingTalk via the    │         │
+│                      │             │         │ dingtalk-stream SDK │         │
+│                      │             │         │ (Stream Mode) and   │         │
+│                      │             │         │ relays messages     │         │
+│                      │             │         │ between DingTalk    │         │
+│                      │             │         │ chats and the       │         │
+│                      │             │         │ Hermes agent.       │         │
+│                      │             │         │ Supports text,      │         │
+│                      │             │         │ images, audio,      │         │
+│                      │             │         │ video, rich text,   │         │
+│                      │             │         │ files, group        │         │
+│                      │             │         │ @mention gating,    │         │
+│                      │             │         │ free-response       │         │
+│                      │             │         │ chats, and per-user │         │
+│                      │             │         │ allowlists.         │         │
+│                      │             │         │                     │         │
+│ discord-platform     │ not enabled │ 1.0.0   │ Discord gateway     │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects to  │         │
+│                      │             │         │ Discord via the     │         │
+│                      │             │         │ discord.py library  │         │
+│                      │             │         │ and relays messages │         │
+│                      │             │         │ between Discord     │         │
+│                      │             │         │ guilds/DMs and the  │         │
+│                      │             │         │ Hermes agent.       │         │
+│                      │             │         │ Supports voice      │         │
+│                      │             │         │ mode, slash         │         │
+│                      │             │         │ commands,           │         │
+│                      │             │         │ free-response       │         │
+│                      │             │         │ channels,           │         │
+│                      │             │         │ role-based DM auth, │         │
+│                      │             │         │ threads, reactions, │         │
+│                      │             │         │ and channel skill   │         │
+│                      │             │         │ bindings.           │         │
+│                      │             │         │                     │         │
+│ email-platform       │ not enabled │ 1.0.0   │ Email gateway       │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Polls an     │         │
+│                      │             │         │ IMAP mailbox for    │         │
+│                      │             │         │ inbound messages    │         │
+│                      │             │         │ and replies over    │         │
+│                      │             │         │ SMTP, relaying      │         │
+│                      │             │         │ email threads to    │         │
+│                      │             │         │ and from the Hermes │         │
+│                      │             │         │ agent.              │         │
+│                      │             │         │                     │         │
+│ feishu-platform      │ not enabled │ 1.0.0   │ Feishu / Lark       │ bundled │
+│                      │             │         │ gateway adapter for │         │
+│                      │             │         │ Hermes Agent.       │         │
+│                      │             │         │ Connects to Feishu  │         │
+│                      │             │         │ (China) or Lark     │         │
+│                      │             │         │ (International) via │         │
+│                      │             │         │ the official        │         │
+│                      │             │         │ lark-oapi SDK over  │         │
+│                      │             │         │ WebSocket or        │         │
+│                      │             │         │ webhook and relays  │         │
+│                      │             │         │ messages between    │         │
+│                      │             │         │ Feishu/Lark chats   │         │
+│                      │             │         │ and the Hermes      │         │
+│                      │             │         │ agent. Supports     │         │
+│                      │             │         │ text, images,       │         │
+│                      │             │         │ video, voice,       │         │
+│                      │             │         │ documents, threads, │         │
+│                      │             │         │ DM pairing, group   │         │
+│                      │             │         │ @mention gating,    │         │
+│                      │             │         │ drive comment       │         │
+│                      │             │         │ events, and meeting │         │
+│                      │             │         │ invites.            │         │
+│                      │             │         │                     │         │
+│ google_chat-platform │ not enabled │ 1.0.0   │ Google Chat gateway │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects via │         │
+│                      │             │         │ Cloud Pub/Sub pull  │         │
+│                      │             │         │ subscription for    │         │
+│                      │             │         │ inbound events and  │         │
+│                      │             │         │ the Google Chat     │         │
+│                      │             │         │ REST API for        │         │
+│                      │             │         │ outbound messages — │         │
+│                      │             │         │ same ergonomics as  │         │
+│                      │             │         │ Slack Socket Mode   │         │
+│                      │             │         │ or Telegram         │         │
+│                      │             │         │ long-polling, no    │         │
+│                      │             │         │ public URL          │         │
+│                      │             │         │ required. Native    │         │
+│                      │             │         │ file attachments    │         │
+│                      │             │         │ are delivered via   │         │
+│                      │             │         │ per-user OAuth      │         │
+│                      │             │         │ (each user runs     │         │
+│                      │             │         │ /setup-files once   │         │
+│                      │             │         │ in their own DM).   │         │
+│                      │             │         │                     │         │
+│ homeassistant-platf… │ not enabled │ 1.0.0   │ Home Assistant      │ bundled │
+│                      │             │         │ gateway adapter for │         │
+│                      │             │         │ Hermes Agent.       │         │
+│                      │             │         │ Subscribes to HA's  │         │
+│                      │             │         │ WebSocket event bus │         │
+│                      │             │         │ and forwards        │         │
+│                      │             │         │ state-change events │         │
+│                      │             │         │ (with per-entity    │         │
+│                      │             │         │ cooldowns and       │         │
+│                      │             │         │ domain/entity       │         │
+│                      │             │         │ filtering) to the   │         │
+│                      │             │         │ agent. Outbound     │         │
+│                      │             │         │ messages are        │         │
+│                      │             │         │ delivered as HA     │         │
+│                      │             │         │ persistent          │         │
+│                      │             │         │ notifications via   │         │
+│                      │             │         │ the REST API.       │         │
+│                      │             │         │ Out-of-process cron │         │
+│                      │             │         │ delivery via the    │         │
+│                      │             │         │ ``notify.notify``   │         │
+│                      │             │         │ service is also     │         │
+│                      │             │         │ supported.          │         │
+│                      │             │         │                     │         │
+│ irc-platform         │ not enabled │ 1.0.0   │ IRC gateway adapter │ bundled │
+│                      │             │         │ for Hermes Agent.   │         │
+│                      │             │         │ Connects to an IRC  │         │
+│                      │             │         │ server and relays   │         │
+│                      │             │         │ messages between an │         │
+│                      │             │         │ IRC channel (or     │         │
+│                      │             │         │ DMs) and the Hermes │         │
+│                      │             │         │ agent.  No external │         │
+│                      │             │         │ dependencies — uses │         │
+│                      │             │         │ Python's stdlib     │         │
+│                      │             │         │ asyncio for the IRC │         │
+│                      │             │         │ protocol.           │         │
+│                      │             │         │                     │         │
+│ line-platform        │ not enabled │ 1.0.0   │ LINE Messaging API  │ bundled │
+│                      │             │         │ gateway adapter for │         │
+│                      │             │         │ Hermes Agent. Runs  │         │
+│                      │             │         │ an aiohttp webhook  │         │
+│                      │             │         │ server that         │         │
+│                      │             │         │ receives LINE       │         │
+│                      │             │         │ webhook events      │         │
+│                      │             │         │ (with HMAC-SHA256   │         │
+│                      │             │         │ signature           │         │
+│                      │             │         │ verification) and   │         │
+│                      │             │         │ relays messages     │         │
+│                      │             │         │ between LINE chats  │         │
+│                      │             │         │ (1:1, groups,       │         │
+│                      │             │         │ rooms) and the      │         │
+│                      │             │         │ Hermes agent.       │         │
+│                      │             │         │ Outbound replies    │         │
+│                      │             │         │ prefer the free     │         │
+│                      │             │         │ reply token and     │         │
+│                      │             │         │ fall back to the    │         │
+│                      │             │         │ metered Push API    │         │
+│                      │             │         │ when the token has  │         │
+│                      │             │         │ expired or is       │         │
+│                      │             │         │ absent. Slow LLM    │         │
+│                      │             │         │ responses surface a │         │
+│                      │             │         │ Template Buttons    │         │
+│                      │             │         │ postback bubble so  │         │
+│                      │             │         │ the user can fetch  │         │
+│                      │             │         │ the answer with a   │         │
+│                      │             │         │ fresh reply token   │         │
+│                      │             │         │ (free) once it's    │         │
+│                      │             │         │ ready.              │         │
+│                      │             │         │                     │         │
+│ matrix-platform      │ not enabled │ 1.0.0   │ Matrix gateway      │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects to  │         │
+│                      │             │         │ a Matrix homeserver │         │
+│                      │             │         │ via mautrix (with   │         │
+│                      │             │         │ optional E2EE) and  │         │
+│                      │             │         │ relays messages     │         │
+│                      │             │         │ between Matrix      │         │
+│                      │             │         │ rooms/DMs and the   │         │
+│                      │             │         │ Hermes agent.       │         │
+│                      │             │         │ Supports threads,   │         │
+│                      │             │         │ HTML/markdown       │         │
+│                      │             │         │ rendering, native   │         │
+│                      │             │         │ media uploads,      │         │
+│                      │             │         │ mention gating,     │         │
+│                      │             │         │ free-response       │         │
+│                      │             │         │ rooms, and per-room │         │
+│                      │             │         │ allowlists.         │         │
+│                      │             │         │                     │         │
+│ mattermost-platform  │ not enabled │ 1.0.0   │ Mattermost gateway  │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects to  │         │
+│                      │             │         │ a self-hosted or    │         │
+│                      │             │         │ cloud Mattermost    │         │
+│                      │             │         │ instance via the v4 │         │
+│                      │             │         │ REST API +          │         │
+│                      │             │         │ WebSocket event     │         │
+│                      │             │         │ stream and relays   │         │
+│                      │             │         │ messages between    │         │
+│                      │             │         │ Mattermost          │         │
+│                      │             │         │ channels/DMs and    │         │
+│                      │             │         │ the Hermes agent.   │         │
+│                      │             │         │ Supports            │         │
+│                      │             │         │ thread-mode         │         │
+│                      │             │         │ replies, native     │         │
+│                      │             │         │ file uploads,       │         │
+│                      │             │         │ channel-scoped      │         │
+│                      │             │         │ allowlists, and     │         │
+│                      │             │         │ home-channel cron   │         │
+│                      │             │         │ delivery.           │         │
+│                      │             │         │                     │         │
+│ ntfy-platform        │ not enabled │ 1.0.0   │ ntfy                │ bundled │
+│                      │             │         │ push-notification   │         │
+│                      │             │         │ gateway adapter for │         │
+│                      │             │         │ Hermes Agent.       │         │
+│                      │             │         │ Subscribes to a     │         │
+│                      │             │         │ topic on ntfy.sh or │         │
+│                      │             │         │ any self-hosted     │         │
+│                      │             │         │ ntfy server via     │         │
+│                      │             │         │ HTTP streaming, and │         │
+│                      │             │         │ publishes replies   │         │
+│                      │             │         │ via HTTP POST.      │         │
+│                      │             │         │ Lightweight — no    │         │
+│                      │             │         │ external SDK, only  │         │
+│                      │             │         │ httpx (already a    │         │
+│                      │             │         │ Hermes dependency). │         │
+│                      │             │         │ ntfy has no native  │         │
+│                      │             │         │ user-identity       │         │
+│                      │             │         │ primitive; the      │         │
+│                      │             │         │ adapter treats each │         │
+│                      │             │         │ topic as a single   │         │
+│                      │             │         │ trusted channel and │         │
+│                      │             │         │ never derives user  │         │
+│                      │             │         │ identity from       │         │
+│                      │             │         │ publisher-controll… │         │
+│                      │             │         │ fields. Use a       │         │
+│                      │             │         │ private topic +     │         │
+│                      │             │         │ read token for any  │         │
+│                      │             │         │ real trust          │         │
+│                      │             │         │ boundary.           │         │
+│                      │             │         │                     │         │
+│ photon-platform      │ not enabled │ 0.3.0   │ Photon Spectrum     │ bundled │
+│                      │             │         │ gateway adapter for │         │
+│                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Connects to         │         │
 │                      │             │         │ iMessage (and other │         │
 │                      │             │         │ Spectrum            │         │

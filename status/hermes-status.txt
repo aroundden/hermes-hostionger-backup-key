@@ -1,6 +1,7 @@
 $ hermes status --all
 exit_code=0
 
+
 ┌─────────────────────────────────────────────────────────┐
 │                 ⚕ Hermes Agent Status                  │
 └─────────────────────────────────────────────────────────┘
@@ -13,7 +14,7 @@ exit_code=0
   Provider:     OpenAI Codex
 
 ◆ API Keys
-  OpenRouter    ✗ (not set)
+  OpenRouter    ✓ http...keys
   OpenAI        ✗ (not set)
   Google / Gemini  ✗ (not set)
   DeepSeek      ✗ (not set)
@@ -85,8 +86,9 @@ exit_code=0
   Jobs:         0 active, 2 total
 
 ◆ Sessions
-  Active:       7 session(s)
+  Active:       8 session(s)
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
   Run 'hermes setup' to configure
+
