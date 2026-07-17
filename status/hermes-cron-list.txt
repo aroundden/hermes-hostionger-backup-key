@@ -10,9 +10,22 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-18T05:24:36.162985+09:00
+    Next run:  2026-07-18T06:25:06.883669+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-18T03:24:06.949797+09:00  ok
+    Last run:  2026-07-18T04:24:45.637928+09:00  ok
+    ⚠ Delivery failed: delivery error: Slack API error: not_in_channel
+
+  ae7ad604c44e [active]
+    Name:      daily-social-curation-x-linkedin
+    Schedule:  45 11 * * *
+    Repeat:    ∞
+    Next run:  2026-07-18T11:45:00+09:00
+    Deliver:   slack
+    Skills:    hermes-summary
+    Script:    social_curation_collect.sh
+    Workdir:   /Users/insideden/kmsg-youtube-demo/kmsg
+    Last run:  2026-07-18T05:24:56.551500+09:00  ok
+    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
