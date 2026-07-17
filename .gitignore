@@ -1,0 +1,16 @@
+# Never commit local secrets or raw runtime stores
+.env
+*.key
+*.pem
+*token*
+*secret*
+auth.json
+google_token.json
+google_client_secret.json
+state.db
+state.db-*
+sessions/
+logs/
+*.sqlite
+*.db
+.DS_Store
