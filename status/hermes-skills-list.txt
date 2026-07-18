@@ -56,6 +56,8 @@ exit_code=0
 │ github-issues         │ github               │ builtin │ builtin   │ enabled │
 │ github-pr-workflow    │ github               │ builtin │ builtin   │ enabled │
 │ github-repo-manageme… │ github               │ builtin │ builtin   │ enabled │
+│ oauth-api-integratio… │ integrations         │ local   │ local     │ enabled │
+│ third-party-account-… │ integrations         │ local   │ local     │ enabled │
 │ gif-search            │ media                │ builtin │ builtin   │ enabled │
 │ heartmula             │ media                │ builtin │ builtin   │ enabled │
 │ songsee               │ media                │ builtin │ builtin   │ enabled │
@@ -78,6 +80,7 @@ exit_code=0
 │ petdex                │ productivity         │ builtin │ builtin   │ enabled │
 │ powerpoint            │ productivity         │ builtin │ builtin   │ enabled │
 │ teams-meeting-pipeli… │ productivity         │ builtin │ builtin   │ enabled │
+│ ticktick-readonly     │ productivity         │ local   │ local     │ enabled │
 │ arxiv                 │ research             │ builtin │ builtin   │ enabled │
 │ blogwatcher           │ research             │ builtin │ builtin   │ enabled │
 │ llm-wiki              │ research             │ builtin │ builtin   │ enabled │
@@ -98,5 +101,5 @@ exit_code=0
 │ systematic-debugging  │ software-development │ builtin │ builtin   │ enabled │
 │ test-driven-developm… │ software-development │ builtin │ builtin   │ enabled │
 └───────────────────────┴──────────────────────┴─────────┴───────────┴─────────┘
-1 hub-installed, 73 builtin, 18 local — 92 enabled, 0 disabled
+1 hub-installed, 73 builtin, 21 local — 95 enabled, 0 disabled
 
