@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1204,
+  "count": 1208,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784488841
+      "mtime": 1784492472
     },
     {
       "path": "cron/executions.db",
       "size": 81920,
-      "mtime": 1784488850
+      "mtime": 1784491146
+    },
+    {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1784491452
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 173072,
+      "mtime": 1784492463
     },
     {
       "path": "cron/jobs.json",
-      "size": 16864,
-      "mtime": 1784488841
+      "size": 17279,
+      "mtime": 1784492463
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
@@ -293,6 +303,11 @@
       "mtime": 1784485220
     },
     {
+      "path": "cron/output/9275498a9e95/2026-07-20_04-20-52.md",
+      "size": 217,
+      "mtime": 1784488852
+    },
+    {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
       "size": 9558,
       "mtime": 1784319618
@@ -316,66 +331,6 @@
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-30-49.md",
       "size": 14179,
       "mtime": 1784320249
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_23-53-10.md",
-      "size": 159,
-      "mtime": 1784472790
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_23-58-13.md",
-      "size": 159,
-      "mtime": 1784473093
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-04-10.md",
-      "size": 159,
-      "mtime": 1784473450
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-09-16.md",
-      "size": 163,
-      "mtime": 1784473756
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-15-10.md",
-      "size": 159,
-      "mtime": 1784474110
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-20-15.md",
-      "size": 159,
-      "mtime": 1784474415
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-26-10.md",
-      "size": 159,
-      "mtime": 1784474770
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-31-15.md",
-      "size": 159,
-      "mtime": 1784475075
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-37-10.md",
-      "size": 159,
-      "mtime": 1784475430
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-42-14.md",
-      "size": 159,
-      "mtime": 1784475734
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-48-08.md",
-      "size": 159,
-      "mtime": 1784476088
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-53-16.md",
-      "size": 159,
-      "mtime": 1784476396
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-20_00-59-08.md",
@@ -568,14 +523,74 @@
       "mtime": 1784488602
     },
     {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-22-12.md",
+      "size": 159,
+      "mtime": 1784488932
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-27-17.md",
+      "size": 159,
+      "mtime": 1784489237
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-32-43.md",
+      "size": 159,
+      "mtime": 1784489563
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-38-12.md",
+      "size": 159,
+      "mtime": 1784489892
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-43-17.md",
+      "size": 159,
+      "mtime": 1784490197
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-48-37.md",
+      "size": 159,
+      "mtime": 1784490517
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-53-46.md",
+      "size": 159,
+      "mtime": 1784490826
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-59-04.md",
+      "size": 159,
+      "mtime": 1784491144
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_05-04-15.md",
+      "size": 163,
+      "mtime": 1784491455
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_05-09-17.md",
+      "size": 159,
+      "mtime": 1784491757
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_05-14-47.md",
+      "size": 159,
+      "mtime": 1784492087
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_05-20-04.md",
+      "size": 159,
+      "mtime": 1784492404
+    },
+    {
       "path": "cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1784488841
+      "mtime": 1784492472
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 16,
-      "mtime": 1784488841
+      "size": 17,
+      "mtime": 1784492472
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -3035,12 +3050,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784488850
+      "mtime": 1784492464
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784488850
+      "mtime": 1784492464
     },
     {
       "path": "skills/.archive/ticktick-readonly/SKILL.md",
@@ -3050,7 +3065,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3421,
-      "mtime": 1784478728
+      "mtime": 1784490978
     },
     {
       "path": "skills/.curator_state",
@@ -3085,7 +3100,7 @@
     {
       "path": "skills/.usage.json",
       "size": 15068,
-      "mtime": 1784488812
+      "mtime": 1784491965
     },
     {
       "path": "skills/.usage.json.lock",
@@ -3154,8 +3169,8 @@
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-provider-troubleshooting/SKILL.md",
-      "size": 5843,
-      "mtime": 1784308683
+      "size": 8093,
+      "mtime": 1784490858
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-provider-troubleshooting/references/anthropic-oauth-vs-active-provider.md",
@@ -3166,6 +3181,11 @@
       "path": "skills/autonomous-ai-agents/hermes-provider-troubleshooting/references/fallback-provider-config.md",
       "size": 1614,
       "mtime": 1784308693
+    },
+    {
+      "path": "skills/autonomous-ai-agents/hermes-provider-troubleshooting/references/provider-migration-away-from-anthropic.md",
+      "size": 1558,
+      "mtime": 1784490811
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-state-backup/SKILL.md",
@@ -4984,18 +5004,18 @@
     },
     {
       "path": "skills/productivity/client-content-ops-automation/SKILL.md",
-      "size": 5292,
-      "mtime": 1784482596
+      "size": 6338,
+      "mtime": 1784488922
     },
     {
       "path": "skills/productivity/client-content-ops-automation/references/smd-daily-brief.md",
-      "size": 2890,
-      "mtime": 1784477925
+      "size": 5143,
+      "mtime": 1784488905
     },
     {
       "path": "skills/productivity/client-content-ops-automation/references/smd-planning-automation.md",
-      "size": 3808,
-      "mtime": 1784482621
+      "size": 13195,
+      "mtime": 1784489906
     },
     {
       "path": "skills/productivity/content-operations-briefings/SKILL.md",
