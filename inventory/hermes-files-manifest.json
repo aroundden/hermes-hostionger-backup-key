@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1098,
+  "count": 1194,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,17 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784477957
+      "mtime": 1784478923
     },
     {
       "path": "cron/executions.db",
       "size": 69632,
-      "mtime": 1784477734
+      "mtime": 1784478692
     },
     {
       "path": "cron/jobs.json",
-      "size": 11295,
-      "mtime": 1784477949
+      "size": 15445,
+      "mtime": 1784478906
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
@@ -278,6 +278,11 @@
       "mtime": 1784474298
     },
     {
+      "path": "cron/output/9275498a9e95/2026-07-20_01-19-19.md",
+      "size": 217,
+      "mtime": 1784477959
+    },
+    {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
       "size": 9558,
       "mtime": 1784319618
@@ -301,21 +306,6 @@
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-30-49.md",
       "size": 14179,
       "mtime": 1784320249
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-44-44.md",
-      "size": 159,
-      "mtime": 1784461484
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-50-05.md",
-      "size": 159,
-      "mtime": 1784461805
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-55-42.md",
-      "size": 159,
-      "mtime": 1784462142
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-19_21-01-06.md",
@@ -553,14 +543,29 @@
       "mtime": 1784477718
     },
     {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_01-21-10.md",
+      "size": 159,
+      "mtime": 1784478070
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_01-26-21.md",
+      "size": 159,
+      "mtime": 1784478381
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_01-31-24.md",
+      "size": 159,
+      "mtime": 1784478684
+    },
+    {
       "path": "cron/ticker_heartbeat",
-      "size": 16,
-      "mtime": 1784477957
+      "size": 17,
+      "mtime": 1784478924
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1784477957
+      "size": 18,
+      "mtime": 1784478924
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -2995,12 +3000,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784477955
+      "mtime": 1784478931
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784477955
+      "mtime": 1784478931
     },
     {
       "path": "skills/.archive/ticktick-readonly/SKILL.md",
@@ -3010,7 +3015,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3421,
-      "mtime": 1784460692
+      "mtime": 1784478728
     },
     {
       "path": "skills/.curator_state",
@@ -3024,8 +3029,8 @@
     },
     {
       "path": "skills/.hub/index-cache/hermes-index.json",
-      "size": 40882642,
-      "mtime": 1784304326
+      "size": 37374328,
+      "mtime": 1784478642
     },
     {
       "path": "skills/.hub/lock.json",
@@ -3044,8 +3049,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 11911,
-      "mtime": 1784477925
+      "size": 12346,
+      "mtime": 1784478881
     },
     {
       "path": "skills/.usage.json.lock",
@@ -4403,6 +4408,226 @@
       "mtime": 1784137460
     },
     {
+      "path": "skills/gws-admin-reports/SKILL.md",
+      "size": 2356,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-calendar-agenda/SKILL.md",
+      "size": 1583,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-calendar-insert/SKILL.md",
+      "size": 1793,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-calendar/SKILL.md",
+      "size": 4490,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-chat-send/SKILL.md",
+      "size": 1152,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-chat/SKILL.md",
+      "size": 5757,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-classroom/SKILL.md",
+      "size": 6898,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-docs-write/SKILL.md",
+      "size": 1137,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-docs/SKILL.md",
+      "size": 1564,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-drive-upload/SKILL.md",
+      "size": 1305,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-drive/SKILL.md",
+      "size": 13361,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-events-renew/SKILL.md",
+      "size": 1261,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-events-subscribe/SKILL.md",
+      "size": 2077,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-events/SKILL.md",
+      "size": 3519,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-forms/SKILL.md",
+      "size": 1574,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-forward/SKILL.md",
+      "size": 3102,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-read/SKILL.md",
+      "size": 1400,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-reply-all/SKILL.md",
+      "size": 2991,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-reply/SKILL.md",
+      "size": 2666,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-send/SKILL.md",
+      "size": 2626,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-triage/SKILL.md",
+      "size": 1219,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail-watch/SKILL.md",
+      "size": 1944,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-gmail/SKILL.md",
+      "size": 2018,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-keep/SKILL.md",
+      "size": 1771,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-meet/SKILL.md",
+      "size": 1805,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-modelarmor-create-template/SKILL.md",
+      "size": 1693,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-modelarmor-sanitize-prompt/SKILL.md",
+      "size": 1431,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-modelarmor-sanitize-response/SKILL.md",
+      "size": 1436,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-modelarmor/SKILL.md",
+      "size": 1216,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-people/SKILL.md",
+      "size": 6466,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-script-push/SKILL.md",
+      "size": 1282,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-script/SKILL.md",
+      "size": 2034,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-shared/SKILL.md",
+      "size": 2668,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-sheets-append/SKILL.md",
+      "size": 1576,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-sheets-read/SKILL.md",
+      "size": 1128,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-sheets/SKILL.md",
+      "size": 2602,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-slides/SKILL.md",
+      "size": 1635,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-tasks/SKILL.md",
+      "size": 3015,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow-email-to-task/SKILL.md",
+      "size": 1264,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow-file-announce/SKILL.md",
+      "size": 1488,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow-meeting-prep/SKILL.md",
+      "size": 1212,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow-standup-report/SKILL.md",
+      "size": 1115,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow-weekly-digest/SKILL.md",
+      "size": 1132,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/gws-workflow/SKILL.md",
+      "size": 1423,
+      "mtime": 1784478770
+    },
+    {
       "path": "skills/hermes-desktop-plugins/SKILL.md",
       "size": 6888,
       "mtime": 1784137460
@@ -4653,6 +4878,56 @@
       "mtime": 1784477886
     },
     {
+      "path": "skills/persona-content-creator/SKILL.md",
+      "size": 1231,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-customer-support/SKILL.md",
+      "size": 1214,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-event-coordinator/SKILL.md",
+      "size": 1332,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-exec-assistant/SKILL.md",
+      "size": 1409,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-hr-coordinator/SKILL.md",
+      "size": 1238,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-it-admin/SKILL.md",
+      "size": 917,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-project-manager/SKILL.md",
+      "size": 1457,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-researcher/SKILL.md",
+      "size": 1129,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-sales-ops/SKILL.md",
+      "size": 1303,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/persona-team-lead/SKILL.md",
+      "size": 1293,
+      "mtime": 1784478770
+    },
+    {
       "path": "skills/productivity/DESCRIPTION.md",
       "size": 114,
       "mtime": 1784137460
@@ -4674,13 +4949,13 @@
     },
     {
       "path": "skills/productivity/content-operations-briefings/SKILL.md",
-      "size": 4665,
-      "mtime": 1784477422
+      "size": 5509,
+      "mtime": 1784478769
     },
     {
       "path": "skills/productivity/content-operations-briefings/references/espchic-morning-brief.md",
-      "size": 4693,
-      "mtime": 1784477451
+      "size": 6571,
+      "mtime": 1784478758
     },
     {
       "path": "skills/productivity/gmail-workflow-automation/SKILL.md",
@@ -5066,6 +5341,211 @@
       "path": "skills/productivity/workspace-operations-automation/references/google-sheets-briefing-automation.md",
       "size": 3644,
       "mtime": 1784473725
+    },
+    {
+      "path": "skills/recipe-backup-sheet-as-csv/SKILL.md",
+      "size": 845,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-batch-invite-to-event/SKILL.md",
+      "size": 996,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-block-focus-time/SKILL.md",
+      "size": 987,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-bulk-download-folder/SKILL.md",
+      "size": 815,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-collect-form-responses/SKILL.md",
+      "size": 688,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-compare-sheet-tabs/SKILL.md",
+      "size": 728,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-copy-sheet-for-new-month/SKILL.md",
+      "size": 1002,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-classroom-course/SKILL.md",
+      "size": 881,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-doc-from-template/SKILL.md",
+      "size": 1025,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-events-from-sheet/SKILL.md",
+      "size": 892,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-expense-tracker/SKILL.md",
+      "size": 1172,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-feedback-form/SKILL.md",
+      "size": 827,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-gmail-filter/SKILL.md",
+      "size": 1039,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-meet-space/SKILL.md",
+      "size": 754,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-presentation/SKILL.md",
+      "size": 802,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-shared-drive/SKILL.md",
+      "size": 914,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-task-list/SKILL.md",
+      "size": 942,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-create-vacation-responder/SKILL.md",
+      "size": 1070,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-draft-email-from-doc/SKILL.md",
+      "size": 788,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-email-drive-link/SKILL.md",
+      "size": 963,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-find-free-time/SKILL.md",
+      "size": 958,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-find-large-files/SKILL.md",
+      "size": 700,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-forward-labeled-emails/SKILL.md",
+      "size": 904,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-generate-report-from-sheet/SKILL.md",
+      "size": 1148,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-label-and-archive-emails/SKILL.md",
+      "size": 959,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-log-deal-update/SKILL.md",
+      "size": 933,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-organize-drive-folder/SKILL.md",
+      "size": 1074,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-plan-weekly-schedule/SKILL.md",
+      "size": 927,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-post-mortem-setup/SKILL.md",
+      "size": 1026,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-reschedule-meeting/SKILL.md",
+      "size": 969,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-review-meet-participants/SKILL.md",
+      "size": 887,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-review-overdue-tasks/SKILL.md",
+      "size": 692,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-save-email-attachments/SKILL.md",
+      "size": 1047,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-save-email-to-doc/SKILL.md",
+      "size": 1020,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-schedule-recurring-event/SKILL.md",
+      "size": 923,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-send-team-announcement/SKILL.md",
+      "size": 791,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-share-doc-and-notify/SKILL.md",
+      "size": 1117,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-share-event-materials/SKILL.md",
+      "size": 927,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-share-folder-with-team/SKILL.md",
+      "size": 1112,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-sync-contacts-to-sheet/SKILL.md",
+      "size": 995,
+      "mtime": 1784478770
+    },
+    {
+      "path": "skills/recipe-watch-drive-changes/SKILL.md",
+      "size": 922,
+      "mtime": 1784478770
     },
     {
       "path": "skills/research/DESCRIPTION.md",

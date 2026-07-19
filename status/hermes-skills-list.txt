@@ -7,6 +7,50 @@ exit_code=0
 ┡━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━┩
 │ computer-use          │                      │ builtin │ builtin   │ enabled │
 │ dogfood               │                      │ builtin │ builtin   │ enabled │
+│ gws-admin-reports     │                      │ local   │ local     │ enabled │
+│ gws-calendar          │                      │ local   │ local     │ enabled │
+│ gws-calendar-agenda   │                      │ local   │ local     │ enabled │
+│ gws-calendar-insert   │                      │ local   │ local     │ enabled │
+│ gws-chat              │                      │ local   │ local     │ enabled │
+│ gws-chat-send         │                      │ local   │ local     │ enabled │
+│ gws-classroom         │                      │ local   │ local     │ enabled │
+│ gws-docs              │                      │ local   │ local     │ enabled │
+│ gws-docs-write        │                      │ local   │ local     │ enabled │
+│ gws-drive             │                      │ local   │ local     │ enabled │
+│ gws-drive-upload      │                      │ local   │ local     │ enabled │
+│ gws-events            │                      │ local   │ local     │ enabled │
+│ gws-events-renew      │                      │ local   │ local     │ enabled │
+│ gws-events-subscribe  │                      │ local   │ local     │ enabled │
+│ gws-forms             │                      │ local   │ local     │ enabled │
+│ gws-gmail             │                      │ local   │ local     │ enabled │
+│ gws-gmail-forward     │                      │ local   │ local     │ enabled │
+│ gws-gmail-read        │                      │ local   │ local     │ enabled │
+│ gws-gmail-reply       │                      │ local   │ local     │ enabled │
+│ gws-gmail-reply-all   │                      │ local   │ local     │ enabled │
+│ gws-gmail-send        │                      │ local   │ local     │ enabled │
+│ gws-gmail-triage      │                      │ local   │ local     │ enabled │
+│ gws-gmail-watch       │                      │ local   │ local     │ enabled │
+│ gws-keep              │                      │ local   │ local     │ enabled │
+│ gws-meet              │                      │ local   │ local     │ enabled │
+│ gws-modelarmor        │                      │ local   │ local     │ enabled │
+│ gws-modelarmor-creat… │                      │ local   │ local     │ enabled │
+│ gws-modelarmor-sanit… │                      │ local   │ local     │ enabled │
+│ gws-modelarmor-sanit… │                      │ local   │ local     │ enabled │
+│ gws-people            │                      │ local   │ local     │ enabled │
+│ gws-script            │                      │ local   │ local     │ enabled │
+│ gws-script-push       │                      │ local   │ local     │ enabled │
+│ gws-shared            │                      │ local   │ local     │ enabled │
+│ gws-sheets            │                      │ local   │ local     │ enabled │
+│ gws-sheets-append     │                      │ local   │ local     │ enabled │
+│ gws-sheets-read       │                      │ local   │ local     │ enabled │
+│ gws-slides            │                      │ local   │ local     │ enabled │
+│ gws-tasks             │                      │ local   │ local     │ enabled │
+│ gws-workflow          │                      │ local   │ local     │ enabled │
+│ gws-workflow-email-t… │                      │ local   │ local     │ enabled │
+│ gws-workflow-file-an… │                      │ local   │ local     │ enabled │
+│ gws-workflow-meeting… │                      │ local   │ local     │ enabled │
+│ gws-workflow-standup… │                      │ local   │ local     │ enabled │
+│ gws-workflow-weekly-… │                      │ local   │ local     │ enabled │
 │ hermes-desktop-plugi… │                      │ builtin │ builtin   │ enabled │
 │ higgsfield-game-gene… │                      │ local   │ local     │ enabled │
 │ higgsfield-generate   │                      │ local   │ local     │ enabled │
@@ -15,6 +59,57 @@ exit_code=0
 │ higgsfield-soul-id    │                      │ local   │ local     │ enabled │
 │ higgsfield-video-exp… │                      │ local   │ local     │ enabled │
 │ higgsfield-websites   │                      │ local   │ local     │ enabled │
+│ persona-content-crea… │                      │ local   │ local     │ enabled │
+│ persona-customer-sup… │                      │ local   │ local     │ enabled │
+│ persona-event-coordi… │                      │ local   │ local     │ enabled │
+│ persona-exec-assista… │                      │ local   │ local     │ enabled │
+│ persona-hr-coordinat… │                      │ local   │ local     │ enabled │
+│ persona-it-admin      │                      │ local   │ local     │ enabled │
+│ persona-project-mana… │                      │ local   │ local     │ enabled │
+│ persona-researcher    │                      │ local   │ local     │ enabled │
+│ persona-sales-ops     │                      │ local   │ local     │ enabled │
+│ persona-team-lead     │                      │ local   │ local     │ enabled │
+│ recipe-backup-sheet-… │                      │ local   │ local     │ enabled │
+│ recipe-batch-invite-… │                      │ local   │ local     │ enabled │
+│ recipe-block-focus-t… │                      │ local   │ local     │ enabled │
+│ recipe-bulk-download… │                      │ local   │ local     │ enabled │
+│ recipe-collect-form-… │                      │ local   │ local     │ enabled │
+│ recipe-compare-sheet… │                      │ local   │ local     │ enabled │
+│ recipe-copy-sheet-fo… │                      │ local   │ local     │ enabled │
+│ recipe-create-classr… │                      │ local   │ local     │ enabled │
+│ recipe-create-doc-fr… │                      │ local   │ local     │ enabled │
+│ recipe-create-events… │                      │ local   │ local     │ enabled │
+│ recipe-create-expens… │                      │ local   │ local     │ enabled │
+│ recipe-create-feedba… │                      │ local   │ local     │ enabled │
+│ recipe-create-gmail-… │                      │ local   │ local     │ enabled │
+│ recipe-create-meet-s… │                      │ local   │ local     │ enabled │
+│ recipe-create-presen… │                      │ local   │ local     │ enabled │
+│ recipe-create-shared… │                      │ local   │ local     │ enabled │
+│ recipe-create-task-l… │                      │ local   │ local     │ enabled │
+│ recipe-create-vacati… │                      │ local   │ local     │ enabled │
+│ recipe-draft-email-f… │                      │ local   │ local     │ enabled │
+│ recipe-email-drive-l… │                      │ local   │ local     │ enabled │
+│ recipe-find-free-time │                      │ local   │ local     │ enabled │
+│ recipe-find-large-fi… │                      │ local   │ local     │ enabled │
+│ recipe-forward-label… │                      │ local   │ local     │ enabled │
+│ recipe-generate-repo… │                      │ local   │ local     │ enabled │
+│ recipe-label-and-arc… │                      │ local   │ local     │ enabled │
+│ recipe-log-deal-upda… │                      │ local   │ local     │ enabled │
+│ recipe-organize-driv… │                      │ local   │ local     │ enabled │
+│ recipe-plan-weekly-s… │                      │ local   │ local     │ enabled │
+│ recipe-post-mortem-s… │                      │ local   │ local     │ enabled │
+│ recipe-reschedule-me… │                      │ local   │ local     │ enabled │
+│ recipe-review-meet-p… │                      │ local   │ local     │ enabled │
+│ recipe-review-overdu… │                      │ local   │ local     │ enabled │
+│ recipe-save-email-at… │                      │ local   │ local     │ enabled │
+│ recipe-save-email-to… │                      │ local   │ local     │ enabled │
+│ recipe-schedule-recu… │                      │ local   │ local     │ enabled │
+│ recipe-send-team-ann… │                      │ local   │ local     │ enabled │
+│ recipe-share-doc-and… │                      │ local   │ local     │ enabled │
+│ recipe-share-event-m… │                      │ local   │ local     │ enabled │
+│ recipe-share-folder-… │                      │ local   │ local     │ enabled │
+│ recipe-sync-contacts… │                      │ local   │ local     │ enabled │
+│ recipe-watch-drive-c… │                      │ local   │ local     │ enabled │
 │ seedance-prompt-en    │                      │ url     │ community │ enabled │
 │ yuanbao               │                      │ builtin │ builtin   │ enabled │
 │ apple-notes           │ apple                │ builtin │ builtin   │ enabled │
@@ -106,5 +201,5 @@ exit_code=0
 │ systematic-debugging  │ software-development │ builtin │ builtin   │ enabled │
 │ test-driven-developm… │ software-development │ builtin │ builtin   │ enabled │
 └───────────────────────┴──────────────────────┴─────────┴───────────┴─────────┘
-1 hub-installed, 73 builtin, 26 local — 100 enabled, 0 disabled
+1 hub-installed, 73 builtin, 121 local — 195 enabled, 0 disabled
 
