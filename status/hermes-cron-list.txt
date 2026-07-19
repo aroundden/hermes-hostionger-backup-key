@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-19T14:57:46.334293+09:00
+    Next run:  2026-07-19T15:58:55.771495+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T14:52:46.334293+09:00  ok
-    Execution: completed  17ebc01adba84d24a0bbb65e30be9aa5
+    Last run:  2026-07-19T15:53:55.771495+09:00  ok
+    Execution: completed  1b0f8d47cec14250bd52d21f04853117
 
   1cc4aa15a6f2 [active]
     Name:      gmail-daily-deadline-reminder
@@ -31,13 +31,11 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-19T15:55:53.711223+09:00
+    Next run:  2026-07-19T16:56:54.634034+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T13:55:45.909005+09:00  ok
+    Last run:  2026-07-19T14:56:03.301664+09:00  ok
     Execution: completed  c859e13133bb4bd5bf7bd4b9e4cf5713
-    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
+    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
