@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-19T13:34:53.063879+09:00
+    Next run:  2026-07-19T13:56:53.436402+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T13:29:53.063879+09:00  ok
-    Execution: completed  263cb3e2016e4ef2bb7b1bf3b32a6e06
+    Last run:  2026-07-19T13:51:53.436402+09:00  ok
+    Execution: completed  c737e87d07fc4adf8d54936a4b42b619
 
   1cc4aa15a6f2 [active]
     Name:      gmail-daily-deadline-reminder
@@ -31,11 +31,11 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-19T13:55:28.736983+09:00
+    Next run:  2026-07-19T14:55:35.487403+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-07-19T12:55:28.736983+09:00  ok
-    Execution: completed  c27097b2b4ba4cc398efdfb31d60952e
+    Execution: running  c859e13133bb4bd5bf7bd4b9e4cf5713
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
