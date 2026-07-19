@@ -10,11 +10,11 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-19T19:16:23.985497+09:00
+    Next run:  2026-07-19T19:22:06.884883+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T19:11:23.985497+09:00  ok
+    Last run:  2026-07-19T19:17:06.884883+09:00  ok
     Execution: completed  dc2662876b4c4d918b0cda5b85c805b0
 
   1cc4aa15a6f2 [active]
@@ -31,13 +31,11 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-19T20:15:01.899562+09:00
+    Next run:  2026-07-19T20:15:12.513519+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T18:14:35.147134+09:00  ok
+    Last run:  2026-07-19T19:15:12.513519+09:00  ok
     Execution: completed  933e2991d2e04b09bb63e8248eb2306a
-    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
+    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
