@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1084,
+  "count": 1086,
   "files": [
     {
       "path": "SOUL.md",
@@ -9,8 +9,8 @@
     },
     {
       "path": "config.yaml",
-      "size": 7070,
-      "mtime": 1784319483
+      "size": 5169,
+      "mtime": 1784460689
     },
     {
       "path": "cron/.jobs.lock",
@@ -20,27 +20,17 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784459734
+      "mtime": 1784463365
     },
     {
       "path": "cron/executions.db",
-      "size": 53248,
-      "mtime": 1784459502
-    },
-    {
-      "path": "cron/executions.db-shm",
-      "size": 32768,
-      "mtime": 1784459734
-    },
-    {
-      "path": "cron/executions.db-wal",
-      "size": 28872,
-      "mtime": 1784459734
+      "size": 57344,
+      "mtime": 1784462850
     },
     {
       "path": "cron/jobs.json",
-      "size": 11295,
-      "mtime": 1784459734
+      "size": 11710,
+      "mtime": 1784463365
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
@@ -263,6 +253,11 @@
       "mtime": 1784456112
     },
     {
+      "path": "cron/output/9275498a9e95/2026-07-19_20-15-55.md",
+      "size": 217,
+      "mtime": 1784459755
+    },
+    {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
       "size": 9558,
       "mtime": 1784319618
@@ -286,61 +281,6 @@
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-30-49.md",
       "size": 14179,
       "mtime": 1784320249
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_15-41-55.md",
-      "size": 159,
-      "mtime": 1784443315
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_15-47-56.md",
-      "size": 159,
-      "mtime": 1784443676
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_15-53-55.md",
-      "size": 159,
-      "mtime": 1784444035
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_15-58-57.md",
-      "size": 159,
-      "mtime": 1784444337
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-04-55.md",
-      "size": 159,
-      "mtime": 1784444695
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-09-59.md",
-      "size": 159,
-      "mtime": 1784444999
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-15-56.md",
-      "size": 159,
-      "mtime": 1784445356
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-21-00.md",
-      "size": 159,
-      "mtime": 1784445660
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-26-56.md",
-      "size": 159,
-      "mtime": 1784446016
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-32-03.md",
-      "size": 159,
-      "mtime": 1784446323
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-37-57.md",
-      "size": 159,
-      "mtime": 1784446677
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-19_16-43-04.md",
@@ -538,14 +478,69 @@
       "mtime": 1784459495
     },
     {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-17-04.md",
+      "size": 159,
+      "mtime": 1784459824
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-22-39.md",
+      "size": 159,
+      "mtime": 1784460159
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-28-04.md",
+      "size": 159,
+      "mtime": 1784460484
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-33-39.md",
+      "size": 159,
+      "mtime": 1784460819
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-39-05.md",
+      "size": 159,
+      "mtime": 1784461145
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-44-44.md",
+      "size": 159,
+      "mtime": 1784461484
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-50-05.md",
+      "size": 159,
+      "mtime": 1784461805
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_20-55-42.md",
+      "size": 159,
+      "mtime": 1784462142
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_21-01-06.md",
+      "size": 159,
+      "mtime": 1784462466
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_21-06-45.md",
+      "size": 159,
+      "mtime": 1784462805
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-19_21-12-06.md",
+      "size": 159,
+      "mtime": 1784463126
+    },
+    {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1784459734
+      "mtime": 1784463365
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1784459734
+      "size": 17,
+      "mtime": 1784463365
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -2980,12 +2975,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784459752
+      "mtime": 1784462832
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784459752
+      "mtime": 1784462832
     },
     {
       "path": "skills/.archive/ticktick-readonly/SKILL.md",
@@ -2995,7 +2990,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3421,
-      "mtime": 1784387288
+      "mtime": 1784460692
     },
     {
       "path": "skills/.curator_state",
@@ -3029,8 +3024,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 9903,
-      "mtime": 1784459699
+      "size": 10656,
+      "mtime": 1784461630
     },
     {
       "path": "skills/.usage.json.lock",
@@ -4398,6 +4393,16 @@
       "mtime": 1784137460
     },
     {
+      "path": "skills/integrations/native-chat-operations/SKILL.md",
+      "size": 4937,
+      "mtime": 1784461616
+    },
+    {
+      "path": "skills/integrations/native-chat-operations/references/macos-kakaotalk-accessibility.md",
+      "size": 2771,
+      "mtime": 1784461630
+    },
+    {
       "path": "skills/integrations/oauth-api-integrations/SKILL.md",
       "size": 8261,
       "mtime": 1784385864
@@ -4621,6 +4626,11 @@
       "path": "skills/note-taking/obsidian/SKILL.md",
       "size": 2935,
       "mtime": 1784137460
+    },
+    {
+      "path": "skills/note-taking/second-brain-operations/SKILL.md",
+      "size": 5880,
+      "mtime": 1784460682
     },
     {
       "path": "skills/productivity/DESCRIPTION.md",

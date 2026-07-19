@@ -56,6 +56,7 @@ exit_code=0
 │ github-issues         │ github               │ builtin │ builtin   │ enabled │
 │ github-pr-workflow    │ github               │ builtin │ builtin   │ enabled │
 │ github-repo-manageme… │ github               │ builtin │ builtin   │ enabled │
+│ native-chat-operatio… │ integrations         │ local   │ local     │ enabled │
 │ oauth-api-integratio… │ integrations         │ local   │ local     │ enabled │
 │ third-party-account-… │ integrations         │ local   │ local     │ enabled │
 │ gif-search            │ media                │ builtin │ builtin   │ enabled │
@@ -70,6 +71,7 @@ exit_code=0
 │ serving-llms-vllm     │ mlops                │ builtin │ builtin   │ enabled │
 │ weights-and-biases    │ mlops                │ builtin │ builtin   │ enabled │
 │ obsidian              │ note-taking          │ builtin │ builtin   │ enabled │
+│ second-brain-operati… │ note-taking          │ local   │ local     │ enabled │
 │ airtable              │ productivity         │ builtin │ builtin   │ enabled │
 │ gmail-workflow-autom… │ productivity         │ local   │ local     │ enabled │
 │ google-workspace      │ productivity         │ builtin │ builtin   │ enabled │
@@ -101,5 +103,5 @@ exit_code=0
 │ systematic-debugging  │ software-development │ builtin │ builtin   │ enabled │
 │ test-driven-developm… │ software-development │ builtin │ builtin   │ enabled │
 └───────────────────────┴──────────────────────┴─────────┴───────────┴─────────┘
-1 hub-installed, 73 builtin, 21 local — 95 enabled, 0 disabled
+1 hub-installed, 73 builtin, 23 local — 97 enabled, 0 disabled
 
