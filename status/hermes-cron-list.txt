@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-20T09:27:10.431064+09:00
+    Next run:  2026-07-20T10:24:24.907257+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T09:22:10.431064+09:00  ok
-    Execution: completed  d92962bb2d304313ab50a3eacca8039f
+    Last run:  2026-07-20T10:19:24.907257+09:00  ok
+    Execution: completed  8f82462fc8dc47faa496c5e31eb1be52
 
   1cc4aa15a6f2 [active]
     Name:      gmail-daily-deadline-reminder
@@ -60,30 +60,32 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T10:23:08.937318+09:00
+    Next run:  2026-07-20T11:23:19.578263+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T08:22:27.383827+09:00  ok
-    Execution: running  b0e647d4cad445d2a4d8c460ecde02f2
-    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-20T09:23:19.383341+09:00  ok
+    Execution: running  badae157503f47438665007c009a4dcb
+    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-20T09:30:00+09:00
+    Next run:  2026-07-21T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    google-workspace
+    Last run:  2026-07-20T09:32:04.430757+09:00  ok
+    Execution: completed  2e2dceb0b805426795e64a9f51c6d6c2
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-20T09:31:00+09:00
+    Next run:  2026-07-21T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Script:    spc_social_watch_notify.py
     Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-07-20T09:31:33.471289+09:00  ok
+    Execution: completed  04175ae9de594ea9bfc6fa6c95432f78
 
