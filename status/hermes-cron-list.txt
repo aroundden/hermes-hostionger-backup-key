@@ -10,12 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T21:46:34.082807+09:00
+    Next run:  2026-07-20T22:47:21.651881+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T19:46:32.906743+09:00  ok
-    Execution: running  b5f566c2f3d841a18e6303b32e7740bf
+    Last run:  2026-07-20T20:46:43.916870+09:00  ok
+    Execution: running  c200b8fdaeb44a5797c679f789e86f19
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
@@ -53,10 +53,10 @@ exit_code=0
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-20T21:16:13.020771+09:00
+    Next run:  2026-07-20T22:16:22.786841+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T20:46:13.020771+09:00  ok
-    Execution: completed  8b2aeaa304ad4be78ef81b5c4d30aa24
+    Last run:  2026-07-20T21:46:22.786841+09:00  ok
+    Execution: completed  c6c2113132c649bfa2adffedd0787993
 
