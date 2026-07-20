@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T00:50:46.049812+09:00
+    Next run:  2026-07-21T01:53:42.998361+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T00:45:46.049812+09:00  ok
-    Execution: completed  b393c375e68b46019f591f2e66f935d4
+    Last run:  2026-07-21T01:48:42.998361+09:00  ok
+    Execution: completed  ae415d7652c2419abb21ecc41e2bab55
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T01:48:44.535141+09:00
+    Next run:  2026-07-21T02:49:13.620472+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T23:48:41.167206+09:00  ok
-    Execution: completed  080d541bbfb24eb68244407d0979297c
+    Last run:  2026-07-21T00:48:57.566225+09:00  ok
+    Execution: running  82831ed11736447eb2c393c6dede462a
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
@@ -64,10 +64,10 @@ exit_code=0
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-21T01:17:27.622019+09:00
+    Next run:  2026-07-21T02:17:37.132619+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T00:47:27.622019+09:00  ok
-    Execution: completed  c3caeeefb18f467eafd71d7465cab9c5
+    Last run:  2026-07-21T01:47:37.132619+09:00  ok
+    Execution: completed  4ca8338a2a154625b09a3dddae9c69dc
 
