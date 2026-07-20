@@ -10,62 +10,34 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-20T10:24:24.907257+09:00
+    Next run:  2026-07-20T11:27:12.793844+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T10:19:24.907257+09:00  ok
-    Execution: completed  8f82462fc8dc47faa496c5e31eb1be52
+    Last run:  2026-07-20T11:22:12.793844+09:00  ok
+    Execution: completed  b46dd255f9f7488eba43dd6333b1900f
 
   1cc4aa15a6f2 [active]
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
     Next run:  2026-07-21T09:00:00+09:00
-    Deliver:   local
-    Script:    gmail_deadline_reminder.py
-    Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T09:00:35.336369+09:00  error: Script exited with code 1
-stderr:
-Traceback (most recent call last):
-  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 478, in <module>
-    main()
-  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 474, in main
-    ok = slack_notify(msg)
-         ^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 52, in slack_notify
-    with request.urlopen(req, timeout=10) as resp:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 525, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 634, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 563, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 400: Bad Request
-    Execution: failed  43e6409283d2439a8a6872ca9e2ffa5d
+    Deliver:   slack:C0BHVB49WH5:1784450129.540219
+    Skills:    gmail-workflow-automation, google-workspace
+    Script:    gmail_deadline_reminder_agent_input.sh
+    Last run:  2026-07-20T11:09:39.262318+09:00  ok
+    Execution: completed  0befc1618ae7438a978bfdf2de09efb2
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T11:23:19.578263+09:00
+    Next run:  2026-07-20T12:23:44.686853+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T09:23:19.383341+09:00  ok
-    Execution: running  badae157503f47438665007c009a4dcb
+    Last run:  2026-07-20T10:23:30.558020+09:00  ok
+    Execution: running  0b14d2cd2e1e428484b7a036928c6ae7
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
@@ -74,7 +46,7 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
     Repeat:    ∞
     Next run:  2026-07-21T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
-    Skills:    google-workspace
+    Skills:    content-operations-briefings, google-workspace
     Last run:  2026-07-20T09:32:04.430757+09:00  ok
     Execution: completed  2e2dceb0b805426795e64a9f51c6d6c2
 
@@ -88,4 +60,14 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-07-20T09:31:33.471289+09:00  ok
     Execution: completed  04175ae9de594ea9bfc6fa6c95432f78
+
+  34dcb1207f1f [active]
+    Name:      TickTick 매일 아침 브리핑
+    Schedule:  30 9 * * *
+    Repeat:    ∞
+    Next run:  2026-07-21T09:30:00+09:00
+    Deliver:   origin
+    Skills:    ticktick-operations
+    Last run:  2026-07-20T10:38:05.308439+09:00  ok
+    Execution: completed  f2de8226c8ba4212aea55c9404d1cc5c
 
