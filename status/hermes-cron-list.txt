@@ -10,13 +10,15 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T19:45:52.367940+09:00
+    Next run:  2026-07-20T20:46:23.192242+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T17:45:43.071211+09:00  ok
-    Execution: running  1cfb6014fb2f414e9755f17ee930e83a
-    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-20T18:46:03.789589+09:00  ok
+    Execution: running  f1f6266a00674c8e8c0225335029b21f
+    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -53,10 +55,10 @@ exit_code=0
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-20T19:15:53.463323+09:00
+    Next run:  2026-07-20T20:16:03.091986+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T18:45:53.463323+09:00  ok
-    Execution: completed  199937d720544a55a24685633d1bdf0b
+    Last run:  2026-07-20T19:46:03.091986+09:00  ok
+    Execution: completed  c779a141b15e484ebbaeb4765c1524f0
 
