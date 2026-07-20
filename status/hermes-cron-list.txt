@@ -10,24 +10,26 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T06:57:00.991176+09:00
+    Next run:  2026-07-21T07:57:02.370179+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T06:52:00.991176+09:00  ok
-    Execution: completed  bdc87eb2b7d74bc0b72c129402deb536
+    Last run:  2026-07-21T07:52:02.370179+09:00  ok
+    Execution: completed  38483799a151410ba17cb234aace27a7
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T07:52:31.850974+09:00
+    Next run:  2026-07-21T08:53:00.875332+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T05:52:09.299822+09:00  ok
-    Execution: running  b68239960d8c427cb430a8a172edc38f
-    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-21T06:52:43.510737+09:00  ok
+    Execution: running  10d58d108aa04959a4d4c34660a592e5
+    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -64,10 +66,10 @@ exit_code=0
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-21T07:18:32.376457+09:00
+    Next run:  2026-07-21T08:18:41.806300+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T06:48:32.376457+09:00  ok
-    Execution: completed  96a73ec0398f429a8118d7593744bdf8
+    Last run:  2026-07-21T07:48:41.806300+09:00  ok
+    Execution: completed  db7a01968e6f44ba90f731e59d378226
 
