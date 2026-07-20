@@ -10,13 +10,15 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T15:25:11.666875+09:00
+    Next run:  2026-07-20T16:25:26.479195+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T13:24:38.694003+09:00  ok
-    Execution: running  30227fdcf637412bb4c387dfdfd60ac7
-    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-20T14:25:23.680090+09:00  ok
+    Execution: running  554883b15b854a82b1046bc11f34847c
+    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프

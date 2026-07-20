@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1216,
+  "count": 1219,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784525118
+      "mtime": 1784528730
     },
     {
       "path": "cron/executions.db",
       "size": 139264,
-      "mtime": 1784525115
+      "mtime": 1784525248
+    },
+    {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1784528726
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 41232,
+      "mtime": 1784528726
     },
     {
       "path": "cron/jobs.json",
-      "size": 33929,
-      "mtime": 1784525111
+      "size": 34344,
+      "mtime": 1784528726
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
@@ -66,11 +76,6 @@
       "path": "cron/output/34dcb1207f1f/2026-07-20_10-38-04.md",
       "size": 19967,
       "mtime": 1784511484
-    },
-    {
-      "path": "cron/output/9275498a9e95/2026-07-18_11-56-37.md",
-      "size": 217,
-      "mtime": 1784343397
     },
     {
       "path": "cron/output/9275498a9e95/2026-07-18_12-56-54.md",
@@ -316,6 +321,11 @@
       "path": "cron/output/9275498a9e95/2026-07-20_13-24-38.md",
       "size": 217,
       "mtime": 1784521478
+    },
+    {
+      "path": "cron/output/9275498a9e95/2026-07-20_14-25-22.md",
+      "size": 217,
+      "mtime": 1784525122
     },
     {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
@@ -600,12 +610,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1784525118
+      "mtime": 1784528730
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1784525118
+      "size": 18,
+      "mtime": 1784528730
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -3065,12 +3075,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784524760
+      "mtime": 1784528619
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784524760
+      "mtime": 1784528619
     },
     {
       "path": "skills/.archive/ticktick-readonly/SKILL.md",
@@ -3114,8 +3124,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 15884,
-      "mtime": 1784522693
+      "size": 15887,
+      "mtime": 1784528644
     },
     {
       "path": "skills/.usage.json.lock",
@@ -5434,8 +5444,8 @@
     },
     {
       "path": "skills/productivity/workspace-operations-automation/SKILL.md",
-      "size": 5056,
-      "mtime": 1784517772
+      "size": 5246,
+      "mtime": 1784527964
     },
     {
       "path": "skills/productivity/workspace-operations-automation/references/google-sheets-briefing-automation.md",
@@ -5451,6 +5461,11 @@
       "path": "skills/productivity/workspace-operations-automation/references/regulated-document-issuance.md",
       "size": 4191,
       "mtime": 1784518169
+    },
+    {
+      "path": "skills/productivity/workspace-operations-automation/references/tax-invoice-approval-automation.md",
+      "size": 5909,
+      "mtime": 1784528621
     },
     {
       "path": "skills/recipe-backup-sheet-as-csv/SKILL.md",
