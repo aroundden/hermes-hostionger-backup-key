@@ -10,34 +10,65 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-20T08:23:22.367175+09:00
+    Next run:  2026-07-20T09:27:10.431064+09:00
     Deliver:   local
     Script:    gmail_auto_draft.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T08:18:22.367175+09:00  ok
-    Execution: completed  47b5a1a208c54cabac5f5ab2754c00d7
+    Last run:  2026-07-20T09:22:10.431064+09:00  ok
+    Execution: completed  d92962bb2d304313ab50a3eacca8039f
 
   1cc4aa15a6f2 [active]
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
-    Next run:  2026-07-20T09:00:00+09:00
+    Next run:  2026-07-21T09:00:00+09:00
     Deliver:   local
     Script:    gmail_deadline_reminder.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-19T09:11:07.534750+09:00  ok
+    Last run:  2026-07-20T09:00:35.336369+09:00  error: Script exited with code 1
+stderr:
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 478, in <module>
+    main()
+  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 474, in main
+    ok = slack_notify(msg)
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.hermes/scripts/gmail_deadline_reminder.py", line 52, in slack_notify
+    with request.urlopen(req, timeout=10) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/insideden/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+    Execution: failed  43e6409283d2439a8a6872ca9e2ffa5d
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T09:22:16.517960+09:00
+    Next run:  2026-07-20T10:23:08.937318+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T07:22:15.512653+09:00  ok
-    Execution: running  faacdb86a9264ddd8e0e640af7a441d1
-    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-20T08:22:27.383827+09:00  ok
+    Execution: running  b0e647d4cad445d2a4d8c460ecde02f2
+    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프

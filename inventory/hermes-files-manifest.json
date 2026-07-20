@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1206,
+  "count": 1209,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784503341
+      "mtime": 1784506988
     },
     {
       "path": "cron/executions.db",
-      "size": 98304,
-      "mtime": 1784503343
+      "size": 106496,
+      "mtime": 1784506616
+    },
+    {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1784506928
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 103032,
+      "mtime": 1784506988
     },
     {
       "path": "cron/jobs.json",
-      "size": 16864,
-      "mtime": 1784503336
+      "size": 19128,
+      "mtime": 1784506988
     },
     {
       "path": "cron/output/1cc4aa15a6f2/2026-07-17_23-12-44.md",
@@ -48,9 +58,9 @@
       "mtime": 1784419867
     },
     {
-      "path": "cron/output/9275498a9e95/2026-07-18_05-37-59.md",
-      "size": 217,
-      "mtime": 1784320679
+      "path": "cron/output/1cc4aa15a6f2/2026-07-20_09-00-35.md",
+      "size": 1960,
+      "mtime": 1784505635
     },
     {
       "path": "cron/output/9275498a9e95/2026-07-18_06-38-24.md",
@@ -298,6 +308,11 @@
       "mtime": 1784499734
     },
     {
+      "path": "cron/output/9275498a9e95/2026-07-20_08-22-26.md",
+      "size": 217,
+      "mtime": 1784503346
+    },
+    {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
       "size": 9558,
       "mtime": 1784319618
@@ -321,66 +336,6 @@
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-30-49.md",
       "size": 14179,
       "mtime": 1784320249
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-00-41.md",
-      "size": 159,
-      "mtime": 1784487641
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-06-12.md",
-      "size": 159,
-      "mtime": 1784487972
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-11-16.md",
-      "size": 159,
-      "mtime": 1784488276
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-16-42.md",
-      "size": 159,
-      "mtime": 1784488602
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-22-12.md",
-      "size": 159,
-      "mtime": 1784488932
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-27-17.md",
-      "size": 159,
-      "mtime": 1784489237
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-32-43.md",
-      "size": 159,
-      "mtime": 1784489563
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-38-12.md",
-      "size": 159,
-      "mtime": 1784489892
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-43-17.md",
-      "size": 159,
-      "mtime": 1784490197
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-48-37.md",
-      "size": 159,
-      "mtime": 1784490517
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-53-46.md",
-      "size": 159,
-      "mtime": 1784490826
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-20_04-59-04.md",
-      "size": 159,
-      "mtime": 1784491144
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-20_05-04-15.md",
@@ -573,14 +528,74 @@
       "mtime": 1784503102
     },
     {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-24-08.md",
+      "size": 159,
+      "mtime": 1784503448
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-29-18.md",
+      "size": 159,
+      "mtime": 1784503758
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-34-19.md",
+      "size": 159,
+      "mtime": 1784504059
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-39-22.md",
+      "size": 159,
+      "mtime": 1784504362
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-45-08.md",
+      "size": 159,
+      "mtime": 1784504708
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-50-18.md",
+      "size": 159,
+      "mtime": 1784505018
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_08-55-23.md",
+      "size": 159,
+      "mtime": 1784505323
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_09-01-09.md",
+      "size": 159,
+      "mtime": 1784505669
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_09-06-19.md",
+      "size": 159,
+      "mtime": 1784505979
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_09-11-23.md",
+      "size": 159,
+      "mtime": 1784506283
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_09-16-26.md",
+      "size": 159,
+      "mtime": 1784506586
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-20_09-22-10.md",
+      "size": 159,
+      "mtime": 1784506930
+    },
+    {
       "path": "cron/ticker_heartbeat",
-      "size": 18,
-      "mtime": 1784503341
+      "size": 17,
+      "mtime": 1784506988
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1784503341
+      "size": 17,
+      "mtime": 1784506988
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
