@@ -6,30 +6,17 @@ exit_code=0
 │                         Scheduled Jobs                                  │
 └─────────────────────────────────────────────────────────────────────────┘
 
-  b9f28bf7ac2c [active]
-    Name:      gmail-auto-draft-replies
-    Schedule:  every 5m
-    Repeat:    ∞
-    Next run:  2026-07-20T22:52:12.657127+09:00
-    Deliver:   slack:C0BHVB49WH5:1784450129.540219
-    Skills:    gmail-workflow-automation
-    Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-20T22:47:12.657127+09:00  ok
-    Execution: completed  21e64f2aeb9a434da2faf3f8499c5cd9
-
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T23:48:11.036136+09:00
+    Next run:  2026-07-21T00:48:27.180352+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T21:47:42.512318+09:00  ok
-    Execution: running  614f4ee82b754f3fa155aa6912476333
-    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
-The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
+    Last run:  2026-07-20T22:48:23.793559+09:00  ok
+    Execution: running  080d541bbfb24eb68244407d0979297c
+    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -66,10 +53,10 @@ The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-20T23:16:38.026394+09:00
+    Next run:  2026-07-21T00:17:10.980112+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T22:46:38.026394+09:00  ok
-    Execution: completed  2973d5a3964b4b1bb23fd733c0b19971
+    Last run:  2026-07-20T23:47:10.980112+09:00  ok
+    Execution: completed  2b85849226464ea8ac91bb46ddd5e142
 
