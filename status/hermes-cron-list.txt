@@ -6,38 +6,16 @@ exit_code=0
 │                         Scheduled Jobs                                  │
 └─────────────────────────────────────────────────────────────────────────┘
 
-  b9f28bf7ac2c [active]
-    Name:      gmail-auto-draft-replies
-    Schedule:  every 5m
-    Repeat:    ∞
-    Next run:  2026-07-20T13:26:29.269191+09:00
-    Deliver:   local
-    Script:    gmail_auto_draft.py
-    Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T13:21:29.269191+09:00  ok
-    Execution: completed  db7f85714b5344b2883eba00a0534ab8
-
-  1cc4aa15a6f2 [active]
-    Name:      gmail-daily-deadline-reminder
-    Schedule:  0 9 * * *
-    Repeat:    ∞
-    Next run:  2026-07-21T09:00:00+09:00
-    Deliver:   slack:C0BHVB49WH5:1784450129.540219
-    Skills:    gmail-workflow-automation, google-workspace
-    Script:    gmail_deadline_reminder_agent_input.sh
-    Last run:  2026-07-20T11:09:39.262318+09:00  ok
-    Execution: completed  0befc1618ae7438a978bfdf2de09efb2
-
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-20T14:24:28.116910+09:00
+    Next run:  2026-07-20T15:25:11.666875+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-20T12:24:23.942418+09:00  ok
-    Execution: completed  e8b3b32d27cd4bc19f5c4dca9113ee72
+    Last run:  2026-07-20T13:24:38.694003+09:00  ok
+    Execution: running  30227fdcf637412bb4c387dfdfd60ac7
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
