@@ -21,8 +21,8 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T17:59:12.083144+09:00
-    Deliver:   origin
+    Next run:  2026-07-21T18:44:26.306966+09:00
+    Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-07-21T16:59:12.083144+09:00  error: Script exited with code 4
@@ -32,7 +32,7 @@ repo=/Users/insideden/hermes-hostionger-backup-key
 remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
 remote: Permission to aroundden/hermes-hostionger-backup-key.git denied to aiden-lee-aroundit.
 fatal: unable to access 'https://github.com/aroundden/hermes-hostionger-backup-key.git/': The requested URL returned error: 403
-    Execution: failed  60cf149e42b34f9e84c5d4c8b282dab0
+    Execution: running  e454c4eeef1d43feb716a0c4c2d659de
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
