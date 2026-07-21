@@ -10,18 +10,18 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T13:23:24.758547+09:00
+    Next run:  2026-07-21T14:02:01.797518+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T13:18:24.758547+09:00  ok
-    Execution: completed  23501e085bc94a2786525b19748f1061
+    Last run:  2026-07-21T13:57:01.797518+09:00  ok
+    Execution: completed  40e6df6a86a540e29cf3c42746af3d9a
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T13:56:37.297341+09:00
+    Next run:  2026-07-21T14:56:59.921444+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
@@ -32,7 +32,7 @@ repo=/Users/insideden/hermes-hostionger-backup-key
 remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
 remote: Permission to aroundden/hermes-hostionger-backup-key.git denied to aiden-lee-aroundit.
 fatal: unable to access 'https://github.com/aroundden/hermes-hostionger-backup-key.git/': The requested URL returned error: 403
-    Execution: failed  0985ae816ea1489a9ecff1770fc1825f
+    Execution: running  329fb57c9d7849a9baaea9eef1b59200
     ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
 The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
 The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
@@ -62,10 +62,10 @@ The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-21T13:50:26.801275+09:00
+    Next run:  2026-07-21T14:21:03.477554+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T13:20:26.801275+09:00  ok
-    Execution: completed  5540430e276f4b66a1c2657e7e065983
+    Last run:  2026-07-21T13:51:03.477554+09:00  ok
+    Execution: completed  d97f3ae155ff4909a3dcc15e94c06394
 
