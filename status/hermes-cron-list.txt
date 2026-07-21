@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T17:25:36.612553+09:00
+    Next run:  2026-07-21T17:47:04.369407+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T17:20:36.612553+09:00  ok
-    Execution: completed  b6857d4028ff47e292ca816e98b41b11
+    Last run:  2026-07-21T17:42:04.369407+09:00  ok
+    Execution: completed  ce44f2e39cef4dd385dd5ccf6c4960f6
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
@@ -60,10 +60,10 @@ fatal: unable to access 'https://github.com/aroundden/hermes-hostionger-backup-k
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-21T17:21:53.491494+09:00
+    Next run:  2026-07-21T17:51:57.904367+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T16:51:53.491494+09:00  ok
-    Execution: completed  bf8f5338825a4c1585f99ca51c0238e6
+    Last run:  2026-07-21T17:21:57.904367+09:00  ok
+    Execution: completed  c576bb4a8f5d4de0ae160f10a1ac6d43
 
