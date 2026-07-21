@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1271,
+  "count": 1274,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1784602556
+      "mtime": 1784606181
     },
     {
       "path": "cron/executions.db",
-      "size": 249856,
-      "mtime": 1784602559
+      "size": 258048,
+      "mtime": 1784605872
+    },
+    {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1784606181
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 94792,
+      "mtime": 1784606182
     },
     {
       "path": "cron/jobs.json",
-      "size": 38749,
-      "mtime": 1784602556
+      "size": 38906,
+      "mtime": 1784606182
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -261,11 +271,6 @@
       "path": "cron/output/34dcb1207f1f/2026-07-21_09-35-25.md",
       "size": 16488,
       "mtime": 1784594125
-    },
-    {
-      "path": "cron/output/9275498a9e95/2026-07-19_10-33-02.md",
-      "size": 217,
-      "mtime": 1784424782
     },
     {
       "path": "cron/output/9275498a9e95/2026-07-19_11-47-19.md",
@@ -513,6 +518,11 @@
       "mtime": 1784598921
     },
     {
+      "path": "cron/output/9275498a9e95/2026-07-21_11-56-08.md",
+      "size": 646,
+      "mtime": 1784602568
+    },
+    {
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-20-18.md",
       "size": 9558,
       "mtime": 1784319618
@@ -536,66 +546,6 @@
       "path": "cron/output/ae7ad604c44e/2026-07-18_05-30-49.md",
       "size": 14179,
       "mtime": 1784320249
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-13-59.md",
-      "size": 0,
-      "mtime": 1784585639
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-19-35.md",
-      "size": 0,
-      "mtime": 1784585975
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-24-59.md",
-      "size": 0,
-      "mtime": 1784586299
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-30-37.md",
-      "size": 0,
-      "mtime": 1784586637
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-35-59.md",
-      "size": 0,
-      "mtime": 1784586959
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-41-39.md",
-      "size": 0,
-      "mtime": 1784587299
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-46-41.md",
-      "size": 0,
-      "mtime": 1784587601
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-52-02.md",
-      "size": 0,
-      "mtime": 1784587922
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_07-57-43.md",
-      "size": 0,
-      "mtime": 1784588263
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_08-03-02.md",
-      "size": 0,
-      "mtime": 1784588582
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_08-08-45.md",
-      "size": 0,
-      "mtime": 1784588925
-    },
-    {
-      "path": "cron/output/b9f28bf7ac2c/2026-07-21_08-14-02.md",
-      "size": 0,
-      "mtime": 1784589242
     },
     {
       "path": "cron/output/b9f28bf7ac2c/2026-07-21_08-19-46.md",
@@ -788,6 +738,66 @@
       "mtime": 1784602257
     },
     {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_11-56-15.md",
+      "size": 0,
+      "mtime": 1784602575
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-01-58.md",
+      "size": 0,
+      "mtime": 1784602918
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-07-16.md",
+      "size": 0,
+      "mtime": 1784603236
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-12-18.md",
+      "size": 0,
+      "mtime": 1784603538
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-17-59.md",
+      "size": 0,
+      "mtime": 1784603879
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-23-20.md",
+      "size": 0,
+      "mtime": 1784604200
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-29-00.md",
+      "size": 0,
+      "mtime": 1784604540
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-34-20.md",
+      "size": 0,
+      "mtime": 1784604860
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-40-00.md",
+      "size": 0,
+      "mtime": 1784605200
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-45-21.md",
+      "size": 0,
+      "mtime": 1784605521
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-51-00.md",
+      "size": 0,
+      "mtime": 1784605860
+    },
+    {
+      "path": "cron/output/b9f28bf7ac2c/2026-07-21_12-56-22.md",
+      "size": 0,
+      "mtime": 1784606182
+    },
+    {
       "path": "cron/output/bbbc2a636e02/2026-07-20_09-31-33.md",
       "size": 507,
       "mtime": 1784507493
@@ -799,13 +809,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 18,
-      "mtime": 1784602556
+      "size": 17,
+      "mtime": 1784606181
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1784602556
+      "size": 16,
+      "mtime": 1784606181
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -3260,12 +3270,12 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1784602559
+      "mtime": 1784605763
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1784602559
+      "mtime": 1784605763
     },
     {
       "path": "skills/.archive/ticktick-readonly/SKILL.md",
@@ -3309,8 +3319,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 20615,
-      "mtime": 1784602096
+      "size": 20645,
+      "mtime": 1784604534
     },
     {
       "path": "skills/.usage.json.lock",
@@ -6339,8 +6349,8 @@
     },
     {
       "path": "skills/spsik-casting/SKILL.md",
-      "size": 2181,
-      "mtime": 1784601872
+      "size": 2557,
+      "mtime": 1784604534
     },
     {
       "path": "skills/spsik-plan/SKILL.md",
@@ -6351,6 +6361,11 @@
       "path": "skills/spsik-plan/references/google-docs-template-qa.md",
       "size": 3347,
       "mtime": 1784567196
+    },
+    {
+      "path": "skills/spsik-thumbnail/SKILL.md",
+      "size": 1731,
+      "mtime": 1784605876
     },
     {
       "path": "skills/yuanbao/SKILL.md",
