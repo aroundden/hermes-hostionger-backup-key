@@ -10,30 +10,32 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T15:02:36.939214+09:00
+    Next run:  2026-07-21T16:03:02.511838+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T14:57:36.939214+09:00  ok
-    Execution: completed  81f31a7c69784fe7b49af0af5c069811
+    Last run:  2026-07-21T15:58:02.511838+09:00  ok
+    Execution: completed  17a20a297f6a47159a96cc2f519a5066
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T15:57:34.027665+09:00
+    Next run:  2026-07-21T16:58:43.035773+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T13:57:12.324789+09:00  error: Script exited with code 4
+    Last run:  2026-07-21T14:58:31.974782+09:00  error: Script exited with code 4
 stdout:
 Hermes GitHub 백업: 로컬 커밋은 준비됐지만 원격 푸시 실패. GitHub 인증이 필요합니다.
 repo=/Users/insideden/hermes-hostionger-backup-key
 remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
 remote: Permission to aroundden/hermes-hostionger-backup-key.git denied to aiden-lee-aroundit.
 fatal: unable to access 'https://github.com/aroundden/hermes-hostionger-backup-key.git/': The requested URL returned error: 403
-    Execution: running  75fd7e2a98104c69a82385dc200d7546
-    ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
+    Execution: running  c273f2d04ba24e7198ae9d524a8a4d98
+    ⚠ Delivery failed: live adapter send failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; live adapter delivery to slack:C0BJ10NME86 failed: The request to the Slack API failed. (url: https://slack.com/api/chat.postMessage, status: 200)
+The server responded with: {'ok': False, 'error': 'channel_not_found'}; delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -60,10 +62,10 @@ fatal: unable to access 'https://github.com/aroundden/hermes-hostionger-backup-k
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-21T15:21:34.553358+09:00
+    Next run:  2026-07-21T16:21:44.020126+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-21T14:51:34.553358+09:00  ok
-    Execution: completed  d8ef4cff709743749ee1fd71ddc273ac
+    Last run:  2026-07-21T15:51:44.020126+09:00  ok
+    Execution: completed  20ec0f72b8c443adb33147ded358eeb9
 
