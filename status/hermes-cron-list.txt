@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-21T10:21:07.236053+09:00
+    Next run:  2026-07-21T10:56:10.655398+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-21T10:16:07.236053+09:00  ok
-    Execution: completed  4d847f0b321548d784df0eec6a39479a
+    Last run:  2026-07-21T10:51:10.655398+09:00  ok
+    Execution: completed  263c155673494cebb1279f069aa82be4
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-21T10:54:13.737625+09:00
+    Next run:  2026-07-21T11:55:09.647745+09:00
     Deliver:   origin
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-07-21T09:54:13.737625+09:00  ok
-    Execution: completed  27a27f6232834686b4500666788aef66
+    Execution: running  3853a05eda4b46b9a788cfc67a9bc98f
     ⚠ Delivery failed: delivery error: Slack API error: channel_not_found
 
   1fc4dc9ddcda [active]
