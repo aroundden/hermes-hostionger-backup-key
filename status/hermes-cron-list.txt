@@ -10,53 +10,53 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-23T09:16:47.203151+09:00
+    Next run:  2026-07-23T10:16:58.551972+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-23T09:11:47.203151+09:00  ok
-    Execution: completed  9564c842b1814459a29b103ec498c6d0
+    Last run:  2026-07-23T10:11:58.551972+09:00  ok
+    Execution: completed  4bc09fdf946a43d2914a7aeb1bbd81d9
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-23T10:13:43.221354+09:00
+    Next run:  2026-07-23T11:13:57.908605+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-23T08:12:48.850560+09:00  ok
-    Execution: running  2d5881319ef745b5bc245e69691e7e1e
+    Last run:  2026-07-23T09:13:53.636935+09:00  ok
+    Execution: running  1bdec0fe6bef4471bc63a57a3c6fb781
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-23T09:30:00+09:00
+    Next run:  2026-07-24T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-07-22T09:31:48.984373+09:00  ok
-    Execution: completed  3249e573d9c047d3bfad30c407b6049f
+    Last run:  2026-07-23T09:32:55.709530+09:00  ok
+    Execution: completed  99bd7b5359fd47be8caaddee3a5e2df4
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-23T09:31:00+09:00
+    Next run:  2026-07-24T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-07-22T09:32:00.698890+09:00  ok
-    Execution: completed  9f56846a28e7497f95716729f052f9a6
+    Last run:  2026-07-23T09:32:22.559588+09:00  ok
+    Execution: completed  eb9df961ec264e9a98689f957dc7a5da
 
   0eeb7f0379dd [active]
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-23T09:34:00.780465+09:00
+    Next run:  2026-07-23T10:34:57.646435+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-23T09:04:00.780465+09:00  ok
-    Execution: completed  52ca67f1505540c08c7b0160d18965a6
+    Last run:  2026-07-23T10:04:57.646435+09:00  ok
+    Execution: completed  8cc6f42f796e473196dfd2ec28504136
 
