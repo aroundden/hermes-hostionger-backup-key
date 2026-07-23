@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-23T14:18:52.320777+09:00
+    Next run:  2026-07-23T15:19:44.642261+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-23T14:13:52.320777+09:00  ok
-    Execution: completed  88075c3e864145b981deebaf17b90f2d
+    Last run:  2026-07-23T15:14:44.642261+09:00  ok
+    Execution: completed  d04c23159c4b47598d5f91d7013ccc49
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-23T15:16:34.259593+09:00
+    Next run:  2026-07-23T16:16:52.400157+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-23T13:16:02.458433+09:00  ok
-    Execution: running  8c9a469baf864477b0662f0f8bac2869
+    Last run:  2026-07-23T14:16:47.246027+09:00  ok
+    Execution: running  c8d3c55ae4fb4a149a32f0856d3c569a
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -53,10 +53,10 @@ exit_code=0
     Name:      세금계산서 발행승인 감시
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-07-23T14:35:34.563170+09:00
+    Next run:  2026-07-23T15:35:43.955349+09:00
     Deliver:   origin
     Script:    tax_invoice_approval_watch.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-23T14:05:34.563170+09:00  ok
-    Execution: completed  8b2c5486e0e7476695acee7b9eb6b7cd
+    Last run:  2026-07-23T15:05:43.955349+09:00  ok
+    Execution: completed  2b0e12b905c849f1aba856d1039cdb0f
 
