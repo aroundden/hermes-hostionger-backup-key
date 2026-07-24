@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-25T04:42:34.028449+09:00
+    Next run:  2026-07-25T05:43:34.757246+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-25T04:37:34.028449+09:00  ok
-    Execution: completed  fc10fdb5d99643f586f5ede64296af78
+    Last run:  2026-07-25T05:38:34.757246+09:00  ok
+    Execution: completed  33f2231bdb5f4c43a7511108e22a92a4
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-25T05:41:26.380452+09:00
+    Next run:  2026-07-25T06:42:33.905218+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-25T03:40:46.045365+09:00  ok
-    Execution: running  0e470254f35e4cf7a42a944e42fcf04c
+    Last run:  2026-07-25T04:41:47.559469+09:00  ok
+    Execution: running  e70c03f8626a4cf4a49c285f8af6c51d
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -56,4 +56,12 @@ exit_code=0
     Next run:  2026-08-24T10:00:00+09:00
     Deliver:   origin
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
+
+  a9804f758911 [active]
+    Name:      Cathy Doll 7AM final research audit
+    Schedule:  once at 2026-07-25 06:20
+    Repeat:    0/1
+    Next run:  2026-07-25T06:20:00+09:00
+    Deliver:   origin
+    Skills:    google-workspace, ocr-and-documents, brand-market-entry-strategy
 
