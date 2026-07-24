@@ -17,6 +17,14 @@ class PopbillStatusTest(unittest.TestCase):
         info = SimpleNamespace(stateCode=304)
         self.assertEqual(status_message(info), "팝빌 상태 304 · 국세청 전송성공")
 
+    def test_labels_nts_in_progress(self):
+        info = SimpleNamespace(stateCode=303)
+        self.assertEqual(status_message(info), "팝빌 상태 303 · 국세청 전송중")
+
+    def test_labels_nts_failure(self):
+        info = SimpleNamespace(stateCode=305)
+        self.assertEqual(status_message(info), "팝빌 상태 305 · 국세청 전송실패")
+
 
 if __name__ == "__main__":
     unittest.main()
