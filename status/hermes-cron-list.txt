@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-25T02:41:34.760226+09:00
+    Next run:  2026-07-25T03:42:21.934078+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-25T02:36:34.760226+09:00  ok
-    Execution: completed  f74585ccc45b4784a9d490403c977c44
+    Last run:  2026-07-25T03:37:21.934078+09:00  ok
+    Execution: completed  15da918a1d7949dc8d11375b20df9fc6
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-25T03:40:14.013950+09:00
+    Next run:  2026-07-25T04:40:32.267066+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-25T01:39:45.246328+09:00  ok
-    Execution: running  d9bae28b65434dc6a035492b52e63095
+    Last run:  2026-07-25T02:40:29.294953+09:00  ok
+    Execution: running  702f4b96968745698b66e4af6f03e73d
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -48,4 +48,12 @@ exit_code=0
     Script:    spc_social_watch_notify.py
     Last run:  2026-07-24T09:31:59.868325+09:00  ok
     Execution: completed  bf805de04e8d47868b807873dea485c6
+
+  0608448d47c7 [active]
+    Name:      AROUNDit 월 25일 다건이체 사전점검
+    Schedule:  0 10 24 * *
+    Repeat:    ∞
+    Next run:  2026-08-24T10:00:00+09:00
+    Deliver:   origin
+    Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
 
