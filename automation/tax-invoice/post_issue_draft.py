@@ -10,8 +10,9 @@ from pathlib import Path
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
+from popbill import TaxinvoiceService
 
-from tax_invoice.invoice_pdf import create_invoice_copy
+from tax_invoice.popbill_pdf import create_popbill_official_pdf
 from tax_invoice.validator import rows_from_values
 
 SPREADSHEET_ID = "13cd3MPVCuQfO8InfcLN8V3IbUdbMUq5hzinYG04NIQM"
@@ -19,7 +20,7 @@ RANGE = "발행대장!A1:Y1000"
 GOOGLE_API = Path.home() / ".hermes/skills/productivity/google-workspace/scripts/google_api.py"
 HERMES_PYTHON = Path.home() / ".hermes/hermes-agent/venv/bin/python"
 TOKEN = Path.home() / ".hermes/google_token.json"
-ISSUER = Path(__file__).parent / "config/issuer.json"
+POPBILL_CREDENTIALS = Path.home() / ".hermes/integrations/popbill/credentials.json"
 ASSETS = Path.home() / ".hermes/integrations/popbill/assets"
 OUTBOX = Path.home() / ".hermes/integrations/popbill/outbox"
 
@@ -113,9 +114,22 @@ def main():
     if not str(row.get("국세청승인번호", "")).strip():
         raise SystemExit("국세청 승인번호 동기화 후에만 회신 초안을 만들 수 있습니다.")
 
-    issuer = json.loads(ISSUER.read_text())
+    popbill_credentials = json.loads(POPBILL_CREDENTIALS.read_text())
+    popbill_service = TaxinvoiceService(
+        popbill_credentials["link_id"], popbill_credentials["secret_key"]
+    )
+    popbill_service.IsTest = False
+    popbill_service.IPRestrictOnOff = True
+    popbill_service.UseStaticIP = False
+    popbill_service.UseGAIP = False
     output_dir = OUTBOX / args.request_id
-    invoice_pdf = create_invoice_copy(row, issuer, output_dir / f"{args.request_id}_전자세금계산서_사본.pdf")
+    invoice_pdf = create_popbill_official_pdf(
+        popbill_service,
+        popbill_credentials["corp_num"],
+        popbill_credentials["user_id"],
+        args.request_id,
+        output_dir / f"{args.request_id}_팝빌_전자세금계산서_원본양식.pdf",
+    )
     attachments = [
         invoice_pdf,
         ASSETS / "aroundit_business_registration.png",
