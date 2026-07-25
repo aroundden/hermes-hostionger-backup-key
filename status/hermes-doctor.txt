@@ -71,7 +71,8 @@ exit_code=0
   ✓ docker (optional)
   ✓ Node.js
   ✓ agent-browser (Node.js) (browser automation)
-  ✓ Playwright Chromium (browser engine)
+  ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
+    → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
   ⚠ web workspace deps (0 critical, 5 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
@@ -84,7 +85,6 @@ exit_code=0
   ✓ OpenRouter API
 
 ◆ Tool Availability
-  ✓ browser
   ✓ clarify
   ✓ code_execution
   ✓ cronjob
@@ -100,6 +100,7 @@ exit_code=0
   ✓ video
   ✓ vision
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
   ⚠ computer_use (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
