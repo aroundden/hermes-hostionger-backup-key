@@ -74,8 +74,10 @@ exit_code=0
   ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
     → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ✓ web workspace deps (no known vulnerabilities)
-  ✓ ui-tui workspace deps (no known vulnerabilities)
+  ⚠ web workspace deps (0 critical, 5 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
   Running 29 connectivity checks in parallel…
@@ -126,9 +128,11 @@ exit_code=0
   ✓   akii: gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 1 issue(s) to address:
+  Found 3 issue(s) to address:
 
-  1. Run 'hermes setup' to configure missing API keys for full tool access
+  1. web workspace has 5 npm vulnerabilities
+  2. ui-tui workspace has 3 npm vulnerabilities
+  3. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
