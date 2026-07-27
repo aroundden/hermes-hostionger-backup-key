@@ -76,6 +76,17 @@ cd ~/automation/tax-invoice
   --i-understand-legal-issuance
 ```
 
+법정 발급기한이 지난 지연발행은 Den에게 위험을 고지하고 별도로 승인받은 경우에만 전용 플래그를 추가한다. 이 플래그는 팝빌의 `forceIssue=True`에 대응하며 일반 발행에는 사용하지 않는다.
+
+```bash
+.venv/bin/python issue_approved.py \
+  --execute \
+  --environment production \
+  --approval-token '<현재 미리보기 토큰>' \
+  --i-understand-legal-issuance \
+  --force-issue
+```
+
 발행 성공 시 Sheet의 `상태`, `검증결과`, `팝빌문서번호`, `국세청승인번호`를 기록한다. 같은 요청ID는 팝빌 문서번호로 재조회하여 중복 발행을 막는다. 후보 행이 바뀌면 승인 토큰도 달라져 이전 승인이 무효화된다. 후속 회신 연결에는 `원본메일ID`, `회신초안ID`, `후속처리` 열을 사용하며 Gmail 초안은 생성만 하고 자동 전송하지 않는다.
 
 ## 팝빌 연동에 필요한 값
