@@ -111,7 +111,7 @@ def preview(rows):
     }, candidates
 
 
-def issue_candidates(candidates, token, production):
+def issue_candidates(candidates, token, production, force_issue=False):
     expected = approval_token(candidates)
     if not candidates:
         raise SystemExit("발행 후보가 없습니다.")
@@ -155,7 +155,7 @@ def issue_candidates(candidates, token, production):
                 credentials["corp_num"],
                 build_taxinvoice(candidate.row, issuer),
                 False,
-                False,
+                force_issue,
                 None,
                 "Den 승인형 자동발행",
                 None,
@@ -197,6 +197,11 @@ def main():
     parser.add_argument("--environment", choices=("test", "production"), default="test")
     parser.add_argument("--approval-token")
     parser.add_argument("--i-understand-legal-issuance", action="store_true")
+    parser.add_argument(
+        "--force-issue",
+        action="store_true",
+        help="법정 발급기한이 지난 지연발행을 팝빌에 명시적으로 허용",
+    )
     args = parser.parse_args()
 
     rows = load_rows()
@@ -211,7 +216,12 @@ def main():
         )
     if not args.approval_token:
         raise SystemExit("현재 후보 미리보기에서 생성된 --approval-token이 필요합니다.")
-    results = issue_candidates(candidates, args.approval_token, production=True)
+    results = issue_candidates(
+        candidates,
+        args.approval_token,
+        production=True,
+        force_issue=args.force_issue,
+    )
     print(json.dumps({"mode": "production_execute", "results": results}, ensure_ascii=False, indent=2))
     if any(result["status"].startswith("failed") for result in results):
         sys.exit(1)
