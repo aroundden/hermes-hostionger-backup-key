@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1343,
+  "count": 1345,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,27 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1785122746
+      "mtime": 1785122806
     },
     {
       "path": "cron/executions.db",
       "size": 589824,
-      "mtime": 1785122750
+      "mtime": 1785122767
+    },
+    {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1785122816
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 41232,
+      "mtime": 1785122817
     },
     {
       "path": "cron/jobs.json",
-      "size": 41123,
-      "mtime": 1785122746
+      "size": 42866,
+      "mtime": 1785122817
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -353,11 +363,6 @@
       "mtime": 1784594125
     },
     {
-      "path": "cron/output/9275498a9e95/2026-07-25_09-45-31.md",
-      "size": 217,
-      "mtime": 1784940331
-    },
-    {
       "path": "cron/output/9275498a9e95/2026-07-25_10-45-56.md",
       "size": 217,
       "mtime": 1784943956
@@ -601,6 +606,11 @@
       "path": "cron/output/9275498a9e95/2026-07-27_11-25-37.md",
       "size": 217,
       "mtime": 1785119137
+    },
+    {
+      "path": "cron/output/9275498a9e95/2026-07-27_12-26-02.md",
+      "size": 217,
+      "mtime": 1785122762
     },
     {
       "path": "cron/output/a9804f758911/2026-07-25_06-29-09.md",
@@ -915,12 +925,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1785122746
+      "mtime": 1785122806
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 16,
-      "mtime": 1785122746
+      "size": 17,
+      "mtime": 1785122806
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",

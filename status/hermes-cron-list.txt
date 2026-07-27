@@ -21,12 +21,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-27T13:25:46.497570+09:00
+    Next run:  2026-07-27T13:26:57.717878+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-27T11:25:37.608677+09:00  ok
-    Execution: running  69a5eb5f841e496a95303f075eb26887
+    Last run:  2026-07-27T12:26:02.329288+09:00  ok
+    Execution: running  8e2d3008b0a7462f81adb1186a03f06a
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -56,4 +56,13 @@ exit_code=0
     Next run:  2026-08-24T10:00:00+09:00
     Deliver:   origin
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
+
+  a69af929ee2e [active]
+    Name:      스튜디오피클 웃다가 태미 세금계산서 304 확인
+    Schedule:  once in 30m
+    Repeat:    0/48
+    Next run:  2026-07-27T12:56:46.397409+09:00
+    Deliver:   origin
+    Script:    tax_invoice_pickle_304_watch.sh
+    Mode:      no-agent (script stdout delivered directly)
 
