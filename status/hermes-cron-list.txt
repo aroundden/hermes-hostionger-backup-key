@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-27T12:29:47.407910+09:00
+    Next run:  2026-07-27T12:35:27.670354+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-27T12:24:47.407910+09:00  ok
-    Execution: completed  8a132728dcb145c8b3a1bc6e925c6b5c
+    Last run:  2026-07-27T12:30:27.670354+09:00  ok
+    Execution: completed  b0349916090c4b30b501cf1c130d3946
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-27T13:27:47.198782+09:00
+    Next run:  2026-07-27T13:34:37.701328+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-27T12:27:08.829096+09:00  ok
-    Execution: running  e3125b7b292847e89871f69d5ab3d6e1
+    Last run:  2026-07-27T12:27:58.080560+09:00  ok
+    Execution: running  ef32656f3d274950a7b4909dc6c3f52f
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -57,11 +57,11 @@ exit_code=0
     Deliver:   origin
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
 
-  a69af929ee2e [active]
-    Name:      스튜디오피클 웃다가 태미 세금계산서 304 확인
+  0bfb961fa226 [active]
+    Name:      스튜디오피클 계산서 304 확인 요청
     Schedule:  once in 30m
     Repeat:    0/48
-    Next run:  2026-07-27T12:56:46.397409+09:00
+    Next run:  2026-07-27T13:04:28.128801+09:00
     Deliver:   origin
     Script:    tax_invoice_pickle_304_watch.sh
     Mode:      no-agent (script stdout delivered directly)
