@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-07-27T13:35:38.962727+09:00
+    Next run:  2026-07-27T14:36:09.584182+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-07-27T13:30:38.962727+09:00  ok
-    Execution: completed  d4167cef017e4092a8b0948f289ddb6b
+    Last run:  2026-07-27T14:31:09.584182+09:00  ok
+    Execution: completed  aed06b5d44b841bf8834ae2d5c75b50e
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-27T14:33:42.707792+09:00
+    Next run:  2026-07-27T15:34:08.761579+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-27T12:34:49.520387+09:00  ok
-    Execution: running  7f72987fc82e4768a473856642101e63
+    Last run:  2026-07-27T13:33:55.752091+09:00  ok
+    Execution: running  e82bb5d54f1b4420ab97ffb94699c8dd
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -56,13 +56,4 @@ exit_code=0
     Next run:  2026-08-24T10:00:00+09:00
     Deliver:   origin
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
-
-  d3b0f5dde4a9 [active]
-    Name:      태미 세금계산서 순액 0원 검증
-    Schedule:  once in 10m
-    Repeat:    0/36
-    Next run:  2026-07-27T13:43:34.483457+09:00
-    Deliver:   origin
-    Script:    tax_invoice_taemi_net_zero_watch.sh
-    Mode:      no-agent (script stdout delivered directly)
 
