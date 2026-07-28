@@ -14,8 +14,10 @@ exit_code=0
 
 ◆ Python Environment
   ✓ Python 3.11.15
+  ✓ SQLite 3.53.1
+    → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
   ✓ Virtual environment active
-  ✓ Version files consistent (0.18.2)
+  ✓ Version files consistent (0.19.0)
 
 ◆ SSL / CA Certificates
   ✓ SSL CA certificate bundle is valid
@@ -58,7 +60,7 @@ exit_code=0
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2158 chars)
   ✓ USER.md exists (1370 chars)
-  ✓ ~/.hermes/state.db exists (243 sessions)
+  ✓ ~/.hermes/state.db exists (251 sessions)
 
 ◆ Command Installation
   ✓ Venv entry point exists (venv/bin/hermes)
@@ -74,9 +76,9 @@ exit_code=0
   ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
     → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 5 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 8 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ ui-tui workspace deps (0 critical, 7 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -87,6 +89,7 @@ exit_code=0
 ◆ Tool Availability
   ✓ clarify
   ✓ code_execution
+  ✓ computer_use
   ✓ cronjob
   ✓ delegation
   ✓ file
@@ -102,7 +105,6 @@ exit_code=0
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
-  ⚠ computer_use (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
@@ -117,7 +119,7 @@ exit_code=0
 
 ◆ Skills Hub
   ✓ Skills Hub directory exists
-  ✓ Lock file OK (1 hub-installed skill(s))
+  ✓ Lock file OK (2 hub-installed skill(s))
   ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/.env for better rates)
 
 ◆ Memory Provider
@@ -130,8 +132,8 @@ exit_code=0
 ────────────────────────────────────────────────────────────
   Found 3 issue(s) to address:
 
-  1. web workspace has 5 npm vulnerabilities
-  2. ui-tui workspace has 3 npm vulnerabilities
+  1. web workspace has 8 npm vulnerabilities
+  2. ui-tui workspace has 7 npm vulnerabilities
   3. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
