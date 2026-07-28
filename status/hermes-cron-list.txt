@@ -6,16 +6,27 @@ exit_code=0
 │                         Scheduled Jobs                                  │
 └─────────────────────────────────────────────────────────────────────────┘
 
+  b9f28bf7ac2c [active]
+    Name:      gmail-auto-draft-replies
+    Schedule:  every 5m
+    Repeat:    ∞
+    Next run:  2026-07-28T19:06:14.881401+09:00
+    Deliver:   slack:C0BHVB49WH5:1784773233.342939
+    Skills:    gmail-workflow-automation, obsidian, google-workspace
+    Script:    gmail_auto_draft_agent_input.sh
+    Last run:  2026-07-28T19:01:14.881401+09:00  ok
+    Execution: completed  5c97023de1c24b689bf39ec375e50627
+
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-28T19:01:50.200074+09:00
+    Next run:  2026-07-28T20:01:16.042288+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-28T17:00:53.063144+09:00  ok
-    Execution: running  602ae3c93a6844989eee196163a1c49f
+    Last run:  2026-07-28T18:02:02.562471+09:00  ok
+    Execution: running  0f35df458a3641ef88827bda544cfcea
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
