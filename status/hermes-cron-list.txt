@@ -10,33 +10,33 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-07-28T09:51:29.340891+09:00
+    Next run:  2026-07-28T10:52:38.251980+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-07-28T07:50:33.150570+09:00  ok
-    Execution: running  a1bf47ae099a4b5b96dce43443cf3129
+    Last run:  2026-07-28T08:51:41.554146+09:00  ok
+    Execution: running  c6d81d76dcd24748b1b0816f48a5442e
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-28T09:30:00+09:00
+    Next run:  2026-07-29T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-07-27T09:32:02.818694+09:00  ok
-    Execution: completed  e2c2e75e9b414399a884db9aebbdf2ae
+    Last run:  2026-07-28T09:33:37.417363+09:00  ok
+    Execution: completed  34aa3942b99b46e0994a8e00668bed5a
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-07-28T09:31:00+09:00
+    Next run:  2026-07-29T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-07-27T09:32:02.515934+09:00  ok
-    Execution: completed  16916fc166554b4181cdefd99ed5a1d1
+    Last run:  2026-07-28T09:32:30.634303+09:00  ok
+    Execution: completed  aac68318199f4ead9859d13669fc9774
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
