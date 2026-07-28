@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1349,
+  "count": 1351,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,7 +20,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1785207777
+      "mtime": 1785210965
     },
     {
       "path": "cron/executions.db",
@@ -28,9 +28,19 @@
       "mtime": 1785207796
     },
     {
+      "path": "cron/executions.db-shm",
+      "size": 32768,
+      "mtime": 1785210965
+    },
+    {
+      "path": "cron/executions.db-wal",
+      "size": 28872,
+      "mtime": 1785210965
+    },
+    {
       "path": "cron/jobs.json",
       "size": 42441,
-      "mtime": 1785207796
+      "mtime": 1785210965
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -934,13 +944,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1785207777
+      "size": 16,
+      "mtime": 1785210965
     },
     {
       "path": "cron/ticker_last_success",
       "size": 17,
-      "mtime": 1785207777
+      "mtime": 1785210965
     },
     {
       "path": "plugins/hermes-achievements/scan_checkpoint.json",
@@ -3459,8 +3469,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 46397,
-      "mtime": 1785207709
+      "size": 46457,
+      "mtime": 1785210106
     },
     {
       "path": "skills/.usage.json.lock",
@@ -6724,8 +6734,8 @@
     },
     {
       "path": "skills/spsik-plan/SKILL.md",
-      "size": 3901,
-      "mtime": 1784567174
+      "size": 4823,
+      "mtime": 1785208911
     },
     {
       "path": "skills/spsik-plan/references/google-docs-template-qa.md",
