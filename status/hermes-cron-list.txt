@@ -10,44 +10,44 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-03T08:53:12.851491+09:00
+    Next run:  2026-08-03T09:57:22.791450+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, obsidian, google-workspace
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-03T08:48:12.851491+09:00  ok
-    Execution: completed  5580bc962bd2436c88f93851b27a55c6
+    Last run:  2026-08-03T09:46:35.414804+09:00  ok
+    Execution: running  b4f7671ec98a45648a5c4067cfe2e671
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-03T09:51:20.041260+09:00
+    Next run:  2026-08-03T10:52:22.795768+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-03T07:51:18.574662+09:00  ok
-    Execution: running  f9e0742c492840a3b75273e4e2651cd5
+    Last run:  2026-08-03T08:51:51.496617+09:00  ok
+    Execution: running  cb1ea0623f094372a19cf2a697424b6f
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-03T09:30:00+09:00
+    Next run:  2026-08-04T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-07-31T09:32:52.102567+09:00  ok
-    Execution: completed  c5afb206abd943138cd4c0e4f132666e
+    Last run:  2026-08-03T09:34:15.846895+09:00  ok
+    Execution: completed  0e65e6930d0941648eebc1db5402c52d
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-03T09:31:00+09:00
+    Next run:  2026-08-04T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-07-31T09:32:40.724006+09:00  ok
-    Execution: completed  1d8117bbc1bb4dd5b98cdc9f05e5c8cd
+    Last run:  2026-08-03T09:32:28.741469+09:00  ok
+    Execution: completed  246c7ecfb4b540e4913046e38b013d0c
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
