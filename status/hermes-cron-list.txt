@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-07T14:09:03.077900+09:00
+    Next run:  2026-08-07T15:11:48.047365+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-07T14:04:03.077900+09:00  ok
-    Execution: completed  89fbe809f3264e6fa1f9a4c38c62335f
+    Last run:  2026-08-07T15:06:48.047365+09:00  ok
+    Execution: completed  5456f5cfb2bf497190a82cd272b7a75a
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-07T15:08:59.129854+09:00
+    Next run:  2026-08-07T16:10:11.256966+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-07T13:08:28.414040+09:00  ok
-    Execution: running  fb7c65ed0cdc43f9bedfc5e1ae22201d
+    Last run:  2026-08-07T14:09:32.755476+09:00  ok
+    Execution: running  9b465e8da5c6469f9ac0cc9c4a5f410c
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -61,10 +61,10 @@ exit_code=0
     Name:      랭디 메일→나나세 확인→Gmail 초안
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-07T14:11:03.218789+09:00
+    Next run:  2026-08-07T15:17:25.022768+09:00
     Deliver:   origin
     Skills:    langdy-email-operations, gmail-workflow-automation
     Script:    langdy_email_monitor.py
-    Last run:  2026-08-07T14:01:03.218789+09:00  ok
-    Execution: completed  356d532624ce4acea572be8d196e11a9
+    Last run:  2026-08-07T15:07:25.022768+09:00  ok
+    Execution: completed  ce8be7b4ff5d4565a2eec8b0fbf7ea6b
 
