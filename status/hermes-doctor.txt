@@ -65,9 +65,9 @@ exit_code=0
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2177 chars)
   ✓ USER.md exists (1362 chars)
-  ✓ ~/.hermes/state.db exists (3307 sessions)
-    → state.db logical size 4.0 GB, 1,038,733 pages, 526 free, WAL 0 B
-    → 57,768 messages, 3,307 sessions, journal_mode=wal
+  ✓ ~/.hermes/state.db exists (3317 sessions)
+    → state.db logical size 4.0 GB, 1,041,663 pages, 150 free, WAL 1.4 MB
+    → 57,860 messages, 3,317 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
   ⚠ state.db is large (4.0 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
 
