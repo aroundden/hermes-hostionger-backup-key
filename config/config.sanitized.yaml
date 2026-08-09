@@ -168,9 +168,10 @@ mcp_servers:
       - --stdio
   clobe:
     url: https://api.clobe.ai/mcp
-    connect_timeout: 300.0
+    connect_timeout: 300
     auth: oauth
     enabled: true
+timezone: Asia/Seoul
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,
