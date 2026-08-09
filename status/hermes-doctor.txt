@@ -16,8 +16,13 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
+    → state.db: WAL journal mode (3.8 GB)
+    → cron/executions.db: WAL journal mode (584.0 KB)
+    → projects.db: WAL journal mode (44.0 KB)
+    → verification_evidence.db: WAL journal mode (100.0 KB)
+    → kanban.db: WAL journal mode (120.0 KB)
   ✓ Virtual environment active
-  ✓ Version files consistent (0.19.0)
+  ✓ Version files consistent (0.20.0)
 
 ◆ SSL / CA Certificates
   ✓ SSL CA certificate bundle is valid
@@ -59,8 +64,12 @@ exit_code=0
   ✓ ~/.hermes/SOUL.md exists (persona configured)
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2177 chars)
-  ✓ USER.md exists (1358 chars)
-  ✓ ~/.hermes/state.db exists (3188 sessions)
+  ✓ USER.md exists (1367 chars)
+  ✓ ~/.hermes/state.db exists (3198 sessions)
+    → state.db logical size 3.8 GB, 1,004,645 pages, 5,746 free, WAL 249.5 KB
+    → 55,585 messages, 3,198 sessions, journal_mode=wal
+    → FTS tables: messages_fts, messages_fts_trigram
+  ⚠ state.db is large (3.8 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
 
 ◆ Command Installation
   ✓ Venv entry point exists (venv/bin/hermes)
@@ -76,13 +85,11 @@ exit_code=0
   ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
     → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 7 high, 0 moderate — build-tool advisory; clears via lockfile bump)
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 5 high, 0 moderate — build-tool advisory; clears via lockfile bump)
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ✓ web workspace deps (no known vulnerabilities)
+  ✓ ui-tui workspace deps (no known vulnerabilities)
 
 ◆ API Connectivity
-  Running 29 connectivity checks in parallel…
+  Running 31 connectivity checks in parallel…
                                                                       
   ✓ OpenRouter API
 
@@ -92,6 +99,7 @@ exit_code=0
   ✓ computer_use
   ✓ cronjob
   ✓ delegation
+  ✓ desktop_ui
   ✓ file
   ✓ memory
   ✓ project
@@ -103,6 +111,7 @@ exit_code=0
   ✓ video
   ✓ vision
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ⚠ bfl (system dependency not met)
   ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
@@ -130,11 +139,10 @@ exit_code=0
   ✓   akii: gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 2 issue(s) to address:
 
-  1. web workspace has 7 npm vulnerabilities
-  2. ui-tui workspace has 5 npm vulnerabilities
-  3. Run 'hermes setup' to configure missing API keys for full tool access
+  1. state.db is large — enable sessions.auto_prune in config.yaml and run 'hermes sessions optimize-storage' offline (gateway stopped)
+  2. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 

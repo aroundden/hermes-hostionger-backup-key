@@ -157,10 +157,12 @@ exit_code=0
 │ secure-config-backu… │ devops               │ local    │ local     │ enabled │
 │ secure-remote-deskt… │ devops               │ local    │ local     │ enabled │
 │ email-auto-drafting  │ email                │ local    │ local     │ enabled │
+│ email-inbox-triage   │ email                │ builtin  │ builtin   │ enabled │
 │ himalaya             │ email                │ builtin  │ builtin   │ enabled │
 │ codebase-inspection  │ github               │ builtin  │ builtin   │ enabled │
 │ github-auth          │ github               │ builtin  │ builtin   │ enabled │
 │ github-code-review   │ github               │ builtin  │ builtin   │ enabled │
+│ github-issue-to-pr   │ github               │ builtin  │ builtin   │ enabled │
 │ github-issues        │ github               │ builtin  │ builtin   │ enabled │
 │ github-pr-workflow   │ github               │ builtin  │ builtin   │ enabled │
 │ github-repo-managem… │ github               │ builtin  │ builtin   │ enabled │
@@ -171,6 +173,7 @@ exit_code=0
 │ heartmula            │ media                │ local    │ local     │ enabled │
 │ songsee              │ media                │ builtin  │ builtin   │ enabled │
 │ subtitle-conform-an… │ media                │ local    │ local     │ enabled │
+│ subtitle-production  │ media                │ local    │ local     │ enabled │
 │ youtube-content      │ media                │ builtin  │ builtin   │ enabled │
 │ audiocraft-audio-ge… │ mlops                │ local    │ local     │ enabled │
 │ evaluating-llms-har… │ mlops                │ builtin  │ builtin   │ enabled │
@@ -186,12 +189,14 @@ exit_code=0
 │ client-content-ops-… │ productivity         │ local    │ local     │ enabled │
 │ content-operations-… │ productivity         │ local    │ local     │ enabled │
 │ deliverable-handoff… │ productivity         │ local    │ local     │ enabled │
+│ document-to-action-… │ productivity         │ builtin  │ builtin   │ enabled │
 │ docx                 │ productivity         │ builtin  │ builtin   │ enabled │
 │ electronic-signatur… │ productivity         │ local    │ local     │ enabled │
 │ gmail-workflow-auto… │ productivity         │ local    │ local     │ enabled │
 │ google-workspace     │ productivity         │ builtin  │ builtin   │ enabled │
 │ langdy-email-operat… │ productivity         │ local    │ local     │ enabled │
 │ maps                 │ productivity         │ builtin  │ builtin   │ enabled │
+│ meeting-action-items │ productivity         │ builtin  │ builtin   │ enabled │
 │ nano-pdf             │ productivity         │ builtin  │ builtin   │ enabled │
 │ notion               │ productivity         │ builtin  │ builtin   │ enabled │
 │ ocr-and-documents    │ productivity         │ builtin  │ builtin   │ enabled │
@@ -200,18 +205,22 @@ exit_code=0
 │ pdf                  │ productivity         │ builtin  │ builtin   │ enabled │
 │ petdex               │ productivity         │ local    │ local     │ enabled │
 │ powerpoint           │ productivity         │ builtin  │ builtin   │ enabled │
+│ product-price-monit… │ productivity         │ builtin  │ builtin   │ enabled │
 │ tax-invoice-operati… │ productivity         │ local    │ local     │ enabled │
 │ teams-meeting-pipel… │ productivity         │ builtin  │ builtin   │ enabled │
 │ ticktick-operations  │ productivity         │ local    │ local     │ enabled │
+│ weekly-review-plann… │ productivity         │ builtin  │ builtin   │ enabled │
 │ workspace-operation… │ productivity         │ local    │ local     │ enabled │
 │ xlsx                 │ productivity         │ builtin  │ builtin   │ enabled │
 │ arxiv                │ research             │ builtin  │ builtin   │ enabled │
 │ blogwatcher          │ research             │ builtin  │ builtin   │ enabled │
 │ brand-market-entry-… │ research             │ local    │ local     │ enabled │
 │ broadcast-casting-r… │ research             │ local    │ local     │ enabled │
+│ competitor-news-mon… │ research             │ builtin  │ builtin   │ enabled │
 │ foreign-talent-cast… │ research             │ local    │ local     │ enabled │
+│ grounded-citations   │ research             │ builtin  │ builtin   │ enabled │
 │ llm-wiki             │ research             │ builtin  │ builtin   │ enabled │
-│ polymarket           │ research             │ builtin  │ builtin   │ enabled │
+│ polymarket           │ research             │ local    │ local     │ enabled │
 │ research-paper-writ… │ research             │ builtin  │ builtin   │ enabled │
 │ openhue              │ smart-home           │ builtin  │ builtin   │ enabled │
 │ hermes-summary       │ social-media         │ local    │ local     │ enabled │
@@ -230,5 +239,5 @@ exit_code=0
 │ systematic-debugging │ software-development │ builtin  │ builtin   │ enabled │
 │ test-driven-develop… │ software-development │ builtin  │ builtin   │ enabled │
 └──────────────────────┴──────────────────────┴──────────┴───────────┴─────────┘
-2 hub-installed, 70 builtin, 152 local — 224 enabled, 0 disabled
+2 hub-installed, 77 builtin, 154 local — 233 enabled, 0 disabled
 

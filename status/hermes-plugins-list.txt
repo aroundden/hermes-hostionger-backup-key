@@ -256,7 +256,8 @@ exit_code=0
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (flux-2-klein,      │         │
 │                      │             │         │ flux-2-pro,         │         │
-│                      │             │         │ nano-banana,        │         │
+│                      │             │         │ nano-banana-2,      │         │
+│                      │             │         │ nano-banana-pro,    │         │
 │                      │             │         │ gpt-image-1.5,      │         │
 │                      │             │         │ recraft-v3, etc.).  │         │
 │ krea                 │ not enabled │ 1.1.0   │ Krea image          │ bundled │
@@ -296,6 +297,9 @@ exit_code=0
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (grok-imagine-imag… │         │
 │                      │             │         │ Text-to-image.      │         │
+│ actual-provider      │ not enabled │ 1.0.0   │ Actual Computer     │ bundled │
+│                      │             │         │ inference           │         │
+│ ai-gateway-provider  │ not enabled │ 1.0.0   │ Vercel AI Gateway   │ bundled │
 │ alibaba-provider     │ not enabled │ 1.0.0   │ Alibaba DashScope   │ bundled │
 │                      │             │         │ (international)     │         │
 │ alibaba-coding-plan… │ not enabled │ 1.0.0   │ Alibaba Cloud       │ bundled │
@@ -377,6 +381,103 @@ exit_code=0
 │                      │             │         │ env vars configure  │         │
 │                      │             │         │ exports after the   │         │
 │                      │             │         │ plugin is enabled.  │         │
+│ a2a-platform         │ not enabled │ 1.0.0   │ A2A                 │ bundled │
+│                      │             │         │ (Agent-to-Agent)    │         │
+│                      │             │         │ protocol v1.0       │         │
+│                      │             │         │ support for Hermes  │         │
+│                      │             │         │ Agent — both        │         │
+│                      │             │         │ directions of the   │         │
+│                      │             │         │ open Linux          │         │
+│                      │             │         │ Foundation standard │         │
+│                      │             │         │ for inter-agent     │         │
+│                      │             │         │ communication.      │         │
+│                      │             │         │ OUTBOUND (client    │         │
+│                      │             │         │ tools):             │         │
+│                      │             │         │ a2a_discover,       │         │
+│                      │             │         │ a2a_call, a2a_list, │         │
+│                      │             │         │ a2a_history, and    │         │
+│                      │             │         │ a2a_orchestrate let │         │
+│                      │             │         │ the agent fetch     │         │
+│                      │             │         │ another agent's     │         │
+│                      │             │         │ Agent Card and send │         │
+│                      │             │         │ it tasks over       │         │
+│                      │             │         │ JSON-RPC — works    │         │
+│                      │             │         │ with any            │         │
+│                      │             │         │ A2A-compliant peer  │         │
+│                      │             │         │ (Hermes, LangChain, │         │
+│                      │             │         │ CrewAI, Google ADK, │         │
+│                      │             │         │ OpenClaw, ...).     │         │
+│                      │             │         │ INBOUND (platform   │         │
+│                      │             │         │ adapter): exposes   │         │
+│                      │             │         │ Hermes as an        │         │
+│                      │             │         │ A2A-discoverable    │         │
+│                      │             │         │ agent. An Agent     │         │
+│                      │             │         │ Card is served at   │         │
+│                      │             │         │ /.well-known/agent… │         │
+│                      │             │         │ (v1.0 canonical     │         │
+│                      │             │         │ path; legacy        │         │
+│                      │             │         │ agent.json also     │         │
+│                      │             │         │ answers) and        │         │
+│                      │             │         │ incoming tasks are  │         │
+│                      │             │         │ routed into the     │         │
+│                      │             │         │ agent's live        │         │
+│                      │             │         │ gateway session     │         │
+│                      │             │         │ like any other      │         │
+│                      │             │         │ platform — so the   │         │
+│                      │             │         │ agent that replies  │         │
+│                      │             │         │ is the same one     │         │
+│                      │             │         │ talking to its      │         │
+│                      │             │         │ user, with full     │         │
+│                      │             │         │ memory and context, │         │
+│                      │             │         │ not a throwaway     │         │
+│                      │             │         │ clone.              │         │
+│                      │             │         │ Security is on by   │         │
+│                      │             │         │ default: no bearer  │         │
+│                      │             │         │ token configured =<REDACTED>
+│                      │             │         │ localhost-only      │         │
+│                      │             │         │ bind. Inbound task  │         │
+│                      │             │         │ text passes through │         │
+│                      │             │         │ prompt-injection    │         │
+│                      │             │         │ filters; outbound   │         │
+│                      │             │         │ text is scrubbed of │         │
+│                      │             │         │ credential-shaped   │         │
+│                      │             │         │ strings; every      │         │
+│                      │             │         │ exchange is         │         │
+│                      │             │         │ audit-logged and    │         │
+│                      │             │         │ persisted to disk   │         │
+│                      │             │         │ outside the         │         │
+│                      │             │         │ context-compaction  │         │
+│                      │             │         │ pipeline so         │         │
+│                      │             │         │ conversations       │         │
+│                      │             │         │ survive compaction  │         │
+│                      │             │         │ and restarts.       │         │
+│                      │             │         │ Pure stdlib         │         │
+│                      │             │         │ transport           │         │
+│                      │             │         │ (http.server +      │         │
+│                      │             │         │ urllib) — no        │         │
+│                      │             │         │ a2a-sdk dependency  │         │
+│                      │             │         │ required.           │         │
+│                      │             │         │                     │         │
+│ buzz-platform        │ not enabled │ 1.0.0   │ Buzz gateway        │ bundled │
+│                      │             │         │ adapter for Hermes  │         │
+│                      │             │         │ Agent. Connects to  │         │
+│                      │             │         │ a Buzz community    │         │
+│                      │             │         │ relay (Block's      │         │
+│                      │             │         │ open-source         │         │
+│                      │             │         │ human+agent         │         │
+│                      │             │         │ collaboration       │         │
+│                      │             │         │ platform built on   │         │
+│                      │             │         │ Nostr) and relays   │         │
+│                      │             │         │ messages between    │         │
+│                      │             │         │ channels/DMs and    │         │
+│                      │             │         │ the Hermes agent.   │         │
+│                      │             │         │ Pure stdlib —       │         │
+│                      │             │         │ shells out to the   │         │
+│                      │             │         │ buzz CLI binary     │         │
+│                      │             │         │ (JSON in/out); no   │         │
+│                      │             │         │ Python packages     │         │
+│                      │             │         │ required.           │         │
+│                      │             │         │                     │         │
 │ dingtalk-platform    │ not enabled │ 1.0.0   │ DingTalk gateway    │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
