@@ -10,25 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-10T13:01:58.489423+09:00
+    Next run:  2026-08-11T01:02:10.080838+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-10T12:51:42.017424+09:00  ok
-    Execution: running  4a734b14f26f4e3d94255b4630812b5c
+    Last run:  2026-08-11T00:57:10.080838+09:00  ok
+    Execution: completed  2bc86b6991bd4750a980f1d01bcb4810
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-10T13:56:14.744666+09:00
+    Next run:  2026-08-11T01:58:08.104217+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-10T11:56:13.986970+09:00  error: Script exited with code 1
+    Last run:  2026-08-10T23:57:28.646970+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  f1ae1d97427342a8b1299057d9ee2355
+    Execution: running  066f40b6d4c641b380c100d094234005
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -60,13 +60,15 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
 
   cdc07526e2fc [active]
-    Name:      DEN weekly guest and idea report
+    Name:      DEN weekly guest report
     Schedule:  0 13 * * 1
     Repeat:    ∞
-    Next run:  2026-08-10T13:00:00+09:00
+    Next run:  2026-08-17T13:00:00+09:00
     Deliver:   slack:C0BM6HMVDQB
-    Skills:    ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy
+    Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
+    Last run:  2026-08-10T13:06:51.886326+09:00  ok
+    Execution: completed  c195353e735c469bb9d0f9cd6007bbea
 
   0dd0f7025404 [active]
     Name:      DEN YouTube daily signal collection
@@ -78,4 +80,13 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-08-10T08:00:38.944035+09:00  ok
     Execution: completed  0bbe141459e445d59dbde27ffb9cdeac
+
+  42b7d4692b6d [active]
+    Name:      DEN weekly idea report
+    Schedule:  1 13 * * 1
+    Repeat:    ∞
+    Next run:  2026-08-17T13:01:00+09:00
+    Deliver:   slack:C0BM6HMVDQB
+    Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
+    Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
 
