@@ -10,25 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-11T04:05:26.965733+09:00
+    Next run:  2026-08-11T09:07:09.273711+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-11T04:00:26.965733+09:00  ok
-    Execution: completed  081a708c81b9400c9312181c27eecdae
+    Last run:  2026-08-11T09:02:09.273711+09:00  ok
+    Execution: completed  96fd4fbcf8df481cb68adc739652bb70
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-11T05:02:24.688046+09:00
+    Next run:  2026-08-11T10:04:32.761030+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-11T03:02:19.828093+09:00  error: Script exited with code 1
+    Last run:  2026-08-11T08:04:27.744754+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  aea2f4c3991749c784090b3f3de4d8e9
+    Execution: running  aed2e61234674bc5b46bc2c2bf3223e3
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -74,12 +74,12 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-11T08:00:00+09:00
+    Next run:  2026-08-12T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-10T08:00:38.944035+09:00  ok
-    Execution: completed  0bbe141459e445d59dbde27ffb9cdeac
+    Last run:  2026-08-11T08:00:19.856880+09:00  ok
+    Execution: completed  336edb413f254c408db4a83cca190746
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
