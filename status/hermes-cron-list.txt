@@ -10,25 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-11T19:11:24.426178+09:00
+    Next run:  2026-08-12T09:12:46.434652+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-11T19:06:24.426178+09:00  ok
-    Execution: completed  14df49c7e2a44f3aaeb1570b7c94c408
+    Last run:  2026-08-12T09:07:46.434652+09:00  ok
+    Execution: completed  39373e97a93d4930b8ee15beb9ac2233
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-11T20:08:44.593746+09:00
+    Next run:  2026-08-12T10:11:00.135026+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-11T18:08:40.390704+09:00  error: Script exited with code 1
+    Last run:  2026-08-12T08:10:59.468851+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  18bb7a27c84c4f968cb48a4a1fcdab6c
+    Execution: running  fa4a9a01e3dc435fa10d377cda54059c
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -74,12 +74,12 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-12T08:00:00+09:00
+    Next run:  2026-08-13T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-11T08:00:19.856880+09:00  ok
-    Execution: completed  336edb413f254c408db4a83cca190746
+    Last run:  2026-08-12T08:00:13.059610+09:00  ok
+    Execution: completed  eb907c03c3284bcb87923cda530a9187
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
