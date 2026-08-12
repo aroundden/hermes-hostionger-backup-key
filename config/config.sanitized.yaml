@@ -118,9 +118,10 @@ skills:
   creation_nudge_interval: 15
 timezone: Asia/Seoul
 command_allowlist:
-  - script execution via -e/-c flag
   - command parser limit or malformed executable payload
+  - recursive delete
   - execute_code
+  - script execution via -e/-c flag
 cron:
   wrap_response: false
 code_execution:

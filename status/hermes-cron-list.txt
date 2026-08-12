@@ -10,23 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-12T15:58:06.970503+09:00
+    Next run:  2026-08-12T18:54:59.725365+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-12T15:47:45.199545+09:00  ok
-    Execution: running  22c4c94d34924a758ef1c0a75ae14b70
+    Last run:  2026-08-12T18:49:59.725365+09:00  ok
+    Execution: completed  70fa50893f964ce195a3cca7391b0ab5
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-12T16:51:06.847158+09:00
+    Next run:  2026-08-12T19:53:12.967806+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-12T14:50:30.238830+09:00  ok
-    Execution: running  8421c66eb26b4a269792d1a44b99122f
+    Last run:  2026-08-12T17:53:12.028879+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: running  2608e2ef6b0d4aa8aa3646d003ad2368
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -87,16 +89,4 @@ exit_code=0
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-
-  308e9d6e627c [active]
-    Name:      크몽 이메일 알림 보조 감시
-    Schedule:  every 5m
-    Repeat:    ∞
-    Next run:  2026-08-12T15:55:09.863292+09:00
-    Deliver:   origin
-    Skills:    gmail-workflow-automation
-    Script:    kmong_inquiry_watch.py
-    Workdir:   /Users/insideden
-    Last run:  2026-08-12T15:50:09.863292+09:00  ok
-    Execution: completed  bd0fa7438d1444c085b787b17364f535
 
