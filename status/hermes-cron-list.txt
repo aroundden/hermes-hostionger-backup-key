@@ -10,25 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-13T02:51:27.808651+09:00
+    Next run:  2026-08-13T03:49:03.121817+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-13T02:41:25.005770+09:00  ok
-    Execution: running  90916d2bbd654961b910098fef52d83f
+    Last run:  2026-08-13T03:44:03.121817+09:00  ok
+    Execution: completed  8b3a24691b764cf2ac7c3b57f5b63793
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-13T03:44:22.643516+09:00
+    Next run:  2026-08-13T04:47:23.762531+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-13T01:44:13.438533+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: TimeoutExpired: Command '['hermes', 'doctor']' timed out after 180 seconds
-    Execution: running  9d67461de9fb449f825c84e45553ce38
+    Last run:  2026-08-13T02:46:52.053837+09:00  ok
+    Execution: running  9382a6d65d5c44749f000a655c56be28
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
