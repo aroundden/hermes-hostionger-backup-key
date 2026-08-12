@@ -10,25 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-12T18:54:59.725365+09:00
+    Next run:  2026-08-12T23:02:00.556538+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-12T18:49:59.725365+09:00  ok
-    Execution: completed  70fa50893f964ce195a3cca7391b0ab5
+    Last run:  2026-08-12T22:57:00.556538+09:00  ok
+    Execution: completed  d2fab7d1d7b64773a47bfe831fa2019c
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-12T19:53:12.967806+09:00
+    Next run:  2026-08-12T23:55:17.896237+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-12T17:53:12.028879+09:00  error: Script exited with code 1
+    Last run:  2026-08-12T21:55:17.271333+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  2608e2ef6b0d4aa8aa3646d003ad2368
+    Execution: running  9c4a252b7b2b44269b79d085c456ae33
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
