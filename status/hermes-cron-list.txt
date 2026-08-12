@@ -10,46 +10,46 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-12T09:12:46.434652+09:00
+    Next run:  2026-08-12T11:14:52.162338+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-12T09:07:46.434652+09:00  ok
-    Execution: completed  39373e97a93d4930b8ee15beb9ac2233
+    Last run:  2026-08-12T11:09:52.162338+09:00  ok
+    Execution: completed  9ca52a7d3ca44c1da61de1bdb33ca62b
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-12T10:11:00.135026+09:00
+    Next run:  2026-08-12T12:13:02.674784+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-12T08:10:59.468851+09:00  error: Script exited with code 1
+    Last run:  2026-08-12T10:13:01.950007+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  fa4a9a01e3dc435fa10d377cda54059c
+    Execution: running  222c4246a2254cd2acd744d8819ae502
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-12T09:30:00+09:00
+    Next run:  2026-08-13T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-08-11T09:32:22.431637+09:00  ok
-    Execution: completed  c962e63a1e374e80b5819df7884d7c03
+    Last run:  2026-08-12T09:31:47.261766+09:00  ok
+    Execution: completed  b78f400534a64170a36af5f78c8dbd35
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-12T09:31:00+09:00
+    Next run:  2026-08-13T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-08-11T09:32:01.626940+09:00  ok
-    Execution: completed  7644cc5768a34f4a8652e065b47ce769
+    Last run:  2026-08-12T09:31:48.888139+09:00  ok
+    Execution: completed  2ceca8c571db45a39964bb7842abea9f
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
