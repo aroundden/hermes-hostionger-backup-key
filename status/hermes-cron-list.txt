@@ -10,25 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-12T14:52:38.057146+09:00
+    Next run:  2026-08-12T15:58:06.970503+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-12T14:47:38.057146+09:00  ok
-    Execution: completed  1eec7192367f43329e4286e962651c97
+    Last run:  2026-08-12T15:47:45.199545+09:00  ok
+    Execution: running  22c4c94d34924a758ef1c0a75ae14b70
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-12T15:48:11.668655+09:00
+    Next run:  2026-08-12T16:51:06.847158+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-12T14:15:07.506064+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  3b339066ed624e0380b844061940c462
+    Last run:  2026-08-12T14:50:30.238830+09:00  ok
+    Execution: running  8421c66eb26b4a269792d1a44b99122f
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -91,14 +89,14 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
 
   308e9d6e627c [active]
-    Name:      크몽 신규 섭외 문의 자동 감시
+    Name:      크몽 이메일 알림 보조 감시
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-12T14:53:05.571966+09:00
+    Next run:  2026-08-12T15:55:09.863292+09:00
     Deliver:   origin
     Skills:    gmail-workflow-automation
     Script:    kmong_inquiry_watch.py
     Workdir:   /Users/insideden
-    Last run:  2026-08-12T14:48:05.571966+09:00  ok
-    Execution: completed  c84eea947fd7404380e0ca3c0f6cda45
+    Last run:  2026-08-12T15:50:09.863292+09:00  ok
+    Execution: completed  bd0fa7438d1444c085b787b17364f535
 

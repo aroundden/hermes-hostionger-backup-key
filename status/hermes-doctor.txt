@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (4.8 GB)
+    → state.db: WAL journal mode (4.9 GB)
     → cron/executions.db: WAL journal mode (592.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (100.0 KB)
@@ -64,12 +64,12 @@ exit_code=0
   ✓ ~/.hermes/SOUL.md exists (persona configured)
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2187 chars)
-  ✓ USER.md exists (1363 chars)
-  ✓ ~/.hermes/state.db exists (3934 sessions)
-    → state.db logical size 4.8 GB, 1,267,297 pages, 1,016 free, WAL 3.5 MB
-    → 70,061 messages, 3,934 sessions, journal_mode=wal
+  ✓ USER.md exists (1372 chars)
+  ✓ ~/.hermes/state.db exists (3947 sessions)
+    → state.db logical size 4.9 GB, 1,275,535 pages, 753 free, WAL 0 B
+    → 71,160 messages, 3,947 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
-  ⚠ state.db is large (4.8 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
+  ⚠ state.db is large (4.9 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
 
 ◆ Command Installation
   ✓ Venv entry point exists (venv/bin/hermes)
