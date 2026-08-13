@@ -10,44 +10,46 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-13T03:49:03.121817+09:00
+    Next run:  2026-08-13T22:56:52.629123+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-13T03:44:03.121817+09:00  ok
-    Execution: completed  8b3a24691b764cf2ac7c3b57f5b63793
+    Last run:  2026-08-13T22:46:52.187710+09:00  ok
+    Execution: running  e974939b92d947f6b47bf1e54fcfd1fa
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-13T04:47:23.762531+09:00
+    Next run:  2026-08-13T23:50:20.731172+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-13T02:46:52.053837+09:00  ok
-    Execution: running  9382a6d65d5c44749f000a655c56be28
+    Last run:  2026-08-13T21:50:00.982165+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: running  c06023ed6ed840638e9e52b220148958
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-13T09:30:00+09:00
+    Next run:  2026-08-14T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-08-12T09:31:47.261766+09:00  ok
-    Execution: completed  b78f400534a64170a36af5f78c8dbd35
+    Last run:  2026-08-13T09:32:55.787001+09:00  ok
+    Execution: completed  df0973d7f7b34ddd909130d8f6fa1ff0
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-13T09:31:00+09:00
+    Next run:  2026-08-14T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-08-12T09:31:48.888139+09:00  ok
-    Execution: completed  2ceca8c571db45a39964bb7842abea9f
+    Last run:  2026-08-13T09:32:03.807191+09:00  ok
+    Execution: completed  8f7a36c2a9664066a797d0d6b2f8709b
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -72,12 +74,12 @@ exit_code=0
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-13T08:00:00+09:00
+    Next run:  2026-08-14T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-12T08:00:13.059610+09:00  ok
-    Execution: completed  eb907c03c3284bcb87923cda530a9187
+    Last run:  2026-08-13T08:00:39.685306+09:00  ok
+    Execution: completed  25ac8ffd79374ec59890a532c6237cb4
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
