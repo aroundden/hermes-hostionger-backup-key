@@ -65,9 +65,9 @@ exit_code=0
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2073 chars)
   ✓ USER.md exists (1348 chars)
-  ✓ ~/.hermes/state.db exists (4327 sessions)
-    → state.db logical size 5.4 GB, 1,416,170 pages, 56 free, WAL 0 B
-    → 78,163 messages, 4,327 sessions, journal_mode=wal
+  ✓ ~/.hermes/state.db exists (4340 sessions)
+    → state.db logical size 5.4 GB, 1,422,507 pages, 117 free, WAL 0 B
+    → 78,496 messages, 4,340 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
   ⚠ state.db is large (5.4 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
 
@@ -85,9 +85,9 @@ exit_code=0
   ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
     → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 2 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -144,8 +144,8 @@ exit_code=0
   Found 4 issue(s) to address:
 
   1. state.db is large — enable sessions.auto_prune in config.yaml and run 'hermes sessions optimize-storage' offline (gateway stopped)
-  2. web workspace has 1 npm vulnerability
-  3. ui-tui workspace has 2 npm vulnerabilities
+  2. web workspace has 3 npm vulnerabilities
+  3. ui-tui workspace has 3 npm vulnerabilities
   4. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
