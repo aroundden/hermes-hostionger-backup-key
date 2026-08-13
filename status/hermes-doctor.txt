@@ -64,12 +64,13 @@ exit_code=0
   ✓ ~/.hermes/SOUL.md exists (persona configured)
   ✓ ~/.hermes/memories/ directory exists
   ✓ MEMORY.md exists (2073 chars)
-  ✓ USER.md exists (1359 chars)
-  ✓ ~/.hermes/state.db exists (4283 sessions)
-    → state.db logical size 5.3 GB, 1,399,271 pages, 2,932 free, WAL 5.0 MB
-    → 76,794 messages, 4,284 sessions, journal_mode=wal
+  ✓ USER.md exists (1362 chars)
+  ✓ ~/.hermes/state.db exists (4298 sessions)
+    → state.db logical size 5.3 GB, 1,401,857 pages, 403 free, WAL 11.1 MB
+    → 77,105 messages, 4,298 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
   ⚠ state.db is large (5.3 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the gateway stopped) to compact FTS storage)
+    → WAL file is 11 MB (normal for active sessions)
 
 ◆ Command Installation
   ✓ Venv entry point exists (venv/bin/hermes)
