@@ -96,11 +96,12 @@ display:
   background_process_notifications: all
   platforms:
     slack:
-      live_status: false
-      tool_progress: false
+      live_status: verb
+      tool_progress: new
       interim_assistant_messages: false
       long_running_notifications: false
       busy_ack_detail: false
+      tool_preview_length: 30
 dashboard:
   basic_auth:
     username: insideden
