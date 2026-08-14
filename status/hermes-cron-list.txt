@@ -10,23 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-14T15:52:44.364769+09:00
+    Next run:  2026-08-14T19:52:15.568104+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-14T15:47:44.364769+09:00  ok
-    Execution: completed  e40e5eba4c514b959879a40d962f3bb8
+    Last run:  2026-08-14T19:47:15.568104+09:00  ok
+    Execution: completed  34d54169383a419ca447a608df8712ef
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-14T16:49:23.036601+09:00
+    Next run:  2026-08-14T20:50:03.474441+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-14T14:49:18.292388+09:00  ok
-    Execution: running  97a33bee8c384984a6b5784c8adef7f6
+    Last run:  2026-08-14T18:49:55.730904+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: running  4ee949020d22434abbdfe5f7a2d34ec9
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -91,11 +93,11 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-14T15:58:49.641521+09:00
+    Next run:  2026-08-14T19:53:22.649768+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-14T15:39:22.399374+09:00
-    Last run:  2026-08-14T15:43:49.641521+09:00  ok
-    Execution: completed  98a7a0bd140e45d0a5b1f12e8cb89bb7
+    Changed:   2026-08-14T18:52:23.668330+09:00
+    Last run:  2026-08-14T19:38:22.649768+09:00  ok
+    Execution: completed  fc1694b9fd984371bc34af4a13789ef4
 
