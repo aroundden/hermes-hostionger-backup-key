@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 1650,
+  "count": 1653,
   "files": [
     {
       "path": "SOUL.md",
@@ -20,17 +20,17 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1786722044
+      "mtime": 1786722465
     },
     {
       "path": "cron/executions.db",
       "size": 606208,
-      "mtime": 1786722040
+      "mtime": 1786722452
     },
     {
       "path": "cron/jobs.json",
-      "size": 50318,
-      "mtime": 1786722040
+      "size": 51664,
+      "mtime": 1786722452
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -978,11 +978,6 @@
       "mtime": 1786094086
     },
     {
-      "path": "cron/output/9275498a9e95/2026-08-13_00-59-20.md",
-      "size": 286,
-      "mtime": 1786550360
-    },
-    {
       "path": "cron/output/9275498a9e95/2026-08-13_01-44-13.md",
       "size": 296,
       "mtime": 1786553053
@@ -1226,6 +1221,11 @@
       "path": "cron/output/9275498a9e95/2026-08-14_23-51-03.md",
       "size": 286,
       "mtime": 1786719063
+    },
+    {
+      "path": "cron/output/9275498a9e95/2026-08-15_00-41-06.md",
+      "size": 217,
+      "mtime": 1786722066
     },
     {
       "path": "cron/output/a9804f758911/2026-07-25_06-29-09.md",
@@ -1619,13 +1619,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 16,
-      "mtime": 1786722044
+      "size": 18,
+      "mtime": 1786722465
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786722044
+      "size": 17,
+      "mtime": 1786722465
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -4165,7 +4165,7 @@
     {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1786722056
+      "mtime": 1786722470
     },
     {
       "path": "profiles/akii/state.db-wal",
@@ -4228,9 +4228,24 @@
       "mtime": 1786116252
     },
     {
+      "path": "skills/.curator_backups/2026-08-14T15-43-52Z/cron-jobs.json",
+      "size": 50060,
+      "mtime": 1786722233
+    },
+    {
+      "path": "skills/.curator_backups/2026-08-14T15-43-52Z/manifest.json",
+      "size": 263,
+      "mtime": 1786722233
+    },
+    {
+      "path": "skills/.curator_backups/2026-08-14T15-43-52Z/skills.tar.gz",
+      "size": 2748137,
+      "mtime": 1786722233
+    },
+    {
       "path": "skills/.curator_state",
       "size": 355,
-      "mtime": 1786266806
+      "mtime": 1786722233
     },
     {
       "path": "skills/.hub/audit.log",
@@ -4259,8 +4274,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 61495,
-      "mtime": 1786721999
+      "size": 63843,
+      "mtime": 1786722233
     },
     {
       "path": "skills/.usage.json.lock",
