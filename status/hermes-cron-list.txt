@@ -10,44 +10,46 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-14T03:02:43.171899+09:00
+    Next run:  2026-08-14T13:40:35.724433+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-14T02:57:43.171899+09:00  ok
-    Execution: completed  94333176a760494fbb87e9288fc8a6e6
+    Last run:  2026-08-14T13:10:25.737933+09:00  ok
+    Execution: completed  be5177193ad540498a5251a1abc1640f
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-14T03:59:04.613370+09:00
+    Next run:  2026-08-14T14:35:23.187188+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-14T01:58:49.145130+09:00  ok
-    Execution: running  5faf9d21b3714499a22aff06ffe84b2d
+    Last run:  2026-08-14T13:35:23.187188+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: TimeoutExpired: Command '['hermes', 'doctor']' timed out after 180 seconds
+    Execution: failed  fbd920e58b3248388a303931d806e619
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-14T09:30:00+09:00
+    Next run:  2026-08-17T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-08-13T09:32:55.787001+09:00  ok
-    Execution: completed  df0973d7f7b34ddd909130d8f6fa1ff0
+    Last run:  2026-08-14T09:34:02.487885+09:00  ok
+    Execution: completed  7b9ea8e3429a4753a9125af82751d5b4
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-14T09:31:00+09:00
+    Next run:  2026-08-17T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-08-13T09:32:03.807191+09:00  ok
-    Execution: completed  8f7a36c2a9664066a797d0d6b2f8709b
+    Last run:  2026-08-14T09:32:01.154548+09:00  ok
+    Execution: completed  fd54fa4054f34527a659954b28219227
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -66,18 +68,17 @@ exit_code=0
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
     Last run:  2026-08-10T13:06:51.886326+09:00  ok
-    Execution: completed  c195353e735c469bb9d0f9cd6007bbea
 
   0dd0f7025404 [active]
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-14T08:00:00+09:00
+    Next run:  2026-08-15T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-13T08:00:39.685306+09:00  ok
-    Execution: completed  25ac8ffd79374ec59890a532c6237cb4
+    Last run:  2026-08-14T08:00:21.712959+09:00  ok
+    Execution: completed  e193f6a74b9a43ffad600aa9384e8f39
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
@@ -87,4 +88,15 @@ exit_code=0
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
+
+  46f1141c55bc [active]
+    Name:      TickTick 에이전트 프로젝트 자동 실행
+    Schedule:  every 15m
+    Repeat:    ∞
+    Next run:  2026-08-14T13:47:22.321961+09:00
+    Deliver:   origin
+    Skills:    ticktick-operations
+    Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
+    Changed:   2026-08-14T13:32:23.076349+09:00
+    Execution: running  2eec5a50c826425aa4661d969dfa8802
 
