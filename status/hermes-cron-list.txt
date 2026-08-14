@@ -10,23 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-14T13:47:02.010528+09:00
+    Next run:  2026-08-14T14:49:01.277838+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-14T13:42:02.010528+09:00  ok
-    Execution: completed  729034dac3604877a890f9787bb8452c
+    Last run:  2026-08-14T14:44:01.277838+09:00  ok
+    Execution: completed  010bbd20d14f483095369fbb52228756
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-14T14:38:31.516969+09:00
+    Next run:  2026-08-14T15:48:52.093941+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-14T13:38:31.516969+09:00  ok
-    Execution: completed  7b5b3d3cb75c48be915ba914e27ee2d9
+    Last run:  2026-08-14T14:38:49.325174+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: running  b6911de9bebf4e57a3ffc03d7a471596
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -91,11 +93,11 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-14T13:54:56.853044+09:00
+    Next run:  2026-08-14T15:02:16.922548+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-14T13:32:23.076349+09:00
-    Last run:  2026-08-14T13:39:56.853044+09:00  error: Gateway shutdown (final-cleanup) killed the job's tool subprocess before the run finished.
-    Execution: unknown  2eec5a50c826425aa4661d969dfa8802
+    Changed:   2026-08-14T14:47:17.771272+09:00
+    Last run:  2026-08-14T14:32:00.650979+09:00  ok
+    Execution: running  3b75210cab914d69aa251d1ad6c87d82
 
