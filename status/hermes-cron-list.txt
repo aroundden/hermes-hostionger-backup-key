@@ -10,25 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-14T13:40:35.724433+09:00
+    Next run:  2026-08-14T13:47:02.010528+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-14T13:10:25.737933+09:00  ok
-    Execution: completed  be5177193ad540498a5251a1abc1640f
+    Last run:  2026-08-14T13:42:02.010528+09:00  ok
+    Execution: completed  729034dac3604877a890f9787bb8452c
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-14T14:38:06.370363+09:00
+    Next run:  2026-08-14T14:38:31.516969+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-14T13:35:23.187188+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: TimeoutExpired: Command '['hermes', 'doctor']' timed out after 180 seconds
-    Execution: running  7b5b3d3cb75c48be915ba914e27ee2d9
+    Last run:  2026-08-14T13:38:31.516969+09:00  ok
+    Execution: completed  7b5b3d3cb75c48be915ba914e27ee2d9
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -93,10 +91,11 @@ Hermes GitHub 백업 예외: TimeoutExpired: Command '['hermes', 'doctor']' time
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-14T13:47:22.321961+09:00
+    Next run:  2026-08-14T13:54:56.853044+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T13:32:23.076349+09:00
-    Execution: running  2eec5a50c826425aa4661d969dfa8802
+    Last run:  2026-08-14T13:39:56.853044+09:00  error: Gateway shutdown (final-cleanup) killed the job's tool subprocess before the run finished.
+    Execution: unknown  2eec5a50c826425aa4661d969dfa8802
 

@@ -10,6 +10,7 @@
 - `status/*.txt`: `hermes status/doctor/tools/skills/mcp/cron/profile/plugins` 결과의 민감정보 제거본
 - `inventory/hermes-files-manifest.json`: 핵심 Hermes 설정/확장 파일의 파일명/크기/수정시각 목록
 - `automation/tax-invoice/`: 세금계산서 자동화의 복구 가능한 소스·테스트·의존성 파일. 발행자 실데이터는 템플릿으로 대체
+- `automation/hermes-operations/`: 게이트웨이 파일 핸들 감시기와 macOS LaunchAgent 정의(비밀값·런타임 상태 제외)
 
 ## 의도적으로 제외한 것
 - API 키/PAT/OAuth 토큰/Google 토큰/클라이언트 시크릿
