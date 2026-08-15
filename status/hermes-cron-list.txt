@@ -10,25 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-15T23:51:48.564729+09:00
+    Next run:  2026-08-16T00:52:22.937646+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-15T23:46:48.564729+09:00  ok
-    Execution: completed  5c599421e3d64134a58b425fdb211f3a
+    Last run:  2026-08-16T00:42:01.574946+09:00  ok
+    Execution: unknown  06cb72c7b8184b91a784486fd67eace5
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-16T00:48:54.909574+09:00
+    Next run:  2026-08-16T01:49:26.616130+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-15T22:48:42.836409+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  b780d182ce2f49bf897b8e3c0e84669c
+    Last run:  2026-08-15T23:49:21.179375+09:00  ok
+    Execution: unknown  7fd1b3990d014823a1828253d78ebec5
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -95,11 +93,11 @@ DEN collector failed: all fixed channels empty
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-16T00:03:56.069071+09:00
+    Next run:  2026-08-16T01:04:37.442521+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-15T23:48:56.069071+09:00  ok
-    Execution: completed  7a69d787cc4746d8aae98d1468d51ee9
+    Last run:  2026-08-16T00:49:37.442521+09:00  ok
+    Execution: completed  061d175f193f46c7ba3a77567d088c43
 
