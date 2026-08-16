@@ -10,23 +10,25 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-16T00:52:22.937646+09:00
+    Next run:  2026-08-16T09:51:15.633004+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-16T00:42:01.574946+09:00  ok
-    Execution: unknown  06cb72c7b8184b91a784486fd67eace5
+    Last run:  2026-08-16T09:46:15.633004+09:00  ok
+    Execution: completed  d9a363dc36c1419bb666d845e041c236
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-16T01:49:26.616130+09:00
+    Next run:  2026-08-16T10:51:13.369116+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-15T23:49:21.179375+09:00  ok
-    Execution: unknown  7fd1b3990d014823a1828253d78ebec5
+    Last run:  2026-08-16T08:51:11.920103+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: running  0169e187081944b2b54e9d7d5a355c7b
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -71,14 +73,14 @@ exit_code=0
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-16T08:00:00+09:00
+    Next run:  2026-08-17T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-15T08:01:06.169096+09:00  error: Script exited with code 1
+    Last run:  2026-08-16T08:00:58.655763+09:00  error: Script exited with code 1
 stderr:
 DEN collector failed: all fixed channels empty
-    Execution: failed  b6b7b68b065343108f3f76eff2661110
+    Execution: failed  b17c2e00a08d42c49d24e3b94ce4edfb
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
@@ -93,11 +95,11 @@ DEN collector failed: all fixed channels empty
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-16T01:04:37.442521+09:00
+    Next run:  2026-08-16T09:52:41.227438+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-16T00:49:37.442521+09:00  ok
-    Execution: completed  061d175f193f46c7ba3a77567d088c43
+    Last run:  2026-08-16T09:37:41.227438+09:00  ok
+    Execution: completed  d55c919d55c040f0b7fbfc0b6c25fbbc
 
