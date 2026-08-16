@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-17T07:14:38.302467+09:00
+    Next run:  2026-08-17T08:11:27.541418+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-17T07:09:38.302467+09:00  ok
-    Execution: unknown  b463f12898d14c36b8fa27ae9ef2d760
+    Last run:  2026-08-17T08:06:27.541418+09:00  ok
+    Execution: failed  917775f780f04f5fa3316bcc5dd2602c
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-17T08:09:59.524836+09:00
+    Next run:  2026-08-17T09:11:05.173280+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-17T06:09:20.761674+09:00  ok
-    Execution: running  4ff4c4906e4e4c3e9af62eddf67851b8
+    Last run:  2026-08-17T07:10:28.863639+09:00  ok
+    Execution: running  0365eb45b6f0419d9685a77b0e6b85c2
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -71,14 +71,12 @@ exit_code=0
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-17T08:00:00+09:00
+    Next run:  2026-08-18T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-16T08:00:58.655763+09:00  error: Script exited with code 1
-stderr:
-DEN collector failed: all fixed channels empty
-    Execution: failed  b17c2e00a08d42c49d24e3b94ce4edfb
+    Last run:  2026-08-17T08:00:16.971862+09:00  ok
+    Execution: completed  2398a17c97d24561ac7eaddb214fb8dd
 
   42b7d4692b6d [active]
     Name:      DEN weekly idea report
@@ -93,11 +91,11 @@ DEN collector failed: all fixed channels empty
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-17T07:20:00.827206+09:00
+    Next run:  2026-08-17T08:21:04.801263+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-17T07:05:00.827206+09:00  ok
-    Execution: completed  dbd016ef0219482e890440b7bffe8fcd
+    Last run:  2026-08-17T08:06:04.801263+09:00  ok
+    Execution: completed  0597adbd89c64cc8ac628b3b6ea2c59b
 
