@@ -10,23 +10,23 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-16T18:03:29.092944+09:00
+    Next run:  2026-08-16T19:02:53.002815+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-16T17:58:29.092944+09:00  ok
-    Execution: unknown  692d46e0564746ad95a5421e57fed8a8
+    Last run:  2026-08-16T18:52:43.431133+09:00  ok
+    Execution: running  1be299dc71af49d49be259831ec5fe9a
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-16T18:58:24.398107+09:00
+    Next run:  2026-08-16T19:58:53.212452+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-16T16:57:50.998615+09:00  ok
-    Execution: running  967fc537225d42cda085bfe16000faa1
+    Last run:  2026-08-16T17:58:51.839706+09:00  ok
+    Execution: running  aa22df8aaf2746f79bfc3f0010df293b
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
@@ -93,11 +93,11 @@ DEN collector failed: all fixed channels empty
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-16T18:12:46.491155+09:00
+    Next run:  2026-08-16T19:13:54.061678+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-16T17:57:46.491155+09:00  ok
-    Execution: completed  fa19d9397db04b7580fb2ff3e724c5da
+    Last run:  2026-08-16T18:58:54.061678+09:00  ok
+    Execution: completed  16a739b6c90846d7b241123e2565c6e0
 
