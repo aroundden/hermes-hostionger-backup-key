@@ -10,12 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-18T00:18:16.182197+09:00
+    Next run:  2026-08-18T01:19:17.109262+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-17T22:18:04.754519+09:00  ok
-    Execution: unknown  4283a78786224b6b9f075c906ef9b073
+    Last run:  2026-08-17T23:18:43.790802+09:00  ok
+    Execution: unknown  8211e8d374d24bdd9e938aad69716cd9
 
   cdc07526e2fc [active]
     Name:      DEN weekly guest report
@@ -54,11 +54,11 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-17T23:30:20.423730+09:00
+    Next run:  2026-08-18T00:30:38.999102+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-17T23:15:20.423730+09:00  ok
-    Execution: completed  dbaa7091b1f94de093a3d74376a0fefe
+    Last run:  2026-08-18T00:15:38.999102+09:00  ok
+    Execution: completed  1960a440cbab43e1bf04f835c6853ac3
 
