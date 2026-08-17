@@ -93,7 +93,7 @@ display:
   cleanup_progress: false
   long_running_notifications: true
   busy_ack_detail: true
-  background_process_notifications: all
+  background_process_notifications: concise
   platforms:
     slack:
       live_status: verb
@@ -122,7 +122,7 @@ memory:
   flush_min_turns: 6
   write_approval: true
 delegation:
-  max_iterations: 50
+  max_iterations: 250
 skills:
   creation_nudge_interval: 15
 timezone: Asia/Seoul
@@ -145,7 +145,7 @@ updates:
   pre_update_backup: false
   backup_keep: 5
   non_interactive_local_changes: stash
-_config_version: 33
+_config_version: 37
 session_reset:
   mode: both
   idle_minutes: 1440
@@ -218,4 +218,4 @@ gateway:
       chat_id: C0BJAQYGJ0M
       thread_id: '1784914798.541999'
       profile: aroundit
-  multiplex_profiles: true
+  multiplex_profiles: false
