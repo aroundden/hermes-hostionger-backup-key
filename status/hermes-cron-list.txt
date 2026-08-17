@@ -10,44 +10,44 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-17T09:17:11.935012+09:00
+    Next run:  2026-08-17T10:18:15.795316+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-17T09:06:23.695680+09:00  ok
-    Execution: unknown  3e55e75fe1934495bf369694aa4bca29
+    Last run:  2026-08-17T10:08:12.109294+09:00  ok
+    Execution: running  d32e674e36a543f8937509e2078ab4f8
 
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-17T10:12:12.025644+09:00
+    Next run:  2026-08-17T11:12:49.569149+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-17T08:11:34.376248+09:00  ok
-    Execution: unknown  87caa81fc5fe4a9eba1c849435078339
+    Last run:  2026-08-17T09:12:43.532839+09:00  ok
+    Execution: unknown  0b400cc49e4e4a1f92a777204aa768ca
 
   1fc4dc9ddcda [active]
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-17T09:30:00+09:00
+    Next run:  2026-08-18T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-08-14T09:34:02.487885+09:00  ok
-    Execution: completed  7b9ea8e3429a4753a9125af82751d5b4
+    Last run:  2026-08-17T09:35:55.450791+09:00  ok
+    Execution: unknown  a9a28d4b67a14ecfa129d1321eec5d2a
 
   bbbc2a636e02 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-08-17T09:31:00+09:00
+    Next run:  2026-08-18T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings
     Script:    spc_social_watch_notify.py
-    Last run:  2026-08-14T09:32:01.154548+09:00  ok
-    Execution: completed  fd54fa4054f34527a659954b28219227
+    Last run:  2026-08-17T09:31:45.588178+09:00  ok
+    Execution: completed  289439181ec6441e84efee7b920a2ab9
 
   0608448d47c7 [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -91,11 +91,11 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-17T09:21:52.294763+09:00
+    Next run:  2026-08-17T10:22:23.832345+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-17T09:06:52.294763+09:00  ok
-    Execution: completed  339651059968429ea443a1ecea6e5cbf
+    Last run:  2026-08-17T10:07:23.832345+09:00  ok
+    Execution: completed  c61c9e7b03f044adb1c3a6bce77d8ceb
 
