@@ -187,3 +187,35 @@ mcp_servers:
     connect_timeout: 300
     auth: oauth
     enabled: true
+gateway:
+  multiplex_profile_allowlist:
+    - den
+    - aroundit
+    - smd
+  profile_routes:
+    - name: aroundit-email-thread
+      platform: slack
+      chat_id: C0BHVB49WH5
+      thread_id: '1784773233.342939'
+      profile: aroundit
+    - name: aroundit-kmong-channel
+      platform: slack
+      chat_id: C0BNYT05F8X
+      profile: aroundit
+    - name: smd-channel
+      platform: slack
+      chat_id: C0BJDF8693K
+      profile: smd
+    - name: den-channel
+      platform: slack
+      chat_id: C0BM6HMVDQB
+      profile: den
+    - name: den-slack-default
+      platform: slack
+      profile: den
+    - name: aroundit-payroll-thread
+      platform: slack
+      chat_id: C0BJAQYGJ0M
+      thread_id: '1784914798.541999'
+      profile: aroundit
+  multiplex_profiles: true

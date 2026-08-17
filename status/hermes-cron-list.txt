@@ -6,66 +6,29 @@ exit_code=0
 │                         Scheduled Jobs                                  │
 └─────────────────────────────────────────────────────────────────────────┘
 
-  b9f28bf7ac2c [active]
-    Name:      gmail-auto-draft-replies
-    Schedule:  every 5m
-    Repeat:    ∞
-    Next run:  2026-08-17T11:19:54.787591+09:00
-    Deliver:   slack:C0BHVB49WH5:1784773233.342939
-    Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
-    Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-17T11:14:54.787591+09:00  ok
-    Execution: completed  cb61387ecac343f29651b66c03af950c
-
   9275498a9e95 [active]
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-17T12:14:47.903006+09:00
+    Next run:  2026-08-17T16:15:36.092075+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-17T10:14:27.248089+09:00  ok
-    Execution: running  87595c963b23463ebf7e2beaa2093c4f
-
-  1fc4dc9ddcda [active]
-    Name:      SMD Daily Brief — 에스피식 아침 브리프
-    Schedule:  30 9 * * 1-5
-    Repeat:    ∞
-    Next run:  2026-08-18T09:30:00+09:00
-    Deliver:   slack:C0BJDF8693K
-    Skills:    content-operations-briefings, google-workspace
-    Last run:  2026-08-17T09:35:55.450791+09:00  ok
-    Execution: unknown  a9a28d4b67a14ecfa129d1321eec5d2a
-
-  bbbc2a636e02 [active]
-    Name:      SPC 매거진/SNS 업데이트 알림
-    Schedule:  31 9 * * 1-5
-    Repeat:    ∞
-    Next run:  2026-08-18T09:31:00+09:00
-    Deliver:   slack:C0BJDF8693K
-    Skills:    content-operations-briefings
-    Script:    spc_social_watch_notify.py
-    Last run:  2026-08-17T09:31:45.588178+09:00  ok
-    Execution: completed  289439181ec6441e84efee7b920a2ab9
-
-  0608448d47c7 [active]
-    Name:      AROUNDit 월 25일 다건이체 사전점검
-    Schedule:  0 10 24 * *
-    Repeat:    ∞
-    Next run:  2026-08-24T10:00:00+09:00
-    Deliver:   origin
-    Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
+    Last run:  2026-08-17T15:15:36.092075+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
+    Execution: failed  b9fb63d353044020b1f6f71d5b970599
 
   cdc07526e2fc [active]
     Name:      DEN weekly guest report
     Schedule:  0 13 * * 1
     Repeat:    ∞
-    Next run:  2026-08-17T13:00:00+09:00
+    Next run:  2026-08-24T13:00:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-10T13:06:51.886326+09:00  ok
+    Last run:  2026-08-17T13:04:50.752184+09:00  ok
+    Execution: unknown  a69ce6e89af94d53934fc78f7edcbfd4
 
   0dd0f7025404 [active]
     Name:      DEN YouTube daily signal collection
@@ -82,20 +45,22 @@ exit_code=0
     Name:      DEN weekly idea report
     Schedule:  1 13 * * 1
     Repeat:    ∞
-    Next run:  2026-08-17T13:01:00+09:00
+    Next run:  2026-08-24T13:01:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
+    Last run:  2026-08-17T13:07:30.448454+09:00  ok
+    Execution: unknown  e16abb190f7d43dc842780ffce561c0f
 
   46f1141c55bc [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-17T11:22:49.456595+09:00
+    Next run:  2026-08-17T16:11:32.113447+09:00
     Deliver:   origin
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-14T18:52:23.668330+09:00
-    Last run:  2026-08-17T11:07:49.456595+09:00  ok
-    Execution: completed  62744ddbda9240e582f16f52842f8b86
+    Last run:  2026-08-17T15:56:32.113447+09:00  ok
+    Execution: completed  b0a2583465074e6f925a098c428ab163
 

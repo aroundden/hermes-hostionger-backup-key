@@ -1,5 +1,31 @@
 $ hermes -p aroundit cron list
 exit_code=0
 
-No scheduled jobs.
-Create one with 'hermes cron create ...' or the /cron command in chat.
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  a74bb2d8bc4c [active]
+    Name:      gmail-auto-draft-replies
+    Schedule:  every 5m
+    Repeat:    ∞
+    Next run:  2026-08-17T15:59:21.318816+09:00
+    Deliver:   slack:C0BHVB49WH5:1784773233.342939
+    Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
+    Script:    gmail_auto_draft_agent_input.sh
+    Last run:  2026-08-16T13:50:13.478571+09:00  ok
+    Execution: completed  7fb9d81ac2ff4b5d876cbc8994353aeb
+
+  a4642e1093eb [active]
+    Name:      AROUNDit 월 25일 다건이체 사전점검
+    Schedule:  0 10 24 * *
+    Repeat:    ∞
+    Next run:  2026-08-24T10:00:00+09:00
+    Deliver:   slack:C0BJAQYGJ0M:1784914798.541999
+    Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
+
+  ⚠  Gateway is not running — jobs won't fire automatically.
+     Start it with: hermes gateway install
+                    sudo hermes gateway install --system  # Linux servers
+     Check status:  hermes cron status

@@ -1,5 +1,31 @@
 $ hermes -p smd cron list
 exit_code=0
 
-No scheduled jobs.
-Create one with 'hermes cron create ...' or the /cron command in chat.
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  236ef4fff769 [active]
+    Name:      SMD Daily Brief — 에스피식 아침 브리프
+    Schedule:  30 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-08-18T09:30:00+09:00
+    Deliver:   slack:C0BJDF8693K:1784473928.270589
+    Skills:    content-operations-briefings, google-workspace
+    Last run:  2026-08-16T13:48:12.617757+09:00  ok
+    Execution: completed  cd9be7c3fa324e4a817fc03b47b0928a
+
+  76303332d061 [active]
+    Name:      SPC 매거진/SNS 업데이트 알림
+    Schedule:  31 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-08-18T09:31:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings
+    Script:    spc_social_watch_notify.py
+
+  ⚠  Gateway is not running — jobs won't fire automatically.
+     Start it with: hermes gateway install
+                    sudo hermes gateway install --system  # Linux servers
+     Check status:  hermes cron status
