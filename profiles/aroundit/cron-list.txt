@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-17T15:59:21.318816+09:00
+    Next run:  2026-08-17T16:06:30.219847+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-16T13:50:13.478571+09:00  ok
-    Execution: completed  7fb9d81ac2ff4b5d876cbc8994353aeb
+    Last run:  2026-08-17T16:01:30.219847+09:00  blocked_config: [blocked_config] delivery platform 'slack' has no gateway credentials configured (not connected). Configure it via `hermes setup` or change the job's `deliver` target.
+    Execution: failed  e4b1fa49274740d8a6ea89da3ef345a7
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
