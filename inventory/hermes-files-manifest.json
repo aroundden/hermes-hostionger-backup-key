@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 3434,
+  "count": 3392,
   "files": [
     {
       "path": "SOUL.md",
@@ -60,17 +60,17 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1786972666
+      "mtime": 1786973423
     },
     {
       "path": "cron/executions.db",
       "size": 606208,
-      "mtime": 1786972655
+      "mtime": 1786973399
     },
     {
       "path": "cron/jobs.json",
-      "size": 51860,
-      "mtime": 1786972655
+      "size": 51733,
+      "mtime": 1786973399
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -603,11 +603,6 @@
       "mtime": 1786939649
     },
     {
-      "path": "cron/output/46f1141c55bc/2026-08-17_09-52-22.md",
-      "size": 184,
-      "mtime": 1786927942
-    },
-    {
       "path": "cron/output/46f1141c55bc/2026-08-17_10-07-23.md",
       "size": 184,
       "mtime": 1786928843
@@ -851,6 +846,11 @@
       "path": "cron/output/46f1141c55bc/2026-08-17_22-14-35.md",
       "size": 184,
       "mtime": 1786972475
+    },
+    {
+      "path": "cron/output/46f1141c55bc/2026-08-17_22-29-59.md",
+      "size": 184,
+      "mtime": 1786973399
     },
     {
       "path": "cron/output/46f1141c55bc/monitor_last_output.txt",
@@ -1108,11 +1108,6 @@
       "mtime": 1786094086
     },
     {
-      "path": "cron/output/9275498a9e95/2026-08-15_19-48-38.md",
-      "size": 286,
-      "mtime": 1786790918
-    },
-    {
       "path": "cron/output/9275498a9e95/2026-08-15_20-48-39.md",
       "size": 286,
       "mtime": 1786794519
@@ -1356,6 +1351,11 @@
       "path": "cron/output/9275498a9e95/2026-08-17_21-17-03.md",
       "size": 217,
       "mtime": 1786969023
+    },
+    {
+      "path": "cron/output/9275498a9e95/2026-08-17_22-18-04.md",
+      "size": 217,
+      "mtime": 1786972684
     },
     {
       "path": "cron/output/a9804f758911/2026-07-25_06-29-09.md",
@@ -1759,13 +1759,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1786972667
+      "size": 15,
+      "mtime": 1786973423
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786972667
+      "size": 17,
+      "mtime": 1786973423
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1788,149 +1788,64 @@
       "mtime": 1784322070
     },
     {
-      "path": "profiles/akii/.mcp-discovery.lock",
-      "size": 0,
-      "mtime": 1786949304
-    },
-    {
       "path": "profiles/akii/.update_check",
       "size": 70,
-      "mtime": 1786949309
+      "mtime": 1786973363
     },
     {
       "path": "profiles/akii/SOUL.md",
-      "size": 1710,
-      "mtime": 1784299612
-    },
-    {
-      "path": "profiles/akii/auth.lock",
-      "size": 0,
-      "mtime": 1784306954
-    },
-    {
-      "path": "profiles/akii/cache/mcp_schema_cache.json",
-      "size": 822,
-      "mtime": 1786518155
-    },
-    {
-      "path": "profiles/akii/cache/model_catalog.json",
-      "size": 6747,
-      "mtime": 1786949307
+      "size": 513,
+      "mtime": 1786973359
     },
     {
       "path": "profiles/akii/cache/schema_columns.json",
       "size": 4318,
-      "mtime": 1786949305
-    },
-    {
-      "path": "profiles/akii/config.yaml",
-      "size": 6961,
-      "mtime": 1784306354
+      "mtime": 1786973360
     },
     {
       "path": "profiles/akii/cron/.jobs.lock",
       "size": 0,
-      "mtime": 1784433876
+      "mtime": 1786973360
     },
     {
       "path": "profiles/akii/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786949906
+      "mtime": 1786973420
     },
     {
       "path": "profiles/akii/cron/executions.db",
       "size": 20480,
-      "mtime": 1784433876
+      "mtime": 1786973360
     },
     {
       "path": "profiles/akii/cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1786949906
+      "mtime": 1786973420
     },
     {
       "path": "profiles/akii/cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1786949906
-    },
-    {
-      "path": "profiles/akii/memories/MEMORY.md",
-      "size": 786,
-      "mtime": 1784295386
-    },
-    {
-      "path": "profiles/akii/memories/USER.md",
-      "size": 584,
-      "mtime": 1784298198
-    },
-    {
-      "path": "profiles/akii/models_dev_cache.etag",
-      "size": 36,
-      "mtime": 1786949308
-    },
-    {
-      "path": "profiles/akii/models_dev_cache.json",
-      "size": 3898990,
-      "mtime": 1786949308
-    },
-    {
-      "path": "profiles/akii/ollama_cloud_models_cache.json",
-      "size": 344,
-      "mtime": 1786949307
-    },
-    {
-      "path": "profiles/akii/projects.db",
-      "size": 45056,
-      "mtime": 1786949306
-    },
-    {
-      "path": "profiles/akii/provider_models_cache.json",
-      "size": 983,
-      "mtime": 1786949310
+      "size": 16,
+      "mtime": 1786973420
     },
     {
       "path": "profiles/akii/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786949304
-    },
-    {
-      "path": "profiles/akii/skills/.curator_state",
-      "size": 337,
-      "mtime": 1784295802
+      "mtime": 1786973359
     },
     {
       "path": "profiles/akii/skills/.hub/audit.log",
-      "size": 226,
-      "mtime": 1784304338
-    },
-    {
-      "path": "profiles/akii/skills/.hub/index-cache/hermes-index.json",
-      "size": 40882642,
-      "mtime": 1784304326
+      "size": 0,
+      "mtime": 1786973427
     },
     {
       "path": "profiles/akii/skills/.hub/lock.json",
-      "size": 1872,
-      "mtime": 1785250963
-    },
-    {
-      "path": "profiles/akii/skills/.hub/scan-cache/b707d2892e5889f2e6c8e1f92964a0cbbfca9c036cf72a62d0bf5d7319ed01ce-3f89192e85665d05.json",
-      "size": 538,
-      "mtime": 1784304330
+      "size": 32,
+      "mtime": 1786973427
     },
     {
       "path": "profiles/akii/skills/.hub/taps.json",
       "size": 13,
-      "mtime": 1784304324
-    },
-    {
-      "path": "profiles/akii/skills/.usage.json",
-      "size": 5067,
-      "mtime": 1784306299
-    },
-    {
-      "path": "profiles/akii/skills/.usage.json.lock",
-      "size": 0,
-      "mtime": 1784139242
+      "mtime": 1786973427
     },
     {
       "path": "profiles/akii/skills/apple/DESCRIPTION.md",
@@ -1976,26 +1891,6 @@
       "path": "profiles/akii/skills/autonomous-ai-agents/computer-use/SKILL.md",
       "size": 16461,
       "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/hermes-messaging-gateway-ops/SKILL.md",
-      "size": 6173,
-      "mtime": 1784292342
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/hermes-messaging-gateway-ops/references/slack-playmcp-gateway-setup.md",
-      "size": 3834,
-      "mtime": 1784292367
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/hermes-provider-troubleshooting/SKILL.md",
-      "size": 4122,
-      "mtime": 1784299534
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/hermes-provider-troubleshooting/references/anthropic-oauth-vs-active-provider.md",
-      "size": 2292,
-      "mtime": 1784299552
     },
     {
       "path": "profiles/akii/skills/autonomous-ai-agents/merge-reconciler/SKILL.md",
@@ -2516,11 +2411,6 @@
       "path": "profiles/akii/skills/creative/excalidraw/scripts/upload.py",
       "size": 3817,
       "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/higgsfield-cli-ops/SKILL.md",
-      "size": 5600,
-      "mtime": 1784305129
     },
     {
       "path": "profiles/akii/skills/creative/humanizer/LICENSE",
@@ -3123,16 +3013,6 @@
       "mtime": 1784137460
     },
     {
-      "path": "profiles/akii/skills/data-science/DESCRIPTION.md",
-      "size": 137,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/data-science/jupyter-live-kernel/SKILL.md",
-      "size": 5285,
-      "mtime": 1784137460
-    },
-    {
       "path": "profiles/akii/skills/devops/sdlc-review/SKILL.md",
       "size": 9073,
       "mtime": 1786805900
@@ -3141,16 +3021,6 @@
       "path": "profiles/akii/skills/email/DESCRIPTION.md",
       "size": 101,
       "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/email/email-auto-drafting/SKILL.md",
-      "size": 5870,
-      "mtime": 1784294738
-    },
-    {
-      "path": "profiles/akii/skills/email/email-auto-drafting/references/gmail-auto-draft-automation.md",
-      "size": 8584,
-      "mtime": 1784294779
     },
     {
       "path": "profiles/akii/skills/email/email-inbox-triage/SKILL.md",
@@ -3263,16 +3133,6 @@
       "mtime": 1784137460
     },
     {
-      "path": "profiles/akii/skills/hermes-desktop-plugins/SKILL.md",
-      "size": 8849,
-      "mtime": 1784568342
-    },
-    {
-      "path": "profiles/akii/skills/hermes-desktop-plugins/templates/plugin.js",
-      "size": 3141,
-      "mtime": 1784568342
-    },
-    {
       "path": "profiles/akii/skills/media/DESCRIPTION.md",
       "size": 139,
       "mtime": 1784137460
@@ -3280,11 +3140,6 @@
     {
       "path": "profiles/akii/skills/media/gif-search/SKILL.md",
       "size": 2720,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/heartmula/SKILL.md",
-      "size": 6412,
       "mtime": 1784137460
     },
     {
@@ -3438,36 +3293,6 @@
       "mtime": 1784137460
     },
     {
-      "path": "profiles/akii/skills/mlops/models/audiocraft/SKILL.md",
-      "size": 16189,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/audiocraft/references/advanced-usage.md",
-      "size": 16953,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/audiocraft/references/troubleshooting.md",
-      "size": 11412,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/segment-anything/SKILL.md",
-      "size": 13372,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/segment-anything/references/advanced-usage.md",
-      "size": 15803,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/segment-anything/references/troubleshooting.md",
-      "size": 11914,
-      "mtime": 1784137460
-    },
-    {
       "path": "profiles/akii/skills/note-taking/DESCRIPTION.md",
       "size": 146,
       "mtime": 1784137460
@@ -3608,24 +3433,14 @@
       "mtime": 1786266700
     },
     {
-      "path": "profiles/akii/skills/productivity/gmail-workflow-automation/SKILL.md",
-      "size": 9321,
-      "mtime": 1784302407
-    },
-    {
-      "path": "profiles/akii/skills/productivity/gmail-workflow-automation/references/gmail-auto-draft-automation.md",
-      "size": 4585,
-      "mtime": 1784295588
-    },
-    {
-      "path": "profiles/akii/skills/productivity/gmail-workflow-automation/references/gmail-slack-readable-summary-format.md",
-      "size": 4750,
-      "mtime": 1784299241
-    },
-    {
       "path": "profiles/akii/skills/productivity/google-workspace/SKILL.md",
-      "size": 13411,
-      "mtime": 1784137460
+      "size": 13670,
+      "mtime": 1786266700
+    },
+    {
+      "path": "profiles/akii/skills/productivity/google-workspace/references/daily-brief.md",
+      "size": 3217,
+      "mtime": 1786266700
     },
     {
       "path": "profiles/akii/skills/productivity/google-workspace/references/gmail-search-syntax.md",
@@ -3639,18 +3454,18 @@
     },
     {
       "path": "profiles/akii/skills/productivity/google-workspace/scripts/google_api.py",
-      "size": 43483,
-      "mtime": 1784137460
+      "size": 43553,
+      "mtime": 1785250903
     },
     {
       "path": "profiles/akii/skills/productivity/google-workspace/scripts/gws_bridge.py",
-      "size": 3648,
-      "mtime": 1784137460
+      "size": 3682,
+      "mtime": 1785250903
     },
     {
       "path": "profiles/akii/skills/productivity/google-workspace/scripts/setup.py",
-      "size": 18743,
-      "mtime": 1784137460
+      "size": 20231,
+      "mtime": 1786266700
     },
     {
       "path": "profiles/akii/skills/productivity/maps/SKILL.md",
@@ -3786,11 +3601,6 @@
       "path": "profiles/akii/skills/productivity/pdf/tests/test_pdf_skill.py",
       "size": 17433,
       "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/petdex/SKILL.md",
-      "size": 3534,
-      "mtime": 1784137460
     },
     {
       "path": "profiles/akii/skills/productivity/powerpoint/LICENSE",
@@ -3971,21 +3781,6 @@
       "path": "profiles/akii/skills/research/llm-wiki/SKILL.md",
       "size": 20121,
       "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/polymarket/SKILL.md",
-      "size": 2985,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/polymarket/references/api-endpoints.md",
-      "size": 4542,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/polymarket/scripts/polymarket.py",
-      "size": 10214,
-      "mtime": 1784137460
     },
     {
       "path": "profiles/akii/skills/research/research-paper-writing/SKILL.md",
@@ -4268,11 +4063,6 @@
       "mtime": 1784137460
     },
     {
-      "path": "profiles/akii/skills/seedance-prompt-en/SKILL.md",
-      "size": 15337,
-      "mtime": 1784304338
-    },
-    {
       "path": "profiles/akii/skills/smart-home/DESCRIPTION.md",
       "size": 123,
       "mtime": 1784137460
@@ -4318,26 +4108,6 @@
       "mtime": 1785250903
     },
     {
-      "path": "profiles/akii/skills/software-development/internet-access-tool-setup/SKILL.md",
-      "size": 9285,
-      "mtime": 1784304237
-    },
-    {
-      "path": "profiles/akii/skills/software-development/internet-access-tool-setup/references/agent-reach-macos-setup.md",
-      "size": 2317,
-      "mtime": 1784139628
-    },
-    {
-      "path": "profiles/akii/skills/software-development/internet-access-tool-setup/references/hermes-slack-gateway-setup.md",
-      "size": 2846,
-      "mtime": 1784291802
-    },
-    {
-      "path": "profiles/akii/skills/software-development/internet-access-tool-setup/references/playmcp-mcp-gateway.md",
-      "size": 3467,
-      "mtime": 1784144584
-    },
-    {
       "path": "profiles/akii/skills/software-development/node-inspect-debugger/SKILL.md",
       "size": 10894,
       "mtime": 1786266700
@@ -4346,16 +4116,6 @@
       "path": "profiles/akii/skills/software-development/plan/SKILL.md",
       "size": 8903,
       "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/playmcp-mcp-gateway/SKILL.md",
-      "size": 4282,
-      "mtime": 1784291172
-    },
-    {
-      "path": "profiles/akii/skills/software-development/playmcp-mcp-gateway/references/playmcp-mcporter-hermes.md",
-      "size": 3146,
-      "mtime": 1784291195
     },
     {
       "path": "profiles/akii/skills/software-development/python-debugpy/SKILL.md",
@@ -4388,24 +4148,14 @@
       "mtime": 1784137460
     },
     {
-      "path": "profiles/akii/skills/yuanbao/SKILL.md",
-      "size": 3795,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/slack-manifest.json",
-      "size": 13655,
-      "mtime": 1784306944
-    },
-    {
       "path": "profiles/akii/state.db-shm",
       "size": 32768,
-      "mtime": 1786972671
+      "mtime": 1786973423
     },
     {
       "path": "profiles/akii/state.db-wal",
       "size": 0,
-      "mtime": 1786949306
+      "mtime": 1786973363
     },
     {
       "path": "profiles/aroundit/.codex_gpt55_autoraise_notice",
@@ -4420,7 +4170,7 @@
     {
       "path": "profiles/aroundit/.update_check",
       "size": 70,
-      "mtime": 1786949326
+      "mtime": 1786973329
     },
     {
       "path": "profiles/aroundit/SOUL.md",
@@ -4440,7 +4190,7 @@
     {
       "path": "profiles/aroundit/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1786855729
+      "mtime": 1786973278
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
@@ -4461,6 +4211,11 @@
       "path": "profiles/aroundit/cache/tool_discovery_cache.json",
       "size": 11937,
       "mtime": 1786855001
+    },
+    {
+      "path": "profiles/aroundit/channel_directory.json",
+      "size": 192,
+      "mtime": 1786973280
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -4485,27 +4240,22 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786972667
+      "mtime": 1786973401
     },
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 65536,
-      "mtime": 1786972522
+      "mtime": 1786973267
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 7870,
-      "mtime": 1786972522
+      "size": 7653,
+      "mtime": 1786973267
     },
     {
       "path": "profiles/aroundit/cron/notepad.db",
       "size": 12288,
       "mtime": 1786855756
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-20-30.md",
-      "size": 590,
-      "mtime": 1786954830
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-26-31.md",
@@ -4753,24 +4503,49 @@
       "mtime": 1786972522
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_22-27-46.md",
+      "size": 80961,
+      "mtime": 1786973266
+    },
+    {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1786972667
+      "size": 16,
+      "mtime": 1786973402
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1786972667
+      "size": 18,
+      "mtime": 1786973402
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 297,
-      "mtime": 1786855813
+      "size": 629,
+      "mtime": 1786973266
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
       "size": 469,
-      "mtime": 1786972518
+      "mtime": 1786972885
+    },
+    {
+      "path": "profiles/aroundit/gateway-starts.log",
+      "size": 18,
+      "mtime": 1786973279
+    },
+    {
+      "path": "profiles/aroundit/gateway.lock",
+      "size": 230,
+      "mtime": 1786973279
+    },
+    {
+      "path": "profiles/aroundit/gateway.pid",
+      "size": 230,
+      "mtime": 1786973279
+    },
+    {
+      "path": "profiles/aroundit/gateway_state.json",
+      "size": 486,
+      "mtime": 1786973370
     },
     {
       "path": "profiles/aroundit/memories/MEMORY.md",
@@ -4785,12 +4560,12 @@
     {
       "path": "profiles/aroundit/models_dev_cache.etag",
       "size": 36,
-      "mtime": 1786855002
+      "mtime": 1786973355
     },
     {
       "path": "profiles/aroundit/models_dev_cache.json",
-      "size": 3863787,
-      "mtime": 1786855002
+      "size": 3895977,
+      "mtime": 1786973355
     },
     {
       "path": "profiles/aroundit/profile.yaml",
@@ -4810,7 +4585,7 @@
     {
       "path": "profiles/aroundit/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786949316
+      "mtime": 1786973327
     },
     {
       "path": "profiles/aroundit/skills/.hub/audit.log",
@@ -4830,7 +4605,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 1358,
-      "mtime": 1786972522
+      "mtime": 1786972900
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7390,17 +7165,27 @@
     {
       "path": "profiles/aroundit/state.db-shm",
       "size": 32768,
-      "mtime": 1786972671
+      "mtime": 1786973279
     },
     {
       "path": "profiles/aroundit/state.db-wal",
-      "size": 0,
-      "mtime": 1786950458
+      "size": 1038272,
+      "mtime": 1786973371
+    },
+    {
+      "path": "profiles/aroundit/state/gateway.heartbeat",
+      "size": 128,
+      "mtime": 1786973400
+    },
+    {
+      "path": "profiles/aroundit/state/gateway.lifecycle.json",
+      "size": 117,
+      "mtime": 1786973279
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
       "size": 183421,
-      "mtime": 1786972518
+      "mtime": 1786972885
     },
     {
       "path": "profiles/den/.codex_gpt55_autoraise_notice",
@@ -7414,8 +7199,8 @@
     },
     {
       "path": "profiles/den/.update_check",
-      "size": 70,
-      "mtime": 1786949309
+      "size": 71,
+      "mtime": 1786973329
     },
     {
       "path": "profiles/den/SOUL.md",
@@ -7460,7 +7245,7 @@
     {
       "path": "profiles/den/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786972667
+      "mtime": 1786973395
     },
     {
       "path": "profiles/den/cron/executions.db",
@@ -7470,12 +7255,12 @@
     {
       "path": "profiles/den/cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1786972667
+      "mtime": 1786973396
     },
     {
       "path": "profiles/den/cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786972667
+      "size": 17,
+      "mtime": 1786973396
     },
     {
       "path": "profiles/den/memories/MEMORY.md",
@@ -7510,7 +7295,7 @@
     {
       "path": "profiles/den/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786949305
+      "mtime": 1786973327
     },
     {
       "path": "profiles/den/skills/.hub/audit.log",
@@ -10160,12 +9945,12 @@
     {
       "path": "profiles/den/state.db-shm",
       "size": 32768,
-      "mtime": 1786972671
+      "mtime": 1786973423
     },
     {
       "path": "profiles/den/state.db-wal",
       "size": 0,
-      "mtime": 1786949306
+      "mtime": 1786973333
     },
     {
       "path": "profiles/smd/.codex_gpt55_autoraise_notice",
@@ -10179,8 +9964,8 @@
     },
     {
       "path": "profiles/smd/.update_check",
-      "size": 71,
-      "mtime": 1786949309
+      "size": 70,
+      "mtime": 1786973330
     },
     {
       "path": "profiles/smd/SOUL.md",
@@ -10245,7 +10030,7 @@
     {
       "path": "profiles/smd/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786972667
+      "mtime": 1786973396
     },
     {
       "path": "profiles/smd/cron/executions.db",
@@ -10275,12 +10060,12 @@
     {
       "path": "profiles/smd/cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1786972667
+      "mtime": 1786973396
     },
     {
       "path": "profiles/smd/cron/ticker_last_success",
       "size": 18,
-      "mtime": 1786972667
+      "mtime": 1786973396
     },
     {
       "path": "profiles/smd/cron/usage_audit.jsonl",
@@ -10325,7 +10110,7 @@
     {
       "path": "profiles/smd/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786949306
+      "mtime": 1786973326
     },
     {
       "path": "profiles/smd/skills/.hub/audit.log",
@@ -12955,12 +12740,12 @@
     {
       "path": "profiles/smd/state.db-shm",
       "size": 32768,
-      "mtime": 1786972671
+      "mtime": 1786973423
     },
     {
       "path": "profiles/smd/state.db-wal",
       "size": 0,
-      "mtime": 1786949309
+      "mtime": 1786973333
     },
     {
       "path": "profiles/smd/state/spc_social_pending.txt",
@@ -12975,7 +12760,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786972193
+      "mtime": 1786973363
     },
     {
       "path": "skills/.curator_backups/2026-07-24T14-07-53Z/cron-jobs.json",
@@ -13069,8 +12854,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 64539,
-      "mtime": 1786972193
+      "size": 64541,
+      "mtime": 1786973394
     },
     {
       "path": "skills/.usage.json.lock",
@@ -13144,13 +12929,18 @@
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-messaging-gateway-ops/SKILL.md",
-      "size": 9505,
-      "mtime": 1786684825
+      "size": 10332,
+      "mtime": 1786973394
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-messaging-gateway-ops/references/gateway-fd-exhaustion.md",
       "size": 4804,
       "mtime": 1786684806
+    },
+    {
+      "path": "skills/autonomous-ai-agents/hermes-messaging-gateway-ops/references/slack-app-install-token-cutover.md",
+      "size": 3331,
+      "mtime": 1786972786
     },
     {
       "path": "skills/autonomous-ai-agents/hermes-messaging-gateway-ops/references/slack-app-manifest-ui-automation.md",

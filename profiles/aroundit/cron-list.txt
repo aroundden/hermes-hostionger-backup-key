@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-17T22:20:22.153672+09:00
+    Next run:  2026-08-17T22:32:47.764619+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-17T22:15:22.153672+09:00  blocked_config: [blocked_config:silent] delivery platform 'slack' has no gateway credentials configured (not connected). Configure it via `hermes setup` or change the job's `deliver` target.
-    Execution: failed  6ab0ac3824d14b7eba32da8dc20492dd
+    Last run:  2026-08-17T22:27:47.764619+09:00  ok
+    Execution: completed  3c8a764e914d44bebc5b5d6f5257aeea
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -25,7 +25,3 @@ exit_code=0
     Deliver:   slack:C0BJAQYGJ0M:1784914798.541999
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
 
-  ⚠  Gateway is not running — jobs won't fire automatically.
-     Start it with: hermes gateway install
-                    sudo hermes gateway install --system  # Linux servers
-     Check status:  hermes cron status
