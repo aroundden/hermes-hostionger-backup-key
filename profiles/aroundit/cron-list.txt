@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-18T01:46:57.726543+09:00
+    Next run:  2026-08-18T06:45:35.995121+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-18T01:41:57.726543+09:00  ok
-    Execution: completed  a29b291d367d4c9b933f3aa6d365711e
+    Last run:  2026-08-18T06:40:35.995121+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (3 failures in a row)
+    Execution: failed  991715e896874aa2b7e2084d1120132d
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검

@@ -10,12 +10,14 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-18T02:43:39.868437+09:00
+    Next run:  2026-08-18T07:44:14.895375+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-18T01:33:12.406069+09:00  ok
-    Execution: completed  82a2694641b74284848405fbcd66007a
+    Last run:  2026-08-18T05:44:14.348519+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (4 failures in a row)
+    Execution: running  d391212f00a048ff82476a55fe831d68
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -54,11 +56,11 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-18T01:58:40.670222+09:00
+    Next run:  2026-08-18T06:46:13.815302+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-18T01:33:42.394237+09:00
-    Last run:  2026-08-18T01:34:19.703038+09:00  ok
-    Execution: completed  bc081241106343229438d38eeb89d765
+    Last run:  2026-08-18T06:31:13.815302+09:00  ok
+    Execution: completed  f9fcd5cf570f4d2b89ee22516bf32d73
 

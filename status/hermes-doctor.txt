@@ -16,8 +16,8 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (3.1 MB)
-    → cron/executions.db: WAL journal mode (20.0 KB)
+    → state.db: WAL journal mode (3.2 MB)
+    → cron/executions.db: WAL journal mode (28.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
   ✓ Virtual environment active
   ✓ Version files consistent (0.20.2)
@@ -39,7 +39,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ⚠ Config version outdated (v0 → v37) (new settings available)
+  ✓ Config version up to date (v37)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -63,9 +63,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (6 sessions)
-    → state.db logical size 3.1 MB, 782 pages, 49 free, WAL 28.2 KB
-    → 114 messages, 6 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (8 sessions)
+    → state.db logical size 3.2 MB, 820 pages, 12 free, WAL 2.6 MB
+    → 150 messages, 8 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -82,9 +82,9 @@ exit_code=0
   ⚠ Playwright Chromium not installed (browser_* tools will be hidden from the agent)
     → Install with: cd /Users/insideden/.hermes/hermes-agent && npx playwright install --with-deps chromium
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 4 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -94,7 +94,6 @@ exit_code=0
 
 ◆ Tool Availability
   ✓ a2a
-  ✓ browser-use
   ✓ clarify
   ✓ code_execution
   ✓ computer_use
@@ -102,6 +101,7 @@ exit_code=0
   ✓ delegation
   ✓ desktop_ui
   ✓ file
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ✓ memory
   ✓ project
   ✓ session_search
@@ -111,10 +111,10 @@ exit_code=0
   ✓ tts
   ✓ video
   ✓ vision
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ⚠ bfl (system dependency not met)
   ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
+  ⚠ browser-use (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
@@ -142,13 +142,12 @@ exit_code=0
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 5 issue(s) to address:
+  Found 4 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Run 'hermes doctor --fix' or 'hermes setup' to migrate config
-  3. web workspace has 1 npm vulnerability
-  4. ui-tui workspace has 1 npm vulnerability
-  5. Run 'hermes setup' to configure missing API keys for full tool access
+  2. web workspace has 4 npm vulnerabilities
+  3. ui-tui workspace has 3 npm vulnerabilities
+  4. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
