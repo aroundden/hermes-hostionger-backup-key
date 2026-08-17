@@ -2,10 +2,9 @@ $ hermes mcp list
 exit_code=0
 
 
-  MCP Servers:
+  No MCP servers configured.
 
-  Name             Transport                      Tools        Status    
-  ──────────────── ────────────────────────────── ──────────── ──────────
-  mcp-gateway      /Users/insideden/.local/b...   all          ✓ enabled
-  clobe            https://api.clobe.ai/mcp       all          ✓ enabled
+  Add one with:
+    hermes mcp add <name> --url <endpoint>
+    hermes mcp add <name> --command <cmd> --args <args...>
 

@@ -14,7 +14,7 @@ exit_code=0
   Provider:     ChatGPT or Codex Subscription
 
 ◆ API Keys
-  OpenRouter    ✓ http...keys
+  OpenRouter    ✗ (not set)
   OpenAI        ✗ (not set)
   Google / Gemini  ✗ (not set)
   DeepSeek      ✗ (not set)
@@ -38,14 +38,14 @@ exit_code=0
 ◆ Auth Providers
   Nous Portal   ✗ not logged in (run: hermes portal)
   OpenAI Codex  ✓ logged in
-    Auth file:  /Users/insideden/.hermes/auth.json
+    Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
     Refreshed: <REDACTED>
   Qwen OAuth    ✗ not logged in (run: qwen auth qwen-oauth)
     Auth file:  /Users/insideden/.qwen/oauth_creds.json
     Error:      Qwen CLI credentials not found. Run 'qwen auth qwen-oauth' first.
   MiniMax OAuth  ✗ not logged in (run: hermes auth add minimax-oauth)
   xAI OAuth     ✗ not logged in (run: hermes auth add xai-oauth)
-    Auth file:  /Users/insideden/.hermes/auth.json
+    Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
     Error:      No xAI OAuth credentials stored. Select xAI Grok OAuth (SuperGrok / Premium+) in `hermes model`.
 
 ◆ API-Key Providers
@@ -63,7 +63,7 @@ exit_code=0
 ◆ Messaging Platforms
   Telegram      ✗ not configured
   Discord       ✗ not configured
-  WhatsApp      ✓ configured
+  WhatsApp      ✗ not configured
   Signal        ✗ not configured
   Slack         ✓ configured
   Email         ✗ not configured
@@ -78,16 +78,14 @@ exit_code=0
   Yuanbao       ✗ not configured
 
 ◆ Gateway Service
-  Status:       ✓ running
+  Status:       ✗ stopped
   Manager:      launchd
-  PID(s):       76271
 
 ◆ Scheduled Jobs
-  Jobs:         5 active, 15 total
+  Jobs:         1 active, 5 total
 
 ◆ Sessions
-  Active:       13 session(s)
-  Last activity:     just now
+  Active:       0
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics

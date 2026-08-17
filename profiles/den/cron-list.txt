@@ -1,5 +1,22 @@
 $ hermes -p den cron list
 exit_code=0
 
-No scheduled jobs.
-Create one with 'hermes cron create ...' or the /cron command in chat.
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  c8b4c9e397d0 [active]
+    Name:      Hermes GitHub sanitized backup
+    Schedule:  every 60m
+    Repeat:    ∞
+    Next run:  2026-08-18T02:33:00.574315+09:00
+    Deliver:   local
+    Script:    hermes_github_backup.py
+    Mode:      no-agent (script stdout delivered directly)
+    Execution: running  82a2694641b74284848405fbcd66007a
+
+  ⚠  Gateway is not running — jobs won't fire automatically.
+     Start it with: hermes gateway install
+                    sudo hermes gateway install --system  # Linux servers
+     Check status:  hermes cron status
