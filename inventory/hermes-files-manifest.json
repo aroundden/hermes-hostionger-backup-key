@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 2943,
+  "count": 2969,
   "files": [
     {
       "path": "SOUL.md",
@@ -60,7 +60,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1786984365
+      "mtime": 1786985122
     },
     {
       "path": "cron/executions.db",
@@ -69,8 +69,8 @@
     },
     {
       "path": "cron/jobs.json",
-      "size": 51787,
-      "mtime": 1786984283
+      "size": 51927,
+      "mtime": 1786985019
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -1759,13 +1759,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1786984365
+      "size": 18,
+      "mtime": 1786985122
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786984365
+      "size": 17,
+      "mtime": 1786985122
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1850,7 +1850,7 @@
     {
       "path": "profiles/aroundit/channel_directory.json",
       "size": 1534,
-      "mtime": 1786984115
+      "mtime": 1786985017
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -1875,32 +1875,22 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786984343
+      "mtime": 1786985125
     },
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 69632,
-      "mtime": 1786984053
+      "mtime": 1786984917
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
       "size": 7680,
-      "mtime": 1786984053
+      "mtime": 1786984917
     },
     {
       "path": "profiles/aroundit/cron/notepad.db",
       "size": 12288,
       "mtime": 1786855756
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_19-50-53.md",
-      "size": 590,
-      "mtime": 1786963853
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_19-56-55.md",
-      "size": 590,
-      "mtime": 1786964215
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_20-02-56.md",
@@ -2143,24 +2133,34 @@
       "mtime": 1786984053
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-18_01-34-43.md",
+      "size": 77451,
+      "mtime": 1786984483
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-18_01-41-57.md",
+      "size": 77451,
+      "mtime": 1786984917
+    },
+    {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1786984343
+      "mtime": 1786985125
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 18,
-      "mtime": 1786984343
+      "mtime": 1786985125
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 8481,
-      "mtime": 1786984053
+      "size": 9135,
+      "mtime": 1786984917
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
       "size": 541,
-      "mtime": 1786984010
+      "mtime": 1786984855
     },
     {
       "path": "profiles/aroundit/gateway-starts.log",
@@ -2245,7 +2245,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 2257,
-      "mtime": 1786984017
+      "mtime": 1786984864
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -4810,12 +4810,12 @@
     {
       "path": "profiles/aroundit/state.db-wal",
       "size": 4276592,
-      "mtime": 1786984053
+      "mtime": 1786984917
     },
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 129,
-      "mtime": 1786984386
+      "mtime": 1786985107
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
@@ -4830,12 +4830,12 @@
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
       "size": 80805,
-      "mtime": 1786984010
+      "mtime": 1786984855
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-live-review.json",
       "size": 179694,
-      "mtime": 1786984050
+      "mtime": 1786984909
     },
     {
       "path": "profiles/aroundit/tmp/inspect_gmail_thread.py",
@@ -4898,9 +4898,14 @@
       "mtime": 1786854969
     },
     {
+      "path": "profiles/den/bin/tirith",
+      "size": 19327152,
+      "mtime": 1786985056
+    },
+    {
       "path": "profiles/den/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1786984380
+      "mtime": 1786985054
     },
     {
       "path": "profiles/den/cache/schema_columns.json",
@@ -4908,9 +4913,24 @@
       "mtime": 1786975394
     },
     {
+      "path": "profiles/den/cache/terminal-output/out-1786984538-31255-bc90.log",
+      "size": 136030,
+      "mtime": 1786984538
+    },
+    {
+      "path": "profiles/den/cache/terminal-output/out-1786984882-33078-4790.log",
+      "size": 152221,
+      "mtime": 1786984882
+    },
+    {
       "path": "profiles/den/cache/tool_discovery_cache.json",
       "size": 12246,
       "mtime": 1786984232
+    },
+    {
+      "path": "profiles/den/channel_directory.json",
+      "size": 907,
+      "mtime": 1786985056
     },
     {
       "path": "profiles/den/config.yaml",
@@ -4923,9 +4943,29 @@
       "mtime": 1786984233
     },
     {
+      "path": "profiles/den/cron/.fire-23570c09d89f508985b84dfe407250f5.lock",
+      "size": 0,
+      "mtime": 1786984479
+    },
+    {
+      "path": "profiles/den/cron/.fire-4620dca2130151be89d6abf3a7c229ea.lock",
+      "size": 0,
+      "mtime": 1786984809
+    },
+    {
       "path": "profiles/den/cron/.fire-7d3c4116a25b5e0588ff75208c3984b2.lock",
       "size": 0,
       "mtime": 1786984380
+    },
+    {
+      "path": "profiles/den/cron/.fire-a89583fc72275bc7b9282cc92c928723.lock",
+      "size": 0,
+      "mtime": 1786984421
+    },
+    {
+      "path": "profiles/den/cron/.fire-b1c5310683b55c5580e76621c2d4e3d8.lock",
+      "size": 0,
+      "mtime": 1786984407
     },
     {
       "path": "profiles/den/cron/.jobs.lock",
@@ -4935,27 +4975,87 @@
     {
       "path": "profiles/den/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786975994
+      "mtime": 1786985117
     },
     {
       "path": "profiles/den/cron/executions.db",
       "size": 20480,
-      "mtime": 1786984380
+      "mtime": 1786984959
     },
     {
       "path": "profiles/den/cron/jobs.json",
-      "size": 14625,
-      "mtime": 1786984380
+      "size": 14857,
+      "mtime": 1786985020
+    },
+    {
+      "path": "profiles/den/cron/notepad.db",
+      "size": 12288,
+      "mtime": 1786984422
+    },
+    {
+      "path": "profiles/den/cron/output/35fbda62da07/2026-08-18_01-33-40.md",
+      "size": 648,
+      "mtime": 1786984420
+    },
+    {
+      "path": "profiles/den/cron/output/86a1fb468022/2026-08-18_01-42-39.md",
+      "size": 45238,
+      "mtime": 1786984959
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-08-18_01-34-19.md",
+      "size": 21481,
+      "mtime": 1786984459
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/monitor_last_output.txt",
+      "size": 104,
+      "mtime": 1786984422
+    },
+    {
+      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-08-18_01-33-12.md",
+      "size": 217,
+      "mtime": 1786984392
+    },
+    {
+      "path": "profiles/den/cron/output/cc4d2fa54398/2026-08-18_01-40-07.md",
+      "size": 91481,
+      "mtime": 1786984807
     },
     {
       "path": "profiles/den/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1786975994
+      "mtime": 1786985117
     },
     {
       "path": "profiles/den/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1786975994
+      "mtime": 1786985117
+    },
+    {
+      "path": "profiles/den/cron/usage_audit.jsonl",
+      "size": 897,
+      "mtime": 1786984959
+    },
+    {
+      "path": "profiles/den/gateway-starts.log",
+      "size": 18,
+      "mtime": 1786985054
+    },
+    {
+      "path": "profiles/den/gateway.lock",
+      "size": 250,
+      "mtime": 1786985054
+    },
+    {
+      "path": "profiles/den/gateway.pid",
+      "size": 250,
+      "mtime": 1786985054
+    },
+    {
+      "path": "profiles/den/gateway_state.json",
+      "size": 557,
+      "mtime": 1786985055
     },
     {
       "path": "profiles/den/memories/MEMORY.md",
@@ -5005,7 +5105,7 @@
     {
       "path": "profiles/den/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786984232
+      "mtime": 1786985071
     },
     {
       "path": "profiles/den/skills/.hub/audit.log",
@@ -5021,6 +5121,16 @@
       "path": "profiles/den/skills/.hub/taps.json",
       "size": 13,
       "mtime": 1786856107
+    },
+    {
+      "path": "profiles/den/skills/.usage.json",
+      "size": 1830,
+      "mtime": 1786984822
+    },
+    {
+      "path": "profiles/den/skills/.usage.json.lock",
+      "size": 0,
+      "mtime": 1786984422
     },
     {
       "path": "profiles/den/skills/apple/DESCRIPTION.md",
@@ -7653,6 +7763,26 @@
       "mtime": 1784137460
     },
     {
+      "path": "profiles/den/state.db-shm",
+      "size": 32768,
+      "mtime": 1786985054
+    },
+    {
+      "path": "profiles/den/state.db-wal",
+      "size": 28872,
+      "mtime": 1786985057
+    },
+    {
+      "path": "profiles/den/state/gateway.heartbeat",
+      "size": 129,
+      "mtime": 1786985115
+    },
+    {
+      "path": "profiles/den/state/gateway.lifecycle.json",
+      "size": 118,
+      "mtime": 1786985054
+    },
+    {
       "path": "profiles/smd/.codex_gpt55_autoraise_notice",
       "size": 17,
       "mtime": 1786855009
@@ -7710,7 +7840,7 @@
     {
       "path": "profiles/smd/channel_directory.json",
       "size": 200,
-      "mtime": 1786984113
+      "mtime": 1786985016
     },
     {
       "path": "profiles/smd/config.yaml",
@@ -7735,7 +7865,7 @@
     {
       "path": "profiles/smd/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786984340
+      "mtime": 1786985122
     },
     {
       "path": "profiles/smd/cron/executions.db",
@@ -7764,13 +7894,13 @@
     },
     {
       "path": "profiles/smd/cron/ticker_heartbeat",
-      "size": 16,
-      "mtime": 1786984340
+      "size": 17,
+      "mtime": 1786985122
     },
     {
       "path": "profiles/smd/cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786984340
+      "size": 17,
+      "mtime": 1786985122
     },
     {
       "path": "profiles/smd/cron/usage_audit.jsonl",
@@ -10480,7 +10610,7 @@
     {
       "path": "profiles/smd/state/gateway.heartbeat",
       "size": 129,
-      "mtime": 1786984385
+      "mtime": 1786985105
     },
     {
       "path": "profiles/smd/state/gateway.lifecycle.json",
@@ -10500,7 +10630,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786975456
+      "mtime": 1786985051
     },
     {
       "path": "skills/.curator_backups/2026-07-24T14-07-53Z/cron-jobs.json",

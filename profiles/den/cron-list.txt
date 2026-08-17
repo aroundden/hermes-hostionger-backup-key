@@ -10,13 +10,55 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-18T02:33:00.574315+09:00
+    Next run:  2026-08-18T02:43:39.868437+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Execution: running  82a2694641b74284848405fbcd66007a
+    Last run:  2026-08-18T01:33:12.406069+09:00  ok
+    Execution: completed  82a2694641b74284848405fbcd66007a
 
-  ⚠  Gateway is not running — jobs won't fire automatically.
-     Start it with: hermes gateway install
-                    sudo hermes gateway install --system  # Linux servers
-     Check status:  hermes cron status
+  cc4d2fa54398 [active]
+    Name:      DEN weekly guest report
+    Schedule:  0 13 * * 1
+    Repeat:    ∞
+    Next run:  2026-08-24T13:00:00+09:00
+    Deliver:   slack:C0BM6HMVDQB
+    Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
+    Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
+    Last run:  2026-08-18T01:40:07.886973+09:00  ok
+    Execution: completed  4fc34da558b742559ef3ec37b9b26d2e
+
+  35fbda62da07 [active]
+    Name:      DEN YouTube daily signal collection
+    Schedule:  0 8 * * *
+    Repeat:    ∞
+    Next run:  2026-08-18T08:00:00+09:00
+    Deliver:   local
+    Script:    den_youtube_daily_collector.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-08-18T01:33:40.264842+09:00  ok
+    Execution: completed  17f44a2372ca454fb792d8ae7ec6b875
+
+  86a1fb468022 [active]
+    Name:      DEN weekly idea report
+    Schedule:  1 13 * * 1
+    Repeat:    ∞
+    Next run:  2026-08-24T13:01:00+09:00
+    Deliver:   slack:C0BM6HMVDQB
+    Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
+    Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
+    Last run:  2026-08-18T01:42:39.163753+09:00  ok
+    Execution: completed  cbfb8cf4c5f14fa19ede1caf6c7e4974
+
+  9ebf43990561 [active]
+    Name:      TickTick 에이전트 프로젝트 자동 실행
+    Schedule:  every 15m
+    Repeat:    ∞
+    Next run:  2026-08-18T01:58:40.670222+09:00
+    Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
+    Skills:    ticktick-operations
+    Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
+    Changed:   2026-08-18T01:33:42.394237+09:00
+    Last run:  2026-08-18T01:34:19.703038+09:00  ok
+    Execution: completed  bc081241106343229438d38eeb89d765
+
