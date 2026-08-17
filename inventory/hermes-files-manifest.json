@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 3397,
+  "count": 2933,
   "files": [
     {
       "path": "SOUL.md",
@@ -60,17 +60,17 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1786974930
+      "mtime": 1786976312
     },
     {
       "path": "cron/executions.db",
       "size": 606208,
-      "mtime": 1786974312
+      "mtime": 1786976299
     },
     {
       "path": "cron/jobs.json",
-      "size": 51760,
-      "mtime": 1786974312
+      "size": 51887,
+      "mtime": 1786976296
     },
     {
       "path": "cron/jobs.json.bak.20260720",
@@ -603,16 +603,6 @@
       "mtime": 1786939649
     },
     {
-      "path": "cron/output/46f1141c55bc/2026-08-17_10-22-25.md",
-      "size": 184,
-      "mtime": 1786929745
-    },
-    {
-      "path": "cron/output/46f1141c55bc/2026-08-17_10-37-26.md",
-      "size": 184,
-      "mtime": 1786930646
-    },
-    {
       "path": "cron/output/46f1141c55bc/2026-08-17_10-52-45.md",
       "size": 184,
       "mtime": 1786931565
@@ -851,6 +841,16 @@
       "path": "cron/output/46f1141c55bc/2026-08-17_22-45-12.md",
       "size": 184,
       "mtime": 1786974312
+    },
+    {
+      "path": "cron/output/46f1141c55bc/2026-08-17_23-00-16.md",
+      "size": 184,
+      "mtime": 1786975216
+    },
+    {
+      "path": "cron/output/46f1141c55bc/2026-08-17_23-15-20.md",
+      "size": 184,
+      "mtime": 1786976120
     },
     {
       "path": "cron/output/46f1141c55bc/monitor_last_output.txt",
@@ -1759,13 +1759,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 16,
-      "mtime": 1786974930
+      "size": 17,
+      "mtime": 1786976312
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1786974930
+      "size": 17,
+      "mtime": 1786976312
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1788,2371 +1788,6 @@
       "mtime": 1784322070
     },
     {
-      "path": "profiles/akii/SOUL.md",
-      "size": 513,
-      "mtime": 1786973359
-    },
-    {
-      "path": "profiles/akii/cache/schema_columns.json",
-      "size": 4318,
-      "mtime": 1786973360
-    },
-    {
-      "path": "profiles/akii/cron/.jobs.lock",
-      "size": 0,
-      "mtime": 1786973360
-    },
-    {
-      "path": "profiles/akii/cron/.tick.lock",
-      "size": 0,
-      "mtime": 1786974080
-    },
-    {
-      "path": "profiles/akii/cron/executions.db",
-      "size": 20480,
-      "mtime": 1786973360
-    },
-    {
-      "path": "profiles/akii/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1786974080
-    },
-    {
-      "path": "profiles/akii/cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1786974080
-    },
-    {
-      "path": "profiles/akii/skills/.bundled_manifest",
-      "size": 3877,
-      "mtime": 1786974005
-    },
-    {
-      "path": "profiles/akii/skills/.hub/audit.log",
-      "size": 0,
-      "mtime": 1786973427
-    },
-    {
-      "path": "profiles/akii/skills/.hub/lock.json",
-      "size": 32,
-      "mtime": 1786973427
-    },
-    {
-      "path": "profiles/akii/skills/.hub/taps.json",
-      "size": 13,
-      "mtime": 1786973427
-    },
-    {
-      "path": "profiles/akii/skills/apple/DESCRIPTION.md",
-      "size": 137,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/apple/apple-notes/SKILL.md",
-      "size": 2394,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/apple/apple-reminders/SKILL.md",
-      "size": 3606,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/apple/findmy/SKILL.md",
-      "size": 3709,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/apple/imessage/SKILL.md",
-      "size": 2442,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/DESCRIPTION.md",
-      "size": 211,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/claude-code/SKILL.md",
-      "size": 34281,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/codex/SKILL.md",
-      "size": 5738,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/computer-use/SKILL.md",
-      "size": 18603,
-      "mtime": 1786973942
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/merge-reconciler/SKILL.md",
-      "size": 7606,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/autonomous-ai-agents/opencode/SKILL.md",
-      "size": 7259,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/DESCRIPTION.md",
-      "size": 116,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/architecture-diagram/SKILL.md",
-      "size": 5830,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/architecture-diagram/templates/template.html",
-      "size": 12483,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-art/SKILL.md",
-      "size": 10552,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/README.md",
-      "size": 16440,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/SKILL.md",
-      "size": 15011,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/architecture.md",
-      "size": 33004,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/composition.md",
-      "size": 34942,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/effects.md",
-      "size": 72928,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/inputs.md",
-      "size": 24575,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/optimization.md",
-      "size": 24265,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/scenes.md",
-      "size": 37487,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/shaders.md",
-      "size": 50435,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/ascii-video/references/troubleshooting.md",
-      "size": 13246,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/PORT_NOTES.md",
-      "size": 1699,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/SKILL.md",
-      "size": 10434,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/analysis-framework.md",
-      "size": 7490,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/base-prompt.md",
-      "size": 1082,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/bento-grid.md",
-      "size": 851,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/binary-comparison.md",
-      "size": 1278,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/bridge.md",
-      "size": 907,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/circular-flow.md",
-      "size": 759,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/comic-strip.md",
-      "size": 847,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/comparison-matrix.md",
-      "size": 893,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/dashboard.md",
-      "size": 776,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/dense-modules.md",
-      "size": 3673,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/funnel.md",
-      "size": 821,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/hierarchical-layers.md",
-      "size": 1180,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/hub-spoke.md",
-      "size": 865,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/iceberg.md",
-      "size": 884,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/isometric-map.md",
-      "size": 833,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/jigsaw.md",
-      "size": 844,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/linear-progression.md",
-      "size": 1238,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/periodic-table.md",
-      "size": 774,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/story-mountain.md",
-      "size": 815,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/structural-breakdown.md",
-      "size": 1118,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/tree-branching.md",
-      "size": 913,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/venn-diagram.md",
-      "size": 825,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/layouts/winding-roadmap.md",
-      "size": 799,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/structured-content-template.md",
-      "size": 5515,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/aged-academia.md",
-      "size": 990,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/bold-graphic.md",
-      "size": 920,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/chalkboard.md",
-      "size": 2204,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/claymation.md",
-      "size": 654,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/corporate-memphis.md",
-      "size": 612,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/craft-handmade.md",
-      "size": 1429,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/cyberpunk-neon.md",
-      "size": 625,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/hand-drawn-edu.md",
-      "size": 2648,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/ikea-manual.md",
-      "size": 572,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/kawaii.md",
-      "size": 653,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/knolling.md",
-      "size": 584,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/lego-brick.md",
-      "size": 574,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/morandi-journal.md",
-      "size": 2233,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/origami.md",
-      "size": 607,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/pixel-art.md",
-      "size": 562,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/pop-laboratory.md",
-      "size": 2174,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/retro-pop-grid.md",
-      "size": 2106,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/storybook-watercolor.md",
-      "size": 703,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/subway-map.md",
-      "size": 591,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/technical-schematic.md",
-      "size": 983,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/baoyu-infographic/references/styles/ui-wireframe.md",
-      "size": 596,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/claude-design/SKILL.md",
-      "size": 25117,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/SKILL.md",
-      "size": 24075,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/references/official-cli.md",
-      "size": 7531,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/references/rest-api.md",
-      "size": 10363,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/references/template-integrity.md",
-      "size": 8821,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/references/workflow-format.md",
-      "size": 8025,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/_common.py",
-      "size": 33792,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/auto_fix_deps.py",
-      "size": 8351,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/check_deps.py",
-      "size": 17184,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/comfyui_setup.sh",
-      "size": 10447,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/extract_schema.py",
-      "size": 11327,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/fetch_logs.py",
-      "size": 5690,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/hardware_check.py",
-      "size": 17905,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/health_check.py",
-      "size": 8208,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/run_batch.py",
-      "size": 9100,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/run_workflow.py",
-      "size": 31649,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/scripts/ws_monitor.py",
-      "size": 10512,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/README.md",
-      "size": 2244,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/conftest.py",
-      "size": 1528,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/pytest.ini",
-      "size": 132,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/test_check_deps.py",
-      "size": 2362,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/test_cloud_integration.py",
-      "size": 4324,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/test_common.py",
-      "size": 16353,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/test_extract_schema.py",
-      "size": 7972,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/tests/test_run_workflow.py",
-      "size": 8762,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/README.md",
-      "size": 3932,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/animatediff_video.json",
-      "size": 2071,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/flux_dev_txt2img.json",
-      "size": 2232,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/sd15_txt2img.json",
-      "size": 1474,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/sdxl_img2img.json",
-      "size": 1652,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/sdxl_inpaint.json",
-      "size": 1873,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/sdxl_txt2img.json",
-      "size": 1449,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/upscale_4x.json",
-      "size": 864,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/comfyui/workflows/wan_video_t2v.json",
-      "size": 2189,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/design-md/SKILL.md",
-      "size": 8477,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/design-md/templates/starter.md",
-      "size": 2566,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/excalidraw/SKILL.md",
-      "size": 7297,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/excalidraw/references/colors.md",
-      "size": 1777,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/excalidraw/references/dark-mode.md",
-      "size": 2282,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/excalidraw/references/examples.md",
-      "size": 14226,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/excalidraw/scripts/upload.py",
-      "size": 3817,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/humanizer/LICENSE",
-      "size": 1066,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/humanizer/SKILL.md",
-      "size": 34463,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/README.md",
-      "size": 886,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/SKILL.md",
-      "size": 12150,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/animation-design-thinking.md",
-      "size": 7205,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/animations.md",
-      "size": 8836,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/camera-and-3d.md",
-      "size": 4132,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/decorations.md",
-      "size": 5006,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/equations.md",
-      "size": 6086,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/graphs-and-data.md",
-      "size": 4628,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/mobjects.md",
-      "size": 9739,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/paper-explainer.md",
-      "size": 9333,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/production-quality.md",
-      "size": 5904,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/rendering.md",
-      "size": 5375,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/scene-planning.md",
-      "size": 2751,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/troubleshooting.md",
-      "size": 4319,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/updaters-and-trackers.md",
-      "size": 8500,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/references/visual-design.md",
-      "size": 4762,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/manim-video/scripts/setup.sh",
-      "size": 921,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/README.md",
-      "size": 3316,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/SKILL.md",
-      "size": 27534,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/animation.md",
-      "size": 10456,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/color-systems.md",
-      "size": 8647,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/core-api.md",
-      "size": 9841,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/export-pipeline.md",
-      "size": 15611,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/interaction.md",
-      "size": 8345,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/shapes-and-geometry.md",
-      "size": 7213,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/troubleshooting.md",
-      "size": 13041,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/typography.md",
-      "size": 6779,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/visual-effects.md",
-      "size": 23456,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/references/webgl-and-3d.md",
-      "size": 8893,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/scripts/export-frames.js",
-      "size": 5398,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/scripts/render.sh",
-      "size": 2911,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/scripts/serve.sh",
-      "size": 833,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/scripts/setup.sh",
-      "size": 2475,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/p5js/templates/viewer.html",
-      "size": 10858,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/SKILL.md",
-      "size": 9722,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/airbnb.md",
-      "size": 14824,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/airtable.md",
-      "size": 4300,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/apple.md",
-      "size": 21122,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/bmw.md",
-      "size": 10585,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/cal.md",
-      "size": 18582,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/claude.md",
-      "size": 21078,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/clay.md",
-      "size": 18105,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/clickhouse.md",
-      "size": 16180,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/cohere.md",
-      "size": 15543,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/coinbase.md",
-      "size": 5781,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/composio.md",
-      "size": 21732,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/cursor.md",
-      "size": 19867,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/elevenlabs.md",
-      "size": 15978,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/expo.md",
-      "size": 19466,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/figma.md",
-      "size": 12403,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/framer.md",
-      "size": 18347,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/hashicorp.md",
-      "size": 16425,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/ibm.md",
-      "size": 20366,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/intercom.md",
-      "size": 7162,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/kraken.md",
-      "size": 5094,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/linear.app.md",
-      "size": 23231,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/lovable.md",
-      "size": 18160,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/minimax.md",
-      "size": 15071,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/mintlify.md",
-      "size": 18203,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/miro.md",
-      "size": 5538,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/mistral.ai.md",
-      "size": 16421,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/mongodb.md",
-      "size": 15808,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/notion.md",
-      "size": 19090,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/nvidia.md",
-      "size": 17834,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/ollama.md",
-      "size": 16307,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/opencode.ai.md",
-      "size": 16307,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/pinterest.md",
-      "size": 12694,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/posthog.md",
-      "size": 19347,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/raycast.md",
-      "size": 19261,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/replicate.md",
-      "size": 14947,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/resend.md",
-      "size": 19201,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/revolut.md",
-      "size": 9363,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/runwayml.md",
-      "size": 15097,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/sanity.md",
-      "size": 22041,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/sentry.md",
-      "size": 15539,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/spacex.md",
-      "size": 12064,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/spotify.md",
-      "size": 13731,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/stripe.md",
-      "size": 21263,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/supabase.md",
-      "size": 15592,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/superhuman.md",
-      "size": 19714,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/together.ai.md",
-      "size": 15073,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/uber.md",
-      "size": 19430,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/vercel.md",
-      "size": 20227,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/voltagent.md",
-      "size": 27091,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/warp.md",
-      "size": 17441,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/webflow.md",
-      "size": 4863,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/wise.md",
-      "size": 9208,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/x.ai.md",
-      "size": 17043,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/popular-web-designs/templates/zapier.md",
-      "size": 19484,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/pretext/SKILL.md",
-      "size": 13959,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/creative/pretext/references/patterns.md",
-      "size": 10450,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/pretext/templates/donut-orbit.html",
-      "size": 53211,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/pretext/templates/hello-orb-flow.html",
-      "size": 3443,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/sketch/SKILL.md",
-      "size": 9788,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/songwriting-and-ai-music/SKILL.md",
-      "size": 10963,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/SKILL.md",
-      "size": 15269,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/3d-scene.md",
-      "size": 10305,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/animation.md",
-      "size": 7258,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/audio-reactive.md",
-      "size": 5128,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/dat-scripting.md",
-      "size": 11586,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/external-data.md",
-      "size": 9257,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/geometry-comp.md",
-      "size": 3572,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/glsl.md",
-      "size": 3537,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/layout-compositor.md",
-      "size": 3567,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/mcp-tools.md",
-      "size": 30497,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/midi-osc.md",
-      "size": 7384,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/network-patterns.md",
-      "size": 33603,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/operator-tips.md",
-      "size": 3536,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/operators.md",
-      "size": 14713,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/panel-ui.md",
-      "size": 10088,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/particles.md",
-      "size": 8765,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/pitfalls.md",
-      "size": 31347,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/postfx.md",
-      "size": 4656,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/projection-mapping.md",
-      "size": 8104,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/python-api.md",
-      "size": 12533,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/replicator.md",
-      "size": 8232,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/references/troubleshooting.md",
-      "size": 7442,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/creative/touchdesigner-mcp/scripts/setup.sh",
-      "size": 4468,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/devops/sdlc-review/SKILL.md",
-      "size": 9073,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/email/DESCRIPTION.md",
-      "size": 101,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/email/email-inbox-triage/SKILL.md",
-      "size": 4057,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/email/himalaya/SKILL.md",
-      "size": 7272,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/email/himalaya/references/configuration.md",
-      "size": 5906,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/email/himalaya/references/message-composition.md",
-      "size": 3799,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/DESCRIPTION.md",
-      "size": 167,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/codebase-inspection/SKILL.md",
-      "size": 3628,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-auth/SKILL.md",
-      "size": 11949,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/github/github-auth/scripts/gh-env.sh",
-      "size": 2556,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/github/github-auth/scripts/git-credential-token.py",
-      "size": 1788,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/github/github-code-review/SKILL.md",
-      "size": 13614,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/github/github-code-review/references/review-output-template.md",
-      "size": 2465,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-issue-to-pr/SKILL.md",
-      "size": 6058,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/github/github-issues/SKILL.md",
-      "size": 9312,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/github/github-issues/templates/bug-report.md",
-      "size": 469,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-issues/templates/feature-request.md",
-      "size": 598,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-pr-workflow/SKILL.md",
-      "size": 10034,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/github/github-pr-workflow/references/ci-troubleshooting.md",
-      "size": 4879,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-pr-workflow/references/conventional-commits.md",
-      "size": 2417,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-pr-workflow/templates/pr-body-bugfix.md",
-      "size": 513,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-pr-workflow/templates/pr-body-feature.md",
-      "size": 580,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/github/github-repo-management/SKILL.md",
-      "size": 13727,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/github/github-repo-management/references/github-api-cheatsheet.md",
-      "size": 6092,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/DESCRIPTION.md",
-      "size": 139,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/gif-search/SKILL.md",
-      "size": 2720,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/songsee/SKILL.md",
-      "size": 2336,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/youtube-content/SKILL.md",
-      "size": 3538,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/media/youtube-content/references/output-formats.md",
-      "size": 1259,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/media/youtube-content/scripts/fetch_transcript.py",
-      "size": 4054,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/DESCRIPTION.md",
-      "size": 162,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/DESCRIPTION.md",
-      "size": 126,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/evaluating-llms-harness/SKILL.md",
-      "size": 12204,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/evaluating-llms-harness/references/api-evaluation.md",
-      "size": 11114,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/evaluating-llms-harness/references/benchmark-guide.md",
-      "size": 10769,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/evaluating-llms-harness/references/custom-tasks.md",
-      "size": 13125,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/evaluating-llms-harness/references/distributed-eval.md",
-      "size": 11426,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/weights-and-biases/SKILL.md",
-      "size": 12676,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/weights-and-biases/references/artifacts.md",
-      "size": 13425,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/weights-and-biases/references/integrations.md",
-      "size": 16219,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/evaluation/weights-and-biases/references/sweeps.md",
-      "size": 17675,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/huggingface-hub/SKILL.md",
-      "size": 3715,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/DESCRIPTION.md",
-      "size": 161,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/SKILL.md",
-      "size": 8880,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/advanced-usage.md",
-      "size": 10887,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/hub-discovery.md",
-      "size": 5082,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/optimization.md",
-      "size": 1659,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/quantization.md",
-      "size": 5888,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/server.md",
-      "size": 2915,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/llama-cpp/references/troubleshooting.md",
-      "size": 8904,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/serving-llms-vllm/SKILL.md",
-      "size": 9335,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/serving-llms-vllm/references/optimization.md",
-      "size": 5769,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/serving-llms-vllm/references/quantization.md",
-      "size": 6746,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/serving-llms-vllm/references/server-deployment.md",
-      "size": 5252,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/inference/serving-llms-vllm/references/troubleshooting.md",
-      "size": 9037,
-      "mtime": 1785250902
-    },
-    {
-      "path": "profiles/akii/skills/mlops/models/DESCRIPTION.md",
-      "size": 253,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/note-taking/DESCRIPTION.md",
-      "size": 146,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/note-taking/obsidian/SKILL.md",
-      "size": 3092,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/DESCRIPTION.md",
-      "size": 114,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/airtable/SKILL.md",
-      "size": 11314,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/SKILL.md",
-      "size": 11697,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/bulk-operations.md",
-      "size": 2025,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/cli-guide.md",
-      "size": 7515,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/content-workflows.md",
-      "size": 4767,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/hubs.md",
-      "size": 6189,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/oauth-setup.md",
-      "size": 6569,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/rest-api.md",
-      "size": 2227,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/sdk-development.md",
-      "size": 5727,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/search-and-ai.md",
-      "size": 10746,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/troubleshooting.md",
-      "size": 2970,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/box/references/webhooks-and-events.md",
-      "size": 2276,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/document-to-action-items/SKILL.md",
-      "size": 3966,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/LICENSE",
-      "size": 1070,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/SKILL.md",
-      "size": 10395,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/references/revisions-and-comments.md",
-      "size": 3997,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_comments.py",
-      "size": 10655,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_common.py",
-      "size": 3364,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_create.py",
-      "size": 6387,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_edit.py",
-      "size": 8619,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_read.py",
-      "size": 5405,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_revisions.py",
-      "size": 4571,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_template.py",
-      "size": 2482,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/scripts/docx_validate.py",
-      "size": 6200,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/docx/tests/test_docx_skill.py",
-      "size": 21267,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/SKILL.md",
-      "size": 13670,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/references/daily-brief.md",
-      "size": 3217,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/references/gmail-search-syntax.md",
-      "size": 2150,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/scripts/_hermes_home.py",
-      "size": 1630,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/scripts/google_api.py",
-      "size": 43553,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/scripts/gws_bridge.py",
-      "size": 3682,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/productivity/google-workspace/scripts/setup.py",
-      "size": 20231,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/maps/SKILL.md",
-      "size": 6705,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/maps/scripts/maps_client.py",
-      "size": 46678,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/meeting-action-items/SKILL.md",
-      "size": 3808,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/nano-pdf/SKILL.md",
-      "size": 1605,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/productivity/notion/SKILL.md",
-      "size": 14629,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/notion/references/block-types.md",
-      "size": 3021,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/ocr-and-documents/DESCRIPTION.md",
-      "size": 147,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/ocr-and-documents/SKILL.md",
-      "size": 5784,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/ocr-and-documents/scripts/extract_marker.py",
-      "size": 3034,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/ocr-and-documents/scripts/extract_pymupdf.py",
-      "size": 3132,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/LICENSE",
-      "size": 1070,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/SKILL.md",
-      "size": 12244,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/references/forms.md",
-      "size": 3950,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/_raster.py",
-      "size": 2614,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_create.py",
-      "size": 4562,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_fill_form.py",
-      "size": 3887,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_form_layout.py",
-      "size": 7131,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_make_form.py",
-      "size": 5988,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_merge.py",
-      "size": 1686,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_meta.py",
-      "size": 4458,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_page_image.py",
-      "size": 3570,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_read.py",
-      "size": 5876,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_secure.py",
-      "size": 2679,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_split.py",
-      "size": 3045,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_stamp.py",
-      "size": 5779,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/scripts/pdf_watermark.py",
-      "size": 1852,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/pdf/tests/test_pdf_skill.py",
-      "size": 17433,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/LICENSE",
-      "size": 1070,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/SKILL.md",
-      "size": 10781,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/scripts/pptx_create.py",
-      "size": 8579,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/scripts/pptx_edit.py",
-      "size": 17224,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/scripts/pptx_from_template.py",
-      "size": 3431,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/scripts/pptx_read.py",
-      "size": 4761,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/scripts/pptx_render.py",
-      "size": 3536,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/powerpoint/tests/test_powerpoint_skill.py",
-      "size": 19524,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/product-price-monitor/SKILL.md",
-      "size": 4400,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/session-librarian/SKILL.md",
-      "size": 4827,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/productivity/teams-meeting-pipeline/SKILL.md",
-      "size": 6816,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/weekly-review-planning/SKILL.md",
-      "size": 3975,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/LICENSE",
-      "size": 1070,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/SKILL.md",
-      "size": 9655,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/references/restructuring.md",
-      "size": 3688,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/csv_to_xlsx.py",
-      "size": 3446,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_create.py",
-      "size": 9858,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_edit.py",
-      "size": 10828,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_read.py",
-      "size": 5806,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_recalc.py",
-      "size": 4173,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_restructure.py",
-      "size": 13739,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/scripts/xlsx_to_csv.py",
-      "size": 2367,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/productivity/xlsx/tests/test_xlsx_skill.py",
-      "size": 21956,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/DESCRIPTION.md",
-      "size": 179,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/arxiv/SKILL.md",
-      "size": 10075,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/research/arxiv/scripts/search_arxiv.py",
-      "size": 4272,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/blocked-page-recovery/SKILL.md",
-      "size": 5152,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/research/blocked-page-recovery/scripts/recover_page.py",
-      "size": 8481,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/research/blogwatcher/SKILL.md",
-      "size": 5111,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/competitor-news-monitor/SKILL.md",
-      "size": 4501,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/grounded-citations/SKILL.md",
-      "size": 11231,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/research/grounded-citations/references/citation-formats.md",
-      "size": 2422,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/grounded-citations/references/grounding-rationale.md",
-      "size": 3127,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/grounded-citations/scripts/_hermes_home.py",
-      "size": 836,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/grounded-citations/scripts/sources.py",
-      "size": 25808,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/llm-wiki/SKILL.md",
-      "size": 20121,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/SKILL.md",
-      "size": 72170,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/autoreason-methodology.md",
-      "size": 19146,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/checklists.md",
-      "size": 13622,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/citation-workflow.md",
-      "size": 15433,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/experiment-patterns.md",
-      "size": 25742,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/human-evaluation.md",
-      "size": 18221,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/paper-types.md",
-      "size": 16214,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/phase5-paper-drafting.md",
-      "size": 31865,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/reviewer-guidelines.md",
-      "size": 13738,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/sources.md",
-      "size": 9460,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/references/writing-guide.md",
-      "size": 16292,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/README.md",
-      "size": 6707,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/README.md",
-      "size": 17987,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/aaai2026-unified-supp.tex",
-      "size": 4548,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/aaai2026-unified-template.tex",
-      "size": 63140,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/aaai2026.bib",
-      "size": 4766,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/aaai2026.bst",
-      "size": 30207,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/aaai2026/aaai2026.sty",
-      "size": 11802,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/README.md",
-      "size": 2126,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/acl.sty",
-      "size": 11615,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/acl_latex.tex",
-      "size": 14533,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/acl_lualatex.tex",
-      "size": 3050,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/acl_natbib.bst",
-      "size": 45186,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/anthology.bib.txt",
-      "size": 1169,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/custom.bib",
-      "size": 2071,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/acl/formatting.md",
-      "size": 17923,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/README.md",
-      "size": 51,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/colm2025_conference.bib",
-      "size": 496,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/colm2025_conference.bst",
-      "size": 26973,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/colm2025_conference.pdf",
-      "size": 122635,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/colm2025_conference.sty",
-      "size": 7727,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/colm2025_conference.tex",
-      "size": 12830,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/fancyhdr.sty",
-      "size": 20521,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/math_commands.tex",
-      "size": 12284,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/colm2025/natbib.sty",
-      "size": 45154,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/fancyhdr.sty",
-      "size": 20521,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/iclr2026_conference.bib",
-      "size": 629,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/iclr2026_conference.bst",
-      "size": 26973,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/iclr2026_conference.pdf",
-      "size": 200508,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/iclr2026_conference.sty",
-      "size": 9025,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/iclr2026_conference.tex",
-      "size": 16899,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/math_commands.tex",
-      "size": 12284,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/iclr2026/natbib.sty",
-      "size": 45154,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/algorithm.sty",
-      "size": 2223,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/algorithmic.sty",
-      "size": 7414,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/example_paper.bib",
-      "size": 2051,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/example_paper.pdf",
-      "size": 193509,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/example_paper.tex",
-      "size": 29714,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/fancyhdr.sty",
-      "size": 31715,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/icml2026.bst",
-      "size": 27147,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/icml2026.sty",
-      "size": 27344,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/icml2026/icml_numpapers.pdf",
-      "size": 2823,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/neurips2025/Makefile",
-      "size": 1054,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/neurips2025/extra_pkgs.tex",
-      "size": 2837,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/neurips2025/main.tex",
-      "size": 574,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/research/research-paper-writing/templates/neurips2025/neurips.sty",
-      "size": 11625,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/smart-home/DESCRIPTION.md",
-      "size": 123,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/smart-home/openhue/SKILL.md",
-      "size": 2843,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/social-media/DESCRIPTION.md",
-      "size": 151,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/social-media/xurl/SKILL.md",
-      "size": 16345,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/dogfood/SKILL.md",
-      "size": 6324,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/software-development/dogfood/references/issue-taxonomy.md",
-      "size": 3682,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/dogfood/templates/dogfood-report-template.md",
-      "size": 1528,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/hermes-agent-skill-authoring/SKILL.md",
-      "size": 14438,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md",
-      "size": 6204,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/node-inspect-debugger/SKILL.md",
-      "size": 10894,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/software-development/plan/SKILL.md",
-      "size": 8903,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/python-debugpy/SKILL.md",
-      "size": 13347,
-      "mtime": 1786266700
-    },
-    {
-      "path": "profiles/akii/skills/software-development/requesting-code-review/SKILL.md",
-      "size": 8465,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/software-development/simplify-code/SKILL.md",
-      "size": 14702,
-      "mtime": 1785250903
-    },
-    {
-      "path": "profiles/akii/skills/software-development/spike/SKILL.md",
-      "size": 8729,
-      "mtime": 1786805900
-    },
-    {
-      "path": "profiles/akii/skills/software-development/systematic-debugging/SKILL.md",
-      "size": 14065,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/skills/software-development/test-driven-development/SKILL.md",
-      "size": 10306,
-      "mtime": 1784137460
-    },
-    {
-      "path": "profiles/akii/state.db-shm",
-      "size": 32768,
-      "mtime": 1786974952
-    },
-    {
-      "path": "profiles/akii/state.db-wal",
-      "size": 0,
-      "mtime": 1786974013
-    },
-    {
       "path": "profiles/aroundit/.codex_gpt55_autoraise_notice",
       "size": 17,
       "mtime": 1786855002
@@ -4161,6 +1796,11 @@
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
       "size": 53925,
       "mtime": 1786974402
+    },
+    {
+      "path": "profiles/aroundit/.update_check",
+      "size": 68,
+      "mtime": 1786975394
     },
     {
       "path": "profiles/aroundit/SOUL.md",
@@ -4210,7 +1850,7 @@
     {
       "path": "profiles/aroundit/channel_directory.json",
       "size": 1534,
-      "mtime": 1786974788
+      "mtime": 1786976292
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -4235,37 +1875,22 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786974907
+      "mtime": 1786976289
     },
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 65536,
-      "mtime": 1786974612
+      "mtime": 1786976289
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 7680,
-      "mtime": 1786974612
+      "size": 7807,
+      "mtime": 1786976289
     },
     {
       "path": "profiles/aroundit/cron/notepad.db",
       "size": 12288,
       "mtime": 1786855756
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-38-32.md",
-      "size": 590,
-      "mtime": 1786955912
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-44-33.md",
-      "size": 590,
-      "mtime": 1786956273
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-50-34.md",
-      "size": 590,
-      "mtime": 1786956634
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_17-56-35.md",
@@ -4503,24 +2128,39 @@
       "mtime": 1786974612
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_22-57-56.md",
+      "size": 77861,
+      "mtime": 1786975076
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_23-05-00.md",
+      "size": 77861,
+      "mtime": 1786975500
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-08-17_23-12-14.md",
+      "size": 77861,
+      "mtime": 1786975934
+    },
+    {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1786974907
+      "size": 18,
+      "mtime": 1786976289
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1786974907
+      "mtime": 1786976289
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 1285,
-      "mtime": 1786974612
+      "size": 2266,
+      "mtime": 1786975934
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
       "size": 469,
-      "mtime": 1786974396
+      "mtime": 1786976319
     },
     {
       "path": "profiles/aroundit/gateway-starts.log",
@@ -4580,7 +2220,7 @@
     {
       "path": "profiles/aroundit/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786974238
+      "mtime": 1786975393
     },
     {
       "path": "profiles/aroundit/skills/.hub/audit.log",
@@ -4599,8 +2239,8 @@
     },
     {
       "path": "profiles/aroundit/skills/.usage.json",
-      "size": 1358,
-      "mtime": 1786974413
+      "size": 1359,
+      "mtime": 1786976319
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7160,17 +4800,17 @@
     {
       "path": "profiles/aroundit/state.db-shm",
       "size": 32768,
-      "mtime": 1786974238
+      "mtime": 1786975082
     },
     {
       "path": "profiles/aroundit/state.db-wal",
-      "size": 3131232,
-      "mtime": 1786974612
+      "size": 3848112,
+      "mtime": 1786976320
     },
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 129,
-      "mtime": 1786974934
+      "mtime": 1786976314
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
@@ -7184,8 +4824,23 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
-      "size": 143013,
-      "mtime": 1786974396
+      "size": 101847,
+      "mtime": 1786976319
+    },
+    {
+      "path": "profiles/aroundit/tmp/gmail-autodraft-live-review.json",
+      "size": 288074,
+      "mtime": 1786975904
+    },
+    {
+      "path": "profiles/aroundit/tmp/print_current_gmail_review.py",
+      "size": 849,
+      "mtime": 1786975924
+    },
+    {
+      "path": "profiles/aroundit/tmp/read_current_gmail_candidates.py",
+      "size": 3065,
+      "mtime": 1786975898
     },
     {
       "path": "profiles/den/.codex_gpt55_autoraise_notice",
@@ -7196,6 +4851,11 @@
       "path": "profiles/den/.skills_prompt_snapshot.json",
       "size": 53570,
       "mtime": 1786855216
+    },
+    {
+      "path": "profiles/den/.update_check",
+      "size": 67,
+      "mtime": 1786975395
     },
     {
       "path": "profiles/den/SOUL.md",
@@ -7214,8 +4874,8 @@
     },
     {
       "path": "profiles/den/cache/schema_columns.json",
-      "size": 4318,
-      "mtime": 1786854969
+      "size": 4416,
+      "mtime": 1786975394
     },
     {
       "path": "profiles/den/cache/tool_discovery_cache.json",
@@ -7240,7 +4900,7 @@
     {
       "path": "profiles/den/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786974216
+      "mtime": 1786975994
     },
     {
       "path": "profiles/den/cron/executions.db",
@@ -7250,12 +4910,12 @@
     {
       "path": "profiles/den/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1786974216
+      "mtime": 1786975994
     },
     {
       "path": "profiles/den/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1786974216
+      "mtime": 1786975994
     },
     {
       "path": "profiles/den/memories/MEMORY.md",
@@ -7290,7 +4950,7 @@
     {
       "path": "profiles/den/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786974005
+      "mtime": 1786975393
     },
     {
       "path": "profiles/den/skills/.hub/audit.log",
@@ -9940,12 +7600,12 @@
     {
       "path": "profiles/den/state.db-shm",
       "size": 32768,
-      "mtime": 1786974952
+      "mtime": 1786976320
     },
     {
       "path": "profiles/den/state.db-wal",
       "size": 0,
-      "mtime": 1786974013
+      "mtime": 1786975399
     },
     {
       "path": "profiles/smd/.codex_gpt55_autoraise_notice",
@@ -9956,6 +7616,11 @@
       "path": "profiles/smd/.skills_prompt_snapshot.json",
       "size": 54554,
       "mtime": 1786855586
+    },
+    {
+      "path": "profiles/smd/.update_check",
+      "size": 68,
+      "mtime": 1786975395
     },
     {
       "path": "profiles/smd/SOUL.md",
@@ -10000,7 +7665,7 @@
     {
       "path": "profiles/smd/channel_directory.json",
       "size": 200,
-      "mtime": 1786974786
+      "mtime": 1786976291
     },
     {
       "path": "profiles/smd/config.yaml",
@@ -10025,7 +7690,7 @@
     {
       "path": "profiles/smd/cron/.tick.lock",
       "size": 0,
-      "mtime": 1786974906
+      "mtime": 1786976288
     },
     {
       "path": "profiles/smd/cron/executions.db",
@@ -10055,12 +7720,12 @@
     {
       "path": "profiles/smd/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1786974906
+      "mtime": 1786976288
     },
     {
       "path": "profiles/smd/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1786974906
+      "mtime": 1786976288
     },
     {
       "path": "profiles/smd/cron/usage_audit.jsonl",
@@ -10125,7 +7790,7 @@
     {
       "path": "profiles/smd/skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786974237
+      "mtime": 1786975392
     },
     {
       "path": "profiles/smd/skills/.hub/audit.log",
@@ -12765,7 +10430,7 @@
     {
       "path": "profiles/smd/state/gateway.heartbeat",
       "size": 129,
-      "mtime": 1786974933
+      "mtime": 1786976313
     },
     {
       "path": "profiles/smd/state/gateway.lifecycle.json",
@@ -12785,7 +10450,7 @@
     {
       "path": "skills/.bundled_manifest",
       "size": 3877,
-      "mtime": 1786974884
+      "mtime": 1786975456
     },
     {
       "path": "skills/.curator_backups/2026-07-24T14-07-53Z/cron-jobs.json",
@@ -12848,6 +10513,11 @@
       "mtime": 1786722233
     },
     {
+      "path": "skills/.curator_ledger.jsonl",
+      "size": 1323,
+      "mtime": 1786975207
+    },
+    {
       "path": "skills/.curator_state",
       "size": 355,
       "mtime": 1786805981
@@ -12879,8 +10549,8 @@
     },
     {
       "path": "skills/.usage.json",
-      "size": 64543,
-      "mtime": 1786973982
+      "size": 65050,
+      "mtime": 1786975455
     },
     {
       "path": "skills/.usage.json.lock",
@@ -14596,6 +12266,16 @@
       "path": "skills/hermes-desktop-plugins/templates/plugin.js",
       "size": 3141,
       "mtime": 1784568342
+    },
+    {
+      "path": "skills/integrations/multi-profile-messaging-identity-operations/SKILL.md",
+      "size": 3748,
+      "mtime": 1786975165
+    },
+    {
+      "path": "skills/integrations/multi-profile-messaging-identity-operations/references/slack-identity-cutover.md",
+      "size": 3555,
+      "mtime": 1786975207
     },
     {
       "path": "skills/integrations/native-chat-operations/SKILL.md",
