@@ -20,7 +20,7 @@ exit_code=0
     → cron/executions.db: WAL journal mode (84.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
   ✓ Virtual environment active
-  ✓ Version files consistent (0.20.2)
+  ✓ Version files consistent (0.20.4)
 
 ◆ SSL / CA Certificates
   ✓ SSL CA certificate bundle is valid
@@ -86,14 +86,14 @@ exit_code=0
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
-  Running 33 connectivity checks in parallel…
+  Running 34 connectivity checks in parallel…
                                                                       
   ⚠ OpenRouter API (not configured)
 
 ◆ Tool Availability
   ✓ a2a
   ✓ bfl
-  ✓ browser
+  ✓ browser-use
   ✓ clarify
   ✓ code_execution
   ✓ computer_use
@@ -114,8 +114,8 @@ exit_code=0
   ✓ video_gen
   ✓ vision
   ✓ web
+  ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
-  ⚠ browser-use (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
