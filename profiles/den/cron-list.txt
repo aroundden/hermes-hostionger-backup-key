@@ -10,12 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T04:12:09.968370+09:00
+    Next run:  2026-08-19T04:29:52.890913+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T02:38:09.475255+09:00  ok
-    Execution: running  042c9b1474ec4edf8b730cbca36d00b3
+    Last run:  2026-08-19T03:12:22.286251+09:00  ok
+    Execution: running  bbacba995db04ba3aa153c59f6fffb34
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -25,8 +25,8 @@ exit_code=0
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-18T01:40:07.886973+09:00  ok
-    Execution: running  cdef12ee439a4e17bd343f90c72b8b10
+    Last run:  2026-08-19T03:20:04.163995+09:00  ok
+    Execution: completed  cdef12ee439a4e17bd343f90c72b8b10
 
   35fbda62da07 [active]
     Name:      DEN YouTube daily signal collection
@@ -47,20 +47,20 @@ exit_code=0
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-18T01:42:39.163753+09:00  ok
-    Execution: running  1876eee05a31456d9556a30c93faeee2
+    Last run:  2026-08-19T03:19:51.255122+09:00  ok
+    Execution: completed  1876eee05a31456d9556a30c93faeee2
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T03:23:22.684269+09:00
+    Next run:  2026-08-19T03:38:23.754425+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-18T01:33:42.394237+09:00
+    Changed:   2026-08-19T03:23:24.645444+09:00
     Last run:  2026-08-19T03:08:22.684269+09:00  ok
-    Execution: completed  e8fa19eb08e147219bfc0c886e3188fa
+    Execution: running  f803162b92c94c6eb4f8c100e7be59b0
 
   b9600b15c0bf [active]
     Name:      daily-social-curation-x-linkedin
@@ -79,7 +79,8 @@ exit_code=0
     Schedule:  30 9 * * *
     Repeat:    ∞
     Next run:  2026-08-19T09:30:00+09:00
-    Deliver:   local
+    Deliver:   slack:C0BJ3PZTKLH:1784510893.521999
     Skills:    ticktick-operations
-    Execution: running  446264d6afac4b328ae7ad1a489f0455
+    Last run:  2026-08-19T03:14:05.881861+09:00  ok
+    Execution: completed  446264d6afac4b328ae7ad1a489f0455
 

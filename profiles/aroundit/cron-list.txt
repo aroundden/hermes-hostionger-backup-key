@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-19T03:13:13.905715+09:00
+    Next run:  2026-08-19T03:30:11.481275+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-19T03:08:13.905715+09:00  ok
-    Execution: completed  4e2b0822e9f64f969c9b5883a7882bcc
+    Last run:  2026-08-19T03:25:11.481275+09:00  ok
+    Execution: completed  79d62e6382034e9d89f07c184e6641e7
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -42,11 +42,11 @@ exit_code=0
     Name:      크몽 이메일 알림 보조 감시
     Schedule:  4-59/5 * * * *
     Repeat:    ∞
-    Next run:  2026-08-19T03:14:00+09:00
-    Deliver:   local
+    Next run:  2026-08-19T03:34:00+09:00
+    Deliver:   slack:C0BNYT05F8X:1786513434.846449
     Skills:    gmail-workflow-automation
     Script:    kmong_inquiry_watch.py
     Workdir:   /Users/insideden
-    Last run:  2026-08-19T03:10:51.338337+09:00  ok
-    Execution: completed  0d2fb0dab89e4d3d996fdc898044166f
+    Last run:  2026-08-19T03:29:52.663088+09:00  ok
+    Execution: completed  8cc5a01cc05b4e04bc9a3c2e4992bc9c
 
