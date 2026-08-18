@@ -10,12 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T03:37:50.188323+09:00
+    Next run:  2026-08-19T04:12:09.968370+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T02:35:21.073734+09:00  ok
-    Execution: running  6358f74a15584365830c36baea444971
+    Last run:  2026-08-19T02:38:09.475255+09:00  ok
+    Execution: running  042c9b1474ec4edf8b730cbca36d00b3
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -26,7 +26,7 @@ exit_code=0
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
     Last run:  2026-08-18T01:40:07.886973+09:00  ok
-    Execution: completed  4fc34da558b742559ef3ec37b9b26d2e
+    Execution: running  cdef12ee439a4e17bd343f90c72b8b10
 
   35fbda62da07 [active]
     Name:      DEN YouTube daily signal collection
@@ -36,10 +36,8 @@ exit_code=0
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-18T08:01:06.485253+09:00  error: Script exited with code 1
-stderr:
-DEN collector failed: all fixed channels empty
-    Execution: failed  e7ade17ea994442b9e7153c046a10afd
+    Last run:  2026-08-19T03:06:53.646949+09:00  ok
+    Execution: completed  8393e5954c2547f989e027dfd9854164
 
   86a1fb468022 [active]
     Name:      DEN weekly idea report
@@ -50,17 +48,38 @@ DEN collector failed: all fixed channels empty
     Skills:    content-operations-briefings, ticktick-operations, youtube-packaging-strategy
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
     Last run:  2026-08-18T01:42:39.163753+09:00  ok
-    Execution: completed  cbfb8cf4c5f14fa19ede1caf6c7e4974
+    Execution: running  1876eee05a31456d9556a30c93faeee2
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T02:38:11.483215+09:00
+    Next run:  2026-08-19T03:23:22.684269+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-18T01:33:42.394237+09:00
-    Last run:  2026-08-19T02:23:11.483215+09:00  ok
-    Execution: completed  f1bd3dd26f52429482d05484cca2ab8d
+    Last run:  2026-08-19T03:08:22.684269+09:00  ok
+    Execution: completed  e8fa19eb08e147219bfc0c886e3188fa
+
+  b9600b15c0bf [active]
+    Name:      daily-social-curation-x-linkedin
+    Schedule:  45 11 * * *
+    Repeat:    ∞
+    Next run:  2026-08-19T11:45:00+09:00
+    Deliver:   local
+    Skills:    hermes-summary
+    Script:    social_curation_collect.sh
+    Workdir:   /Users/insideden/kmsg-youtube-demo/kmsg
+    Last run:  2026-08-19T03:09:34.376402+09:00  ok
+    Execution: completed  eed6b16a03154c1e86ca16511bc92779
+
+  f16189c88926 [active]
+    Name:      TickTick 매일 아침 브리핑
+    Schedule:  30 9 * * *
+    Repeat:    ∞
+    Next run:  2026-08-19T09:30:00+09:00
+    Deliver:   local
+    Skills:    ticktick-operations
+    Execution: running  446264d6afac4b328ae7ad1a489f0455
 

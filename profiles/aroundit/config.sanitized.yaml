@@ -37,6 +37,15 @@ moa:
 kanban:
   dispatch_in_gateway: false
 _config_version: 37
+platforms:
+  slack:
+    enabled: true
+    home_channel:
+      platform: slack
+      chat_id: C0BHVB49WH5
+      name: C0BHVB49WH5
+      user_id: U09T8V0M10E
+      scope_id: T09TPTM2GV7
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,
