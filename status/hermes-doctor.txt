@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (4.5 MB)
+    → state.db: WAL journal mode (5.2 MB)
     → cron/executions.db: WAL journal mode (56.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
   ✓ Virtual environment active
@@ -63,9 +63,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (11 sessions)
-    → state.db logical size 4.5 MB, 1,152 pages, 122 free, WAL 2.6 MB
-    → 214 messages, 11 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (12 sessions)
+    → state.db logical size 5.2 MB, 1,340 pages, 60 free, WAL 2.6 MB
+    → 318 messages, 12 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -93,7 +93,7 @@ exit_code=0
 ◆ Tool Availability
   ✓ a2a
   ✓ bfl
-  ✓ browser-use
+  ✓ browser
   ✓ clarify
   ✓ code_execution
   ✓ computer_use
@@ -114,8 +114,8 @@ exit_code=0
   ✓ video_gen
   ✓ vision
   ✓ web
-  ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
+  ⚠ browser-use (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
@@ -136,7 +136,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gateway running, openai/gpt-5.6-sol
+  ✓   den: gateway running, gpt-5.6-sol
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
