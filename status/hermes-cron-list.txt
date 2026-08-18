@@ -10,12 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T04:40:58.295351+09:00
+    Next run:  2026-08-19T05:40:32.216419+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T03:38:21.764179+09:00  ok
-    Execution: running  d4a83ce7f3024b0ba3ad0486a42d1ae0
+    Last run:  2026-08-19T03:41:09.163007+09:00  ok
+    Execution: running  68951840e8bf49498e52f1975cb752b3
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -54,13 +54,13 @@ exit_code=0
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T03:50:11.628412+09:00
+    Next run:  2026-08-19T04:48:24.779469+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-19T03:23:24.645444+09:00
-    Last run:  2026-08-19T03:35:11.628412+09:00  ok
-    Execution: completed  f803162b92c94c6eb4f8c100e7be59b0
+    Changed:   2026-08-19T04:28:16.973199+09:00
+    Last run:  2026-08-19T04:33:24.779469+09:00  ok
+    Execution: completed  56ee28849fb943dba55ab2b4cb70b668
 
   b9600b15c0bf [active]
     Name:      daily-social-curation-x-linkedin
