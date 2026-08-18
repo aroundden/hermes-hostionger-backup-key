@@ -1,6 +1,6 @@
 # Hermes 상태 백업 — default profile
 
-- 원본 Hermes Home: `/Users/insideden/.hermes/profiles/den`
+- 원본 Hermes Home: `/Users/insideden/.hermes`
 - 대상 저장소: `aroundden/hermes-hostionger-backup-key`
 - 갱신 방식: 의미있는 설정/상태 파일 변경이 있을 때만 새 커밋 생성
 

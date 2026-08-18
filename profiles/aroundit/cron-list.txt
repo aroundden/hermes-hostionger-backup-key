@@ -1,0 +1,27 @@
+$ hermes -p aroundit cron list
+exit_code=0
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  a74bb2d8bc4c [active]
+    Name:      gmail-auto-draft-replies
+    Schedule:  every 5m
+    Repeat:    ∞
+    Next run:  2026-08-18T15:48:13.801362+09:00
+    Deliver:   slack:C0BHVB49WH5:1784773233.342939
+    Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
+    Script:    gmail_auto_draft_agent_input.sh
+    Last run:  2026-08-18T15:43:13.801362+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (30 failures in a row)
+    Execution: failed  ae650dea914a4bf29450d2d3bf0409a9
+
+  a4642e1093eb [active]
+    Name:      AROUNDit 월 25일 다건이체 사전점검
+    Schedule:  0 10 24 * *
+    Repeat:    ∞
+    Next run:  2026-08-24T10:00:00+09:00
+    Deliver:   slack:C0BJAQYGJ0M:1784914798.541999
+    Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations
+
