@@ -10,24 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T17:23:36.141571+09:00
+    Next run:  2026-08-19T18:24:45.605549+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T15:23:28.490950+09:00  ok
-    Execution: running  2ec5fbfb119a4b15814615eacc54b631
+    Last run:  2026-08-19T16:24:28.875034+09:00  ok
+    Execution: running  994945bb6a3a4835abd06c161c5422aa
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T16:33:35.837559+09:00
+    Next run:  2026-08-19T17:27:18.218031+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-19T05:25:41.184038+09:00
-    Last run:  2026-08-19T16:18:35.837559+09:00  ok
-    Execution: completed  5c600d23163b422f8e3d96f71397f97a
+    Changed:   2026-08-19T17:04:11.637148+09:00
+    Last run:  2026-08-19T17:12:18.218031+09:00  ok
+    Execution: completed  52233cb706dd45f4b8ad2d49c60f5789
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -40,4 +40,16 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
     Last run:  2026-08-19T15:08:00.036926+09:00  ok
     Execution: completed  b7aa8250068f44a1b4ae19c8616e6efc
+
+  acae99373d42 [active]
+    Name:      PLAUD 새 녹음 Slack 요약
+    Schedule:  every 5m
+    Repeat:    ∞
+    Next run:  2026-08-19T17:28:47.905663+09:00
+    Deliver:   origin
+    Skills:    second-brain-operations
+    Monitor:   plaud_slack_monitor.py (agent runs only on output change)
+    Changed:   2026-08-19T17:22:38.374605+09:00
+    Last run:  2026-08-19T17:23:47.905663+09:00  error: RuntimeError: [Errno 32] Broken pipe  (2 failures in a row)
+    Execution: failed  230639e060e14e8389ff3b71f950c984
 
