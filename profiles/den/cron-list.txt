@@ -10,14 +10,14 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T11:01:25.612273+09:00
+    Next run:  2026-08-19T16:02:09.028130+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T10:01:25.612273+09:00  error: Script exited with code 1
+    Last run:  2026-08-19T14:01:37.525360+09:00  error: Script exited with code 1
 stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (4 failures in a row)
-    Execution: failed  1ce9a9aceec84fd1910a6e63fe70a708
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (8 failures in a row)
+    Execution: running  085b3fb536f6460a99ffc15d92d3f7f9
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -56,25 +56,25 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T10:31:30.461954+09:00
+    Next run:  2026-08-19T15:03:15.303422+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T05:25:41.184038+09:00
-    Last run:  2026-08-19T10:16:30.461954+09:00  ok
-    Execution: completed  94882067852f43c0920f3fe1b3dd7d2b
+    Last run:  2026-08-19T14:48:15.303422+09:00  ok
+    Execution: completed  8aaecc4bf2cb405fa6077a60313e99e4
 
   b9600b15c0bf [active]
     Name:      daily-social-curation-x-linkedin
     Schedule:  45 11 * * *
     Repeat:    ∞
-    Next run:  2026-08-19T11:45:00+09:00
+    Next run:  2026-08-20T11:45:00+09:00
     Deliver:   local
     Skills:    hermes-summary
     Script:    social_curation_collect.sh
     Workdir:   /Users/insideden/kmsg-youtube-demo/kmsg
-    Last run:  2026-08-19T03:09:34.376402+09:00  ok
-    Execution: completed  eed6b16a03154c1e86ca16511bc92779
+    Last run:  2026-08-19T11:48:16.176089+09:00  ok
+    Execution: completed  c2e699a27172460bb9249ae87808c7e6
 
   f16189c88926 [active]
     Name:      TickTick 매일 아침 브리핑
