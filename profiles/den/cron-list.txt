@@ -10,14 +10,14 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-19T07:00:47.755169+09:00
+    Next run:  2026-08-19T11:01:25.612273+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T05:00:35.121019+09:00  error: Script exited with code 2
+    Last run:  2026-08-19T10:01:25.612273+09:00  error: Script exited with code 1
 stdout:
-Hermes GitHub 백업 중단: 민감정보 후보가 발견되어 커밋하지 않았습니다: inventory/hermes-files-manifest.json
-    Execution: running  e8c1e8c522624ddd85d8142ba1e90b01
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (4 failures in a row)
+    Execution: failed  1ce9a9aceec84fd1910a6e63fe70a708
 
   cc4d2fa54398 [active]
     Name:      DEN weekly guest report
@@ -34,12 +34,12 @@ Hermes GitHub 백업 중단: 민감정보 후보가 발견되어 커밋하지 �
     Name:      DEN YouTube daily signal collection
     Schedule:  0 8 * * *
     Repeat:    ∞
-    Next run:  2026-08-19T08:00:00+09:00
+    Next run:  2026-08-20T08:00:00+09:00
     Deliver:   local
     Script:    den_youtube_daily_collector.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T03:06:53.646949+09:00  ok
-    Execution: completed  8393e5954c2547f989e027dfd9854164
+    Last run:  2026-08-19T08:00:12.770918+09:00  ok
+    Execution: completed  6e4f94b113084d26bf2368987a106337
 
   86a1fb468022 [active]
     Name:      DEN weekly idea report
@@ -56,13 +56,13 @@ Hermes GitHub 백업 중단: 민감정보 후보가 발견되어 커밋하지 �
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T06:14:21.075567+09:00
+    Next run:  2026-08-19T10:31:30.461954+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T05:25:41.184038+09:00
-    Last run:  2026-08-19T05:59:21.075567+09:00  ok
-    Execution: completed  486dd623a0ce4377bd10cbb97836266d
+    Last run:  2026-08-19T10:16:30.461954+09:00  ok
+    Execution: completed  94882067852f43c0920f3fe1b3dd7d2b
 
   b9600b15c0bf [active]
     Name:      daily-social-curation-x-linkedin
@@ -80,9 +80,9 @@ Hermes GitHub 백업 중단: 민감정보 후보가 발견되어 커밋하지 �
     Name:      TickTick 매일 아침 브리핑
     Schedule:  30 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-19T09:30:00+09:00
+    Next run:  2026-08-20T09:30:00+09:00
     Deliver:   slack:C0BJ3PZTKLH:1784510893.521999
     Skills:    ticktick-operations
-    Last run:  2026-08-19T03:14:05.881861+09:00  ok
-    Execution: completed  446264d6afac4b328ae7ad1a489f0455
+    Last run:  2026-08-19T09:34:36.136905+09:00  ok
+    Execution: completed  b19df6e67e8440c99d1958bb2df64829
 
