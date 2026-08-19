@@ -10,26 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-20T00:25:20.780125+09:00
+    Next run:  2026-08-20T01:25:59.281376+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-19T22:25:19.691469+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (4 failures in a row)
-    Execution: running  9c9ebae31d1d47dc951f3eea18e98b20
+    Last run:  2026-08-19T23:25:33.401818+09:00  ok
+    Execution: running  6e3cbdc3fcbc43f7a38b2f0a8c60ed87
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-19T23:28:47.642849+09:00
+    Next run:  2026-08-20T00:28:57.836662+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T21:24:27.827240+09:00
-    Last run:  2026-08-19T23:13:47.642849+09:00  ok
-    Execution: completed  ec8ab08c0fc74f30bfcd24de4d5ecb82
+    Last run:  2026-08-20T00:13:57.836662+09:00  ok
+    Execution: completed  e32fa8dd7e8c4d41b56112794b67d2e5
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -47,11 +45,11 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      PLAUD 새 녹음 Slack 요약
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-19T23:25:49.500899+09:00
+    Next run:  2026-08-20T00:26:23.756186+09:00
     Deliver:   origin
     Skills:    second-brain-operations
     Monitor:   plaud_slack_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T18:52:04.133659+09:00
-    Last run:  2026-08-19T23:20:49.500899+09:00  ok
-    Execution: completed  06b1f06259b348c1ac55e38b41ac63f0
+    Last run:  2026-08-20T00:21:23.756186+09:00  ok
+    Execution: completed  86cbcba839ed4c9a9aaaa8dc95b38273
 
