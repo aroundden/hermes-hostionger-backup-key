@@ -10,24 +10,26 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-21T04:46:12.988168+09:00
+    Next run:  2026-08-21T08:47:18.486995+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-21T02:45:56.207222+09:00  ok
-    Execution: running  64488a8e867b4428b51d6284a8d96282
+    Last run:  2026-08-21T06:46:30.007129+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (3 failures in a row)
+    Execution: running  30e3ba482838438da8ec3e1280caddb1
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-21T03:52:44.753892+09:00
+    Next run:  2026-08-21T07:47:23.422858+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-21T03:37:45.485439+09:00
-    Last run:  2026-08-21T03:22:35.081152+09:00  ok
-    Execution: unknown  ad1e28e9acea457ab140b02245b4969f
+    Changed:   2026-08-21T04:27:16.376260+09:00
+    Last run:  2026-08-21T07:32:23.422858+09:00  ok
+    Execution: completed  eadaabd9d58b4516a4aea4cd0f9db176
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -45,11 +47,11 @@ exit_code=0
     Name:      PLAUD 새 녹음 Slack 요약
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-21T03:49:47.315452+09:00
+    Next run:  2026-08-21T07:50:19.700544+09:00
     Deliver:   origin
     Skills:    second-brain-operations
     Monitor:   plaud_slack_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T18:52:04.133659+09:00
-    Last run:  2026-08-21T03:44:47.315452+09:00  ok
-    Execution: completed  b73f4af0e73547c28a24484c22d54b0a
+    Last run:  2026-08-21T07:45:19.700544+09:00  ok
+    Execution: completed  7566791eb0d94081b4c19f8b6cd7bf4a
 
