@@ -17,7 +17,7 @@ exit_code=0
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
     → state.db: WAL journal mode (29.1 MB)
-    → cron/executions.db: WAL journal mode (300.0 KB)
+    → cron/executions.db: WAL journal mode (352.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
@@ -40,7 +40,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✓ Config version up to date (v37)
+  ⚠ Config version outdated (v37 → v38) (new settings available)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -110,7 +110,6 @@ exit_code=0
   ✓ skills
   ✓ terminal
   ✓ todo
-  ✓ tts
   ✓ video
   ✓ video_gen
   ✓ vision
@@ -124,6 +123,7 @@ exit_code=0
   ⚠ hermes-yuanbao (system dependency not met)
   ⚠ homeassistant (system dependency not met)
   ⚠ spotify (system dependency not met)
+  ⚠ tts (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub
@@ -141,11 +141,12 @@ exit_code=0
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 4 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. web workspace has 4 npm vulnerabilities
-  3. ui-tui workspace has 3 npm vulnerabilities
+  2. Run 'hermes doctor --fix' or 'hermes setup' to migrate config
+  3. web workspace has 4 npm vulnerabilities
+  4. ui-tui workspace has 3 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 

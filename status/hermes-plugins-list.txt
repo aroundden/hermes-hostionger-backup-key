@@ -285,12 +285,25 @@ exit_code=0
 │                      │             │         │ tool). Saves        │         │
 │                      │             │         │ generated images to │         │
 │                      │             │         │ $HERMES_HOME/cache… │         │
-│ openrouter           │ not enabled │ 1.0.0   │ OpenRouter + Nous   │ bundled │
+│ openrouter           │ not enabled │ 1.1.0   │ OpenRouter + Nous   │ bundled │
 │                      │             │         │ Portal image        │         │
-│                      │             │         │ generation          │         │
-│                      │             │         │ (chat-completions   │         │
-│                      │             │         │ image output;       │         │
-│                      │             │         │ reference-grounded… │         │
+│                      │             │         │ generation.         │         │
+│                      │             │         │ Chat-completions    │         │
+│                      │             │         │ image output        │         │
+│                      │             │         │ (reference-grounde… │         │
+│                      │             │         │ plus OpenRouter's   │         │
+│                      │             │         │ Dedicated Image API │         │
+│                      │             │         │ (/images/generatio… │         │
+│                      │             │         │ for gpt-image-2,    │         │
+│                      │             │         │ Krea 2, Qwen Image  │         │
+│                      │             │         │ 3 Pro,              │         │
+│                      │             │         │ MAI-Image-2.5 and   │         │
+│                      │             │         │ Grok Imagine —      │         │
+│                      │             │         │ exact per-model     │         │
+│                      │             │         │ aspect ratios,      │         │
+│                      │             │         │ resolution/quality… │         │
+│                      │             │         │ up to 16 reference  │         │
+│                      │             │         │ images.             │         │
 │                      │             │         │ Text-to-image and   │         │
 │                      │             │         │ image-to-image.     │         │
 │ xai                  │ not enabled │ 1.0.0   │ xAI image           │ bundled │
@@ -309,16 +322,6 @@ exit_code=0
 │                      │             │         │ or `hermes tools →  │         │
 │                      │             │         │ Langfuse            │         │
 │                      │             │         │ Observability`.     │         │
-│ nemo_relay           │ not enabled │ 0.1.0   │ Optional NeMo Relay │ bundled │
-│                      │             │         │ observability for   │         │
-│                      │             │         │ Hermes. Opt in with │         │
-│                      │             │         │ `hermes plugins     │         │
-│                      │             │         │ enable              │         │
-│                      │             │         │ observability/nemo… │         │
-│                      │             │         │ HERMES_NEMO_RELAY_* │         │
-│                      │             │         │ env vars configure  │         │
-│                      │             │         │ exports after the   │         │
-│                      │             │         │ plugin is enabled.  │         │
 │ a2a-platform         │ not enabled │ 1.0.0   │ A2A                 │ bundled │
 │                      │             │         │ (Agent-to-Agent)    │         │
 │                      │             │         │ protocol v1.0       │         │
