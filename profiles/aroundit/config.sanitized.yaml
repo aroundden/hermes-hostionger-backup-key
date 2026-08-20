@@ -49,6 +49,11 @@ platforms:
       name: C0BJDF8693K
       user_id: U09T8V0M10E
       scope_id: T09TPTM2GV7
+fallback_providers:
+  - provider: openai-codex
+    model: gpt-5.6-sol
+  - provider: openai-codex
+    model: gpt-5.3-codex-spark
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,

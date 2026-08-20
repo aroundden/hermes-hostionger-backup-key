@@ -20,22 +20,22 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-20T09:00:00+09:00
+    Next run:  2026-08-21T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace
     Script:    gmail_deadline_reminder_agent_input.sh
-    Last run:  2026-08-19T09:03:21.737912+09:00  ok
-    Execution: completed  d6fd022305b54b54bb36d5dabe91161b
+    Last run:  2026-08-20T09:01:36.417659+09:00  ok
+    Execution: completed  2464c51b793e42d2bceb905f0686c55a
 
   3d8ec51505ef [active]
     Name:      크몽 이메일 알림 보조 감시
     Schedule:  4-59/5 * * * *
     Repeat:    ∞
-    Next run:  2026-08-20T08:34:00+09:00
+    Next run:  2026-08-20T10:39:00+09:00
     Deliver:   slack:C0BNYT05F8X:1786513434.846449
     Skills:    gmail-workflow-automation
     Script:    kmong_inquiry_watch.py
     Workdir:   /Users/insideden
-    Last run:  2026-08-20T08:29:00.833267+09:00  ok
-    Execution: completed  1a49a6e6b8d34805a3549650fba6ef91
+    Last run:  2026-08-20T10:34:15.583407+09:00  ok
+    Execution: completed  ebc9ed9ecb1542f5b15ac85020c4510f
 
