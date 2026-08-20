@@ -10,26 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-20T11:34:37.314331+09:00
+    Next run:  2026-08-20T12:35:01.256469+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-20T09:34:36.410359+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'
-    Execution: running  3f913a52bceb4f40bd2ad1c3207b62c4
+    Last run:  2026-08-20T10:34:55.367778+09:00  ok
+    Execution: running  167249cc4794450e9db71206fd0fa088
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-20T10:36:51.446123+09:00
+    Next run:  2026-08-20T11:36:59.942555+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-20T04:01:29.449983+09:00
-    Last run:  2026-08-20T10:21:51.446123+09:00  ok
-    Execution: completed  777ddf08e81749c38decd0df6c9d29ac
+    Last run:  2026-08-20T11:21:59.942555+09:00  ok
+    Execution: completed  c01542c82fcf481db6bb15f040535e24
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -47,11 +45,11 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      PLAUD 새 녹음 Slack 요약
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-20T10:35:32.201447+09:00
+    Next run:  2026-08-20T11:35:40.110187+09:00
     Deliver:   origin
     Skills:    second-brain-operations
     Monitor:   plaud_slack_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T18:52:04.133659+09:00
-    Last run:  2026-08-20T10:30:32.201447+09:00  ok
-    Execution: completed  1ad39a21bc9047ff8e58b770b60d3892
+    Last run:  2026-08-20T11:30:40.110187+09:00  ok
+    Execution: completed  41eb36cbfc264734b1e81ac79eb6d1d4
 
