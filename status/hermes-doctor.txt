@@ -17,7 +17,7 @@ exit_code=0
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
     → state.db: WAL journal mode (30.7 MB)
-    → cron/executions.db: WAL journal mode (372.0 KB)
+    → cron/executions.db: WAL journal mode (376.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
@@ -64,9 +64,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (57 sessions)
-    → state.db logical size 30.7 MB, 7,849 pages, 355 free, WAL 4.6 MB
-    → 2,762 messages, 57 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (58 sessions)
+    → state.db logical size 30.7 MB, 7,849 pages, 296 free, WAL 4.6 MB
+    → 2,775 messages, 58 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -81,9 +81,9 @@ exit_code=0
   ✓ Node.js
   ✓ agent-browser (resolves via npx on first use)
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 4 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -145,8 +145,8 @@ exit_code=0
 
   1. Run 'hermes setup' to configure API keys
   2. Run 'hermes doctor --fix' or 'hermes setup' to migrate config
-  3. web workspace has 4 npm vulnerabilities
-  4. ui-tui workspace has 3 npm vulnerabilities
+  3. web workspace has 1 npm vulnerability
+  4. ui-tui workspace has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
