@@ -10,24 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-20T23:40:53.720069+09:00
+    Next run:  2026-08-21T00:43:06.218666+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-20T21:40:16.818099+09:00  ok
-    Execution: running  b414dff79d2e4e88a745fdef9c0643f1
+    Last run:  2026-08-20T22:42:52.992681+09:00  ok
+    Execution: running  840d11ec6bd243499536f141a20e708f
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-20T22:56:20.419822+09:00
+    Next run:  2026-08-20T23:57:20.235264+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-20T04:01:29.449983+09:00
-    Last run:  2026-08-20T22:41:20.419822+09:00  ok
-    Execution: completed  cae85f4b77174783b8317303e64efd53
+    Last run:  2026-08-20T23:42:20.235264+09:00  ok
+    Execution: completed  834fa85f86f5469682d80128e7720fc1
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -45,11 +45,11 @@ exit_code=0
     Name:      PLAUD 새 녹음 Slack 요약
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-20T22:47:00.560970+09:00
+    Next run:  2026-08-20T23:45:07.927059+09:00
     Deliver:   origin
     Skills:    second-brain-operations
     Monitor:   plaud_slack_monitor.py (agent runs only on output change)
     Changed:   2026-08-19T18:52:04.133659+09:00
-    Last run:  2026-08-20T22:42:00.560970+09:00  ok
-    Execution: completed  47efa8828f0e4a2ea7adf471565cfd07
+    Last run:  2026-08-20T23:40:07.927059+09:00  ok
+    Execution: completed  b962a473b3c04bcd8e5acb22217c06fc
 
