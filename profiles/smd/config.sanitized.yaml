@@ -5,6 +5,10 @@ model:
 fallback_providers:
   - provider: openai-codex
     model: gpt-5.3-codex-spark
+  - provider: openai-codex
+    model: gpt-5.6-luna
+credential_pool_strategies: <REDACTED>
+  openai-codex: fill_first
 terminal:
   cwd: /Users/insideden
 memory:
@@ -42,5 +46,21 @@ onboarding:
     tool_progress_prompt: true
     busy_input_prompt: true
 _config_version: 37
-credential_pool_strategies: <REDACTED>
-  openai-codex: fill_first
+platforms:
+  slack:
+    enabled: true
+    home_channel:
+      platform: slack
+      chat_id: C0BJDF8693K
+      name: 4_smd_에스피식
+      thread_id: '1787245153.117459'
+      user_id: U09T8V0M10E
+      scope_id: T09TPTM2GV7
+web:
+  backend: parallel
+  provider_tier:
+    parallel: free
+browser:
+  cloud_provider: nous
+computer_use:
+  grant_existing_profile: false

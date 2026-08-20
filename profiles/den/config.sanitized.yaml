@@ -5,15 +5,21 @@ model:
 fallback_providers:
   - provider: openai-codex
     model: gpt-5.3-codex-spark
+  - provider: openai-codex
+    model: gpt-5.6-luna
+credential_pool_strategies: <REDACTED>
+  openai-codex: fill_first
 toolsets:
   - hermes-cli
   - kanban
 terminal:
   cwd: /Users/insideden
 web:
-  backend: firecrawl
+  backend: parallel
+  provider_tier:
+    parallel: free
 browser:
-  cloud_provider: browser-use
+  cloud_provider: nous
 tts:
   provider: openai
 memory:
@@ -53,11 +59,21 @@ cron:
   wrap_response: false
 kanban:
   dispatch_in_gateway: true
-_config_version: 37
-image_gen:
-  use_gateway: true
 onboarding:
   seen:
     busy_input_prompt: true
-credential_pool_strategies: <REDACTED>
-  openai-codex: fill_first
+_config_version: 37
+image_gen:
+  use_gateway: true
+platforms:
+  slack:
+    enabled: true
+    home_channel:
+      platform: slack
+      chat_id: C0BM6HMVDQB
+      name: 5_den
+      thread_id: '1787245175.644239'
+      user_id: U09T8V0M10E
+      scope_id: T09TPTM2GV7
+computer_use:
+  grant_existing_profile: false
