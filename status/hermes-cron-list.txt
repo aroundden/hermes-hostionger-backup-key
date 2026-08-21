@@ -10,24 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-21T17:36:31.518457+09:00
+    Next run:  2026-08-21T18:36:53.560269+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-21T15:36:18.709318+09:00  ok
-    Execution: running  76d235b588d940ebb69b1f994a09cf4c
+    Last run:  2026-08-21T16:36:45.499635+09:00  ok
+    Execution: running  5c68d440f2b6441abce0cab995327509
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-21T16:39:43.544282+09:00
+    Next run:  2026-08-21T17:39:52.793105+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:37:05.856417+09:00
-    Last run:  2026-08-21T16:24:43.544282+09:00  ok
-    Execution: completed  79e9c0f6520d4ca4908a10f6ca410554
+    Last run:  2026-08-21T17:24:52.793105+09:00  ok
+    Execution: completed  7888b3df7dba4887989d4abd055eae05
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -45,13 +45,11 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-21T16:43:45.532155+09:00
+    Next run:  2026-08-21T17:44:34.735481+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
-    Last run:  2026-08-21T16:33:45.532155+09:00  error: Script exited with code 1
-stdout:
-{"error": "Using keyring backend: file\nWarning: removing undecryptable credentials file (/Users/insideden/.config/gws/credentials.enc): Decryption failed. Credentials may have been created on a different machine. Run `gws auth logout` and `gws auth login` to re-authenticate.\nerror[auth]: Access denied. No credentials provided. Run `gws auth login` or set GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE to an OAuth credentials JSON file.", "status": "FATAL"}
-    Execution: failed  be99237721084ed79c49abfa9043844d
+    Last run:  2026-08-21T17:34:34.735481+09:00  ok
+    Execution: completed  9e14de5a589a4563a72c7e86aed3e77d
 

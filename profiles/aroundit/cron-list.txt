@@ -10,12 +10,12 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-21T16:37:15.978343+09:00
+    Next run:  2026-08-21T17:40:58.499236+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations
     Script:    gmail_auto_draft_agent_input.sh
-    Last run:  2026-08-21T16:32:15.978343+09:00  ok
-    Execution: completed  e561964c30fa4db9bf2f624b35647916
+    Last run:  2026-08-21T17:30:14.496399+09:00  ok
+    Execution: running  bb90f496357449028bc7540b9951fe24
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -37,15 +37,12 @@ exit_code=0
     Last run:  2026-08-21T09:02:48.652067+09:00  ok
     Execution: completed  03292fca87df452babb6c10d42179aa2
 
-  3d8ec51505ef [active]
-    Name:      크몽 이메일 알림 보조 감시
-    Schedule:  4-59/5 * * * *
+  61fe7ec48fd8 [active]
+    Name:      크몽 Safari 문의 감시·승인형 답장
+    Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-21T16:39:00+09:00
-    Deliver:   slack:C0BNYT05F8X:1786513434.846449
-    Skills:    gmail-workflow-automation
-    Script:    kmong_inquiry_watch.py
-    Workdir:   /Users/insideden
-    Last run:  2026-08-21T16:34:49.653122+09:00  ok
-    Execution: completed  c0075dd7ca954faa816d0f111f211a65
+    Next run:  2026-08-21T17:40:21.712458+09:00
+    Deliver:   origin
+    Skills:    computer-use, native-chat-operations
+    Execution: running  9f89d855ac26478b8a68a5fcc6fa4ef4
 
