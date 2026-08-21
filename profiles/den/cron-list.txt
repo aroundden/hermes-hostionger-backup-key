@@ -10,24 +10,24 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-21T18:36:53.560269+09:00
+    Next run:  2026-08-21T19:37:33.827147+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-21T16:36:45.499635+09:00  ok
-    Execution: running  5c68d440f2b6441abce0cab995327509
+    Last run:  2026-08-21T17:37:07.570454+09:00  ok
+    Execution: running  6ce805f671ec45f589d66b7eb902b0ae
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-21T17:39:52.793105+09:00
+    Next run:  2026-08-21T18:40:00.697104+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:37:05.856417+09:00
-    Last run:  2026-08-21T17:24:52.793105+09:00  ok
-    Execution: completed  7888b3df7dba4887989d4abd055eae05
+    Last run:  2026-08-21T18:25:00.697104+09:00  ok
+    Execution: completed  96527cd2993a4b91a99f289e69dd4a28
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -45,11 +45,11 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-21T17:44:34.735481+09:00
+    Next run:  2026-08-21T18:46:35.914121+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
-    Last run:  2026-08-21T17:34:34.735481+09:00  ok
-    Execution: completed  9e14de5a589a4563a72c7e86aed3e77d
+    Last run:  2026-08-21T18:36:35.914121+09:00  ok
+    Execution: completed  327c1da7186e42a18058bc0b2115c097
 
