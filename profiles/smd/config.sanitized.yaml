@@ -43,6 +43,65 @@ moa:
   max_tokens: <REDACTED>
   fanout: user_turn
   enabled: true
+skills:
+  disabled:
+    - airtable
+    - apple-notes
+    - apple-reminders
+    - architecture-diagram
+    - arxiv
+    - ascii-art
+    - ascii-video
+    - box
+    - claude-code
+    - codebase-inspection
+    - comfyui
+    - design-md
+    - dogfood
+    - email-inbox-triage
+    - evaluating-llms-harness
+    - excalidraw
+    - findmy
+    - gif-search
+    - github-auth
+    - github-code-review
+    - github-issue-to-pr
+    - github-issues
+    - github-pr-workflow
+    - github-repo-management
+    - hermes-agent-skill-authoring
+    - himalaya
+    - huggingface-hub
+    - imessage
+    - inspecting-hermes-desktop-dom
+    - llama-cpp
+    - llm-wiki
+    - manim-video
+    - merge-reconciler
+    - nano-pdf
+    - node-inspect-debugger
+    - notion
+    - opencode
+    - openhue
+    - p5js
+    - plan
+    - pretext
+    - product-price-monitor
+    - python-debugpy
+    - requesting-code-review
+    - research-paper-writing
+    - serving-llms-vllm
+    - simplify-code
+    - sketch
+    - songsee
+    - songwriting-and-ai-music
+    - spike
+    - teams-meeting-pipeline
+    - test-driven-development
+    - touchdesigner-mcp
+    - weekly-review-planning
+    - weights-and-biases
+    - xurl
 command_allowlist:
   - script execution via heredoc
 kanban:
@@ -53,7 +112,7 @@ onboarding:
     busy_input_prompt: true
 computer_use:
   grant_existing_profile: false
-_config_version: 37
+_config_version: 38
 platforms:
   slack:
     enabled: true
@@ -66,13 +125,10 @@ platforms:
       scope_id: T09TPTM2GV7
 platform_toolsets:
   cli:
-    - bfl
     - browser
     - clarify
     - code_execution
     - computer_use
-    - cronjob
-    - delegation
     - file
     - image_gen
     - kanban
@@ -81,17 +137,13 @@ platform_toolsets:
     - skills
     - terminal
     - todo
-    - tts
     - vision
     - web
   slack:
-    - bfl
     - browser
     - clarify
     - code_execution
     - computer_use
-    - cronjob
-    - delegation
     - file
     - image_gen
     - kanban
@@ -100,7 +152,15 @@ platform_toolsets:
     - skills
     - terminal
     - todo
-    - tts
+    - vision
+    - web
+  cron:
+    - browser
+    - file
+    - kanban
+    - session_search
+    - skills
+    - terminal
     - vision
     - web
 known_plugin_toolsets:
@@ -108,6 +168,9 @@ known_plugin_toolsets:
     - a2a
     - spotify
   slack:
+    - a2a
+    - spotify
+  cron:
     - a2a
     - spotify
 known_builtin_toolsets:
@@ -167,6 +230,38 @@ known_builtin_toolsets:
     - web
     - x_search
     - yuanbao
+  cron:
+    - bfl
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - context_engine
+    - cronjob
+    - delegation
+    - discord
+    - discord_admin
+    - file
+    - homeassistant
+    - image_gen
+    - memory
+    - session_search
+    - skills
+    - spotify
+    - stt
+    - terminal
+    - todo
+    - tts
+    - video
+    - video_gen
+    - vision
+    - web
+    - x_search
+    - yuanbao
+auxiliary:
+  background_review:
+    enabled: false
+agent: {}
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,

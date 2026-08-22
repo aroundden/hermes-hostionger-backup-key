@@ -47,6 +47,69 @@ moa:
   max_tokens: <REDACTED>
   fanout: user_turn
   enabled: true
+skills:
+  disabled:
+    - airtable
+    - apple-notes
+    - apple-reminders
+    - architecture-diagram
+    - arxiv
+    - ascii-art
+    - ascii-video
+    - baoyu-infographic
+    - blogwatcher
+    - box
+    - claude-code
+    - claude-design
+    - codebase-inspection
+    - comfyui
+    - competitor-news-monitor
+    - design-md
+    - dogfood
+    - evaluating-llms-harness
+    - excalidraw
+    - findmy
+    - gif-search
+    - github-code-review
+    - github-issue-to-pr
+    - github-issues
+    - github-pr-workflow
+    - github-repo-management
+    - hermes-agent-skill-authoring
+    - huggingface-hub
+    - humanizer
+    - inspecting-hermes-desktop-dom
+    - llama-cpp
+    - llm-wiki
+    - manim-video
+    - merge-reconciler
+    - nano-pdf
+    - node-inspect-debugger
+    - notion
+    - obsidian
+    - opencode
+    - openhue
+    - p5js
+    - plan
+    - popular-web-designs
+    - pretext
+    - product-price-monitor
+    - python-debugpy
+    - requesting-code-review
+    - research-paper-writing
+    - second-brain-operations
+    - serving-llms-vllm
+    - simplify-code
+    - sketch
+    - songsee
+    - songwriting-and-ai-music
+    - spike
+    - teams-meeting-pipeline
+    - test-driven-development
+    - touchdesigner-mcp
+    - weights-and-biases
+    - xurl
+    - youtube-content
 command_allowlist:
   - script execution via -e/-c flag
 kanban:
@@ -57,7 +120,7 @@ onboarding:
     busy_input_prompt: true
 computer_use:
   grant_existing_profile: false
-_config_version: 37
+_config_version: 38
 platforms:
   slack:
     enabled: true
@@ -70,41 +133,43 @@ platforms:
       scope_id: T09TPTM2GV7
 platform_toolsets:
   cli:
-    - bfl
     - browser
     - clarify
     - code_execution
     - computer_use
     - cronjob
-    - delegation
     - file
-    - image_gen
     - kanban
     - memory
     - session_search
     - skills
     - terminal
     - todo
-    - tts
     - vision
     - web
   slack:
-    - bfl
     - browser
     - clarify
     - code_execution
     - computer_use
     - cronjob
-    - delegation
     - file
-    - image_gen
     - kanban
     - memory
     - session_search
     - skills
     - terminal
     - todo
-    - tts
+    - vision
+    - web
+  cron:
+    - browser
+    - computer_use
+    - file
+    - kanban
+    - session_search
+    - skills
+    - terminal
     - vision
     - web
 known_plugin_toolsets:
@@ -112,6 +177,9 @@ known_plugin_toolsets:
     - a2a
     - spotify
   slack:
+    - a2a
+    - spotify
+  cron:
     - a2a
     - spotify
 known_builtin_toolsets:
@@ -171,6 +239,77 @@ known_builtin_toolsets:
     - web
     - x_search
     - yuanbao
+  cron:
+    - bfl
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - context_engine
+    - cronjob
+    - delegation
+    - discord
+    - discord_admin
+    - file
+    - homeassistant
+    - image_gen
+    - memory
+    - session_search
+    - skills
+    - spotify
+    - stt
+    - terminal
+    - todo
+    - tts
+    - video
+    - video_gen
+    - vision
+    - web
+    - x_search
+    - yuanbao
+mcp_servers:
+  mcp-gateway:
+    command: /Users/insideden/.local/bin/mcporter
+    args:
+      - serve
+      - --servers
+      - mcp-gateway
+      - --stdio
+    enabled: true
+  clobe:
+    url: https://api.clobe.ai/mcp
+    connect_timeout: 300
+    auth: oauth
+    enabled: true
+    tools:
+      include:
+        - get_new_client_requests
+        - get_cash_receipts
+        - preview_create_payroll_row
+        - get_scraping_status
+        - get_tax_invoices
+        - get_my_context
+        - summarize_bank_transactions
+        - get_account_balance_trend
+        - get_payroll_rows
+        - get_labeled_transactions
+        - get_payroll_register
+        - get_labels
+        - get_journal_ledger
+        - preview_create_other_income_payroll_row
+        - search_business_entities
+        - summarize_journal_ledger
+        - search_business_partners
+        - get_bank_accounts
+        - get_labeled_card_billing_items
+        - search_ledger_accounts
+        - get_monthly_revenue
+        - get_card_approvals
+        - preview_create_journal_entry
+auxiliary:
+  background_review:
+    enabled: false
+agent: {}
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,

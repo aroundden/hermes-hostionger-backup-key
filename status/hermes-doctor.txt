@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (51.6 MB)
+    → state.db: WAL journal mode (52.7 MB)
     → cron/executions.db: WAL journal mode (592.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
@@ -40,7 +40,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ⚠ Config version outdated (v37 → v38) (new settings available)
+  ✓ Config version up to date (v38)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -64,9 +64,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (83 sessions)
-    → state.db logical size 51.6 MB, 13,203 pages, 35 free, WAL 4.6 MB
-    → 5,468 messages, 83 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (86 sessions)
+    → state.db logical size 52.7 MB, 13,489 pages, 51 free, WAL 4.6 MB
+    → 5,552 messages, 86 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -135,17 +135,16 @@ exit_code=0
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gpt-5.6-sol
+  ✓   aroundit: gateway running, gpt-5.6-sol
   ✓   den: gateway running, gpt-5.6-sol
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
+  Found 3 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Run 'hermes doctor --fix' or 'hermes setup' to migrate config
-  3. web workspace has 1 npm vulnerability
-  4. ui-tui workspace has 1 npm vulnerability
+  2. web workspace has 1 npm vulnerability
+  3. ui-tui workspace has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 

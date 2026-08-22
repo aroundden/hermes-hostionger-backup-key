@@ -53,6 +53,52 @@ moa:
   max_tokens: <REDACTED>
   fanout: user_turn
   enabled: true
+skills:
+  disabled:
+    - airtable
+    - architecture-diagram
+    - arxiv
+    - ascii-art
+    - ascii-video
+    - blogwatcher
+    - box
+    - chatgpt-desktop-operations
+    - claude-code
+    - codebase-inspection
+    - comfyui
+    - design-md
+    - dogfood
+    - evaluating-llms-harness
+    - excalidraw
+    - gif-search
+    - github-code-review
+    - github-issues
+    - github-pr-workflow
+    - himalaya
+    - huggingface-hub
+    - inspecting-hermes-desktop-dom
+    - llama-cpp
+    - llm-wiki
+    - manim-video
+    - nano-pdf
+    - node-inspect-debugger
+    - notion
+    - opencode
+    - openhue
+    - p5js
+    - pretext
+    - product-price-monitor
+    - python-debugpy
+    - research-paper-writing
+    - serving-llms-vllm
+    - simplify-code
+    - sketch
+    - songsee
+    - songwriting-and-ai-music
+    - spike
+    - teams-meeting-pipeline
+    - touchdesigner-mcp
+    - weights-and-biases
 cron:
   model: ''
   model_provider: ''
@@ -64,7 +110,7 @@ onboarding:
     busy_input_prompt: true
 computer_use:
   grant_existing_profile: false
-_config_version: 37
+_config_version: 38
 image_gen:
   use_gateway: true
 platforms:
@@ -79,7 +125,6 @@ platforms:
       scope_id: T09TPTM2GV7
 platform_toolsets:
   cli:
-    - bfl
     - browser
     - clarify
     - code_execution
@@ -94,11 +139,9 @@ platform_toolsets:
     - skills
     - terminal
     - todo
-    - tts
     - vision
     - web
   slack:
-    - bfl
     - browser
     - clarify
     - code_execution
@@ -113,7 +156,15 @@ platform_toolsets:
     - skills
     - terminal
     - todo
-    - tts
+    - vision
+    - web
+  cron:
+    - browser
+    - file
+    - kanban
+    - session_search
+    - skills
+    - terminal
     - vision
     - web
 known_plugin_toolsets:
@@ -121,6 +172,9 @@ known_plugin_toolsets:
     - a2a
     - spotify
   slack:
+    - a2a
+    - spotify
+  cron:
     - a2a
     - spotify
 known_builtin_toolsets:
@@ -180,11 +234,39 @@ known_builtin_toolsets:
     - web
     - x_search
     - yuanbao
+  cron:
+    - bfl
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - context_engine
+    - cronjob
+    - delegation
+    - discord
+    - discord_admin
+    - file
+    - homeassistant
+    - image_gen
+    - memory
+    - session_search
+    - skills
+    - spotify
+    - stt
+    - terminal
+    - todo
+    - tts
+    - video
+    - video_gen
+    - vision
+    - web
+    - x_search
+    - yuanbao
 mcp_servers:
   supabase:
     url: https://mcp.supabase.com/mcp
     auth: oauth
-    enabled: true
+    enabled: false
     tools:
       include:
         - search_docs
@@ -204,7 +286,7 @@ mcp_servers:
   vercel:
     url: https://mcp.vercel.com
     auth: oauth
-    enabled: true
+    enabled: false
     tools:
       include:
         - search_vercel_documentation
@@ -232,7 +314,11 @@ mcp_servers:
   notion:
     url: https://mcp.notion.com/mcp
     auth: oauth
-    enabled: true
+    enabled: false
+auxiliary:
+  background_review:
+    enabled: false
+agent: {}
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,

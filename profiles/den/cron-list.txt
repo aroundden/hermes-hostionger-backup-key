@@ -10,26 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-22T20:17:38.441590+09:00
+    Next run:  2026-08-22T20:53:39.156924+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-22T18:38:22.247677+09:00  error: Script exited with code 1
-stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (24 failures in a row)
-    Execution: running  0cdb3d796d174a2693e15870f53bdb83
+    Last run:  2026-08-22T19:17:49.388839+09:00  ok
+    Execution: running  32df62224ae6425781afb64526c0dc9a
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-22T19:27:24.539526+09:00
+    Next run:  2026-08-22T20:07:24.033984+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-22T19:09:21.280099+09:00
-    Last run:  2026-08-22T19:12:24.539526+09:00  ok
-    Execution: unknown  a3f47ebfbb7f4ffe925fe6209b183ced
+    Changed:   2026-08-22T19:52:24.859379+09:00
+    Workdir:   /Users/insideden/.hermes
+    Last run:  2026-08-22T19:37:23.354491+09:00  ok
+    Execution: running  ca6a4e8d6dab440ca98e09b8f4bb86f5
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -47,11 +46,12 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-22T19:27:08.924897+09:00
+    Next run:  2026-08-22T19:58:26.507361+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
-    Last run:  2026-08-22T19:17:08.924897+09:00  ok
-    Execution: completed  638f049640234b10bf84c53298653fd9
+    Workdir:   /Users/insideden/.hermes/profiles/den/scripts
+    Last run:  2026-08-22T19:48:26.507361+09:00  ok
+    Execution: unknown  ec6103caab64457f9a789b5726b6cd11
 
