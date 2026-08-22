@@ -10,46 +10,48 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-21T19:37:33.827147+09:00
+    Next run:  2026-08-22T17:38:18.977687+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-21T17:37:07.570454+09:00  ok
-    Execution: running  6ce805f671ec45f589d66b7eb902b0ae
+    Last run:  2026-08-22T16:38:18.977687+09:00  error: Script exited with code 1
+stdout:
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (22 failures in a row)
+    Execution: failed  2927a77f1d0b4f328feed6a6e363f398
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-21T18:40:00.697104+09:00
+    Next run:  2026-08-22T17:17:05.094901+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:37:05.856417+09:00
-    Last run:  2026-08-21T18:25:00.697104+09:00  ok
-    Execution: completed  96527cd2993a4b91a99f289e69dd4a28
+    Last run:  2026-08-22T17:02:05.094901+09:00  ok
+    Execution: completed  33197cb772214061be97ae0f31eac1b9
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
     Schedule:  10 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-22T09:10:00+09:00
+    Next run:  2026-08-23T09:10:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy
     Script:    den_youtube_daily_collector.py
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-21T09:18:03.674121+09:00  ok
-    Execution: unknown  5e1897440df9473cb6ecfc77a539fce0
+    Last run:  2026-08-22T09:19:43.461512+09:00  ok
+    Execution: unknown  2808e554a5e845c0918c994e05ea4c18
 
   169c1fa264fa [active]
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-21T18:46:35.914121+09:00
+    Next run:  2026-08-22T17:22:21.911289+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
-    Last run:  2026-08-21T18:36:35.914121+09:00  ok
-    Execution: completed  327c1da7186e42a18058bc0b2115c097
+    Last run:  2026-08-22T17:12:21.911289+09:00  ok
+    Execution: completed  acf8a5e011d44db0a26a655b14781001
 
