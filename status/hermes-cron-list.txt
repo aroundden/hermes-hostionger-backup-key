@@ -10,14 +10,14 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-22T19:38:22.247677+09:00
+    Next run:  2026-08-22T20:17:38.441590+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-08-22T18:38:22.247677+09:00  error: Script exited with code 1
 stdout:
 Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (24 failures in a row)
-    Execution: failed  ffa1afacad454c329f510ce36f615d44
+    Execution: running  0cdb3d796d174a2693e15870f53bdb83
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
