@@ -47,6 +47,8 @@ moa:
   max_tokens: <REDACTED>
   fanout: user_turn
   enabled: true
+command_allowlist:
+  - script execution via -e/-c flag
 kanban:
   dispatch_in_gateway: false
 onboarding:

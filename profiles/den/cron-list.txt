@@ -1,4 +1,4 @@
-$ hermes -p den cron list
+$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p den cron list
 exit_code=0
 
 
@@ -10,26 +10,26 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-22T17:38:18.977687+09:00
+    Next run:  2026-08-22T19:38:22.247677+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-22T16:38:18.977687+09:00  error: Script exited with code 1
+    Last run:  2026-08-22T18:38:22.247677+09:00  error: Script exited with code 1
 stdout:
-Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (22 failures in a row)
-    Execution: failed  2927a77f1d0b4f328feed6a6e363f398
+Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or directory: 'hermes'  (24 failures in a row)
+    Execution: failed  ffa1afacad454c329f510ce36f615d44
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-22T17:17:05.094901+09:00
+    Next run:  2026-08-22T19:27:24.539526+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-21T15:37:05.856417+09:00
-    Last run:  2026-08-22T17:02:05.094901+09:00  ok
-    Execution: completed  33197cb772214061be97ae0f31eac1b9
+    Changed:   2026-08-22T19:09:21.280099+09:00
+    Last run:  2026-08-22T19:12:24.539526+09:00  ok
+    Execution: unknown  a3f47ebfbb7f4ffe925fe6209b183ced
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -47,11 +47,11 @@ Hermes GitHub 백업 예외: FileNotFoundError: [Errno 2] No such file or direct
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-22T17:22:21.911289+09:00
+    Next run:  2026-08-22T19:27:08.924897+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
-    Last run:  2026-08-22T17:12:21.911289+09:00  ok
-    Execution: completed  acf8a5e011d44db0a26a655b14781001
+    Last run:  2026-08-22T19:17:08.924897+09:00  ok
+    Execution: completed  638f049640234b10bf84c53298653fd9
 
