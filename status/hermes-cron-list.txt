@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-22T20:55:04.055523+09:00
+    Next run:  2026-08-22T21:55:20.927167+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-22T19:53:51.392158+09:00  ok
-    Execution: running  fff4cc9dbcab40d595d3216915a875c9
+    Last run:  2026-08-22T19:55:15.856840+09:00  ok
+    Execution: running  55f4ba0a1b394bd494735b9b30d6c065
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-08-22T20:07:24.033984+09:00
+    Next run:  2026-08-22T21:02:20.992358+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-22T19:52:24.859379+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-22T19:37:23.354491+09:00  ok
-    Execution: running  ca6a4e8d6dab440ca98e09b8f4bb86f5
+    Last run:  2026-08-22T20:47:20.992358+09:00  ok
+    Execution: completed  2417ba7cccd844c394e67b5e8855d4b5
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-22T19:58:26.507361+09:00
+    Next run:  2026-08-22T21:00:27.872804+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-22T19:48:26.507361+09:00  ok
-    Execution: unknown  ec6103caab64457f9a789b5726b6cd11
+    Last run:  2026-08-22T20:50:27.872804+09:00  ok
+    Execution: completed  a798357c6a6341a98505e240034e0d10
 

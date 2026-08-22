@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (52.7 MB)
+    → state.db: WAL journal mode (53.8 MB)
     → cron/executions.db: WAL journal mode (592.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
@@ -47,7 +47,7 @@ exit_code=0
   ✓ No retired xAI models in config
 
 ◆ Auth Providers
-  ✓ Nous Portal auth (logged in)
+  ⚠ Nous Portal auth (not logged in)
   ✓ OpenAI Codex auth (logged in)
   ⚠ MiniMax OAuth (not logged in)
   ⚠ xAI OAuth (not logged in)
@@ -64,9 +64,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (86 sessions)
-    → state.db logical size 52.7 MB, 13,489 pages, 12 free, WAL 4.6 MB
-    → 5,559 messages, 86 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (87 sessions)
+    → state.db logical size 53.8 MB, 13,762 pages, 213 free, WAL 4.6 MB
+    → 5,610 messages, 87 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -92,7 +92,6 @@ exit_code=0
 
 ◆ Tool Availability
   ✓ a2a
-  ✓ bfl
   ✓ browser-use
   ✓ clarify
   ✓ code_execution
@@ -101,7 +100,6 @@ exit_code=0
   ✓ delegation
   ✓ desktop_ui
   ✓ file
-  ✓ image_gen
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ✓ memory
   ✓ project
@@ -110,9 +108,9 @@ exit_code=0
   ✓ terminal
   ✓ todo
   ✓ video
-  ✓ video_gen
   ✓ vision
   ✓ web
+  ⚠ bfl (system dependency not met)
   ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
@@ -121,8 +119,10 @@ exit_code=0
   ⚠ feishu_drive (system dependency not met)
   ⚠ hermes-yuanbao (system dependency not met)
   ⚠ homeassistant (system dependency not met)
+  ⚠ image_gen (system dependency not met)
   ⚠ spotify (system dependency not met)
   ⚠ tts (system dependency not met)
+  ⚠ video_gen (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub

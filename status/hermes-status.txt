@@ -36,12 +36,7 @@ exit_code=0
   Anthropic     ✗ (not set)
 
 ◆ Auth Providers
-  Nous Portal   ✓ logged in
-    Portal URL: https://portal.nousresearch.com
-    Inference:  https://inference-api.nousresearch.com/v1
-    Access exp: 2026-08-22 20:28:08 KST
-    Key exp:    2026-08-22 20:28:08 KST
-    Refresh: <REDACTED>
+  Nous Portal   ✗ not logged in (run: hermes portal)
   OpenAI Codex  ✓ logged in
     Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
     Refreshed: <REDACTED>
@@ -52,16 +47,6 @@ exit_code=0
   xAI OAuth     ✗ not logged in (run: hermes auth add xai-oauth)
     Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
     Error:      No xAI OAuth credentials stored. Select xAI Grok OAuth (SuperGrok / Premium+) in `hermes model`.
-
-◆ Nous Tool Gateway
-  Nous Portal   ✓ managed tools available
-  Web tools       ✗ included by subscription, not currently selected
-  Image generation ✓ active via Nous subscription
-  Video generation ✓ not configured
-  OpenAI TTS      ✗ included by subscription, not currently selected
-  Speech-to-text  ✓ active via Local faster-whisper
-  Browser automation ✓ active via Nous subscription
-  Modal execution ✓ active via local
 
 ◆ API-Key Providers
   Z.AI / GLM       ✗ not configured (run: hermes model)
@@ -101,8 +86,8 @@ exit_code=0
   Jobs:         4 active, 4 total
 
 ◆ Sessions
-  Active:       20 session(s)
-  Last activity:       9m ago
+  Active:       21 session(s)
+  Last activity:      57m ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
