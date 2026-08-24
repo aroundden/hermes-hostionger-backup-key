@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 24548,
+  "count": 24549,
   "files": [
     {
       "path": "SOUL.md",
@@ -1866,6 +1866,11 @@
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
       "mtime": 1787546107
+    },
+    {
+      "path": "profiles/aroundit/.skills_prompt_snapshot.json",
+      "size": 56206,
+      "mtime": 1787546108
     },
     {
       "path": "profiles/aroundit/.update_check",
@@ -4860,7 +4865,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 15278,
-      "mtime": 1787546107
+      "mtime": 1787546125
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7484,8 +7489,8 @@
     },
     {
       "path": "profiles/aroundit/state.db-wal",
-      "size": 0,
-      "mtime": 1787546075
+      "size": 3431992,
+      "mtime": 1787546125
     },
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
@@ -9450,7 +9455,7 @@
     {
       "path": "profiles/den/cron/executions.db",
       "size": 606208,
-      "mtime": 1787546099
+      "mtime": 1787546109
     },
     {
       "path": "profiles/den/cron/inflight_forced_releases.jsonl",
@@ -9459,8 +9464,8 @@
     },
     {
       "path": "profiles/den/cron/jobs.json",
-      "size": 43500,
-      "mtime": 1787546099
+      "size": 43893,
+      "mtime": 1787546109
     },
     {
       "path": "profiles/den/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -10018,11 +10023,6 @@
       "mtime": 1787545593
     },
     {
-      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-08-22_14-38-16.md",
-      "size": 286,
-      "mtime": 1787377096
-    },
-    {
       "path": "profiles/den/cron/output/c8b4c9e397d0/2026-08-22_15-38-17.md",
       "size": 286,
       "mtime": 1787380697
@@ -10266,6 +10266,11 @@
       "path": "profiles/den/cron/output/c8b4c9e397d0/2026-08-24_13-31-10.md",
       "size": 217,
       "mtime": 1787545870
+    },
+    {
+      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-08-24_13-35-09.md",
+      "size": 671,
+      "mtime": 1787546109
     },
     {
       "path": "profiles/den/cron/ticker_heartbeat",
@@ -24995,11 +25000,6 @@
     {
       "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/numba/cuda/tests/cudapy/test_multithreads.py",
       "size": 2861,
-      "mtime": 1787132033
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/numba/cuda/tests/cudapy/test_nondet.py",
-      "size": 1378,
       "mtime": 1787132033
     }
   ],
