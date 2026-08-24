@@ -10,19 +10,12 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-24T14:30:57.683654+09:00
+    Next run:  2026-08-24T14:34:59.280323+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-24T12:30:40.581289+09:00  error: Script exited with code 4
-stdout:
-Hermes GitHub 백업: 로컬 커밋은 준비됐지만 원격 푸시 실패. GitHub 인증이 필요합니다.
-repo=/Users/insideden/hermes-hostionger-backup-key
-remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
-no oauth token found for github.com account aroundden
-remote: Invalid username or token. Password authentication is not supported for Git operations.
-fatal: Authentication failed for 'https://github.com/aroundden/hermes-hostionger-backup-key.git/'
-    Execution: running  cda50e6cf8314bd18411f42523944258
+    Last run:  2026-08-24T13:31:10.794867+09:00  ok
+    Execution: running  7a0ec0fee8e3447a8baf919a4f70fe01
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
@@ -53,12 +46,12 @@ fatal: Authentication failed for 'https://github.com/aroundden/hermes-hostionger
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-24T13:33:59.437290+09:00
+    Next run:  2026-08-24T13:44:01.763598+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-21T15:15:07.748762+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-24T13:23:59.437290+09:00  ok
-    Execution: unknown  0eda16d85c4b431081578fe87582567f
+    Last run:  2026-08-24T13:34:01.763598+09:00  ok
+    Execution: completed  d54d6ffabc6d41cc9f2a97db18a4125b
 
