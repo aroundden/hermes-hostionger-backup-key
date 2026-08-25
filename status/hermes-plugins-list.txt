@@ -964,19 +964,24 @@ exit_code=0
 │ web-firecrawl        │ not enabled │ 1.0.0   │ Firecrawl web       │ bundled │
 │                      │             │         │ search + content    │         │
 │                      │             │         │ extraction.         │         │
-│                      │             │         │ Supports direct API │         │
+│                      │             │         │ Supports keyless    │         │
+│                      │             │         │ cloud, direct API,  │         │
 │                      │             │         │ and Nous-hosted     │         │
 │                      │             │         │ tool-gateway        │         │
 │                      │             │         │ routing for         │         │
 │                      │             │         │ subscribers.        │         │
-│                      │             │         │ Requires            │         │
-│                      │             │         │ FIRECRAWL_API_KEY   │         │
-│                      │             │         │ (or                 │         │
-│                      │             │         │ FIRECRAWL_API_URL   │         │
-│                      │             │         │ for self-hosted),   │         │
-│                      │             │         │ or an active Nous   │         │
-│                      │             │         │ subscription with   │         │
-│                      │             │         │ FIRECRAWL_GATEWAY_… │         │
+│ web-keenable         │ not enabled │ 1.0.0   │ Keenable web search │ bundled │
+│                      │             │         │ + page fetch        │         │
+│                      │             │         │ (independent web    │         │
+│                      │             │         │ index for AI apps). │         │
+│                      │             │         │ Works keyless on    │         │
+│                      │             │         │ Keenable's free     │         │
+│                      │             │         │ tier as part of the │         │
+│                      │             │         │ default rotation;   │         │
+│                      │             │         │ set                 │         │
+│                      │             │         │ KEENABLE_API_KEY    │         │
+│                      │             │         │ for higher limits — │         │
+│                      │             │         │ https://keenable.a… │         │
 │ web-parallel         │ not enabled │ 1.0.0   │ Parallel.ai web     │ bundled │
 │                      │             │         │ search + content    │         │
 │                      │             │         │ extraction. Search  │         │
@@ -999,15 +1004,11 @@ exit_code=0
 │                      │             │         │ pointing at your    │         │
 │                      │             │         │ instance.           │         │
 │ web-tavily           │ not enabled │ 1.0.0   │ Tavily web search + │ bundled │
-│                      │             │         │ content extraction  │         │
-│                      │             │         │ + crawl. Search +   │         │
-│                      │             │         │ extract are         │         │
-│                      │             │         │ mainstream; crawl   │         │
-│                      │             │         │ is unique to Tavily │         │
-│                      │             │         │ among built-in      │         │
-│                      │             │         │ providers. Requires │         │
-│                      │             │         │ TAVILY_API_KEY —    │         │
-│                      │             │         │ sign up at          │         │
+│                      │             │         │ content extraction. │         │
+│                      │             │         │ Works keyless       │         │
+│                      │             │         │ (rate-limited); set │         │
+│                      │             │         │ TAVILY_API_KEY for  │         │
+│                      │             │         │ higher limits —     │         │
 │                      │             │         │ https://app.tavily… │         │
 │ web-xai              │ not enabled │ 1.0.0   │ xAI Web Search —    │ bundled │
 │                      │             │         │ search the web via  │         │
