@@ -10,32 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-26T19:56:41.398224+09:00
+    Next run:  2026-08-26T20:56:58.626163+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-26T17:56:22.673478+09:00  error: Script exited with code 4
-stdout:
-Hermes GitHub 백업: 로컬 커밋은 준비됐지만 원격 푸시 실패. GitHub 인증이 필요합니다.
-repo=/Users/insideden/hermes-hostionger-backup-key
-remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
-no oauth token found for github.com account aroundden
-remote: Invalid username or token. Password authentication is not supported for Git operations.
-fatal: Authentication failed for 'https://github.com/aroundden/hermes-hostionger-backup-key.git/'
-    Execution: running  4de95cd716884cc58aee71e17069e6bf
+    Last run:  2026-08-26T18:56:57.555346+09:00  ok
+    Execution: running  c1ff313832dd425691df71d67a89caff
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-26T18:59:49.191501+09:00
+    Next run:  2026-08-26T19:59:56.756989+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-26T16:39:10.215159+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-26T18:54:49.191501+09:00  ok
-    Execution: completed  b134ae3bfa0d4369b52e01bfe4970528
+    Last run:  2026-08-26T19:54:56.756989+09:00  ok
+    Execution: completed  f94d6227f0054ac797880701ccda7be0
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -53,12 +46,12 @@ fatal: Authentication failed for 'https://github.com/aroundden/hermes-hostionger
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-26T19:04:19.290540+09:00
+    Next run:  2026-08-26T19:57:00.483105+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-26T11:35:34.259279+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-26T18:54:19.290540+09:00  ok
-    Execution: completed  17e06f954b144aba9e252ad15c69b436
+    Last run:  2026-08-26T19:47:00.483105+09:00  ok
+    Execution: completed  47ea84527f9845468da4ab705ccc4e9a
 
