@@ -126,7 +126,7 @@ onboarding:
     busy_input_prompt: true
 computer_use:
   grant_existing_profile: false
-_config_version: 38
+_config_version: 39
 platforms:
   slack:
     enabled: true
@@ -190,7 +190,6 @@ known_plugin_toolsets:
     - spotify
 known_builtin_toolsets:
   cli:
-    - bfl
     - browser
     - clarify
     - code_execution
@@ -218,7 +217,6 @@ known_builtin_toolsets:
     - x_search
     - yuanbao
   slack:
-    - bfl
     - browser
     - clarify
     - code_execution
@@ -246,7 +244,6 @@ known_builtin_toolsets:
     - x_search
     - yuanbao
   cron:
-    - bfl
     - browser
     - clarify
     - code_execution
@@ -312,6 +309,7 @@ mcp_servers:
         - get_monthly_revenue
         - get_card_approvals
         - preview_create_journal_entry
+agent: {}
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,
