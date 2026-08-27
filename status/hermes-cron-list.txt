@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-28T05:19:53.266653+09:00
+    Next run:  2026-08-28T06:20:55.163032+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-28T03:19:04.909996+09:00  ok
-    Execution: running  7b6773cb584b4680854819e414356162
+    Last run:  2026-08-28T04:20:10.527653+09:00  ok
+    Execution: running  fcde0f54592b43d6ba54e2c350f9e100
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-28T04:24:54.115527+09:00
+    Next run:  2026-08-28T05:24:56.036717+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T02:12:41.243545+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-28T04:19:54.115527+09:00  ok
-    Execution: completed  146e3316bb4e4254bf6a4467272f3f7d
+    Last run:  2026-08-28T05:19:56.036717+09:00  ok
+    Execution: completed  dc9024aacb4a4ec399e4b95201779285
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-28T04:28:56.606148+09:00
+    Next run:  2026-08-28T05:23:59.179902+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T03:27:40.632301+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-28T04:18:56.606148+09:00  ok
-    Execution: completed  0f470ea31b484cbba1862d3f4bd2bfee
+    Last run:  2026-08-28T05:13:59.179902+09:00  ok
+    Execution: completed  b69975c58dae43ac9c6080ce2c78247f
 
