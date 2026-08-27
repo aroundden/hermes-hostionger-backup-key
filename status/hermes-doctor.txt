@@ -16,12 +16,14 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (201.1 MB)
+    → state.db: WAL journal mode (202.0 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
-  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
   ✓ Version files consistent (0.20.5)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
@@ -67,9 +69,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (319 sessions)
-    → state.db logical size 201.1 MB, 51,488 pages, 273 free, WAL 5.7 MB
-    → 13,984 messages, 319 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (320 sessions)
+    → state.db logical size 202.0 MB, 51,702 pages, 300 free, WAL 5.7 MB
+    → 14,018 messages, 320 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -83,9 +85,9 @@ exit_code=0
   ✓ Node.js
   ✓ agent-browser (resolves via npx on first use)
   ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 4 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ ui-tui workspace deps (0 critical, 3 high, 0 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -139,15 +141,15 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gpt-5.6-sol
+  ✓   den: gateway running, gpt-5.6-sol
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
   Found 3 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. web workspace has 1 npm vulnerability
-  3. ui-tui workspace has 1 npm vulnerability
+  2. web workspace has 4 npm vulnerabilities
+  3. ui-tui workspace has 3 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
