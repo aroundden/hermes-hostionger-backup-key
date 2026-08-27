@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-27T21:14:30.295254+09:00
+    Next run:  2026-08-27T22:15:01.772060+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-27T19:13:55.827777+09:00  ok
-    Execution: running  1229aa42bc184130a831dbe2b6ed9f7f
+    Last run:  2026-08-27T20:14:45.712725+09:00  ok
+    Execution: running  c09b06b58a604470a43d7c622daf9984
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-27T20:19:40.447629+09:00
+    Next run:  2026-08-27T21:17:02.084059+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T04:14:46.046024+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-27T20:09:30.958834+09:00  ok
-    Execution: running  a65f0c24c5574978b861d2bda2b65eb9
+    Last run:  2026-08-27T21:12:02.084059+09:00  ok
+    Execution: completed  c7d9deb97c194ea1b8a4ea931f0a0b0b
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-27T20:21:43.749663+09:00
+    Next run:  2026-08-27T21:23:45.983621+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T03:27:40.632301+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-27T20:11:43.749663+09:00  ok
-    Execution: completed  75d0a5a0cd974f8f887585185d3c5123
+    Last run:  2026-08-27T21:13:45.983621+09:00  ok
+    Execution: completed  f8e92725353045d7b8684db6378d9351
 
