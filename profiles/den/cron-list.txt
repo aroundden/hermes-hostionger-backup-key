@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-28T08:23:12.355531+09:00
+    Next run:  2026-08-28T09:23:26.680102+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-28T06:22:22.481977+09:00  ok
-    Execution: running  51640ea7f86e4e999eea664b3b8f5b69
+    Last run:  2026-08-28T07:23:25.123353+09:00  ok
+    Execution: running  b6c7de8d2355438281c4c55aea1b4a9f
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-28T07:24:12.433075+09:00
+    Next run:  2026-08-28T08:28:27.371500+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T02:12:41.243545+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-28T07:19:12.433075+09:00  ok
-    Execution: completed  3ade186e25b1431b8d5f8983efdf69a4
+    Last run:  2026-08-28T08:23:27.371500+09:00  ok
+    Execution: completed  8cba75524383475e8752c4eefd861bf1
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-28T07:23:15.078953+09:00
+    Next run:  2026-08-28T08:28:30.322191+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T03:27:40.632301+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-28T07:13:15.078953+09:00  ok
-    Execution: completed  fb9a0addb9914703920ed5eed4737ce5
+    Last run:  2026-08-28T08:18:30.322191+09:00  ok
+    Execution: completed  1873abfddf3e43ccb22b75def9471bf7
 
