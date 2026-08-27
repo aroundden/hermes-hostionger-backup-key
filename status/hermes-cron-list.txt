@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-28T03:17:40.993715+09:00
+    Next run:  2026-08-28T04:18:47.185294+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-28T01:17:22.547997+09:00  ok
-    Execution: running  fae7754da2164a27aff6e3c33c0959b5
+    Last run:  2026-08-28T02:18:01.693612+09:00  ok
+    Execution: running  17095dd2eb154de28254e171524fa985
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-28T02:18:58.150326+09:00
+    Next run:  2026-08-28T03:18:47.591240+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T02:12:41.243545+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-28T02:13:58.150326+09:00  ok
-    Execution: completed  95e80275bed543f69b9c7f5d62935f11
+    Last run:  2026-08-28T03:13:47.591240+09:00  ok
+    Execution: completed  57ad0520d8e442e2b2db6c215b712d14
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-28T02:27:44.526782+09:00
+    Next run:  2026-08-28T03:22:50.339640+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T03:27:40.632301+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-28T02:17:44.526782+09:00  ok
-    Execution: completed  598cb6a3505a4a2ebb92fc3bcdbc031a
+    Last run:  2026-08-28T03:12:50.339640+09:00  ok
+    Execution: completed  55137992ea8c47b89b0d92f3eba340a0
 
