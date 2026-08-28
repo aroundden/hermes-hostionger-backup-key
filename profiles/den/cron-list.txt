@@ -10,48 +10,48 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-28T09:23:26.680102+09:00
+    Next run:  2026-08-28T10:24:35.108476+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-28T07:23:25.123353+09:00  ok
-    Execution: running  b6c7de8d2355438281c4c55aea1b4a9f
+    Last run:  2026-08-28T08:23:40.466419+09:00  ok
+    Execution: running  882c1facb3c945d2b9a6f2c771cc7be7
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-28T08:28:27.371500+09:00
+    Next run:  2026-08-28T09:29:35.941626+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T02:12:41.243545+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-28T08:23:27.371500+09:00  ok
-    Execution: completed  8cba75524383475e8752c4eefd861bf1
+    Last run:  2026-08-28T09:24:35.941626+09:00  ok
+    Execution: completed  9ded6963033047fbabb3b61aff3a71c0
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
     Schedule:  10 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-28T09:10:00+09:00
+    Next run:  2026-08-29T09:10:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy, den-output-contract
     Script:    den_youtube_daily_collector.py
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-27T09:26:09.760465+09:00  ok
-    Execution: completed  1c246361d10848fc840e70db3e16a484
+    Last run:  2026-08-28T09:19:22.052812+09:00  ok
+    Execution: completed  2705e347fe844f00807bb7fd055b5dc6
 
   169c1fa264fa [active]
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-28T08:28:30.322191+09:00
+    Next run:  2026-08-28T09:29:26.569164+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-27T03:27:40.632301+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-28T08:18:30.322191+09:00  ok
-    Execution: completed  1873abfddf3e43ccb22b75def9471bf7
+    Last run:  2026-08-28T09:19:26.569164+09:00  ok
+    Execution: completed  3853f2e0033a4ab3ae2f00bbe4518738
 
