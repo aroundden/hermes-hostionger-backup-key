@@ -78,10 +78,15 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ⚠ ripgrep (rg) not found (file search uses grep fallback)
-    → Install for faster search: brew install ripgrep
-  ⚠ docker not found (optional)
-  ⚠ Node.js not found (optional, needed for browser tools)
+  ✓ ripgrep (rg) (faster file search)
+  ✓ docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (resolves via npx on first use)
+  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
+  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
   Running 34 connectivity checks in parallel…
@@ -138,9 +143,11 @@ exit_code=0
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 1 issue(s) to address:
+  Found 3 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
+  2. web workspace has 1 npm vulnerability
+  3. ui-tui workspace has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
