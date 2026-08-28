@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (262.2 MB)
+    → state.db: WAL journal mode (264.5 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
@@ -67,9 +67,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (419 sessions)
-    → state.db logical size 262.2 MB, 67,112 pages, 379 free, WAL 5.3 MB
-    → 17,221 messages, 419 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (425 sessions)
+    → state.db logical size 264.5 MB, 67,715 pages, 13 free, WAL 5.3 MB
+    → 17,395 messages, 425 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -78,10 +78,15 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ⚠ ripgrep (rg) not found (file search uses grep fallback)
-    → Install for faster search: brew install ripgrep
-  ⚠ docker not found (optional)
-  ⚠ Node.js not found (optional, needed for browser tools)
+  ✓ ripgrep (rg) (faster file search)
+  ✓ docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (resolves via npx on first use)
+  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
+  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
   Running 34 connectivity checks in parallel…
@@ -138,9 +143,11 @@ exit_code=0
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 1 issue(s) to address:
+  Found 3 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
+  2. web workspace has 1 npm vulnerability
+  3. ui-tui workspace has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
