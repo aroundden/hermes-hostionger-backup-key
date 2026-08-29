@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T06:44:29.503193+09:00
+    Next run:  2026-08-29T09:21:17.956801+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Script:    gmail_auto_draft_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-08-29T06:34:06.357027+09:00  ok
-    Execution: running  36f8bcf4318041d79c93961613abd599
+    Last run:  2026-08-29T09:16:17.956801+09:00  ok
+    Execution: completed  1d4d9cd4691541598c88eb5309481af3
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -27,17 +27,16 @@ exit_code=0
     Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-08-24T10:02:41.603966+09:00  ok
-    Execution: completed  f21ad71586ab418ab5e41fc3cb8a4537
 
   53b7de942303 [active]
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-29T09:00:00+09:00
+    Next run:  2026-08-30T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-08-28T09:02:58.105215+09:00  ok
-    Execution: completed  abff4790fed342919003aecb579cc506
+    Last run:  2026-08-29T09:04:02.924877+09:00  ok
+    Execution: completed  ff774a9501bf46c5b67ef23664f62701
 
