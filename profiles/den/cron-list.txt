@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-29T18:46:20.547181+09:00
+    Next run:  2026-08-29T19:46:54.060356+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-29T16:45:46.057106+09:00  ok
-    Execution: running  0e78af67d1494c9091f0c039b0c67a91
+    Last run:  2026-08-29T17:46:33.678029+09:00  ok
+    Execution: running  7d9635d0bb274ed18021f7e50876d9a0
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T17:49:21.279307+09:00
+    Next run:  2026-08-29T18:48:54.354836+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T19:31:16.881493+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-29T17:44:21.279307+09:00  ok
-    Execution: completed  5d9e031693fe432fbd45dc3804662ce1
+    Last run:  2026-08-29T18:43:54.354836+09:00  ok
+    Execution: completed  b82756fec603474c8c09e6faeb54cfcd
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-29T17:47:29.091772+09:00
+    Next run:  2026-08-29T18:50:31.899038+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-29T17:37:29.091772+09:00  ok
-    Execution: completed  72f0269cb4384038ab44db5a953a476c
+    Last run:  2026-08-29T18:40:31.899038+09:00  ok
+    Execution: completed  b26e5adf0ba04d9eba13d95e8207edbc
 
