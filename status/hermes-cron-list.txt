@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-29T09:40:37.366782+09:00
+    Next run:  2026-08-29T10:41:00.657930+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
     Last run:  2026-08-29T06:40:20.241875+09:00  ok
-    Execution: unknown  a4a9b8a2a06d4ea9b98d3a996bf6ff39
+    Execution: running  77bf3bb4761443adbf068de1ff13bcb7
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T09:24:21.410475+09:00
+    Next run:  2026-08-29T09:41:01.329102+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T19:31:16.881493+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-29T09:19:21.410475+09:00  ok
-    Execution: completed  dc55f940d3dd4ca7ba4cf0353cdde0aa
+    Last run:  2026-08-29T09:36:01.329102+09:00  ok
+    Execution: completed  853cdec135c74a2492981cbca3517487
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-29T09:25:29.611393+09:00
+    Next run:  2026-08-29T09:46:32.156913+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-29T09:15:29.611393+09:00  ok
-    Execution: completed  6953cde6747c4338ba34805267ee02b8
+    Last run:  2026-08-29T09:36:32.156913+09:00  ok
+    Execution: completed  58e70b57fa654a76be03eb03d73f2aed
 
