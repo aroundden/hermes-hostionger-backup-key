@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-29T21:23:26.994948+09:00
+    Next run:  2026-08-29T22:24:27.946040+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-29T19:23:26.426262+09:00  ok
-    Execution: running  62fb23e8650541b7b7da6e2a798594ad
+    Last run:  2026-08-29T20:23:40.235104+09:00  ok
+    Execution: running  0703a1b97b474686bd1085826ae089ea
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T20:24:10.131551+09:00
+    Next run:  2026-08-29T21:26:28.156375+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-08-28T19:31:16.881493+09:00
+    Changed:   2026-08-29T20:35:11.443647+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-29T20:19:10.131551+09:00  ok
-    Execution: completed  3f20f75d2e7b4e3c8e0df83eb2954714
+    Last run:  2026-08-29T21:21:28.156375+09:00  ok
+    Execution: completed  6523bce304204433bb9ce40b58d8db0a
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,14 +46,14 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-29T20:25:17.967646+09:00
+    Next run:  2026-08-29T21:33:37.284981+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-29T20:15:17.967646+09:00  ok
-    Execution: completed  bbc15c5b328048cc85852b66b91de5ac
+    Last run:  2026-08-29T21:23:37.284981+09:00  ok
+    Execution: completed  ee65ccd83f77478ea8f1cd9d535e6272
 
   4624d933404b [active]
     Name:      TickTick Member Worklog 마감순 정렬
