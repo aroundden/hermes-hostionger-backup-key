@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-29T14:43:11.203166+09:00
+    Next run:  2026-08-29T15:44:13.332397+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-29T12:43:06.527482+09:00  ok
-    Execution: running  992828d0fc9f486f8963ce2602173e82
+    Last run:  2026-08-29T13:43:23.794899+09:00  ok
+    Execution: running  aab70303efb3464fbe6fa79e2b23104b
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T13:48:04.673970+09:00
+    Next run:  2026-08-29T14:49:14.133169+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T19:31:16.881493+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-29T13:43:04.673970+09:00  ok
-    Execution: completed  296ebe9edf734296a3e1706ad0fa805c
+    Last run:  2026-08-29T14:44:14.133169+09:00  ok
+    Execution: completed  9b472558e3904855925ca14605948331
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,12 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-29T13:50:12.614301+09:00
+    Next run:  2026-08-29T14:45:22.106662+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-29T13:40:12.614301+09:00  ok
-    Execution: completed  30413e97ebac4c11a7d5fa9d7956c8cb
+    Last run:  2026-08-29T14:35:22.106662+09:00  ok
+    Execution: completed  0b6f269c033f4dc088b9647ddf92d09c
 
