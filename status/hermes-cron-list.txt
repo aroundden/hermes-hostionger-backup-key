@@ -10,25 +10,25 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-29T19:46:54.060356+09:00
+    Next run:  2026-08-29T20:23:11.081793+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-29T17:46:33.678029+09:00  ok
-    Execution: running  7d9635d0bb274ed18021f7e50876d9a0
+    Last run:  2026-08-29T18:47:09.687000+09:00  ok
+    Execution: running  ade80183a3d7415c9cb9cb9c9a6210fd
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-29T18:48:54.354836+09:00
+    Next run:  2026-08-29T19:25:25.041695+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-28T19:31:16.881493+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-29T18:43:54.354836+09:00  ok
-    Execution: completed  b82756fec603474c8c09e6faeb54cfcd
+    Last run:  2026-08-29T19:20:25.041695+09:00  ok
+    Execution: completed  f8edc8a908fb427c9764536f3f84b911
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -46,12 +46,22 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-29T18:50:31.899038+09:00
+    Next run:  2026-08-29T19:32:33.298755+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-29T18:40:31.899038+09:00  ok
-    Execution: completed  b26e5adf0ba04d9eba13d95e8207edbc
+    Last run:  2026-08-29T19:22:33.298755+09:00  ok
+    Execution: completed  af25c62ad4dc4398a33ad95fd94a0874
+
+  4624d933404b [active]
+    Name:      TickTick Member Worklog 마감순 정렬
+    Schedule:  0 6 * * *
+    Repeat:    ∞
+    Next run:  2026-08-30T06:00:00+09:00
+    Deliver:   local
+    Script:    ticktick_worklog_deadline_sort.py
+    Mode:      no-agent (script stdout delivered directly)
+    Workdir:   /Users/insideden/.hermes/profiles/den/scripts
 
