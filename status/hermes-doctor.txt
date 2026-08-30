@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (382.1 MB)
+    → state.db: WAL journal mode (384.6 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
@@ -68,9 +68,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (636 sessions)
-    → state.db logical size 382.1 MB, 97,807 pages, 299 free, WAL 23.4 MB
-    → 22,724 messages, 636 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (642 sessions)
+    → state.db logical size 384.6 MB, 98,460 pages, 340 free, WAL 23.4 MB
+    → 22,831 messages, 642 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
     → WAL file is 23 MB (normal for active sessions)
 
@@ -80,10 +80,13 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ⚠ ripgrep (rg) not found (file search uses grep fallback)
-    → Install for faster search: brew install ripgrep
-  ⚠ docker not found (optional)
-  ⚠ Node.js not found (optional, needed for browser tools)
+  ✓ ripgrep (rg) (faster file search)
+  ✓ docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (resolves via npx on first use)
+  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
+  ✓ web workspace deps (no known vulnerabilities)
+  ✓ ui-tui workspace deps (no known vulnerabilities)
 
 ◆ API Connectivity
   Running 34 connectivity checks in parallel…
