@@ -16,13 +16,15 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (414.8 MB)
+    → state.db: WAL journal mode (417.3 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
   ⚠ macOS TCC anchor missing (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
   ✓ Version files consistent (0.20.6)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
@@ -68,9 +70,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (690 sessions)
-    → state.db logical size 414.8 MB, 106,177 pages, 310 free, WAL 23.4 MB
-    → 24,361 messages, 690 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (696 sessions)
+    → state.db logical size 417.3 MB, 106,825 pages, 298 free, WAL 23.4 MB
+    → 24,444 messages, 696 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
     → WAL file is 23 MB (normal for active sessions)
 
