@@ -10,57 +10,50 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-08-30T09:31:46.148178+09:00
+    Next run:  2026-08-30T10:32:52.062943+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-08-30T07:30:55.869772+09:00  error: Script exited with code 4
-stdout:
-Hermes GitHub 백업: 로컬 커밋은 준비됐지만 원격 푸시 실패. GitHub 인증이 필요합니다.
-repo=/Users/insideden/hermes-hostionger-backup-key
-remote=https://github.com/aroundden/hermes-hostionger-backup-key.git
-no oauth token found for github.com account aroundden
-remote: Invalid username or token. Password authentication is not supported for Git operations.
-fatal: Authentication failed for 'https://github.com/aroundden/hermes-hostionger-backup-key.git/'
-    Execution: running  ab8324c6f02e4197a7ee02d5daaba91c
+    Last run:  2026-08-30T08:32:01.139998+09:00  ok
+    Execution: running  d4ce6d55f66b4f5a951f49478e049cd8
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-08-30T08:33:46.427116+09:00
+    Next run:  2026-08-30T09:37:45.651368+09:00
     Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-08-30T02:52:43.735819+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-08-30T08:28:46.427116+09:00  ok
-    Execution: completed  12d79a1ace214d15bada2e4befe9bf9e
+    Last run:  2026-08-30T09:32:45.651368+09:00  ok
+    Execution: completed  10ebda2dcfd9410889c0311dcb893bdb
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
     Schedule:  10 9 * * *
     Repeat:    ∞
-    Next run:  2026-08-30T09:10:00+09:00
+    Next run:  2026-08-31T09:10:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy, den-output-contract
     Script:    den_youtube_daily_collector.py
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-08-28T09:19:22.052812+09:00  ok
-    Execution: unknown  5f534c47143245c58247ae7d5b85bd92
+    Last run:  2026-08-30T09:25:00.531887+09:00  ok
+    Execution: completed  3ac58c650bb240c9a5494f483f265f4a
 
   169c1fa264fa [active]
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-08-30T08:37:54.408688+09:00
+    Next run:  2026-08-30T09:35:09.643465+09:00
     Deliver:   origin
     Skills:    second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-08-29T07:21:47.799884+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-08-30T08:27:54.408688+09:00  ok
-    Execution: completed  92858db81dc84c34b262877724bbb6cc
+    Last run:  2026-08-30T09:25:09.643465+09:00  ok
+    Execution: completed  7f1e0d439b984b31891f860be9982f05
 
   4624d933404b [active]
     Name:      TickTick Member Worklog 마감순 정렬
