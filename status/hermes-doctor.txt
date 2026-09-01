@@ -86,7 +86,7 @@ exit_code=0
   ✓ Node.js
   ✓ agent-browser (resolves via npx on first use)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
-  ⚠ web workspace deps (0 critical, 1 high, 0 moderate — build-tool advisory; clears via lockfile bump)
+  ⚠ web workspace deps (0 critical, 1 high, 1 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
   ✓ ui-tui workspace deps (no known vulnerabilities)
 
@@ -149,7 +149,7 @@ exit_code=0
 
   1. Run 'hermes setup' to configure API keys
   2. Browser tools (agent-browser) has 1 npm vulnerability
-  3. web workspace has 1 npm vulnerability
+  3. web workspace has 2 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
