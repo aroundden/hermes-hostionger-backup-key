@@ -22,9 +22,7 @@ exit_code=0
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
   ⚠ macOS TCC anchor missing (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ Version files consistent (0.20.6)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
