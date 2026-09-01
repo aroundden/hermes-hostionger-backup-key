@@ -412,12 +412,14 @@ exit_code=0
 │                      │             │         │ messages between    │         │
 │                      │             │         │ channels/DMs and    │         │
 │                      │             │         │ the Hermes agent.   │         │
-│                      │             │         │ Pure stdlib —       │         │
-│                      │             │         │ shells out to the   │         │
+│                      │             │         │ Relay operations    │         │
+│                      │             │         │ shell out to the    │         │
 │                      │             │         │ buzz CLI binary     │         │
-│                      │             │         │ (JSON in/out); no   │         │
-│                      │             │         │ Python packages     │         │
-│                      │             │         │ required.           │         │
+│                      │             │         │ (JSON in/out);      │         │
+│                      │             │         │ verified inbound    │         │
+│                      │             │         │ media uses Hermes'  │         │
+│                      │             │         │ bundled HTTP        │         │
+│                      │             │         │ client.             │         │
 │                      │             │         │                     │         │
 │ dingtalk-platform    │ not enabled │ 1.0.0   │ DingTalk gateway    │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
@@ -1003,13 +1005,6 @@ exit_code=0
 │                      │             │         │ SEARXNG_URL         │         │
 │                      │             │         │ pointing at your    │         │
 │                      │             │         │ instance.           │         │
-│ web-tavily           │ not enabled │ 1.0.0   │ Tavily web search + │ bundled │
-│                      │             │         │ content extraction. │         │
-│                      │             │         │ Works keyless       │         │
-│                      │             │         │ (rate-limited); set │         │
-│                      │             │         │ TAVILY_API_KEY for  │         │
-│                      │             │         │ higher limits —     │         │
-│                      │             │         │ https://app.tavily… │         │
 │ web-xai              │ not enabled │ 1.0.0   │ xAI Web Search —    │ bundled │
 │                      │             │         │ search the web via  │         │
 │                      │             │         │ Grok's agentic      │         │

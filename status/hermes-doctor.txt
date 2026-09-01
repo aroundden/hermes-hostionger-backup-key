@@ -21,11 +21,11 @@ exit_code=0
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
-  ⚠ macOS TCC anchor missing (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
+  ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
     → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
       open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
     then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
-  ✓ Version files consistent (0.20.6)
+  ✓ Version files consistent (0.21.0)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -70,11 +70,10 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (779 sessions)
-    → state.db logical size 465.6 MB, 119,191 pages, 448 free, WAL 23.4 MB
-    → 26,859 messages, 779 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (780 sessions)
+    → state.db logical size 465.6 MB, 119,191 pages, 286 free, WAL 24.2 KB
+    → 26,897 messages, 780 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
-    → WAL file is 23 MB (normal for active sessions)
 
 ◆ Command Installation
   ✓ Venv entry point exists (venv/bin/hermes)
@@ -91,7 +90,7 @@ exit_code=0
   ✓ ui-tui workspace deps (no known vulnerabilities)
 
 ◆ API Connectivity
-  Running 34 connectivity checks in parallel…
+  Running 40 connectivity checks in parallel…
                                                                       
   ⚠ OpenRouter API (not configured)
 
@@ -132,7 +131,7 @@ exit_code=0
 
 ◆ Skills Hub
   ✓ Skills Hub directory exists
-  ✓ Lock file OK (0 hub-installed skill(s))
+  ✓ Lock file OK (12 hub-installed skill(s))
   ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
 
 ◆ Memory Provider
@@ -141,7 +140,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gpt-5.6-sol
+  ✓   den: gateway running, gpt-5.6-sol
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
