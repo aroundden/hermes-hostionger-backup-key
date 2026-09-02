@@ -270,6 +270,14 @@ exit_code=0
 │                      │             │         │ managed Nous        │         │
 │                      │             │         │ Subscription        │         │
 │                      │             │         │ gateway.            │         │
+│ meta-ai-image-gen    │ not enabled │ 1.0.0   │ Meta Model API      │ bundled │
+│                      │             │         │ image generation    │         │
+│                      │             │         │ backend             │         │
+│                      │             │         │ (muse-image).       │         │
+│                      │             │         │ OpenAI-compatible   │         │
+│                      │             │         │ /v1/images/generat… │         │
+│                      │             │         │ Saves images to     │         │
+│                      │             │         │ $HERMES_HOME/cache… │         │
 │ openai               │ not enabled │ 1.0.0   │ OpenAI image        │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (gpt-image-2).      │         │
@@ -1005,6 +1013,13 @@ exit_code=0
 │                      │             │         │ SEARXNG_URL         │         │
 │                      │             │         │ pointing at your    │         │
 │                      │             │         │ instance.           │         │
+│ web-tavily           │ not enabled │ 1.0.0   │ Tavily web search + │ bundled │
+│                      │             │         │ extract. Opt-in     │         │
+│                      │             │         │ keyless via hermes  │         │
+│                      │             │         │ tools; set          │         │
+│                      │             │         │ TAVILY_API_KEY for  │         │
+│                      │             │         │ higher limits —     │         │
+│                      │             │         │ https://app.tavily… │         │
 │ web-xai              │ not enabled │ 1.0.0   │ xAI Web Search —    │ bundled │
 │                      │             │         │ search the web via  │         │
 │                      │             │         │ Grok's agentic      │         │
