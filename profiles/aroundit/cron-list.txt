@@ -10,15 +10,17 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-09-03T23:14:19.652464+09:00
+    Next run:  2026-09-04T00:20:22.721948+09:00
     Deliver:   slack:C0BHVB49WH5:1784773233.342939
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Monitor:   gmail_auto_draft_retry_monitor.py (agent runs only on output change)
     Changed:   2026-09-03T22:09:36.990414+09:00
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-03T22:44:19.652464+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T22:42:48.861072+09:00)
-    Execution: unknown  7668fab4ae224afa9bc9245d258a4735
+    Last run:  2026-09-03T23:50:22.721948+09:00  error: Script exited with code 124
+stderr:
+gmail_auto_draft hard timeout after 150s  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-03T23:47:21.142703+09:00)
+    Execution: unknown  337d167e8689404ebbd2e87a323e5404
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
