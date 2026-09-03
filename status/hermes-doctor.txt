@@ -16,15 +16,13 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (481.1 MB)
+    → state.db: WAL journal mode (482.3 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (32.0 KB)
   ✓ Virtual environment active
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ Version files consistent (0.21.0)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
@@ -70,9 +68,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (808 sessions)
-    → state.db logical size 481.1 MB, 123,173 pages, 23 free, WAL 5.8 MB
-    → 28,153 messages, 808 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (809 sessions)
+    → state.db logical size 482.3 MB, 123,468 pages, 281 free, WAL 5.8 MB
+    → 28,163 messages, 809 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -81,14 +79,10 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ✓ ripgrep (rg) (faster file search)
-  ✓ docker (optional)
-  ✓ Node.js
-  ✓ agent-browser (resolves via npx on first use)
-  ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
-  ⚠ web workspace deps (0 critical, 1 high, 1 moderate — build-tool advisory; clears via lockfile bump)
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ✓ ui-tui workspace deps (no known vulnerabilities)
+  ⚠ ripgrep (rg) not found (file search uses grep fallback)
+    → Install for faster search: brew install ripgrep
+  ⚠ docker not found (optional)
+  ⚠ Node.js not found (optional, needed for browser tools)
 
 ◆ API Connectivity
   Running 40 connectivity checks in parallel…
@@ -145,11 +139,9 @@ exit_code=0
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 1 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 1 npm vulnerability
-  3. web workspace has 2 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
