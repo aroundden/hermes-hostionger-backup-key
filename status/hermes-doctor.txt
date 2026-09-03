@@ -1,11 +1,155 @@
-$ hermes doctor
-exit_code=1
+$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
+exit_code=0
 
-Traceback (most recent call last):
-  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
-    from hermes_cli.main import main
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
-    from hermes_cli.cli_output import line_input
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
-    default: str | None = None,
-TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+┌─────────────────────────────────────────────────────────┐
+│                 🩺 Hermes Doctor                        │
+└─────────────────────────────────────────────────────────┘
+
+◆ Security Advisories
+  ✓ No active security advisories
+
+◆ MCP Server Security
+  ✓ No suspicious MCP stdio commands
+
+◆ Python Environment
+  ✓ Python 3.11.15
+  ✓ SQLite 3.53.1
+    → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
+    → state.db: WAL journal mode (480.4 MB)
+    → cron/executions.db: WAL journal mode (608.0 KB)
+    → projects.db: WAL journal mode (44.0 KB)
+    → verification_evidence.db: WAL journal mode (32.0 KB)
+  ✓ Virtual environment active
+  ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ Version files consistent (0.21.0)
+  ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
+    → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
+
+◆ SSL / CA Certificates
+  ✓ SSL CA certificate bundle is valid
+
+◆ Required Packages
+  ✓ OpenAI SDK
+  ✓ Rich (terminal UI)
+  ✓ python-dotenv
+  ✓ PyYAML
+  ✓ HTTPX
+  ✓ Croniter (cron expressions) (optional)
+  ⚠ python-telegram-bot (optional, not installed)
+  ⚠ discord.py (optional, not installed)
+
+◆ Configuration Files
+  ✓ ~/.hermes/profiles/den/.env file exists
+  ⚠ No API key found in ~/.hermes/profiles/den/.env
+  ✓ ~/.hermes/profiles/den/config.yaml exists
+  ✓ Config version up to date (v40)
+  ✓ No deprecated config keys or env vars
+
+◆ xAI Model Retirement (May 15, 2026)
+  ✓ No retired xAI models in config
+
+◆ Auth Providers
+  ⚠ Nous Portal auth (not logged in)
+  ✓ OpenAI Codex auth (logged in)
+  ⚠ MiniMax OAuth (not logged in)
+  ⚠ xAI OAuth (not logged in)
+    → No xAI OAuth credentials stored. Select xAI Grok OAuth (SuperGrok / Premium+) in `hermes model`.
+
+◆ Directory Structure
+  ✓ ~/.hermes/profiles/den directory exists
+  ✓ ~/.hermes/profiles/den/cron/ exists
+  ✓ ~/.hermes/profiles/den/sessions/ exists
+  ✓ ~/.hermes/profiles/den/logs/ exists
+  ✓ ~/.hermes/profiles/den/skills/ exists
+  ✓ ~/.hermes/profiles/den/memories/ exists
+  ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
+  ✓ ~/.hermes/profiles/den/memories/ directory exists
+  ✓ MEMORY.md exists (529 chars)
+  ✓ USER.md exists (281 chars)
+  ✓ ~/.hermes/profiles/den/state.db exists (806 sessions)
+    → state.db logical size 480.4 MB, 122,974 pages, 161 free, WAL 5.8 MB
+    → 28,086 messages, 806 sessions, journal_mode=wal
+    → FTS tables: messages_fts, messages_fts_trigram
+
+◆ Command Installation
+  ✓ Venv entry point exists (venv/bin/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (faster file search)
+  ✓ docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (resolves via npx on first use)
+  ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
+  ⚠ web workspace deps (0 critical, 1 high, 1 moderate — build-tool advisory; clears via lockfile bump)
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ✓ ui-tui workspace deps (no known vulnerabilities)
+
+◆ API Connectivity
+  Running 40 connectivity checks in parallel…
+                                                                      
+  ⚠ OpenRouter API (not configured)
+
+◆ Tool Availability
+  ✓ browser-use
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ memory
+  ✓ project
+  ✓ session_search
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ video
+  ✓ vision
+  ✓ web search (parallel)
+  ✓ web extract (parallel)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ homeassistant (system dependency not met)
+  ⚠ image_gen (system dependency not met)
+  ⚠ spotify (system dependency not met)
+  ⚠ tts (system dependency not met)
+  ⚠ video_gen (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (12 hub-installed skill(s))
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
+
+◆ Memory Provider
+  ✓ Built-in memory active (no external provider configured — this is fine)
+
+◆ Profiles
+  ✓ 3 profile(s) found
+  ✓   aroundit: gpt-5.6-sol
+  ✓   den: gateway running, gpt-5.6-sol
+  ✓   smd: gateway running, gpt-5.6-sol
+
+────────────────────────────────────────────────────────────
+  Found 3 issue(s) to address:
+
+  1. Run 'hermes setup' to configure API keys
+  2. Browser tools (agent-browser) has 1 npm vulnerability
+  3. web workspace has 2 npm vulnerabilities
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+

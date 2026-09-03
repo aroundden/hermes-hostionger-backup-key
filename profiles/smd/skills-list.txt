@@ -1,11 +1,107 @@
-$ hermes -p smd skills list
-exit_code=1
+$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p smd skills list
+exit_code=0
 
-Traceback (most recent call last):
-  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
-    from hermes_cli.main import main
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
-    from hermes_cli.cli_output import line_input
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
-    default: str | None = None,
-TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+                                Installed Skills                                
+┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Name                 ┃ Category             ┃ Source   ┃ Trust    ┃ Status   ┃
+┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩
+│ spsik-caption        │                      │ local    │ local    │ enabled  │
+│ spsik-cast-notice    │                      │ local    │ local    │ enabled  │
+│ spsik-casting        │                      │ local    │ local    │ enabled  │
+│ spsik-performance    │                      │ local    │ local    │ enabled  │
+│ spsik-plan           │                      │ local    │ local    │ enabled  │
+│ spsik-thumbnail      │                      │ local    │ local    │ enabled  │
+│ spsik-timetable      │                      │ local    │ local    │ enabled  │
+│ apple-notes          │ apple                │ builtin  │ builtin  │ disabled │
+│ apple-reminders      │ apple                │ builtin  │ builtin  │ disabled │
+│ findmy               │ apple                │ builtin  │ builtin  │ disabled │
+│ imessage             │ apple                │ builtin  │ builtin  │ disabled │
+│ claude-code          │ autonomous-ai-agents │ builtin  │ builtin  │ disabled │
+│ codex                │ autonomous-ai-agents │ builtin  │ builtin  │ enabled  │
+│ computer-use         │ autonomous-ai-agents │ builtin  │ builtin  │ enabled  │
+│ hermes-agent         │ autonomous-ai-agents │ builtin  │ builtin  │ enabled  │
+│ merge-reconciler     │ autonomous-ai-agents │ local    │ local    │ disabled │
+│ opencode             │ autonomous-ai-agents │ builtin  │ builtin  │ disabled │
+│ architecture-diagram │ creative             │ builtin  │ builtin  │ disabled │
+│ ascii-art            │ creative             │ official │ official │ disabled │
+│ ascii-video          │ creative             │ builtin  │ builtin  │ disabled │
+│ baoyu-infographic    │ creative             │ builtin  │ builtin  │ enabled  │
+│ claude-design        │ creative             │ builtin  │ builtin  │ enabled  │
+│ comfyui              │ creative             │ official │ official │ disabled │
+│ design-md            │ creative             │ builtin  │ builtin  │ disabled │
+│ excalidraw           │ creative             │ official │ official │ disabled │
+│ humanizer            │ creative             │ builtin  │ builtin  │ enabled  │
+│ manim-video          │ creative             │ builtin  │ builtin  │ disabled │
+│ p5js                 │ creative             │ builtin  │ builtin  │ disabled │
+│ popular-web-designs  │ creative             │ builtin  │ builtin  │ enabled  │
+│ pretext              │ creative             │ official │ official │ disabled │
+│ sketch               │ creative             │ official │ official │ disabled │
+│ songwriting-and-ai-… │ creative             │ builtin  │ builtin  │ disabled │
+│ touchdesigner-mcp    │ creative             │ official │ official │ disabled │
+│ email-inbox-triage   │ email                │ builtin  │ builtin  │ disabled │
+│ himalaya             │ email                │ builtin  │ builtin  │ disabled │
+│ github-auth          │ github               │ local    │ local    │ disabled │
+│ github-code-review   │ github               │ local    │ local    │ disabled │
+│ github-issue-to-pr   │ github               │ local    │ local    │ disabled │
+│ github-issues        │ github               │ local    │ local    │ disabled │
+│ github-pr-workflow   │ github               │ local    │ local    │ disabled │
+│ github-repo-managem… │ github               │ local    │ local    │ disabled │
+│ gif-search           │ media                │ builtin  │ builtin  │ disabled │
+│ songsee              │ media                │ builtin  │ builtin  │ disabled │
+│ youtube-content      │ media                │ builtin  │ builtin  │ enabled  │
+│ youtube-packaging-s… │ media                │ local    │ local    │ enabled  │
+│ youtube-foreign-gue… │ media-research       │ local    │ local    │ enabled  │
+│ evaluating-llms-har… │ mlops                │ official │ official │ disabled │
+│ huggingface-hub      │ mlops                │ official │ official │ disabled │
+│ llama-cpp            │ mlops                │ official │ official │ disabled │
+│ serving-llms-vllm    │ mlops                │ official │ official │ disabled │
+│ weights-and-biases   │ mlops                │ official │ official │ disabled │
+│ obsidian             │ note-taking          │ builtin  │ builtin  │ enabled  │
+│ second-brain-operat… │ note-taking          │ local    │ local    │ enabled  │
+│ airtable             │ productivity         │ builtin  │ builtin  │ disabled │
+│ box                  │ productivity         │ builtin  │ builtin  │ disabled │
+│ content-operations-… │ productivity         │ local    │ local    │ enabled  │
+│ den-output-contract  │ productivity         │ local    │ local    │ enabled  │
+│ document-to-action-… │ productivity         │ builtin  │ builtin  │ enabled  │
+│ docx                 │ productivity         │ builtin  │ builtin  │ enabled  │
+│ google-workspace     │ productivity         │ builtin  │ builtin  │ enabled  │
+│ maps                 │ productivity         │ builtin  │ builtin  │ enabled  │
+│ meeting-action-items │ productivity         │ builtin  │ builtin  │ enabled  │
+│ nano-pdf             │ productivity         │ local    │ local    │ disabled │
+│ notion               │ productivity         │ builtin  │ builtin  │ disabled │
+│ ocr-and-documents    │ productivity         │ local    │ local    │ enabled  │
+│ pdf                  │ productivity         │ builtin  │ builtin  │ enabled  │
+│ powerpoint           │ productivity         │ builtin  │ builtin  │ enabled  │
+│ product-price-monit… │ productivity         │ builtin  │ builtin  │ disabled │
+│ session-librarian    │ productivity         │ local    │ local    │ enabled  │
+│ teams-meeting-pipel… │ productivity         │ builtin  │ builtin  │ disabled │
+│ ticktick-operations  │ productivity         │ local    │ local    │ enabled  │
+│ weekly-review-plann… │ productivity         │ builtin  │ builtin  │ disabled │
+│ xlsx                 │ productivity         │ builtin  │ builtin  │ enabled  │
+│ arxiv                │ research             │ builtin  │ builtin  │ disabled │
+│ blogwatcher          │ research             │ local    │ local    │ enabled  │
+│ competitor-news-mon… │ research             │ builtin  │ builtin  │ enabled  │
+│ foreign-talent-cast… │ research             │ local    │ local    │ enabled  │
+│ grounded-citations   │ research             │ builtin  │ builtin  │ enabled  │
+│ llm-wiki             │ research             │ builtin  │ builtin  │ disabled │
+│ research-paper-writ… │ research             │ local    │ local    │ disabled │
+│ youtube-casting-ver… │ research             │ local    │ local    │ enabled  │
+│ openhue              │ smart-home           │ official │ official │ disabled │
+│ xurl                 │ social-media         │ builtin  │ builtin  │ disabled │
+│ codebase-inspection  │ software-development │ builtin  │ builtin  │ disabled │
+│ dogfood              │ software-development │ builtin  │ builtin  │ disabled │
+│ github               │ software-development │ builtin  │ builtin  │ enabled  │
+│ hermes-agent-skill-… │ software-development │ builtin  │ builtin  │ disabled │
+│ inspecting-hermes-d… │ software-development │ builtin  │ builtin  │ disabled │
+│ node-inspect-debugg… │ software-development │ builtin  │ builtin  │ disabled │
+│ plan                 │ software-development │ local    │ local    │ disabled │
+│ python-debugpy       │ software-development │ builtin  │ builtin  │ disabled │
+│ requesting-code-rev… │ software-development │ builtin  │ builtin  │ disabled │
+│ simplify-code        │ software-development │ builtin  │ builtin  │ disabled │
+│ spike                │ software-development │ builtin  │ builtin  │ disabled │
+│ systematic-debugging │ software-development │ builtin  │ builtin  │ enabled  │
+│ test-driven-develop… │ software-development │ builtin  │ builtin  │ disabled │
+│ blocked-page-recove… │ web                  │ builtin  │ builtin  │ enabled  │
+└──────────────────────┴──────────────────────┴──────────┴──────────┴──────────┘
+12 hub-installed, 57 builtin, 28 local — 40 enabled, 57 disabled
+

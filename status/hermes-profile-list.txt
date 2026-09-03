@@ -1,11 +1,11 @@
-$ hermes profile list
-exit_code=1
+$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes profile list
+exit_code=0
 
-Traceback (most recent call last):
-  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
-    from hermes_cli.main import main
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
-    from hermes_cli.cli_output import line_input
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
-    default: str | None = None,
-TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+ Profile          Model                        Gateway      Alias        Distribution
+ ───────────────    ───────────────────────────    ───────────    ───────────    ────────────────────
+  default         gpt-5.6-sol                  stopped      —            —
+  aroundit        gpt-5.6-sol                  stopped      aroundit     —
+ ◆den             gpt-5.6-sol                  running      den          —
+  smd             gpt-5.6-sol                  running      smd          —
+
