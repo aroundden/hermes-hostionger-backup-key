@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 25166,
+  "count": 25168,
   "files": [
     {
       "path": "SOUL.md",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1788418775
+      "mtime": 1788419496
     },
     {
       "path": "cron/executions.db",
@@ -1359,13 +1359,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 18,
-      "mtime": 1788418775
+      "size": 17,
+      "mtime": 1788419496
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1788418775
+      "size": 16,
+      "mtime": 1788419496
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -2175,7 +2175,7 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788412965
+      "mtime": 1788419049
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
@@ -3375,7 +3375,7 @@
     {
       "path": "profiles/aroundit/channel_directory.json",
       "size": 12303,
-      "mtime": 1788418704
+      "mtime": 1788419307
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -3430,7 +3430,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788418789
+      "mtime": 1788419511
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -3440,12 +3440,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 630784,
-      "mtime": 1788416802
+      "mtime": 1788419143
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 21119,
-      "mtime": 1788417136
+      "size": 22372,
+      "mtime": 1788419424
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -3566,11 +3566,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-02_13-16-11.md",
-      "size": 93674,
-      "mtime": 1788322571
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-02_13-48-08.md",
@@ -3818,9 +3813,14 @@
       "mtime": 1788417136
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-03_16-05-43.md",
+      "size": 91623,
+      "mtime": 1788419143
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
-      "size": 78,
-      "mtime": 1788416866
+      "size": 97,
+      "mtime": 1788419048
     },
     {
       "path": "profiles/aroundit/cron/persisted_error_recoveries.jsonl",
@@ -3830,22 +3830,22 @@
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1788418789
+      "mtime": 1788419511
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 18,
-      "mtime": 1788418789
+      "mtime": 1788419511
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 878860,
-      "mtime": 1788417136
+      "size": 879187,
+      "mtime": 1788419143
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
-      "size": 5041,
-      "mtime": 1788417127
+      "size": 5065,
+      "mtime": 1788419530
     },
     {
       "path": "profiles/aroundit/email_reply_examples.jsonl",
@@ -4200,7 +4200,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 43721,
-      "mtime": 1788416872
+      "mtime": 1788419055
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7165,12 +7165,12 @@
     {
       "path": "profiles/aroundit/state.db-wal",
       "size": 5986392,
-      "mtime": 1788417136
+      "mtime": 1788419143
     },
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 182,
-      "mtime": 1788418804
+      "mtime": 1788419554
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
@@ -8294,8 +8294,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-live-review-current.json",
-      "size": 54818,
-      "mtime": 1788086787
+      "size": 22563,
+      "mtime": 1788419104
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-live-review-rerun-20260824.json",
@@ -9768,9 +9768,19 @@
       "mtime": 1787287773
     },
     {
+      "path": "profiles/aroundit/tmp/nimome_reply_body.txt",
+      "size": 1039,
+      "mtime": 1788419368
+    },
+    {
       "path": "profiles/aroundit/tmp/on82_melissa_reply_body.txt",
       "size": 965,
       "mtime": 1788202815
+    },
+    {
+      "path": "profiles/aroundit/tmp/patch_gmail_cron_completion_gate.py",
+      "size": 2123,
+      "mtime": 1788419420
     },
     {
       "path": "profiles/aroundit/tmp/print_cron_gmail_review.py",
@@ -10391,6 +10401,11 @@
       "path": "profiles/aroundit/tmp/verify_meowdoku_draft_live.py",
       "size": 2506,
       "mtime": 1787640208
+    },
+    {
+      "path": "profiles/aroundit/tmp/verify_nimome_draft.py",
+      "size": 2403,
+      "mtime": 1788419444
     },
     {
       "path": "profiles/aroundit/tmp/verify_symphony_manami_draft_20260902.py",
@@ -11160,7 +11175,7 @@
     {
       "path": "profiles/den/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788418803
+      "mtime": 1788419546
     },
     {
       "path": "profiles/den/.models_dev_cache_06celhz8.tmp",
@@ -11176,11 +11191,6 @@
       "path": "profiles/den/.skills_prompt_snapshot.json",
       "size": 64597,
       "mtime": 1788416960
-    },
-    {
-      "path": "profiles/den/.update_check",
-      "size": 70,
-      "mtime": 1788418110
     },
     {
       "path": "profiles/den/.update_exit_code",
@@ -11900,7 +11910,7 @@
     {
       "path": "profiles/den/channel_directory.json",
       "size": 9219,
-      "mtime": 1788418784
+      "mtime": 1788419388
     },
     {
       "path": "profiles/den/config.yaml",
@@ -11985,7 +11995,7 @@
     {
       "path": "profiles/den/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788418793
+      "mtime": 1788419515
     },
     {
       "path": "profiles/den/cron/catch_up_occurrences",
@@ -11995,7 +12005,7 @@
     {
       "path": "profiles/den/cron/executions.db",
       "size": 622592,
-      "mtime": 1788418793
+      "mtime": 1788419335
     },
     {
       "path": "profiles/den/cron/inflight_forced_releases.jsonl",
@@ -12004,8 +12014,8 @@
     },
     {
       "path": "profiles/den/cron/jobs.json",
-      "size": 38756,
-      "mtime": 1788418793
+      "size": 38629,
+      "mtime": 1788419335
     },
     {
       "path": "profiles/den/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -12021,11 +12031,6 @@
       "path": "profiles/den/cron/notepad.db",
       "size": 12288,
       "mtime": 1786984422
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-03_06-55-40.md",
-      "size": 153,
-      "mtime": 1788386140
     },
     {
       "path": "profiles/den/cron/output/169c1fa264fa/2026-09-03_07-06-42.md",
@@ -12273,6 +12278,11 @@
       "mtime": 1788418625
     },
     {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-03_16-08-11.md",
+      "size": 153,
+      "mtime": 1788419291
+    },
+    {
       "path": "profiles/den/cron/output/169c1fa264fa/monitor_last_output.txt",
       "size": 44,
       "mtime": 1788410023
@@ -12376,16 +12386,6 @@
       "path": "profiles/den/cron/output/72963b1a5e65/2026-09-03_09-20-32.md",
       "size": 113638,
       "mtime": 1788394832
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-03_11-12-08.md",
-      "size": 184,
-      "mtime": 1788401528
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-03_11-18-09.md",
-      "size": 184,
-      "mtime": 1788401889
     },
     {
       "path": "profiles/den/cron/output/9ebf43990561/2026-09-03_11-23-10.md",
@@ -12628,14 +12628,19 @@
       "mtime": 1788418622
     },
     {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-03_16-02-54.md",
+      "size": 184,
+      "mtime": 1788418974
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-03_16-08-55.md",
+      "size": 184,
+      "mtime": 1788419335
+    },
+    {
       "path": "profiles/den/cron/output/9ebf43990561/monitor_last_output.txt",
       "size": 2261,
       "mtime": 1788418551
-    },
-    {
-      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-01_16-04-13.md",
-      "size": 217,
-      "mtime": 1788246253
     },
     {
       "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-01_17-04-47.md",
@@ -12883,14 +12888,19 @@
       "mtime": 1788415135
     },
     {
+      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-03_16-00-08.md",
+      "size": 217,
+      "mtime": 1788418808
+    },
+    {
       "path": "profiles/den/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1788418793
+      "size": 18,
+      "mtime": 1788419515
     },
     {
       "path": "profiles/den/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1788418793
+      "mtime": 1788419515
     },
     {
       "path": "profiles/den/cron/usage_audit.jsonl",
@@ -13025,7 +13035,7 @@
     {
       "path": "profiles/den/ollama_cloud_models_cache.json",
       "size": 409,
-      "mtime": 1788412528
+      "mtime": 1788419051
     },
     {
       "path": "profiles/den/pending/memory/040c20d0.json",
@@ -13314,8 +13324,8 @@
     },
     {
       "path": "profiles/den/provider_models_cache.json",
-      "size": 12415,
-      "mtime": 1788413586
+      "size": 12413,
+      "mtime": 1788419058
     },
     {
       "path": "profiles/den/runtime/active_sessions.json",
@@ -13385,7 +13395,7 @@
     {
       "path": "profiles/den/skills/.bundled_manifest",
       "size": 2727,
-      "mtime": 1788418803
+      "mtime": 1788419545
     },
     {
       "path": "profiles/den/skills/.curator_backups/2026-08-24T18-34-11Z/cron-jobs.json",
@@ -16380,17 +16390,17 @@
     {
       "path": "profiles/den/state.db-wal",
       "size": 6089392,
-      "mtime": 1788418771
+      "mtime": 1788419552
     },
     {
       "path": "profiles/den/state/dashboard_clients.heartbeat",
       "size": 0,
-      "mtime": 1788418794
+      "mtime": 1788419552
     },
     {
       "path": "profiles/den/state/gateway.heartbeat",
       "size": 182,
-      "mtime": 1788418801
+      "mtime": 1788419551
     },
     {
       "path": "profiles/den/state/gateway.lifecycle.json",
@@ -16439,8 +16449,8 @@
     },
     {
       "path": "profiles/den/state/recording-summary/gws/token_cache.json",
-      "size": 2692,
-      "mtime": 1788415318
+      "size": 2691,
+      "mtime": 1788419290
     },
     {
       "path": "profiles/den/state/recording-summary/last-collection-error.json",
@@ -16450,7 +16460,7 @@
     {
       "path": "profiles/den/state/recording-summary/state.json",
       "size": 18048,
-      "mtime": 1788418610
+      "mtime": 1788419275
     },
     {
       "path": "profiles/den/state/recording-summary/transcripts/clova-16l0YkDSfK0eg_q6wluz5zs9bJKBVOICu.txt",
@@ -24990,16 +25000,6 @@
     {
       "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/networkx/algorithms/tests/test_reciprocity.py",
       "size": 1296,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/networkx/algorithms/tests/test_regular.py",
-      "size": 2951,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/networkx/algorithms/tests/test_richclub.py",
-      "size": 3962,
       "mtime": 1787132032
     }
   ],

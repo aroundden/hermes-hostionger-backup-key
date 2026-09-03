@@ -1,33 +1,11 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p smd cron list
-exit_code=0
+$ hermes -p smd cron list
+exit_code=1
 
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Scheduled Jobs                                  │
-└─────────────────────────────────────────────────────────────────────────┘
-
-  236ef4fff769 [active]
-    Name:      SMD Daily Brief — 에스피식 아침 브리프
-    Schedule:  30 9 * * 1-5
-    Repeat:    ∞
-    Next run:  2026-09-04T09:30:00+09:00
-    Deliver:   slack:C0BJDF8693K
-    Skills:    content-operations-briefings, google-workspace, den-output-contract
-    Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-03T09:33:23.878048+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T09:30:00+09:00)
-    Execution: completed  436dd88856de4ccfb0e056958c2f37dd
-
-  76303332d061 [active]
-    Name:      SPC 매거진/SNS 업데이트 알림
-    Schedule:  31 9 * * 1-5
-    Repeat:    ∞
-    Next run:  2026-09-04T09:31:00+09:00
-    Deliver:   slack:C0BJDF8693K
-    Skills:    content-operations-briefings, den-output-contract
-    Script:    spc_social_watch_notify.py
-    Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-03T09:32:32.167369+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T09:31:00+09:00)
-    Execution: completed  2b0e9b1521f74562ac80447ba294e567
-
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
+    from hermes_cli.cli_output import line_input
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
+    default: str | None = None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

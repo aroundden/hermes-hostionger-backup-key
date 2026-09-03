@@ -1,12 +1,11 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes mcp list
-exit_code=0
+$ hermes mcp list
+exit_code=1
 
-
-  MCP Servers:
-
-  Name             Transport                      Tools        Status    
-  ──────────────── ────────────────────────────── ──────────── ──────────
-  supabase         https://mcp.supabase.com/mcp   14 selected  ✗ disabled
-  vercel           https://mcp.vercel.com         22 selected  ✗ disabled
-  notion           https://mcp.notion.com/mcp     all          ✗ disabled
-
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
+    from hermes_cli.cli_output import line_input
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
+    default: str | None = None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

@@ -1,74 +1,11 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p den cron list
-exit_code=0
+$ hermes -p den cron list
+exit_code=1
 
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Scheduled Jobs                                  │
-└─────────────────────────────────────────────────────────────────────────┘
-
-  c8b4c9e397d0 [active]
-    Name:      Hermes GitHub sanitized backup
-    Schedule:  every 60m
-    Repeat:    ∞
-    Next run:  2026-09-03T16:59:53.224894+09:00
-    Deliver:   local
-    Script:    hermes_github_backup.py
-    Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-03T14:58:55.853207+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T15:58:55.853207+09:00)
-    Execution: running  465d959d512946158668f8a4b4fd9207
-
-  9ebf43990561 [active]
-    Name:      TickTick 에이전트 프로젝트 자동 실행
-    Schedule:  every 5m
-    Repeat:    ∞
-    Next run:  2026-09-03T16:02:02.801487+09:00
-    Deliver:   slack:C0BJ3PZTKLH:1786680434.188289
-    Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
-    Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
-    Changed:   2026-09-03T15:55:51.366406+09:00
-    Workdir:   /Users/insideden/.hermes
-    Last run:  2026-09-03T15:57:02.801487+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T15:54:51.504627+09:00)
-    Execution: completed  c115a07c45ef4d0a9530d106c3a196a9
-
-  72963b1a5e65 [active]
-    Name:      DEN Daily Guest & Idea Brief
-    Schedule:  10 9 * * *
-    Repeat:    ∞
-    Next run:  2026-09-04T09:10:00+09:00
-    Deliver:   slack:C0BM6HMVDQB
-    Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy, den-output-contract
-    Script:    den_youtube_daily_collector.py
-    Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-09-03T09:20:33.129147+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T09:10:00+09:00)
-    Execution: completed  3364509d550a48cfa35f8b7f0de6f94c
-
-  169c1fa264fa [active]
-    Name:      새 녹음 요약
-    Schedule:  every 10m
-    Repeat:    ∞
-    Next run:  2026-09-03T16:07:05.894063+09:00
-    Deliver:   origin
-    Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
-    Monitor:   recording_summary_monitor.py (agent runs only on output change)
-    Changed:   2026-09-03T13:33:43.055682+09:00
-    Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-09-03T15:57:05.894063+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T15:56:05.852135+09:00)
-    Execution: completed  dfdc1a02c0d943c58aeeba2d484197c6
-
-  4624d933404b [active]
-    Name:      TickTick Member Worklog 마감순 정렬
-    Schedule:  0 6 * * *
-    Repeat:    ∞
-    Next run:  2026-09-04T06:00:00+09:00
-    Deliver:   local
-    Script:    ticktick_worklog_deadline_sort.py
-    Mode:      no-agent (script stdout delivered directly)
-    Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-09-03T06:00:23.390970+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T06:00:00+09:00)
-    Execution: completed  edf91676230e44ceba6951a054279272
-
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
+    from hermes_cli.cli_output import line_input
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
+    default: str | None = None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

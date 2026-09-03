@@ -1,36 +1,11 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes tools list
-exit_code=0
+$ hermes tools list
+exit_code=1
 
-Built-in toolsets (cli):
-  ✓ enabled  web  🔍 Web Search & Scraping
-  ✓ enabled  browser  🌐 Browser Automation
-  ✓ enabled  terminal  💻 Terminal & Processes
-  ✓ enabled  file  📁 File Operations
-  ✓ enabled  code_execution  ⚡ Code Execution
-  ✓ enabled  vision  👁️  Vision / Image Analysis
-  ✗ disabled  video  🎬 Video Analysis
-  ✓ enabled  image_gen  🎨 Image Generation
-  ✗ disabled  video_gen  🎬 Video Generation
-  ✗ disabled  x_search  🐦 X (Twitter) Search
-  ✗ disabled  tts  🔊 Text-to-Speech
-  ✗ disabled  stt  🎙️ Speech-to-Text
-  ✓ enabled  skills  📚 Skills
-  ✓ enabled  todo  📋 Task Planning
-  ✓ enabled  memory  💾 Memory
-  ✗ disabled  context_engine  🧩 Context Engine
-  ✓ enabled  session_search  🔎 Session Search
-  ✓ enabled  clarify  ❓ Clarifying Questions
-  ✓ enabled  delegation  👥 Task Delegation
-  ✓ enabled  cronjob  ⏰ Cron Jobs
-  ✗ disabled  homeassistant  🏠 Home Assistant
-  ✗ disabled  spotify  🎵 Spotify
-  ✗ disabled  yuanbao  🤖 Yuanbao
-  ✓ enabled  computer_use  🖱️  Computer Use (macOS/Windows/Linux)
-
-Plugin toolsets (cli):
-  ✗ disabled  a2a  🔌 A2A
-
-MCP servers:
-  supabase  [include only: search_docs, list_organizations, get_organization, list_projects, get_project, list_tables, list_extensions, list_migrations, query_logs, get_advisors, get_project_url, list_edge_functions, get_edge_function, list_branches]
-  vercel  [include only: search_vercel_documentation, get_git_deployment_context, list_projects, get_project, get_project_deployment_protection, list_deployments, get_deployment, get_deployment_build_logs, get_runtime_logs, get_runtime_errors, list_agent_run_projects, list_agent_runs, get_agent_run, get_agent_run_trace, get_web_analytics, web_fetch_vercel_url, list_teams, check_domain_availability_and_price, get_purchase_quote, get_domain_order, list_toolbar_threads, get_toolbar_thread]
-  notion  all tools enabled
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
+    from hermes_cli.cli_output import line_input
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
+    default: str | None = None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'

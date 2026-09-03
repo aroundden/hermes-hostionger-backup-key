@@ -1,45 +1,11 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p aroundit cron list
-exit_code=0
+$ hermes -p aroundit cron list
+exit_code=1
 
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         Scheduled Jobs                                  │
-└─────────────────────────────────────────────────────────────────────────┘
-
-  a74bb2d8bc4c [active]
-    Name:      gmail-auto-draft-replies
-    Schedule:  every 30m
-    Repeat:    ∞
-    Next run:  2026-09-03T16:02:16.751079+09:00
-    Deliver:   slack:C0BHVB49WH5:1784773233.342939
-    Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
-    Monitor:   gmail_auto_draft_retry_monitor.py (agent runs only on output change)
-    Changed:   2026-09-03T15:27:46.524652+09:00
-    Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-03T15:32:16.751079+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T15:26:05.499611+09:00)
-    Execution: unknown  64821a8a52e547e2a14476281ae359a2
-
-  a4642e1093eb [active]
-    Name:      AROUNDit 월 25일 다건이체 사전점검
-    Schedule:  0 10 24 * *
-    Repeat:    ∞
-    Next run:  2026-09-24T10:00:00+09:00
-    Deliver:   slack:C0BJAQYGJ0M:1784914798.541999
-    Skills:    google-workspace, payment-operations-automation, payroll-disbursement-operations, den-output-contract
-    Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-08-24T10:02:41.603966+09:00  ok
-
-  53b7de942303 [active]
-    Name:      gmail-daily-deadline-reminder
-    Schedule:  0 9 * * *
-    Repeat:    ∞
-    Next run:  2026-09-04T09:00:00+09:00
-    Deliver:   slack:C0BHVB49WH5:1784450129.540219
-    Skills:    gmail-workflow-automation, google-workspace, den-output-contract
-    Script:    gmail_deadline_reminder_agent_input.sh
-    Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-03T09:02:48.234436+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-03T09:00:00+09:00)
-    Execution: completed  fb07da7e62304fb38b960e4211f08908
-
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 70, in <module>
+    from hermes_cli.cli_output import line_input
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/cli_output.py", line 79, in <module>
+    default: str | None = None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
