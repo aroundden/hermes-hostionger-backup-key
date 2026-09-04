@@ -341,3 +341,6 @@ exit_code=0
     ○ WHATSAPP_HOME_CHANNEL
     ○ WHATSAPP_HOME_CHANNEL_NAME
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -9,3 +9,6 @@ exit_code=0
  ◆den             gpt-5.6-sol                  running      den          —
   smd             gpt-5.6-sol                  running      smd          —
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

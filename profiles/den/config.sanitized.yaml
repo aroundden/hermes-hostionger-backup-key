@@ -320,3 +320,8 @@ auxiliary:
 agent: {}
 compression:
   codex_responses_native: true
+hooks:
+  pre_tool_call:
+    - matcher: "browser_exec"
+      command: "/Users/insideden/.local/bin/hermes-browser-reap"
+      timeout: 15

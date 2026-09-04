@@ -52,6 +52,9 @@ exit_code=0
 ◆ xAI Model Retirement (May 15, 2026)
   ✓ No retired xAI models in config
 
+◆ Plugin import paths (removed Sep 14, 2026)
+  ✓ No enabled plugin imports paths removed on 2026-09-14
+
 ◆ Auth Providers
   ⚠ Nous Portal auth (not logged in)
   ✓ OpenAI Codex auth (logged in)
@@ -70,9 +73,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (828 sessions)
-    → state.db logical size 487.9 MB, 124,905 pages, 395 free, WAL 3.3 MB
-    → 28,774 messages, 828 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (831 sessions)
+    → state.db logical size 487.9 MB, 124,905 pages, 393 free, WAL 317.9 KB
+    → 28,790 messages, 831 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -154,3 +157,6 @@ exit_code=0
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

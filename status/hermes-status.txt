@@ -104,16 +104,19 @@ exit_code=0
 ◆ Gateway Service
   Status:       ✓ running
   Manager:      launchd
-  PID(s):       2652, 2643
+  PID(s):       30110, 30109
 
 ◆ Scheduled Jobs
   Jobs:         5 active, 5 total
 
 ◆ Sessions
   Active:       51 session(s)
-  Last activity:      11h ago
+  Last activity:      12h ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
   Run 'hermes setup' to configure
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -113,3 +113,6 @@ exit_code=0
 └──────────────────────┴──────────────────────┴──────────┴──────────┴──────────┘
 12 hub-installed, 58 builtin, 35 local — 61 enabled, 44 disabled
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
