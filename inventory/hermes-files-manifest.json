@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 26582,
+  "count": 26726,
   "files": [
     {
       "path": "SOUL.md",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1788506563
+      "mtime": 1788510227
     },
     {
       "path": "cron/executions.db",
@@ -1360,12 +1360,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1788506563
+      "mtime": 1788510228
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1788506563
+      "size": 17,
+      "mtime": 1788510228
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -2175,7 +2175,7 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788505877
+      "mtime": 1788509870
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
@@ -2510,12 +2510,12 @@
     {
       "path": "profiles/aroundit/cache/model_catalog.json",
       "size": 8193,
-      "mtime": 1788506083
+      "mtime": 1788509684
     },
     {
       "path": "profiles/aroundit/cache/nous_recommended_cache.json",
       "size": 9840,
-      "mtime": 1788506083
+      "mtime": 1788509684
     },
     {
       "path": "profiles/aroundit/cache/plugin_toolset_keys.json",
@@ -2525,7 +2525,7 @@
     {
       "path": "profiles/aroundit/cache/reasoning_caps.json",
       "size": 43029,
-      "mtime": 1788506083
+      "mtime": 1788509684
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
@@ -3329,8 +3329,8 @@
     },
     {
       "path": "profiles/aroundit/channel_directory.json",
-      "size": 12854,
-      "mtime": 1788506390
+      "size": 13037,
+      "mtime": 1788510008
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -3385,7 +3385,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788506583
+      "mtime": 1788510252
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -3395,12 +3395,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 630784,
-      "mtime": 1788506087
+      "mtime": 1788510023
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
       "size": 23349,
-      "mtime": 1788506087
+      "mtime": 1788510022
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -3526,16 +3526,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-03_13-16-40.md",
-      "size": 93674,
-      "mtime": 1788409000
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-03_13-51-29.md",
-      "size": 93700,
-      "mtime": 1788411089
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-03_14-22-47.md",
@@ -3778,9 +3768,19 @@
       "mtime": 1788506086
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-04_16-46-56.md",
+      "size": 98888,
+      "mtime": 1788508016
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-04_17-20-22.md",
+      "size": 98382,
+      "mtime": 1788510022
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
-      "size": 2109,
-      "mtime": 1788505877
+      "size": 1603,
+      "mtime": 1788509870
     },
     {
       "path": "profiles/aroundit/cron/persisted_error_recoveries.jsonl",
@@ -3789,23 +3789,23 @@
     },
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1788506583
+      "size": 18,
+      "mtime": 1788510252
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1788506583
+      "mtime": 1788510252
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 889379,
-      "mtime": 1788506086
+      "size": 890034,
+      "mtime": 1788510022
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
-      "size": 6385,
-      "mtime": 1788505876
+      "size": 6481,
+      "mtime": 1788509870
     },
     {
       "path": "profiles/aroundit/email_reply_examples.jsonl",
@@ -3835,7 +3835,7 @@
     {
       "path": "profiles/aroundit/gateway_state.json",
       "size": 658,
-      "mtime": 1788496116
+      "mtime": 1788509567
     },
     {
       "path": "profiles/aroundit/kmong_badges.applescript",
@@ -4075,7 +4075,7 @@
     {
       "path": "profiles/aroundit/runtime/active_sessions.json",
       "size": 15,
-      "mtime": 1788506175
+      "mtime": 1788509567
     },
     {
       "path": "profiles/aroundit/runtime/active_sessions.lock",
@@ -4175,7 +4175,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 44184,
-      "mtime": 1788505967
+      "mtime": 1788509870
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7230,7 +7230,7 @@
     {
       "path": "profiles/aroundit/state.db-wal",
       "size": 6006992,
-      "mtime": 1788506175
+      "mtime": 1788510022
     },
     {
       "path": "profiles/aroundit/state.db.auto-maintenance.lock",
@@ -7245,7 +7245,7 @@
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 180,
-      "mtime": 1788506591
+      "mtime": 1788510252
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
@@ -8123,6 +8123,11 @@
       "mtime": 1787857100
     },
     {
+      "path": "profiles/aroundit/tmp/gmail-autodraft-current-3-live.json",
+      "size": 43946,
+      "mtime": 1788508006
+    },
+    {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current-9-live-final.json",
       "size": 103797,
       "mtime": 1787721739
@@ -8139,8 +8144,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
-      "size": 80187,
-      "mtime": 1788505876
+      "size": 61805,
+      "mtime": 1788509870
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current3-live-20260827.json",
@@ -9368,6 +9373,11 @@
       "mtime": 1787978133
     },
     {
+      "path": "profiles/aroundit/tmp/inspect_gmail_autodraft_current_3_live.py",
+      "size": 4312,
+      "mtime": 1788508000
+    },
+    {
       "path": "profiles/aroundit/tmp/inspect_gmail_autodraft_current_4_20260828.py",
       "size": 4607,
       "mtime": 1787895868
@@ -10423,6 +10433,11 @@
       "mtime": 1788182571
     },
     {
+      "path": "profiles/aroundit/tmp/update_connecting_mana_draft_20260904.py",
+      "size": 4708,
+      "mtime": 1788509553
+    },
+    {
       "path": "profiles/aroundit/tmp/update_melody_party_decline_draft_20260830.py",
       "size": 4466,
       "mtime": 1788020706
@@ -10566,6 +10581,16 @@
       "path": "profiles/aroundit/tmp/verify_audit_drafts.py",
       "size": 1483,
       "mtime": 1788100822
+    },
+    {
+      "path": "profiles/aroundit/tmp/verify_current_gmail_candidates_readonly.json",
+      "size": 205072,
+      "mtime": 1788510014
+    },
+    {
+      "path": "profiles/aroundit/tmp/verify_current_gmail_candidates_readonly.py",
+      "size": 3825,
+      "mtime": 1788510007
     },
     {
       "path": "profiles/aroundit/tmp/verify_current_jei_draft.py",
@@ -11390,7 +11415,7 @@
     {
       "path": "profiles/den/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788505763
+      "mtime": 1788507314
     },
     {
       "path": "profiles/den/.models_dev_cache_06celhz8.tmp",
@@ -11409,8 +11434,8 @@
     },
     {
       "path": "profiles/den/.update_check",
-      "size": 67,
-      "mtime": 1788506134
+      "size": 68,
+      "mtime": 1788509735
     },
     {
       "path": "profiles/den/.update_exit_code",
@@ -11455,7 +11480,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/.hermes-snapshot-complete",
       "size": 10,
-      "mtime": 1788505769
+      "mtime": 1788507325
     },
     {
       "path": "profiles/den/browser-profile/chrome/BrowserMetrics-spare.pma",
@@ -11465,7 +11490,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/ChromeFeatureState",
       "size": 287,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/.DS_Store",
@@ -11505,12 +11530,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/AutofillAiModelCache/LOG",
       "size": 0,
-      "mtime": 1788505949
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/AutofillAiModelCache/LOG.old",
       "size": 0,
-      "mtime": 1788505703
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/AutofillStrikeDatabase/LOCK",
@@ -11520,17 +11545,17 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/AutofillStrikeDatabase/LOG",
       "size": 0,
-      "mtime": 1788505949
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/AutofillStrikeDatabase/LOG.old",
       "size": 0,
-      "mtime": 1788505703
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/BookmarkMergedSurfaceOrdering",
       "size": 4,
-      "mtime": 1788505949
+      "mtime": 1788507328
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Bookmarks",
@@ -11550,12 +11575,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/BudgetDatabase/LOG",
       "size": 0,
-      "mtime": 1788505949
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/BudgetDatabase/LOG.old",
       "size": 0,
-      "mtime": 1788505703
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/00577c6641fa9a7c_0",
@@ -11566,6 +11591,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/0058b8cdc3bd82ee_0",
       "size": 20604,
       "mtime": 1788505704
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/008bef8da190c33c_0",
+      "size": 6934,
+      "mtime": 1788507246
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/00af774c65119ba2_0",
@@ -11586,6 +11616,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/04184c9e6ddc1a9d_0",
       "size": 4260,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/049f0f6b3e6f856d_0",
+      "size": 15307,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/04a621b69c3b1e75_0",
@@ -11638,9 +11673,19 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/0b8024d6ad5fb756_0",
+      "size": 6917,
+      "mtime": 1788507241
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/0c53130cf7ae022a_0",
       "size": 86661,
       "mtime": 1788505704
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/0ccbe7a5023e7e90_0",
+      "size": 29341,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/0d4c154bc0b32a32_0",
@@ -11703,6 +11748,11 @@
       "mtime": 1788505705
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/15ec89bd0760a253_0",
+      "size": 7086,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/15f1f572f76f07a6_0",
       "size": 15280,
       "mtime": 1788505704
@@ -11743,6 +11793,11 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/1b9c21a4ec9d6707_0",
+      "size": 5057,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/1c32a156b7422f3e_0",
       "size": 31653,
       "mtime": 1788505705
@@ -11750,7 +11805,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/1cb195e819254b61_0",
       "size": 7681,
-      "mtime": 1788505709
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/1f009c55ac7fe96b_0",
@@ -11808,6 +11863,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/25fe21c9eac2a403_0",
+      "size": 7070,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/2605dabe6db345f1_0",
       "size": 4390,
       "mtime": 1788505706
@@ -11833,9 +11893,19 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/2aea744b6f348b49_0",
+      "size": 31481,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/2c26169d52b2f7fa_0",
       "size": 10742,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/2c296527483cd8c4_0",
+      "size": 6946,
+      "mtime": 1788507240
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/2c2bf9feb74f8316_0",
@@ -11893,6 +11963,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/33d2421d9c3122de_0",
+      "size": 6951,
+      "mtime": 1788507119
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/346b46abd19987b1_0",
       "size": 20235,
       "mtime": 1788505705
@@ -11919,8 +11994,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/35781423fd6dce01_0",
-      "size": 116651,
-      "mtime": 1788505705
+      "size": 116623,
+      "mtime": 1788507118
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/357892b88add484a_0",
@@ -11934,8 +12009,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/367a3fe8d0ff79d1_0",
-      "size": 11717,
-      "mtime": 1788505705
+      "size": 11709,
+      "mtime": 1788507332
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/3794d0c4d5aa3c8a_0",
@@ -11943,9 +12018,24 @@
       "mtime": 1788505702
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/37fff35e156faf8e_0",
+      "size": 3903,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/38c4d455397a6318_0",
       "size": 3753,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/39283772ee86392f_0",
+      "size": 14826,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/3a23cb7861de4373_0",
+      "size": 6899,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/3b32b592d7402a00_0",
@@ -11978,9 +12068,19 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/40ac8ee4d2608b1f_0",
+      "size": 6865,
+      "mtime": 1788507246
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/42609badf4c77854_0",
       "size": 5240,
       "mtime": 1788505701
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/42d1c96de9bdfba2_0",
+      "size": 6967,
+      "mtime": 1788507240
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/432c147e04712bba_0",
@@ -12033,6 +12133,11 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/4700694b131206f0_0",
+      "size": 10078,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/47cfd701f9af04be_0",
       "size": 3810,
       "mtime": 1788505706
@@ -12041,6 +12146,21 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/4975d5cfd6d5ffbc_0",
       "size": 3805,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/498831c6683d99de_0",
+      "size": 4920,
+      "mtime": 1788507243
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/498a2fa0c6f1e0f8_0",
+      "size": 19663,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/4992b8acf86f9c5a_0",
+      "size": 6914,
+      "mtime": 1788507332
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/4a949cf6e95a111c_0",
@@ -12143,6 +12263,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/592eecbc6e76ebf7_0",
+      "size": 6893,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5a969acb81e76495_0",
       "size": 15602,
       "mtime": 1788505704
@@ -12151,6 +12276,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5b0072c9726052f3_0",
       "size": 6913,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5b3041a479254970_0",
+      "size": 4172,
+      "mtime": 1788507327
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5b7ee3264a3cff6e_0",
@@ -12163,14 +12293,34 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5c48ab407ca3a3e0_0",
+      "size": 6948,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5c90ec29732badfd_0",
+      "size": 4904,
+      "mtime": 1788507243
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5d0cd051aa113907_0",
       "size": 31877,
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5d9d9990a1da22cb_0",
+      "size": 6917,
+      "mtime": 1788507121
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5e873cad489adedf_0",
       "size": 16203,
       "mtime": 1788505702
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/5f605cead0143748_0",
+      "size": 6007,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/60a8713c7a603718_0",
@@ -12181,6 +12331,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/626bd08c220edf25_0",
       "size": 11328,
       "mtime": 1788505701
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/628e4181666c927b_0",
+      "size": 7057,
+      "mtime": 1788507331
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/632619c7d724c239_0",
@@ -12228,6 +12383,16 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/68dbf512b8eea703_0",
+      "size": 3432,
+      "mtime": 1788507335
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/69228bf9341c3495_0",
+      "size": 31631,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/69392d3f43acebff_0",
       "size": 3815,
       "mtime": 1788505706
@@ -12263,6 +12428,11 @@
       "mtime": 1788505702
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/6ca536abc0a4f0a2_0",
+      "size": 3989,
+      "mtime": 1788507333
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/6cdf2460ce371f9e_0",
       "size": 17133,
       "mtime": 1788505702
@@ -12293,6 +12463,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/719d415e92522dae_0",
+      "size": 86766,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/71f373ff1ffeed22_0",
       "size": 3816,
       "mtime": 1788505705
@@ -12308,9 +12483,19 @@
       "mtime": 1788505702
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7532dc41b1453f1d_0",
+      "size": 5237,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/762be6c9762668f3_0",
       "size": 7545,
       "mtime": 1788505702
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/765c40e35d4c9f52_0",
+      "size": 6895,
+      "mtime": 1788507330
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/76632bb062ed932f_0",
@@ -12323,9 +12508,24 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/77c70b9ef82807bf_0",
+      "size": 6881,
+      "mtime": 1788507119
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/77d3f21b0378f698_0",
       "size": 3903,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/78783c101c5c552d_0",
+      "size": 8769,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/78edf5c508ad0f40_0",
+      "size": 9961,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/795c012d823ddea1_0",
@@ -12336,6 +12536,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/79ed48e47c8f5a5b_0",
       "size": 13065,
       "mtime": 1788505705
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7a1e73f1558d731b_0",
+      "size": 7005,
+      "mtime": 1788507331
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7ad474a2fd603bee_0",
@@ -12358,6 +12563,11 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7d153e550c984865_0",
+      "size": 6995,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7d91252fbc0eeab5_0",
       "size": 6864,
       "mtime": 1788505706
@@ -12373,6 +12583,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/7f65aafcce673c95_0",
+      "size": 7025,
+      "mtime": 1788507118
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/81851e0e7e3769a8_0",
       "size": 28021,
       "mtime": 1788505703
@@ -12381,6 +12596,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/81d92a462767eaee_0",
       "size": 3905,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8238b5cefa1c037d_0",
+      "size": 3634,
+      "mtime": 1788507122
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/83180fad4b9c86d7_0",
@@ -12398,9 +12618,19 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8409070c284b7e9a_0",
+      "size": 9064,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8479d00d8bc0452d_0",
       "size": 3851,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/855c2357251c1e05_0",
+      "size": 4742,
+      "mtime": 1788507253
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/861d281295a6e52a_0",
@@ -12436,6 +12666,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8c08337513a6c1e4_0",
       "size": 27717,
       "mtime": 1788505701
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8c9dd4bbc578c2b3_0",
+      "size": 7941,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/8f22797fbc2dc07e_0",
@@ -12485,7 +12720,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/93622d15430eb46f_0",
       "size": 91599,
-      "mtime": 1788505703
+      "mtime": 1788507119
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/94c3726cf3c7ff81_0",
@@ -12501,6 +12736,16 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/959fbfb2a1d16693_0",
       "size": 3838,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/977cf642119e8b45_0",
+      "size": 7092,
+      "mtime": 1788507331
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/97b6bda8348839b6_0",
+      "size": 4668,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/98071b42771def04_0",
@@ -12533,6 +12778,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/9a00eb605bc7a0e3_0",
+      "size": 6954,
+      "mtime": 1788507332
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/9ae91df908b9fcb3_0",
       "size": 3887,
       "mtime": 1788505706
@@ -12563,14 +12813,29 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/9f83b012cb5c1dcc_0",
+      "size": 7024,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/9fa1363edf7b3c37_0",
       "size": 10513,
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/9fcecfba45c24d37_0",
+      "size": 3432,
+      "mtime": 1788507245
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/a052859b30d208cf_0",
       "size": 19794,
       "mtime": 1788505705
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/a3221c40cfb8d00a_0",
+      "size": 46613,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/a41025ff9271e16c_0",
@@ -12623,6 +12888,16 @@
       "mtime": 1788505705
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/a9981035809043aa_0",
+      "size": 23747,
+      "mtime": 1788507116
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/aaa56fe61413bf7b_0",
+      "size": 8991,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/aba604a4be3e71a7_0",
       "size": 10214,
       "mtime": 1788505704
@@ -12648,6 +12923,11 @@
       "mtime": 1788505705
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/ada93096d97a5f9f_0",
+      "size": 3681,
+      "mtime": 1788507118
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/ae424e7a14e6976e_0",
       "size": 6999,
       "mtime": 1788505704
@@ -12663,14 +12943,29 @@
       "mtime": 1788505705
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/af44cd843444adef_0",
+      "size": 18287,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b0456dd2e74ac449_0",
       "size": 4128,
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b07863fa74ba0057_0",
+      "size": 6944,
+      "mtime": 1788507330
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b0a6e9fba391c79b_0",
       "size": 3796,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b0c3175c0561de6e_0",
+      "size": 9011,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b13e60fd51f34263_0",
@@ -12681,6 +12976,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b1a805b1c2bde38d_0",
       "size": 29041,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b29c68205f9a2a68_0",
+      "size": 7088,
+      "mtime": 1788507118
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b31c3deb39e12fd4_0",
@@ -12695,7 +12995,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b3cc7f8b6f29e1ab_0",
       "size": 194133,
-      "mtime": 1788505704
+      "mtime": 1788507118
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b451614798d4292e_0",
@@ -12705,7 +13005,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b550fb6659d982f9_0",
       "size": 6084,
-      "mtime": 1788505770
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b70212441319d3de_0",
@@ -12733,6 +13033,16 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/b8992adece174e29_0",
+      "size": 15401,
+      "mtime": 1788507116
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/ba6119e67dd46169_0",
+      "size": 6952,
+      "mtime": 1788507241
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/baae26df2ba5ca0d_0",
       "size": 6589,
       "mtime": 1788505709
@@ -12746,6 +13056,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/bad2061f4b39c627_0",
       "size": 3846,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/bb12d2e46c8eb7f0_0",
+      "size": 142258,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/bb496babdee86014_0",
@@ -12790,7 +13105,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/bead17b09a44bf7c_0",
       "size": 197183,
-      "mtime": 1788505704
+      "mtime": 1788507118
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/bf84fdf6ec0d5a9b_0",
@@ -12816,6 +13131,16 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c2f68449ee858b23_0",
       "size": 3931,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c30783e35bf43849_0",
+      "size": 6911,
+      "mtime": 1788507246
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c38b3e4b11370167_0",
+      "size": 11876,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c3b60b84af1afd93_0",
@@ -12853,6 +13178,11 @@
       "mtime": 1788505701
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c8c3a4712e95b585_0",
+      "size": 4446,
+      "mtime": 1788507245
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/c9c8fb934284f4b7_0",
       "size": 4668,
       "mtime": 1788505702
@@ -12883,14 +13213,24 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/cd0d425ff14de22b_0",
+      "size": 6869,
+      "mtime": 1788507121
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/cd727062b7357591_0",
       "size": 3930,
       "mtime": 1788505706
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/cef6d28a0fde15fe_0",
-      "size": 4062,
-      "mtime": 1788505770
+      "size": 4874,
+      "mtime": 1788507326
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/cfa1a61fe0fac8a8_0",
+      "size": 7032,
+      "mtime": 1788507330
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d0609be104f74f52_0",
@@ -12908,14 +13248,24 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d2153f26a2afdda2_0",
+      "size": 4427,
+      "mtime": 1788507116
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d23a1570b4c9b644_0",
+      "size": 7069,
+      "mtime": 1788507118
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d25792392a5712b1_0",
       "size": 3717,
       "mtime": 1788505704
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d302c9456fbfe929_0",
-      "size": 259939,
-      "mtime": 1788505705
+      "size": 259935,
+      "mtime": 1788507243
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/d441139c4c464523_0",
@@ -12948,14 +13298,29 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/da1b99fcc0021a65_0",
+      "size": 4446,
+      "mtime": 1788507335
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/db0e76fa865bb2bd_0",
       "size": 16906,
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/dbd740a9c88d198b_0",
+      "size": 3432,
+      "mtime": 1788507122
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/dd0fb7e0554f0f3d_0",
       "size": 3796,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/dd2bde2c2b36a1b9_0",
+      "size": 3903,
+      "mtime": 1788507330
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/de6519344ef1c099_0",
@@ -13023,6 +13388,11 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/e88bfc577d7a151a_0",
+      "size": 6933,
+      "mtime": 1788507119
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/e8a1ca47d6141a55_0",
       "size": 14654,
       "mtime": 1788505703
@@ -13048,9 +13418,19 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/eaa1db48c40c4120_0",
+      "size": 6869,
+      "mtime": 1788507332
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/eae0c3ad322bce29_0",
+      "size": 6867,
+      "mtime": 1788507241
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/ed913edf220fe389_0",
       "size": 170835,
-      "mtime": 1788505703
+      "mtime": 1788507118
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/edab5f85550454c4_0",
@@ -13058,9 +13438,19 @@
       "mtime": 1788505702
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f09d49ea30688158_0",
+      "size": 17372,
+      "mtime": 1788507116
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f1a9812b3a923ada_0",
       "size": 12015,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f1f15a36c5a5c309_0",
+      "size": 3903,
+      "mtime": 1788507241
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f29ad9c98d672018_0",
@@ -13071,6 +13461,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f2bbfdcb3fb8187f_0",
       "size": 3889,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f2c89e7a5f9e23f7_0",
+      "size": 6934,
+      "mtime": 1788507121
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f31a97dc0a094d99_0",
@@ -13091,6 +13486,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f9944691b58a5314_0",
       "size": 3937,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/f9aa1df3db9e60e1_0",
+      "size": 14758,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/fc468b6dea9cb800_0",
@@ -13123,6 +13523,11 @@
       "mtime": 1788505709
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/fe931274b0b3318a_0",
+      "size": 20646,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/ff3e97365cf5984f_0",
       "size": 16056,
       "mtime": 1788505704
@@ -13149,13 +13554,13 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/Cache_Data/index-dir/the-real-index",
-      "size": 7560,
-      "mtime": 1788505790
+      "size": 9384,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/No_Vary_Search/journal.baj",
       "size": 4,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cache/No_Vary_Search/snapshot.baf",
@@ -13175,12 +13580,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/ClientCertificates/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/ClientCertificates/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/03977d6aa3154a98_0",
@@ -13188,9 +13593,24 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/04289baf9bbcec3b_0",
+      "size": 890,
+      "mtime": 1788507330
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/04946a255faf7341_0",
       "size": 1323,
       "mtime": 1788505708
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/049f20e313d6331b_0",
+      "size": 839,
+      "mtime": 1788507121
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/04aceeb13e8f7835_0",
+      "size": 872,
+      "mtime": 1788507246
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/07bf9d8e728ad997_0",
@@ -13199,23 +13619,38 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/093d0e0e04c6a20f_0",
-      "size": 244,
-      "mtime": 1788505703
+      "size": 10748,
+      "mtime": 1788507114
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/09f4f6869adee9ac_0",
+      "size": 310,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0a678cb5ecdda79f_0",
       "size": 1481,
-      "mtime": 1788505705
+      "mtime": 1788507121
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0b40d46fefadac76_0",
+      "size": 4059,
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0b569488f204868e_0",
-      "size": 394,
-      "mtime": 1788505705
+      "size": 434,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0e4858559593730a_0",
+      "size": 3579,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0f3e6f9630779714_0",
-      "size": 276,
-      "mtime": 1788505703
+      "size": 316,
+      "mtime": 1788507114
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/0f474b2ab14b5c18_0",
@@ -13231,6 +13666,11 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/10a0e942f886ebe1_0",
       "size": 1019,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/118b5c4b7641709e_0",
+      "size": 1875,
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/127fe73ff2e9e395_0",
@@ -13251,6 +13691,16 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/16701f563e55f55c_0",
       "size": 1619,
       "mtime": 1788505708
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/18d0e8d7a0941dee_0",
+      "size": 857,
+      "mtime": 1788507330
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/19bb400ba13baea1_0",
+      "size": 2267,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/1a88d522244d5d0e_0",
@@ -13284,8 +13734,13 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/1f449e5d77465479_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 771,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/1f6c9f95ca33acc2_0",
+      "size": 839,
+      "mtime": 1788507246
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/20444e5ece626738_0",
@@ -13294,13 +13749,18 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/21f35c6a31a7bfc2_0",
-      "size": 254,
-      "mtime": 1788505703
+      "size": 8078,
+      "mtime": 1788507114
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/235177d3868e5f91_0",
+      "size": 891,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/26c0be8beff93eb3_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 1003,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/27a41326bc2b92b3_0",
@@ -13313,9 +13773,24 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/2829bf63806cea0e_0",
+      "size": 1147,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/289446852eacb256_0",
       "size": 4259,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/28f142bebd305c67_0",
+      "size": 4515,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/29271d1d3fb31945_0",
+      "size": 892,
+      "mtime": 1788507119
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/29d8935ca4f6ea3f_0",
@@ -13333,6 +13808,11 @@
       "mtime": 1788505708
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/2bd98912d6716aec_0",
+      "size": 891,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/2c112f38bd5e5331_0",
       "size": 1851,
       "mtime": 1788505708
@@ -13348,24 +13828,49 @@
       "mtime": 1788505708
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/32644cbe45576ecf_0",
+      "size": 7765,
+      "mtime": 1788507239
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/335e69ddec2b9ac6_0",
       "size": 220,
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/33cf1c722517967a_0",
+      "size": 34680,
+      "mtime": 1788507253
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/35ad53ac670d2420_0",
+      "size": 995840,
+      "mtime": 1788507121
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/367fba2dbfef3ec7_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 1707,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/36b11db5b15a53de_0",
+      "size": 882,
+      "mtime": 1788507246
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/36bc1e758f25c9f8_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 4107,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/3928343083d8435f_0",
       "size": 873,
       "mtime": 1788505706
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/3962e1472e4e19bc_0",
+      "size": 528888,
+      "mtime": 1788507245
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/3a2f7eefcbc8a241_0",
@@ -13379,8 +13884,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/3d46c553b13b9cd6_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 1555,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/3eb4196659a2fcd4_0",
@@ -13394,8 +13899,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4075b9af0ffd12a8_0",
-      "size": 282,
-      "mtime": 1788505703
+      "size": 322,
+      "mtime": 1788507114
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/40e9ac51fad71352_0",
@@ -13404,8 +13909,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/411c72b7afa35c2e_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 3275,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/420e50793c6a9e25_0",
@@ -13418,9 +13923,19 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/42dbc84290c7027f_0",
+      "size": 1931,
+      "mtime": 1788507239
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4435dbfadcaafe74_0",
       "size": 4323,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/45aabc7dfddb7209_0",
+      "size": 873,
+      "mtime": 1788507332
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/467b528ac68353a6_0",
@@ -13439,13 +13954,18 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4a4d32f72b3597c7_0",
-      "size": 232,
-      "mtime": 1788505703
+      "size": 272,
+      "mtime": 1788507114
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4ab8ccabe10f5628_0",
+      "size": 7805,
+      "mtime": 1788507119
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4b14a077c814001a_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 1163,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4b36d0763724ff27_0",
@@ -13453,14 +13973,34 @@
       "mtime": 1788505706
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4b87cc4a07ed4a36_0",
+      "size": 858,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4dc36181959a6c58_0",
       "size": 4355,
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4e88da62f63770e9_0",
+      "size": 975,
+      "mtime": 1788507331
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4fa5f879866dc431_0",
       "size": 771,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4fb86f88e3c5c19f_0",
+      "size": 996,
+      "mtime": 1788507118
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/4fbc825ce3eaf586_0",
+      "size": 511952,
+      "mtime": 1788507121
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/51bedb4f83b29562_0",
@@ -13476,6 +14016,16 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/53e84cdf85878326_0",
       "size": 275,
       "mtime": 1788505704
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/56819591a93f2da4_0",
+      "size": 882,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/58acb85db7b286e6_0",
+      "size": 942,
+      "mtime": 1788507331
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/5a1f8c6a06471f00_0",
@@ -13498,19 +14048,24 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/5c1e855046e668cc_0",
+      "size": 953,
+      "mtime": 1788507240
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/5d64275fd18b019e_0",
       "size": 1091,
       "mtime": 1788505708
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/5f39a8e2151c79d5_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 1163,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/610e90d1cf8deba0_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 3403,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/61329fca9b4710e3_0",
@@ -13533,9 +14088,14 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/64e9e5461c40b8cc_0",
+      "size": 32680,
+      "mtime": 1788507114
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/66bc27d08ea87357_0",
-      "size": 244,
-      "mtime": 1788505706
+      "size": 14636,
+      "mtime": 1788507253
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/69928493f2c3311b_0",
@@ -13546,6 +14106,26 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/6997614ed55d6a28_0",
       "size": 1723,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/69cadc1ca071525c_0",
+      "size": 10729016,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/6afb0a712ca01786_0",
+      "size": 535960,
+      "mtime": 1788507337
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/6b25f86ea15c0514_0",
+      "size": 985,
+      "mtime": 1788507118
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/6cdff98ffdd30f32_0",
+      "size": 2851,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/6dfae58f2363f3d2_0",
@@ -13559,8 +14139,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/7576907a1bb45fc1_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 2235,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/760cb51f23f83d38_0",
@@ -13569,8 +14149,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/7661d90ab6bf34a5_0",
-      "size": 243,
-      "mtime": 1788505706
+      "size": 283,
+      "mtime": 1788507253
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/7792d9cb87b25188_0",
@@ -13598,6 +14178,21 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/7c0fd7d52d399440_0",
+      "size": 3635,
+      "mtime": 1788507239
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/7f2e6fdf185c91db_0",
+      "size": 901,
+      "mtime": 1788507240
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/825418e45b6d5b29_0",
+      "size": 102064,
+      "mtime": 1788507114
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/827001394a938f5c_0",
       "size": 235,
       "mtime": 1788505702
@@ -13618,6 +14213,11 @@
       "mtime": 1788505708
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/86124f4a3409854c_0",
+      "size": 872,
+      "mtime": 1788507241
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/86a0923f95bc0277_0",
       "size": 3563,
       "mtime": 1788505703
@@ -13633,9 +14233,14 @@
       "mtime": 1788505708
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/8a895ed87f117310_0",
+      "size": 20560,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/8b3ccba56b89e9ed_0",
-      "size": 241,
-      "mtime": 1788505706
+      "size": 281,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/8bdbff7ef7d4e081_0",
@@ -13653,6 +14258,16 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/952750d582a834f1_0",
+      "size": 1851,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/95348db66c079b7b_0",
+      "size": 849,
+      "mtime": 1788507119
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/96d6f8c635ba7bcb_0",
       "size": 8117,
       "mtime": 1788505706
@@ -13668,6 +14283,11 @@
       "mtime": 1788505705
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9858908542ff9bbc_0",
+      "size": 1091,
+      "mtime": 1788507119
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9911a602108e2542_0",
       "size": 771,
       "mtime": 1788505703
@@ -13676,6 +14296,21 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9ba2dbf8d385c189_0",
       "size": 3563,
       "mtime": 1788505709
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9d15316e9f7e0b40_0",
+      "size": 882,
+      "mtime": 1788507121
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9d230bc27e7ce9c9_0",
+      "size": 65072,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9e44481740cead6f_0",
+      "size": 839,
+      "mtime": 1788507241
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/9fabca0c28c164b1_0",
@@ -13713,9 +14348,19 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a1eaf0240b4d745b_0",
+      "size": 892,
+      "mtime": 1788507241
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a2f77ffcef4e7a5e_0",
       "size": 882,
       "mtime": 1788505707
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a2fac5f60bba68b3_0",
+      "size": 7005,
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a3473a1ac5f716a7_0",
@@ -13739,8 +14384,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a8ac18fdaa47dc56_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 2427,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/a8e9abf19c1c71ff_0",
@@ -13753,6 +14398,16 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/aa57a344c6caebfa_0",
+      "size": 986,
+      "mtime": 1788507240
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ace6098aeca32ad9_0",
+      "size": 535960,
+      "mtime": 1788507118
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ad545a025053a57f_0",
       "size": 1691,
       "mtime": 1788505703
@@ -13763,9 +14418,34 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/b372f7855ba8e173_0",
+      "size": 952,
+      "mtime": 1788507118
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/b3c843316be069e6_0",
       "size": 4515,
       "mtime": 1788505709
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/b675e466fe8980ec_0",
+      "size": 1031968,
+      "mtime": 1788507121
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/b8505035b850cafa_0",
+      "size": 921,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/b9e9002f6163fd57_0",
+      "size": 1003,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/bc63ab962aa580b3_0",
+      "size": 535968,
+      "mtime": 1788507330
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/bea3511e7afad62a_0",
@@ -13783,24 +14463,39 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/bffd93bc645cee77_0",
+      "size": 3107,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c1c6ce0ea5d7f4c6_0",
+      "size": 3163,
+      "mtime": 1788507239
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c47932cedf1fbf3f_0",
       "size": 235,
       "mtime": 1788505702
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c49ecb29f1876997_0",
-      "size": 209,
-      "mtime": 1788505706
+      "size": 249,
+      "mtime": 1788507337
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c4a707aef033dc2f_0",
+      "size": 1691,
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c4f14be3b2703190_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 1387,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c6ae2f9176061af1_0",
-      "size": 276,
-      "mtime": 1788505703
+      "size": 3572,
+      "mtime": 1788507114
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c6c90f408a2892d0_0",
@@ -13808,14 +14503,29 @@
       "mtime": 1788505702
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c7bfcb606e89074b_0",
+      "size": 2118024,
+      "mtime": 1788507122
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/c8c4bc2f0c5b0d78_0",
       "size": 3403,
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/caa60d4be4c599d7_0",
+      "size": 843,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/cac05b851f299169_0",
+      "size": 16656,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/cdfdc0465d4b2f4e_0",
       "size": 275,
-      "mtime": 1788505705
+      "mtime": 1788507121
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ce7b27b4f21f83c8_0",
@@ -13823,14 +14533,44 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d0ef13bfd662fb71_0",
+      "size": 943,
+      "mtime": 1788507330
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d100667a892ca10e_0",
+      "size": 16656,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d100abf52c00c89b_0",
-      "size": 239,
-      "mtime": 1788505706
+      "size": 279,
+      "mtime": 1788507122
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d1d474a35595671c_0",
       "size": 235,
       "mtime": 1788505704
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d63934dc4317450b_0",
+      "size": 995,
+      "mtime": 1788507240
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d70e6c73bf4e804d_0",
+      "size": 45640,
+      "mtime": 1788507114
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d7e8c25d2e5c805a_0",
+      "size": 996,
+      "mtime": 1788507331
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d953300954dc5725_0",
+      "size": 1403,
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d95fcf28a0b1e3c3_0",
@@ -13848,6 +14588,16 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/db87eec74315bc08_0",
+      "size": 4323,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/dc41ae38245573e2_0",
+      "size": 872,
+      "mtime": 1788507121
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/dcedb0a84153e236_0",
       "size": 245,
       "mtime": 1788505704
@@ -13856,6 +14606,26 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/dee7a05a4810b5ab_0",
       "size": 275,
       "mtime": 1788505709
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/def84eedfa3a5506_0",
+      "size": 535960,
+      "mtime": 1788507121
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/df0675b82c7d6e01_0",
+      "size": 858,
+      "mtime": 1788507240
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/dfa3bd6673b93351_0",
+      "size": 893,
+      "mtime": 1788507332
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/dfb20145ed59bc51_0",
+      "size": 2779,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/e144e549f30ae081_0",
@@ -13868,14 +14638,29 @@
       "mtime": 1788505704
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/e53d6bd0a08ea830_0",
+      "size": 3563,
+      "mtime": 1788507119
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/e5dc2e5b782253ab_0",
+      "size": 1627,
+      "mtime": 1788507117
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ea2105ad89176022_0",
+      "size": 20560,
+      "mtime": 1788507117
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/eab719a541942c95_0",
       "size": 235,
       "mtime": 1788505703
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/eb00620e568a2c8a_0",
-      "size": 240,
-      "mtime": 1788505703
+      "size": 10680,
+      "mtime": 1788507114
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ecaecce2439267d2_0",
@@ -13884,8 +14669,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ed8baefd139cd75c_0",
-      "size": 268,
-      "mtime": 1788505703
+      "size": 8316,
+      "mtime": 1788507114
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef3c8ec0e2ad65b2_0",
@@ -13895,7 +14680,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef74858bf1c8346b_0",
       "size": 275,
-      "mtime": 1788505705
+      "mtime": 1788507121
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f0766da65c1446ac_0",
@@ -13903,9 +14688,19 @@
       "mtime": 1788505703
     },
     {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f1d7b520c5dff37e_0",
+      "size": 840,
+      "mtime": 1788507332
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f43f5bce13d6d89d_0",
       "size": 1859,
       "mtime": 1788505703
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f5e4bd9c2d93487e_0",
+      "size": 285,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f706c1be340a9988_0",
@@ -13914,13 +14709,13 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/fb0ee5bc4e927df7_0",
-      "size": 235,
-      "mtime": 1788505704
+      "size": 3635,
+      "mtime": 1788507117
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/fc5cac858c2fd22a_0",
-      "size": 235,
-      "mtime": 1788505702
+      "size": 1699,
+      "mtime": 1788507116
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/index",
@@ -13929,8 +14724,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/index-dir/the-real-index",
-      "size": 3600,
-      "mtime": 1788505709
+      "size": 5472,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/wasm/index",
@@ -13950,17 +14745,17 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cookies",
       "size": 2404352,
-      "mtime": 1788505979
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Cookies-journal",
       "size": 0,
-      "mtime": 1788505979
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/DIPS",
       "size": 86016,
-      "mtime": 1788505709
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/DataSharing/DataSharingDB",
@@ -13975,7 +14770,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/DawnGraphiteCache/data_1",
       "size": 270336,
-      "mtime": 1788505709
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/DawnGraphiteCache/data_2",
@@ -14000,7 +14795,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/DawnWebGPUCache/data_1",
       "size": 270336,
-      "mtime": 1788505709
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/DawnWebGPUCache/data_2",
@@ -14035,12 +14830,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Download Service/EntryDB/LOG",
       "size": 0,
-      "mtime": 1788505950
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Download Service/EntryDB/LOG.old",
       "size": 0,
-      "mtime": 1788484545
+      "mtime": 1788507246
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/DownloadMetadata",
@@ -14115,12 +14910,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Extension State/LOG",
       "size": 339,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Extension State/LOG.old",
-      "size": 297,
-      "mtime": 1788505701
+      "size": 339,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Extension State/MANIFEST-000001",
@@ -14840,12 +15635,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/File System/Origins/LOG",
       "size": 347,
-      "mtime": 1788506069
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/File System/Origins/LOG.old",
       "size": 347,
-      "mtime": 1788505702
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/File System/Origins/MANIFEST-000001",
@@ -14864,8 +15659,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/GCM Store/000286.log",
-      "size": 19422,
-      "mtime": 1788506596
+      "size": 20976,
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/GCM Store/000287.ldb",
@@ -14915,12 +15710,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/GCM Store/LOG",
       "size": 329,
-      "mtime": 1788505949
+      "mtime": 1788507328
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/GCM Store/LOG.old",
       "size": 329,
-      "mtime": 1788505703
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/GCM Store/MANIFEST-000001",
@@ -14935,7 +15730,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/GPUCache/data_1",
       "size": 270336,
-      "mtime": 1788505709
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/GPUCache/data_2",
@@ -14960,17 +15755,17 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/History",
       "size": 163840,
-      "mtime": 1788505709
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/History-journal",
-      "size": 8720,
-      "mtime": 1788505829
+      "size": 0,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_app.clobe.ai_0.indexeddb.leveldb/000003.log",
-      "size": 36629,
-      "mtime": 1788505709
+      "size": 148457,
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_app.clobe.ai_0.indexeddb.leveldb/CURRENT",
@@ -14985,12 +15780,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_app.clobe.ai_0.indexeddb.leveldb/LOG",
       "size": 405,
-      "mtime": 1788505709
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_app.clobe.ai_0.indexeddb.leveldb/LOG.old",
-      "size": 363,
-      "mtime": 1788505702
+      "size": 405,
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_app.clobe.ai_0.indexeddb.leveldb/MANIFEST-000001",
@@ -14999,8 +15794,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log",
-      "size": 370994,
-      "mtime": 1788505709
+      "size": 1200634,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/CURRENT",
@@ -15014,8 +15809,13 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOG",
-      "size": 369,
-      "mtime": 1788505705
+      "size": 411,
+      "mtime": 1788507330
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/LOG.old",
+      "size": 411,
+      "mtime": 1788507240
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001",
@@ -15030,12 +15830,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/012732.ldb",
@@ -15088,44 +15888,29 @@
       "mtime": 1787847934
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019914.ldb",
-      "size": 2105566,
-      "mtime": 1788504349
+      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019926.log",
+      "size": 39024,
+      "mtime": 1788507337
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019915.ldb",
-      "size": 2251317,
-      "mtime": 1788504349
+      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019929.ldb",
+      "size": 2105292,
+      "mtime": 1788507260
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019916.ldb",
+      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019930.ldb",
+      "size": 2259322,
+      "mtime": 1788507260
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019931.ldb",
       "size": 3426792,
-      "mtime": 1788504349
+      "mtime": 1788507260
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019917.ldb",
-      "size": 1472750,
-      "mtime": 1788504349
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019919.ldb",
-      "size": 18249,
-      "mtime": 1788504889
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019921.ldb",
-      "size": 18460,
-      "mtime": 1788505429
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019923.ldb",
-      "size": 20217,
-      "mtime": 1788505769
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019924.log",
-      "size": 19,
-      "mtime": 1788505829
+      "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/019932.ldb",
+      "size": 1472755,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/CURRENT",
@@ -15139,33 +15924,33 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/LOG",
-      "size": 384,
-      "mtime": 1788505769
+      "size": 355,
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/LOG.old",
-      "size": 355,
-      "mtime": 1788505701
+      "size": 1387,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Local Storage/leveldb/MANIFEST-000001",
-      "size": 1920495,
-      "mtime": 1788505769
+      "size": 1921363,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Login Data",
       "size": 253952,
-      "mtime": 1788505769
+      "mtime": 1788507325
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Login Data For Account",
       "size": 40960,
-      "mtime": 1788505769
+      "mtime": 1788507325
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Managed Extension Settings/fcoeoabgfenejglbffodgkkbkcdhcgfn/000003.log",
-      "size": 456,
-      "mtime": 1788505950
+      "size": 570,
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Managed Extension Settings/fcoeoabgfenejglbffodgkkbkcdhcgfn/CURRENT",
@@ -15180,12 +15965,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Managed Extension Settings/fcoeoabgfenejglbffodgkkbkcdhcgfn/LOG",
       "size": 427,
-      "mtime": 1788505950
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Managed Extension Settings/fcoeoabgfenejglbffodgkkbkcdhcgfn/LOG.old",
       "size": 427,
-      "mtime": 1788505704
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Managed Extension Settings/fcoeoabgfenejglbffodgkkbkcdhcgfn/MANIFEST-000001",
@@ -15209,8 +15994,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Network Persistent State",
-      "size": 134226,
-      "mtime": 1788506426
+      "size": 133820,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/PersistentOriginTrials/LOCK",
@@ -15220,12 +16005,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/PersistentOriginTrials/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/PersistentOriginTrials/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Platform Notifications/000003.log",
@@ -15245,12 +16030,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Platform Notifications/LOG",
       "size": 353,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Platform Notifications/LOG.old",
       "size": 353,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Platform Notifications/MANIFEST-000001",
@@ -15265,12 +16050,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Policy/User Policy",
       "size": 917,
-      "mtime": 1788505775
+      "mtime": 1788507331
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Preferences",
-      "size": 524251,
-      "mtime": 1788505959
+      "size": 524661,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/PreferredApps",
@@ -15285,12 +16070,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Reporting and NEL",
       "size": 1245184,
-      "mtime": 1788505800
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Reporting and NEL-journal",
       "size": 0,
-      "mtime": 1788505800
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/SCT Auditing Pending Reports",
@@ -15305,7 +16090,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Secure Preferences",
       "size": 63849,
-      "mtime": 1788505779
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/.DS_Store",
@@ -15320,12 +16105,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SegmentInfoDB/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SegmentInfoDB/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalDB/LOCK",
@@ -15335,12 +16120,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalDB/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalDB/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalStorageConfigDB/LOCK",
@@ -15350,12 +16135,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalStorageConfigDB/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Segmentation Platform/SignalStorageConfigDB/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/ServerCertificate",
@@ -15875,12 +16660,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/index.txt",
       "size": 133,
-      "mtime": 1788505709
+      "mtime": 1788507333
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/Database/000003.log",
-      "size": 4118,
-      "mtime": 1788505705
+      "size": 4847,
+      "mtime": 1788507332
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/Database/CURRENT",
@@ -15895,12 +16680,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/Database/LOG",
       "size": 355,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/Database/LOG.old",
-      "size": 313,
-      "mtime": 1788505701
+      "size": 355,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Service Worker/Database/MANIFEST-000001",
@@ -15989,8 +16774,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Session Storage/003497.log",
-      "size": 13102,
-      "mtime": 1788505709
+      "size": 18994,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Session Storage/003498.ldb",
@@ -16010,12 +16795,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Session Storage/LOG",
       "size": 342,
-      "mtime": 1788505701
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Session Storage/LOG.old",
-      "size": 1546,
-      "mtime": 1788486363
+      "size": 342,
+      "mtime": 1788507237
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Session Storage/MANIFEST-000001",
@@ -16028,24 +16813,24 @@
       "mtime": 1778859819
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Session_13432969472219733",
-      "size": 237387,
-      "mtime": 1788505010
+      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Session_13432980839547492",
+      "size": 233928,
+      "mtime": 1788507251
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Session_13432979304156808",
-      "size": 198235,
-      "mtime": 1788505709
+      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Session_13432980929389050",
+      "size": 244943,
+      "mtime": 1788507337
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Tabs_13432957968535893",
-      "size": 520204,
-      "mtime": 1788505009
+      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Tabs_13432980839523305",
+      "size": 1215168,
+      "mtime": 1788507254
     },
     {
-      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Tabs_13432979304127682",
-      "size": 830108,
-      "mtime": 1788505709
+      "path": "profiles/den/browser-profile/chrome/Default/Sessions/Tabs_13432980929363764",
+      "size": 1046516,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Shared Dictionary/cache/index",
@@ -16074,8 +16859,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Site Characteristics Database/000003.log",
-      "size": 513268,
-      "mtime": 1788505709
+      "size": 513736,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Site Characteristics Database/CURRENT",
@@ -16090,12 +16875,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Site Characteristics Database/LOG",
       "size": 367,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Site Characteristics Database/LOG.old",
       "size": 367,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Site Characteristics Database/MANIFEST-000001",
@@ -16495,12 +17280,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Sync Data/LevelDB/LOG",
       "size": 343,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Sync Data/LevelDB/LOG.old",
-      "size": 301,
-      "mtime": 1788505701
+      "size": 343,
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Sync Data/LevelDB/MANIFEST-000001",
@@ -16605,7 +17390,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Top Sites",
       "size": 24576,
-      "mtime": 1788498096
+      "mtime": 1788507252
+    },
+    {
+      "path": "profiles/den/browser-profile/chrome/Default/Top Sites-journal",
+      "size": 0,
+      "mtime": 1788507252
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Translate Ranker Model",
@@ -16615,7 +17405,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/TransportSecurity",
       "size": 614835,
-      "mtime": 1788506369
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Trust Tokens",
@@ -16630,12 +17420,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/VideoDecodeStats/LOG",
       "size": 0,
-      "mtime": 1788505706
+      "mtime": 1788507253
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/VideoDecodeStats/LOG.old",
       "size": 0,
-      "mtime": 1788286578
+      "mtime": 1788505706
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/Web Applications/.DS_Store",
@@ -17510,7 +18300,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/Web Data",
       "size": 2783232,
-      "mtime": 1788505769
+      "mtime": 1788507325
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/WebStorage/.DS_Store",
@@ -17765,12 +18555,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/WebStorage/QuotaManager",
       "size": 94208,
-      "mtime": 1788505799
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/WebStorage/QuotaManager-journal",
       "size": 0,
-      "mtime": 1788505799
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/WebrtcVideoStats/LOCK",
@@ -17795,12 +18585,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/chrome_cart_db/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/chrome_cart_db/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/commerce_subscription_db/LOCK",
@@ -17810,12 +18600,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/commerce_subscription_db/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/commerce_subscription_db/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/declarative_performance_observer.db",
@@ -17830,12 +18620,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/discount_infos_db/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/discount_infos_db/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/discounts_db/LOCK",
@@ -17845,12 +18635,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/discounts_db/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/discounts_db/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/engine_allowlist.bf",
@@ -17870,12 +18660,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/optimization_guide_hint_cache_store/LOG",
       "size": 0,
-      "mtime": 1788505949
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/optimization_guide_hint_cache_store/LOG.old",
       "size": 0,
-      "mtime": 1788505703
+      "mtime": 1788507239
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/parcel_tracking_db/LOCK",
@@ -17885,12 +18675,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/parcel_tracking_db/LOG",
       "size": 0,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/parcel_tracking_db/LOG.old",
       "size": 0,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/passkey_enclave_state",
@@ -17899,8 +18689,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/000094.log",
-      "size": 293799,
-      "mtime": 1788505953
+      "size": 386868,
+      "mtime": 1788507336
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/000097.ldb",
@@ -17920,12 +18710,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/LOG",
       "size": 340,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/LOG.old",
       "size": 340,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/MANIFEST-000001",
@@ -17934,8 +18724,8 @@
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/metadata/000003.log",
-      "size": 2786,
-      "mtime": 1788505769
+      "size": 2956,
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/metadata/CURRENT",
@@ -17950,12 +18740,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/metadata/LOG",
       "size": 357,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/metadata/LOG.old",
       "size": 357,
-      "mtime": 1788505701
+      "mtime": 1788507260
     },
     {
       "path": "profiles/den/browser-profile/chrome/Default/shared_proto_db/metadata/MANIFEST-000001",
@@ -17965,12 +18755,12 @@
     {
       "path": "profiles/den/browser-profile/chrome/Default/trusted_vault.pb",
       "size": 173,
-      "mtime": 1788505701
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/DevToolsActivePort",
       "size": 60,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/GPUPersistentCache/GPUCache/JZNJVB5UCCVIYRTACOTDQ45XSDM3EVOQ/cache.db",
@@ -17990,22 +18780,22 @@
     {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/data_0",
       "size": 45056,
-      "mtime": 1788505769
+      "mtime": 1788507328
     },
     {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/data_1",
       "size": 270336,
-      "mtime": 1788506369
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/data_2",
       "size": 1056768,
-      "mtime": 1788505707
+      "mtime": 1788507328
     },
     {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/data_3",
       "size": 4202496,
-      "mtime": 1788505707
+      "mtime": 1788507328
     },
     {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/f_000001",
@@ -18053,6 +18843,11 @@
       "mtime": 1788505707
     },
     {
+      "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/f_00000a",
+      "size": 16851,
+      "mtime": 1788507328
+    },
+    {
       "path": "profiles/den/browser-profile/chrome/GraphiteDawnCache/index",
       "size": 262512,
       "mtime": 1788505701
@@ -18060,17 +18855,17 @@
     {
       "path": "profiles/den/browser-profile/chrome/Last Version",
       "size": 13,
-      "mtime": 1788505769
+      "mtime": 1788507326
     },
     {
       "path": "profiles/den/browser-profile/chrome/Local State",
-      "size": 16506,
-      "mtime": 1788505959
+      "size": 15857,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/Variations",
-      "size": 86,
-      "mtime": 1788505769
+      "size": 85,
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/browser-profile/chrome/VariationsSafeSeedV2",
@@ -18080,7 +18875,7 @@
     {
       "path": "profiles/den/browser-profile/chrome/VariationsSeedV2",
       "size": 36,
-      "mtime": 1788505770
+      "mtime": 1788507327
     },
     {
       "path": "profiles/den/browser-profile/chrome/component_crx_cache/metadata.json",
@@ -18095,92 +18890,17 @@
     {
       "path": "profiles/den/browser-profile/chrome/first_party_sets.db",
       "size": 49152,
-      "mtime": 1788505950
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/first_party_sets.db-journal",
       "size": 0,
-      "mtime": 1788505950
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/20/0CB888B74FE8F85E/CF258955755B11F7/model-info.pb",
-      "size": 164,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/20/0CB888B74FE8F85E/CF258955755B11F7/model.tflite",
-      "size": 31520,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/25/0CB888B74FE8F85E/C9ED663F6F62E8D7/model-info.pb",
-      "size": 146,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/25/0CB888B74FE8F85E/C9ED663F6F62E8D7/model.tflite",
-      "size": 180520,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/25/0CB888B74FE8F85E/C9ED663F6F62E8D7/visual_model_desktop.tflite",
-      "size": 3452826,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/26/0CB888B74FE8F85E/21413811B9948CD5/model-info.pb",
-      "size": 416,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/26/0CB888B74FE8F85E/21413811B9948CD5/model.tflite",
-      "size": 7112,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/43/0CB888B74FE8F85E/BB97F23DA60AC006/model-info.pb",
-      "size": 138,
-      "mtime": 1788505954
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/43/0CB888B74FE8F85E/BB97F23DA60AC006/model.tflite",
-      "size": 36778224,
-      "mtime": 1788505954
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/43/0CB888B74FE8F85E/BB97F23DA60AC006/sentencepiece.model",
-      "size": 794346,
-      "mtime": 1788505954
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/45/0CB888B74FE8F85E/52CF18EA65231E5C/model-info.pb",
-      "size": 7104,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/45/0CB888B74FE8F85E/52CF18EA65231E5C/model.tflite",
-      "size": 131736,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/9/0CB888B74FE8F85E/79322BAE5BDB5DDA/model-info.pb",
-      "size": 164,
-      "mtime": 1788505952
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/optimization_guide_model_store/9/0CB888B74FE8F85E/79322BAE5BDB5DDA/model.tflite",
-      "size": 31520,
-      "mtime": 1788505952
+      "mtime": 1788507329
     },
     {
       "path": "profiles/den/browser-profile/chrome/segmentation_platform/ukm_db",
       "size": 49152,
-      "mtime": 1788505709
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/segmentation_platform/ukm_db-wal",
-      "size": 0,
-      "mtime": 1788505889
+      "mtime": 1788507337
     },
     {
       "path": "profiles/den/cache/audio/audio_adbf460566c2.wav",
@@ -18405,12 +19125,12 @@
     {
       "path": "profiles/den/cache/model_catalog.json",
       "size": 8193,
-      "mtime": 1788506072
+      "mtime": 1788509673
     },
     {
       "path": "profiles/den/cache/nous_recommended_cache.json",
       "size": 9840,
-      "mtime": 1788506072
+      "mtime": 1788509673
     },
     {
       "path": "profiles/den/cache/openrouter_model_metadata.json",
@@ -18420,12 +19140,12 @@
     {
       "path": "profiles/den/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1788505763
+      "mtime": 1788507313
     },
     {
       "path": "profiles/den/cache/reasoning_caps.json",
       "size": 43029,
-      "mtime": 1788506072
+      "mtime": 1788509673
     },
     {
       "path": "profiles/den/cache/reformat_recording_doc.py",
@@ -18925,7 +19645,7 @@
     {
       "path": "profiles/den/channel_directory.json",
       "size": 9772,
-      "mtime": 1788506402
+      "mtime": 1788510023
     },
     {
       "path": "profiles/den/config.yaml",
@@ -19015,7 +19735,7 @@
     {
       "path": "profiles/den/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788506573
+      "mtime": 1788510243
     },
     {
       "path": "profiles/den/cron/catch_up_occurrences",
@@ -19025,7 +19745,7 @@
     {
       "path": "profiles/den/cron/executions.db",
       "size": 622592,
-      "mtime": 1788506573
+      "mtime": 1788510244
     },
     {
       "path": "profiles/den/cron/inflight_forced_releases.jsonl",
@@ -19034,8 +19754,8 @@
     },
     {
       "path": "profiles/den/cron/jobs.json",
-      "size": 38760,
-      "mtime": 1788506573
+      "size": 38759,
+      "mtime": 1788510244
     },
     {
       "path": "profiles/den/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -19051,36 +19771,6 @@
       "path": "profiles/den/cron/notepad.db",
       "size": 12288,
       "mtime": 1786984422
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_07-19-20.md",
-      "size": 153,
-      "mtime": 1788473960
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_07-30-16.md",
-      "size": 153,
-      "mtime": 1788474616
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_07-41-16.md",
-      "size": 153,
-      "mtime": 1788475276
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_07-52-17.md",
-      "size": 153,
-      "mtime": 1788475937
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_08-03-18.md",
-      "size": 153,
-      "mtime": 1788476598
-    },
-    {
-      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_08-14-19.md",
-      "size": 153,
-      "mtime": 1788477259
     },
     {
       "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_08-25-20.md",
@@ -19303,6 +19993,36 @@
       "mtime": 1788506229
     },
     {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_16-28-09.md",
+      "size": 153,
+      "mtime": 1788506889
+    },
+    {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_16-39-11.md",
+      "size": 153,
+      "mtime": 1788507551
+    },
+    {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_16-50-14.md",
+      "size": 153,
+      "mtime": 1788508214
+    },
+    {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_17-01-16.md",
+      "size": 153,
+      "mtime": 1788508876
+    },
+    {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_17-13-02.md",
+      "size": 153,
+      "mtime": 1788509582
+    },
+    {
+      "path": "profiles/den/cron/output/169c1fa264fa/2026-09-04_17-23-26.md",
+      "size": 153,
+      "mtime": 1788510206
+    },
+    {
       "path": "profiles/den/cron/output/169c1fa264fa/monitor_last_output.txt",
       "size": 44,
       "mtime": 1788410023
@@ -19416,66 +20136,6 @@
       "path": "profiles/den/cron/output/72963b1a5e65/2026-09-04_09-15-02.md",
       "size": 113401,
       "mtime": 1788480902
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_11-49-12.md",
-      "size": 184,
-      "mtime": 1788490152
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_11-55-13.md",
-      "size": 184,
-      "mtime": 1788490513
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-00-14.md",
-      "size": 184,
-      "mtime": 1788490814
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-05-15.md",
-      "size": 184,
-      "mtime": 1788491115
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-10-16.md",
-      "size": 184,
-      "mtime": 1788491416
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-15-17.md",
-      "size": 184,
-      "mtime": 1788491717
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-21-18.md",
-      "size": 184,
-      "mtime": 1788492078
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-26-19.md",
-      "size": 184,
-      "mtime": 1788492379
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-31-19.md",
-      "size": 184,
-      "mtime": 1788492679
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-36-20.md",
-      "size": 184,
-      "mtime": 1788492980
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-42-21.md",
-      "size": 184,
-      "mtime": 1788493341
-    },
-    {
-      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-48-22.md",
-      "size": 184,
-      "mtime": 1788493702
     },
     {
       "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_12-54-23.md",
@@ -19668,14 +20328,69 @@
       "mtime": 1788506273
     },
     {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-23-54.md",
+      "size": 184,
+      "mtime": 1788506634
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-29-55.md",
+      "size": 184,
+      "mtime": 1788506995
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-34-56.md",
+      "size": 184,
+      "mtime": 1788507296
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-40-57.md",
+      "size": 184,
+      "mtime": 1788507657
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-45-58.md",
+      "size": 184,
+      "mtime": 1788507958
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-51-59.md",
+      "size": 184,
+      "mtime": 1788508319
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_16-56-59.md",
+      "size": 184,
+      "mtime": 1788508619
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_17-02-00.md",
+      "size": 184,
+      "mtime": 1788508920
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_17-07-01.md",
+      "size": 184,
+      "mtime": 1788509221
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_17-12-02.md",
+      "size": 184,
+      "mtime": 1788509522
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_17-18-03.md",
+      "size": 184,
+      "mtime": 1788509883
+    },
+    {
+      "path": "profiles/den/cron/output/9ebf43990561/2026-09-04_17-24-04.md",
+      "size": 184,
+      "mtime": 1788510244
+    },
+    {
       "path": "profiles/den/cron/output/9ebf43990561/monitor_last_output.txt",
       "size": 913,
       "mtime": 1788432049
-    },
-    {
-      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-02_13-34-22.md",
-      "size": 217,
-      "mtime": 1788323662
     },
     {
       "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-02_14-35-04.md",
@@ -19923,14 +20638,19 @@
       "mtime": 1788502933
     },
     {
+      "path": "profiles/den/cron/output/c8b4c9e397d0/2026-09-04_16-23-22.md",
+      "size": 217,
+      "mtime": 1788506602
+    },
+    {
       "path": "profiles/den/cron/ticker_heartbeat",
-      "size": 18,
-      "mtime": 1788506573
+      "size": 17,
+      "mtime": 1788510243
     },
     {
       "path": "profiles/den/cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1788506573
+      "size": 17,
+      "mtime": 1788510243
     },
     {
       "path": "profiles/den/cron/usage_audit.jsonl",
@@ -23425,7 +24145,7 @@
     {
       "path": "profiles/den/state.db-wal",
       "size": 3502032,
-      "mtime": 1788506554
+      "mtime": 1788510264
     },
     {
       "path": "profiles/den/state.db.auto-maintenance.lock",
@@ -23435,12 +24155,12 @@
     {
       "path": "profiles/den/state/dashboard_clients.heartbeat",
       "size": 0,
-      "mtime": 1788506597
+      "mtime": 1788510263
     },
     {
       "path": "profiles/den/state/gateway.heartbeat",
       "size": 180,
-      "mtime": 1788506579
+      "mtime": 1788510240
     },
     {
       "path": "profiles/den/state/gateway.lifecycle.json",
@@ -23490,17 +24210,17 @@
     {
       "path": "profiles/den/state/recording-summary/gws/token_cache.json",
       "size": 2691,
-      "mtime": 1788505566
+      "mtime": 1788509582
     },
     {
       "path": "profiles/den/state/recording-summary/last-collection-error.json",
-      "size": 281,
-      "mtime": 1788473344
+      "size": 834,
+      "mtime": 1788509582
     },
     {
       "path": "profiles/den/state/recording-summary/state.json",
       "size": 18048,
-      "mtime": 1788506212
+      "mtime": 1788510183
     },
     {
       "path": "profiles/den/state/recording-summary/transcripts/clova-16l0YkDSfK0eg_q6wluz5zs9bJKBVOICu.txt",
@@ -24280,726 +25000,6 @@
     {
       "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/build/lib/mlx_whisper/torch_whisper.py",
       "size": 10592,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/build/lib/mlx_whisper/transcribe.py",
-      "size": 23016,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/build/lib/mlx_whisper/version.py",
-      "size": 59,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/build/lib/mlx_whisper/whisper.py",
-      "size": 8632,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/build/lib/mlx_whisper/writers.py",
-      "size": 10138,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/__init__.py",
-      "size": 149,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/_version.py",
-      "size": 59,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/audio.py",
-      "size": 5090,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/cli.py",
-      "size": 8643,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/decoding.py",
-      "size": 28494,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/load_models.py",
-      "size": 1274,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/timing.py",
-      "size": 10889,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/tokenizer.py",
-      "size": 12407,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/torch_whisper.py",
-      "size": 10592,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/transcribe.py",
-      "size": 23016,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/version.py",
-      "size": 59,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/whisper.py",
-      "size": 8632,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/build/lib/mlx_whisper/writers.py",
-      "size": 10138,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/__init__.py",
-      "size": 149,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/_version.py",
-      "size": 59,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/audio.py",
-      "size": 5090,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/cli.py",
-      "size": 8643,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/decoding.py",
-      "size": 28494,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/load_models.py",
-      "size": 1274,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/timing.py",
-      "size": 10889,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/tokenizer.py",
-      "size": 12407,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/torch_whisper.py",
-      "size": 10592,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/transcribe.py",
-      "size": 23016,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/version.py",
-      "size": 59,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/whisper.py",
-      "size": 8632,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/build/lib/mlx_whisper/writers.py",
-      "size": 10138,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/INSTALLER",
-      "size": 2,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/METADATA",
-      "size": 2474,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/RECORD",
-      "size": 1127,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/REQUESTED",
-      "size": 0,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/WHEEL",
-      "size": 91,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/licenses/LICENSE",
-      "size": 989,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi-2026.7.22.dist-info/top_level.txt",
-      "size": 8,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/__init__.py",
-      "size": 94,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/__main__.py",
-      "size": 243,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/cacert.pem",
-      "size": 240216,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/core.py",
-      "size": 3394,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/py.typed",
-      "size": 0,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/tests/__init__.py",
-      "size": 0,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/certifi/tests/test_certify.py",
-      "size": 467,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/INSTALLER",
-      "size": 2,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/METADATA",
-      "size": 45868,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/RECORD",
-      "size": 2149,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/REQUESTED",
-      "size": 0,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/WHEEL",
-      "size": 141,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/entry_points.txt",
-      "size": 65,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/licenses/LICENSE",
-      "size": 1071,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer-3.5.1.dist-info/top_level.txt",
-      "size": 19,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/__init__.py",
-      "size": 1582,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/__main__.py",
-      "size": 109,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/api.py",
-      "size": 35774,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/cd.cpython-311-darwin.so",
-      "size": 314720,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/cd.py",
-      "size": 15980,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/cli/__init__.py",
-      "size": 136,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/cli/__main__.py",
-      "size": 11949,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/constant.py",
-      "size": 60749,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/legacy.py",
-      "size": 2651,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/md.cpython-311-darwin.so",
-      "size": 577600,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/md.py",
-      "size": 35239,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/models.py",
-      "size": 13530,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/py.typed",
-      "size": 0,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/utils.py",
-      "size": 14122,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/charset_normalizer/version.py",
-      "size": 115,
-      "mtime": 1786814929
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/INSTALLER",
-      "size": 2,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/METADATA",
-      "size": 2621,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/RECORD",
-      "size": 1810,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/REQUESTED",
-      "size": 0,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/WHEEL",
-      "size": 82,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click-8.4.2.dist-info/licenses/LICENSE.txt",
-      "size": 1475,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/__init__.py",
-      "size": 4634,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/_compat.py",
-      "size": 18879,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/_termui_impl.py",
-      "size": 31730,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/_textwrap.py",
-      "size": 6270,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/_utils.py",
-      "size": 996,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/_winconsole.py",
-      "size": 8543,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/core.py",
-      "size": 140616,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/decorators.py",
-      "size": 19709,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/exceptions.py",
-      "size": 11862,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/formatting.py",
-      "size": 10444,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/globals.py",
-      "size": 1923,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/parser.py",
-      "size": 19052,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/py.typed",
-      "size": 0,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/shell_completion.py",
-      "size": 22618,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/termui.py",
-      "size": 33213,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/testing.py",
-      "size": 26458,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/types.py",
-      "size": 44788,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/click/utils.py",
-      "size": 20942,
-      "mtime": 1786682089
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/distutils-precedence.pth",
-      "size": 151,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/INSTALLER",
-      "size": 2,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/METADATA",
-      "size": 2028,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/RECORD",
-      "size": 2205,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/REQUESTED",
-      "size": 0,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/WHEEL",
-      "size": 87,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock-3.32.3.dist-info/licenses/LICENSE",
-      "size": 1088,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/__init__.py",
-      "size": 3469,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_api.py",
-      "size": 82436,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_async.py",
-      "size": 6111,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_async_read_write.py",
-      "size": 13325,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_descriptor.py",
-      "size": 2981,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_error.py",
-      "size": 2699,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_identity.py",
-      "size": 8415,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_lease.py",
-      "size": 15152,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_marker.py",
-      "size": 6026,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_read_write.py",
-      "size": 32881,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_soft.py",
-      "size": 13014,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_soft_protocol.py",
-      "size": 187,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_soft_rw/__init__.py",
-      "size": 370,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_soft_rw/_async.py",
-      "size": 11492,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_soft_rw/_sync.py",
-      "size": 43201,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_strict.py",
-      "size": 38823,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_unix.py",
-      "size": 8722,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_util.py",
-      "size": 6356,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/_windows.py",
-      "size": 15988,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/asyncio.py",
-      "size": 34599,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/py.typed",
-      "size": 0,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/filelock/version.py",
-      "size": 522,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/INSTALLER",
-      "size": 2,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/METADATA",
-      "size": 10561,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/RECORD",
-      "size": 5230,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/REQUESTED",
-      "size": 0,
-      "mtime": 1787132039
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/WHEEL",
-      "size": 87,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec-2026.7.0.dist-info/licenses/LICENSE",
-      "size": 1513,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/__init__.py",
-      "size": 2111,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/_version.py",
-      "size": 526,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/archive.py",
-      "size": 2411,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/asyn.py",
-      "size": 39105,
-      "mtime": 1787132031
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/caching.py",
-      "size": 34777,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/callbacks.py",
-      "size": 9210,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/compression.py",
-      "size": 5132,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/config.py",
-      "size": 4238,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/conftest.py",
-      "size": 3446,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/core.py",
-      "size": 24189,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/dircache.py",
-      "size": 2717,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/exceptions.py",
-      "size": 331,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/fuse.py",
-      "size": 10177,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/generic.py",
-      "size": 13752,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/gui.py",
-      "size": 14002,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/implementations/__init__.py",
-      "size": 0,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/implementations/arrow.py",
-      "size": 9236,
-      "mtime": 1787132032
-    },
-    {
-      "path": "profiles/den/venvs/plaud-stt/lib/python3.11/site-packages/fsspec/implementations/asyn_wrapper.py",
-      "size": 3738,
       "mtime": 1787132032
     }
   ],
