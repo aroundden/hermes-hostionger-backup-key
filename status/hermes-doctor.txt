@@ -74,7 +74,7 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (835 sessions)
-    → state.db logical size 490.8 MB, 125,651 pages, 608 free, WAL 414.4 KB
+    → state.db logical size 490.8 MB, 125,651 pages, 608 free, WAL 193.2 KB
     → 29,090 messages, 835 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
@@ -157,6 +157,3 @@ exit_code=0
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
