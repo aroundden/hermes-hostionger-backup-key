@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (490.8 MB)
+    → state.db: WAL journal mode (493.7 MB)
     → cron/executions.db: WAL journal mode (608.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
@@ -46,6 +46,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
+  ✗ model.provider 'openrouter' is set but no API key is configured (check ~/.hermes/.env or run 'hermes setup')
   ✓ Config version up to date (v40)
   ✓ No deprecated config keys or env vars
 
@@ -73,9 +74,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (836 sessions)
-    → state.db logical size 490.8 MB, 125,651 pages, 376 free, WAL 3.4 MB
-    → 29,153 messages, 836 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (841 sessions)
+    → state.db logical size 493.7 MB, 126,381 pages, 178 free, WAL 2.5 MB
+    → 29,513 messages, 841 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -115,8 +116,6 @@ exit_code=0
   ✓ skills
   ✓ terminal
   ✓ todo
-  ✓ video
-  ✓ vision
   ✓ web search (parallel)
   ✓ web extract (parallel)
   ⚠ a2a (system dependency not met)
@@ -131,7 +130,9 @@ exit_code=0
   ⚠ image_gen (system dependency not met)
   ⚠ spotify (system dependency not met)
   ⚠ tts (system dependency not met)
+  ⚠ video (system dependency not met)
   ⚠ video_gen (system dependency not met)
+  ⚠ vision (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub
@@ -144,16 +145,17 @@ exit_code=0
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gateway running, gpt-5.6-sol
-  ✓   smd: gateway running, gpt-5.6-sol
+  ✓   aroundit: gateway running, openai/gpt-6-astra
+  ✓   den: gateway running, openai/gpt-6-astra
+  ✓   smd: gateway running, openai/gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 4 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 1 npm vulnerability
-  3. web workspace has 2 npm vulnerabilities
+  2. No credentials found for provider 'openrouter'. Run 'hermes setup' or set the provider's API key in ~/.hermes/profiles/den/.env, or switch providers with 'hermes config set model.provider <name>'
+  3. Browser tools (agent-browser) has 1 npm vulnerability
+  4. web workspace has 2 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
