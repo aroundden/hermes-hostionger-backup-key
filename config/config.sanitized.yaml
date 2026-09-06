@@ -1,6 +1,6 @@
 model:
-  default: openai/gpt-6-astra
-  provider: openrouter
+  default: gpt-6-astra
+  provider: openai-codex
 fallback_providers:
   - provider: openai-codex
     model: gpt-5.3-codex-spark

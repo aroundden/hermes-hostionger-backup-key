@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 29060,
+  "count": 29081,
   "files": [
     {
       "path": "SOUL.md",
@@ -9,8 +9,8 @@
     },
     {
       "path": "config.yaml",
-      "size": 6793,
-      "mtime": 1788688364
+      "size": 6788,
+      "mtime": 1788688519
     },
     {
       "path": "cron/.fire-10584cf451ff5ec895dfb186fca09552.lock",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1788688432
+      "mtime": 1788692094
     },
     {
       "path": "cron/executions.db",
@@ -1360,12 +1360,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1788688432
+      "mtime": 1788692094
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1788688432
+      "size": 18,
+      "mtime": 1788692094
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1394,8 +1394,8 @@
     },
     {
       "path": "profiles/aroundit/.codex_gpt55_autoraise_notice",
-      "size": 17,
-      "mtime": 1786855002
+      "size": 25,
+      "mtime": 1788688463
     },
     {
       "path": "profiles/aroundit/.curator_backups/blobs/02e1d71af882fff65764c83c88d68d1652247564bc0a01e7606a1f9e23ca5f9e",
@@ -2175,12 +2175,17 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788687945
+      "mtime": 1788689604
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
       "size": 61385,
       "mtime": 1788668276
+    },
+    {
+      "path": "profiles/aroundit/.update_check",
+      "size": 69,
+      "mtime": 1788688711
     },
     {
       "path": "profiles/aroundit/SOUL.md",
@@ -2449,28 +2454,33 @@
     },
     {
       "path": "profiles/aroundit/cache/mcp_schema_cache.json",
-      "size": 92386,
-      "mtime": 1788687946
+      "size": 92385,
+      "mtime": 1788688784
     },
     {
       "path": "profiles/aroundit/cache/model_catalog.json",
       "size": 9064,
-      "mtime": 1788687981
+      "mtime": 1788691220
     },
     {
       "path": "profiles/aroundit/cache/nous_recommended_cache.json",
       "size": 13057,
-      "mtime": 1788687981
+      "mtime": 1788691220
+    },
+    {
+      "path": "profiles/aroundit/cache/openrouter_model_metadata.json",
+      "size": 324391,
+      "mtime": 1788688463
     },
     {
       "path": "profiles/aroundit/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1788687944
+      "mtime": 1788688782
     },
     {
       "path": "profiles/aroundit/cache/reasoning_caps.json",
       "size": 43664,
-      "mtime": 1788687981
+      "mtime": 1788691220
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
@@ -2626,6 +2636,11 @@
       "path": "profiles/aroundit/cache/terminal-output/out-1788687696-2200-a010.log",
       "size": 159299,
       "mtime": 1788687699
+    },
+    {
+      "path": "profiles/aroundit/cache/terminal-output/out-1788689667-35347-1190.log",
+      "size": 196879,
+      "mtime": 1788689668
     },
     {
       "path": "profiles/aroundit/cache/tool_discovery_cache.json",
@@ -3280,17 +3295,17 @@
     {
       "path": "profiles/aroundit/channel_directory.json",
       "size": 13037,
-      "mtime": 1788688191
+      "mtime": 1788692045
     },
     {
       "path": "profiles/aroundit/config.yaml",
-      "size": 5886,
-      "mtime": 1788688365
+      "size": 5881,
+      "mtime": 1788688764
     },
     {
       "path": "profiles/aroundit/context_length_cache.yaml",
-      "size": 77,
-      "mtime": 1787674440
+      "size": 205,
+      "mtime": 1788688547
     },
     {
       "path": "profiles/aroundit/cron/.fire-17f96a21592656b383e092aa614b516b.lock",
@@ -3335,7 +3350,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788688430
+      "mtime": 1788692094
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -3345,12 +3360,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 630784,
-      "mtime": 1788687760
+      "mtime": 1788691521
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 23364,
-      "mtime": 1788688419
+      "size": 23349,
+      "mtime": 1788691521
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -3486,16 +3501,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-05_16-43-09.md",
-      "size": 97410,
-      "mtime": 1788594189
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-05_17-15-06.md",
-      "size": 96924,
-      "mtime": 1788596106
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-05_17-46-38.md",
@@ -3738,9 +3743,19 @@
       "mtime": 1788687760
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-06_19-14-36.md",
+      "size": 96924,
+      "mtime": 1788689676
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-06_19-45-21.md",
+      "size": 160,
+      "mtime": 1788691521
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
       "size": 1117,
-      "mtime": 1788687648
+      "mtime": 1788689604
     },
     {
       "path": "profiles/aroundit/cron/persisted_error_recoveries.jsonl",
@@ -3749,23 +3764,23 @@
     },
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1788688430
+      "size": 18,
+      "mtime": 1788692094
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1788688430
+      "size": 17,
+      "mtime": 1788692094
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 909353,
-      "mtime": 1788687760
+      "size": 909679,
+      "mtime": 1788689676
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
       "size": 7033,
-      "mtime": 1788687648
+      "mtime": 1788691521
     },
     {
       "path": "profiles/aroundit/email_reply_examples.jsonl",
@@ -3775,17 +3790,17 @@
     {
       "path": "profiles/aroundit/gateway-starts.log",
       "size": 717,
-      "mtime": 1788687944
+      "mtime": 1788688782
     },
     {
       "path": "profiles/aroundit/gateway.lock",
       "size": 242,
-      "mtime": 1788687945
+      "mtime": 1788688783
     },
     {
       "path": "profiles/aroundit/gateway.pid",
       "size": 242,
-      "mtime": 1788687945
+      "mtime": 1788688783
     },
     {
       "path": "profiles/aroundit/gateway/restart_loop.json",
@@ -3795,7 +3810,7 @@
     {
       "path": "profiles/aroundit/gateway_state.json",
       "size": 660,
-      "mtime": 1788687947
+      "mtime": 1788688785
     },
     {
       "path": "profiles/aroundit/kmong_badges.applescript",
@@ -3885,7 +3900,7 @@
     {
       "path": "profiles/aroundit/mcp-tokens/clobe.json",
       "size": 464,
-      "mtime": 1788662965
+      "mtime": 1788691845
     },
     {
       "path": "profiles/aroundit/mcp-tokens/clobe.meta.json",
@@ -4015,7 +4030,7 @@
     {
       "path": "profiles/aroundit/processes.json",
       "size": 2,
-      "mtime": 1788687946
+      "mtime": 1788688784
     },
     {
       "path": "profiles/aroundit/profile.yaml",
@@ -4085,7 +4100,7 @@
     {
       "path": "profiles/aroundit/skills/.bundled_manifest",
       "size": 2818,
-      "mtime": 1788687945
+      "mtime": 1788688815
     },
     {
       "path": "profiles/aroundit/skills/.curator_backups/2026-08-24T15-32-29Z/cron-jobs.json",
@@ -4145,7 +4160,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 44185,
-      "mtime": 1788687648
+      "mtime": 1788689604
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7440,12 +7455,12 @@
     {
       "path": "profiles/aroundit/state.db-shm",
       "size": 32768,
-      "mtime": 1788687950
+      "mtime": 1788688795
     },
     {
       "path": "profiles/aroundit/state.db-wal",
-      "size": 0,
-      "mtime": 1788687945
+      "size": 4128272,
+      "mtime": 1788689676
     },
     {
       "path": "profiles/aroundit/state.db.auto-maintenance.lock",
@@ -7460,12 +7475,12 @@
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 179,
-      "mtime": 1788688427
+      "mtime": 1788692086
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
-      "size": 116,
-      "mtime": 1788687945
+      "size": 118,
+      "mtime": 1788688783
     },
     {
       "path": "profiles/aroundit/tmp/20260826_awesomeent_tax_invoice_supplier_official.pdf",
@@ -8420,7 +8435,7 @@
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
       "size": 41843,
-      "mtime": 1788687648
+      "mtime": 1788691521
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current3-live-20260827.json",
@@ -11353,6 +11368,11 @@
       "mtime": 1787246657
     },
     {
+      "path": "profiles/den/.curator_backups/blobs/0177bd020c4f97276b004a870bac74eba1e446a7ebee2059889d4d9b5032a91d",
+      "size": 2872,
+      "mtime": 1788689310
+    },
+    {
       "path": "profiles/den/.curator_backups/blobs/01fe79ba67626ff9d4a05131d8cd31ac787494cbbcf8bb8a5701748bcd2e7d11",
       "size": 7253,
       "mtime": 1787246355
@@ -11371,6 +11391,11 @@
       "path": "profiles/den/.curator_backups/blobs/0a72635e2da9482e0d538906752221d61ab39951d6093851d417be3725966d71",
       "size": 2529,
       "mtime": 1787077811
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/15cd3aa895da098c086f1384b7aa01419df96fe659910e6af7adb195d2766688",
+      "size": 6403,
+      "mtime": 1788689282
     },
     {
       "path": "profiles/den/.curator_backups/blobs/182a99bf813e93472342db6194a602571647b9f1ed1752a9c5ac9794e2c5dd2f",
@@ -11411,6 +11436,11 @@
       "path": "profiles/den/.curator_backups/blobs/28ddd5035b85f575f41a22e3e43108eb679d89a1b1197d1c1c16f5036d842d31",
       "size": 3983,
       "mtime": 1787116611
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/2a7c2e9ba39eb114a2d05bb62ae22a9d8b691d7250015b2143f27444f1e1bca8",
+      "size": 15811,
+      "mtime": 1788689282
     },
     {
       "path": "profiles/den/.curator_backups/blobs/2f5fb294fe0f0a812c0cebe8f97519252cd5ca9fdd61f36c93c72c87f13f214e",
@@ -11463,6 +11493,16 @@
       "mtime": 1787078666
     },
     {
+      "path": "profiles/den/.curator_backups/blobs/3c4db06d9c9f545ec156dc8d146a78f9959c00185f1c2803175700b36a8a43e2",
+      "size": 17089,
+      "mtime": 1788689310
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/3d9b763b54ff8329a2e3f13370347531ef63acf0e101669e4a6edb07888fc0f5",
+      "size": 6026,
+      "mtime": 1788689282
+    },
+    {
       "path": "profiles/den/.curator_backups/blobs/4097889236a2af26c293033feb964c4cf118c0224e0d063fec0a89e9d0569ef2",
       "size": 11,
       "mtime": 1787219720
@@ -11496,6 +11536,11 @@
       "path": "profiles/den/.curator_backups/blobs/58097fb66cb1945f66640efbfedc6100b1d408bc5ea6cd6842a9d5c050aabba8",
       "size": 15681,
       "mtime": 1787669924
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/590f1c5ce0d5ac4520e143a9009af3eaaec0183bcc406c615475689c3d10111a",
+      "size": 6801,
+      "mtime": 1788689310
     },
     {
       "path": "profiles/den/.curator_backups/blobs/59b0761a81e30881412e522743fc1401660535829b507312b819a39ee9f3d70a",
@@ -11541,6 +11586,11 @@
       "path": "profiles/den/.curator_backups/blobs/6e8464b24375baef1779778c69a69532f36b4f86cad9f4c1f6119f8515981542",
       "size": 6397,
       "mtime": 1787294069
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/72563d52e2104da41621294174c0740c82e8754d5c9413ad7b5c9d298055f488",
+      "size": 6659,
+      "mtime": 1788689310
     },
     {
       "path": "profiles/den/.curator_backups/blobs/74a8ae9d6ea2f581015d35345ce507538f6ceb354c2b8ce3ac340865c96bc0d5",
@@ -11633,9 +11683,19 @@
       "mtime": 1787999298
     },
     {
+      "path": "profiles/den/.curator_backups/blobs/935803565e72b6c5f00affae4d050b1581b77241ec347163bb0ccc09501321a9",
+      "size": 6279,
+      "mtime": 1788689282
+    },
+    {
       "path": "profiles/den/.curator_backups/blobs/96d1313482404aa8c124733a65bb1017dfc1d58650806d0b72d9c09da0e4b15c",
       "size": 2351,
       "mtime": 1787083359
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/9d7cdae1ac836f1d68e05ca4a1f2306934006437f610a59cdb802e31c437ba2b",
+      "size": 4015,
+      "mtime": 1788689282
     },
     {
       "path": "profiles/den/.curator_backups/blobs/a026000782196691d3370844ea43dcccd6bc78c7514666376a4762e810221431",
@@ -11763,9 +11823,19 @@
       "mtime": 1787296418
     },
     {
+      "path": "profiles/den/.curator_backups/blobs/c5b0f598e1ae3d1109d794c94342f37dcd80482735472eb95c2b63b8e8c211fe",
+      "size": 6668,
+      "mtime": 1788689282
+    },
+    {
       "path": "profiles/den/.curator_backups/blobs/c66c4d0b9a2021c76d133f771f52b0282bb2d81c9d19f3a7d4cd0ebc320a931a",
       "size": 2712,
       "mtime": 1787136782
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/c760a52d854c201f4e83754b845f73bdbb8a602fcfef0811cb2c1cbf16396ce7",
+      "size": 3867,
+      "mtime": 1788689282
     },
     {
       "path": "profiles/den/.curator_backups/blobs/c9b52b88edf0f3657aae14426a58f50282656d29cb82923f58e8f7a3e375fbe5",
@@ -11776,6 +11846,11 @@
       "path": "profiles/den/.curator_backups/blobs/c9f11de79378566d4bff09582a1c04ca9fc856ed15a475290039b48dff130d86",
       "size": 3263,
       "mtime": 1787219712
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/cab6693524f0262f1f64c89a099291c97fe5a1e752666b84049db1862ed56edf",
+      "size": 16996,
+      "mtime": 1788689282
     },
     {
       "path": "profiles/den/.curator_backups/blobs/cd4387e01ebf95ec37f2cce8fafa8e59e1c85a6d29a697fc094a1547a76eeabe",
@@ -11808,6 +11883,11 @@
       "mtime": 1787673845
     },
     {
+      "path": "profiles/den/.curator_backups/blobs/db1da845a6e398f5992f7ef8b17e7b72b91c6b21da2cc9b0a82db89d327e589a",
+      "size": 4119,
+      "mtime": 1788689282
+    },
+    {
       "path": "profiles/den/.curator_backups/blobs/dd96ae4dd3c48fef46c5b4f558a21031d088b15f375e0df67cf5eed5d39d48cd",
       "size": 5210,
       "mtime": 1787083359
@@ -11836,6 +11916,11 @@
       "path": "profiles/den/.curator_backups/blobs/e3eb903e63921cf2666363fccee38b57b193b83db855ad4e981240e419a41945",
       "size": 13315,
       "mtime": 1787246644
+    },
+    {
+      "path": "profiles/den/.curator_backups/blobs/ea436152a9fc3b48f0eb8f04ee3e100da099f3a6c81e469f3aa67c1386af3437",
+      "size": 2704,
+      "mtime": 1788689310
     },
     {
       "path": "profiles/den/.curator_backups/blobs/eb619681e69950f5743e7e0a6213499603171de6c5e0aebc45ab344f6c66e17b",
@@ -11885,7 +11970,7 @@
     {
       "path": "profiles/den/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788688331
+      "mtime": 1788689019
     },
     {
       "path": "profiles/den/.models_dev_cache_06celhz8.tmp",
@@ -11898,9 +11983,9 @@
       "mtime": 1787449069
     },
     {
-      "path": "profiles/den/.skills_prompt_snapshot.json",
-      "size": 65737,
-      "mtime": 1788685727
+      "path": "profiles/den/.update_check",
+      "size": 68,
+      "mtime": 1788691533
     },
     {
       "path": "profiles/den/.update_exit_code",
@@ -24916,91 +25001,6 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ecc4788a7509f232_0",
       "size": 220,
       "mtime": 1788597330
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ecca2878f8e61494_0",
-      "size": 265,
-      "mtime": 1788654442
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ecfd2f6a6b4b1778_0",
-      "size": 265,
-      "mtime": 1788614895
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ed6e1702503fddca_0",
-      "size": 265,
-      "mtime": 1788646046
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ed8baefd139cd75c_0",
-      "size": 8316,
-      "mtime": 1788507114
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/edc4c8af95ccf850_0",
-      "size": 239,
-      "mtime": 1788597333
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef3c8ec0e2ad65b2_0",
-      "size": 511600,
-      "mtime": 1788505705
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef53b0a7e23274cb_0",
-      "size": 265,
-      "mtime": 1788619349
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef57e404e5d191f9_0",
-      "size": 265,
-      "mtime": 1788598034
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/ef74858bf1c8346b_0",
-      "size": 275,
-      "mtime": 1788597283
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/efffa27903c44a37_0",
-      "size": 1315,
-      "mtime": 1788597265
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f019e41bf7bdfa34_0",
-      "size": 857,
-      "mtime": 1788597260
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f0766da65c1446ac_0",
-      "size": 2691,
-      "mtime": 1788505703
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f08abf7241bbd71a_0",
-      "size": 596288,
-      "mtime": 1788597306
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f1d7b520c5dff37e_0",
-      "size": 840,
-      "mtime": 1788507332
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f203935235bb39a7_0",
-      "size": 265,
-      "mtime": 1788631909
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f2214207cf68ff0d_0",
-      "size": 265,
-      "mtime": 1788626870
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/f264b1c7c06fda10_0",
-      "size": 265,
-      "mtime": 1788621978
     }
   ],
   "truncated_after": 5000

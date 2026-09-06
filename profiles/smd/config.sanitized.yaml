@@ -1,6 +1,6 @@
 model:
-  default: openai/gpt-6-astra
-  provider: openrouter
+  default: gpt-6-astra
+  provider: openai-codex
 fallback_providers:
   - provider: openai-codex
     model: gpt-5.3-codex-spark
@@ -26,21 +26,21 @@ moa:
     default:
       reference_models:
         - provider: openai-codex
-          model: gpt-5.5
-        - provider: openrouter
-          model: deepseek/deepseek-v4-pro
+          model: gpt-6-astra
+        - provider: openai-codex
+          model: gpt-6-astra
       aggregator:
-        provider: openrouter
-        model: anthropic/claude-opus-4.8
+        provider: openai-codex
+        model: gpt-6-astra
       degraded_reference_policy: loud
       fanout: user_turn
   reference_models:
     - provider: openai-codex
-      model: gpt-5.6-sol
+      model: gpt-6-astra
       enabled: true
   aggregator:
     provider: openai-codex
-    model: gpt-5.6-sol
+    model: gpt-6-astra
   degraded_reference_policy: loud
   max_tokens: <REDACTED>
   fanout: user_turn
