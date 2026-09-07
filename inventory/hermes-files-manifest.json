@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 29224,
+  "count": 29255,
   "files": [
     {
       "path": "SOUL.md",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1788794866
+      "mtime": 1788798504
     },
     {
       "path": "cron/executions.db",
@@ -1360,12 +1360,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1788794866
+      "mtime": 1788798504
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 16,
-      "mtime": 1788794866
+      "size": 17,
+      "mtime": 1788798504
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -2278,6 +2278,11 @@
       "mtime": 1788794346
     },
     {
+      "path": "profiles/aroundit/.skills_prompt_snapshot.json",
+      "size": 61386,
+      "mtime": 1788798110
+    },
+    {
       "path": "profiles/aroundit/.update_check",
       "size": 70,
       "mtime": 1788787821
@@ -2589,18 +2594,18 @@
     },
     {
       "path": "profiles/aroundit/cache/mcp_schema_cache.json",
-      "size": 97272,
-      "mtime": 1788787817
+      "size": 97273,
+      "mtime": 1788798109
     },
     {
       "path": "profiles/aroundit/cache/model_catalog.json",
       "size": 9064,
-      "mtime": 1788794349
+      "mtime": 1788797948
     },
     {
       "path": "profiles/aroundit/cache/nous_recommended_cache.json",
-      "size": 13058,
-      "mtime": 1788794349
+      "size": 13057,
+      "mtime": 1788797949
     },
     {
       "path": "profiles/aroundit/cache/openrouter_model_metadata.json",
@@ -2614,18 +2619,13 @@
     },
     {
       "path": "profiles/aroundit/cache/reasoning_caps.json",
-      "size": 43552,
-      "mtime": 1788794349
+      "size": 43553,
+      "mtime": 1788797949
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
       "size": 4861,
       "mtime": 1788451521
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1788192667-99356-9750.log",
-      "size": 64762,
-      "mtime": 1788192669
     },
     {
       "path": "profiles/aroundit/cache/terminal-output/out-1788229656-99356-bd10.log",
@@ -2801,6 +2801,11 @@
       "path": "profiles/aroundit/cache/terminal-output/out-1788787888-45637-4f10.log",
       "size": 77028,
       "mtime": 1788787889
+    },
+    {
+      "path": "profiles/aroundit/cache/terminal-output/out-1788798163-85391-ca50.log",
+      "size": 203428,
+      "mtime": 1788798166
     },
     {
       "path": "profiles/aroundit/cache/tool_discovery_cache.json",
@@ -3454,8 +3459,8 @@
     },
     {
       "path": "profiles/aroundit/channel_directory.json",
-      "size": 13405,
-      "mtime": 1788794776
+      "size": 13537,
+      "mtime": 1788798397
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -3510,7 +3515,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1788794846
+      "mtime": 1788798504
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -3520,12 +3525,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 634880,
-      "mtime": 1788794405
+      "mtime": 1788798204
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
       "size": 23348,
-      "mtime": 1788794405
+      "mtime": 1788798204
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -3666,16 +3671,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-06_21-51-41.md",
-      "size": 160,
-      "mtime": 1788699101
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-06_22-23-52.md",
-      "size": 96924,
-      "mtime": 1788701032
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-06_22-54-57.md",
@@ -3918,9 +3913,19 @@
       "mtime": 1788794405
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-08_00-50-58.md",
+      "size": 160,
+      "mtime": 1788796258
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-08_01-23-24.md",
+      "size": 96316,
+      "mtime": 1788798204
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
-      "size": 627,
-      "mtime": 1788794346
+      "size": 1058,
+      "mtime": 1788798108
     },
     {
       "path": "profiles/aroundit/cron/persisted_error_recoveries.jsonl",
@@ -3930,22 +3935,22 @@
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1788794846
+      "mtime": 1788798504
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1788794846
+      "mtime": 1788798504
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 923440,
-      "mtime": 1788794405
+      "size": 923767,
+      "mtime": 1788798204
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
-      "size": 7753,
-      "mtime": 1788794346
+      "size": 7777,
+      "mtime": 1788798200
     },
     {
       "path": "profiles/aroundit/email_reply_examples.jsonl",
@@ -4325,7 +4330,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 44335,
-      "mtime": 1788794378
+      "mtime": 1788798172
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -7715,7 +7720,7 @@
     {
       "path": "profiles/aroundit/state.db-wal",
       "size": 6245952,
-      "mtime": 1788794405
+      "mtime": 1788798204
     },
     {
       "path": "profiles/aroundit/state.db.auto-maintenance.lock",
@@ -7730,7 +7735,7 @@
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 182,
-      "mtime": 1788794853
+      "mtime": 1788798485
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
@@ -8769,8 +8774,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current.json",
-      "size": 20789,
-      "mtime": 1788794346
+      "size": 39889,
+      "mtime": 1788798108
     },
     {
       "path": "profiles/aroundit/tmp/gmail-autodraft-current3-live-20260827.json",
@@ -9731,6 +9736,11 @@
       "path": "profiles/aroundit/tmp/gmail_candidates_review/09_1a042e538b760313.json",
       "size": 21391,
       "mtime": 1787987458
+    },
+    {
+      "path": "profiles/aroundit/tmp/gmail_final_gate.py",
+      "size": 1369,
+      "mtime": 1788798193
     },
     {
       "path": "profiles/aroundit/tmp/gmail_live_gate_20260823.py",
@@ -11066,6 +11076,11 @@
       "path": "profiles/aroundit/tmp/review_gmail_payload.py",
       "size": 1633,
       "mtime": 1787343608
+    },
+    {
+      "path": "profiles/aroundit/tmp/review_gmail_run.py",
+      "size": 1759,
+      "mtime": 1788798156
     },
     {
       "path": "profiles/aroundit/tmp/review_live.py",
@@ -12515,7 +12530,7 @@
     {
       "path": "profiles/den/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1788794858
+      "mtime": 1788798506
     },
     {
       "path": "profiles/den/.models_dev_cache_06celhz8.tmp",
@@ -12534,8 +12549,8 @@
     },
     {
       "path": "profiles/den/.update_check",
-      "size": 70,
-      "mtime": 1788794306
+      "size": 71,
+      "mtime": 1788797733
     },
     {
       "path": "profiles/den/.update_exit_code",
@@ -24986,21 +25001,6 @@
       "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d59a2503b441a566_0",
       "size": 332,
       "mtime": 1788597340
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d60e91901a7a77b1_0",
-      "size": 265,
-      "mtime": 1788657584
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d6246e3ef15017c6_0",
-      "size": 279,
-      "mtime": 1788597306
-    },
-    {
-      "path": "profiles/den/browser-profile/chrome/Default/Code Cache/js/d63934dc4317450b_0",
-      "size": 995,
-      "mtime": 1788507240
     }
   ],
   "truncated_after": 5000
