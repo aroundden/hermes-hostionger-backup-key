@@ -25,7 +25,7 @@ exit_code=0
     → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
       open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
     then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
-  ✓ Version files consistent (0.21.0)
+  ✓ Version files consistent (0.21.1)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -74,7 +74,7 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (853 sessions)
-    → state.db logical size 500.2 MB, 128,060 pages, 86 free, WAL 4.6 MB
+    → state.db logical size 500.2 MB, 128,060 pages, 86 free, WAL 64.4 KB
     → 30,027 messages, 853 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
