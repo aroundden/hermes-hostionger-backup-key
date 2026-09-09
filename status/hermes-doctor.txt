@@ -73,9 +73,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (866 sessions)
-    → state.db logical size 506.8 MB, 129,735 pages, 547 free, WAL 5.7 MB
-    → 30,523 messages, 866 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (867 sessions)
+    → state.db logical size 506.8 MB, 129,735 pages, 25 free, WAL 1.5 MB
+    → 30,805 messages, 867 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -136,7 +136,7 @@ exit_code=0
 
 ◆ Skills Hub
   ✓ Skills Hub directory exists
-  ✓ Lock file OK (12 hub-installed skill(s))
+  ✓ Lock file OK (14 hub-installed skill(s))
   ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
 
 ◆ Memory Provider
@@ -144,9 +144,9 @@ exit_code=0
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   aroundit: gpt-6-astra
   ✓   den: gpt-6-astra
-  ✓   smd: gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
   Found 3 issue(s) to address:
