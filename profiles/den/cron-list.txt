@@ -1,4 +1,4 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p den cron list
+$ hermes -p den cron list
 exit_code=0
 
 
@@ -10,13 +10,13 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-09-09T21:06:29.514067+09:00
+    Next run:  2026-09-09T21:06:48.344816+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-09T19:06:15.819737+09:00  ok
+    Last run:  2026-09-09T20:06:48.344816+09:00  ok
     Dispatch:  on time (scheduled 2026-09-09T20:06:15.819737+09:00)
-    Execution: running  f4d627f5c6294e49baf2dbff8a49bc73
+    Execution: completed  f4d627f5c6294e49baf2dbff8a49bc73
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
