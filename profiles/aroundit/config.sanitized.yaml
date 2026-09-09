@@ -15,7 +15,8 @@ web:
   provider_tier:
     parallel: free
 browser:
-  cloud_provider: nous
+  use_real_profile: true
+  real_profile_pin: Profile 77
 auxiliary:
   background_review:
     enabled: false
@@ -116,6 +117,11 @@ skills:
 command_allowlist:
   - script execution via -e/-c flag
   - execute_code
+hooks:
+  pre_tool_call:
+    - matcher: browser_exec
+      command: /Users/insideden/.local/bin/hermes-browser-reap
+      timeout: 15
 cron:
   wrap_response: false
 kanban:
