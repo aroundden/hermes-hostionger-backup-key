@@ -16,8 +16,8 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (506.8 MB)
-    → cron/executions.db: WAL journal mode (644.0 KB)
+    → state.db: WAL journal mode (510.1 MB)
+    → cron/executions.db: WAL journal mode (648.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
   ✓ Virtual environment active
@@ -73,9 +73,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (867 sessions)
-    → state.db logical size 506.8 MB, 129,735 pages, 25 free, WAL 1.5 MB
-    → 30,805 messages, 867 sessions, journal_mode=wal
+  ✓ ~/.hermes/profiles/den/state.db exists (872 sessions)
+    → state.db logical size 510.1 MB, 130,597 pages, 0 free, WAL 3.9 MB
+    → 31,135 messages, 872 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -145,8 +145,8 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gpt-6-astra
-  ✓   den: gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   smd: gpt-6-astra
 
 ────────────────────────────────────────────────────────────
   Found 3 issue(s) to address:
