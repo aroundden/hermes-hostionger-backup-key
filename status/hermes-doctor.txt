@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (531.5 MB)
+    → state.db: WAL journal mode (533.4 MB)
     → cron/executions.db: WAL journal mode (692.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
@@ -46,7 +46,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✓ Config version up to date (v41)
+  ✓ Config version up to date (v42)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -74,8 +74,8 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (909 sessions)
-    → state.db logical size 531.5 MB, 136,053 pages, 137 free, WAL 6.1 MB
-    → 32,524 messages, 909 sessions, journal_mode=wal
+    → state.db logical size 533.4 MB, 136,559 pages, 0 free, WAL 728.3 KB
+    → 32,543 messages, 909 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -122,6 +122,7 @@ exit_code=0
   ⚠ a2a (system dependency not met)
   ⚠ browser (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
+  ⚠ connections (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
