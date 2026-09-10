@@ -74,8 +74,8 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (281 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (913 sessions)
-    → state.db logical size 542.1 MB, 138,768 pages, 431 free, WAL 4.5 MB
-    → 33,402 messages, 913 sessions, journal_mode=wal
+    → state.db logical size 542.1 MB, 138,768 pages, 284 free, WAL 4.5 MB
+    → 33,491 messages, 913 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -144,9 +144,10 @@ exit_code=0
   ✓ Built-in memory active (no external provider configured — this is fine)
 
 ◆ Profiles
-  ✓ 3 profile(s) found
+  ✓ 4 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gpt-6-astra
+  ✓   jessiroom: gpt-6-astra, no alias
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
