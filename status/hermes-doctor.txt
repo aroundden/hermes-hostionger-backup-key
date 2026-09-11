@@ -22,10 +22,8 @@ exit_code=0
     → verification_evidence.db: WAL journal mode (40.0 KB)
   ✓ Virtual environment active
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
-  ✓ Version files consistent (0.21.1)
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
+  ✓ Version files consistent (0.21.2)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -74,7 +72,7 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (940 sessions)
-    → state.db logical size 563.7 MB, 144,303 pages, 587 free, WAL 6.1 MB
+    → state.db logical size 563.7 MB, 144,303 pages, 587 free, WAL 265.6 KB
     → 35,095 messages, 940 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
@@ -146,7 +144,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
