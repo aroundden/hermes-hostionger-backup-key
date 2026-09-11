@@ -10,6 +10,7 @@ exit_code=0
 
   Optional:
     ○ NOUS_BASE_URL
+    ○ HERMES_ANON_API_SECRET
     ○ OPENROUTER_API_KEY → vision_analyze
     ○ GOOGLE_API_KEY
     ○ GEMINI_API_KEY
@@ -35,7 +36,6 @@ exit_code=0
     ○ GMI_API_KEY
     ○ GMI_BASE_URL
     ○ ACTUAL_API_KEY
-    ○ ACTUAL_BASE_URL
     ○ FIREWORKS_API_KEY
     ○ MINIMAX_API_KEY
     ○ MINIMAX_BASE_URL
@@ -344,3 +344,6 @@ exit_code=0
     ○ WHATSAPP_HOME_CHANNEL
     ○ WHATSAPP_HOME_CHANNEL_NAME
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
