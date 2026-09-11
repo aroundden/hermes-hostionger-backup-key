@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: WAL journal mode (554.3 MB)
+    → state.db: WAL journal mode (560.4 MB)
     → cron/executions.db: WAL journal mode (696.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
@@ -72,10 +72,10 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
-  ✓ USER.md exists (281 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (931 sessions)
-    → state.db logical size 554.3 MB, 141,912 pages, 513 free, WAL 4.5 MB
-    → 34,555 messages, 931 sessions, journal_mode=wal
+  ✓ USER.md exists (345 chars)
+  ✓ ~/.hermes/profiles/den/state.db exists (933 sessions)
+    → state.db logical size 560.4 MB, 143,464 pages, 355 free, WAL 6.1 MB
+    → 34,936 messages, 933 sessions, journal_mode=wal
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -158,6 +158,3 @@ exit_code=0
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

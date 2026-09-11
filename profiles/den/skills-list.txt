@@ -49,6 +49,7 @@ exit_code=0
 │ den-subtitle-produc… │ media                │ local    │ local    │ enabled  │
 │ gif-search           │ media                │ builtin  │ builtin  │ disabled │
 │ multicam-rough-cut-… │ media                │ local    │ local    │ enabled  │
+│ namami-thumbnail-lo… │ media                │ local    │ local    │ enabled  │
 │ songsee              │ media                │ builtin  │ builtin  │ disabled │
 │ youtube-content      │ media                │ builtin  │ builtin  │ enabled  │
 │ youtube-packaging-s… │ media                │ local    │ local    │ enabled  │
@@ -115,8 +116,5 @@ exit_code=0
 │ test-driven-develop… │ software-development │ builtin  │ builtin  │ enabled  │
 │ blocked-page-recove… │ web                  │ builtin  │ builtin  │ enabled  │
 └──────────────────────┴──────────────────────┴──────────┴──────────┴──────────┘
-14 hub-installed, 58 builtin, 37 local — 65 enabled, 44 disabled
+14 hub-installed, 58 builtin, 38 local — 66 enabled, 44 disabled
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

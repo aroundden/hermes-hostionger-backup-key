@@ -1,9 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p .deleted cron list
 exit_code=2
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
 usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]
               [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]
               [--resume SESSION] [--no-restore-cwd] [--in DIR]
