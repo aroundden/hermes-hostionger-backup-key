@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-09-13T05:15:32.445765+09:00
+    Next run:  2026-09-13T06:16:41.137101+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-13T03:15:23.480254+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-13T04:15:23.480254+09:00)
-    Execution: running  d97c072cbebc4cc8ba361df65e6e4a8c
+    Last run:  2026-09-13T04:15:50.753972+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-13T05:15:50.753972+09:00)
+    Execution: running  0ed6a6f14e164410b9323f1cbe221ab1
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-09-13T04:17:32.660445+09:00
+    Next run:  2026-09-13T05:17:41.327325+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-09-12T00:24:59.984063+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-09-13T04:12:32.660445+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-13T04:12:31.843951+09:00)
-    Execution: completed  5b579bb8d32c420880b1ee1518e5422a
+    Last run:  2026-09-13T05:12:41.327325+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-13T05:11:40.548589+09:00)
+    Execution: completed  64e7d86093174f188b43e1e6fbb07049
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
@@ -49,15 +49,15 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-09-13T04:18:55.154337+09:00
+    Next run:  2026-09-13T05:23:04.120559+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-09-10T15:47:00.863486+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-09-13T04:08:55.154337+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-13T04:07:51.497556+09:00)
-    Execution: completed  611582ba66ce4170811a09f047ac1297
+    Last run:  2026-09-13T05:13:04.120559+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-13T05:12:02.206559+09:00)
+    Execution: completed  891610d3896a432c9a6dfcdf4a4fcd8b
 
   4624d933404b [active]
     Name:      TickTick Member Worklog 마감순 정렬
