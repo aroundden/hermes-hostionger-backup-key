@@ -13,6 +13,8 @@ toolsets:
   - kanban
   - browser
   - browser-use
+database:
+  journal_mode: delete
 terminal:
   cwd: /Users/insideden
 web:
@@ -28,8 +30,11 @@ auxiliary:
     enabled: false
 tts:
   provider: openai
+stt:
+  language: ko
 memory:
   write_approval: true
+  provider: mem0
 moa:
   presets:
     default:
@@ -325,8 +330,3 @@ mcp_servers:
     url: https://mcp.notion.com/mcp
     auth: oauth
     enabled: false
-agent: {}
-database:
-  journal_mode: delete
-stt:
-  language: ko
