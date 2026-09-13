@@ -941,6 +941,22 @@ exit_code=0
 │                      │             │         │ image-to-video via  │         │
 │                      │             │         │ fal_client's queue  │         │
 │                      │             │         │ API.                │         │
+│ openrouter           │ not enabled │ 1.0.0   │ OpenRouter video    │ bundled │
+│                      │             │         │ generation backend. │         │
+│                      │             │         │ Every generative    │         │
+│                      │             │         │ model on the        │         │
+│                      │             │         │ /api/v1/videos API  │         │
+│                      │             │         │ (Veo, Sora, Kling,  │         │
+│                      │             │         │ Seedance, Wan,      │         │
+│                      │             │         │ Hailuo, Grok        │         │
+│                      │             │         │ Imagine, FLUX       │         │
+│                      │             │         │ Video, …) —         │         │
+│                      │             │         │ text-to-video,      │         │
+│                      │             │         │ image-to-video and  │         │
+│                      │             │         │ reference-to-video; │         │
+│                      │             │         │ catalog and         │         │
+│                      │             │         │ per-model limits    │         │
+│                      │             │         │ discovered live.    │         │
 │ xai                  │ not enabled │ 1.0.0   │ xAI Grok Imagine    │ bundled │
 │                      │             │         │ video generation    │         │
 │                      │             │         │ backend. Supports   │         │
