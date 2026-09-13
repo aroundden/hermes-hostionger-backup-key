@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-09-13T16:45:36.950642+09:00
+    Next run:  2026-09-13T17:47:06.352295+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-13T16:15:36.950642+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-13T16:07:04.108293+09:00)
-    Execution: completed  a986083ff0bc46809bfc63e531b28c91
+    Last run:  2026-09-13T17:17:06.352295+09:00  error: RuntimeError: ⚠️ No reply: the turn was stopped because a live Hermes process held a retired state.db-wal generation after its pathname was deleted or replaced. Stop the gateway, dashboard, and cron writers; do not overwrite the current state.db or delete its sidecars. Check the logs for whether Hermes captured the retired generation, then read the adjacent state.db.retired-wal-*/manifest.json. If manifest.main.mode is `copied`, inspect that artifact with `hermes sessions recover --source <state.db.retired-wal-*/state.db> --inspect-only` before deciding whether its committed frames belong on the current database. A `header_only` artifact is forensic and does not contain a copied state.db to inspect. Unwritten messages were diverted to sessions/<session_id>.jsonl and, on the gateway, pending_messages/pending-*.json.  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-13T17:16:00.215497+09:00)
+    Execution: failed  bfacf2680a994ef2b21721ee052e1de6
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
