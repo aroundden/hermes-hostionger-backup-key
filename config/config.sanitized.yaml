@@ -224,3 +224,7 @@ mcp_servers:
     connect_timeout: 300
     auth: oauth
     enabled: false
+
+# Temporary containment for recurring deleted-WAL generation errors, 2026-09-13.
+database:
+  journal_mode: delete

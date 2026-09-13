@@ -364,3 +364,7 @@ agent: {}
 # fallback_model:
 #   provider: openrouter
 #   model: anthropic/claude-sonnet-4
+
+# Temporary containment for recurring deleted-WAL generation errors, 2026-09-13.
+database:
+  journal_mode: delete
