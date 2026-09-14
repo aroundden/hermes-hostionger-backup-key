@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=0
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -94,67 +95,3 @@ exit_code=0
 
 ◆ API Connectivity
   Running 40 connectivity checks in parallel…
-                                                                      
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-  ✓ browser
-  ✓ browser-use
-  ✓ clarify
-  ✓ code_execution
-  ✓ computer_use
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ project
-  ✓ session_search
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ video
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ homeassistant (system dependency not met)
-  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
-  ⚠ spotify (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ video_gen (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (14 hub-installed skill(s))
-  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
-
-◆ Memory Provider
-  ✓ Mem0 API key configured
-    → user_id=insideden-den  agent_id=den
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
-
-  1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 2 npm vulnerabilities
-  3. web workspace has 6 npm vulnerabilities
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
