@@ -316,6 +316,7 @@ mcp_servers:
         - get_monthly_revenue
         - get_card_approvals
         - preview_create_journal_entry
-agent: {}
+agent:
+  reasoning_effort: medium
 database:
   journal_mode: delete
