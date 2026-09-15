@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-09-15T12:12:24.156045+09:00
+    Next run:  2026-09-15T13:27:25.456881+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-15T11:42:24.156045+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-15T11:33:17.651028+09:00)
-    Execution: completed  98426bf1f78b423eae0b2b30a7b4e5c0
+    Last run:  2026-09-15T12:57:25.456881+09:00  error: RuntimeError: Context length exceeded (60,886 tokens). Cannot compress further.
+    Dispatch:  on time (scheduled 2026-09-15T12:51:26.556999+09:00)
+    Execution: failed  7015282b549e463686bcd9a82225e745
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
