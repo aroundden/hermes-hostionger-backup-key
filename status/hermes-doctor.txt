@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (588.0 MB)
+    → state.db: rollback journal mode (588.3 MB)
     → cron/executions.db: WAL journal mode (696.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
@@ -72,7 +72,7 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (972 sessions)
-    → state.db logical size 588.0 MB, 150,531 pages, 405 free, WAL 0 B
+    → state.db logical size 588.3 MB, 150,608 pages, 524 free, WAL 0 B
     → 37,518 messages, 972 sessions, journal_mode=delete, 3 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
@@ -82,14 +82,10 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ✓ ripgrep (rg) (faster file search)
-  ✓ docker (optional)
-  ✓ Node.js
-  ✓ agent-browser (browser automation)
-  ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 1 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
-  ⚠ web workspace deps (0 critical, 1 high, 5 moderate — build-tool advisory; clears via lockfile bump)
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ✓ ui-tui workspace deps (2 moderate vulnerabilities)
+  ⚠ ripgrep (rg) not found (file search uses grep fallback)
+    → Install for faster search: brew install ripgrep
+  ⚠ docker not found (optional)
+  ⚠ Node.js not found (optional, needed for browser tools)
 
 ◆ API Connectivity
   Running 40 connectivity checks in parallel…
@@ -135,7 +131,7 @@ exit_code=0
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
 
 ◆ Memory Provider
   ✓ Mem0 API key configured
@@ -148,11 +144,9 @@ exit_code=0
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 1 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 2 npm vulnerabilities
-  3. web workspace has 6 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
