@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-09-16T08:28:55.785578+09:00
+    Next run:  2026-09-16T09:31:06.472084+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-16T07:58:55.785578+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (5 failures in a row)
-    Dispatch:  on time (scheduled 2026-09-16T07:57:51.799412+09:00)
-    Execution: failed  5adcb28a404c450db263a60d6e5e225b
+    Last run:  2026-09-16T09:01:06.472084+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (7 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-16T09:00:02.934333+09:00)
+    Execution: failed  dfd7ce2dc4d14d74956548ae7bdb28a3
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -32,12 +32,12 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
-    Next run:  2026-09-16T09:00:00+09:00
+    Next run:  2026-09-17T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-15T09:03:32.008715+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-15T09:00:00+09:00)
-    Execution: completed  d53f51578f4c403b9d12b3faa7b48d40
+    Last run:  2026-09-16T09:01:17.890255+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached
+    Dispatch:  on time (scheduled 2026-09-16T09:00:00+09:00)
+    Execution: failed  4de16713b2e8400fa05ff123ac537664
 
