@@ -10,36 +10,36 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-16T09:30:00+09:00
+    Next run:  2026-09-17T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-15T09:32:12.913394+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-15T09:30:00+09:00)
-    Execution: unknown  5c85f5833b8f4b6d81937a7c1e52f990
+    Last run:  2026-09-16T09:30:42.004324+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached
+    Dispatch:  on time (scheduled 2026-09-16T09:30:00+09:00)
+    Execution: failed  f336f844fd0040fda4fa79aecf139221
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-16T09:31:00+09:00
+    Next run:  2026-09-17T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-15T09:32:49.447693+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-15T09:31:00+09:00)
-    Execution: completed  de2829faf6ed486d9c873241356926cf
+    Last run:  2026-09-16T09:31:40.299414+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-16T09:31:00+09:00)
+    Execution: completed  acedf0460bb34592a5f2287f98b4b21c
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 에스피식
     Schedule:  */5 9-17 * * *
     Repeat:    ∞
-    Next run:  2026-09-16T09:20:00+09:00
+    Next run:  2026-09-16T10:20:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-16T09:15:41.846277+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (4 failures in a row)
-    Dispatch:  on time (scheduled 2026-09-16T09:15:00+09:00)
-    Execution: failed  7d4393d65bf5485e9eb0026ef3940999
+    Last run:  2026-09-16T10:15:55.569707+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached  (16 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-16T10:15:00+09:00)
+    Execution: failed  08a4089e3cc14b309309afaf25084f07
 
