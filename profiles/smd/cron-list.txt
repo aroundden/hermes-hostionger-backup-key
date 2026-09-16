@@ -1,9 +1,45 @@
-$ hermes -p smd cron list
-exit_code=1
+$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p smd cron list
+exit_code=0
 
-Traceback (most recent call last):
-  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
-    from hermes_cli.main import main
-  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 485, in <module>
-    def _resolve_sudo_user_profile_env(name: str) -> str | None:
-TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  236ef4fff769 [active]
+    Name:      SMD Daily Brief — 에스피식 아침 브리프
+    Schedule:  30 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-09-17T09:30:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, google-workspace, den-output-contract
+    Workdir:   /Users/insideden/workspace/spsik-automation
+    Last run:  2026-09-16T09:30:42.004324+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached
+    Dispatch:  on time (scheduled 2026-09-16T09:30:00+09:00)
+    Execution: failed  f336f844fd0040fda4fa79aecf139221
+
+  76303332d061 [active]
+    Name:      SPC 매거진/SNS 업데이트 알림
+    Schedule:  31 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-09-17T09:31:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, den-output-contract
+    Script:    spc_social_watch_notify.py
+    Workdir:   /Users/insideden/workspace/spsik-automation
+    Last run:  2026-09-16T09:31:40.299414+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-16T09:31:00+09:00)
+    Execution: completed  acedf0460bb34592a5f2287f98b4b21c
+
+  d6df4f1599af [active]
+    Name:      광고주 시트 변경 알림 — 에스피식
+    Schedule:  */5 9-17 * * *
+    Repeat:    ∞
+    Next run:  2026-09-16T15:25:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, google-workspace, den-output-contract
+    Script:    advertiser_sheet_watch.py
+    Last run:  2026-09-16T15:21:00.070337+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-16T15:20:00+09:00)
+    Execution: completed  0a779caab6e94b36817df8e3c3a953dc
+
