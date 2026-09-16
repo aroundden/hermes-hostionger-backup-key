@@ -1,5 +1,9 @@
-$ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p .deleted skills list
-exit_code=2
+$ hermes -p .deleted skills list
+exit_code=1
 
-Error: '.deleted' is not a valid profile name. Use lowercase letters, numbers, '-' or '_', starting with a letter or number, up to 64 characters (for example: deleted). Then run `hermes profile create deleted`.
-Run `hermes profile list` to see your profiles.
+Traceback (most recent call last):
+  File "/Users/insideden/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/Users/insideden/.hermes/hermes-agent/hermes_cli/main.py", line 485, in <module>
+    def _resolve_sudo_user_profile_env(name: str) -> str | None:
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
