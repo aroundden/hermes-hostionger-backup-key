@@ -23,7 +23,7 @@ exit_code=0
   ✓ Virtual environment active
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
-  ✓ Version files consistent (0.21.2)
+  ✓ Version files consistent (0.21.3)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -44,7 +44,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✓ Config version up to date (v44)
+  ✓ Config version up to date (v45)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -71,9 +71,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (971 sessions)
-    → state.db logical size 588.0 MB, 150,531 pages, 520 free, WAL 0 B
-    → 37,455 messages, 971 sessions, journal_mode=delete
+  ✓ ~/.hermes/profiles/den/state.db exists (972 sessions)
+    → state.db logical size 588.0 MB, 150,531 pages, 432 free, WAL 0 B
+    → 37,504 messages, 972 sessions, journal_mode=delete, 3 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -102,7 +102,6 @@ exit_code=0
   ✓ clarify
   ✓ code_execution
   ✓ computer_use
-  ✓ connections
   ✓ cronjob
   ✓ delegation
   ✓ desktop_ui
@@ -122,6 +121,7 @@ exit_code=0
   ✓ web extract (parallel)
   ⚠ a2a (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
+  ⚠ connections (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
   ⚠ feishu_doc (system dependency not met)
@@ -135,7 +135,7 @@ exit_code=0
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
 
 ◆ Memory Provider
   ✓ Mem0 API key configured
@@ -144,7 +144,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
