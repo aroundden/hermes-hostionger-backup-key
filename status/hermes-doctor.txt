@@ -73,7 +73,7 @@ exit_code=0
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (972 sessions)
     → state.db logical size 588.3 MB, 150,608 pages, 524 free, WAL 0 B
-    → 37,518 messages, 972 sessions, journal_mode=delete, 3 process(es) holding the DB open
+    → 37,518 messages, 972 sessions, journal_mode=delete, 4 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -144,7 +144,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
