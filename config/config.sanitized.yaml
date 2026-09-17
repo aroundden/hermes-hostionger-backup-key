@@ -1,5 +1,5 @@
 model:
-  default: gpt-6-astra
+  default: gpt-5.6-sol
   provider: openai-codex
 fallback_providers:
   - provider: openai-codex
@@ -132,6 +132,8 @@ memory:
   flush_min_turns: 6
 delegation:
   max_iterations: 250
+  model: gpt-5.6-sol
+  provider: openai-codex
 skills:
   creation_nudge_interval: 15
 timezone: Asia/Seoul
@@ -235,3 +237,19 @@ image_gen:
   provider: nous
 wake_word:
   enabled: true
+auxiliary:
+  title_generation:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  monitor:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  memory_query_rewrite:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  compression:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  review:
+    model: gpt-6-astra
+    provider: openai-codex

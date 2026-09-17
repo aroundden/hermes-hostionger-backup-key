@@ -1,5 +1,5 @@
 model:
-  default: gpt-6-astra
+  default: gpt-5.6-sol
   provider: openai-codex
 fallback_providers:
   - provider: openai-codex
@@ -19,6 +19,21 @@ browser:
 auxiliary:
   background_review:
     enabled: false
+  title_generation:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  monitor:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  memory_query_rewrite:
+    model: gpt-5.6-luna
+    provider: openai-codex
+  compression:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  review:
+    model: gpt-6-astra
+    provider: openai-codex
 memory:
   write_approval: true
   provider: mem0
@@ -279,3 +294,6 @@ display:
       interim_assistant_messages: false
       long_running_notifications: false
       busy_ack_detail: false
+delegation:
+  model: gpt-5.6-sol
+  provider: openai-codex
