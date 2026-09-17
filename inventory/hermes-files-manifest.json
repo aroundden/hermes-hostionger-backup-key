@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 36485,
+  "count": 36495,
   "files": [
     {
       "path": "SOUL.md",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1789685684
+      "mtime": 1789689311
     },
     {
       "path": "cron/executions.db",
@@ -1360,12 +1360,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1789685684
+      "mtime": 1789689311
     },
     {
       "path": "cron/ticker_last_success",
       "size": 17,
-      "mtime": 1789685684
+      "mtime": 1789689311
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1398,9 +1398,14 @@
       "mtime": 1787767061
     },
     {
+      "path": "profiles/aroundit/.clean_shutdown",
+      "size": 0,
+      "mtime": 1789689340
+    },
+    {
       "path": "profiles/aroundit/.codex_gpt55_autoraise_notice",
       "size": 17,
-      "mtime": 1789649547
+      "mtime": 1789688000
     },
     {
       "path": "profiles/aroundit/.curator_backups/blobs/01665233936ced0ad712b61259bbe59d01c255902a0d759ee37d6925f6517799",
@@ -3020,7 +3025,12 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1789685384
+      "mtime": 1789689343
+    },
+    {
+      "path": "profiles/aroundit/.restart_pending.json",
+      "size": 75,
+      "mtime": 1789689340
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
@@ -6489,8 +6499,8 @@
     },
     {
       "path": "profiles/aroundit/cache/image_token_costs.json",
-      "size": 34,
-      "mtime": 1789634980
+      "size": 65,
+      "mtime": 1789688017
     },
     {
       "path": "profiles/aroundit/cache/images/computer_use_c08ebf5843d247dcbc5fd383e0e2e646.png",
@@ -6498,9 +6508,19 @@
       "mtime": 1789623081
     },
     {
+      "path": "profiles/aroundit/cache/images/img_279815914a4c.png",
+      "size": 41454,
+      "mtime": 1789687997
+    },
+    {
       "path": "profiles/aroundit/cache/images/img_83380a7abc48.png",
       "size": 173249,
       "mtime": 1789623039
+    },
+    {
+      "path": "profiles/aroundit/cache/images/img_9b5070aa14e0.png",
+      "size": 112330,
+      "mtime": 1789687998
     },
     {
       "path": "profiles/aroundit/cache/images/img_a681c27c00bc.png",
@@ -6550,17 +6570,17 @@
     {
       "path": "profiles/aroundit/cache/mcp_schema_cache.json",
       "size": 99078,
-      "mtime": 1789673852
+      "mtime": 1789689343
     },
     {
       "path": "profiles/aroundit/cache/model_catalog.json",
       "size": 9228,
-      "mtime": 1789684888
+      "mtime": 1789688489
     },
     {
       "path": "profiles/aroundit/cache/nous_recommended_cache.json",
-      "size": 13947,
-      "mtime": 1789684888
+      "size": 13948,
+      "mtime": 1789688490
     },
     {
       "path": "profiles/aroundit/cache/oauth_heal_clean.json",
@@ -6569,8 +6589,8 @@
     },
     {
       "path": "profiles/aroundit/cache/openrouter_curated_catalog.json",
-      "size": 2857,
-      "mtime": 1789684888
+      "size": 2802,
+      "mtime": 1789688490
     },
     {
       "path": "profiles/aroundit/cache/openrouter_model_metadata.json",
@@ -6580,12 +6600,12 @@
     {
       "path": "profiles/aroundit/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1789650065
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/cache/reasoning_caps.json",
-      "size": 45207,
-      "mtime": 1789684888
+      "size": 45202,
+      "mtime": 1789688490
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
@@ -6596,16 +6616,6 @@
       "path": "profiles/aroundit/cache/stella-register.py",
       "size": 3355,
       "mtime": 1789544192
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1789081613-34310-e810.log",
-      "size": 118389,
-      "mtime": 1789081836
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1789081860-34310-db90.log",
-      "size": 59807,
-      "mtime": 1789081860
     },
     {
       "path": "profiles/aroundit/cache/terminal-output/out-1789083748-34121-6250.log",
@@ -8339,8 +8349,8 @@
     },
     {
       "path": "profiles/aroundit/channel_directory.json",
-      "size": 36274,
-      "mtime": 1789685644
+      "size": 36637,
+      "mtime": 1789689267
     },
     {
       "path": "profiles/aroundit/config.yaml",
@@ -8395,7 +8405,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1789685684
+      "mtime": 1789689308
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -8405,12 +8415,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 696320,
-      "mtime": 1789685386
+      "mtime": 1789687656
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 22174,
-      "mtime": 1789685386
+      "size": 22022,
+      "mtime": 1789687655
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -8601,11 +8611,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-17_02-55-06.md",
-      "size": 113846,
-      "mtime": 1789581306
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-17_03-30-08.md",
@@ -8853,6 +8858,11 @@
       "mtime": 1789685386
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-18_08-27-34.md",
+      "size": 117136,
+      "mtime": 1789687654
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
       "size": 2220,
       "mtime": 1789021926
@@ -8865,17 +8875,17 @@
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 17,
-      "mtime": 1789685684
+      "mtime": 1789689308
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 17,
-      "mtime": 1789685684
+      "mtime": 1789689308
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 1053583,
-      "mtime": 1789685386
+      "size": 1053896,
+      "mtime": 1789687654
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
@@ -8895,17 +8905,17 @@
     {
       "path": "profiles/aroundit/gateway-starts.log",
       "size": 716,
-      "mtime": 1789650041
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/gateway.lock",
       "size": 242,
-      "mtime": 1789650042
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/gateway.pid",
       "size": 242,
-      "mtime": 1789650042
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/gateway/restart_loop.json",
@@ -8914,8 +8924,8 @@
     },
     {
       "path": "profiles/aroundit/gateway_state.json",
-      "size": 927,
-      "mtime": 1789650044
+      "size": 949,
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/kmong_badges.applescript",
@@ -9065,12 +9075,12 @@
     {
       "path": "profiles/aroundit/models_dev_cache.etag",
       "size": 36,
-      "mtime": 1789649040
+      "mtime": 1789688000
     },
     {
       "path": "profiles/aroundit/models_dev_cache.json",
-      "size": 4689072,
-      "mtime": 1789649040
+      "size": 4688533,
+      "mtime": 1789688000
     },
     {
       "path": "profiles/aroundit/nami-contact.jpg",
@@ -9245,7 +9255,7 @@
     {
       "path": "profiles/aroundit/runtime/active_sessions.json",
       "size": 15,
-      "mtime": 1789635206
+      "mtime": 1789688159
     },
     {
       "path": "profiles/aroundit/runtime/active_sessions.lock",
@@ -9325,7 +9335,7 @@
     {
       "path": "profiles/aroundit/skills/.bundled_manifest",
       "size": 2727,
-      "mtime": 1789650042
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/skills/.curator_backups/2026-08-24T15-32-29Z/cron-jobs.json",
@@ -9414,8 +9424,8 @@
     },
     {
       "path": "profiles/aroundit/skills/.usage.json",
-      "size": 49380,
-      "mtime": 1789685384
+      "size": 49844,
+      "mtime": 1789688029
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -13390,12 +13400,12 @@
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
       "size": 183,
-      "mtime": 1789685693
+      "mtime": 1789689324
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
       "size": 151,
-      "mtime": 1789650042
+      "mtime": 1789689341
     },
     {
       "path": "profiles/aroundit/tmp/20260826_awesomeent_tax_invoice_supplier_official.pdf",
@@ -13456,6 +13466,11 @@
       "path": "profiles/aroundit/tmp/audit-0721-summary.txt",
       "size": 119051,
       "mtime": 1789338395
+    },
+    {
+      "path": "profiles/aroundit/tmp/audit-0820-recovered.txt",
+      "size": 127493,
+      "mtime": 1789687495
     },
     {
       "path": "profiles/aroundit/tmp/audit-0833-summary.txt",
@@ -13566,6 +13581,11 @@
       "path": "profiles/aroundit/tmp/audit_0647.py",
       "size": 1675,
       "mtime": 1789336108
+    },
+    {
+      "path": "profiles/aroundit/tmp/audit_0820_recover.py",
+      "size": 1370,
+      "mtime": 1789687462
     },
     {
       "path": "profiles/aroundit/tmp/audit_0833.py",
@@ -14301,6 +14321,26 @@
       "path": "profiles/aroundit/tmp/close_audit_0915_0900.py",
       "size": 2217,
       "mtime": 1789430791
+    },
+    {
+      "path": "profiles/aroundit/tmp/cnp-created-0820.json",
+      "size": 1140,
+      "mtime": 1789687643
+    },
+    {
+      "path": "profiles/aroundit/tmp/cnp-verified-0820.json",
+      "size": 3457,
+      "mtime": 1789687643
+    },
+    {
+      "path": "profiles/aroundit/tmp/cnp_context_0820.py",
+      "size": 1020,
+      "mtime": 1789687551
+    },
+    {
+      "path": "profiles/aroundit/tmp/cnp_create_0820.py",
+      "size": 6072,
+      "mtime": 1789687637
     },
     {
       "path": "profiles/aroundit/tmp/compact_gate_cron7_20260826.py",
@@ -15848,6 +15888,11 @@
       "mtime": 1789598209
     },
     {
+      "path": "profiles/aroundit/tmp/gmail-audit-0820-summary.txt",
+      "size": 84406,
+      "mtime": 1789687426
+    },
+    {
       "path": "profiles/aroundit/tmp/gmail-audit-0911-run.json",
       "size": 2434786,
       "mtime": 1789247554
@@ -16879,8 +16924,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-current-run.json",
-      "size": 14031301,
-      "mtime": 1789683468
+      "size": 13072380,
+      "mtime": 1789687495
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-current-stdout.txt",
@@ -17619,8 +17664,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-draft-feedback.json",
-      "size": 1226547,
-      "mtime": 1789683539
+      "size": 1217111,
+      "mtime": 1789687643
     },
     {
       "path": "profiles/aroundit/tmp/gmail-draft-readback-0915.json",
@@ -24955,51 +25000,6 @@
     {
       "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/__init__.py",
       "size": 1064,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_agent_identity_utils.py",
-      "size": 14031,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_cache.py",
-      "size": 1863,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_cloud_sdk.py",
-      "size": 5211,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_credentials_async.py",
-      "size": 10353,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_credentials_base.py",
-      "size": 2692,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_default.py",
-      "size": 31271,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_default_async.py",
-      "size": 11848,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_exponential_backoff.py",
-      "size": 5372,
-      "mtime": 1789022697
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/auth/_helpers.py",
-      "size": 17407,
       "mtime": 1789022697
     }
   ],
