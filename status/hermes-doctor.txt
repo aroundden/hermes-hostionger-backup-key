@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (600.8 MB)
+    → state.db: rollback journal mode (602.7 MB)
   ⚠ cron/executions.db is in WAL mode (696.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run a one-time offline 'PRAGMA journal_mode=DELETE' on the file)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run a one-time offline 'PRAGMA journal_mode=DELETE' on the file)
@@ -75,8 +75,8 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (985 sessions)
-    → state.db logical size 600.8 MB, 153,800 pages, 20 free, WAL 0 B
-    → 39,309 messages, 985 sessions, journal_mode=delete, 5 process(es) holding the DB open
+    → state.db logical size 602.7 MB, 154,284 pages, 586 free, WAL 0 B
+    → 39,389 messages, 985 sessions, journal_mode=delete, 5 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
