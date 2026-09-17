@@ -16,7 +16,7 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (595.1 MB)
+    → state.db: rollback journal mode (596.5 MB)
     → cron/executions.db: WAL journal mode (696.0 KB)
     → projects.db: WAL journal mode (44.0 KB)
     → verification_evidence.db: WAL journal mode (40.0 KB)
@@ -71,9 +71,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (982 sessions)
-    → state.db logical size 595.1 MB, 152,357 pages, 0 free, WAL 0 B
-    → 38,429 messages, 982 sessions, journal_mode=delete, 5 process(es) holding the DB open
+  ✓ ~/.hermes/profiles/den/state.db exists (984 sessions)
+    → state.db logical size 596.5 MB, 152,707 pages, 0 free, WAL 0 B
+    → 38,622 messages, 984 sessions, journal_mode=delete, 4 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -85,7 +85,7 @@ exit_code=0
   ✓ ripgrep (rg) (faster file search)
   ✓ docker (optional)
   ✓ Node.js
-  ✓ agent-browser (resolves via npx on first use)
+  ✓ agent-browser (browser automation)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 1 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
   ⚠ web workspace deps (0 critical, 1 high, 5 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
