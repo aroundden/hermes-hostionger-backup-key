@@ -1,6 +1,8 @@
 model:
   default: gpt-5.6-sol
   provider: openai-codex
+  base_url: https://chatgpt.com/backend-api/codex
+  api_mode: codex_responses
 fallback_providers:
   - provider: openai-codex
     model: gpt-5.3-codex-spark
@@ -15,6 +17,8 @@ toolsets:
   - browser-use
 database:
   journal_mode: delete
+agent:
+  reasoning_effort: medium
 terminal:
   cwd: /Users/insideden
 web:
@@ -26,23 +30,50 @@ browser:
 compression:
   codex_responses_native: true
 auxiliary:
+  compression:
+    provider: openai-codex
+    model: gpt-5.6-sol
+  review:
+    provider: openai-codex
+    model: gpt-6-astra
+  title_generation:
+    provider: openai-codex
+    model: gpt-5.6-sol
+  memory_query_rewrite:
+    provider: openai-codex
+    model: gpt-5.6-luna
+  monitor:
+    provider: openai-codex
+    model: gpt-5.6-sol
   background_review:
     enabled: false
-  title_generation:
-    model: gpt-5.6-luna
-    provider: openai-codex
-  monitor:
-    model: gpt-5.6-luna
-    provider: openai-codex
-  memory_query_rewrite:
-    model: gpt-5.6-luna
-    provider: openai-codex
-  compression:
-    model: gpt-5.6-sol
-    provider: openai-codex
-  review:
     model: gpt-6-astra
     provider: openai-codex
+  approval:
+    model: gpt-6-astra
+    provider: openai-codex
+  triage_specifier:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  kanban_decomposer:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  goal_judge:
+    model: gpt-6-astra
+    provider: openai-codex
+  curator:
+    model: gpt-5.6-sol
+    provider: openai-codex
+display:
+  platforms:
+    slack:
+      live_status: false
+      tool_progress: false
+      interim_assistant_messages: false
+      long_running_notifications: false
+      busy_ack_detail: false
+  tool_progress: all
+  cleanup_progress: false
 tts:
   provider: openai
 stt:
@@ -50,6 +81,9 @@ stt:
 memory:
   write_approval: true
   provider: mem0
+delegation:
+  model: gpt-6-astra
+  provider: openai-codex
 moa:
   presets:
     default:
@@ -352,18 +386,3 @@ mcp_servers:
     url: https://mcp.notion.com/mcp
     auth: oauth
     enabled: false
-agent:
-  reasoning_effort: medium
-display:
-  platforms:
-    slack:
-      live_status: false
-      tool_progress: false
-      interim_assistant_messages: false
-      long_running_notifications: false
-      busy_ack_detail: false
-  tool_progress: all
-  cleanup_progress: false
-delegation:
-  model: gpt-5.6-sol
-  provider: openai-codex

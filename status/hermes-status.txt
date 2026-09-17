@@ -41,8 +41,8 @@ exit_code=0
   Nous Portal   ✓ logged in
     Portal URL: https://portal.nousresearch.com
     Inference:  https://inference-api.nousresearch.com/v1
-    Access exp: 2026-09-17 21:12:27 KST
-    Key exp:    2026-09-17 21:12:27 KST
+    Access exp: 2026-09-17 22:42:29 KST
+    Key exp:    2026-09-17 22:42:29 KST
     Refresh: <REDACTED>
   OpenAI Codex  ✓ logged in
     Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
@@ -58,11 +58,11 @@ exit_code=0
 ◆ Nous Tool Gateway
   Nous Portal   ✓ managed tools available
   Web tools       ✗ included by subscription, not currently selected
-  Image generation ✓ active via Nous subscription
-  Video generation ✓ not configured
+  Image generation ✗ included by subscription, not currently selected
+  Video generation ✗ not configured
   OpenAI TTS      ✗ included by subscription, not currently selected
   Speech-to-text  ✓ active via Local faster-whisper
-  Browser automation ✓ active via Nous subscription
+  Browser automation ✓ active via Local browser
   Modal execution ✓ active via local
 
 ◆ API-Key Providers
@@ -120,16 +120,19 @@ exit_code=0
 ◆ Gateway Service
   Status:       ✓ running
   Manager:      launchd
-  PID(s):       51870, 51872
+  PID(s):       67089, 67081
 
 ◆ Scheduled Jobs
   Jobs:         5 active, 5 total
 
 ◆ Sessions
   Active:       77 session(s)
-  Last activity:       1h ago
+  Last activity:       2h ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
   Run 'hermes setup' to configure
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

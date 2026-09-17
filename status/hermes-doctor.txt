@@ -16,10 +16,13 @@ exit_code=0
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (598.9 MB)
-    → cron/executions.db: WAL journal mode (696.0 KB)
-    → projects.db: WAL journal mode (44.0 KB)
-    → verification_evidence.db: WAL journal mode (40.0 KB)
+    → state.db: rollback journal mode (600.8 MB)
+  ⚠ cron/executions.db is in WAL mode (696.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run a one-time offline 'PRAGMA journal_mode=DELETE' on the file)
+    → cron/executions.db: no other process holds it right now — the offline conversion can run
+  ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run a one-time offline 'PRAGMA journal_mode=DELETE' on the file)
+    → projects.db: no other process holds it right now — the offline conversion can run
+  ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run a one-time offline 'PRAGMA journal_mode=DELETE' on the file)
+    → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Virtual environment active
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
@@ -72,8 +75,8 @@ exit_code=0
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (985 sessions)
-    → state.db logical size 598.9 MB, 153,326 pages, 251 free, WAL 0 B
-    → 38,857 messages, 985 sessions, journal_mode=delete, 4 process(es) holding the DB open
+    → state.db logical size 600.8 MB, 153,800 pages, 20 free, WAL 0 B
+    → 39,309 messages, 985 sessions, journal_mode=delete, 5 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -86,6 +89,7 @@ exit_code=0
   ✓ docker (optional)
   ✓ Node.js
   ✓ agent-browser (browser automation)
+  ✓ Playwright Chromium (browser engine)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 1 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
   ⚠ web workspace deps (0 critical, 1 high, 5 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
@@ -106,7 +110,6 @@ exit_code=0
   ✓ delegation
   ✓ desktop_ui
   ✓ file
-  ✓ image_gen
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ✓ memory
   ✓ project
@@ -115,7 +118,6 @@ exit_code=0
   ✓ terminal
   ✓ todo
   ✓ video
-  ✓ video_gen
   ✓ vision
   ✓ web search (parallel)
   ✓ web extract (parallel)
@@ -128,8 +130,10 @@ exit_code=0
   ⚠ feishu_drive (system dependency not met)
   ⚠ hermes-yuanbao (system dependency not met)
   ⚠ homeassistant (system dependency not met)
+  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
   ⚠ spotify (system dependency not met)
   ⚠ tts (system dependency not met)
+  ⚠ video_gen (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub
@@ -144,15 +148,19 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gpt-5.6-sol
+  ✓   den: gateway running, gpt-5.6-sol
   ✓   smd: gateway running, gpt-5.6-sol
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 4 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
   2. Browser tools (agent-browser) has 2 npm vulnerabilities
   3. web workspace has 6 npm vulnerabilities
+  4. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

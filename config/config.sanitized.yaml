@@ -132,7 +132,7 @@ memory:
   flush_min_turns: 6
 delegation:
   max_iterations: 250
-  model: gpt-5.6-sol
+  model: gpt-6-astra
   provider: openai-codex
 skills:
   creation_nudge_interval: 15
@@ -177,10 +177,6 @@ gateway:
       chat_id: C0BJAQYGJ0M
       thread_id: '1784914798.541999'
       profile: aroundit
-  multiplex_profile_allowlist:
-    - den
-    - aroundit
-    - smd
 streaming:
   enabled: false
 onboarding:
@@ -190,7 +186,7 @@ updates:
   pre_update_backup: false
   backup_keep: 5
   non_interactive_local_changes: stash
-_config_version: 38
+_config_version: 45
 session_reset:
   mode: both
   idle_minutes: 1440
@@ -239,10 +235,10 @@ wake_word:
   enabled: true
 auxiliary:
   title_generation:
-    model: gpt-5.6-luna
+    model: gpt-5.6-sol
     provider: openai-codex
   monitor:
-    model: gpt-5.6-luna
+    model: gpt-5.6-sol
     provider: openai-codex
   memory_query_rewrite:
     model: gpt-5.6-luna
@@ -251,5 +247,23 @@ auxiliary:
     model: gpt-5.6-sol
     provider: openai-codex
   review:
+    model: gpt-6-astra
+    provider: openai-codex
+  approval:
+    model: gpt-6-astra
+    provider: openai-codex
+  triage_specifier:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  kanban_decomposer:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  goal_judge:
+    model: gpt-6-astra
+    provider: openai-codex
+  curator:
+    model: gpt-5.6-sol
+    provider: openai-codex
+  background_review:
     model: gpt-6-astra
     provider: openai-codex
