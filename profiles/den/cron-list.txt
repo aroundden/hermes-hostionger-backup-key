@@ -10,54 +10,54 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-09-17T09:37:34.245722+09:00
+    Next run:  2026-09-17T10:38:42.058103+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-17T07:36:45.394425+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-17T08:36:45.394425+09:00)
-    Execution: running  8ebf408425ef46d28ef8542acab0354e
+    Last run:  2026-09-17T08:37:53.930450+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-17T09:37:53.930450+09:00)
+    Execution: running  06e2a74f34574bffa8b59db864b4f477
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 5m
     Repeat:    ∞
-    Next run:  2026-09-17T08:40:34.549933+09:00
+    Next run:  2026-09-17T09:40:42.324417+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-09-14T03:48:37.747417+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-09-17T08:35:34.549933+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-17T08:34:33.644127+09:00)
-    Execution: completed  149bd3c658e54f1081a254352220c26c
+    Last run:  2026-09-17T09:35:42.324417+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-17T09:34:44.577489+09:00)
+    Execution: completed  95ccd3abcade46edb7fb5d5ff91c386c
 
   72963b1a5e65 [active]
     Name:      DEN Daily Guest & Idea Brief
     Schedule:  10 9 * * *
     Repeat:    ∞
-    Next run:  2026-09-17T09:10:00+09:00
+    Next run:  2026-09-18T09:10:00+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    content-operations-briefings, ticktick-operations, foreign-talent-casting-research, youtube-packaging-strategy, den-output-contract
     Script:    den_youtube_daily_collector.py
     Workdir:   /Users/insideden/.hermes/workspaces/den/research/planning_automation
-    Last run:  2026-09-16T09:10:43.825841+09:00  error: RuntimeError: HTTP 429: The usage limit has been reached
-    Dispatch:  on time (scheduled 2026-09-16T09:10:00+09:00)
-    Execution: failed  e483029c0ded426cb204543b7caa3306
+    Last run:  2026-09-17T09:21:12.254391+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-17T09:10:00+09:00)
+    Execution: completed  2e443f4d4d8c47a3848a456f6f6d083f
 
   169c1fa264fa [active]
     Name:      새 녹음 요약
     Schedule:  every 10m
     Repeat:    ∞
-    Next run:  2026-09-17T08:44:35.854228+09:00
+    Next run:  2026-09-17T09:47:44.093900+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Monitor:   recording_summary_monitor.py (agent runs only on output change)
     Changed:   2026-09-10T15:47:00.863486+09:00
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-09-17T08:34:35.854228+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-17T08:33:34.524406+09:00)
-    Execution: completed  27ab478db63942b9ae5c9a030fbfd775
+    Last run:  2026-09-17T09:37:44.093900+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-17T09:36:46.072335+09:00)
+    Execution: completed  44e7e992509d4433aa8c5bd34545017d
 
   4624d933404b [active]
     Name:      TickTick Member Worklog 마감순 정렬
