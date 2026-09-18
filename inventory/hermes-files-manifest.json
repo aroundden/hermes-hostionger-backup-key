@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 36547,
+  "count": 36558,
   "files": [
     {
       "path": "SOUL.md",
@@ -80,7 +80,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1789707431
+      "mtime": 1789711120
     },
     {
       "path": "cron/executions.db",
@@ -1359,18 +1359,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 17,
-      "mtime": 1789707452
-    },
-    {
-      "path": "cron/ticker_last_error",
-      "size": 137,
-      "mtime": 1789707452
+      "size": 18,
+      "mtime": 1789711120
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 16,
-      "mtime": 1789707432
+      "size": 18,
+      "mtime": 1789711120
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -1405,7 +1400,7 @@
     {
       "path": "profiles/aroundit/.codex_gpt55_autoraise_notice",
       "size": 17,
-      "mtime": 1789699734
+      "mtime": 1789708444
     },
     {
       "path": "profiles/aroundit/.curator_backups/blobs/01665233936ced0ad712b61259bbe59d01c255902a0d759ee37d6925f6517799",
@@ -3030,7 +3025,7 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1789706351
+      "mtime": 1789710342
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
@@ -6559,18 +6554,18 @@
     },
     {
       "path": "profiles/aroundit/cache/mcp_schema_cache.json",
-      "size": 99078,
-      "mtime": 1789705840
+      "size": 99079,
+      "mtime": 1789709135
     },
     {
       "path": "profiles/aroundit/cache/model_catalog.json",
       "size": 9228,
-      "mtime": 1789707074
+      "mtime": 1789710369
     },
     {
       "path": "profiles/aroundit/cache/nous_recommended_cache.json",
-      "size": 13946,
-      "mtime": 1789707074
+      "size": 13947,
+      "mtime": 1789710369
     },
     {
       "path": "profiles/aroundit/cache/oauth_heal_clean.json",
@@ -6580,7 +6575,7 @@
     {
       "path": "profiles/aroundit/cache/openrouter_curated_catalog.json",
       "size": 2802,
-      "mtime": 1789707074
+      "mtime": 1789710369
     },
     {
       "path": "profiles/aroundit/cache/openrouter_model_metadata.json",
@@ -6590,12 +6585,12 @@
     {
       "path": "profiles/aroundit/cache/plugin_toolset_keys.json",
       "size": 56,
-      "mtime": 1789705839
+      "mtime": 1789709134
     },
     {
       "path": "profiles/aroundit/cache/reasoning_caps.json",
-      "size": 45336,
-      "mtime": 1789707074
+      "size": 45274,
+      "mtime": 1789710369
     },
     {
       "path": "profiles/aroundit/cache/schema_columns.json",
@@ -6606,11 +6601,6 @@
       "path": "profiles/aroundit/cache/stella-register.py",
       "size": 3355,
       "mtime": 1789544192
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1789102161-34121-6010.log",
-      "size": 76750,
-      "mtime": 1789102161
     },
     {
       "path": "profiles/aroundit/cache/terminal-output/out-1789107138-34310-9f10.log",
@@ -7483,6 +7473,16 @@
       "mtime": 1789697767
     },
     {
+      "path": "profiles/aroundit/cache/terminal-output/out-1789710369-98495-5dd0.log",
+      "size": 82843,
+      "mtime": 1789710552
+    },
+    {
+      "path": "profiles/aroundit/cache/terminal-output/out-1789710896-98495-97d0.log",
+      "size": 79079,
+      "mtime": 1789710897
+    },
+    {
       "path": "profiles/aroundit/cache/tool_discovery_cache.json",
       "size": 27418,
       "mtime": 1789705840
@@ -8319,13 +8319,13 @@
     },
     {
       "path": "profiles/aroundit/channel_directory.json",
-      "size": 37729,
-      "mtime": 1789707292
+      "size": 38095,
+      "mtime": 1789710889
     },
     {
       "path": "profiles/aroundit/config.yaml",
-      "size": 7190,
-      "mtime": 1789648830
+      "size": 7174,
+      "mtime": 1789709111
     },
     {
       "path": "profiles/aroundit/context_length_cache.yaml",
@@ -8375,7 +8375,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1789707466
+      "mtime": 1789711124
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -8385,12 +8385,12 @@
     {
       "path": "profiles/aroundit/cron/executions.db",
       "size": 700416,
-      "mtime": 1789706353
+      "mtime": 1789710674
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 22174,
-      "mtime": 1789706353
+      "size": 22022,
+      "mtime": 1789710674
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -8586,16 +8586,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-24_10-02-40.md",
       "size": 54222,
       "mtime": 1787533360
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-17_08-47-58.md",
-      "size": 113846,
-      "mtime": 1789602478
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-17_09-23-05.md",
-      "size": 113846,
-      "mtime": 1789604585
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-17_10-00-54.md",
@@ -8838,6 +8828,16 @@
       "mtime": 1789706352
     },
     {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-18_14-15-22.md",
+      "size": 117215,
+      "mtime": 1789708522
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-09-18_14-51-13.md",
+      "size": 117215,
+      "mtime": 1789710673
+    },
+    {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
       "size": 2220,
       "mtime": 1789021926
@@ -8850,17 +8850,17 @@
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 18,
-      "mtime": 1789707466
+      "mtime": 1789711124
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
       "size": 18,
-      "mtime": 1789707466
+      "mtime": 1789711124
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 1057447,
-      "mtime": 1789706352
+      "size": 1058067,
+      "mtime": 1789710673
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
@@ -8880,17 +8880,17 @@
     {
       "path": "profiles/aroundit/gateway-starts.log",
       "size": 716,
-      "mtime": 1789705839
+      "mtime": 1789709134
     },
     {
       "path": "profiles/aroundit/gateway.lock",
       "size": 242,
-      "mtime": 1789705839
+      "mtime": 1789709134
     },
     {
       "path": "profiles/aroundit/gateway.pid",
       "size": 242,
-      "mtime": 1789705839
+      "mtime": 1789709134
     },
     {
       "path": "profiles/aroundit/gateway/restart_loop.json",
@@ -8900,7 +8900,7 @@
     {
       "path": "profiles/aroundit/gateway_state.json",
       "size": 927,
-      "mtime": 1789705841
+      "mtime": 1789710961
     },
     {
       "path": "profiles/aroundit/kmong_badges.applescript",
@@ -9199,8 +9199,8 @@
     },
     {
       "path": "profiles/aroundit/processes.json",
-      "size": 2,
-      "mtime": 1789705840
+      "size": 762,
+      "mtime": 1789710026
     },
     {
       "path": "profiles/aroundit/profile.yaml",
@@ -9230,7 +9230,7 @@
     {
       "path": "profiles/aroundit/runtime/active_sessions.json",
       "size": 15,
-      "mtime": 1789699796
+      "mtime": 1789710937
     },
     {
       "path": "profiles/aroundit/runtime/active_sessions.lock",
@@ -9310,7 +9310,7 @@
     {
       "path": "profiles/aroundit/skills/.bundled_manifest",
       "size": 2727,
-      "mtime": 1789705839
+      "mtime": 1789709144
     },
     {
       "path": "profiles/aroundit/skills/.curator_backups/2026-08-24T15-32-29Z/cron-jobs.json",
@@ -9405,7 +9405,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 50310,
-      "mtime": 1789706351
+      "mtime": 1789710858
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -13424,13 +13424,13 @@
     },
     {
       "path": "profiles/aroundit/state/gateway.heartbeat",
-      "size": 183,
-      "mtime": 1789707461
+      "size": 180,
+      "mtime": 1789711116
     },
     {
       "path": "profiles/aroundit/state/gateway.lifecycle.json",
-      "size": 152,
-      "mtime": 1789705839
+      "size": 151,
+      "mtime": 1789709134
     },
     {
       "path": "profiles/aroundit/tmp/20260826_awesomeent_tax_invoice_supplier_official.pdf",
@@ -13823,6 +13823,11 @@
       "mtime": 1789589729
     },
     {
+      "path": "profiles/aroundit/tmp/audit_0918_finalize_live.py",
+      "size": 3439,
+      "mtime": 1789708511
+    },
+    {
       "path": "profiles/aroundit/tmp/audit_0918_live_operation.py",
       "size": 3160,
       "mtime": 1789671701
@@ -13831,6 +13836,11 @@
       "path": "profiles/aroundit/tmp/audit_0918_resume.py",
       "size": 1808,
       "mtime": 1789663235
+    },
+    {
+      "path": "profiles/aroundit/tmp/audit_0918_resume_live.py",
+      "size": 2328,
+      "mtime": 1789708449
     },
     {
       "path": "profiles/aroundit/tmp/audit_1033.py",
@@ -14456,6 +14466,11 @@
       "path": "profiles/aroundit/tmp/connecting_reply_sep9.txt",
       "size": 608,
       "mtime": 1788940295
+    },
+    {
+      "path": "profiles/aroundit/tmp/connecting_requested_draft.py",
+      "size": 2706,
+      "mtime": 1789709813
     },
     {
       "path": "profiles/aroundit/tmp/connecting_settlement_reminder.py",
@@ -15738,6 +15753,11 @@
       "mtime": 1789540177
     },
     {
+      "path": "profiles/aroundit/tmp/finish_1530.py",
+      "size": 4146,
+      "mtime": 1789710666
+    },
+    {
       "path": "profiles/aroundit/tmp/finish_1530_operation.py",
       "size": 3562,
       "mtime": 1789367416
@@ -16568,6 +16588,16 @@
       "mtime": 1789704456
     },
     {
+      "path": "profiles/aroundit/tmp/gmail-audit-0918-141515-complete.json",
+      "size": 14477007,
+      "mtime": 1789708515
+    },
+    {
+      "path": "profiles/aroundit/tmp/gmail-audit-0918-1530.json",
+      "size": 14467629,
+      "mtime": 1789710615
+    },
+    {
       "path": "profiles/aroundit/tmp/gmail-audit-0918-current-complete.json",
       "size": 12665548,
       "mtime": 1789661114
@@ -17029,8 +17059,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-current-run.json",
-      "size": 13882323,
-      "mtime": 1789704405
+      "size": 13991762,
+      "mtime": 1789710551
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-current-stdout.txt",
@@ -17089,8 +17119,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-now-summary.txt",
-      "size": 84437,
-      "mtime": 1789689689
+      "size": 87289,
+      "mtime": 1789708405
     },
     {
       "path": "profiles/aroundit/tmp/gmail-audit-operation-summary.txt",
@@ -17784,8 +17814,8 @@
     },
     {
       "path": "profiles/aroundit/tmp/gmail-draft-feedback.json",
-      "size": 1229298,
-      "mtime": 1789704533
+      "size": 1242709,
+      "mtime": 1789710671
     },
     {
       "path": "profiles/aroundit/tmp/gmail-draft-readback-0915.json",
@@ -19878,6 +19908,11 @@
       "mtime": 1788412230
     },
     {
+      "path": "profiles/aroundit/tmp/italian_actress_reply.py",
+      "size": 2649,
+      "mtime": 1789710228
+    },
+    {
       "path": "profiles/aroundit/tmp/kas-profile-receipt-1031.txt",
       "size": 441,
       "mtime": 1789609002
@@ -20396,6 +20431,11 @@
       "path": "profiles/aroundit/tmp/nanase-shinsaimdang-0918.swift",
       "size": 2154,
       "mtime": 1789695558
+    },
+    {
+      "path": "profiles/aroundit/tmp/nanase_langdy_plan.md",
+      "size": 3341,
+      "mtime": 1789708591
     },
     {
       "path": "profiles/aroundit/tmp/netease-1336-verified.json",
@@ -21443,6 +21483,11 @@
       "mtime": 1789190695
     },
     {
+      "path": "profiles/aroundit/tmp/review_1530.py",
+      "size": 2850,
+      "mtime": 1789710602
+    },
+    {
       "path": "profiles/aroundit/tmp/review_1600.py",
       "size": 956,
       "mtime": 1789542288
@@ -22106,6 +22151,11 @@
       "path": "profiles/aroundit/tmp/update_connecting_mana_draft_20260904.py",
       "size": 4708,
       "mtime": 1788509553
+    },
+    {
+      "path": "profiles/aroundit/tmp/update_langdy_plan_draft.py",
+      "size": 4210,
+      "mtime": 1789708854
     },
     {
       "path": "profiles/aroundit/tmp/update_melody_party_decline_draft_20260830.py",
@@ -24950,56 +25000,6 @@
     {
       "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/__init__.py",
       "size": 1822,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/client_info.py",
-      "size": 2421,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/config.py",
-      "size": 6245,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/config_async.py",
-      "size": 1728,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/method.py",
-      "size": 11532,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/method_async.py",
-      "size": 2007,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/requests.py",
-      "size": 4581,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/gapic_v1/routing_header.py",
-      "size": 3093,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/general_helpers.py",
-      "size": 2284,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/grpc_helpers.py",
-      "size": 26347,
-      "mtime": 1788973006
-    },
-    {
-      "path": "profiles/aroundit/workspace/doc-form-venv/lib/python3.11/site-packages/google/api_core/grpc_helpers_async.py",
-      "size": 13208,
       "mtime": 1788973006
     }
   ],

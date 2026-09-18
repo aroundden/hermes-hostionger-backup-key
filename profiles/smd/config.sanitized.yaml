@@ -1,11 +1,9 @@
 model:
-  default: gpt-5.6-sol
+  default: gpt-6-astra
   provider: openai-codex
 fallback_providers:
   - provider: openai-codex
-    model: gpt-5.3-codex-spark
-  - provider: openai-codex
-    model: gpt-5.6-luna
+    model: gpt-6-astra
 credential_pool_strategies: <REDACTED>
   openai-codex: fill_first
 terminal:
@@ -22,16 +20,16 @@ auxiliary:
     model: gpt-6-astra
     provider: openai-codex
   title_generation:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
   monitor:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
   memory_query_rewrite:
-    model: gpt-5.6-luna
+    model: gpt-6-astra
     provider: openai-codex
   compression:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
   review:
     model: gpt-6-astra
@@ -40,16 +38,16 @@ auxiliary:
     model: gpt-6-astra
     provider: openai-codex
   triage_specifier:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
   kanban_decomposer:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
   goal_judge:
     model: gpt-6-astra
     provider: openai-codex
   curator:
-    model: gpt-5.6-sol
+    model: gpt-6-astra
     provider: openai-codex
 memory:
   write_approval: true
@@ -314,3 +312,5 @@ display:
 delegation:
   model: gpt-6-astra
   provider: openai-codex
+compression:
+  codex_gpt55_autoraise: false

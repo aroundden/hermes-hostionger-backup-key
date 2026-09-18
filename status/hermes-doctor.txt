@@ -57,7 +57,7 @@ exit_code=0
   ✓ No enabled plugin imports paths removed on 2026-09-14
 
 ◆ Auth Providers
-  ✓ Nous Portal auth (logged in)
+  ⚠ Nous Portal auth (not logged in)
   ✓ OpenAI Codex auth (logged in)
   ⚠ MiniMax OAuth (not logged in)
   ⚠ xAI OAuth (not logged in)
@@ -74,9 +74,9 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (992 sessions)
-    → state.db logical size 610.0 MB, 156,157 pages, 344 free, WAL 0 B
-    → 40,246 messages, 992 sessions, journal_mode=delete, 4 process(es) holding the DB open
+  ✓ ~/.hermes/profiles/den/state.db exists (993 sessions)
+    → state.db logical size 610.0 MB, 156,157 pages, 336 free, WAL 0 B
+    → 40,252 messages, 993 sessions, journal_mode=delete, 4 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -147,9 +147,9 @@ exit_code=0
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-5.6-sol
-  ✓   den: gateway running, gpt-5.6-sol
-  ✓   smd: gateway running, gpt-5.6-sol
+  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
   Found 4 issue(s) to address:
