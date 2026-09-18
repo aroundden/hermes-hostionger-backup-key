@@ -6,11 +6,8 @@ exit_code=0
  ───────────────    ───────────────────────────    ───────────    ───────────    ────────────────────
   default         gpt-5.6-sol                  stopped      —            —
   aroundit        gpt-5.6-sol                  running      aroundit     —
- ◆den             gpt-5.6-sol                  stopped      den          —
+ ◆den             gpt-5.6-sol                  running      den          —
   smd             gpt-5.6-sol                  running      smd          —
 
 ⚠ Profile 'den' shares its slack credential with default: <REDACTED>
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
