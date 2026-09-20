@@ -35,11 +35,11 @@ exit_code=0
     Name:      광고주 시트 변경 알림 — 에스피식
     Schedule:  */5 9-17 * * *
     Repeat:    ∞
-    Next run:  2026-09-20T10:50:00+09:00
+    Next run:  2026-09-20T11:50:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-20T10:45:49.257252+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request  (98 failures in a row)
-    Dispatch:  on time (scheduled 2026-09-20T10:45:00+09:00)
-    Execution: failed  52f9514c85e2487a96d62edb1df05a56
+    Last run:  2026-09-20T11:45:57.005085+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request  (110 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-20T11:45:00+09:00)
+    Execution: failed  442d87c095e349d7bea3171acfae39fe
 
