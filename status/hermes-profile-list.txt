@@ -6,8 +6,10 @@ exit_code=0
  ───────────────    ───────────────────────────    ───────────    ───────────    ────────────────────
   default         gpt-5.6-sol                  stopped      —            —
   aroundit        gpt-6-astra                  running      aroundit     —
- ◆den             gpt-6-astra                  running      den          —
+ ◆den             gpt-6-astra                  stopped      den          —
   smd             gpt-6-astra                  running      smd          —
 
 ⚠ Profile 'den' shares its slack credential with default: <REDACTED>
 
+  ⚠ serve [default] pid 32633: manual restart still pending; this process may still serve pre-update code.
+    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

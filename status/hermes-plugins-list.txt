@@ -1012,6 +1012,20 @@ exit_code=0
 │                      │             │         │ KEENABLE_API_KEY    │         │
 │                      │             │         │ for higher limits — │         │
 │                      │             │         │ https://keenable.a… │         │
+│ web-openai-native    │ not enabled │ 1.0.0   │ OpenAI native web   │ bundled │
+│                      │             │         │ search — declares   │         │
+│                      │             │         │ the Responses API   │         │
+│                      │             │         │ server-side         │         │
+│                      │             │         │ ``web_search``      │         │
+│                      │             │         │ built-in instead of │         │
+│                      │             │         │ running a           │         │
+│                      │             │         │ client-side search. │         │
+│                      │             │         │ Requires the Codex  │         │
+│                      │             │         │ Responses transport │         │
+│                      │             │         │ plus openai-codex   │         │
+│                      │             │         │ OAuth (``hermes     │         │
+│                      │             │         │ auth add            │         │
+│                      │             │         │ openai-codex``).    │         │
 │ web-parallel         │ not enabled │ 1.0.0   │ Parallel.ai web     │ bundled │
 │                      │             │         │ search + content    │         │
 │                      │             │         │ extraction. Search  │         │
@@ -1063,3 +1077,5 @@ Compact view: hermes plugins list --plain --no-bundled
 Interactive toggle: hermes plugins
 Enable/disable: hermes plugins enable/disable <name>
 Plugins are opt-in by default — only 'enabled' plugins load.
+  ⚠ serve [default] pid 32633: manual restart still pending; this process may still serve pre-update code.
+    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

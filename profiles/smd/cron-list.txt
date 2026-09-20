@@ -33,13 +33,13 @@ exit_code=0
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 에스피식
-    Schedule:  */5 9-17 * * *
+    Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-20T14:55:00+09:00
+    Next run:  2026-09-21T09:00:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-20T14:50:18.737382+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-20T14:50:00+09:00)
-    Execution: completed  f26c038cf04c4c448d6271afdd833992
+    Last run:  2026-09-20T15:20:59.555687+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-20T15:20:00+09:00)
+    Execution: completed  af85324b23b643de936c371e03b3561c
 

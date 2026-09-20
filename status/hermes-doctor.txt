@@ -47,6 +47,7 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
+  ✓ auxiliary task routing resolves: approval→openai-codex@chatgpt.com, background_review→openai-codex@chatgpt.com, compression→openai-codex@chatgpt.com, curator→openai-codex@chatgpt.com, goal_judge→openai-codex@chatgpt.com, kanban_decomposer→openai-codex@chatgpt.com, memory_query_rewrite→openai-codex@chatgpt.com, monitor→openai-codex@chatgpt.com, review→openai-codex@chatgpt.com, title_generation→openai-codex@chatgpt.com, triage_specifier→openai-codex@chatgpt.com
   ✓ Config version up to date (v45)
   ✓ No deprecated config keys or env vars
 
@@ -57,7 +58,7 @@ exit_code=0
   ✓ No enabled plugin imports paths removed on 2026-09-14
 
 ◆ Auth Providers
-  ⚠ Nous Portal auth (not logged in)
+  ✓ Nous Portal auth (logged in)
   ✓ OpenAI Codex auth (logged in)
   ⚠ MiniMax OAuth (not logged in)
   ⚠ xAI OAuth (not logged in)
@@ -70,13 +71,15 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 0 B, pruned after 72h)
+    → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1005 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 442 free, WAL 0 B
-    → 40,678 messages, 1,005 sessions, journal_mode=delete, 3 process(es) holding the DB open
+  ✓ ~/.hermes/profiles/den/state.db exists (1007 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 20,483 free, WAL 0 B
+    → 40,845 messages, 1,007 sessions, journal_mode=delete, 5 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -86,18 +89,18 @@ exit_code=0
 ◆ External Tools
   ✓ git
   ✓ ripgrep (rg) (faster file search)
-  ✓ docker (optional)
+  ✓ Docker (optional)
   ✓ Node.js
   ✓ agent-browser (browser automation)
-  ✓ Playwright Chromium (browser engine)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 1 moderate — run: cd /Users/insideden/.hermes/hermes-agent && npm audit fix --workspaces=false)
   ⚠ web workspace deps (0 critical, 1 high, 5 moderate — build-tool advisory; clears via lockfile bump)
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
   ✓ ui-tui workspace deps (2 moderate vulnerabilities)
 
 ◆ API Connectivity
-  Running 40 connectivity checks in parallel…
+  Running 41 connectivity checks in parallel…
                                                                       
+  ✓ IPv6 route (no IPv6 route — IPv4 only)
   ⚠ OpenRouter API (not configured)
 
 ◆ Tool Availability
@@ -110,6 +113,7 @@ exit_code=0
   ✓ delegation
   ✓ desktop_ui
   ✓ file
+  ✓ image_gen
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ✓ memory
   ✓ project
@@ -118,6 +122,7 @@ exit_code=0
   ✓ terminal
   ✓ todo
   ✓ video
+  ✓ video_gen
   ✓ vision
   ✓ web search (parallel)
   ✓ web extract (parallel)
@@ -130,10 +135,8 @@ exit_code=0
   ⚠ feishu_drive (system dependency not met)
   ⚠ hermes-yuanbao (system dependency not met)
   ⚠ homeassistant (system dependency not met)
-  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
   ⚠ spotify (system dependency not met)
   ⚠ tts (system dependency not met)
-  ⚠ video_gen (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub
@@ -148,16 +151,17 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
+  ✓   den: gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
+  Found 3 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
   2. Browser tools (agent-browser) has 2 npm vulnerabilities
   3. web workspace has 6 npm vulnerabilities
-  4. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
+  ⚠ serve [default] pid 32633: manual restart still pending; this process may still serve pre-update code.
+    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

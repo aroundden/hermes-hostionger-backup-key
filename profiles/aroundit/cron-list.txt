@@ -6,18 +6,6 @@ exit_code=0
 │                         Scheduled Jobs                                  │
 └─────────────────────────────────────────────────────────────────────────┘
 
-  a74bb2d8bc4c [active]
-    Name:      gmail-auto-draft-replies
-    Schedule:  every 30m
-    Repeat:    ∞
-    Next run:  2026-09-20T14:56:58.033317+09:00
-    Deliver:   slack:C0BHVB49WH5
-    Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
-    Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-20T14:26:58.033317+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-20T14:20:17.996230+09:00)
-    Execution: completed  35102de139844214953870c690972f8d
-
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
     Schedule:  0 10 24 * *
@@ -30,7 +18,7 @@ exit_code=0
 
   53b7de942303 [active]
     Name:      gmail-daily-deadline-reminder
-    Schedule:  0 9 * * *
+    Schedule:  0 9 * * 1-6
     Repeat:    ∞
     Next run:  2026-09-21T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
