@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-09-20T08:56:21.010397+09:00
+    Next run:  2026-09-20T09:57:28.441732+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-20T08:26:21.010397+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request  (73 failures in a row)
-    Dispatch:  on time (scheduled 2026-09-20T08:25:16.948666+09:00)
-    Execution: failed  1ba11447fdad4608b257839806b5f7bc
+    Last run:  2026-09-20T09:27:28.441732+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request  (75 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-20T09:27:22.697530+09:00)
+    Execution: failed  840ef550105046d28d0d2dca1eabe2ce
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -32,12 +32,12 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * *
     Repeat:    ∞
-    Next run:  2026-09-20T09:00:00+09:00
+    Next run:  2026-09-21T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-19T09:00:40.611926+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request
-    Dispatch:  on time (scheduled 2026-09-19T09:00:00+09:00)
-    Execution: failed  42a1df12fd4e48068cf0f27320c10830
+    Last run:  2026-09-20T09:00:51.719936+09:00  error: RuntimeError: HTTP 401: Encountered invalidated oauth token for user, failing request  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-20T09:00:00+09:00)
+    Execution: failed  4736bb88ca374096aac3562e1ea1fb8a
 
