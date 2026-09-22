@@ -10,36 +10,36 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-22T09:30:00+09:00
+    Next run:  2026-09-23T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
     Last run:  2026-09-21T09:31:34.759102+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-21T09:30:00+09:00)
-    Execution: completed  9f08a9ee220f45cf8b16c921a212b69b
+    Dispatch:  on time (scheduled 2026-09-22T09:30:00+09:00)
+    Execution: running  0e379afa13f34c5dac0b39abf1731a9e
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-22T09:31:00+09:00
+    Next run:  2026-09-23T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-21T09:31:44.094030+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-21T09:31:00+09:00)
-    Execution: completed  ec6fa9eb8be34968aec8f62862546abf
+    Last run:  2026-09-22T09:32:07.494260+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-22T09:31:00+09:00)
+    Execution: completed  45670c40e5034151836132bf45798d8c
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 에스피식
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-22T09:00:00+09:00
+    Next run:  2026-09-22T09:45:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-21T17:45:06.476104+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-21T17:45:00+09:00)
-    Execution: completed  f712821c852e451bbc97ff4c25518c03
+    Last run:  2026-09-22T09:30:04.703367+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-22T09:30:00+09:00)
+    Execution: completed  0b6e96775cd94459bd34b2ccaa50afb4
 
