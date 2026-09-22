@@ -79,7 +79,7 @@ exit_code=0
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1012 sessions)
     → state.db logical size 614.1 MB, 157,202 pages, 20,109 free, WAL 0 B
-    → 41,007 messages, 1,012 sessions, journal_mode=delete, 4 process(es) holding the DB open
+    → 41,007 messages, 1,012 sessions, journal_mode=delete, 3 process(es) holding the DB open
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -88,10 +88,13 @@ exit_code=0
 
 ◆ External Tools
   ✓ git
-  ⚠ ripgrep (rg) not found (file search uses grep fallback)
-    → Install for faster search: brew install ripgrep
+  ✓ ripgrep (rg) (faster file search)
   ✓ Docker (optional)
-  ⚠ Node.js not found (optional, needed for browser tools)
+  ✓ Node.js
+  ✓ agent-browser (browser automation)
+  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
+  ✓ web workspace deps (2 moderate vulnerabilities)
+  ✓ ui-tui workspace deps (2 moderate vulnerabilities)
 
 ◆ API Connectivity
   Running 42 connectivity checks in parallel…
@@ -138,7 +141,7 @@ exit_code=0
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
 
 ◆ Memory Provider
   ✓ Mem0 API key configured
@@ -147,7 +150,7 @@ exit_code=0
 ◆ Profiles
   ✓ 3 profile(s) found
   ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
+  ✓   den: gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
@@ -157,5 +160,3 @@ exit_code=0
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
-  ⚠ serve [default] pid 32633: manual restart still pending; this process may still serve pre-update code.
-    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).
