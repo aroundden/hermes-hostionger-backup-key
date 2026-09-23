@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-24T02:16:41.661423+09:00
+    Next run:  2026-09-24T03:24:20.545983+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-24T02:01:41.661423+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-24T01:50:31.606183+09:00)
-    Execution: completed  24685751c400433c9f826a09e3732165
+    Last run:  2026-09-24T02:53:23.017971+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-24T03:08:23.017971+09:00)
+    Execution: running  224aa6305bdd45b7b67a9a7a0648c5d1
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -51,4 +51,12 @@ exit_code=0
     Last run:  2026-09-23T22:40:00.435217+09:00  ok
     Dispatch:  on time (scheduled 2026-09-23T22:38:12.663520+09:00)
     Execution: completed  86602b8cb9fa4d9ca385ae969752e8d5
+
+  7b42d002665a [active]
+    Name:      클로바노트 새 녹음 → TickTick 주제 카드
+    Schedule:  every 60m
+    Repeat:    ∞
+    Next run:  2026-09-24T03:47:42.893811+09:00
+    Deliver:   origin
+    Skills:    clovanote-ticktick-capture, aside-browser-operations, ticktick-operations, den-output-contract
 
