@@ -6,7 +6,7 @@ exit_code=0
 ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Name                 ┃ Status      ┃ Version ┃ Description         ┃ Source  ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
-│ browser-browser-use  │ not enabled │ 1.0.0   │ Browser Use         │ bundled │
+│ browser-browser-use  │ enabled     │ 1.0.0   │ Browser Use         │ bundled │
 │                      │             │         │ (https://browser-u… │         │
 │                      │             │         │ cloud browser       │         │
 │                      │             │         │ backend. Supports   │         │
@@ -19,7 +19,7 @@ exit_code=0
 │                      │             │         │ UX flow that bills  │         │
 │                      │             │         │ usage to a Nous     │         │
 │                      │             │         │ subscription.       │         │
-│ browser-browserbase  │ not enabled │ 1.0.0   │ Browserbase         │ bundled │
+│ browser-browserbase  │ enabled     │ 1.0.0   │ Browserbase         │ bundled │
 │                      │             │         │ (https://browserba… │         │
 │                      │             │         │ cloud browser       │         │
 │                      │             │         │ backend. Requires   │         │
@@ -33,7 +33,7 @@ exit_code=0
 │                      │             │         │ auto-falls-back     │         │
 │                      │             │         │ when paid features  │         │
 │                      │             │         │ are unavailable.    │         │
-│ browser-firecrawl    │ not enabled │ 1.0.0   │ Firecrawl           │ bundled │
+│ browser-firecrawl    │ enabled     │ 1.0.0   │ Firecrawl           │ bundled │
 │                      │             │         │ (https://firecrawl… │         │
 │                      │             │         │ cloud browser       │         │
 │                      │             │         │ backend. Requires   │         │
@@ -70,7 +70,7 @@ exit_code=0
 │                      │             │         │ webhook. Inert      │         │
 │                      │             │         │ unless              │         │
 │                      │             │         │ cron.provider=chro… │         │
-│ basic                │ not enabled │ 1.0.0   │ Dashboard auth      │ bundled │
+│ basic                │ enabled     │ 1.0.0   │ Dashboard auth      │ bundled │
 │                      │             │         │ provider —          │         │
 │                      │             │         │ username/password   │         │
 │                      │             │         │ (no OAuth IDP). A   │         │
@@ -101,7 +101,7 @@ exit_code=0
 │                      │             │         │ restart-surviving / │         │
 │                      │             │         │ multi-worker        │         │
 │                      │             │         │ sessions.           │         │
-│ drain                │ not enabled │ 1.0.0   │ Dashboard auth      │ bundled │
+│ drain                │ enabled     │ 1.0.0   │ Dashboard auth      │ bundled │
 │                      │             │         │ provider —          │         │
 │                      │             │         │ non-interactive     │         │
 │                      │             │         │ shared-bearer-secr… │         │
@@ -141,7 +141,7 @@ exit_code=0
 │                      │             │         │ live under          │         │
 │                      │             │         │ dashboard.drain_au… │         │
 │                      │             │         │ in config.yaml.     │         │
-│ nous                 │ not enabled │ 1.0.0   │ Dashboard auth      │ bundled │
+│ nous                 │ enabled     │ 1.0.0   │ Dashboard auth      │ bundled │
 │                      │             │         │ provider — OAuth    │         │
 │                      │             │         │ 2.0                 │         │
 │                      │             │         │ (authorization-code │         │
@@ -167,7 +167,7 @@ exit_code=0
 │                      │             │         │ are optional and    │         │
 │                      │             │         │ default to          │         │
 │                      │             │         │ https://portal.nou… │         │
-│ self-hosted          │ not enabled │ 1.0.0   │ Dashboard auth      │ bundled │
+│ self-hosted          │ enabled     │ 1.0.0   │ Dashboard auth      │ bundled │
 │                      │             │         │ provider — generic  │         │
 │                      │             │         │ self-hosted OpenID  │         │
 │                      │             │         │ Connect             │         │
@@ -243,7 +243,7 @@ exit_code=0
 │                      │             │         │ URLs passed in — no │         │
 │                      │             │         │ calendar scanning,  │         │
 │                      │             │         │ no auto-dial.       │         │
-│ deepinfra            │ not enabled │ 1.0.0   │ DeepInfra image     │ bundled │
+│ deepinfra            │ enabled     │ 1.0.0   │ DeepInfra image     │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (FLUX, Qwen-Image,  │         │
 │                      │             │         │ …) via              │         │
@@ -252,7 +252,7 @@ exit_code=0
 │                      │             │         │ Catalog discovered  │         │
 │                      │             │         │ live from           │         │
 │                      │             │         │ api.deepinfra.com.  │         │
-│ fal                  │ not enabled │ 1.0.0   │ FAL.ai image        │ bundled │
+│ fal                  │ enabled     │ 1.0.0   │ FAL.ai image        │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (flux-2-klein,      │         │
 │                      │             │         │ flux-2-pro,         │         │
@@ -260,7 +260,7 @@ exit_code=0
 │                      │             │         │ nano-banana-pro,    │         │
 │                      │             │         │ gpt-image-1.5,      │         │
 │                      │             │         │ recraft-v3, etc.).  │         │
-│ krea                 │ not enabled │ 1.1.0   │ Krea image          │ bundled │
+│ krea                 │ enabled     │ 1.1.0   │ Krea image          │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (Krea 2 Large +     │         │
 │                      │             │         │ Medium + Medium     │         │
@@ -270,7 +270,7 @@ exit_code=0
 │                      │             │         │ managed Nous        │         │
 │                      │             │         │ Subscription        │         │
 │                      │             │         │ gateway.            │         │
-│ meta-ai-image-gen    │ not enabled │ 1.0.0   │ Meta Model API      │ bundled │
+│ meta-ai-image-gen    │ enabled     │ 1.0.0   │ Meta Model API      │ bundled │
 │                      │             │         │ image generation    │         │
 │                      │             │         │ backend             │         │
 │                      │             │         │ (muse-image).       │         │
@@ -278,7 +278,7 @@ exit_code=0
 │                      │             │         │ /v1/images/generat… │         │
 │                      │             │         │ Saves images to     │         │
 │                      │             │         │ $HERMES_HOME/cache… │         │
-│ openai               │ not enabled │ 1.0.0   │ OpenAI image        │ bundled │
+│ openai               │ enabled     │ 1.0.0   │ OpenAI image        │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (GPT Image 2 and    │         │
 │                      │             │         │ GPT Image 2.5       │         │
@@ -286,7 +286,7 @@ exit_code=0
 │                      │             │         │ Saves generated     │         │
 │                      │             │         │ images to           │         │
 │                      │             │         │ $HERMES_HOME/cache… │         │
-│ openai-codex         │ not enabled │ 1.0.0   │ OpenAI image        │ bundled │
+│ openai-codex         │ enabled     │ 1.0.0   │ OpenAI image        │ bundled │
 │                      │             │         │ generation backed   │         │
 │                      │             │         │ by ChatGPT/Codex    │         │
 │                      │             │         │ OAuth (gpt-image-2  │         │
@@ -297,7 +297,7 @@ exit_code=0
 │                      │             │         │ endpoints). Saves   │         │
 │                      │             │         │ generated images to │         │
 │                      │             │         │ $HERMES_HOME/cache… │         │
-│ openrouter           │ not enabled │ 1.1.0   │ OpenRouter + Nous   │ bundled │
+│ openrouter           │ enabled     │ 1.1.0   │ OpenRouter + Nous   │ bundled │
 │                      │             │         │ Portal image        │         │
 │                      │             │         │ generation.         │         │
 │                      │             │         │ Chat-completions    │         │
@@ -318,7 +318,7 @@ exit_code=0
 │                      │             │         │ images.             │         │
 │                      │             │         │ Text-to-image and   │         │
 │                      │             │         │ image-to-image.     │         │
-│ xai                  │ not enabled │ 1.0.0   │ xAI image           │ bundled │
+│ xai                  │ enabled     │ 1.0.0   │ xAI image           │ bundled │
 │                      │             │         │ generation backend  │         │
 │                      │             │         │ (grok-imagine-imag… │         │
 │                      │             │         │ Text-to-image.      │         │
@@ -334,7 +334,7 @@ exit_code=0
 │                      │             │         │ or `hermes tools →  │         │
 │                      │             │         │ Langfuse            │         │
 │                      │             │         │ Observability`.     │         │
-│ a2a-platform         │ not enabled │ 1.0.0   │ A2A                 │ bundled │
+│ a2a-platform         │ enabled     │ 1.0.0   │ A2A                 │ bundled │
 │                      │             │         │ (Agent-to-Agent)    │         │
 │                      │             │         │ protocol v1.0       │         │
 │                      │             │         │ support for Hermes  │         │
@@ -411,7 +411,7 @@ exit_code=0
 │                      │             │         │ a2a-sdk dependency  │         │
 │                      │             │         │ required.           │         │
 │                      │             │         │                     │         │
-│ buzz-platform        │ not enabled │ 1.0.0   │ Buzz gateway        │ bundled │
+│ buzz-platform        │ enabled     │ 1.0.0   │ Buzz gateway        │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ a Buzz community    │         │
@@ -433,7 +433,7 @@ exit_code=0
 │                      │             │         │ bundled HTTP        │         │
 │                      │             │         │ client.             │         │
 │                      │             │         │                     │         │
-│ dingtalk-platform    │ not enabled │ 1.0.0   │ DingTalk gateway    │ bundled │
+│ dingtalk-platform    │ enabled     │ 1.0.0   │ DingTalk gateway    │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ DingTalk via the    │         │
@@ -452,7 +452,7 @@ exit_code=0
 │                      │             │         │ chats, and per-user │         │
 │                      │             │         │ allowlists.         │         │
 │                      │             │         │                     │         │
-│ discord-platform     │ not enabled │ 1.0.0   │ Discord gateway     │ bundled │
+│ discord-platform     │ enabled     │ 1.0.0   │ Discord gateway     │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ Discord via the     │         │
@@ -471,7 +471,7 @@ exit_code=0
 │                      │             │         │ and channel skill   │         │
 │                      │             │         │ bindings.           │         │
 │                      │             │         │                     │         │
-│ email-platform       │ not enabled │ 1.0.0   │ Email gateway       │ bundled │
+│ email-platform       │ enabled     │ 1.0.0   │ Email gateway       │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Polls an     │         │
 │                      │             │         │ IMAP mailbox for    │         │
@@ -482,7 +482,7 @@ exit_code=0
 │                      │             │         │ and from the Hermes │         │
 │                      │             │         │ agent.              │         │
 │                      │             │         │                     │         │
-│ feishu-platform      │ not enabled │ 1.0.0   │ Feishu / Lark       │ bundled │
+│ feishu-platform      │ enabled     │ 1.0.0   │ Feishu / Lark       │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Connects to Feishu  │         │
@@ -505,7 +505,7 @@ exit_code=0
 │                      │             │         │ events, and meeting │         │
 │                      │             │         │ invites.            │         │
 │                      │             │         │                     │         │
-│ google_chat-platform │ not enabled │ 1.0.0   │ Google Chat gateway │ bundled │
+│ google_chat-platform │ enabled     │ 1.0.0   │ Google Chat gateway │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects     │         │
 │                      │             │         │ through             │         │
@@ -526,7 +526,7 @@ exit_code=0
 │                      │             │         │ /setup-files once   │         │
 │                      │             │         │ in their own DM).   │         │
 │                      │             │         │                     │         │
-│ homeassistant-platf… │ not enabled │ 1.0.0   │ Home Assistant      │ bundled │
+│ homeassistant-platf… │ enabled     │ 1.0.0   │ Home Assistant      │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Subscribes to HA's  │         │
@@ -549,7 +549,7 @@ exit_code=0
 │                      │             │         │ service is also     │         │
 │                      │             │         │ supported.          │         │
 │                      │             │         │                     │         │
-│ irc-platform         │ not enabled │ 1.0.0   │ IRC gateway adapter │ bundled │
+│ irc-platform         │ enabled     │ 1.0.0   │ IRC gateway adapter │ bundled │
 │                      │             │         │ for Hermes Agent.   │         │
 │                      │             │         │ Connects to an IRC  │         │
 │                      │             │         │ server and relays   │         │
@@ -562,7 +562,7 @@ exit_code=0
 │                      │             │         │ asyncio for the IRC │         │
 │                      │             │         │ protocol.           │         │
 │                      │             │         │                     │         │
-│ line-platform        │ not enabled │ 1.0.0   │ LINE Messaging API  │ bundled │
+│ line-platform        │ enabled     │ 1.0.0   │ LINE Messaging API  │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent. Runs  │         │
 │                      │             │         │ an aiohttp webhook  │         │
@@ -594,7 +594,7 @@ exit_code=0
 │                      │             │         │ (free) once it's    │         │
 │                      │             │         │ ready.              │         │
 │                      │             │         │                     │         │
-│ matrix-platform      │ not enabled │ 1.0.0   │ Matrix gateway      │ bundled │
+│ matrix-platform      │ enabled     │ 1.0.0   │ Matrix gateway      │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ a Matrix homeserver │         │
@@ -613,7 +613,7 @@ exit_code=0
 │                      │             │         │ rooms, and per-room │         │
 │                      │             │         │ allowlists.         │         │
 │                      │             │         │                     │         │
-│ mattermost-platform  │ not enabled │ 1.0.0   │ Mattermost gateway  │ bundled │
+│ mattermost-platform  │ enabled     │ 1.0.0   │ Mattermost gateway  │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ a self-hosted or    │         │
@@ -635,7 +635,7 @@ exit_code=0
 │                      │             │         │ home-channel cron   │         │
 │                      │             │         │ delivery.           │         │
 │                      │             │         │                     │         │
-│ ntfy-platform        │ not enabled │ 1.0.0   │ ntfy                │ bundled │
+│ ntfy-platform        │ enabled     │ 1.0.0   │ ntfy                │ bundled │
 │                      │             │         │ push-notification   │         │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
@@ -665,7 +665,7 @@ exit_code=0
 │                      │             │         │ real trust          │         │
 │                      │             │         │ boundary.           │         │
 │                      │             │         │                     │         │
-│ photon-platform      │ not enabled │ 0.3.0   │ Photon Spectrum     │ bundled │
+│ photon-platform      │ enabled     │ 0.3.0   │ Photon Spectrum     │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Connects to         │         │
@@ -717,7 +717,7 @@ exit_code=0
 │                      │             │         │ started without a   │         │
 │                      │             │         │ paid plan.          │         │
 │                      │             │         │                     │         │
-│ raft-platform        │ not enabled │ 1.0.0   │ Raft gateway        │ bundled │
+│ raft-platform        │ enabled     │ 1.0.0   │ Raft gateway        │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ a Raft workspace as │         │
@@ -742,7 +742,7 @@ exit_code=0
 │                      │             │         │ message bodies or   │         │
 │                      │             │         │ delivery cursors.   │         │
 │                      │             │         │                     │         │
-│ simplex-platform     │ not enabled │ 1.1.0   │ SimpleX Chat        │ bundled │
+│ simplex-platform     │ enabled     │ 1.1.0   │ SimpleX Chat        │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Connects to a local │         │
@@ -765,7 +765,7 @@ exit_code=0
 │                      │             │         │ messengers          │         │
 │                      │             │         │ available.          │         │
 │                      │             │         │                     │         │
-│ slack-platform       │ not enabled │ 1.0.0   │ Slack gateway       │ bundled │
+│ slack-platform       │ enabled     │ 1.0.0   │ Slack gateway       │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ Slack via           │         │
@@ -784,7 +784,7 @@ exit_code=0
 │                      │             │         │ gating, and channel │         │
 │                      │             │         │ skill bindings.     │         │
 │                      │             │         │                     │         │
-│ sms-platform         │ not enabled │ 1.0.0   │ SMS gateway adapter │ bundled │
+│ sms-platform         │ enabled     │ 1.0.0   │ SMS gateway adapter │ bundled │
 │                      │             │         │ for Hermes Agent    │         │
 │                      │             │         │ via Twilio. Sends   │         │
 │                      │             │         │ and receives SMS    │         │
@@ -798,7 +798,7 @@ exit_code=0
 │                      │             │         │ stripped to plain   │         │
 │                      │             │         │ text.               │         │
 │                      │             │         │                     │         │
-│ teams-platform       │ not enabled │ 1.0.0   │ Microsoft Teams     │ bundled │
+│ teams-platform       │ enabled     │ 1.0.0   │ Microsoft Teams     │ bundled │
 │                      │             │         │ gateway adapter for │         │
 │                      │             │         │ Hermes Agent.       │         │
 │                      │             │         │ Connects to         │         │
@@ -814,7 +814,7 @@ exit_code=0
 │                      │             │         │ Card approval       │         │
 │                      │             │         │ prompts.            │         │
 │                      │             │         │                     │         │
-│ telegram-platform    │ not enabled │ 1.0.0   │ Telegram gateway    │ bundled │
+│ telegram-platform    │ enabled     │ 1.0.0   │ Telegram gateway    │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ Telegram via        │         │
@@ -838,7 +838,7 @@ exit_code=0
 │                      │             │         │ per-user/chat       │         │
 │                      │             │         │ allowlists.         │         │
 │                      │             │         │                     │         │
-│ wecom-platform       │ not enabled │ 1.0.0   │ WeCom / Enterprise  │ bundled │
+│ wecom-platform       │ enabled     │ 1.0.0   │ WeCom / Enterprise  │ bundled │
 │                      │             │         │ WeChat gateway      │         │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Registers    │         │
@@ -856,7 +856,7 @@ exit_code=0
 │                      │             │         │ WeCom chats and the │         │
 │                      │             │         │ Hermes agent.       │         │
 │                      │             │         │                     │         │
-│ whatsapp-platform    │ not enabled │ 1.0.0   │ WhatsApp gateway    │ bundled │
+│ whatsapp-platform    │ enabled     │ 1.0.0   │ WhatsApp gateway    │ bundled │
 │                      │             │         │ adapter for Hermes  │         │
 │                      │             │         │ Agent. Connects to  │         │
 │                      │             │         │ WhatsApp via a      │         │
@@ -901,7 +901,7 @@ exit_code=0
 │                      │             │         │ in the next turn so │         │
 │                      │             │         │ it can              │         │
 │                      │             │         │ self-correct.       │         │
-│ spotify              │ not enabled │ 1.0.0   │ Native Spotify      │ bundled │
+│ spotify              │ enabled     │ 1.0.0   │ Native Spotify      │ bundled │
 │                      │             │         │ integration — 7     │         │
 │                      │             │         │ tools (playback,    │         │
 │                      │             │         │ devices, queue,     │         │
@@ -923,7 +923,7 @@ exit_code=0
 │                      │             │         │ for Graph-backed    │         │
 │                      │             │         │ transcript-first    │         │
 │                      │             │         │ meeting summaries.  │         │
-│ deepinfra            │ not enabled │ 1.0.0   │ DeepInfra video     │ bundled │
+│ deepinfra            │ enabled     │ 1.0.0   │ DeepInfra video     │ bundled │
 │                      │             │         │ generation          │         │
 │                      │             │         │ (text-to-video &    │         │
 │                      │             │         │ image-to-video) via │         │
@@ -934,7 +934,7 @@ exit_code=0
 │                      │             │         │ discovered live     │         │
 │                      │             │         │ from                │         │
 │                      │             │         │ api.deepinfra.com.  │         │
-│ fal                  │ not enabled │ 1.0.0   │ FAL.ai video        │ bundled │
+│ fal                  │ enabled     │ 1.0.0   │ FAL.ai video        │ bundled │
 │                      │             │         │ generation backend. │         │
 │                      │             │         │ Multi-model — Veo   │         │
 │                      │             │         │ 3.1, Kling,         │         │
@@ -943,7 +943,7 @@ exit_code=0
 │                      │             │         │ image-to-video via  │         │
 │                      │             │         │ fal_client's queue  │         │
 │                      │             │         │ API.                │         │
-│ openrouter           │ not enabled │ 1.0.0   │ OpenRouter video    │ bundled │
+│ openrouter           │ enabled     │ 1.0.0   │ OpenRouter video    │ bundled │
 │                      │             │         │ generation backend. │         │
 │                      │             │         │ Every generative    │         │
 │                      │             │         │ model on the        │         │
@@ -959,7 +959,7 @@ exit_code=0
 │                      │             │         │ catalog and         │         │
 │                      │             │         │ per-model limits    │         │
 │                      │             │         │ discovered live.    │         │
-│ xai                  │ not enabled │ 1.0.0   │ xAI Grok Imagine    │ bundled │
+│ xai                  │ enabled     │ 1.0.0   │ xAI Grok Imagine    │ bundled │
 │                      │             │         │ video generation    │         │
 │                      │             │         │ backend. Supports   │         │
 │                      │             │         │ text-to-video,      │         │
@@ -970,7 +970,7 @@ exit_code=0
 │                      │             │         │ and stored public   │         │
 │                      │             │         │ URLs via the xAI    │         │
 │                      │             │         │ async videos API.   │         │
-│ web-brave-free       │ not enabled │ 1.0.0   │ Brave Search (free  │ bundled │
+│ web-brave-free       │ enabled     │ 1.0.0   │ Brave Search (free  │ bundled │
 │                      │             │         │ tier) — web search  │         │
 │                      │             │         │ via Brave's         │         │
 │                      │             │         │ Data-for-Search     │         │
@@ -979,19 +979,19 @@ exit_code=0
 │                      │             │         │ (free signup at     │         │
 │                      │             │         │ https://brave.com/… │         │
 │                      │             │         │ 2k queries/month).  │         │
-│ web-ddgs             │ not enabled │ 1.0.0   │ DuckDuckGo web      │ bundled │
+│ web-ddgs             │ enabled     │ 1.0.0   │ DuckDuckGo web      │ bundled │
 │                      │             │         │ search via the ddgs │         │
 │                      │             │         │ Python package — no │         │
 │                      │             │         │ API key required.   │         │
 │                      │             │         │ Install with `pip   │         │
 │                      │             │         │ install ddgs`.      │         │
-│ web-exa              │ not enabled │ 1.0.0   │ Exa web search and  │ bundled │
+│ web-exa              │ enabled     │ 1.0.0   │ Exa web search and  │ bundled │
 │                      │             │         │ content extraction. │         │
 │                      │             │         │ Requires            │         │
 │                      │             │         │ EXA_API_KEY — sign  │         │
 │                      │             │         │ up at               │         │
 │                      │             │         │ https://exa.ai.     │         │
-│ web-firecrawl        │ not enabled │ 1.0.0   │ Firecrawl web       │ bundled │
+│ web-firecrawl        │ enabled     │ 1.0.0   │ Firecrawl web       │ bundled │
 │                      │             │         │ search + content    │         │
 │                      │             │         │ extraction.         │         │
 │                      │             │         │ Supports keyless    │         │
@@ -1000,7 +1000,7 @@ exit_code=0
 │                      │             │         │ tool-gateway        │         │
 │                      │             │         │ routing for         │         │
 │                      │             │         │ subscribers.        │         │
-│ web-keenable         │ not enabled │ 1.0.0   │ Keenable web search │ bundled │
+│ web-keenable         │ enabled     │ 1.0.0   │ Keenable web search │ bundled │
 │                      │             │         │ + page fetch        │         │
 │                      │             │         │ (independent web    │         │
 │                      │             │         │ index for AI apps). │         │
@@ -1012,7 +1012,7 @@ exit_code=0
 │                      │             │         │ KEENABLE_API_KEY    │         │
 │                      │             │         │ for higher limits — │         │
 │                      │             │         │ https://keenable.a… │         │
-│ web-openai-native    │ not enabled │ 1.0.0   │ OpenAI native web   │ bundled │
+│ web-openai-native    │ enabled     │ 1.0.0   │ OpenAI native web   │ bundled │
 │                      │             │         │ search — declares   │         │
 │                      │             │         │ the Responses API   │         │
 │                      │             │         │ server-side         │         │
@@ -1026,7 +1026,7 @@ exit_code=0
 │                      │             │         │ OAuth (``hermes     │         │
 │                      │             │         │ auth add            │         │
 │                      │             │         │ openai-codex``).    │         │
-│ web-parallel         │ not enabled │ 1.0.0   │ Parallel.ai web     │ bundled │
+│ web-parallel         │ enabled     │ 1.0.0   │ Parallel.ai web     │ bundled │
 │                      │             │         │ search + content    │         │
 │                      │             │         │ extraction. Search  │         │
 │                      │             │         │ returns             │         │
@@ -1038,14 +1038,14 @@ exit_code=0
 │                      │             │         │ PARALLEL_API_KEY —  │         │
 │                      │             │         │ sign up at          │         │
 │                      │             │         │ https://parallel.a… │         │
-│ web-perplexity       │ not enabled │ 1.0.0   │ Perplexity Search   │ bundled │
+│ web-perplexity       │ enabled     │ 1.0.0   │ Perplexity Search   │ bundled │
 │                      │             │         │ API web search and  │         │
 │                      │             │         │ query-relevant page │         │
 │                      │             │         │ snippets. Requires  │         │
 │                      │             │         │ PERPLEXITY_API_KEY  │         │
 │                      │             │         │ — get one at        │         │
 │                      │             │         │ https://www.perple… │         │
-│ web-searxng          │ not enabled │ 1.0.0   │ SearXNG web search  │ bundled │
+│ web-searxng          │ enabled     │ 1.0.0   │ SearXNG web search  │ bundled │
 │                      │             │         │ — free,             │         │
 │                      │             │         │ self-hosted,        │         │
 │                      │             │         │ privacy-respecting  │         │
@@ -1054,14 +1054,14 @@ exit_code=0
 │                      │             │         │ SEARXNG_URL         │         │
 │                      │             │         │ pointing at your    │         │
 │                      │             │         │ instance.           │         │
-│ web-tavily           │ not enabled │ 1.0.0   │ Tavily web search + │ bundled │
+│ web-tavily           │ enabled     │ 1.0.0   │ Tavily web search + │ bundled │
 │                      │             │         │ extract. Opt-in     │         │
 │                      │             │         │ keyless via hermes  │         │
 │                      │             │         │ tools; set          │         │
 │                      │             │         │ TAVILY_API_KEY for  │         │
 │                      │             │         │ higher limits —     │         │
 │                      │             │         │ https://app.tavily… │         │
-│ web-xai              │ not enabled │ 1.0.0   │ xAI Web Search —    │ bundled │
+│ web-xai              │ enabled     │ 1.0.0   │ xAI Web Search —    │ bundled │
 │                      │             │         │ search the web via  │         │
 │                      │             │         │ Grok's agentic      │         │
 │                      │             │         │ web_search tool     │         │
@@ -1077,3 +1077,5 @@ Compact view: hermes plugins list --plain --no-bundled
 Interactive toggle: hermes plugins
 Enable/disable: hermes plugins enable/disable <name>
 Plugins are opt-in by default — only 'enabled' plugins load.
+  ⚠ serve [default] pid 75331: manual restart still pending; this process may still serve pre-update code.
+    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

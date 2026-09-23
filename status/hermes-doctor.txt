@@ -1,5 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=0
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -26,7 +26,7 @@ exit_code=0
   ✓ Virtual environment active
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
-  ✓ Version files consistent (0.21.3)
+  ✓ Version files consistent (0.21.4)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -48,7 +48,7 @@ exit_code=0
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
   ✓ auxiliary task routing resolves: approval→openai-codex@chatgpt.com, background_review→openai-codex@chatgpt.com, compression→openai-codex@chatgpt.com, curator→openai-codex@chatgpt.com, goal_judge→openai-codex@chatgpt.com, kanban_decomposer→openai-codex@chatgpt.com, memory_query_rewrite→openai-codex@chatgpt.com, monitor→openai-codex@chatgpt.com, review→openai-codex@chatgpt.com, title_generation→openai-codex@chatgpt.com, triage_specifier→openai-codex@chatgpt.com
-  ✓ Config version up to date (v45)
+  ✓ Config version up to date (v46)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -71,15 +71,15 @@ exit_code=0
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 3.4 KB, pruned after 72h)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 3.4 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1012 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 20,115 free, WAL 0 B
-    → 41,007 messages, 1,012 sessions, journal_mode=delete, 3 process(es) holding the DB open
+    → state.db logical size 614.1 MB, 157,202 pages, 20,113 free, WAL 0 B
+    → 41,007 messages, 1,012 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 76331) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -152,11 +152,15 @@ exit_code=0
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
+  ⚠ Duplicate platform credential across profiles (Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
 
 ────────────────────────────────────────────────────────────
-  Found 1 issue(s) to address:
+  Found 2 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
+  2. Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
+  ⚠ serve [default] pid 75331: manual restart still pending; this process may still serve pre-update code.
+    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).
