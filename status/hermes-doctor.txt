@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -97,72 +98,6 @@ exit_code=1
   ✓ ui-tui workspace deps (2 moderate vulnerabilities)
 
 ◆ API Connectivity
-  Running 42 connectivity checks in parallel…
-                                                                      
-  ✓ IPv6 route (no IPv6 route — IPv4 only)
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-  ✓ browser
-  ✓ browser-use
-  ✓ clarify
-  ✓ code_execution
-  ✓ computer_use
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ image_gen
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ project
-  ✓ session_search
-  ✓ setup
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ video
-  ✓ video_gen
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ homeassistant (system dependency not met)
-  ⚠ spotify (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ Mem0 API key configured
-    → user_id=insideden-den  agent_id=den
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
-  ⚠ Duplicate platform credential across profiles (Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
-
-────────────────────────────────────────────────────────────
-  Found 2 issue(s) to address:
-
-  1. Run 'hermes setup' to configure API keys
-  2. Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Running 42 connectivity checks in parallel…⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
