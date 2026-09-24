@@ -13,5 +13,3 @@ exit_code=0
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
-  ⚠ serve [default] pid 22973: manual restart still pending; this process may still serve pre-update code.
-    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

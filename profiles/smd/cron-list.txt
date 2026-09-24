@@ -35,16 +35,11 @@ exit_code=0
     Name:      광고주 시트 변경 알림 — 에스피식
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-24T12:30:00+09:00
+    Next run:  2026-09-24T13:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-24T12:15:31.415369+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-24T12:15:00+09:00)
-    Execution: completed  5470d1395ae04028891f75118135a318
+    Last run:  2026-09-24T13:15:23.507879+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-24T13:15:00+09:00)
+    Execution: completed  0413f216ec404a90b590aae46c88ddb8
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
-  ⚠ serve [default] pid 22973: manual restart still pending; this process may still serve pre-update code.
-    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

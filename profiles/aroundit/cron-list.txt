@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-24T12:35:57.559858+09:00
+    Next run:  2026-09-24T13:24:55.290767+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-24T12:20:57.559858+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-24T12:09:58.814038+09:00)
-    Execution: completed  179e84f6879a43619c73121399140ee4
+    Last run:  2026-09-24T13:09:55.290767+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-24T13:01:11.332195+09:00)
+    Execution: completed  d44e9b75b5fa46c792d01b1eca7c4ea4
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -62,8 +62,3 @@ exit_code=0
     Deliver:   origin
     Skills:    clovanote-ticktick-capture, aside-browser-operations, ticktick-operations, den-output-contract
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
-  ⚠ serve [default] pid 22973: manual restart still pending; this process may still serve pre-update code.
-    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).

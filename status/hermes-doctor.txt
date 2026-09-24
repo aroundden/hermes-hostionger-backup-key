@@ -71,15 +71,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 4.2 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.9 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1013 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 19,989 free, WAL 0 B
-    → 41,055 messages, 1,013 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 89101) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1017 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 19,490 free, WAL 0 B
+    → 41,237 messages, 1,017 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 80591) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -166,5 +166,3 @@ exit_code=1
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
-  ⚠ serve [default] pid 22973: manual restart still pending; this process may still serve pre-update code.
-    Ask its owner to relaunch `hermes serve` / `hermes dashboard` (reconnect Desktop for an SSH backend).
