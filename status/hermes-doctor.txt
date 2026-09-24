@@ -71,15 +71,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.9 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 15.3 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1017 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 19,490 free, WAL 0 B
-    → 41,237 messages, 1,017 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 80591) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1021 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 18,867 free, WAL 0 B
+    → 41,528 messages, 1,021 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21957) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -150,9 +150,9 @@ exit_code=1
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gpt-6-astra
+  ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
   ⚠ Duplicate platform credential across profiles (Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
 
 ────────────────────────────────────────────────────────────
