@@ -1,11 +1,11 @@
 model:
-  default: gpt-5.6-sol
+  default: gpt-6-sol
   provider: openai-codex
+  base_url: https://chatgpt.com/backend-api/codex
+  api_mode: codex_responses
 fallback_providers:
   - provider: openai-codex
-    model: gpt-5.3-codex-spark
-  - provider: openai-codex
-    model: gpt-5.6-luna
+    model: gpt-6-sol
 database:
   journal_mode: delete
 agent:
@@ -88,6 +88,7 @@ display:
   cleanup_progress: false
   long_running_notifications: true
   busy_ack_detail: true
+  message_reactions: false
 dashboard:
   basic_auth:
     username: insideden
@@ -285,3 +286,27 @@ auxiliary:
 # fallback_model:
 #   provider: openrouter
 #   model: anthropic/claude-sonnet-4
+moa:
+  presets:
+    default:
+      reference_models:
+        - provider: openai-codex
+          model: gpt-5.5
+          enabled: true
+      degraded_reference_policy: loud
+      fanout: user_turn
+      aggregator:
+        provider: openai-codex
+        model: gpt-6-sol
+  reference_models:
+    - provider: openai-codex
+      model: gpt-5.5
+      enabled: true
+  aggregator:
+    provider: openai-codex
+    model: gpt-6-sol
+  degraded_reference_policy: loud
+  fanout: user_turn
+  enabled: true
+desktop:
+  font_family: Noto Sans

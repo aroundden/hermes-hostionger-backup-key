@@ -14,6 +14,7 @@ web:
     parallel: free
 browser:
   cloud_provider: nous
+  use_real_profile: true
 auxiliary:
   background_review:
     enabled: false
@@ -316,3 +317,4 @@ compression:
   codex_gpt55_autoraise: false
 updates:
   parked_branch_strategy: update_in_place
+timezone: Asia/Seoul
