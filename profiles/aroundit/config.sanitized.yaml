@@ -83,6 +83,8 @@ moa:
   fanout: user_turn
   enabled: true
 skills:
+  external_dirs:
+    - /Users/insideden/.local/share/omh/current/skills
   disabled:
     - airtable
     - apple-notes
@@ -358,6 +360,12 @@ agent:
 database:
   journal_mode: delete
 display:
+  sections:
+    thinking: collapsed
+    tools: collapsed
+    subagents: collapsed
+  skin: omh
+  interface: tui
   platforms:
     slack:
       live_status: false
@@ -373,3 +381,7 @@ compression:
 updates:
   parked_branch_strategy: update_in_place
 timezone: Asia/Seoul
+
+plugins:
+  enabled:
+    - omh

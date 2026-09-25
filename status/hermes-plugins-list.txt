@@ -1071,6 +1071,25 @@ exit_code=0
 │                      │             │         │ auth`) or           │         │
 │                      │             │         │ XAI_API_KEY         │         │
 │                      │             │         │ (https://x.ai).     │         │
+│ omh                  │ enabled     │ 2.0.5   │ Oh My Hermes native │ user    │
+│                      │             │         │ bridge for          │         │
+│                      │             │         │ metadata-only       │         │
+│                      │             │         │ runtime status,     │         │
+│                      │             │         │ HUD, role context,  │         │
+│                      │             │         │ bounded evidence    │         │
+│                      │             │         │ probes,             │         │
+│                      │             │         │ evidence-boundary   │         │
+│                      │             │         │ context, a          │         │
+│                      │             │         │ deterministic       │         │
+│                      │             │         │ file-backed memory  │         │
+│                      │             │         │ provider, and one   │         │
+│                      │             │         │ opt-in tool         │         │
+│                      │             │         │ (omh_jev_ask) that  │         │
+│                      │             │         │ sends typed         │         │
+│                      │             │         │ questions to Jev    │         │
+│                      │             │         │ with the user's own │         │
+│                      │             │         │ key only when the   │         │
+│                      │             │         │ user asks for Jev.  │         │
 └──────────────────────┴─────────────┴─────────┴─────────────────────┴─────────┘
 
 Compact view: hermes plugins list --plain --no-bundled

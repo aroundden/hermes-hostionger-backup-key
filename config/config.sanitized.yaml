@@ -67,6 +67,11 @@ compression:
 prompt_caching:
   cache_ttl: 5m
 display:
+  sections:
+    thinking: collapsed
+    tools: collapsed
+    subagents: collapsed
+  interface: tui
   compact: false
   personality: ''
   busy_input_mode: interrupt
@@ -74,7 +79,7 @@ display:
   show_reasoning: false
   background_process_notifications: concise
   streaming: true
-  skin: default
+  skin: omh
   interim_assistant_messages: true
   platforms:
     slack:
@@ -103,6 +108,7 @@ stt:
   openai:
     model: whisper-1
 memory:
+  provider: omh
   memory_enabled: true
   user_profile_enabled: true
   write_approval: true
@@ -115,6 +121,8 @@ delegation:
   model: gpt-6-astra
   provider: openai-codex
 skills:
+  external_dirs:
+    - /Users/insideden/.local/share/omh/current/skills
   creation_nudge_interval: 15
 timezone: Asia/Seoul
 command_allowlist:
@@ -310,3 +318,7 @@ moa:
   enabled: true
 desktop:
   font_family: Noto Sans
+
+plugins:
+  enabled:
+    - omh

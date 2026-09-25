@@ -64,6 +64,12 @@ auxiliary:
     model: gpt-6-astra
     provider: openai-codex
 display:
+  sections:
+    thinking: collapsed
+    tools: collapsed
+    subagents: collapsed
+  skin: omh
+  interface: tui
   platforms:
     slack:
       live_status: false
@@ -113,6 +119,8 @@ moa:
   fanout: user_turn
   enabled: true
 skills:
+  external_dirs:
+    - /Users/insideden/.local/share/omh/current/skills
   disabled:
     - airtable
     - architecture-diagram
@@ -389,3 +397,7 @@ mcp_servers:
 updates:
   parked_branch_strategy: update_in_place
 timezone: Asia/Seoul
+
+plugins:
+  enabled:
+    - omh
