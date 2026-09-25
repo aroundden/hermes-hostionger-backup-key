@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-26T07:11:11.606984+09:00
+    Next run:  2026-09-26T08:07:43.572737+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-26T06:56:11.606984+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-26T06:45:47.710566+09:00)
-    Execution: completed  56b1bb4fb4054289939addd2efd88d1d
+    Last run:  2026-09-26T07:52:43.572737+09:00  error: RuntimeError: HTTP 401: Incorrect API key provided: sk-svcac***********************************************************************************************************************************************************fvMA. You can find your API key at https://platform.openai.com/account/api-keys.  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-26T07:51:46.825535+09:00)
+    Execution: failed  180997413e024a889fbde374f28613b3
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
