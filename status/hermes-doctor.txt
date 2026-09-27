@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -70,15 +71,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 0 B, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.3 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1063 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 13,651 free, WAL 0 B
-    → 43,293 messages, 1,063 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1065 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 13,284 free, WAL 0 B
+    → 43,419 messages, 1,065 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -146,24 +147,3 @@ exit_code=1
   ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
 
 ◆ Memory Provider
-  ✓ Mem0 API key configured
-    → user_id=insideden-den  agent_id=den
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 2 issue(s) to address:
-
-  1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 1 npm vulnerability
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
-/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
-  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")
-/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
-  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")
