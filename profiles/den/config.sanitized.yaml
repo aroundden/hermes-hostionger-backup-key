@@ -85,7 +85,7 @@ stt:
   language: ko
 memory:
   write_approval: true
-  provider: mem0
+  provider: ''
 delegation:
   model: gpt-6-astra
   provider: openai-codex
@@ -168,6 +168,7 @@ skills:
     - weights-and-biases
 command_allowlist:
   - cua:bring_to_front:background
+  - cua:click:background
   - cua:focus_app:background
   - stop/restart hermes gateway (kills running agents)
 hooks:
