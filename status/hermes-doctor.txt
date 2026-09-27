@@ -13,7 +13,7 @@ exit_code=1
   ✓ No suspicious MCP stdio commands
 
 ◆ Python Environment
-  ✓ Python 3.11.15
+  ✓ Python 3.14.7
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
     → state.db: rollback journal mode (614.1 MB)
@@ -23,21 +23,22 @@ exit_code=1
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Virtual environment active
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/9255b708465945f9b90f9d2ae6d69208/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
-  ✓ Version files consistent (0.21.4)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
 ◆ SSL / CA Certificates
-  ✓ SSL CA certificate bundle is valid
+  ✓ TLS platform trust store configured; default SSL context available
 
 ◆ Required Packages
   ✓ OpenAI SDK
   ✓ Rich (terminal UI)
   ✓ python-dotenv
-  ✓ PyYAML
+  ✓ ruamel.yaml
   ✓ HTTPX
   ✓ Croniter (cron expressions) (optional)
   ⚠ python-telegram-bot (optional, not installed)
@@ -77,24 +78,25 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1050 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 15,627 free, WAL 0 B
-    → 42,484 messages, 1,050 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21957) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1051 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 15,517 free, WAL 0 B
+    → 42,507 messages, 1,051 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
-  ✓ Venv entry point exists (venv/bin/hermes)
+  ✓ Hermes entry point exists (/Users/insideden/.hermes/hermes-agent/hermes)
   ✓ ~/.local/bin/hermes exists (non-symlink)
 
 ◆ External Tools
   ✓ git
-  ✓ ripgrep (rg) (faster file search)
+  ✓ ripgrep (rg) (pm store) (faster file search)
   ✓ Docker (optional)
   ✓ Node.js
-  ✓ agent-browser (browser automation)
-  ✓ Browser tools (agent-browser) deps (no known vulnerabilities)
-  ✓ web workspace deps (2 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (2 moderate vulnerabilities)
+  ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
+  ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
+  ✓ web workspace deps (3 moderate vulnerabilities)
+  ✓ ui-tui workspace deps (3 moderate vulnerabilities)
 
 ◆ API Connectivity
   Running 42 connectivity checks in parallel…
@@ -104,10 +106,8 @@ exit_code=1
 
 ◆ Tool Availability
   ✓ browser
-  ✓ browser-use
   ✓ clarify
   ✓ code_execution
-  ✓ computer_use
   ✓ cronjob
   ✓ delegation
   ✓ desktop_ui
@@ -129,6 +129,8 @@ exit_code=1
   ✓ web extract (parallel)
   ⚠ a2a (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
+  ⚠ browser-use (system dependency not met)
+  ⚠ computer_use (system dependency not met)
   ⚠ connections (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
@@ -151,19 +153,19 @@ exit_code=1
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   aroundit: gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
-  ⚠ Duplicate platform credential across profiles (Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
+  ✓   smd: gpt-6-astra
 
 ────────────────────────────────────────────────────────────
   Found 2 issue(s) to address:
 
   1. Run 'hermes setup' to configure API keys
-  2. Profiles 'default' and 'den' both hold the same slack credential (SLACK_APP_TOKEN/SLACK_BOT_TOKEN): <REDACTED>
+  2. Browser tools (agent-browser) has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
+/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
+  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")
+/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
+  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")

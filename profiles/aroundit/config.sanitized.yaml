@@ -148,8 +148,10 @@ skills:
     - xurl
     - youtube-content
 command_allowlist:
-  - script execution via -e/-c flag
+  - cua:bring_to_front:background
+  - cua:focus_app:background
   - execute_code
+  - script execution via -e/-c flag
 hooks:
   pre_tool_call:
     - matcher: browser_exec
