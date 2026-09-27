@@ -167,6 +167,8 @@ skills:
     - touchdesigner-mcp
     - weights-and-biases
 command_allowlist:
+  - cua:bring_to_front:background
+  - cua:focus_app:background
   - stop/restart hermes gateway (kills running agents)
 hooks:
   pre_tool_call:
@@ -401,3 +403,7 @@ timezone: Asia/Seoul
 plugins:
   enabled:
     - omh
+  entries:
+    omh:
+      settings:
+        omh_home: /Users/insideden/.omh

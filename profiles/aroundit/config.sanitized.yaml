@@ -151,6 +151,7 @@ command_allowlist:
   - cua:bring_to_front:background
   - cua:focus_app:background
   - execute_code
+  - hermes update (restarts gateway, kills running agents)
   - script execution via -e/-c flag
 hooks:
   pre_tool_call:
@@ -387,3 +388,7 @@ timezone: Asia/Seoul
 plugins:
   enabled:
     - omh
+  entries:
+    omh:
+      settings:
+        omh_home: /Users/insideden/.omh

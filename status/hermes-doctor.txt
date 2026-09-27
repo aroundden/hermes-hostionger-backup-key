@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -25,9 +26,7 @@ exit_code=1
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/9255b708465945f9b90f9d2ae6d69208/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -72,15 +71,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.3 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 12.1 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1071 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 12,865 free, WAL 0 B
-    → 43,622 messages, 1,071 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1089 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 11,965 free, WAL 0 B
+    → 44,118 messages, 1,089 sessions, journal_mode=delete, 7 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -95,77 +94,3 @@ exit_code=1
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ✓ web workspace deps (3 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (3 moderate vulnerabilities)
-
-◆ API Connectivity
-  Running 42 connectivity checks in parallel…
-                                                                      
-  ✓ IPv6 route (no IPv6 route — IPv4 only)
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-  ✓ browser
-  ✓ clarify
-  ✓ code_execution
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ image_gen
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ omh
-  ✓ project
-  ✓ session_search
-  ✓ setup
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ video
-  ✓ video_gen
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ browser-use (system dependency not met)
-  ⚠ computer_use (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ homeassistant (system dependency not met)
-  ⚠ spotify (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ Mem0 API key configured
-    → user_id=insideden-den  agent_id=den
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 2 issue(s) to address:
-
-  1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 1 npm vulnerability
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
-/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
-  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")
-/Users/insideden/.hermes/hermes-agent/hermes_cli/plugins_manifest.py:410: DeprecationWarning: 'maxsplit' is passed as positional argument
-  parts = re.split(r"[-+]", str(v).strip().lstrip("v"), 1)[0].split(".")
