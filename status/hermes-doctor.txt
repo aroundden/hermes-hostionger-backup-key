@@ -25,9 +25,7 @@ exit_code=1
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/9255b708465945f9b90f9d2ae6d69208/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -78,9 +76,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1061 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 14,102 free, WAL 0 B
-    → 43,080 messages, 1,061 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1063 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 13,651 free, WAL 0 B
+    → 43,293 messages, 1,063 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
