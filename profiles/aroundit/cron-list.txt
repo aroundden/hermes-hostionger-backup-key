@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-28T17:16:17.286952+09:00
+    Next run:  2026-09-28T18:16:43.151890+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-28T17:01:17.286952+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-28T16:51:20.413737+09:00)
-    Execution: completed  0d1988e962db4d80a8b299952d43cf41
+    Last run:  2026-09-28T17:17:10.858467+09:00  ok
+    Dispatch:  ⚠ catch-up after missed fire: scheduled 2026-09-28T17:32:10.858467+09:00, ran 2026-09-28T18:01:42.905765+09:00 (29m late)
+    Execution: running  c13942c5d2ec4090994da80b574ac2c7
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-09-28T17:12:06.992353+09:00
+    Next run:  2026-09-28T23:13:33.813634+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-09-28T11:12:06.992353+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-28T11:08:10.702955+09:00)
-    Execution: completed  756b8ab6de4849509f79145a237f8a9b
+    Last run:  2026-09-28T17:13:33.813634+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-28T17:12:06.992353+09:00)
+    Execution: completed  a53137e09358477eace8e6c037f70efc
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-09-28T17:07:00+09:00
+    Next run:  2026-09-28T18:09:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-28T17:06:54.008574+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-28T17:06:00+09:00)
-    Execution: completed  0627d72ae95b43819d8fe5ce2bfc04e9
+    Last run:  2026-09-28T18:08:02.140738+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-28T18:08:00+09:00)
+    Execution: completed  5ebcdff50ca4487795e0f7751878032c
 
   75d79e8a824e [active]
     Name:      Gmail 이벤트·15분 보조점검 일주일 운영 평가
@@ -83,7 +83,3 @@ exit_code=0
     Deliver:   slack:C0BHVB49WH5:1790572602.388869
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
 
-  ⚠  Scheduler is not ready: no gateway or no fresh profile heartbeat.
-     If no gateway is running: hermes gateway install
-                    sudo hermes gateway install --system  # Linux servers
-     Check status:  hermes cron status
