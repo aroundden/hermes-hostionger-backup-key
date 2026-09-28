@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-28T14:08:31.598018+09:00
+    Next run:  2026-09-28T15:12:49.080959+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-28T13:53:31.598018+09:00  error: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
-    Dispatch:  on time (scheduled 2026-09-28T13:48:56.015699+09:00)
-    Execution: unknown  9d087f9650c34ec8b8657214cf82a34e
+    Last run:  2026-09-28T14:57:49.080959+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-28T14:43:25.756012+09:00)
+    Execution: completed  58099464574a49cebd374a5e42255347
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -61,4 +61,17 @@ exit_code=0
     Next run:  2026-09-24T03:47:42.893811+09:00
     Deliver:   origin
     Skills:    clovanote-ticktick-capture, aside-browser-operations, ticktick-operations, den-output-contract
+
+  1051bb54e8ea [active]
+    Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
+    Schedule:  * * * * *
+    Repeat:    ∞
+    Next run:  2026-09-28T15:04:00+09:00
+    Deliver:   local
+    Script:    gmail_event_bridge_once.sh
+    Mode:      no-agent (script stdout delivered directly)
+    Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
+    Last run:  2026-09-28T15:03:31.410467+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-28T15:03:00+09:00)
+    Execution: completed  82237af7784544879db420d00534c336
 
