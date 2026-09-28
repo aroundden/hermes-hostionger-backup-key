@@ -23,7 +23,7 @@ exit_code=1
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/9255b708465945f9b90f9d2ae6d69208/venv) (active in this process)
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
@@ -70,15 +70,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 24.3 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 25.0 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1093 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 11,406 free, WAL 0 B
-    → 44,306 messages, 1,093 sessions, journal_mode=delete, 7 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+    → state.db logical size 614.1 MB, 157,202 pages, 11,340 free, WAL 0 B
+    → 44,331 messages, 1,093 sessions, journal_mode=delete, 9 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation

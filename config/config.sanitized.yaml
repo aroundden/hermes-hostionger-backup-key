@@ -108,7 +108,7 @@ stt:
   openai:
     model: whisper-1
 memory:
-  provider: omh
+  provider: ''
   memory_enabled: true
   user_profile_enabled: true
   write_approval: true
@@ -175,7 +175,7 @@ updates:
   backup_keep: 5
   non_interactive_local_changes: stash
   parked_branch_strategy: update_in_place
-_config_version: 45
+_config_version: 46
 session_reset:
   mode: both
   idle_minutes: 1440
