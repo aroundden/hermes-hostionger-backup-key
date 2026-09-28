@@ -8,7 +8,7 @@ exit_code=0
 
 ◆ Environment
   Project:      /Users/insideden/.hermes/hermes-agent
-  Python:       3.14.7
+  Python:       3.11.15
   .env file:    ✓ exists
   Model:        gpt-6-astra
   Provider:     ChatGPT or Codex Subscription
@@ -41,8 +41,8 @@ exit_code=0
   Nous Portal   ✓ logged in
     Portal URL: https://portal.nousresearch.com
     Inference:  https://inference-api.nousresearch.com/v1
-    Access exp: 2026-09-28 13:34:09 KST
-    Key exp:    2026-09-28 13:34:09 KST
+    Access exp: 2026-09-28 14:19:07 KST
+    Key exp:    2026-09-28 14:19:07 KST
     Refresh: <REDACTED>
   OpenAI Codex  ✓ logged in
     Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
@@ -113,21 +113,18 @@ exit_code=0
   SMS (Twilio)  ✗ not configured (plugin)
   Microsoft Teams  ✗ not configured (plugin)
   Telegram      ✗ not configured (plugin)
-  WeCom (Enterprise WeChat)  ✓ configured (plugin)
-  WeCom Callback (self-built apps)  ✓ configured (plugin)
   WhatsApp      ✓ configured (plugin)
 
 ◆ Gateway Service
-  Status:       ✓ running
-  Manager:      launchd
-  PID(s):       38958
+  Status:       ✓ running (via the default-profile multiplexer)
+  Manage with:  hermes gateway status   # from the default profile
 
 ◆ Scheduled Jobs
   Jobs:         5 active, 6 total
 
 ◆ Sessions
-  Active:       87 session(s)
-  Last activity:      15m ago
+  Active:       88 session(s)
+  Last activity:      14m ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics

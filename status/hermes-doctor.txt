@@ -13,7 +13,7 @@ exit_code=1
   ✓ No suspicious MCP stdio commands
 
 ◆ Python Environment
-  ✓ Python 3.14.7
+  ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
     → state.db: rollback journal mode (614.1 MB)
@@ -35,7 +35,7 @@ exit_code=1
   ✓ TLS platform trust store configured; default SSL context available
 
 ◆ Required Packages
-  ✓ OpenAI SDK
+  ✗ OpenAI SDK (missing)
   ✓ Rich (terminal UI)
   ✓ python-dotenv
   ✓ ruamel.yaml
@@ -72,15 +72,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 74.9 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 310.2 MB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1102 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 10,897 free, WAL 0 B
-    → 44,628 messages, 1,102 sessions, journal_mode=delete, 8 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1106 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 10,167 free, WAL 0 B
+    → 44,985 messages, 1,106 sessions, journal_mode=delete, 8 process(es) holding the DB open (the host gateway (PID 53392) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -152,15 +152,16 @@ exit_code=1
 
 ◆ Profiles
   ✓ 3 profile(s) found
-  ✓   aroundit: gpt-6-astra
+  ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 2 issue(s) to address:
+  Found 3 issue(s) to address:
 
-  1. Run 'hermes setup' to configure API keys
-  2. Browser tools (agent-browser) has 1 npm vulnerability
+  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
+  2. Run 'hermes setup' to configure API keys
+  3. Browser tools (agent-browser) has 1 npm vulnerability
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 

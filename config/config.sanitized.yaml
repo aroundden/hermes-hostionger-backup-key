@@ -138,7 +138,7 @@ code_execution:
   timeout: 300
   max_tool_calls: 50
 gateway:
-  multiplex_profiles: false
+  multiplex_profiles: true
   profile_routes:
     - name: aroundit-email-thread
       platform: slack
