@@ -79,4 +79,18 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1153 sessions)
+  ✓ ~/.hermes/profiles/den/state.db exists (1156 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 457 free, WAL 0 B
+    → 50,315 messages, 1,156 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 24510) serving profiles default, aroundit, den, smd)
+    → FTS tables: messages_fts, messages_fts_trigram
+
+◆ Command Installation
+  ✓ Hermes entry point exists (/Users/insideden/.hermes/hermes-agent/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (pm store) (faster file search)
+  ✓ Docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
