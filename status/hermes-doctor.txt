@@ -25,7 +25,9 @@ exit_code=1
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -70,15 +72,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 68.4 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 74.9 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1100 sessions)
-    → state.db logical size 614.1 MB, 157,202 pages, 11,197 free, WAL 0 B
-    → 44,472 messages, 1,100 sessions, journal_mode=delete, 9 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
+  ✓ ~/.hermes/profiles/den/state.db exists (1102 sessions)
+    → state.db logical size 614.1 MB, 157,202 pages, 10,897 free, WAL 0 B
+    → 44,628 messages, 1,102 sessions, journal_mode=delete, 8 process(es) holding the DB open (the host gateway (PID 38976) serving profiles den)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -106,6 +108,7 @@ exit_code=1
   ✓ browser
   ✓ clarify
   ✓ code_execution
+  ✓ computer_use
   ✓ cronjob
   ✓ delegation
   ✓ desktop_ui
@@ -128,7 +131,6 @@ exit_code=1
   ⚠ a2a (system dependency not met)
   ⚠ browser-cdp (system dependency not met)
   ⚠ browser-use (system dependency not met)
-  ⚠ computer_use (system dependency not met)
   ⚠ connections (system dependency not met)
   ⚠ discord (missing DISCORD_BOT_TOKEN)
   ⚠ discord_admin (missing DISCORD_BOT_TOKEN)

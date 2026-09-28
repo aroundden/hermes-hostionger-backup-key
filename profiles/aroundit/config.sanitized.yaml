@@ -153,6 +153,7 @@ command_allowlist:
   - execute_code
   - hermes update (restarts gateway, kills running agents)
   - script execution via -e/-c flag
+  - stop/restart hermes launchd service (kills running agents)
 hooks:
   pre_tool_call:
     - matcher: browser_exec
@@ -391,4 +392,4 @@ plugins:
   entries:
     omh:
       settings:
-        omh_home: /Users/insideden/.omh
+        omh_home: /Users/insideden/.hermes/profiles/aroundit/omh
