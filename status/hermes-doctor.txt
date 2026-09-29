@@ -95,8 +95,10 @@ exit_code=1
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ⚠ Browser tools (agent-browser) deps (0 critical, 1 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ✓ web workspace deps (5 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (5 moderate vulnerabilities)
+  ⚠ web workspace deps (0 critical, 1 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
   Running 42 connectivity checks in parallel…
@@ -157,11 +159,13 @@ exit_code=1
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 5 issue(s) to address:
 
   1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
   2. Run 'hermes setup' to configure API keys
   3. Browser tools (agent-browser) has 1 npm vulnerability
+  4. web workspace has 5 npm vulnerabilities
+  5. ui-tui workspace has 5 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
