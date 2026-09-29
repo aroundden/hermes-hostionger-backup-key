@@ -35,23 +35,23 @@ exit_code=0
     Name:      광고주 시트 변경 알림 — 웹훅 + 누락 보완
     Schedule:  0 9,13,17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-29T17:00:00+09:00
+    Next run:  2026-09-30T09:00:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-29T16:28:35.340917+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-29T13:00:00+09:00)
-    Execution: completed  781e4366849c48e3aa005a5d3f1060f8
+    Last run:  2026-09-29T17:03:04.703615+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-29T17:00:00+09:00)
+    Execution: completed  ef207d713671494a9fc967b1ec622bf5
 
   2f914b573cda [active]
     Name:      광고주 웹훅 연결 상태 점검
     Schedule:  15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-29T17:15:00+09:00
+    Next run:  2026-09-30T09:15:00+09:00
     Deliver:   local
     Script:    advertiser_drive_push_health.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-29T16:15:58.108466+09:00  error: Script exited with code 1
+    Last run:  2026-09-29T17:15:58.703013+09:00  error: Script exited with code 1
 stderr:
 Traceback (most recent call last):
   File "<string>", line 16, in <module>
@@ -59,7 +59,7 @@ Traceback (most recent call last):
     ~~~~^^^^^^^^^^^^^^^^^^^^^
   File "/Users/insideden/.hermes/profiles/smd/scripts/advertiser_drive_push_health.py", line 24, in <module>
     raise RuntimeError(' / '.join(problems) + ' — 정기 보완 조회는 별도 유지')
-RuntimeError: Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지  (6 failures in a row)
-    Dispatch:  on time (scheduled 2026-09-29T16:15:00+09:00)
-    Execution: failed  232386383533484ba37b2394d9c4ac47
+RuntimeError: Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지  (7 failures in a row)
+    Dispatch:  on time (scheduled 2026-09-29T17:15:00+09:00)
+    Execution: failed  57d84d51042e45e19aa8ebe470ba94f2
 
