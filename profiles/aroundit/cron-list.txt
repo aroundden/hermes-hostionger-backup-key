@@ -10,13 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-09-29T08:40:36.116950+09:00
+    Next run:  2026-09-29T09:49:53.843002+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-29T08:25:36.116950+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-29T08:19:59.660456+09:00)
-    Execution: completed  989b0ff75b3041c096ccbb8076c198b3
+    Last run:  2026-09-29T09:34:53.843002+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-09-29T09:31:59.126391+09:00)
+    Execution: completed  a9f0cd5b9660498aa850269f2b61716c
+    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -33,13 +34,14 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * 1-6
     Repeat:    ∞
-    Next run:  2026-09-29T09:00:00+09:00
+    Next run:  2026-09-30T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-28T09:04:37.615256+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-28T09:00:00+09:00)
+    Last run:  2026-09-29T09:07:06.002695+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-29T09:00:00+09:00)
+    Execution: completed  33879173bc56428b860d9006714fb89b
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -64,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-09-29T08:37:00+09:00
+    Next run:  2026-09-29T09:39:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-09-29T08:36:01.138509+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-29T08:35:00+09:00)
-    Execution: completed  33d38baa8caf44f982793e6a10450d7b
+    Last run:  2026-09-29T09:38:00.670449+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-29T09:37:00+09:00)
+    Execution: completed  78d8de1bbe574c68bbf1620e4c614d88
 
   75d79e8a824e [active]
     Name:      Gmail 이벤트·15분 보조점검 일주일 운영 평가
