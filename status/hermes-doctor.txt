@@ -79,8 +79,8 @@ exit_code=1
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1171 sessions)
-    → state.db logical size 621.1 MB, 158,990 pages, 301 free, WAL 0 B
-    → 51,432 messages, 1,171 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 2857) serving profiles default, aroundit, den, smd)
+    → state.db logical size 621.1 MB, 158,990 pages, 306 free, WAL 0 B
+    → 51,452 messages, 1,171 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 2857) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -93,7 +93,7 @@ exit_code=1
   ✓ Docker (optional)
   ✓ Node.js
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
-  ⚠ Browser tools (agent-browser) deps (0 critical, 2 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+  ⚠ Browser tools (agent-browser) deps (0 critical, 3 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
   ⚠ web workspace deps (0 critical, 3 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
@@ -163,7 +163,7 @@ exit_code=1
 
   1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
   2. Run 'hermes setup' to configure API keys
-  3. Browser tools (agent-browser) has 2 npm vulnerabilities
+  3. Browser tools (agent-browser) has 3 npm vulnerabilities
   4. web workspace has 7 npm vulnerabilities
   5. ui-tui workspace has 5 npm vulnerabilities
 
