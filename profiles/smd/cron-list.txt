@@ -35,23 +35,23 @@ exit_code=0
     Name:      광고주 시트 변경 알림 — 웹훅 + 누락 보완
     Schedule:  0 9,13,17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-30T17:00:00+09:00
+    Next run:  2026-10-01T09:00:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-09-30T15:46:58.326031+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-30T13:00:00+09:00)
-    Execution: completed  80c840cd9d894e1cad9bc284a907623c
+    Last run:  2026-09-30T17:30:10.144221+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-30T17:00:00+09:00)
+    Execution: completed  d33c71222bc141a89abb60118b37b5ed
 
   2f914b573cda [active]
     Name:      광고주 웹훅 연결 상태 점검
     Schedule:  15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-09-30T17:15:00+09:00
+    Next run:  2026-10-01T09:15:00+09:00
     Deliver:   local
     Script:    advertiser_drive_push_health.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-30T16:15:29.152614+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-30T16:15:00+09:00)
-    Execution: completed  146c792b25874c3b8585a935057568c4
+    Last run:  2026-09-30T17:15:30.955603+09:00  ok
+    Dispatch:  on time (scheduled 2026-09-30T17:15:00+09:00)
+    Execution: completed  c87c91779026489ab0c85f29ccb7124b
 
