@@ -17,7 +17,7 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (634.3 MB)
+    → state.db: rollback journal mode (636.2 MB)
   ⚠ cron/executions.db is in WAL mode (708.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -81,3 +81,77 @@ timed_out_after=20s
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1190 sessions)
+    → state.db logical size 636.2 MB, 162,880 pages, 272 free, WAL 0 B
+    → 52,914 messages, 1,190 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 2857) serving profiles default, aroundit, den, smd)
+    → FTS tables: messages_fts, messages_fts_trigram
+
+◆ Command Installation
+  ✓ Hermes entry point exists (/Users/insideden/.hermes/hermes-agent/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (pm store) (faster file search)
+  ✓ Docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
+  ⚠ Browser tools (agent-browser) deps (0 critical, 3 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
+  ⚠ web workspace deps (0 critical, 3 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+
+◆ API Connectivity
+  Running 42 connectivity checks in parallel…
+                                                                      
+  ✓ IPv6 route (no IPv6 route — IPv4 only)
+  ⚠ OpenRouter API (not configured)
+
+◆ Tool Availability
+  ✓ browser
+  ✓ browser-use
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ image_gen
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ memory
+  ✓ omh
+  ✓ project
+  ✓ session_search
+  ✓ setup
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ video
+  ✓ video_gen
+  ✓ vision
+  ✓ web search (parallel)
+  ✓ web extract (parallel)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ connections (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ homeassistant (system dependency not met)
+  ⚠ spotify (system dependency not met)
+  ⚠ tts (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (14 hub-installed skill(s))
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+
+◆ Memory Provider
+  ✓ Built-in memory active (no external provider configured — this is fine)
+
+◆ NeMo Relay Plugins
