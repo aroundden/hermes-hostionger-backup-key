@@ -10,26 +10,26 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-01T09:30:00+09:00
+    Next run:  2026-10-02T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-30T09:32:48.067685+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-30T09:30:00+09:00)
-    Execution: completed  9fec0ad437ba4e6c8adb1d451f32b95d
+    Last run:  2026-10-01T09:33:33.363852+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-01T09:30:00+09:00)
+    Execution: completed  9834c8e4ffd74bb5adadce95edb0f987
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-01T09:31:00+09:00
+    Next run:  2026-10-02T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-09-30T09:39:33.875050+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-30T09:31:00+09:00)
-    Execution: completed  cd5239dfee8e4149b328acadbf52e848
+    Last run:  2026-10-01T09:39:56.892703+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-01T09:31:00+09:00)
+    Execution: completed  864178a7623e49e4ada9de0c201b2961
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 웹훅 + 누락 보완
@@ -39,19 +39,19 @@ exit_code=0
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-01T09:08:51.954404+09:00  ok
+    Last run:  2026-10-01T10:12:23.847416+09:00  ok
     Dispatch:  on time (scheduled 2026-09-30T17:00:00+09:00)
-    Execution: completed  887c7047199745d3aeb9d9709661d01a
+    Execution: completed  70412af2d342423ab9fb6f662ccc671d
 
   2f914b573cda [active]
     Name:      광고주 웹훅 연결 상태 점검
     Schedule:  15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-01T09:15:00+09:00
+    Next run:  2026-10-01T10:15:00+09:00
     Deliver:   local
     Script:    advertiser_drive_push_health.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-09-30T17:15:30.955603+09:00  ok
-    Dispatch:  on time (scheduled 2026-09-30T17:15:00+09:00)
-    Execution: completed  c87c91779026489ab0c85f29ccb7124b
+    Last run:  2026-10-01T09:15:30.999212+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-01T09:15:00+09:00)
+    Execution: completed  88a60d6c11b2423a8efd10f99ece8919
 
