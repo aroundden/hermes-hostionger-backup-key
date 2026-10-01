@@ -52,7 +52,7 @@ auxiliary:
     provider: openai-codex
 memory:
   write_approval: true
-  provider: ''
+  provider: omh
 moa:
   presets:
     default:
@@ -80,7 +80,6 @@ moa:
 skills:
   external_dirs:
     - /Users/insideden/.local/share/omh/current/skills
-    - /Users/insideden/.local/share/omh/generations/20260927104957067512-edfca25300/skills
   disabled:
     - airtable
     - apple-notes

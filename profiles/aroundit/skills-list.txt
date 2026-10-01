@@ -130,16 +130,23 @@ exit_code=0
 │ omh-visual-qa    │ operator         │ local    │ local    │ enabled          │
 │ omh-workspace-a… │ operator         │ local    │ local    │ enabled          │
 │ omh-adversarial… │ planner          │ local    │ local    │ enabled          │
+│ omh-agent-instr… │ planner          │ local    │ local    │ enabled          │
 │ omh-backend      │ planner          │ local    │ local    │ enabled          │
 │ omh-codebase-on… │ planner          │ local    │ local    │ enabled          │
 │ omh-codebase-uml │ planner          │ local    │ local    │ enabled          │
 │ omh-codegraph-r… │ planner          │ local    │ local    │ enabled          │
 │ omh-curriculum-… │ planner          │ local    │ local    │ enabled          │
+│ omh-data-pipeli… │ planner          │ local    │ local    │ enabled          │
 │ omh-decision-pr… │ planner          │ local    │ local    │ enabled          │
+│ omh-iac-change   │ planner          │ local    │ local    │ enabled          │
+│ omh-mobile-rele… │ planner          │ local    │ local    │ enabled          │
+│ omh-model-finet… │ planner          │ local    │ local    │ enabled          │
 │ omh-plan         │ planner          │ local    │ local    │ enabled          │
 │ omh-product-bri… │ planner          │ local    │ local    │ enabled          │
 │ omh-product-dis… │ planner          │ local    │ local    │ enabled          │
 │ omh-refactor-pl… │ planner          │ local    │ local    │ enabled          │
+│ omh-relational-… │ planner          │ local    │ local    │ enabled          │
+│ omh-release-cut  │ planner          │ local    │ local    │ enabled          │
 │ omh-rust         │ planner          │ local    │ local    │ enabled          │
 │ airtable         │ productivity     │ builtin  │ builtin  │ disabled         │
 │ artist-commerci… │ productivity     │ local    │ local    │ enabled          │
@@ -187,11 +194,15 @@ exit_code=0
 │ omh-source-find… │ researcher       │ local    │ local    │ enabled          │
 │ omh-web-research │ researcher       │ local    │ local    │ enabled          │
 │ omh-accessibili… │ reviewer         │ local    │ local    │ enabled          │
+│ omh-app-debuggi… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-application… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-ask          │ reviewer         │ local    │ local    │ enabled          │
 │ omh-build-failu… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-code-review  │ reviewer         │ local    │ local    │ enabled          │
+│ omh-commit-pr-a… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-failure-sig… │ reviewer         │ local    │ local    │ enabled          │
+│ omh-git-workflow │ reviewer         │ local    │ local    │ enabled          │
+│ omh-internal-au… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-jev-action-… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-jev-done-ch… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-jev-failure… │ reviewer         │ local    │ local    │ enabled          │
@@ -200,6 +211,7 @@ exit_code=0
 │ omh-localizatio… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-native-debu… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-production-… │ reviewer         │ local    │ local    │ enabled          │
+│ omh-security-ev… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-security-sa… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-tech-debt-a… │ reviewer         │ local    │ local    │ enabled          │
 │ omh-verificatio… │ reviewer         │ local    │ local    │ enabled          │
@@ -254,5 +266,5 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ local    │ local    │ enabled          │
 │ blocked-page-re… │ web              │ builtin  │ builtin  │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-14 hub-installed, 58 builtin, 170 local — 181 enabled, 61 disabled
+14 hub-installed, 58 builtin, 182 local — 193 enabled, 61 disabled
 
