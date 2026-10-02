@@ -32,34 +32,14 @@ exit_code=0
     Execution: completed  968b2e35bc2e41f4b3d3513a9d5edf0f
 
   d6df4f1599af [active]
-    Name:      광고주 시트 변경 알림 — 웹훅 + 누락 보완
-    Schedule:  0 9,13,17 * * 1-5
+    Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
+    Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T17:00:00+09:00
+    Next run:  2026-10-02T16:15:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-02T13:04:12.106118+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-02T13:00:00+09:00)
-    Execution: completed  7dd9908aca5841dabe68430bd2a0dc84
-
-  2f914b573cda [active]
-    Name:      광고주 웹훅 연결 상태 점검
-    Schedule:  15 9-17 * * 1-5
-    Repeat:    ∞
-    Next run:  2026-10-02T15:15:00+09:00
-    Deliver:   local
-    Script:    advertiser_drive_push_health.py
-    Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-02T14:15:40.351144+09:00  error: Script exited with code 1
-stderr:
-Traceback (most recent call last):
-  File "<string>", line 16, in <module>
-    exec(code, main.__dict__)
-    ~~~~^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/insideden/.hermes/profiles/smd/scripts/advertiser_drive_push_health.py", line 24, in <module>
-    raise RuntimeError(' / '.join(problems) + ' — 정기 보완 조회는 별도 유지')
-RuntimeError: 웹훅 처리 서비스 중단 / Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지  (6 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-02T14:15:00+09:00)
-    Execution: failed  5055d633d4ef4e3282b1de1b34eb8f52
+    Last run:  2026-10-02T16:00:50.353797+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-02T16:00:00+09:00)
+    Execution: completed  a7e78ee7f14547d4a375dc9d7a734808
 
