@@ -50,3 +50,48 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
+  ✓ auxiliary task routing resolves: approval→openai-codex@chatgpt.com, background_review→openai-codex@chatgpt.com, compression→openai-codex@chatgpt.com, curator→openai-codex@chatgpt.com, goal_judge→openai-codex@chatgpt.com, kanban_decomposer→openai-codex@chatgpt.com, memory_query_rewrite→openai-codex@chatgpt.com, monitor→openai-codex@chatgpt.com, review→openai-codex@chatgpt.com, title_generation→openai-codex@chatgpt.com, triage_specifier→openai-codex@chatgpt.com
+  ✓ Config version up to date (v49)
+  ✓ No deprecated config keys or env vars
+
+◆ xAI Model Retirement (May 15, 2026)
+  ✓ No retired xAI models in config
+
+◆ Session Reset (timers removed Sep 7, 2026)
+  ✓ No idle/daily session_reset policy configured
+
+◆ Auth Providers
+  ✓ Nous Portal auth (logged in)
+  ✓ OpenAI Codex auth (logged in)
+  ⚠ MiniMax OAuth (not logged in)
+  ⚠ xAI OAuth (not logged in)
+    → No xAI OAuth credentials stored. Select xAI Grok OAuth (SuperGrok / Premium+) in `hermes model`.
+
+◆ Directory Structure
+  ✓ ~/.hermes/profiles/den directory exists
+  ✓ ~/.hermes/profiles/den/cron/ exists
+  ✓ ~/.hermes/profiles/den/sessions/ exists
+  ✓ ~/.hermes/profiles/den/logs/ exists
+  ✓ ~/.hermes/profiles/den/skills/ exists
+  ✓ ~/.hermes/profiles/den/memories/ exists
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 1.4 GB, entries pruned after 24h idle)
+    → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
+  ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
+  ✓ ~/.hermes/profiles/den/memories/ directory exists
+  ✓ MEMORY.md exists (529 chars)
+  ✓ USER.md exists (345 chars)
+  ✓ ~/.hermes/profiles/den/state.db exists (1203 sessions)
+    → state.db logical size 646.7 MB, 165,559 pages, 296 free, WAL 0 B
+    → 53,852 messages, 1,203 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 48789) serving profiles default, aroundit, den, smd)
+    → FTS tables: messages_fts, messages_fts_trigram
+
+◆ Command Installation
+  ✓ Hermes entry point exists (/Users/insideden/.hermes/hermes-agent/hermes)
+  ✓ ~/.local/bin/hermes exists (non-symlink)
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (pm store) (faster file search)
+  ✓ Docker (optional)
+  ✓ Node.js
+  ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
