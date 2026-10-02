@@ -47,11 +47,11 @@ exit_code=0
     Name:      광고주 웹훅 연결 상태 점검
     Schedule:  15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T10:15:00+09:00
+    Next run:  2026-10-02T11:15:00+09:00
     Deliver:   local
     Script:    advertiser_drive_push_health.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-02T09:15:44.555064+09:00  error: Script exited with code 1
+    Last run:  2026-10-02T10:15:46.525731+09:00  error: Script exited with code 1
 stderr:
 Traceback (most recent call last):
   File "<string>", line 16, in <module>
@@ -59,7 +59,7 @@ Traceback (most recent call last):
     ~~~~^^^^^^^^^^^^^^^^^^^^^
   File "/Users/insideden/.hermes/profiles/smd/scripts/advertiser_drive_push_health.py", line 24, in <module>
     raise RuntimeError(' / '.join(problems) + ' — 정기 보완 조회는 별도 유지')
-RuntimeError: 웹훅 처리 서비스 중단 / Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지
-    Dispatch:  on time (scheduled 2026-10-02T09:15:00+09:00)
-    Execution: failed  e1f0f69298294ce99db15ee806fa11e4
+RuntimeError: 웹훅 처리 서비스 중단 / Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-02T10:15:00+09:00)
+    Execution: failed  5a8a1c152f5f42b497b05a159714f9a6
 
