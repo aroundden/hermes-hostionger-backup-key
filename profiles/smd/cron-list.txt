@@ -10,48 +10,56 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T09:30:00+09:00
+    Next run:  2026-10-05T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-01T09:33:33.363852+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-01T09:30:00+09:00)
-    Execution: completed  9834c8e4ffd74bb5adadce95edb0f987
+    Last run:  2026-10-02T09:33:06.643205+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-02T09:30:00+09:00)
+    Execution: completed  daf7f4e2ca3342b5bf0792f9a9576033
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T09:31:00+09:00
+    Next run:  2026-10-05T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-01T09:39:56.892703+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-01T09:31:00+09:00)
-    Execution: completed  864178a7623e49e4ada9de0c201b2961
+    Last run:  2026-10-02T09:40:02.101296+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-02T09:31:00+09:00)
+    Execution: completed  968b2e35bc2e41f4b3d3513a9d5edf0f
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 웹훅 + 누락 보완
     Schedule:  0 9,13,17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T09:00:00+09:00
+    Next run:  2026-10-02T13:00:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-01T17:15:19.089728+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-01T13:00:00+09:00)
-    Execution: completed  540d829bd1f14afa955e692767c6b099
+    Last run:  2026-10-02T09:02:33.645489+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-02T09:00:00+09:00)
+    Execution: completed  fbad8564de9749cea183c1196d997d66
 
   2f914b573cda [active]
     Name:      광고주 웹훅 연결 상태 점검
     Schedule:  15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-02T09:15:00+09:00
+    Next run:  2026-10-02T10:15:00+09:00
     Deliver:   local
     Script:    advertiser_drive_push_health.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-01T17:15:30.838855+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-01T17:15:00+09:00)
-    Execution: completed  08e50604e6c04ef09af3bc344bfe870c
+    Last run:  2026-10-02T09:15:44.555064+09:00  error: Script exited with code 1
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 16, in <module>
+    exec(code, main.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/insideden/.hermes/profiles/smd/scripts/advertiser_drive_push_health.py", line 24, in <module>
+    raise RuntimeError(' / '.join(problems) + ' — 정기 보완 조회는 별도 유지')
+RuntimeError: 웹훅 처리 서비스 중단 / Google 변경 알림 구독 만료 임박 또는 미연결 — 정기 보완 조회는 별도 유지
+    Dispatch:  on time (scheduled 2026-10-02T09:15:00+09:00)
+    Execution: failed  e1f0f69298294ce99db15ee806fa11e4
 
