@@ -95,3 +95,5 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
+  ⚠ Browser tools (agent-browser) deps (0 critical, 13 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
