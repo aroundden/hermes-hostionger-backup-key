@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=124
-timed_out_after=20s
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -26,9 +25,7 @@ timed_out_after=20s
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/8286e47cd6de49b595f709157b751e66/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
-      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
+  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -82,7 +79,7 @@ timed_out_after=20s
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1212 sessions)
     → state.db logical size 654.2 MB, 167,473 pages, 275 free, WAL 0 B
-    → 54,509 messages, 1,212 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 48789) serving profiles default, aroundit, den, smd)
+    → 54,509 messages, 1,212 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 48789) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
