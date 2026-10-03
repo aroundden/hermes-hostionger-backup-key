@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-03T10:55:46.735997+09:00
+    Next run:  2026-10-03T12:03:54.944804+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-03T10:40:46.735997+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-03T10:29:41.474211+09:00)
-    Execution: completed  d1f3f8960597491481482a58d7ea9c26
+    Last run:  2026-10-03T11:33:38.387185+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-03T11:48:38.387185+09:00)
+    Execution: running  5fcbfadfbdb947beb08b16b57bedaf87
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -46,12 +46,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-03T11:44:54.117391+09:00
+    Next run:  2026-10-03T17:45:39.551648+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-03T05:44:54.117391+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-03T05:43:38.902369+09:00)
-    Execution: completed  ad9b6a0041374c4d9c5a6fb9a4f32267
+    Last run:  2026-10-03T11:45:39.551648+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-03T11:44:54.117391+09:00)
+    Execution: completed  23092e909d1e41d78920a910fc53532c
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-03T10:47:00+09:00
+    Next run:  2026-10-03T11:49:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-03T10:46:56.240725+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-03T10:46:00+09:00)
-    Execution: completed  82b8035569c3404b827c79a0377e0ade
+    Last run:  2026-10-03T11:48:56.209653+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-03T11:48:00+09:00)
+    Execution: completed  07e693ea11514c9cb4eaeb501074b1aa
 
   75d79e8a824e [active]
     Name:      Gmail 이벤트·15분 보조점검 일주일 운영 평가
