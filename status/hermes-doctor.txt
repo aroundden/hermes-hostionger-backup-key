@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -25,7 +26,9 @@ exit_code=1
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
   ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/8286e47cd6de49b595f709157b751e66/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
-  ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
+    → One switch silences all macOS folder prompts: grant your terminal app Full Disk Access and Hermes will never trip per-folder dialogs (Desktop/Downloads/Documents/...) again. Open: System Settings → Privacy & Security → Full Disk Access — or run:
+      open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
+    then enable your terminal (and Hermes.app if you use Desktop), and restart them once. With Hermes' stable signing identities the grant survives every update.
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
     → If macOS still re-prompts for permissions (toggle shows ON): the stored grant is stale — run `tccutil reset ScreenCapture com.nousresearch.hermes` (repeat per affected service), toggle it ON in System Settings, then fully quit & relaunch Hermes once.
 
@@ -77,9 +80,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1213 sessions)
-    → state.db logical size 655.3 MB, 167,765 pages, 537 free, WAL 0 B
-    → 54,545 messages, 1,213 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 48789) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1214 sessions)
+    → state.db logical size 655.3 MB, 167,765 pages, 474 free, WAL 0 B
+    → 54,553 messages, 1,214 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 48789) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -159,15 +162,3 @@ exit_code=1
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 5 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Run 'hermes setup' to configure API keys
-  3. Browser tools (agent-browser) has 10 npm vulnerabilities
-  4. web workspace has 8 npm vulnerabilities
-  5. ui-tui workspace has 5 npm vulnerabilities
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
