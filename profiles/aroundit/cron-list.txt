@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-04T10:41:55.071161+09:00
+    Next run:  2026-10-04T11:48:28.256105+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-04T10:11:06.778852+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-04T10:26:06.778852+09:00)
-    Execution: running  5e3b3d8e03804c418de8a38090650e28
+    Last run:  2026-10-04T11:33:28.256105+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-04T11:21:20.801585+09:00)
+    Execution: completed  126e94a269b04b288484bc9f0b7ead60
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -64,14 +64,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-04T10:31:00+09:00
+    Next run:  2026-10-04T11:33:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-04T10:30:56.995296+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-04T10:30:00+09:00)
-    Execution: completed  40b5554be17c4bafa985d6657ff5e1c0
+    Last run:  2026-10-04T11:32:54.558886+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-04T11:32:00+09:00)
+    Execution: completed  00fd66f00a874b8892d3cae5351aabbc
 
   75d79e8a824e [active]
     Name:      Gmail 이벤트·15분 보조점검 일주일 운영 평가
