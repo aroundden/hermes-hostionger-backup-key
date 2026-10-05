@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-06T07:31:33.178212+09:00
+    Next run:  2026-10-06T08:32:33.312281+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-06T05:31:14.034879+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T06:31:14.034879+09:00)
-    Execution: running  57939bde5f04474b8cc0a28ca7081f6e
+    Last run:  2026-10-06T06:32:15.318929+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T07:32:15.318929+09:00)
+    Execution: running  665446c90db14e6cb83ca7a17db04274
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-06T06:56:34.183045+09:00
+    Next run:  2026-10-06T07:58:34.192589+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-09-14T03:48:37.747417+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-06T06:26:34.183045+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T06:25:34.057109+09:00)
-    Execution: completed  c9aa658e00514f1caefa0c2f106d299e
+    Last run:  2026-10-06T07:28:34.192589+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T07:27:34.201860+09:00)
+    Execution: completed  b0bc16723f3e499282504fd47b94436b
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -93,12 +93,12 @@ exit_code=0
     Name:      AI Frontier 새 게시물 상세 요약
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-06T06:57:46.743869+09:00
+    Next run:  2026-10-06T07:58:47.889898+09:00
     Deliver:   slack:C0BM6HMVDQB:1791215305.982399
     Skills:    den-output-contract, google-workspace
     Script:    aifrontier_intake.py
     Workdir:   /Users/insideden/.hermes/profiles/den
-    Last run:  2026-10-06T05:57:46.743869+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T05:56:47.937362+09:00)
-    Execution: completed  425777d12fa04326a0e28911329d1bfa
+    Last run:  2026-10-06T06:58:47.889898+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T06:57:46.743869+09:00)
+    Execution: completed  cdd17b76ea204c63beb037d67e452cac
 
