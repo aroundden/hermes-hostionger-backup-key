@@ -80,9 +80,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1251 sessions)
-    → state.db logical size 674.3 MB, 172,630 pages, 623 free, WAL 0 B
-    → 56,405 messages, 1,251 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1261 sessions)
+    → state.db logical size 674.3 MB, 172,630 pages, 615 free, WAL 0 B
+    → 56,425 messages, 1,261 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -97,3 +97,5 @@ timed_out_after=20s
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ⚠ Browser tools (agent-browser) deps (0 critical, 10 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
+  ⚠ web workspace deps (0 critical, 5 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
