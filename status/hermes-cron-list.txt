@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-06T11:35:33.341768+09:00
+    Next run:  2026-10-06T12:36:45.848356+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-06T09:35:23.542340+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T10:35:23.542340+09:00)
-    Execution: running  2019e1d63daf40448d3bff2848a3a75c
+    Last run:  2026-10-06T10:36:14.899754+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T11:36:14.899754+09:00)
+    Execution: running  e39aede96a3741b9a2d3164bd4d3f494
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-06T11:04:34.121154+09:00
+    Next run:  2026-10-06T12:05:46.473392+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-09-14T03:48:37.747417+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-06T10:34:34.121154+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T10:33:34.111212+09:00)
-    Execution: completed  9d1852436c944e25838ec7f8582dbadd
+    Last run:  2026-10-06T11:35:46.473392+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T11:34:46.445279+09:00)
+    Execution: completed  032a0dc5ff2b45b1b791aa25b2e9650b
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -89,16 +89,6 @@ exit_code=0
     Script:    mem0_recovery_once.py
     Mode:      no-agent (script stdout delivered directly)
 
-  e87aff7087a0 [active]
-    Name:      AI Frontier 새 게시물 상세 요약
-    Schedule:  every 60m
-    Repeat:    ∞
-    Next run:  2026-10-06T11:02:01.199859+09:00
-    Deliver:   slack:C0BM6HMVDQB:1791215305.982399
-    Skills:    den-output-contract, google-workspace
-    Script:    aifrontier_intake.py
-    Workdir:   /Users/insideden/.hermes/profiles/den
-    Last run:  2026-10-06T10:02:01.199859+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T10:00:49.243138+09:00)
-    Execution: completed  d2ec87a660a6480da50c77cb09a61764
-
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

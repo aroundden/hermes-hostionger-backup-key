@@ -41,8 +41,8 @@ exit_code=0
   Nous Portal   ✓ logged in
     Portal URL: https://portal.nousresearch.com
     Inference:  https://inference-api.nousresearch.com/v1
-    Access exp: 2026-10-06 11:32:20 KST
-    Key exp:    2026-10-06 11:32:20 KST
+    Access exp: 2026-10-06 12:17:18 KST
+    Key exp:    2026-10-06 12:17:18 KST
     Refresh: <REDACTED>
   OpenAI Codex  ✓ logged in
     Auth file:  /Users/insideden/.hermes/profiles/den/auth.json
@@ -111,13 +111,16 @@ exit_code=0
   Manage with:  hermes gateway status   # from the default profile
 
 ◆ Scheduled Jobs
-  Jobs:         6 active, 8 total
+  Jobs:         5 active, 7 total
 
 ◆ Sessions
   Active:       104 session(s)
-  Last activity:      48m ago
+  Last activity:      30m ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
   Run 'hermes setup' to configure
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
