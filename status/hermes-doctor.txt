@@ -16,7 +16,7 @@ exit_code=1
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (664.7 MB)
+    → state.db: rollback journal mode (665.1 MB)
   ⚠ cron/executions.db is in WAL mode (708.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -79,9 +79,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1237 sessions)
-    → state.db logical size 664.7 MB, 170,159 pages, 104 free, WAL 0 B
-    → 55,643 messages, 1,237 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 320) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1238 sessions)
+    → state.db logical size 665.1 MB, 170,256 pages, 193 free, WAL 0 B
+    → 55,651 messages, 1,238 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 320) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -96,9 +96,9 @@ exit_code=1
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ⚠ Browser tools (agent-browser) deps (0 critical, 10 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ⚠ web workspace deps (0 critical, 4 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+  ⚠ web workspace deps (0 critical, 5 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 1 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+  ⚠ ui-tui workspace deps (0 critical, 2 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -167,8 +167,8 @@ exit_code=1
   1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
   2. Run 'hermes setup' to configure API keys
   3. Browser tools (agent-browser) has 10 npm vulnerabilities
-  4. web workspace has 8 npm vulnerabilities
-  5. ui-tui workspace has 5 npm vulnerabilities
+  4. web workspace has 9 npm vulnerabilities
+  5. ui-tui workspace has 6 npm vulnerabilities
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
