@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-06T09:33:33.250110+09:00
+    Next run:  2026-10-06T10:34:33.278618+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-06T07:33:16.882266+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T08:33:16.882266+09:00)
-    Execution: running  d6897a20980b4e53b0445bc782f3f4ca
+    Last run:  2026-10-06T08:34:18.323774+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T09:34:18.323774+09:00)
+    Execution: running  700351fe5094408fb39afaee7c64f83e
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-06T09:00:34.069371+09:00
+    Next run:  2026-10-06T10:02:34.126877+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-09-14T03:48:37.747417+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-06T08:30:34.069371+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T08:29:34.025685+09:00)
-    Execution: completed  d3e9ef3b455d4d7bbc2d4dfaaf92917e
+    Last run:  2026-10-06T09:32:34.126877+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T09:31:34.055110+09:00)
+    Execution: completed  3786247ab75b45a981a7677b26220780
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -49,13 +49,13 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  0 9,15,21 * * *
     Repeat:    ∞
-    Next run:  2026-10-06T09:00:00+09:00
+    Next run:  2026-10-06T15:00:00+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-05T21:02:47.479868+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-05T21:00:00+09:00)
-    Execution: completed  a58777cdf3ee4572939beb8dcaf5e52d
+    Last run:  2026-10-06T09:02:02.058507+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T09:00:00+09:00)
+    Execution: completed  547101c2770545a38aecceb075852a39
 
   4624d933404b [active]
     Name:      TickTick Member Worklog 마감순 정렬
@@ -93,12 +93,12 @@ exit_code=0
     Name:      AI Frontier 새 게시물 상세 요약
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-06T08:59:46.990875+09:00
+    Next run:  2026-10-06T10:00:49.243138+09:00
     Deliver:   slack:C0BM6HMVDQB:1791215305.982399
     Skills:    den-output-contract, google-workspace
     Script:    aifrontier_intake.py
     Workdir:   /Users/insideden/.hermes/profiles/den
-    Last run:  2026-10-06T07:59:46.990875+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T07:58:47.889898+09:00)
-    Execution: completed  c6f7248cf98b4d7eb0810cdc414cef17
+    Last run:  2026-10-06T09:00:49.243138+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-06T08:59:46.990875+09:00)
+    Execution: completed  38b0b5bad5bd43ce8e871370c92fe3fb
 
