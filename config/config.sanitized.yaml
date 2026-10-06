@@ -321,11 +321,13 @@ desktop:
 
 plugins:
   enabled:
+    - homeassistant
     - omh
   entries:
     omh:
       settings:
         omh_home: /Users/insideden/.hermes/omh
+  disabled: []
 platforms:
   webhook:
     enabled: true
@@ -338,4 +340,6 @@ known_plugin_toolsets:
   webhook:
     - homeassistant
 _left_core_scoped:
+  - homeassistant
+_left_core_installed:
   - homeassistant
