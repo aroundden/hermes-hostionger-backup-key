@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-07T00:12:45.648410+09:00
+    Next run:  2026-10-07T01:09:45.601695+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-06T23:41:47.092389+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T23:56:47.092389+09:00)
-    Execution: running  6a1041fa62a14ffd894389d869437bc0
+    Last run:  2026-10-07T00:38:58.203869+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T00:53:58.203869+09:00)
+    Execution: running  dfbc4b8a75364cb7b9ad633d0b99eb9b
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -46,12 +46,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-07T00:04:22.432905+09:00
+    Next run:  2026-10-07T06:06:36.469729+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-06T18:04:22.432905+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T18:03:28.889266+09:00)
-    Execution: completed  dda5a939343b48128d577fdf2675db78
+    Last run:  2026-10-07T00:06:36.469729+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T00:04:22.432905+09:00)
+    Execution: completed  4825552f12cf4367ae0d1a06637f58f6
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,12 +65,12 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-07T00:01:00+09:00
+    Next run:  2026-10-07T01:03:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-07T00:00:46.756116+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-07T00:00:00+09:00)
-    Execution: completed  33c71aa6f3de4881b1b0ed355d6384c7
+    Last run:  2026-10-07T01:02:46.728546+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T01:02:00+09:00)
+    Execution: completed  e78651a172284ba9a8cb2d565ea6a45d
 
