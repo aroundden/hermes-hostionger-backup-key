@@ -10,36 +10,36 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-07T09:30:00+09:00
+    Next run:  2026-10-08T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-06T09:32:55.298578+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T09:30:00+09:00)
-    Execution: completed  60385247adba49fea9e69f5fe8f8b106
+    Last run:  2026-10-07T09:32:24.246418+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T09:30:00+09:00)
+    Execution: completed  7f1be16550de4a6bb0d2fc858c071deb
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-07T09:31:00+09:00
+    Next run:  2026-10-08T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-06T09:38:54.168308+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T09:31:00+09:00)
-    Execution: completed  fa6c751eda4e4ce9b63eb81d606b6d3b
+    Last run:  2026-10-07T09:38:23.815422+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T09:31:00+09:00)
+    Execution: completed  41b82d1bdb7744478e113597358bc60e
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-07T09:15:00+09:00
+    Next run:  2026-10-07T10:15:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-07T09:00:50.758412+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-07T09:00:00+09:00)
-    Execution: completed  ed8416691eb548b9a2fc3cb75b548dc0
+    Last run:  2026-10-07T10:00:48.493963+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T10:00:00+09:00)
+    Execution: completed  5509e9bde87346289723b576444de73b
 
