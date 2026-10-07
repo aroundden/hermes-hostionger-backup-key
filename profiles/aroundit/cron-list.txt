@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-07T08:15:58.017667+09:00
+    Next run:  2026-10-07T09:25:45.681216+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-07T08:00:58.017667+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-07T07:47:56.304629+09:00)
-    Execution: completed  4383477ef0954fe4b669bd5c2be94475
+    Last run:  2026-10-07T08:54:56.698102+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T09:09:56.698102+09:00)
+    Execution: running  6a92b6f69b3a4c3296251a882f5bd65f
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -33,13 +33,14 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * 1-6
     Repeat:    ∞
-    Next run:  2026-10-07T09:00:00+09:00
+    Next run:  2026-10-08T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-06T09:03:04.600779+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-06T09:00:00+09:00)
+    Last run:  2026-10-07T09:05:39.406463+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T09:00:00+09:00)
+    Execution: completed  cd850500e30c471895e2afd8abaf81ef
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -64,12 +65,12 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-07T08:12:00+09:00
+    Next run:  2026-10-07T09:13:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-07T08:11:45.861846+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-07T08:11:00+09:00)
-    Execution: completed  55f935a17e44444990ad8e20712b9d0c
+    Last run:  2026-10-07T09:12:46.063886+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-07T09:12:00+09:00)
+    Execution: completed  7dea0df2a4b849749cc56c6f3c8d5e64
 
