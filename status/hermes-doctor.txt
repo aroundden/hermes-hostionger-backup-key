@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -79,9 +80,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1332 sessions)
-    → state.db logical size 674.8 MB, 172,756 pages, 594 free, WAL 0 B
-    → 56,567 messages, 1,332 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1335 sessions)
+    → state.db logical size 674.8 MB, 172,756 pages, 421 free, WAL 0 B
+    → 56,626 messages, 1,335 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
