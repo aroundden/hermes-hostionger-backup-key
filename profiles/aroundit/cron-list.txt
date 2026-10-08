@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-08T11:49:45.573801+09:00
+    Next run:  2026-10-08T12:50:45.587233+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-08T11:19:12.051255+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-08T11:34:12.051255+09:00)
-    Execution: running  454f8b99f1dd4e2cbe471039cd3d005f
+    Last run:  2026-10-08T12:19:52.687667+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-08T12:34:52.687667+09:00)
+    Execution: running  98a8e952e584439795a15604106f70ea
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -46,12 +46,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-08T12:12:26.611584+09:00
+    Next run:  2026-10-08T18:13:30.899408+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-08T06:12:26.611584+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-08T06:11:32.546780+09:00)
-    Execution: completed  015e58ca841440baa7ba2e66f4b92b7d
+    Last run:  2026-10-08T12:13:30.899408+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-08T12:12:26.611584+09:00)
+    Execution: completed  e387e94a29b84139a977785439136924
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,20 +65,12 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-08T11:40:00+09:00
+    Next run:  2026-10-08T12:41:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-08T11:39:45.945776+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-08T11:39:00+09:00)
-    Execution: completed  ae68df61602a45fab90b95933ae1464b
-
-  46a32f72e520 [active]
-    Name:      문화방송 오네게 재발행 국세청 결과 1회 확인
-    Schedule:  once in 30m
-    Repeat:    0/1
-    Next run:  2026-10-08T11:57:59.848502+09:00
-    Deliver:   origin
-    Skills:    tax-invoice-operations, aside-browser-operations, den-output-contract
+    Last run:  2026-10-08T12:40:46.003346+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-08T12:40:00+09:00)
+    Execution: completed  766de2bf4efc475984a00884c8a8df6c
 
