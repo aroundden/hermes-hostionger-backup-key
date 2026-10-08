@@ -17,7 +17,7 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (676.1 MB)
+    → state.db: rollback journal mode (677.0 MB)
   ⚠ cron/executions.db is in WAL mode (708.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -80,9 +80,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1338 sessions)
-    → state.db logical size 676.1 MB, 173,083 pages, 421 free, WAL 0 B
-    → 56,723 messages, 1,338 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1339 sessions)
+    → state.db logical size 677.0 MB, 173,324 pages, 593 free, WAL 0 B
+    → 56,735 messages, 1,339 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -95,7 +95,3 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
-  ⚠ Browser tools (agent-browser) deps (0 critical, 10 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ⚠ web workspace deps (0 critical, 5 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
