@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=124
-timed_out_after=20s
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -81,8 +80,8 @@ timed_out_after=20s
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1339 sessions)
-    → state.db logical size 677.0 MB, 173,324 pages, 616 free, WAL 0 B
-    → 56,735 messages, 1,339 sessions, journal_mode=delete, 5 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
+    → state.db logical size 677.0 MB, 173,324 pages, 575 free, WAL 0 B
+    → 56,744 messages, 1,339 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -161,3 +160,15 @@ timed_out_after=20s
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
+
+────────────────────────────────────────────────────────────
+  Found 5 issue(s) to address:
+
+  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
+  2. Run 'hermes setup' to configure API keys
+  3. Browser tools (agent-browser) has 10 npm vulnerabilities
+  4. web workspace has 9 npm vulnerabilities
+  5. ui-tui workspace has 6 npm vulnerabilities
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
