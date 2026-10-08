@@ -82,7 +82,7 @@ timed_out_after=20s
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1343 sessions)
     → state.db logical size 677.4 MB, 173,426 pages, 211 free, WAL 0 B
-    → 56,864 messages, 1,343 sessions, journal_mode=delete, 5 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
+    → 56,864 messages, 1,343 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 79340) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -148,16 +148,3 @@ timed_out_after=20s
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
