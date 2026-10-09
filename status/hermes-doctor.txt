@@ -78,9 +78,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1349 sessions)
-    → state.db logical size 681.6 MB, 174,477 pages, 105 free, WAL 0 B
-    → 57,328 messages, 1,349 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 45439) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1350 sessions)
+    → state.db logical size 681.6 MB, 174,477 pages, 96 free, WAL 0 B
+    → 57,396 messages, 1,350 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 45439) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -149,13 +149,3 @@ timed_out_after=20s
   ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
 
 ◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
