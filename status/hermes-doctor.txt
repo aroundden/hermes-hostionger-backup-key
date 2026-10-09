@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -71,15 +72,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 3.0 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 7.9 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1346 sessions)
-    → state.db logical size 680.6 MB, 174,231 pages, 674 free, WAL 0 B
-    → 57,018 messages, 1,346 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 80496) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1347 sessions)
+    → state.db logical size 680.6 MB, 174,231 pages, 445 free, WAL 0 B
+    → 57,086 messages, 1,347 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 80496) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -158,15 +159,3 @@ exit_code=1
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 5 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Run 'hermes setup' to configure API keys
-  3. Browser tools (agent-browser) has 10 npm vulnerabilities
-  4. web workspace has 9 npm vulnerabilities
-  5. ui-tui workspace has 6 npm vulnerabilities
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
