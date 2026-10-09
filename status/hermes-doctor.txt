@@ -72,15 +72,15 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 7.9 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 51.5 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1348 sessions)
-    → state.db logical size 681.6 MB, 174,477 pages, 285 free, WAL 0 B
-    → 57,249 messages, 1,348 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 45439) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1349 sessions)
+    → state.db logical size 681.6 MB, 174,477 pages, 105 free, WAL 0 B
+    → 57,328 messages, 1,349 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 45439) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
 
 ◆ Command Installation
@@ -95,3 +95,67 @@ timed_out_after=20s
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ⚠ Browser tools (agent-browser) deps (0 critical, 10 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
+  ⚠ web workspace deps (0 critical, 5 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 2 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+
+◆ API Connectivity
+  Running 42 connectivity checks in parallel…
+                                                                      
+  ✓ IPv6 route (no IPv6 route — IPv4 only)
+  ⚠ OpenRouter API (not configured)
+
+◆ Tool Availability
+  ✓ browser
+  ✓ browser-use
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ connections
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ image_gen
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ memory
+  ✓ omh
+  ✓ project
+  ✓ session_search
+  ✓ setup
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ video
+  ✓ video_gen
+  ✓ vision
+  ✓ web search (parallel)
+  ✓ web extract (parallel)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ spotify (system dependency not met)
+  ⚠ tts (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (14 hub-installed skill(s))
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+
+◆ Memory Provider
+  ✓ omh provider active
+
+◆ NeMo Relay Plugins
+  ✓ No Relay plugin files found
+
+◆ Profiles
+  ✓ 3 profile(s) found
+  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
