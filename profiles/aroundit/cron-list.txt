@@ -10,15 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-11T00:46:57.355080+09:00
+    Next run:  2026-10-11T01:48:57.243806+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-11T00:16:32.654947+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    Dispatch:  on time (scheduled 2026-10-11T00:31:32.654947+09:00)
-    Execution: running  7f55322406684014bc6e0957622b486e
-    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
+    Last run:  2026-10-11T01:18:40.851924+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-11T01:33:40.851924+09:00)
+    Execution: running  6bdc9d356a9b477190c8512360e3c037
+    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -42,7 +41,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-10T09:04:05.196593+09:00  ok
     Dispatch:  on time (scheduled 2026-10-10T09:00:00+09:00)
-    Execution: completed  ee6f181a3eb04a109ea34cf6b21d75d4
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -67,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-11T00:42:00+09:00
+    Next run:  2026-10-11T01:44:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-11T00:41:58.036877+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-11T00:41:00+09:00)
-    Execution: completed  c3a59f60a5f044b1b82212fd37164082
+    Last run:  2026-10-11T01:43:57.696344+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-11T01:43:00+09:00)
+    Execution: completed  f02026d7adf349d7a0e96bf2cf1368a8
 
   5c8d12accab8 [active]
     Name:      K-standards 9월 출연료 세금계산서 발행 확인 알림
