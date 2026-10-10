@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=124
-timed_out_after=20s
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -159,3 +158,15 @@ timed_out_after=20s
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
+
+────────────────────────────────────────────────────────────
+  Found 5 issue(s) to address:
+
+  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
+  2. Run 'hermes setup' to configure API keys
+  3. Browser tools (agent-browser) has 10 npm vulnerabilities
+  4. web workspace has 9 npm vulnerabilities
+  5. ui-tui workspace has 6 npm vulnerabilities
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
