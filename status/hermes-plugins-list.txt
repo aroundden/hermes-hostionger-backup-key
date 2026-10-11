@@ -878,20 +878,6 @@ exit_code=0
 │                      │             │         │ in the next turn so │         │
 │                      │             │         │ it can              │         │
 │                      │             │         │ self-correct.       │         │
-│ spotify              │ enabled     │ 1.0.0   │ Native Spotify      │ bundled │
-│                      │             │         │ integration — 7     │         │
-│                      │             │         │ tools (playback,    │         │
-│                      │             │         │ devices, queue,     │         │
-│                      │             │         │ search, playlists,  │         │
-│                      │             │         │ albums, library)    │         │
-│                      │             │         │ using Spotify Web   │         │
-│                      │             │         │ API + PKCE OAuth.   │         │
-│                      │             │         │ Auth via `hermes    │         │
-│                      │             │         │ auth spotify`.      │         │
-│                      │             │         │ Tools gate on       │         │
-│                      │             │         │ `providers.spotify` │         │
-│                      │             │         │ in                  │         │
-│                      │             │         │ ~/.hermes/auth.jso… │         │
 │ teams_pipeline       │ not enabled │ 0.1.0   │ Microsoft Teams     │ bundled │
 │                      │             │         │ meeting pipeline    │         │
 │                      │             │         │ plugin with durable │         │
@@ -1048,7 +1034,7 @@ exit_code=0
 │                      │             │         │ auth`) or           │         │
 │                      │             │         │ XAI_API_KEY         │         │
 │                      │             │         │ (https://x.ai).     │         │
-│ omh                  │ enabled     │ 3.0.0   │ Oh My Hermes native │ user    │
+│ omh                  │ enabled     │ 3.0.2   │ Oh My Hermes native │ user    │
 │                      │             │         │ bridge for          │         │
 │                      │             │         │ metadata-only       │         │
 │                      │             │         │ runtime status,     │         │
