@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-11T11:56:57.472891+09:00
+    Next run:  2026-10-11T12:55:55.419557+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-11T11:26:30.227760+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-11T11:41:30.227760+09:00)
-    Execution: running  7b1cd5d8f8254204a32b40922788ddd4
+    Last run:  2026-10-11T12:25:08.317525+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-11T12:40:08.317525+09:00)
+    Execution: running  72c661af12fe4504bce408fbc4d915c8
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -46,12 +46,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-11T12:26:23.307351+09:00
+    Next run:  2026-10-11T18:27:36.574391+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-11T06:26:23.307351+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-11T06:25:35.895060+09:00)
-    Execution: completed  108e88a8304b4eeca15d7aa801e0558c
+    Last run:  2026-10-11T12:27:36.574391+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-11T12:26:23.307351+09:00)
+    Execution: completed  bc3c3303ec094befa9f81d2c3362f01c
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-11T11:54:00+09:00
+    Next run:  2026-10-11T12:55:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-11T11:53:57.914825+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-11T11:53:00+09:00)
-    Execution: completed  0b2ca93a0f314f72bd519e89b9ae14e5
+    Last run:  2026-10-11T12:54:55.747224+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-11T12:54:00+09:00)
+    Execution: completed  dddc04dc6c21434d87350e89e8ec549d
 
   5c8d12accab8 [active]
     Name:      K-standards 9월 출연료 세금계산서 발행 확인 알림
