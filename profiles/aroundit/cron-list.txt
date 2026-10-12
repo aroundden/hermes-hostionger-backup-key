@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-12T12:28:00.995734+09:00
+    Next run:  2026-10-12T13:33:11.521869+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-12T12:13:00.995734+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T11:58:44.479867+09:00)
-    Execution: completed  fed2576f621b4b23b30468048d4bbc58
+    Last run:  2026-10-12T13:18:11.521869+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-12T13:12:58.796556+09:00)
+    Execution: completed  bf9c9ca5a8c24e78b85679489a9acd9c
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-12T12:30:27.330549+09:00
+    Next run:  2026-10-12T18:31:40.329335+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-12T06:30:27.330549+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T06:29:41.217520+09:00)
-    Execution: completed  a7185b2f4a014b7a9137b882c35cfb78
+    Last run:  2026-10-12T12:31:40.329335+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-12T12:30:27.330549+09:00)
+    Execution: completed  543fb3d19d3e4eae948160b15a17763e
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,12 +66,12 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-12T12:19:00+09:00
+    Next run:  2026-10-12T13:20:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-12T12:18:59.277363+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T12:18:00+09:00)
-    Execution: completed  8347ebef290d4e60aeea54672e941ce4
+    Last run:  2026-10-12T13:19:59.377766+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-12T13:19:00+09:00)
+    Execution: completed  84d691117cca4efe8d22a79156a0c26f
 
