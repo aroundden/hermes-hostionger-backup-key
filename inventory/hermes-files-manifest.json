@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 46621,
+  "count": 46630,
   "files": [
     {
       "path": "SOUL.md",
@@ -85,7 +85,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1791808078
+      "mtime": 1791811738
     },
     {
       "path": "cron/executions.db",
@@ -1130,12 +1130,12 @@
     {
       "path": "cron/ticker_heartbeat",
       "size": 23,
-      "mtime": 1791808078
+      "mtime": 1791811738
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1791808078
+      "size": 18,
+      "mtime": 1791811738
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -4770,7 +4770,7 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1791808019
+      "mtime": 1791811022
     },
     {
       "path": "profiles/aroundit/.skills_prompt_snapshot.json",
@@ -5160,7 +5160,7 @@
     {
       "path": "profiles/aroundit/auth.lock",
       "size": 0,
-      "mtime": 1791808019
+      "mtime": 1791811636
     },
     {
       "path": "profiles/aroundit/automation/kmong/validation.md",
@@ -8880,7 +8880,7 @@
     {
       "path": "profiles/aroundit/cache/oauth_heal_clean.json",
       "size": 1340,
-      "mtime": 1791808019
+      "mtime": 1791811636
     },
     {
       "path": "profiles/aroundit/cache/openrouter_curated_catalog.json",
@@ -8936,6 +8936,11 @@
       "path": "profiles/aroundit/cache/scratch/audit_status.py",
       "size": 510,
       "mtime": 1791726596
+    },
+    {
+      "path": "profiles/aroundit/cache/scratch/audit_summary.txt",
+      "size": 87959,
+      "mtime": 1791811632
     },
     {
       "path": "profiles/aroundit/cache/scratch/check_audit_delta_2310.py",
@@ -9174,8 +9179,8 @@
     },
     {
       "path": "profiles/aroundit/cache/scratch/gmail-resume-2118.log",
-      "size": 0,
-      "mtime": 1791807988
+      "size": 1281487,
+      "mtime": 1791808269
     },
     {
       "path": "profiles/aroundit/cache/scratch/gmail_1752_compare.py",
@@ -9191,6 +9196,11 @@
       "path": "profiles/aroundit/cache/scratch/gmail_finalize_20261011.py",
       "size": 2934,
       "mtime": 1791707754
+    },
+    {
+      "path": "profiles/aroundit/cache/scratch/gmail_finish_2118_oct12.py",
+      "size": 3191,
+      "mtime": 1791808319
     },
     {
       "path": "profiles/aroundit/cache/scratch/gmail_finish_scan.py",
@@ -9249,8 +9259,13 @@
     },
     {
       "path": "profiles/aroundit/cache/scratch/italki_read_watch.py",
-      "size": 1764,
-      "mtime": 1791794226
+      "size": 2108,
+      "mtime": 1791811137
+    },
+    {
+      "path": "profiles/aroundit/cache/scratch/italki_reply_read.py",
+      "size": 1854,
+      "mtime": 1791809089
     },
     {
       "path": "profiles/aroundit/cache/scratch/italki_watch_read.py",
@@ -9351,6 +9366,11 @@
       "path": "profiles/aroundit/cache/scratch/resume_2212.py",
       "size": 1552,
       "mtime": 1791724822
+    },
+    {
+      "path": "profiles/aroundit/cache/scratch/resume_audit.py",
+      "size": 1850,
+      "mtime": 1791811516
     },
     {
       "path": "profiles/aroundit/cache/scratch/resume_gmail_1159.py",
@@ -9488,6 +9508,11 @@
       "mtime": 1791783891
     },
     {
+      "path": "profiles/aroundit/cache/scratch/sevendivide_20261012.py",
+      "size": 5793,
+      "mtime": 1791810043
+    },
+    {
       "path": "profiles/aroundit/cache/scratch/tv-calendar.swift",
       "size": 2036,
       "mtime": 1791783846
@@ -9506,26 +9531,6 @@
       "path": "profiles/aroundit/cache/stella-register.py",
       "size": 3355,
       "mtime": 1789544192
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1791203867-320-28b0.log",
-      "size": 75130,
-      "mtime": 1791203867
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1791203907-320-1220.log",
-      "size": 1173628,
-      "mtime": 1791203987
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1791205464-320-fbb0.log",
-      "size": 226601,
-      "mtime": 1791205465
-    },
-    {
-      "path": "profiles/aroundit/cache/terminal-output/out-1791205664-320-3820.log",
-      "size": 69938,
-      "mtime": 1791205664
     },
     {
       "path": "profiles/aroundit/cache/terminal-output/out-1791207370-320-3e0.log",
@@ -14360,7 +14365,7 @@
     {
       "path": "profiles/aroundit/cron/.tick.lock",
       "size": 0,
-      "mtime": 1791808078
+      "mtime": 1791811738
     },
     {
       "path": "profiles/aroundit/cron/catch_up_occurrences",
@@ -14369,13 +14374,13 @@
     },
     {
       "path": "profiles/aroundit/cron/executions.db",
-      "size": 757760,
-      "mtime": 1791808100
+      "size": 761856,
+      "mtime": 1791811739
     },
     {
       "path": "profiles/aroundit/cron/jobs.json",
-      "size": 49733,
-      "mtime": 1791808081
+      "size": 49607,
+      "mtime": 1791811739
     },
     {
       "path": "profiles/aroundit/cron/jobs.json.pre-output-v2-20260822-221947",
@@ -14393,254 +14398,254 @@
       "mtime": 1786855756
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-38-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-39-59.md",
       "size": 176,
-      "mtime": 1791805139
+      "mtime": 1791808799
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-39-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-40-59.md",
       "size": 176,
-      "mtime": 1791805199
+      "mtime": 1791808859
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-40-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-41-59.md",
       "size": 176,
-      "mtime": 1791805259
+      "mtime": 1791808919
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-41-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-42-59.md",
       "size": 176,
-      "mtime": 1791805319
+      "mtime": 1791808979
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-42-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-43-59.md",
       "size": 176,
-      "mtime": 1791805378
+      "mtime": 1791809039
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-43-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-44-58.md",
       "size": 176,
-      "mtime": 1791805439
+      "mtime": 1791809098
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-44-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-45-59.md",
       "size": 176,
-      "mtime": 1791805499
+      "mtime": 1791809159
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-45-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-46-58.md",
       "size": 176,
-      "mtime": 1791805558
+      "mtime": 1791809218
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-46-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-47-59.md",
       "size": 176,
-      "mtime": 1791805618
+      "mtime": 1791809279
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-47-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-48-58.md",
       "size": 176,
-      "mtime": 1791805679
+      "mtime": 1791809338
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-48-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-49-59.md",
       "size": 176,
-      "mtime": 1791805738
+      "mtime": 1791809399
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-49-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-50-59.md",
       "size": 176,
-      "mtime": 1791805799
+      "mtime": 1791809459
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-50-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-51-59.md",
       "size": 176,
-      "mtime": 1791805858
+      "mtime": 1791809519
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-51-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-52-59.md",
       "size": 176,
-      "mtime": 1791805919
+      "mtime": 1791809579
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-52-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-53-58.md",
       "size": 176,
-      "mtime": 1791805979
+      "mtime": 1791809638
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-53-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-54-58.md",
       "size": 176,
-      "mtime": 1791806039
+      "mtime": 1791809698
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-54-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-55-59.md",
       "size": 176,
-      "mtime": 1791806099
+      "mtime": 1791809759
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-55-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-56-59.md",
       "size": 176,
-      "mtime": 1791806159
+      "mtime": 1791809819
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-56-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-57-59.md",
       "size": 176,
-      "mtime": 1791806218
+      "mtime": 1791809879
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-57-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-58-58.md",
       "size": 176,
-      "mtime": 1791806278
+      "mtime": 1791809938
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-58-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-59-59.md",
       "size": 176,
-      "mtime": 1791806338
+      "mtime": 1791809999
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_20-59-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-00-59.md",
       "size": 176,
-      "mtime": 1791806399
+      "mtime": 1791810059
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-00-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-01-59.md",
       "size": 176,
-      "mtime": 1791806459
+      "mtime": 1791810119
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-01-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-02-59.md",
       "size": 176,
-      "mtime": 1791806518
+      "mtime": 1791810179
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-02-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-03-59.md",
       "size": 176,
-      "mtime": 1791806579
+      "mtime": 1791810239
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-03-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-04-59.md",
       "size": 176,
-      "mtime": 1791806638
+      "mtime": 1791810299
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-04-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-05-59.md",
       "size": 176,
-      "mtime": 1791806698
+      "mtime": 1791810359
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-05-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-06-58.md",
       "size": 176,
-      "mtime": 1791806758
+      "mtime": 1791810418
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-06-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-07-59.md",
       "size": 176,
-      "mtime": 1791806818
+      "mtime": 1791810479
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-07-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-08-59.md",
       "size": 176,
-      "mtime": 1791806878
+      "mtime": 1791810539
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-08-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-09-59.md",
       "size": 176,
-      "mtime": 1791806938
+      "mtime": 1791810599
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-09-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-10-59.md",
       "size": 176,
-      "mtime": 1791806998
+      "mtime": 1791810659
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-10-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-11-59.md",
       "size": 176,
-      "mtime": 1791807058
+      "mtime": 1791810719
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-11-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-12-59.md",
       "size": 176,
-      "mtime": 1791807119
+      "mtime": 1791810779
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-12-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-13-59.md",
       "size": 176,
-      "mtime": 1791807178
+      "mtime": 1791810839
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-13-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-14-59.md",
       "size": 176,
-      "mtime": 1791807239
+      "mtime": 1791810899
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-14-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-15-59.md",
       "size": 176,
-      "mtime": 1791807298
+      "mtime": 1791810959
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-15-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-16-59.md",
       "size": 176,
-      "mtime": 1791807359
+      "mtime": 1791811019
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-16-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-17-59.md",
       "size": 176,
-      "mtime": 1791807419
+      "mtime": 1791811079
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-17-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-18-59.md",
       "size": 176,
-      "mtime": 1791807479
+      "mtime": 1791811139
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-18-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-19-59.md",
       "size": 176,
-      "mtime": 1791807538
+      "mtime": 1791811199
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-19-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-20-59.md",
       "size": 176,
-      "mtime": 1791807598
+      "mtime": 1791811259
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-20-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-21-59.md",
       "size": 176,
-      "mtime": 1791807659
+      "mtime": 1791811319
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-21-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-22-59.md",
       "size": 176,
-      "mtime": 1791807719
+      "mtime": 1791811379
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-22-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-23-59.md",
       "size": 176,
-      "mtime": 1791807779
+      "mtime": 1791811439
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-23-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-24-59.md",
       "size": 176,
-      "mtime": 1791807838
+      "mtime": 1791811499
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-24-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-25-59.md",
       "size": 176,
-      "mtime": 1791807899
+      "mtime": 1791811559
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-25-59.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-26-59.md",
       "size": 176,
-      "mtime": 1791807959
+      "mtime": 1791811619
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-26-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-27-59.md",
       "size": 176,
-      "mtime": 1791808018
+      "mtime": 1791811679
     },
     {
-      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_21-27-58.md",
+      "path": "profiles/aroundit/cron/output/1051bb54e8ea/2026-10-12_22-28-59.md",
       "size": 176,
-      "mtime": 1791808078
+      "mtime": 1791811739
     },
     {
       "path": "profiles/aroundit/cron/output/43c8a15ce3ba/2026-10-12_11-04-20.md",
@@ -15053,6 +15058,21 @@
       "mtime": 1791808081
     },
     {
+      "path": "profiles/aroundit/cron/output/976238def7f6/2026-10-12_21-45-00.md",
+      "size": 32854,
+      "mtime": 1791809100
+    },
+    {
+      "path": "profiles/aroundit/cron/output/976238def7f6/2026-10-12_22-01-53.md",
+      "size": 32854,
+      "mtime": 1791810113
+    },
+    {
+      "path": "profiles/aroundit/cron/output/976238def7f6/2026-10-12_22-19-07.md",
+      "size": 32854,
+      "mtime": 1791811147
+    },
+    {
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-08-19_03-10-52.md",
       "size": 50101,
       "mtime": 1787076652
@@ -15066,21 +15086,6 @@
       "path": "profiles/aroundit/cron/output/a4642e1093eb/2026-09-24_10-02-10.md",
       "size": 64079,
       "mtime": 1790211730
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-11_20-58-27.md",
-      "size": 132968,
-      "mtime": 1791719907
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-11_21-26-41.md",
-      "size": 132968,
-      "mtime": 1791721601
-    },
-    {
-      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-11_21-56-33.md",
-      "size": 132968,
-      "mtime": 1791723393
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-11_22-26-13.md",
@@ -15316,6 +15321,21 @@
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-12_21-02-56.md",
       "size": 132968,
       "mtime": 1791806576
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-12_21-32-09.md",
+      "size": 132968,
+      "mtime": 1791808329
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-12_22-01-08.md",
+      "size": 134010,
+      "mtime": 1791810068
+    },
+    {
+      "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/2026-10-12_22-28-21.md",
+      "size": 132968,
+      "mtime": 1791811701
     },
     {
       "path": "profiles/aroundit/cron/output/a74bb2d8bc4c/monitor_last_output.txt",
@@ -15580,17 +15600,17 @@
     {
       "path": "profiles/aroundit/cron/ticker_heartbeat",
       "size": 23,
-      "mtime": 1791808078
+      "mtime": 1791811738
     },
     {
       "path": "profiles/aroundit/cron/ticker_last_success",
-      "size": 17,
-      "mtime": 1791808078
+      "size": 18,
+      "mtime": 1791811738
     },
     {
       "path": "profiles/aroundit/cron/usage_audit.jsonl",
-      "size": 1478168,
-      "mtime": 1791808081
+      "size": 1480086,
+      "mtime": 1791811701
     },
     {
       "path": "profiles/aroundit/email_auto_draft_state.json",
@@ -15790,7 +15810,7 @@
     {
       "path": "profiles/aroundit/gmail-events/bridge-health.json",
       "size": 56,
-      "mtime": 1791808078
+      "mtime": 1791811739
     },
     {
       "path": "profiles/aroundit/gmail-events/bridge-recovery-handoff-20260928.md",
@@ -16639,18 +16659,18 @@
     },
     {
       "path": "profiles/aroundit/omh/memory/consolidation.json",
-      "size": 1518,
-      "mtime": 1791805702
+      "size": 1606,
+      "mtime": 1791811519
     },
     {
       "path": "profiles/aroundit/omh/memory/consolidation.jsonl",
-      "size": 22266,
-      "mtime": 1791805702
+      "size": 22354,
+      "mtime": 1791811519
     },
     {
       "path": "profiles/aroundit/omh/memory/dreaming.json",
       "size": 252,
-      "mtime": 1791805702
+      "mtime": 1791811519
     },
     {
       "path": "profiles/aroundit/omh/memory/index.json",
@@ -16695,17 +16715,17 @@
     {
       "path": "profiles/aroundit/omh/runtime/.approval-bypass.json.lock",
       "size": 0,
-      "mtime": 1791807062
+      "mtime": 1791811023
     },
     {
       "path": "profiles/aroundit/omh/runtime/.awareness_delivery.json.lock",
       "size": 0,
-      "mtime": 1791808019
+      "mtime": 1791811023
     },
     {
       "path": "profiles/aroundit/omh/runtime/.engagement-nudges.json.lock",
       "size": 0,
-      "mtime": 1791808063
+      "mtime": 1791811636
     },
     {
       "path": "profiles/aroundit/omh/runtime/.state.json.lock",
@@ -16715,27 +16735,27 @@
     {
       "path": "profiles/aroundit/omh/runtime/.tool-bursts.json.lock",
       "size": 0,
-      "mtime": 1791808070
+      "mtime": 1791811694
     },
     {
       "path": "profiles/aroundit/omh/runtime/approval-bypass.json",
-      "size": 311,
-      "mtime": 1791807062
+      "size": 310,
+      "mtime": 1791811023
     },
     {
       "path": "profiles/aroundit/omh/runtime/awareness_delivery.json",
       "size": 9789,
-      "mtime": 1791808019
+      "mtime": 1791811023
     },
     {
       "path": "profiles/aroundit/omh/runtime/engagement-nudges.json",
       "size": 11462,
-      "mtime": 1791808063
+      "mtime": 1791811636
     },
     {
       "path": "profiles/aroundit/omh/runtime/plugin-session-end.json",
       "size": 356,
-      "mtime": 1791808081
+      "mtime": 1791811701
     },
     {
       "path": "profiles/aroundit/omh/runtime/state.json",
@@ -16744,8 +16764,8 @@
     },
     {
       "path": "profiles/aroundit/omh/runtime/tool-bursts.json",
-      "size": 22727,
-      "mtime": 1791808070
+      "size": 21903,
+      "mtime": 1791811694
     },
     {
       "path": "profiles/aroundit/omh/runtime/update-baseline.json",
@@ -18040,7 +18060,7 @@
     {
       "path": "profiles/aroundit/runtime/active_sessions.json",
       "size": 15,
-      "mtime": 1791802060
+      "mtime": 1791811526
     },
     {
       "path": "profiles/aroundit/runtime/active_sessions.lock",
@@ -18370,7 +18390,7 @@
     {
       "path": "profiles/aroundit/skills/.usage.json",
       "size": 59361,
-      "mtime": 1791808019
+      "mtime": 1791811043
     },
     {
       "path": "profiles/aroundit/skills/.usage.json.lock",
@@ -24981,26 +25001,6 @@
       "path": "profiles/aroundit/tmp/audit_2034.py",
       "size": 1543,
       "mtime": 1789126483
-    },
-    {
-      "path": "profiles/aroundit/tmp/audit_2108.py",
-      "size": 1542,
-      "mtime": 1789128558
-    },
-    {
-      "path": "profiles/aroundit/tmp/audit_2108_summary.txt",
-      "size": 107023,
-      "mtime": 1789128785
-    },
-    {
-      "path": "profiles/aroundit/tmp/audit_2115.py",
-      "size": 1881,
-      "mtime": 1789474651
-    },
-    {
-      "path": "profiles/aroundit/tmp/audit_2153.py",
-      "size": 1509,
-      "mtime": 1789476879
     }
   ],
   "truncated_after": 5000
