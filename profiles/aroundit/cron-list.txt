@@ -10,14 +10,15 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-12T09:21:39.717516+09:00
+    Next run:  2026-10-12T10:22:02.445390+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-12T09:06:39.717516+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T08:52:41.216087+09:00)
-    Execution: completed  b38b9e5c642f4a3f8baddaba6b8de834
-    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
+    Last run:  2026-10-12T10:07:02.445390+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-12T09:50:59.889605+09:00)
+    Execution: completed  17cc5116383a438899abda331d28c215
+    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -66,12 +67,12 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-12T09:16:00+09:00
+    Next run:  2026-10-12T10:17:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-12T09:15:59.408179+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T09:15:00+09:00)
-    Execution: completed  9c4b1c0bc4a644819889b6bb9fd7f4e5
+    Last run:  2026-10-12T10:16:59.240480+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-12T10:16:00+09:00)
+    Execution: completed  f209a131301f453a969f5a9dc37b860d
 
