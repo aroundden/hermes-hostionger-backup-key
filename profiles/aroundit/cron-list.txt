@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T19:50:58.595547+09:00
+    Next run:  2026-10-13T20:58:58.815514+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T19:20:26.536052+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T19:35:26.536052+09:00)
-    Execution: running  2d035dad9c8e496eb438204aa98776ef
+    Last run:  2026-10-13T20:28:29.892657+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T20:43:29.892657+09:00)
+    Execution: running  01eeda20a5ee43bdaeae8520bf12df3b
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -66,23 +66,23 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-13T19:50:00+09:00
+    Next run:  2026-10-13T20:51:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T19:49:58.963042+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T19:49:00+09:00)
-    Execution: completed  d7a0949ff1e34a30a1183a6d286240df
+    Last run:  2026-10-13T20:50:59.215043+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T20:50:00+09:00)
+    Execution: completed  d3f4804ec5f248d0909f045dcdafbeba
 
   976238def7f6 [active]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T19:58:18.541758+09:00
+    Next run:  2026-10-13T21:06:22.566603+09:00
     Deliver:   slack:C0BHVB49WH5:1791782457.298959
     Skills:    google-workspace, den-output-contract
-    Last run:  2026-10-13T19:43:18.541758+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T19:41:44.243384+09:00)
-    Execution: completed  6a7cf1f8aeeb40a4823d4805c7c85900
+    Last run:  2026-10-13T20:51:22.566603+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T20:49:01.697147+09:00)
+    Execution: completed  78e681c3d7054010b4ddcf8f5bb7a91b
 
