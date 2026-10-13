@@ -10,14 +10,15 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T14:57:28.290127+09:00
+    Next run:  2026-10-13T15:57:34.772684+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T14:42:28.290127+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T14:34:58.663047+09:00)
-    Execution: completed  c5e57b96847b4a6b941babfa3d9004ce
-    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
+    Last run:  2026-10-13T15:42:34.772684+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-13T15:26:51.855344+09:00)
+    Execution: completed  755700f9aa054e54972177649196d932
+    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -66,23 +67,23 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-13T14:45:00+09:00
+    Next run:  2026-10-13T15:46:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T14:44:59.022879+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T14:44:00+09:00)
-    Execution: completed  6237852fafaf4af9978921c05546b7e7
+    Last run:  2026-10-13T15:45:59.221527+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T15:45:00+09:00)
+    Execution: completed  c93fd1a8010747fcbdf906ee8a16936e
 
   976238def7f6 [active]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T14:56:04.123330+09:00
+    Next run:  2026-10-13T15:46:49.410896+09:00
     Deliver:   slack:C0BHVB49WH5:1791782457.298959
     Skills:    google-workspace, den-output-contract
-    Last run:  2026-10-13T14:41:04.123330+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T14:39:34.901357+09:00)
-    Execution: completed  d179025c8e4b43ff87e9baf3b3f0a032
+    Last run:  2026-10-13T15:31:49.410896+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T15:30:45.834098+09:00)
+    Execution: completed  1f84cb7c750f4d7fbad6e25827777143
 
