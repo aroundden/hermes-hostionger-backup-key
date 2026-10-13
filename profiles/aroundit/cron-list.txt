@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T08:40:58.780364+09:00
+    Next run:  2026-10-13T09:46:58.813842+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T08:10:04.348491+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T08:25:04.348491+09:00)
-    Execution: running  87e5ed31028443edb543514aa3616860
+    Last run:  2026-10-13T09:16:01.262035+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T09:31:01.262035+09:00)
+    Execution: running  5b4e7bb7d7e5459e8ff0cf9c5b420047
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -34,13 +34,14 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * 1-6
     Repeat:    ∞
-    Next run:  2026-10-13T09:00:00+09:00
+    Next run:  2026-10-14T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-12T09:04:54.163550+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-12T09:00:00+09:00)
+    Last run:  2026-10-13T09:05:30.819730+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T09:00:00+09:00)
+    Execution: completed  5620f8f4469546bea78356c2f245b0fa
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -65,23 +66,23 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-13T08:39:00+09:00
+    Next run:  2026-10-13T09:40:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-13T08:38:59.120683+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T08:38:00+09:00)
-    Execution: completed  b1c28d515e2942e793b0ae3eb053be90
+    Last run:  2026-10-13T09:39:59.422407+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T09:39:00+09:00)
+    Execution: completed  9667c8136dd145f29583dce4d31a0dae
 
   976238def7f6 [active]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-13T08:43:19.361423+09:00
+    Next run:  2026-10-13T09:47:43.703431+09:00
     Deliver:   slack:C0BHVB49WH5:1791782457.298959
     Skills:    google-workspace, den-output-contract
-    Last run:  2026-10-13T08:28:19.361423+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-13T08:25:59.782095+09:00)
-    Execution: completed  9a42010d52834f4f87ae9b82a4d87cfb
+    Last run:  2026-10-13T09:32:43.703431+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-13T09:31:21.975119+09:00)
+    Execution: completed  d6ef8b7f5233449395f4e868636b907d
 
