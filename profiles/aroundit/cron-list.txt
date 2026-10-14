@@ -10,14 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-15T04:30:18.700387+09:00
+    Next run:  2026-10-15T05:35:38.541692+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-15T04:15:18.700387+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    Dispatch:  on time (scheduled 2026-10-15T04:01:00.594750+09:00)
-    Execution: completed  196d3af771194ce58e3c3613b16ad99e
-    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Last run:  2026-10-15T05:20:38.541692+09:00  ran, but the result was not delivered (invalid Slack report: invalid Gmail report title). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-15T05:06:32.046803+09:00)
+    Execution: completed  17de605d2a0a4a5091c1beb4aa29cecc
+    ⚠ The result was not delivered: invalid Slack report: invalid Gmail report title. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
 
   a4642e1093eb [active]
@@ -66,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-15T04:23:00+09:00
+    Next run:  2026-10-15T05:24:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-15T04:22:59.198622+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-15T04:22:00+09:00)
-    Execution: completed  1833626b48054d66aa1b3fea6f65c4fb
+    Last run:  2026-10-15T05:23:59.171803+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-15T05:23:00+09:00)
+    Execution: completed  f1a9f125faf341a7b89bd5c4e0843c55
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
