@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-14T12:05:58.876336+09:00
+    Next run:  2026-10-14T13:06:58.827047+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-14T10:05:36.414577+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-14T11:05:36.414577+09:00)
-    Execution: running  d0a4bb034fbd4fd1a38d86f53cf465ec
+    Last run:  2026-10-14T11:06:35.780086+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-14T12:06:35.780086+09:00)
+    Execution: running  a1db9e1b0a074ca3adf52c21ca8b48b2
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-14T11:16:59.525436+09:00
+    Next run:  2026-10-14T12:18:59.533734+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-14T10:46:59.525436+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-14T10:45:59.714256+09:00)
-    Execution: completed  139f963bee6a4206a95de9821217891e
+    Last run:  2026-10-14T11:48:59.533734+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-14T11:47:59.520069+09:00)
+    Execution: completed  326066232739435a923b6386ad6af5b2
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -53,9 +53,9 @@ exit_code=0
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-14T09:12:22.685482+09:00  ok
+    Last run:  2026-10-14T11:17:26.748412+09:00  ok
     Dispatch:  on time (scheduled 2026-10-14T09:00:00+09:00)
-    Execution: completed  4479374bbaec41de9aae276fa1bf3b65
+    Execution: completed  64af05dd809944fe8ab6fdf6d9479835
     ⚠ Last failure at 2026-10-10T21:01:12.545495+09:00: RuntimeError: HTTP 429: The usage limit has been reached — recovered since
 
   4624d933404b [active]
