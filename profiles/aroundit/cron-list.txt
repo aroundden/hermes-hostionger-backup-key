@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-15T00:29:47.512050+09:00
+    Next run:  2026-10-15T01:28:01.804896+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-15T00:14:47.512050+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-15T00:02:09.855263+09:00)
-    Execution: completed  6bdba7e41779419cabe6c2c6332bc256
+    Last run:  2026-10-15T01:13:01.804896+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-15T00:59:35.230308+09:00)
+    Execution: completed  685477057fc24ca397225210de7b119e
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -41,18 +41,17 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-14T09:03:27.512896+09:00  ok
     Dispatch:  on time (scheduled 2026-10-14T09:00:00+09:00)
-    Execution: completed  ece4a21d4329436f89a858a6dbb08ace
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-15T00:43:25.024741+09:00
+    Next run:  2026-10-15T06:45:02.141301+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-10-14T18:43:25.024741+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-14T18:39:34.928854+09:00)
-    Execution: completed  94a17a2902ca4d3a82326373e7cce6b2
+    Last run:  2026-10-15T00:45:02.141301+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-15T00:43:25.024741+09:00)
+    Execution: completed  4bf0d51abb2d42a997a48e4a5239fea2
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-15T00:19:00+09:00
+    Next run:  2026-10-15T01:20:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-15T00:18:57.073608+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-15T00:18:00+09:00)
-    Execution: completed  e410244da4c045d98a12ee64f1eb1ede
+    Last run:  2026-10-15T01:19:59.163705+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-15T01:19:00+09:00)
+    Execution: completed  a7e3dcd261ac4acd80a07bd7268cccd6
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
