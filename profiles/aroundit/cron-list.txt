@@ -10,15 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-14T18:13:14.168402+09:00
+    Next run:  2026-10-14T19:18:47.227792+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-14T17:58:14.168402+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    Dispatch:  on time (scheduled 2026-10-14T17:56:58.706682+09:00)
-    Execution: completed  ba649cb9f7484b859b2ebe5ea5003ec5
-    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
+    Last run:  2026-10-14T19:03:47.227792+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-14T18:49:30.647749+09:00)
+    Execution: completed  be341f740bf74dba8776c99b0c14e644
+    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -48,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-14T18:39:34.928854+09:00
+    Next run:  2026-10-15T00:43:25.024741+09:00
     Deliver:   origin
-    Skills:    aside-browser-operations, den-output-contract
-    Last run:  2026-10-14T12:39:34.928854+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-14T12:38:32.198652+09:00)
-    Execution: completed  675e495f89fd4fcebafd9fa7b93877ad
+    Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
+    Last run:  2026-10-14T18:43:25.024741+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-14T18:39:34.928854+09:00)
+    Execution: completed  94a17a2902ca4d3a82326373e7cce6b2
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -67,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-14T18:13:00+09:00
+    Next run:  2026-10-14T19:14:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-14T18:12:59.049593+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-14T18:12:00+09:00)
-    Execution: completed  672e13bd923d4062ab65e13991870617
+    Last run:  2026-10-14T19:13:59.135583+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-14T19:13:00+09:00)
+    Execution: completed  2c9b3a8cd52d4389bf06f748ba784497
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
