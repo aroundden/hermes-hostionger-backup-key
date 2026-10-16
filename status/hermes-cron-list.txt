@@ -10,27 +10,27 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-17T06:10:58.588452+09:00
+    Next run:  2026-10-17T07:11:58.371408+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-17T04:10:38.058695+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-17T05:10:38.058695+09:00)
-    Execution: running  64707c9328bc44c99b08e2079a79b8c0
+    Last run:  2026-10-17T05:11:37.713843+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-17T06:11:37.713843+09:00)
+    Execution: running  3268effeeb404e40ab73d2b1a66193ad
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-17T05:17:59.461922+09:00
+    Next run:  2026-10-17T06:19:59.247417+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-17T04:47:59.461922+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-17T04:46:59.672672+09:00)
-    Execution: completed  9a6ab3cf7c0147e4a0f78177151968dc
+    Last run:  2026-10-17T05:49:59.247417+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-17T05:48:59.445939+09:00)
+    Execution: completed  2673aab8ac98473f88b3e498c1df3e77
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -62,14 +62,14 @@ exit_code=0
     Name:      TickTick Member Worklog 마감순 정렬
     Schedule:  0 6 * * *
     Repeat:    ∞
-    Next run:  2026-10-17T06:00:00+09:00
+    Next run:  2026-10-18T06:00:00+09:00
     Deliver:   local
     Script:    ticktick_worklog_deadline_sort.py
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-16T06:01:07.386255+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-16T06:00:00+09:00)
-    Execution: completed  0cf9b2ab792341a195c5f6f86602ac27
+    Last run:  2026-10-17T06:01:01.501861+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-17T06:00:00+09:00)
+    Execution: completed  b86f598eca094c2ba51751b89432833b
 
   895a3b5fe3f6 [paused]
     Name:      Obsidian 주간 지식 업데이트
