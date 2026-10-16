@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-17T01:14:58.749065+09:00
+    Next run:  2026-10-17T02:08:01.182313+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-17T00:44:39.332586+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-17T00:59:39.332586+09:00)
-    Execution: running  6a99b611eb7b4714b02425eefe27075c
+    Last run:  2026-10-17T01:53:01.182313+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-17T01:44:58.766846+09:00)
+    Execution: completed  ac67307a79224531b74903ec0d55edf3
     ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -41,7 +41,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-16T09:04:52.889271+09:00  ok
     Dispatch:  on time (scheduled 2026-10-16T09:00:00+09:00)
-    Execution: completed  5ce0908400af41678a2f24f6de38c256
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -66,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-17T01:07:00+09:00
+    Next run:  2026-10-17T02:08:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-17T01:06:59.195344+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-17T01:06:00+09:00)
-    Execution: completed  6f3370ee1d8244c3a8aae88a2a3170bd
+    Last run:  2026-10-17T02:07:58.949639+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-17T02:07:00+09:00)
+    Execution: completed  620822e86c09467290958ee79ebb3b53
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
