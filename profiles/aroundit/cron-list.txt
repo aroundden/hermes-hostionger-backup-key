@@ -10,14 +10,15 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-19T00:59:58.632126+09:00
+    Next run:  2026-10-19T01:55:03.279888+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-19T00:29:02.685261+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-19T00:44:02.685261+09:00)
-    Execution: running  d3582e28aa90492fbc25ed90e43decf3
-    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
+    Last run:  2026-10-19T01:40:03.279888+09:00  ran, but the result was not delivered (invalid Slack report: expected two consecutive root lines, a blank line, and detail). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-19T01:26:58.563676+09:00)
+    Execution: completed  0eca91ef8aac471ca550d485c363467d
+    ⚠ The result was not delivered: invalid Slack report: expected two consecutive root lines, a blank line, and detail. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    ⚠ Last failure at 2026-10-09T17:27:46.036408+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -46,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-19T01:02:41.560120+09:00
+    Next run:  2026-10-19T07:03:36.552472+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-10-18T19:02:41.560120+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-18T19:01:24.782359+09:00)
-    Execution: completed  eac4c3b6150b4f018a9c7c596d5acb0e
+    Last run:  2026-10-19T01:03:36.552472+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-19T01:02:41.560120+09:00)
+    Execution: completed  6183718c27884f48a0bc05690748b56a
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-19T00:54:00+09:00
+    Next run:  2026-10-19T01:55:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-19T00:53:58.800917+09:00  error: Script exited with code 1
+    Last run:  2026-10-19T01:54:58.584693+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (3 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-19T00:53:00+09:00)
-    Execution: failed  4040c143e2ae4d2cb4efdef28793179b
-    ⚠ Last failure at 2026-10-19T00:53:58.800917+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (64 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-19T01:54:00+09:00)
+    Execution: failed  e83cf7ab5aaa4ac3a102f16a3e89918f
+    ⚠ Last failure at 2026-10-19T01:54:58.584693+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
