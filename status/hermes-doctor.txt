@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -23,7 +24,7 @@ exit_code=1
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/f4409fef6f8d4ecd83ec053c2807255c/venv) (active in this process)
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/ef53fc96cef6404cbf1130593767b365/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
@@ -78,8 +79,8 @@ exit_code=1
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1419 sessions)
-    → state.db logical size 735.8 MB, 188,369 pages, 137 free, WAL 0 B
-    → 60,896 messages, 1,419 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 22752) serving profiles default, aroundit, den, smd)
+    → state.db logical size 735.8 MB, 188,369 pages, 121 free, WAL 0 B
+    → 60,904 messages, 1,419 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21540) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -94,12 +95,9 @@ exit_code=1
   ✓ Node.js
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ✓ Playwright Chromium (browser engine)
-  ⚠ Browser tools (agent-browser) deps (0 critical, 9 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ⚠ web workspace deps (0 critical, 4 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 2 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ build-time tooling (not runtime); if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ✓ Root npm package deps (no known vulnerabilities)
+  ✓ web workspace deps (no known vulnerabilities)
+  ✓ ui-tui workspace deps (no known vulnerabilities)
 
 ◆ API Connectivity
   Running 44 connectivity checks in parallel…
@@ -121,11 +119,10 @@ exit_code=1
   ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
   ✓ memory
   ✓ omh
+  ✓ onboarding
   ✓ project
   ✓ session_search
-  ✓ setup
   ✓ skills
-  ✓ start_chat
   ✓ terminal
   ✓ todo
   ✓ video
@@ -161,16 +158,3 @@ exit_code=1
   ✓   aroundit: gateway running, gpt-6-astra
   ✓   den: gateway running, gpt-6-astra
   ✓   smd: gateway running, gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 6 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Run 'hermes setup' to configure API keys
-  3. Browser tools (agent-browser) has 9 npm vulnerabilities
-  4. web workspace has 8 npm vulnerabilities
-  5. ui-tui workspace has 6 npm vulnerabilities
-  6. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
