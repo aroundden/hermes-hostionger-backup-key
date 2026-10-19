@@ -41,7 +41,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-19T09:04:27.417312+09:00  ok
     Dispatch:  on time (scheduled 2026-10-19T09:00:00+09:00)
-    Execution: completed  5af1b2e75cea4c70b91561c201b6bb60
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -66,17 +65,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-20T01:26:00+09:00
+    Next run:  2026-10-20T02:33:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-20T01:25:24.811509+09:00  error: Script exited with code 1
+    Last run:  2026-10-20T02:32:11.603385+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1468 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-20T01:25:00+09:00)
-    Execution: failed  f1bcc9ff5c104a2b9b16ce3aa7ffa8ae
-    ⚠ Last failure at 2026-10-20T01:25:24.811509+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1535 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-20T02:32:00+09:00)
+    Execution: failed  8718ab02227745f68c049229e184aa21
+    ⚠ Last failure at 2026-10-20T02:32:11.603385+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
