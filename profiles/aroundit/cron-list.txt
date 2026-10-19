@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-20T01:07:33.632111+09:00
+    Next run:  2026-10-20T07:09:43.895923+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-10-19T19:07:33.632111+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-19T19:06:52.599995+09:00)
-    Execution: unknown  a2a1ee8786f64eb2a7a330e1ddd999c4
+    Last run:  2026-10-20T01:09:43.895923+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-20T01:07:33.632111+09:00)
+    Execution: completed  011ff2ce401a4e03a212c88f1fda4e8f
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-20T00:22:00+09:00
+    Next run:  2026-10-20T01:26:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-20T00:21:02.931505+09:00  error: Script exited with code 1
+    Last run:  2026-10-20T01:25:24.811509+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1404 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-20T00:21:00+09:00)
-    Execution: failed  44fbcebe2ec741269e082305aa8e69ca
-    ⚠ Last failure at 2026-10-20T00:21:02.931505+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1468 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-20T01:25:00+09:00)
+    Execution: failed  f1bcc9ff5c104a2b9b16ce3aa7ffa8ae
+    ⚠ Last failure at 2026-10-20T01:25:24.811509+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
