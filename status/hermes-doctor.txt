@@ -79,7 +79,7 @@ exit_code=1
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1422 sessions)
     → state.db logical size 737.7 MB, 188,848 pages, 23 free, WAL 0 B
-    → 61,073 messages, 1,422 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 36054) serving profiles default, aroundit, den, smd)
+    → 61,073 messages, 1,422 sessions, journal_mode=delete, 4 process(es) holding the DB open (the host gateway (PID 51589) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -144,7 +144,7 @@ exit_code=1
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/profiles/den/.env for better rates)
 
 ◆ Memory Provider
   ✓ omh provider active
