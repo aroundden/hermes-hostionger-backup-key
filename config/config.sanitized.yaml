@@ -110,7 +110,7 @@ stt:
   openai:
     model: whisper-1
 memory:
-  provider: ''
+  provider: omh
   memory_enabled: true
   user_profile_enabled: true
   write_approval: true
@@ -125,6 +125,7 @@ delegation:
 skills:
   external_dirs:
     - /Users/insideden/.local/share/omh/current/skills
+    - /Users/insideden/.local/share/omh/generations/20261011173425806026-feea100e36/skills
   creation_nudge_interval: 15
 timezone: Asia/Seoul
 command_allowlist:
