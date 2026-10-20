@@ -95,8 +95,10 @@ exit_code=1
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ✓ Playwright Chromium (browser engine)
   ✓ Root npm package deps (no known vulnerabilities)
-  ✓ web workspace deps (7 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (1 moderate vulnerability)
+  ⚠ web workspace deps (0 critical, 1 high, 1 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ⚠ ui-tui workspace deps (0 critical, 1 high, 0 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+    →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
   Running 44 connectivity checks in parallel…
@@ -159,11 +161,13 @@ exit_code=1
   ✓   smd: gateway running, gpt-6-astra
 
 ────────────────────────────────────────────────────────────
-  Found 3 issue(s) to address:
+  Found 5 issue(s) to address:
 
   1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
   2. Run 'hermes setup' to configure API keys
   3. Run 'hermes setup' to configure missing API keys for full tool access
+  4. web workspace has 2 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
+  5. ui-tui workspace has 1 npm vulnerability; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
