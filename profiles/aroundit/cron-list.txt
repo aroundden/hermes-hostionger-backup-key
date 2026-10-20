@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-20T18:03:02.670146+09:00
+    Next run:  2026-10-20T19:02:45.989546+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-20T17:17:38.034937+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-20T17:47:56.472690+09:00)
-    Execution: failed  210022a0fb6e4e718be6c9111caa1705
+    Last run:  2026-10-20T18:47:45.989546+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-20T18:33:57.248755+09:00)
+    Execution: unknown  2efc8f963810420fa49fafc7817a4396
     ⚠ Last failure at 2026-10-19T03:33:10.038208+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -66,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-20T17:49:00+09:00
+    Next run:  2026-10-20T18:50:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-20T17:48:02.855834+09:00  error: Script exited with code 1
+    Last run:  2026-10-20T18:49:02.796544+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (2451 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-20T17:48:00+09:00)
-    Execution: failed  7c7f41a26e6a47e3b50a359fc67302b4
-    ⚠ Last failure at 2026-10-20T17:48:02.855834+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (2512 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-20T18:49:00+09:00)
+    Execution: failed  41c0f13fef34421681befa7d0d5ca266
+    ⚠ Last failure at 2026-10-20T18:49:02.796544+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
