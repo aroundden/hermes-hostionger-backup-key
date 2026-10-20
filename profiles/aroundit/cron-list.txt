@@ -34,13 +34,14 @@ exit_code=0
     Name:      gmail-daily-deadline-reminder
     Schedule:  0 9 * * 1-6
     Repeat:    ∞
-    Next run:  2026-10-20T09:00:00+09:00
+    Next run:  2026-10-21T09:00:00+09:00
     Deliver:   slack:C0BHVB49WH5:1784450129.540219
     Skills:    gmail-workflow-automation, google-workspace, den-output-contract
     Script:    gmail_deadline_reminder_agent_input.sh
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-19T09:04:27.417312+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-19T09:00:00+09:00)
+    Last run:  2026-10-20T09:05:32.505474+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-20T09:00:00+09:00)
+    Execution: unknown  aa3784a27d9c4e6bb754c3b34f9f8936
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -65,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-20T08:40:00+09:00
+    Next run:  2026-10-20T09:41:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-20T08:39:02.803941+09:00  error: Script exited with code 1
+    Last run:  2026-10-20T09:40:02.861586+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1902 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-20T08:39:00+09:00)
-    Execution: failed  99b51d553a3f494db5b772f4932530ce
-    ⚠ Last failure at 2026-10-20T08:39:02.803941+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (1963 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-20T09:40:00+09:00)
+    Execution: failed  4c95dc03305646999ef103d13179fac8
+    ⚠ Last failure at 2026-10-20T09:40:02.861586+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
