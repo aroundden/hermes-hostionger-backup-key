@@ -71,15 +71,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.2 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 11.7 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
   ✓ ~/.hermes/profiles/den/state.db exists (1441 sessions)
-    → state.db logical size 746.0 MB, 190,984 pages, 64 free, WAL 0 B
-    → 62,110 messages, 1,441 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 53789) serving profiles default, aroundit, den, smd)
+    → state.db logical size 746.0 MB, 190,984 pages, 65 free, WAL 0 B
+    → 62,118 messages, 1,441 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 53789) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -95,8 +95,8 @@ exit_code=1
   ✓ agent-browser (/Users/insideden/.hermes/tools/agent-browser-0.26.0-darwin-arm64/bin/agent-browser-darwin-arm64)
   ✓ Playwright Chromium (browser engine)
   ✓ Root npm package deps (no known vulnerabilities)
-  ✓ web workspace deps (1 moderate vulnerability)
-  ✓ ui-tui workspace deps (no known vulnerabilities)
+  ✓ web workspace deps (7 moderate vulnerabilities)
+  ✓ ui-tui workspace deps (1 moderate vulnerability)
 
 ◆ API Connectivity
   Running 44 connectivity checks in parallel…
