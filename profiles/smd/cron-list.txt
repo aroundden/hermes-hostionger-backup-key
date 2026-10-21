@@ -10,41 +10,37 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-21T09:30:00+09:00
+    Next run:  2026-10-22T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-20T09:31:47.717623+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-20T09:30:00+09:00)
-    Execution: completed  42ba831ce7a74e6f9ccd05f02d815137
+    Last run:  2026-10-21T09:31:45.404617+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-21T09:30:00+09:00)
+    Execution: completed  f0a02217c58b474fa68f2da09e2fcc25
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-21T09:31:00+09:00
+    Next run:  2026-10-22T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-10-20T09:37:15.876733+09:00  error: SPC 매거진·SNS 알림 수집 스크립트 실패
-
-실행 오류: 활성 스케줄러 실행을 정확히 1개로 식별하지 못해 ACK 처리가 중단됨 (`Expected one running scheduler execution; refusing ambiguous ACK`)
-
-신규 콘텐츠 검토·알림 발송·ACK 기록 모두 미완료. pending 상태 유지 및 다음 감지 재시도 필요.
-    Dispatch:  on time (scheduled 2026-10-20T09:31:00+09:00)
-    Execution: unknown  11dd60f210b849d7a8c1d9517939ae3d
-    ⚠ Last failure at 2026-10-20T09:37:15.876733+09:00: SPC 매거진·SNS 알림 수집 스크립트 실패
+    Last run:  2026-10-21T09:38:22.478204+09:00  error: 신규 SPC 매거진·SNS 콘텐츠 12건과 확인 제한 소스를 검토했으나, 로컬 형식 검사에서 `item_shape`, `length`, `social_link`, `social_multiline` 오류가 반복되어 발송 기준을 통과하지 못했습니다. ACK는 실행하지 않았으며, 다음 감지에서 재시도합니다.  (2 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-21T09:31:00+09:00)
+    Execution: failed  1a62652fc0374390b4bf8d6e4a3f265e
+    ⚠ Last failure at 2026-10-21T09:38:22.478204+09:00: 신규 SPC 매거진·SNS 콘텐츠 12건과 확인 제한 소스를 검토했으나, 로컬 형식 검사에서 `item_shape`, `length`, `social_link`, `social_multiline` 오류가 반복되어 …
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-21T09:15:00+09:00
+    Next run:  2026-10-21T10:15:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-21T09:00:39.768555+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-21T09:00:00+09:00)
-    Execution: completed  fc51a503413b4b5ba0c4dacb1cffc909
+    Last run:  2026-10-21T10:00:03.591850+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-21T10:00:00+09:00)
+    Execution: completed  a91f0807e7964da1bb14af763a8b6dfd
 
