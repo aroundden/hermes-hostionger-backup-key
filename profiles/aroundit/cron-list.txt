@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-22T18:49:09.480473+09:00
+    Next run:  2026-10-22T19:48:35.043063+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-22T18:34:09.480473+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-22T18:21:17.340423+09:00)
-    Execution: completed  e3deb3b11e50471f9fdf22fe2988d9ff
+    Last run:  2026-10-22T19:33:35.043063+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-22T19:18:47.668466+09:00)
+    Execution: completed  569811b7cfc5424881a8c74161b99464
     ⚠ Last failure at 2026-10-19T03:33:10.038208+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-22T19:20:17.474279+09:00
+    Next run:  2026-10-23T01:21:29.537936+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-10-22T13:20:17.474279+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-22T13:19:11.806936+09:00)
-    Execution: completed  ea37322b895146c99d186e7afc7d43ce
+    Last run:  2026-10-22T19:21:29.537936+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-22T19:20:17.474279+09:00)
+    Execution: completed  ecd447b99081489182b7da2a824c6e7f
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-22T18:40:00+09:00
+    Next run:  2026-10-22T19:41:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-22T18:39:40.357504+09:00  error: Script exited with code 1
+    Last run:  2026-10-22T19:40:40.144919+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (5379 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-22T18:39:00+09:00)
-    Execution: failed  01934c104787493dab82c62102b78846
-    ⚠ Last failure at 2026-10-22T18:39:40.357504+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (5440 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-22T19:40:00+09:00)
+    Execution: failed  92f03a3492f248ec93886fe51fb6502a
+    ⚠ Last failure at 2026-10-22T19:40:40.144919+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
