@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-23T11:57:40.162948+09:00
+    Next run:  2026-10-23T12:58:40.161012+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-23T09:57:18.655073+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-23T10:57:18.655073+09:00)
-    Execution: running  f9a0960c6e4a4aa09afa99a368a38d25
+    Last run:  2026-10-23T10:58:19.647588+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-23T11:58:19.647588+09:00)
+    Execution: running  ffc09265e1ae40ec9ebaf8c478d25d85
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-23T11:26:42.489227+09:00
+    Next run:  2026-10-23T12:28:43.802090+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-23T10:56:42.489227+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-23T10:55:42.659037+09:00)
-    Execution: completed  bafb549f1a5540799241c4f9dbc40814
+    Last run:  2026-10-23T11:58:43.802090+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-23T11:57:41.752263+09:00)
+    Execution: completed  44190183018d48a48d1d1d7baba0d31c
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -56,7 +56,7 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
     Last run:  2026-10-23T09:02:34.259861+09:00  ok
     Dispatch:  on time (scheduled 2026-10-23T09:00:00+09:00)
-    Execution: completed  bdaee0c9b0814ede8855a64579334356
+    Execution: running  754b8daada044711997e0ab33903ff97
     ⚠ Last failure at 2026-10-10T21:01:12.545495+09:00: RuntimeError: HTTP 429: The usage limit has been reached — recovered since
 
   4624d933404b [active]
