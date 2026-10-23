@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-23T16:01:38.188542+09:00
+    Next run:  2026-10-23T17:02:40.269507+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-23T14:01:14.466382+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-23T15:01:14.466382+09:00)
-    Execution: running  7322e9d2dcb74e83825442ac0f6258d3
+    Last run:  2026-10-23T15:02:19.330002+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-23T16:02:19.330002+09:00)
+    Execution: running  cca9beddd3a8494283e6566fb740e026
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-23T15:02:39.661568+09:00
+    Next run:  2026-10-23T16:04:39.978681+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-23T14:32:39.661568+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-23T14:32:37.753797+09:00)
-    Execution: completed  85d0f6608c3941079e4ecd0c174b0120
+    Last run:  2026-10-23T15:34:39.978681+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-23T15:33:40.326430+09:00)
+    Execution: completed  41c89071b4824191a799b74540ad51d3
 
   72963b1a5e65 [active]
     Name:      DEN Weekly Guest & Idea Brief
@@ -54,9 +54,9 @@ exit_code=0
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-23T12:00:22.670949+09:00  ok
+    Last run:  2026-10-23T15:12:27.192252+09:00  ok
     Dispatch:  on time (scheduled 2026-10-23T15:00:00+09:00)
-    Execution: running  e5c5a819c6164d55877c11e03dc14a2a
+    Execution: completed  e5c5a819c6164d55877c11e03dc14a2a
     ⚠ Last failure at 2026-10-10T21:01:12.545495+09:00: RuntimeError: HTTP 429: The usage limit has been reached — recovered since
 
   4624d933404b [active]
