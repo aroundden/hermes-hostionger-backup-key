@@ -10,15 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-23T18:18:38.093133+09:00
+    Next run:  2026-10-23T19:13:15.899078+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-23T17:47:51.891450+09:00  ran, but the result was not delivered (Gmail report format invalid; delivery held without a fallback post). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    Dispatch:  on time (scheduled 2026-10-23T18:02:51.891450+09:00)
-    Execution: running  1066b5ce440c40d3a9468f8234057736
-    ⚠ The result was not delivered: Gmail report format invalid; delivery held without a fallback post. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    ⚠ Last failure at 2026-10-19T03:33:10.038208+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
+    Last run:  2026-10-23T18:58:15.899078+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-23T18:42:50.349003+09:00)
+    Execution: completed  9c7c9cac00d84c12ae2f2a0326e2c7f5
+    ⚠ Last failure at 2026-10-19T03:33:10.038208+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -67,17 +66,17 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-23T18:05:00+09:00
+    Next run:  2026-10-23T19:06:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-23T18:04:38.345433+09:00  error: Script exited with code 1
+    Last run:  2026-10-23T19:05:40.304213+09:00  error: Script exited with code 1
 stderr:
-/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (6784 failures in a row)
-    Dispatch:  on time (scheduled 2026-10-23T18:04:00+09:00)
-    Execution: failed  64fb29aa87974a0280f60e12aa654a69
-    ⚠ Last failure at 2026-10-23T18:04:38.345433+09:00: Script exited with code 1
+/Users/insideden/.hermes/profiles/aroundit/scripts/gmail_event_bridge_once.sh: line 5: /Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/a33f679a7631492b8602c304ecaaf4e5/venv/bin/python: No such file or directory  (6845 failures in a row)
+    Dispatch:  on time (scheduled 2026-10-23T19:05:00+09:00)
+    Execution: failed  05d684c7349549c2bc6b23943a3e406e
+    ⚠ Last failure at 2026-10-23T19:05:40.304213+09:00: Script exited with code 1
 
   976238def7f6 [paused]
     Name:      italki 촬영 전 회신 알림 — 10월 13일까지
