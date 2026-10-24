@@ -77,9 +77,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1568 sessions)
-    → state.db logical size 766.2 MB, 196,156 pages, 396 free, WAL 0 B
-    → 63,183 messages, 1,568 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 39322) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1570 sessions)
+    → state.db logical size 766.2 MB, 196,156 pages, 366 free, WAL 0 B
+    → 63,183 messages, 1,570 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 39322) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -98,7 +98,7 @@ exit_code=1
     →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
   ⚠ web workspace deps (0 critical, 2 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 2 high, 2 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
+  ⚠ ui-tui workspace deps (0 critical, 2 high, 3 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
     →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
 
 ◆ API Connectivity
@@ -169,7 +169,7 @@ exit_code=1
   3. Run 'hermes setup' to configure missing API keys for full tool access
   4. Root npm package has 1 npm vulnerability; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
   5. web workspace has 6 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-  6. ui-tui workspace has 4 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
+  6. ui-tui workspace has 5 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
 
