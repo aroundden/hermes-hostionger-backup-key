@@ -153,6 +153,7 @@ command_allowlist:
   - execute_code
   - hermes update (restarts gateway, kills running agents)
   - script execution via -e/-c flag
+  - script execution via heredoc
   - stop/restart hermes launchd service (kills running agents)
 hooks:
   pre_tool_call:
