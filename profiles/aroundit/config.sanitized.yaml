@@ -371,7 +371,6 @@ display:
     thinking: collapsed
     tools: collapsed
     subagents: collapsed
-  skin: omh
   interface: tui
   platforms:
     slack:
@@ -382,6 +381,7 @@ display:
       busy_ack_detail: false
   file_mutation_verifier: false
   message_reactions: false
+  skin: omh
 delegation:
   model: gpt-6-astra
   provider: openai-codex

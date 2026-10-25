@@ -44,3 +44,6 @@ exit_code=0
     Dispatch:  on time (scheduled 2026-10-23T17:45:00+09:00)
     Execution: completed  7e51f9fe8312408285e1e573b2f2b33f
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -196,6 +196,17 @@ exit_code=0
 │                     │             │         │ token (RS256/ES256)  │         │
 │                     │             │         │ against the          │         │
 │                     │             │         │ discovered jwks_uri. │         │
+│ default             │ enabled     │ 1.0.0   │ Default delegation   │ bundled │
+│                     │             │         │ strategy: every      │         │
+│                     │             │         │ delegate_task        │         │
+│                     │             │         │ subagent follows the │         │
+│                     │             │         │ delegation section   │         │
+│                     │             │         │ of config.yaml       │         │
+│                     │             │         │ (delegation.provider │         │
+│                     │             │         │ / model / base_url   │         │
+│                     │             │         │ ...), else inherits  │         │
+│                     │             │         │ the parent's model   │         │
+│                     │             │         │ and credentials.     │         │
 │ disk-cleanup        │ not enabled │ 2.0.0   │ Auto-track and clean │ bundled │
 │                     │             │         │ up ephemeral files   │         │
 │                     │             │         │ (test scripts, temp  │         │
@@ -1085,7 +1096,7 @@ exit_code=0
 │                     │             │         │ auth`) or            │         │
 │                     │             │         │ XAI_API_KEY          │         │
 │                     │             │         │ (https://x.ai).      │         │
-│ omh                 │ enabled     │ 4.0.0   │ Oh My Hermes native  │ user    │
+│ omh                 │ enabled     │ 4.0.2   │ Oh My Hermes native  │ user    │
 │                     │             │         │ bridge for           │         │
 │                     │             │         │ metadata-only        │         │
 │                     │             │         │ runtime status, HUD, │         │
@@ -1111,3 +1122,6 @@ Compact view: hermes plugins list --plain --no-bundled
 Interactive toggle: hermes plugins
 Enable/disable: hermes plugins enable/disable <name>
 Plugins are opt-in by default — only 'enabled' plugins load.
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -100,10 +100,13 @@ exit_code=0
   Jobs:         5 active, 7 total
 
 ◆ Sessions
-  Active:       311 session(s)
+  Active:       314 session(s)
   Last activity:      12m ago
 
 ────────────────────────────────────────────────────────────
   Run 'hermes doctor' for detailed diagnostics
   Run 'hermes setup' to configure
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

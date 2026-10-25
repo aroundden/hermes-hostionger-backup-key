@@ -95,9 +95,11 @@ exit_code=0
 │ second-brain-op… │ note-taking      │ local    │ local    │ enabled          │
 │ omh-agent-debug  │ operator         │ external │ local    │ enabled          │
 │ omh-agent-evalu… │ operator         │ external │ local    │ enabled          │
+│ omh-ai-job-sear… │ operator         │ external │ local    │ enabled          │
 │ omh-apple-design │ operator         │ external │ local    │ enabled          │
 │ omh-automation-… │ operator         │ external │ local    │ enabled          │
 │ omh-award-bar-s… │ operator         │ external │ local    │ enabled          │
+│ omh-biomedical-… │ operator         │ external │ local    │ enabled          │
 │ omh-cto-loop     │ operator         │ external │ local    │ enabled          │
 │ omh-decide       │ operator         │ external │ local    │ enabled          │
 │ omh-deliverable… │ operator         │ external │ local    │ enabled          │
@@ -107,6 +109,7 @@ exit_code=0
 │ omh-feedback-tr… │ operator         │ external │ local    │ enabled          │
 │ omh-finance-ana… │ operator         │ external │ local    │ enabled          │
 │ omh-frontend     │ operator         │ external │ local    │ enabled          │
+│ omh-geospatial-… │ operator         │ external │ local    │ enabled          │
 │ omh-github-even… │ operator         │ external │ local    │ enabled          │
 │ omh-github-issu… │ operator         │ external │ local    │ enabled          │
 │ omh-idea-to-dep… │ operator         │ external │ local    │ enabled          │
@@ -117,6 +120,7 @@ exit_code=0
 │ omh-llm-app-dev  │ operator         │ external │ local    │ enabled          │
 │ omh-materials-p… │ operator         │ external │ local    │ enabled          │
 │ omh-meeting-bri… │ operator         │ external │ local    │ enabled          │
+│ omh-molecular-d… │ operator         │ external │ local    │ enabled          │
 │ omh-operating-r… │ operator         │ external │ local    │ enabled          │
 │ omh-ops-review   │ operator         │ external │ local    │ enabled          │
 │ omh-people-ops   │ operator         │ external │ local    │ enabled          │
@@ -126,6 +130,7 @@ exit_code=0
 │ omh-report-pack… │ operator         │ external │ local    │ enabled          │
 │ omh-sales-devel… │ operator         │ external │ local    │ enabled          │
 │ omh-sales-pipel… │ operator         │ external │ local    │ enabled          │
+│ omh-show-reel    │ operator         │ external │ local    │ enabled          │
 │ omh-skill-health │ operator         │ external │ local    │ enabled          │
 │ omh-skill-scout  │ operator         │ external │ local    │ enabled          │
 │ omh-support-ope… │ operator         │ external │ local    │ enabled          │
@@ -188,6 +193,7 @@ exit_code=0
 │ omh-docs         │ researcher       │ external │ local    │ enabled          │
 │ omh-jit-learn    │ researcher       │ external │ local    │ enabled          │
 │ omh-long-docume… │ researcher       │ external │ local    │ enabled          │
+│ omh-market-rese… │ researcher       │ external │ local    │ enabled          │
 │ omh-paper-learn… │ researcher       │ external │ local    │ enabled          │
 │ omh-research-br… │ researcher       │ external │ local    │ enabled          │
 │ omh-research-de… │ researcher       │ external │ local    │ enabled          │
@@ -257,6 +263,7 @@ exit_code=0
 │ omh-todo-checkl… │ tracker          │ external │ local    │ enabled          │
 │ omh-toolbelt-re… │ tracker          │ external │ local    │ enabled          │
 │ omh-workflow-le… │ tracker          │ external │ local    │ enabled          │
+│ dag-ulw          │ ultrawork        │ external │ local    │ enabled          │
 │ ulw-context      │ ultrawork        │ external │ local    │ enabled          │
 │ ulw-interview    │ ultrawork        │ external │ local    │ enabled          │
 │ ulw-loop         │ ultrawork        │ external │ local    │ enabled          │
@@ -268,5 +275,8 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local    │ enabled          │
 │ blocked-page-re… │ web              │ builtin  │ builtin  │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-14 hub-installed, 58 builtin, 184 local — 213 enabled, 43 disabled
+14 hub-installed, 58 builtin, 191 local — 220 enabled, 43 disabled
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
