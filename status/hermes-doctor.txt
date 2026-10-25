@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -16,7 +17,7 @@ exit_code=1
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (769.3 MB)
+    → state.db: rollback journal mode (769.4 MB)
   ⚠ cron/executions.db is in WAL mode (712.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -77,9 +78,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1622 sessions)
-    → state.db logical size 769.3 MB, 196,942 pages, 0 free, WAL 0 B
-    → 63,272 messages, 1,622 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 39322) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1624 sessions)
+    → state.db logical size 769.4 MB, 196,972 pages, 0 free, WAL 0 B
+    → 63,272 messages, 1,624 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 39322) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -147,29 +148,3 @@ exit_code=1
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (14 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 3 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   smd: gateway running, gpt-6-astra
-
-────────────────────────────────────────────────────────────
-  Found 6 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Run 'hermes setup' to configure API keys
-  3. Run 'hermes setup' to configure missing API keys for full tool access
-  4. Root npm package has 1 npm vulnerability; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-  5. web workspace has 6 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-  6. ui-tui workspace has 5 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
