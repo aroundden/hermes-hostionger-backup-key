@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=124
-timed_out_after=20s
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -17,7 +16,7 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (773.0 MB)
+    → state.db: rollback journal mode (773.1 MB)
   ⚠ cron/executions.db is in WAL mode (712.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -78,9 +77,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (1653 sessions)
-    → state.db logical size 773.0 MB, 197,893 pages, 0 free, WAL 0 B
-    → 63,420 messages, 1,653 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 20913) serving profiles default, aroundit, den, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (1655 sessions)
+    → state.db logical size 773.1 MB, 197,924 pages, 0 free, WAL 0 B
+    → 63,420 messages, 1,655 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 20913) serving profiles default, aroundit, den, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -109,6 +108,71 @@ timed_out_after=20s
   ⚠ OpenRouter API (not configured)
 
 ◆ Tool Availability
+  ✓ browser
+  ✓ browser-use
+  ✓ catalog
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ memory
+  ✓ omh
+  ✓ onboarding
+  ✓ project
+  ✓ session_search
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ video
+  ✓ vision
+  ✓ web search (parallel)
+  ✓ web extract (parallel)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ connections (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
+  ⚠ tts (system dependency not met)
+  ⚠ video_gen (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (14 hub-installed skill(s))
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+
+◆ Memory Provider
+  ✓ omh provider active
+
+◆ NeMo Relay Plugins
+  ✓ No Relay plugin files found
+
+◆ Profiles
+  ✓ 3 profile(s) found
+  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   smd: gateway running, gpt-6-astra
+
+────────────────────────────────────────────────────────────
+  Found 6 issue(s) to address:
+
+  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
+  2. Run 'hermes setup' to configure API keys
+  3. Run 'hermes setup' to configure missing API keys for full tool access
+  4. Root npm package has 1 npm vulnerability; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
+  5. web workspace has 3 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
+  6. ui-tui workspace has 3 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
