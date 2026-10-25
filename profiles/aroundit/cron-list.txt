@@ -10,14 +10,15 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-26T07:18:17.719421+09:00
+    Next run:  2026-10-26T08:11:03.299282+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-26T07:03:17.719421+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-26T07:00:32.828024+09:00)
-    Execution: completed  481c4dd3325f4d7493a0282b83316d35
-    ⚠ Last failure at 2026-10-26T01:35:24.453570+09:00: interrupted — recovered since
+    Last run:  2026-10-26T07:56:03.299282+09:00  ran, but the result was not delivered (Gmail report format invalid; delivery held without a fallback post). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-26T07:53:29.457008+09:00)
+    Execution: completed  559e459536524c28a5d633e4ac312bc1
+    ⚠ The result was not delivered: Gmail report format invalid; delivery held without a fallback post. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    ⚠ Last failure at 2026-10-26T01:35:24.453570+09:00: interrupted
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -46,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-10-26T07:36:17.064982+09:00
+    Next run:  2026-10-26T13:37:07.318296+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-10-26T01:36:17.064982+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-26T01:35:21.595672+09:00)
-    Execution: completed  8aefad9984c24c1cad56d2851ff88edb
+    Last run:  2026-10-26T07:37:07.318296+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-26T07:36:17.064982+09:00)
+    Execution: completed  983da1a748ea4a53806fe185af13ea6b
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -65,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-26T07:08:00+09:00
+    Next run:  2026-10-26T08:09:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-26T07:07:27.695731+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-26T07:07:00+09:00)
-    Execution: completed  11bebdfae09b4ed6a52b51a9c6153cf5
+    Last run:  2026-10-26T08:08:24.589567+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-26T08:08:00+09:00)
+    Execution: completed  421bd190a5f54e3b8938c658897fbb4f
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
