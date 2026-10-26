@@ -36,13 +36,13 @@ exit_code=0
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-10-26T09:00:00+09:00
+    Next run:  2026-10-26T09:15:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-10-23T17:45:36.381564+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-23T17:45:00+09:00)
-    Execution: completed  7e51f9fe8312408285e1e573b2f2b33f
+    Last run:  2026-10-26T09:00:51.396516+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-26T09:00:00+09:00)
+    Execution: completed  9255cbb5b41b4ba9973c3e88faadfec7
 
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
