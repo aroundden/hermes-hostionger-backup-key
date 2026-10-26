@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-27T00:37:40.190900+09:00
+    Next run:  2026-10-27T01:30:45.480288+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-27T00:22:40.190900+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-27T00:19:45.979949+09:00)
-    Execution: completed  7c73d9ba0e02460084e85596528f5b4c
+    Last run:  2026-10-27T01:15:45.480288+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T01:13:19.520608+09:00)
+    Execution: completed  a2e434f9eceb4772b1496a3dd504ddf9
     ⚠ Last failure at 2026-10-26T01:35:24.453570+09:00: interrupted — recovered since
 
   a4642e1093eb [active]
@@ -41,7 +41,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-26T09:04:47.605833+09:00  ok
     Dispatch:  on time (scheduled 2026-10-26T09:00:00+09:00)
-    Execution: completed  d862dc825a0c4fbb939b53e9d2d57e96
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -66,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-27T00:27:00+09:00
+    Next run:  2026-10-27T01:28:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-27T00:26:24.672397+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-27T00:26:00+09:00)
-    Execution: completed  534f583f663747d0b516402e05538342
+    Last run:  2026-10-27T01:27:24.558019+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T01:27:00+09:00)
+    Execution: completed  fc1fe2cb035c40578a4155fba498e148
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
