@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-27T15:59:01.029418+09:00
+    Next run:  2026-10-27T17:00:01.182109+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-27T13:58:16.214054+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-27T14:58:16.214054+09:00)
-    Execution: running  a32c20514b8c4b81bc13d6c2ddd8f87c
+    Last run:  2026-10-27T14:59:46.260422+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T15:59:46.260422+09:00)
+    Execution: running  d8edb5c46f22465faf5f1cb69bc64ba4
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-27T15:12:03.863248+09:00
+    Next run:  2026-10-27T16:14:02.963200+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-27T14:42:03.863248+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-27T14:41:14.217207+09:00)
-    Execution: completed  278083919d9240e89e471263698d8f5c
+    Last run:  2026-10-27T15:44:02.963200+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T15:43:03.118219+09:00)
+    Execution: completed  3ce8194329034ebeaffc7f817e19c5b7
     ⚠ Last failure at 2026-10-27T11:02:02.459857+09:00: OperationalError: database is locked (another Hermes process held the state.db write lock for over 20s — likely a long … — recovered since
 
   72963b1a5e65 [active]
@@ -51,13 +51,13 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  0 9,15,21 * * *
     Repeat:    ∞
-    Next run:  2026-10-27T15:00:00+09:00
+    Next run:  2026-10-27T21:00:00+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-27T09:02:49.923326+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-27T09:00:00+09:00)
-    Execution: completed  ad63d2af3fee46778f443b0dc12f0933
+    Last run:  2026-10-27T15:02:23.005311+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T15:00:00+09:00)
+    Execution: completed  a788c16757494bd0bf9c0b9bda25880e
     ⚠ Last failure at 2026-10-10T21:01:12.545495+09:00: RuntimeError: HTTP 429: The usage limit has been reached — recovered since
 
   4624d933404b [active]
