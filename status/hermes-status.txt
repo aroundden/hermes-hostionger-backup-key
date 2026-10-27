@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes status --all
-exit_code=124
-timed_out_after=30s
+exit_code=0
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -66,3 +65,45 @@ timed_out_after=30s
   Sudo:         ✗ disabled
 
 ◆ Messaging Platforms
+  A2A           ✗ not configured
+  BlueBubbles (iMessage)  ✗ not configured
+  Buzz          ✗ not configured
+  DingTalk      ✗ not configured
+  Discord       ✗ not configured
+  Email         ✗ not configured
+  Feishu / Lark  ✗ not configured
+  Google Chat   ✗ not configured
+  iMessage via Photon  ✗ not configured
+  IRC           ✗ not configured
+  LINE          ✗ not configured
+  Matrix        ✗ not configured
+  Mattermost    ✗ not configured
+  Microsoft Teams  ✗ not configured
+  ntfy          ✗ not configured
+  QQ Bot        ✗ not configured
+  Raft          ✗ not configured
+  Signal        ✗ not configured
+  SimpleX Chat  ✗ not configured
+  Slack         ✓ configured (home: C0BM6HMVDQB)
+  SMS (Twilio)  ✗ not configured
+  Telegram      ✗ not configured
+  Weixin / WeChat  ✗ not configured
+  WhatsApp      ✗ not configured
+  WhatsApp Business (Cloud)  ✗ not configured
+  Yuanbao       ✗ not configured
+
+◆ Gateway Service
+  Status:       ✓ running (via the default-profile multiplexer)
+  Manage with:  hermes gateway status   # from the default profile
+
+◆ Scheduled Jobs
+  Jobs:         5 active, 7 total
+
+◆ Sessions
+  Active:       383 session(s)
+  Last activity:      11m ago
+
+────────────────────────────────────────────────────────────
+  Run 'hermes doctor' for detailed diagnostics
+  Run 'hermes setup' to configure
+
