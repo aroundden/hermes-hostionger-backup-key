@@ -1,4 +1,47 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes -p smd cron list
-exit_code=124
-timed_out_after=30s
+exit_code=0
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs (profile: smd)                   │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  236ef4fff769 [active]
+    Name:      SMD Daily Brief — 에스피식 아침 브리프
+    Schedule:  30 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-10-28T09:30:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, google-workspace, den-output-contract
+    Workdir:   /Users/insideden/workspace/spsik-automation
+    Last run:  2026-10-27T09:32:37.432112+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T09:30:00+09:00)
+    Execution: completed  08350a5180534a2094ffd3b85b6fedec
+
+  76303332d061 [active]
+    Name:      SPC 매거진/SNS 업데이트 알림
+    Schedule:  31 9 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-10-28T09:31:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, den-output-contract
+    Script:    spc_social_watch_notify.py
+    Workdir:   /Users/insideden/workspace/spsik-automation
+    Last run:  2026-10-27T09:39:16.496974+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T09:31:00+09:00)
+    Execution: completed  331ee20e8d9a42db866a02b6276b6fe9
+    ⚠ Last failure at 2026-10-22T09:38:46.654843+09:00: 로컬 형식 검사에서 `item_count`, `item_shape`, `length` 오류가 발생해 SNS 업데이트 알림을 발송하지 않았습니다. 신규 콘텐츠와 원문 링크 12건은 검토했으며, 다음 실행에서 형식 수… — recovered since
+
+  d6df4f1599af [active]
+    Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
+    Schedule:  */15 9-17 * * 1-5
+    Repeat:    ∞
+    Next run:  2026-10-27T12:00:00+09:00
+    Deliver:   slack:C0BJDF8693K
+    Skills:    content-operations-briefings, google-workspace, den-output-contract
+    Script:    advertiser_sheet_watch.py
+    Last run:  2026-10-27T11:45:33.968431+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-27T11:45:00+09:00)
+    Execution: completed  16f934566df94176b23b6fdc610a98db
+    ⚠ Last failure at 2026-10-27T11:00:48.205208+09:00: interrupted — recovered since
 
