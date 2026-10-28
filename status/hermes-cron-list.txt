@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-29T06:38:01.139897+09:00
+    Next run:  2026-10-29T07:38:57.201446+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-29T04:37:55.952129+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-29T05:37:55.952129+09:00)
-    Execution: running  508a00cdbd7b407e969b3ff2b97cfe1f
+    Last run:  2026-10-29T05:38:46.548135+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-29T06:38:46.548135+09:00)
+    Execution: running  457a953325b242c3b00396109443296e
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-29T05:53:03.604067+09:00
+    Next run:  2026-10-29T06:55:02.385139+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-29T05:23:03.604067+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-29T05:22:02.717026+09:00)
-    Execution: completed  15d8cf18b8ed4187941b0fc955e4382e
+    Last run:  2026-10-29T06:25:02.385139+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-29T06:24:02.799610+09:00)
+    Execution: completed  617a58f0c9194b798ecca667353fc936
     ⚠ Last failure at 2026-10-27T11:02:02.459857+09:00: OperationalError: database is locked (another Hermes process held the state.db write lock for over 20s — likely a long … — recovered since
 
   72963b1a5e65 [active]
@@ -64,14 +64,14 @@ exit_code=0
     Name:      TickTick Member Worklog 마감순 정렬
     Schedule:  0 6 * * *
     Repeat:    ∞
-    Next run:  2026-10-29T06:00:00+09:00
+    Next run:  2026-10-30T06:00:00+09:00
     Deliver:   local
     Script:    ticktick_worklog_deadline_sort.py
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-10-28T06:00:14.938591+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-28T06:00:00+09:00)
-    Execution: completed  001ea2e8f6f84e8ba4c022d245533e67
+    Last run:  2026-10-29T06:00:15.797934+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-29T06:00:00+09:00)
+    Execution: completed  311cc16dc8004103ad12cd09d1ea3d45
 
   895a3b5fe3f6 [paused]
     Name:      Obsidian 주간 지식 업데이트
