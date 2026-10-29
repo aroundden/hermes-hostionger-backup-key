@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-30T05:50:10.247370+09:00
+    Next run:  2026-10-30T06:45:54.022803+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-30T05:19:19.874238+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T05:34:19.874238+09:00)
-    Execution: running  b610ec29ea6945c29accabc96d9b3501
+    Last run:  2026-10-30T06:30:54.022803+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-30T06:28:05.917261+09:00)
+    Execution: completed  b85ef9683ac54284ba0830429b86920b
     ⚠ Last failure at 2026-10-27T11:32:06.643661+09:00: failed — recovered since
 
   a4642e1093eb [active]
@@ -65,14 +65,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-30T05:37:00+09:00
+    Next run:  2026-10-30T06:38:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-30T05:36:10.943962+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T05:36:00+09:00)
-    Execution: completed  6216b7045e004ee9ad46397a941ad6d1
+    Last run:  2026-10-30T06:37:11.136124+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-30T06:37:00+09:00)
+    Execution: completed  a63312580309470195ccf8bed157f843
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
