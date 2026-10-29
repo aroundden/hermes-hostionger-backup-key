@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-10-30T07:37:10.160940+09:00
+    Next run:  2026-10-30T08:38:10.416960+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-10-30T05:36:51.885681+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T06:36:51.885681+09:00)
-    Execution: running  46151755402d44e09d842eaa5dffd616
+    Last run:  2026-10-30T06:37:56.643639+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-30T07:37:56.643639+09:00)
+    Execution: running  93f385ed93414d3d87c9ab4e7fac5615
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-10-30T06:43:11.036291+09:00
+    Next run:  2026-10-30T07:45:11.067201+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-10-30T06:13:11.036291+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T06:12:11.054372+09:00)
-    Execution: completed  47e491f6168243bca20e93a93dd397cd
+    Last run:  2026-10-30T07:15:11.067201+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-30T07:14:11.852664+09:00)
+    Execution: completed  f444486d1b6f498592860aecd3d2a7ff
     ⚠ Last failure at 2026-10-27T11:02:02.459857+09:00: OperationalError: database is locked (another Hermes process held the state.db write lock for over 20s — likely a long … — recovered since
 
   72963b1a5e65 [active]
