@@ -10,14 +10,15 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-10-31T00:01:50.066770+09:00
+    Next run:  2026-10-31T00:57:59.629420+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-30T23:46:50.066770+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T23:43:55.911858+09:00)
-    Execution: completed  e0ab0d558ff7407dbb51983c6a384827
-    ⚠ Last failure at 2026-10-27T11:32:06.643661+09:00: failed — recovered since
+    Last run:  2026-10-31T00:42:59.629420+09:00  ran, but the result was not delivered (Gmail report format invalid; delivery held without a fallback post). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    Dispatch:  on time (scheduled 2026-10-31T00:40:25.754835+09:00)
+    Execution: completed  411587520ff24de9aba1f7e4d5a6b6b0
+    ⚠ The result was not delivered: Gmail report format invalid; delivery held without a fallback post. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
+    ⚠ Last failure at 2026-10-27T11:32:06.643661+09:00: failed
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -41,7 +42,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-10-30T09:04:32.313676+09:00  ok
     Dispatch:  on time (scheduled 2026-10-30T09:00:00+09:00)
-    Execution: completed  0e98317ca90947e2aafd2cc5f8464186
 
   d2348c1bdd04 [active]
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
@@ -66,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-10-30T23:55:00+09:00
+    Next run:  2026-10-31T00:56:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-10-30T23:54:10.946834+09:00  ok
-    Dispatch:  on time (scheduled 2026-10-30T23:54:00+09:00)
-    Execution: completed  4e3bfc9008774f44a097360709b19e7d
+    Last run:  2026-10-31T00:55:10.908920+09:00  ok
+    Dispatch:  on time (scheduled 2026-10-31T00:55:00+09:00)
+    Execution: completed  4e22e8fd32ba40b9b1c599497879a5a2
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
