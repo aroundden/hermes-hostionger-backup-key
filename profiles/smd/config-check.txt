@@ -4,7 +4,7 @@ exit_code=0
 
 📋 Configuration Status
 
-  Config version: 51 ✓
+  Config version: 52 ✓
 
   Required:
 
@@ -78,13 +78,10 @@ exit_code=0
     ○ KEENABLE_API_KEY → web_search, web_extract
     ○ SEARXNG_URL → web_search
     ○ BRAVE_SEARCH_API_KEY → web_search
-    ○ BROWSERBASE_API_KEY → browser_navigate, browser_click
-    ○ BROWSERBASE_PROJECT_ID → browser_navigate, browser_click
-    ○ BROWSER_USE_API_KEY → browser_navigate, browser_click
-    ○ FIRECRAWL_BROWSER_TTL → browser_navigate, browser_click
-    ○ AGENT_BROWSER_ENGINE → browser_exec, browser_navigate
-    ○ CAMOFOX_URL → browser_navigate, browser_click
-    ○ CAMOFOX_API_KEY → browser_navigate, browser_click
+    ○ BROWSERBASE_API_KEY → browser_exec
+    ○ BROWSERBASE_PROJECT_ID → browser_exec
+    ○ BROWSER_USE_API_KEY → browser_exec
+    ○ FIRECRAWL_BROWSER_TTL → browser_exec
     ○ FAL_KEY → image_generate, video_generate
     ○ KREA_API_KEY → image_generate
     ○ VOICE_TOOLS_OPENAI_KEY → voice_transcription, openai_tts
@@ -162,39 +159,6 @@ exit_code=0
     ○ SUDO_PASSWORD
     ○ HERMES_PREFILL_MESSAGES_FILE
     ○ HERMES_EPHEMERAL_SYSTEM_PROMPT
-    ○ AI_GATEWAY_API_KEY
-    ○ DASHSCOPE_CN_BASE_URL
-    ○ ALIBABA_TOKEN_PLAN_API_KEY
-    ○ ALIBABA_TOKEN_PLAN_BASE_URL
-    ○ ALIBABA_TOKEN_PLAN_CN_API_KEY
-    ○ ALIBABA_TOKEN_PLAN_CN_BASE_URL
-    ○ ALIBABA_CODING_PLAN_API_KEY
-    ○ ALIBABA_CODING_PLAN_BASE_URL
-    ○ ALIBABA_CODING_PLAN_CN_API_KEY
-    ○ ALIBABA_CODING_PLAN_CN_BASE_URL
-    ○ ANTHROPIC_API_KEY
-    ○ ANTHROPIC_TOKEN
-    ○ CLAUDE_CODE_OAUTH_TOKEN
-    ○ COMMANDCODE_BASE_URL
-    ○ COMMANDCODE_ANTHROPIC_BASE_URL
-    ○ DEEPINFRA_API_KEY
-    ○ DEEPINFRA_BASE_URL
-    ○ KILOCODE_API_KEY
-    ○ KIMI_CODING_API_KEY
-    ○ MODEL_API_KEY
-    ○ META_API_KEY
-    ○ META_MODEL_API_KEY
-    ○ META_BASE_URL
-    ○ NEBIUS_API_KEY
-    ○ NEBIUS_TOKEN_FACTORY_API_KEY
-    ○ NEBIUS_BASE_URL
-    ○ NOVITA_API_KEY
-    ○ NOVITA_BASE_URL
-    ○ RAMP_ROUTER_API_KEY
-    ○ ROUTER_API_KEY
-    ○ RAMP_ROUTER_BASE_URL
-    ○ TOKENHUB_API_KEY
-    ○ TOKENHUB_BASE_URL
     ○ DINGTALK_CLIENT_ID
     ○ DINGTALK_CLIENT_SECRET
     ○ DINGTALK_WEBHOOK_URL
@@ -410,4 +374,40 @@ exit_code=0
     ○ WHATSAPP_ALLOW_ALL_USERS
     ○ WHATSAPP_HOME_CHANNEL
     ○ WHATSAPP_HOME_CHANNEL_NAME
+    ○ AI_GATEWAY_API_KEY
+    ○ DASHSCOPE_CN_BASE_URL
+    ○ ALIBABA_TOKEN_PLAN_API_KEY
+    ○ ALIBABA_TOKEN_PLAN_BASE_URL
+    ○ ALIBABA_TOKEN_PLAN_CN_API_KEY
+    ○ ALIBABA_TOKEN_PLAN_CN_BASE_URL
+    ○ ALIBABA_CODING_PLAN_API_KEY
+    ○ ALIBABA_CODING_PLAN_BASE_URL
+    ○ ALIBABA_CODING_PLAN_CN_API_KEY
+    ○ ALIBABA_CODING_PLAN_CN_BASE_URL
+    ○ ANTHROPIC_API_KEY
+    ○ ANTHROPIC_TOKEN
+    ○ CLAUDE_CODE_OAUTH_TOKEN
+    ○ COMMANDCODE_BASE_URL
+    ○ COMMANDCODE_ANTHROPIC_BASE_URL
+    ○ DEEPINFRA_API_KEY
+    ○ DEEPINFRA_BASE_URL
+    ○ KILOCODE_API_KEY
+    ○ KIMI_CODING_API_KEY
+    ○ MODEL_API_KEY
+    ○ META_API_KEY
+    ○ META_MODEL_API_KEY
+    ○ META_BASE_URL
+    ○ NEBIUS_API_KEY
+    ○ NEBIUS_TOKEN_FACTORY_API_KEY
+    ○ NEBIUS_BASE_URL
+    ○ NOVITA_API_KEY
+    ○ NOVITA_BASE_URL
+    ○ RAMP_ROUTER_API_KEY
+    ○ ROUTER_API_KEY
+    ○ RAMP_ROUTER_BASE_URL
+    ○ TOKENHUB_API_KEY
+    ○ TOKENHUB_BASE_URL
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

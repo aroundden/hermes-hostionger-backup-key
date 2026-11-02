@@ -10,3 +10,6 @@ exit_code=0
   vercel           https://mcp.vercel.com         22 selected  ✗ disabled
   notion           https://mcp.notion.com/mcp     all          ✗ disabled
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -24,14 +24,14 @@ exit_code=0
 │ hermes-schedule… │ autonomous-ai-a… │ local    │ local    │ enabled          │
 │ hermes-state-ba… │ autonomous-ai-a… │ local    │ local    │ enabled          │
 │ merge-reconciler │ autonomous-ai-a… │ local    │ local    │ enabled          │
-│ opencode         │ autonomous-ai-a… │ builtin  │ builtin  │ disabled         │
+│ opencode         │ autonomous-ai-a… │ official │ official │ disabled         │
 │ architecture-di… │ creative         │ builtin  │ builtin  │ disabled         │
 │ ascii-art        │ creative         │ official │ official │ disabled         │
 │ ascii-video      │ creative         │ builtin  │ builtin  │ disabled         │
 │ baoyu-infograph… │ creative         │ builtin  │ builtin  │ enabled          │
 │ claude-design    │ creative         │ builtin  │ builtin  │ enabled          │
 │ comfyui          │ creative         │ official │ official │ disabled         │
-│ design-md        │ creative         │ builtin  │ builtin  │ disabled         │
+│ design-md        │ creative         │ official │ official │ disabled         │
 │ excalidraw       │ creative         │ official │ official │ disabled         │
 │ humanizer        │ creative         │ builtin  │ builtin  │ enabled          │
 │ manim-video      │ creative         │ builtin  │ builtin  │ disabled         │
@@ -75,9 +75,9 @@ exit_code=0
 │ omh-executor-ru… │ handoff-guide    │ external │ local    │ enabled          │
 │ omh-frontend-re… │ handoff-guide    │ external │ local    │ enabled          │
 │ den-subtitle-pr… │ media            │ local    │ local    │ enabled          │
-│ gif-search       │ media            │ builtin  │ builtin  │ disabled         │
+│ gif-search       │ media            │ official │ official │ disabled         │
 │ multicam-rough-… │ media            │ local    │ local    │ enabled          │
-│ songsee          │ media            │ builtin  │ builtin  │ disabled         │
+│ songsee          │ media            │ official │ official │ disabled         │
 │ youtube-content  │ media            │ builtin  │ builtin  │ enabled          │
 │ youtube-packagi… │ media            │ local    │ local    │ enabled          │
 │ omh-decision-re… │ memory-keeper    │ external │ local    │ enabled          │
@@ -157,7 +157,7 @@ exit_code=0
 │ omh-release-cut  │ planner          │ external │ local    │ enabled          │
 │ omh-rust         │ planner          │ external │ local    │ enabled          │
 │ airtable         │ productivity     │ builtin  │ builtin  │ disabled         │
-│ box              │ productivity     │ builtin  │ builtin  │ disabled         │
+│ box              │ productivity     │ official │ official │ disabled         │
 │ casual-business… │ productivity     │ local    │ local    │ enabled          │
 │ content-operati… │ productivity     │ local    │ local    │ enabled          │
 │ den-creativefor… │ productivity     │ local    │ local    │ enabled          │
@@ -167,9 +167,10 @@ exit_code=0
 │ google-workspace │ productivity     │ builtin  │ builtin  │ enabled          │
 │ maps             │ productivity     │ builtin  │ builtin  │ enabled          │
 │ meeting-action-… │ productivity     │ builtin  │ builtin  │ enabled          │
+│ microsoft-office │ productivity     │ builtin  │ builtin  │ enabled          │
 │ model-routing-p… │ productivity     │ local    │ local    │ enabled          │
 │ nano-pdf         │ productivity     │ local    │ local    │ disabled         │
-│ notion           │ productivity     │ builtin  │ builtin  │ disabled         │
+│ notion           │ productivity     │ official │ official │ disabled         │
 │ ocr-and-documen… │ productivity     │ local    │ local    │ enabled          │
 │ pdf              │ productivity     │ builtin  │ builtin  │ enabled          │
 │ powerpoint       │ productivity     │ builtin  │ builtin  │ enabled          │
@@ -188,7 +189,7 @@ exit_code=0
 │ competitor-news… │ research         │ builtin  │ builtin  │ enabled          │
 │ foreign-talent-… │ research         │ local    │ local    │ enabled          │
 │ grounded-citati… │ research         │ builtin  │ builtin  │ enabled          │
-│ llm-wiki         │ research         │ builtin  │ builtin  │ disabled         │
+│ llm-wiki         │ research         │ official │ official │ disabled         │
 │ research-paper-… │ research         │ local    │ local    │ disabled         │
 │ rss-feeds        │ research         │ official │ official │ enabled          │
 │ omh-docs         │ researcher       │ external │ local    │ enabled          │
@@ -232,8 +233,8 @@ exit_code=0
 │ dogfood          │ software-develo… │ builtin  │ builtin  │ disabled         │
 │ github           │ software-develo… │ builtin  │ builtin  │ enabled          │
 │ hermes-agent-sk… │ software-develo… │ builtin  │ builtin  │ enabled          │
-│ inspecting-herm… │ software-develo… │ builtin  │ builtin  │ disabled         │
-│ node-inspect-de… │ software-develo… │ builtin  │ builtin  │ disabled         │
+│ inspecting-herm… │ software-develo… │ official │ official │ disabled         │
+│ node-inspect-de… │ software-develo… │ official │ official │ disabled         │
 │ plan             │ software-develo… │ local    │ local    │ enabled          │
 │                  │                  │          │          │ slash command    │
 │                  │                  │          │          │ /plan            │
@@ -241,7 +242,7 @@ exit_code=0
 │                  │                  │          │          │ name taken by    │
 │                  │                  │          │          │ built-in; use    │
 │                  │                  │          │          │ /skill plan      │
-│ python-debugpy   │ software-develo… │ builtin  │ builtin  │ disabled         │
+│ python-debugpy   │ software-develo… │ official │ official │ disabled         │
 │ requesting-code… │ software-develo… │ builtin  │ builtin  │ enabled          │
 │ simplify-code    │ software-develo… │ builtin  │ builtin  │ disabled         │
 │ spike            │ software-develo… │ builtin  │ builtin  │ disabled         │
@@ -277,5 +278,8 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local    │ enabled          │
 │ blocked-page-re… │ web              │ builtin  │ builtin  │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-14 hub-installed, 58 builtin, 193 local — 222 enabled, 43 disabled
+24 hub-installed, 49 builtin, 193 local — 223 enabled, 43 disabled
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
