@@ -90,7 +90,6 @@ exit_code=0
 │ llama-cpp        │ mlops            │ official │ official │ disabled         │
 │ serving-llms-vl… │ mlops            │ official │ official │ disabled         │
 │ weights-and-bia… │ mlops            │ official │ official │ disabled         │
-│ content-recomme… │ note-taking      │ local    │ local    │ enabled          │
 │ obsidian         │ note-taking      │ builtin  │ builtin  │ enabled          │
 │ second-brain-op… │ note-taking      │ local    │ local    │ enabled          │
 │ omh-agent-debug  │ operator         │ external │ local    │ enabled          │
@@ -278,7 +277,7 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local    │ enabled          │
 │ blocked-page-re… │ web              │ builtin  │ builtin  │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-24 hub-installed, 49 builtin, 193 local — 223 enabled, 43 disabled
+24 hub-installed, 49 builtin, 192 local — 222 enabled, 43 disabled
 
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
