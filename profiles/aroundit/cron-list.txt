@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-05T16:04:41.411347+09:00
+    Next run:  2026-11-05T16:58:01.819605+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-05T15:49:41.411347+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-05T15:45:43.603809+09:00)
-    Execution: completed  81537f2a28894e3ebec535a13e32270d
+    Last run:  2026-11-05T16:43:01.819605+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-05T16:39:49.221526+09:00)
+    Execution: completed  7078278961224ae8830be5decfc8b74b
     ⚠ Last failure at 2026-11-04T00:15:39.703161+09:00: interrupted — recovered since
 
   a4642e1093eb [active]
@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-11-05T16:19:26.839577+09:00
+    Next run:  2026-11-05T22:21:42.479218+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-11-05T10:19:26.839577+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-05T10:18:22.866117+09:00)
-    Execution: completed  23df65967cb8467ea9a5135a64bc4677
+    Last run:  2026-11-05T16:21:42.479218+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-05T16:19:26.839577+09:00)
+    Execution: completed  f95e3b2c0cff48e8ae16d5961344a575
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-05T15:56:00+09:00
+    Next run:  2026-11-05T16:58:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-05T15:55:40.169669+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-05T15:55:00+09:00)
-    Execution: completed  edd8cec85b784be49bc184a198645c1f
+    Last run:  2026-11-05T16:57:18.803816+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-05T16:57:00+09:00)
+    Execution: completed  12d1dd7e45d94f80887b32763006b033
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
