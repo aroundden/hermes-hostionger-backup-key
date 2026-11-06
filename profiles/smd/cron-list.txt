@@ -10,38 +10,38 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-06T09:30:00+09:00
+    Next run:  2026-11-09T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-05T09:31:49.563057+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-05T09:30:00+09:00)
-    Execution: completed  d1ca132364a8459d8e490e1d55b35390
+    Last run:  2026-11-06T09:32:09.067779+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T09:30:00+09:00)
+    Execution: completed  d41479b6a53341b9b923596494cab982
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-06T09:31:00+09:00
+    Next run:  2026-11-09T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-05T09:39:01.630200+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-05T09:31:00+09:00)
-    Execution: completed  9fd59121f01c45af9487f0daaa64d60d
+    Last run:  2026-11-06T09:39:45.802718+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T09:31:00+09:00)
+    Execution: completed  192c5aa428fe433e9b6c7ee77b3f3539
     ⚠ Last failure at 2026-10-22T09:38:46.654843+09:00: 로컬 형식 검사에서 `item_count`, `item_shape`, `length` 오류가 발생해 SNS 업데이트 알림을 발송하지 않았습니다. 신규 콘텐츠와 원문 링크 12건은 검토했으며, 다음 실행에서 형식 수… — recovered since
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-06T09:15:00+09:00
+    Next run:  2026-11-06T10:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-11-06T09:02:31.958003+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-06T09:00:00+09:00)
-    Execution: completed  c166103aed70466882da09db32e41443
+    Last run:  2026-11-06T10:15:17.901294+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T10:15:00+09:00)
+    Execution: completed  2fb04ed912cb41508c908bb4a504008e
     ⚠ Last failure at 2026-10-27T13:03:27.636577+09:00: ⚠️ **광고주 시트 업데이트 수집 오류 | 2026-10-27 (화) 13:03** — recovered since
 
