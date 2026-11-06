@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-06T21:27:06.273355+09:00
+    Next run:  2026-11-06T22:28:06.093034+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-06T19:26:48.454302+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-06T20:26:48.454302+09:00)
-    Execution: running  440bc0d69aab4164b452b6b068373b78
+    Last run:  2026-11-06T20:27:47.031478+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T21:27:47.031478+09:00)
+    Execution: running  7d5ff848eaf34ea99e1e43fabe27cd6d
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-06T20:55:07.724349+09:00
+    Next run:  2026-11-06T21:57:06.949081+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-06T20:25:07.724349+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-06T20:24:07.094582+09:00)
-    Execution: completed  a623ea8e545740f997ac7bbdeddb1963
+    Last run:  2026-11-06T21:27:06.949081+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T21:26:07.011558+09:00)
+    Execution: completed  f339a57500064079ad06ee99c6192a38
     ⚠ Last failure at 2026-11-03T10:32:18.931960+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
@@ -51,13 +51,13 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  0 9,15,21 * * *
     Repeat:    ∞
-    Next run:  2026-11-06T21:00:00+09:00
+    Next run:  2026-11-07T09:00:00+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-11-06T15:02:25.773994+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-06T15:00:00+09:00)
-    Execution: completed  76895300f776452180044a5d2bc82524
+    Last run:  2026-11-06T21:02:31.698438+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-06T21:00:00+09:00)
+    Execution: completed  e53da1ab9f44424d9a65a4b3bb172e7f
     ⚠ Last failure at 2026-10-28T21:00:10.434154+09:00: RuntimeError: HTTP 400: The 'gpt-6-astra' model is not supported when using Codex with a ChatGPT account. — recovered since
 
   4624d933404b [active]
