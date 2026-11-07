@@ -82,12 +82,14 @@ display:
   interim_assistant_messages: true
   platforms:
     slack:
-      live_status: verb
-      tool_progress: new
+      live_status: false
+      tool_progress: false
       interim_assistant_messages: false
       long_running_notifications: false
       busy_ack_detail: false
       tool_preview_length: 30
+      thinking_progress: false
+      busy_steer_ack_enabled: false
   tool_progress: all
   cleanup_progress: false
   long_running_notifications: true
@@ -96,6 +98,7 @@ display:
   in_app_tips: false
   in_app_tours: false
   skin: omh
+  show_commentary: false
 dashboard:
   basic_auth:
     username: insideden
@@ -416,3 +419,5 @@ known_builtin_toolsets:
     - web
     - x_search
     - yuanbao
+kanban:
+  auto_subscribe_on_create: false
