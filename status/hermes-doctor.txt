@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -77,9 +78,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2312 sessions)
-    → state.db logical size 860.6 MB, 220,315 pages, 219 free, WAL 0 B
-    → 66,906 messages, 2,312 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21631) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2314 sessions)
+    → state.db logical size 860.6 MB, 220,315 pages, 188 free, WAL 0 B
+    → 66,906 messages, 2,314 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21631) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -161,17 +162,3 @@ exit_code=1
   ✓   den: gateway running, gpt-6-astra
   ✓   pm: gateway running, gpt-6-sol
   ✓   smd: gateway running, gpt-6-sol
-
-────────────────────────────────────────────────────────────
-  Found 7 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
-  3. Run 'hermes setup' to configure API keys
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-  5. Root npm package has 11 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-  6. web workspace has 5 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-  7. ui-tui workspace has 2 npm vulnerabilities; wait for an upstream lockfile fix, then update your installation (Docker: pull a rebuilt image; recreating the same image restores the same dependencies)
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
