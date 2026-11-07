@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-07T21:59:11.166945+09:00
+    Next run:  2026-11-07T23:08:06.053819+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-07T21:44:11.166945+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-07T21:40:05.650165+09:00)
-    Execution: completed  29590d220b5640df8728b3bcb70539f4
+    Last run:  2026-11-07T22:37:11.731654+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-07T22:52:11.731654+09:00)
+    Execution: running  cf2a22229c7c4bc2828f466d962bd903
     ⚠ Last failure at 2026-11-04T00:15:39.703161+09:00: interrupted — recovered since
 
   a4642e1093eb [active]
@@ -47,12 +47,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-11-07T22:34:27.878680+09:00
+    Next run:  2026-11-08T04:36:49.716477+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-11-07T16:34:27.878680+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-07T16:32:09.410815+09:00)
-    Execution: completed  3378d8275381471f9a51c1dbf72109e8
+    Last run:  2026-11-07T22:36:49.716477+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-07T22:34:27.878680+09:00)
+    Execution: completed  3ab4cee6c0b04d048634e4eb172977a0
 
   7b42d002665a [paused]
     Name:      클로바노트 새 녹음 → TickTick 주제 카드
@@ -66,14 +66,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-07T21:53:00+09:00
+    Next run:  2026-11-07T22:54:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-07T21:52:04.912281+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-07T21:52:00+09:00)
-    Execution: completed  f74b37d2d92249ee921fefdbaed05807
+    Last run:  2026-11-07T22:53:07.009277+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-07T22:53:00+09:00)
+    Execution: completed  6e80e3e5cc164c5ab15b219f23e9dc3f
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
