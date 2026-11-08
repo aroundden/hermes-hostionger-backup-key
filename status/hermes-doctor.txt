@@ -17,7 +17,7 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (864.7 MB)
+    → state.db: rollback journal mode (864.8 MB)
   ⚠ cron/executions.db is in WAL mode (1020.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -48,17 +48,17 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
-  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 62846s. Credentials are still valid.)
+  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
+  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 59183s. Credentials are still valid.)
   ✓ Config version up to date (v52)
   ✓ No deprecated config keys or env vars
 
@@ -88,9 +88,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2373 sessions)
-    → state.db logical size 864.7 MB, 221,366 pages, 0 free, WAL 0 B
-    → 66,981 messages, 2,373 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2375 sessions)
+    → state.db logical size 864.8 MB, 221,399 pages, 0 free, WAL 0 B
+    → 66,981 messages, 2,375 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -105,70 +105,6 @@ timed_out_after=20s
   ✓ Node.js
   ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
   ✓ Root npm package deps (10 moderate vulnerabilities)
-  ✓ web workspace deps (3 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (no known vulnerabilities)
-
-◆ API Connectivity
-  Running 44 connectivity checks in parallel…
-                                                                      
-  ✓ IPv6 route (no IPv6 route — IPv4 only)
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-  ✓ browser
-  ✓ browser-use
-  ✓ catalog
-  ✓ clarify
-  ✓ code_execution
-  ✓ computer_use
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ omh
-  ✓ onboarding
-  ✓ project
-  ✓ session_search
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
-  ⚠ omh-lsp (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ video (system dependency not met)
-  ⚠ video_gen (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (24 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 4 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   pm: gateway running, gpt-6-sol
-  ✓   smd: gateway running, gpt-6-sol
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
