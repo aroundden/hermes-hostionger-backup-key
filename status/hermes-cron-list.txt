@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-09T05:29:46.611396+09:00
+    Next run:  2026-11-09T06:31:42.501548+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-09T03:29:09.537952+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-09T04:29:09.537952+09:00)
-    Execution: running  00166b5285ec43fabc5cd85f19765c52
+    Last run:  2026-11-09T04:31:07.076163+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-09T05:31:07.076163+09:00)
+    Execution: running  f52f67c1cd0a4f7ab7d123d438be1e2f
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-09T04:34:48.609498+09:00
+    Next run:  2026-11-09T05:36:47.244295+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-09T04:04:48.609498+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-09T04:03:47.347125+09:00)
-    Execution: completed  1e248e1e5b2f4723a3baa681351ed308
+    Last run:  2026-11-09T05:06:47.244295+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-09T05:05:47.441454+09:00)
+    Execution: completed  f77bdb85f9f946099424e6ca826f6965
     ⚠ Last failure at 2026-11-03T10:32:18.931960+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
@@ -91,6 +91,15 @@ exit_code=0
     Deliver:   local
     Script:    mem0_recovery_once.py
     Mode:      no-agent (script stdout delivered directly)
+
+  8011e201de4c [active]
+    Name:      DEN TikTok 롤링 예약 (다음 차수)
+    Schedule:  once at 2026-12-06 10:00
+    Repeat:    0/1
+    Next run:  2026-12-06T10:00:00+09:00
+    Deliver:   origin
+    Skills:    den-shorts-multiplatform-upload, aside-browser-operations, google-workspace, den-output-contract
+    Timezone:  Asia/Seoul
 
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
