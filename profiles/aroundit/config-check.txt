@@ -91,7 +91,6 @@ exit_code=0
     ○ GITHUB_TOKEN
     ○ NOTION_API_KEY
     ○ LINEAR_API_KEY
-    ○ AIRTABLE_API_KEY
     ○ TENOR_API_KEY
     ○ HONCHO_API_KEY → honcho_context
     ○ HONCHO_BASE_URL
@@ -408,3 +407,6 @@ exit_code=0
     ○ TOKENHUB_API_KEY
     ○ TOKENHUB_BASE_URL
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

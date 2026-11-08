@@ -45,3 +45,6 @@ exit_code=0
     Execution: completed  269aadf4cbe2444a8e8d482ae2480a09
     ⚠ Last failure at 2026-10-27T13:03:27.636577+09:00: ⚠️ **광고주 시트 업데이트 수집 오류 | 2026-10-27 (화) 13:03** — recovered since
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

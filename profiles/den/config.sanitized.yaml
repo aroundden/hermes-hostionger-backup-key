@@ -4,8 +4,8 @@ model:
   base_url: https://chatgpt.com/backend-api/codex
   api_mode: codex_responses
 fallback_providers:
-  - provider: openai-codex
-    model: gpt-6-astra
+  - provider: claude-subscription-directsdk-experimental
+    model: claude-opus-5-5
 credential_pool_strategies: <REDACTED>
   openai-codex: fill_first
 toolsets:
@@ -32,6 +32,9 @@ auxiliary:
   compression:
     provider: openai-codex
     model: gpt-6-astra
+    fallback_chain:
+      - provider: claude-subscription-directsdk-experimental
+        model: claude-opus-5-5
   review:
     provider: openai-codex
     model: gpt-6-astra
@@ -420,11 +423,13 @@ timezone: Asia/Seoul
 
 plugins:
   enabled:
+    - claude-subscription-directsdk-experimental
     - omh
   entries:
     omh:
       settings:
         omh_home: /Users/insideden/.hermes/profiles/den/omh
+  disabled: []
 approvals:
   destructive_slash_confirm: false
 telemetry:
@@ -433,3 +438,5 @@ telemetry:
     send: false
 sessions:
   auto_prune: false
+auth:
+  adopt_external_logins: false

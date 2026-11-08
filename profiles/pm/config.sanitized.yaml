@@ -4,8 +4,8 @@ model:
   base_url: https://chatgpt.com/backend-api/codex
   api_mode: codex_responses
 fallback_providers:
-  - provider: openai-codex
-    model: gpt-6-sol
+  - provider: claude-subscription-directsdk-experimental
+    model: claude-opus-5-5
 database:
   journal_mode: delete
 agent:
@@ -97,7 +97,6 @@ display:
   message_reactions: false
   in_app_tips: false
   in_app_tours: false
-  skin: omh
   show_commentary: false
 dashboard:
   basic_auth:
@@ -252,6 +251,9 @@ auxiliary:
   compression:
     model: gpt-5.6-sol
     provider: openai-codex
+    fallback_chain:
+      - provider: claude-subscription-directsdk-experimental
+        model: claude-opus-5-5
   review:
     model: gpt-6-astra
     provider: openai-codex
@@ -338,6 +340,7 @@ desktop:
 
 plugins:
   enabled:
+    - claude-subscription-directsdk-experimental
     - homeassistant
     - omh
   entries:
@@ -421,3 +424,5 @@ known_builtin_toolsets:
     - yuanbao
 kanban:
   auto_subscribe_on_create: false
+auth:
+  adopt_external_logins: false

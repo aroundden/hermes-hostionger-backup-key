@@ -17,14 +17,14 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (863.1 MB)
+    → state.db: rollback journal mode (863.5 MB)
   ⚠ cron/executions.db is in WAL mode (1020.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/bbabf0c386924526865508692ad5e567/venv) (active in this process)
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/04d0e732d4be42d097da1354ec7ceb06/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
@@ -48,7 +48,17 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✓ auxiliary task routing resolves: approval→openai-codex@chatgpt.com, background_review→openai-codex@chatgpt.com, compression→openai-codex@chatgpt.com, curator→openai-codex@chatgpt.com, goal_judge→openai-codex@chatgpt.com, kanban_decomposer→openai-codex@chatgpt.com, memory_query_rewrite→openai-codex@chatgpt.com, monitor→openai-codex@chatgpt.com, review→openai-codex@chatgpt.com, title_generation→openai-codex@chatgpt.com, triage_specifier→openai-codex@chatgpt.com
+  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95844s. Credentials are still valid.)
+  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95843s. Credentials are still valid.)
+  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95843s. Credentials are still valid.)
+  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 95843s. Credentials are still valid.)
   ✓ Config version up to date (v52)
   ✓ No deprecated config keys or env vars
 
@@ -78,9 +88,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2349 sessions)
-    → state.db logical size 863.1 MB, 220,956 pages, 0 free, WAL 0 B
-    → 66,973 messages, 2,349 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 21631) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2355 sessions)
+    → state.db logical size 863.5 MB, 221,065 pages, 0 free, WAL 0 B
+    → 66,981 messages, 2,355 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -94,12 +104,9 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
-  ⚠ Root npm package deps (0 critical, 1 high, 10 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ runtime dependency tree; report/pin the fix in package-lock.json — see #116774
-  ⚠ web workspace deps (0 critical, 1 high, 4 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
-  ⚠ ui-tui workspace deps (0 critical, 1 high, 1 moderate — fix is an upstream lockfile bump — a local manual fix does not persist (the next `hermes update` reinstalls from the committed lockfile))
-    →   ^ workspace audit includes runtime and build dependencies; if manual npm remediation errors with an arborist crash it's a known npm bug — clears via a lockfile bump
+  ✓ Root npm package deps (10 moderate vulnerabilities)
+  ✓ web workspace deps (3 moderate vulnerabilities)
+  ✓ ui-tui workspace deps (no known vulnerabilities)
 
 ◆ API Connectivity
   Running 44 connectivity checks in parallel…
@@ -127,7 +134,6 @@ timed_out_after=20s
   ✓ skills
   ✓ terminal
   ✓ todo
-  ✓ video
   ✓ vision
   ✓ web search (parallel)
   ✓ web extract (parallel)
@@ -142,9 +148,27 @@ timed_out_after=20s
   ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
   ⚠ omh-lsp (system dependency not met)
   ⚠ tts (system dependency not met)
+  ⚠ video (system dependency not met)
   ⚠ video_gen (system dependency not met)
   ⚠ x_search (missing XAI_API_KEY)
 
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (24 hub-installed skill(s))
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+
+◆ Memory Provider
+  ✓ omh provider active
+
+◆ NeMo Relay Plugins
+  ✓ No Relay plugin files found
+
+◆ Profiles
+  ✓ 4 profile(s) found
+  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   pm: gateway running, gpt-6-sol
+  ✓   smd: gateway running, gpt-6-sol
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
