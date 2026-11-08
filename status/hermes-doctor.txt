@@ -48,17 +48,17 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
-  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 48022s. Credentials are still valid.)
+  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
+  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 44304s. Credentials are still valid.)
   ✓ Config version up to date (v52)
   ✓ No deprecated config keys or env vars
 
@@ -88,9 +88,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2383 sessions)
-    → state.db logical size 877.0 MB, 224,524 pages, 2,138 free, WAL 0 B
-    → 67,261 messages, 2,383 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2385 sessions)
+    → state.db logical size 877.0 MB, 224,524 pages, 1,955 free, WAL 0 B
+    → 67,316 messages, 2,385 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -104,6 +104,7 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
+  ✓ Root npm package deps (10 moderate vulnerabilities)
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
