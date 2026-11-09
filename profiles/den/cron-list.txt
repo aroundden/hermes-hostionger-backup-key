@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-10T06:59:27.263409+09:00
+    Next run:  2026-11-10T08:01:27.092269+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-10T04:59:24.618688+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-10T05:59:24.618688+09:00)
-    Execution: running  cc4fac84f3714705a90b3eb67eb01444
+    Last run:  2026-11-10T06:00:51.141019+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-10T07:00:51.141019+09:00)
+    Execution: running  cbe5e6f0f89b4f5a86312bfad4fe246c
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-10T06:19:27.953764+09:00
+    Next run:  2026-11-10T07:21:28.652005+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-10T05:49:27.953764+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-10T05:48:29.081666+09:00)
-    Execution: completed  08f254b7989b48a88ff3a462b702f398
+    Last run:  2026-11-10T06:51:28.652005+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-10T06:50:28.044344+09:00)
+    Execution: completed  1be0c276ec254866b707a832d52c855c
     ⚠ Last failure at 2026-11-03T10:32:18.931960+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
@@ -69,10 +69,12 @@ exit_code=0
     Script:    ticktick_worklog_deadline_sort.py
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-11-09T06:00:49.342979+09:00  ok
+    Last run:  2026-11-10T06:00:36.338921+09:00  error: Script exited with code 1
+stderr:
+TickTick HTTP 500: {"errorId":"4b0jg9hv@erver-14","errorCode":"unknown_exception","errorMessage":"An unexpected error occurred. Please contact support with the errorId.","data":null}
     Dispatch:  on time (scheduled 2026-11-10T06:00:00+09:00)
-    Execution: running  402a8fa494314ecea461226311823dea
-    ⚠ Last failure at 2026-11-03T06:19:38.266922+09:00: Script exited with code 1 — recovered since
+    Execution: failed  402a8fa494314ecea461226311823dea
+    ⚠ Last failure at 2026-11-10T06:00:36.338921+09:00: Script exited with code 1
 
   895a3b5fe3f6 [paused]
     Name:      Obsidian 주간 지식 업데이트
