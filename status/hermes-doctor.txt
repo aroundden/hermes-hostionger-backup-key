@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -77,9 +78,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2427 sessions)
-    → state.db logical size 877.0 MB, 224,524 pages, 539 free, WAL 0 B
-    → 67,526 messages, 2,427 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2429 sessions)
+    → state.db logical size 877.0 MB, 224,524 pages, 507 free, WAL 0 B
+    → 67,526 messages, 2,429 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -158,17 +159,6 @@ exit_code=1
   ✓   den: gateway running, gpt-6-astra
   ✓   pm: gateway running, gpt-6-sol
   ✓   smd: gateway running, gpt-6-sol
-
-────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
-  3. Run 'hermes setup' to configure API keys
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
