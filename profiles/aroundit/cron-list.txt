@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-10T03:03:03.704556+09:00
+    Next run:  2026-11-10T04:12:29.425846+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-10T02:48:03.704556+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-10T02:41:48.696049+09:00)
-    Execution: completed  a795fe9a2f3b4e7c92047d876f237849
+    Last run:  2026-11-10T03:57:29.425846+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-10T03:55:26.807564+09:00)
+    Execution: completed  af6b303c67cd44c191616022741a7267
     ⚠ Last failure at 2026-11-08T11:41:07.618405+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 97390s. Credentials are still valid. — recovered since
 
   a4642e1093eb [active]
@@ -68,14 +68,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-10T02:56:00+09:00
+    Next run:  2026-11-10T03:58:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-10T02:55:27.640109+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-10T02:55:00+09:00)
-    Execution: completed  4073fe6933bb42cc800a17e236747a96
+    Last run:  2026-11-10T03:57:29.046902+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-10T03:57:00+09:00)
+    Execution: completed  a415b77382b84bb09a2761a2e443c518
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
