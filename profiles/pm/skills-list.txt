@@ -255,10 +255,8 @@ exit_code=0
 │ omh-rust         │ planner          │ external │ local     │ enabled         │
 │ airtable         │ productivity     │ builtin  │ builtin   │ enabled         │
 │ box              │ productivity     │ official │ official  │ enabled         │
-│ content-operati… │ productivity     │ local    │ local     │ enabled         │
 │ document-to-act… │ productivity     │ builtin  │ builtin   │ enabled         │
 │ docx             │ productivity     │ builtin  │ builtin   │ enabled         │
-│ gmail-workflow-… │ productivity     │ local    │ local     │ enabled         │
 │ google-workspace │ productivity     │ builtin  │ builtin   │ enabled         │
 │ langdy-email-op… │ productivity     │ local    │ local     │ enabled         │
 │ maps             │ productivity     │ builtin  │ builtin   │ enabled         │
@@ -270,14 +268,12 @@ exit_code=0
 │ ocr-and-documen… │ productivity     │ local    │ local     │ enabled         │
 │ on82-operations  │ productivity     │ local    │ local     │ enabled         │
 │ payment-operati… │ productivity     │ local    │ local     │ enabled         │
-│ payroll-disburs… │ productivity     │ local    │ local     │ enabled         │
 │ pdf              │ productivity     │ builtin  │ builtin   │ enabled         │
 │ petdex           │ productivity     │ local    │ local     │ enabled         │
 │ powerpoint       │ productivity     │ builtin  │ builtin   │ enabled         │
 │ product-price-m… │ productivity     │ builtin  │ builtin   │ enabled         │
 │ session-librari… │ productivity     │ local    │ local     │ enabled         │
 │ teams-meeting-p… │ productivity     │ builtin  │ builtin   │ enabled         │
-│ ticktick-operat… │ productivity     │ local    │ local     │ enabled         │
 │ weekly-review-p… │ productivity     │ builtin  │ builtin   │ enabled         │
 │ xlsx             │ productivity     │ builtin  │ builtin   │ enabled         │
 │ arxiv            │ research         │ builtin  │ builtin   │ enabled         │
@@ -374,7 +370,7 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local     │ enabled         │
 │ blocked-page-re… │ web              │ builtin  │ builtin   │ enabled         │
 └──────────────────┴──────────────────┴──────────┴───────────┴─────────────────┘
-26 hub-installed, 49 builtin, 287 local — 362 enabled, 0 disabled
+26 hub-installed, 49 builtin, 283 local — 358 enabled, 0 disabled
 
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
