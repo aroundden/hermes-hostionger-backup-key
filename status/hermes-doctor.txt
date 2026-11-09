@@ -78,9 +78,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2431 sessions)
-    → state.db logical size 877.0 MB, 224,524 pages, 475 free, WAL 0 B
-    → 67,526 messages, 2,431 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2433 sessions)
+    → state.db logical size 877.0 MB, 224,524 pages, 444 free, WAL 0 B
+    → 67,526 messages, 2,433 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -105,60 +105,6 @@ timed_out_after=20s
   ⚠ OpenRouter API (not configured)
 
 ◆ Tool Availability
-  ✓ browser
-  ✓ browser-use
-  ✓ catalog
-  ✓ clarify
-  ✓ code_execution
-  ✓ computer_use
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ omh
-  ✓ onboarding
-  ✓ project
-  ✓ session_search
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ video
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
-  ⚠ omh-lsp (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ video_gen (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (24 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 4 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   pm: gateway running, gpt-6-sol
-  ✓   smd: gateway running, gpt-6-sol
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
