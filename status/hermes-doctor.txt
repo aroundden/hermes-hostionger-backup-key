@@ -47,17 +47,17 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/.env file exists
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
-  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
-  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.)
+  ✗ auxiliary.approval.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.background_review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.compression.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.curator.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.goal_judge.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.kanban_decomposer.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.memory_query_rewrite.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.monitor.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.review.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.title_generation.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
+  ✗ auxiliary.triage_specifier.provider 'openai-codex' does not resolve (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.)
   ✓ Config version up to date (v52)
   ✓ No deprecated config keys or env vars
 
@@ -87,9 +87,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2405 sessions)
-    → state.db logical size 877.0 MB, 224,524 pages, 1,177 free, WAL 0 B
-    → 67,440 messages, 2,405 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2407 sessions)
+    → state.db logical size 877.0 MB, 224,524 pages, 1,102 free, WAL 0 B
+    → 67,455 messages, 2,407 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -175,17 +175,17 @@ exit_code=1
   1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
   2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
   3. Run 'hermes setup' to configure API keys
-  4. auxiliary.approval.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.approval.
-  5. auxiliary.background_review.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.background_review.
-  6. auxiliary.compression.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.compression.
-  7. auxiliary.curator.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.curator.
-  8. auxiliary.goal_judge.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.goal_judge.
-  9. auxiliary.kanban_decomposer.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.kanban_decomposer.
-  10. auxiliary.memory_query_rewrite.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.memory_query_rewrite.
-  11. auxiliary.monitor.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.monitor.
-  12. auxiliary.review.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.review.
-  13. auxiliary.title_generation.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.title_generation.
-  14. auxiliary.triage_specifier.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 7466s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.triage_specifier.
+  4. auxiliary.approval.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.approval.
+  5. auxiliary.background_review.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.background_review.
+  6. auxiliary.compression.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.compression.
+  7. auxiliary.curator.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.curator.
+  8. auxiliary.goal_judge.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.goal_judge.
+  9. auxiliary.kanban_decomposer.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.kanban_decomposer.
+  10. auxiliary.memory_query_rewrite.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.memory_query_rewrite.
+  11. auxiliary.monitor.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.monitor.
+  12. auxiliary.review.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.review.
+  13. auxiliary.title_generation.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.title_generation.
+  14. auxiliary.triage_specifier.provider 'openai-codex' cannot be resolved (Codex provider quota exhausted (429); retry after 3806s. Credentials are still valid.); the task silently runs on the main model. Fix the provider name/credentials in auxiliary.triage_specifier.
   15. Run 'hermes setup' to configure missing API keys for full tool access
 
   Tip: run 'hermes doctor --fix' to auto-fix what's possible.
