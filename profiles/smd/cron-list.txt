@@ -46,6 +46,3 @@ exit_code=0
     Execution: completed  551437baeb684158a4ae681da5685ecb
     ⚠ Last failure at 2026-11-09T09:00:53.934179+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 20605s. Credentials are still valid. — recovered since
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

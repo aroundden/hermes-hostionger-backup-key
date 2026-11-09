@@ -7,9 +7,7 @@ exit_code=0
   default         gpt-6-sol                    running      —            —
   aroundit        gpt-6-astra                  running      aroundit     —
  ◆den             gpt-6-astra                  running      den          —
+  omh-tui         —                            running      —            —
   pm              gpt-6-sol                    running      pm           —
   smd             gpt-6-sol                    running      smd          —
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

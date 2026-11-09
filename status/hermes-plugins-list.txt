@@ -1492,7 +1492,7 @@ exit_code=0
 │                 │             │         │ tools,          │                  │
 │                 │             │         │ approvals and   │                  │
 │                 │             │         │ compaction      │                  │
-│ omh             │ enabled     │ 4.0.6   │ Oh My Hermes    │ user             │
+│ omh             │ enabled     │ 4.0.7   │ Oh My Hermes    │ user             │
 │                 │             │         │ native bridge   │                  │
 │                 │             │         │ for             │                  │
 │                 │             │         │ metadata-only   │                  │
@@ -1525,6 +1525,3 @@ Compact view: hermes plugins list --plain --no-bundled
 Interactive toggle: hermes plugins
 Enable/disable: hermes plugins enable/disable <name>
 Plugins are opt-in by default — only 'enabled' plugins load.
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

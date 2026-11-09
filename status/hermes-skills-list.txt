@@ -148,6 +148,7 @@ exit_code=0
 │ omh-decision-pr… │ planner          │ external │ local    │ enabled          │
 │ omh-iac-change   │ planner          │ external │ local    │ enabled          │
 │ omh-mobile-rele… │ planner          │ external │ local    │ enabled          │
+│ omh-model-compr… │ planner          │ external │ local    │ enabled          │
 │ omh-model-finet… │ planner          │ external │ local    │ enabled          │
 │ omh-plan         │ planner          │ external │ local    │ enabled          │
 │ omh-product-bri… │ planner          │ external │ local    │ enabled          │
@@ -201,6 +202,7 @@ exit_code=0
 │ omh-research-br… │ researcher       │ external │ local    │ enabled          │
 │ omh-research-de… │ researcher       │ external │ local    │ enabled          │
 │ omh-source-find… │ researcher       │ external │ local    │ enabled          │
+│ omh-systematic-… │ researcher       │ external │ local    │ enabled          │
 │ omh-web-research │ researcher       │ external │ local    │ enabled          │
 │ omh-accessibili… │ reviewer         │ external │ local    │ enabled          │
 │ omh-app-debuggi… │ reviewer         │ external │ local    │ enabled          │
@@ -278,8 +280,5 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local    │ enabled          │
 │ blocked-page-re… │ web              │ builtin  │ builtin  │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-24 hub-installed, 49 builtin, 193 local — 223 enabled, 43 disabled
+24 hub-installed, 49 builtin, 195 local — 225 enabled, 43 disabled
 
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.

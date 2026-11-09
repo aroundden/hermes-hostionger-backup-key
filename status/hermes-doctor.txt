@@ -78,9 +78,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2433 sessions)
-    → state.db logical size 877.0 MB, 224,524 pages, 444 free, WAL 0 B
-    → 67,526 messages, 2,433 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2435 sessions)
+    → state.db logical size 877.0 MB, 224,524 pages, 411 free, WAL 0 B
+    → 67,526 messages, 2,435 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -94,17 +94,3 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
-  ✓ Root npm package deps (10 moderate vulnerabilities)
-  ✓ web workspace deps (3 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (no known vulnerabilities)
-
-◆ API Connectivity
-  Running 44 connectivity checks in parallel…
-                                                                      
-  ✓ IPv6 route (no IPv6 route — IPv4 only)
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
