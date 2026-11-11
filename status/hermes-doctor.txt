@@ -78,9 +78,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2541 sessions)
-    → state.db logical size 889.1 MB, 227,614 pages, 262 free, WAL 0 B
-    → 68,052 messages, 2,541 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2543 sessions)
+    → state.db logical size 889.1 MB, 227,614 pages, 231 free, WAL 0 B
+    → 68,052 messages, 2,543 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -94,3 +94,69 @@ timed_out_after=20s
   ✓ Docker (optional)
   ✓ Node.js
   ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
+  ✓ Root npm package deps (9 moderate vulnerabilities)
+  ✓ web workspace deps (3 moderate vulnerabilities)
+  ✓ ui-tui workspace deps (no known vulnerabilities)
+
+◆ API Connectivity
+  Running 44 connectivity checks in parallel…
+                                                                      
+  ✓ IPv6 route (no IPv6 route — IPv4 only)
+  ⚠ OpenRouter API (not configured)
+
+◆ Tool Availability
+  ✓ browser
+  ✓ browser-use
+  ✓ catalog
+  ✓ clarify
+  ✓ code_execution
+  ✓ computer_use
+  ✓ cronjob
+  ✓ delegation
+  ✓ desktop_ui
+  ✓ file
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ✓ memory
+  ✓ omh
+  ✓ onboarding
+  ✓ project
+  ✓ session_search
+  ✓ skills
+  ✓ terminal
+  ✓ todo
+  ✓ video
+  ✓ vision
+  ✓ web search (parallel)
+  ✓ web extract (parallel)
+  ⚠ a2a (system dependency not met)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ connections (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ hermes-yuanbao (system dependency not met)
+  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
+  ⚠ omh-lsp (system dependency not met)
+  ⚠ tts (system dependency not met)
+  ⚠ video_gen (system dependency not met)
+  ⚠ x_search (missing XAI_API_KEY)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (24 hub-installed skill(s))
+  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
+
+◆ Memory Provider
+  ✓ omh provider active
+
+◆ NeMo Relay Plugins
+  ✓ No Relay plugin files found
+
+◆ Profiles
+  ✓ 5 profile(s) found
+  ✓   aroundit: gateway running, gpt-6-astra
+  ✓   den: gateway running, gpt-6-astra
+  ✓   omh-tui: gateway running, ⚠ missing config, no alias
+  ✓   pm: gateway running, gpt-6-sol
+  ✓   smd: gateway running, gpt-6-sol
