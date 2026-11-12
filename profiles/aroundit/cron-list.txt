@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-13T00:29:26.894242+09:00
+    Next run:  2026-11-13T01:23:54.410510+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-12T23:58:46.167807+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-13T00:13:46.167807+09:00)
-    Execution: running  e11e129194e5471db16c369d23aeea78
+    Last run:  2026-11-13T01:08:54.410510+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-13T01:06:54.550242+09:00)
+    Execution: completed  e9f14ba5710741abb726c6e88e9ae21d
     ⚠ Last failure at 2026-11-08T11:41:07.618405+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 97390s. Credentials are still valid. — recovered since
 
   a4642e1093eb [active]
@@ -41,7 +41,6 @@ exit_code=0
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
     Last run:  2026-11-12T09:03:38.823736+09:00  ok
     Dispatch:  on time (scheduled 2026-11-12T09:00:00+09:00)
-    Execution: completed  25eca181b7674d559f9f7660abf4d3ef
     ⚠ Last failure at 2026-11-09T09:02:33.879962+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 20505s. Credentials are still valid. — recovered since
 
   d2348c1bdd04 [active]
@@ -68,14 +67,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-13T00:16:00+09:00
+    Next run:  2026-11-13T01:17:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-13T00:15:27.926212+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-13T00:15:00+09:00)
-    Execution: completed  8a2efcbe59d343b686d5915ac17f15f6
+    Last run:  2026-11-13T01:16:27.542992+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-13T01:16:00+09:00)
+    Execution: completed  bd125be5979f421b853a127c403ce6c1
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
