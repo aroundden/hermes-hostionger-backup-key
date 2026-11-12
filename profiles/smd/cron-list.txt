@@ -10,39 +10,39 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-12T09:30:00+09:00
+    Next run:  2026-11-13T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-11T09:32:06.938532+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-11T09:30:00+09:00)
-    Execution: completed  603fff40c60b413687968dac76b49b0c
+    Last run:  2026-11-12T09:32:40.748903+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-12T09:30:00+09:00)
+    Execution: completed  2d464293671b4664bde6e47bdbcc11a1
     ⚠ Last failure at 2026-11-09T09:30:48.092348+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 18811s. Credentials are still valid. — recovered since
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-12T09:31:00+09:00
+    Next run:  2026-11-13T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-11T09:38:41.410056+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-11T09:31:00+09:00)
-    Execution: completed  e7e4095dffab44898f21407e0d5edbcd
+    Last run:  2026-11-12T09:40:17.333536+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-12T09:31:00+09:00)
+    Execution: completed  5c556501551d4920ae79e5cfadf4f50c
     ⚠ Last failure at 2026-11-09T09:37:56.161765+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 18384s. Credentials are still valid. — recovered since
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-12T09:15:00+09:00
+    Next run:  2026-11-12T10:15:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-11-12T09:00:30.563543+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-12T09:00:00+09:00)
-    Execution: completed  02d0af8367194bc2a77f18007c253159
+    Last run:  2026-11-12T10:00:30.240331+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-12T10:00:00+09:00)
+    Execution: completed  51afbf8c89224713a76aa2f433c4268e
     ⚠ Last failure at 2026-11-09T09:00:53.934179+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 20605s. Credentials are still valid. — recovered since
 
