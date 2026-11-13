@@ -10,39 +10,39 @@ exit_code=0
     Name:      SMD Daily Brief — 에스피식 아침 브리프
     Schedule:  30 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-13T09:30:00+09:00
+    Next run:  2026-11-16T09:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-12T09:32:40.748903+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-12T09:30:00+09:00)
-    Execution: completed  2d464293671b4664bde6e47bdbcc11a1
+    Last run:  2026-11-13T09:32:14.549483+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-13T09:30:00+09:00)
+    Execution: completed  bd936025f92845038592afbd836fc1bb
     ⚠ Last failure at 2026-11-09T09:30:48.092348+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 18811s. Credentials are still valid. — recovered since
 
   76303332d061 [active]
     Name:      SPC 매거진/SNS 업데이트 알림
     Schedule:  31 9 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-13T09:31:00+09:00
+    Next run:  2026-11-16T09:31:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, den-output-contract
     Script:    spc_social_watch_notify.py
     Workdir:   /Users/insideden/workspace/spsik-automation
-    Last run:  2026-11-12T09:40:17.333536+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-12T09:31:00+09:00)
-    Execution: completed  5c556501551d4920ae79e5cfadf4f50c
-    ⚠ Last failure at 2026-11-09T09:37:56.161765+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 18384s. Credentials are still valid. — recovered since
+    Last run:  2026-11-13T09:40:17.513411+09:00  error: SNS 업데이트 본문은 준비했으나 로컬 형식 검사에서 `item_count`, `length`, `missing_source_link` 오류가 발생해 ACK 및 전달을 진행하지 못했습니다. Shelve pending 상태로 다음 감지에서 재검토합니다.
+    Dispatch:  on time (scheduled 2026-11-13T09:31:00+09:00)
+    Execution: failed  e74fed2b20a547819c16f8bf3e61d8a7
+    ⚠ Last failure at 2026-11-13T09:40:17.513411+09:00: SNS 업데이트 본문은 준비했으나 로컬 형식 검사에서 `item_count`, `length`, `missing_source_link` 오류가 발생해 ACK 및 전달을 진행하지 못했습니다. Shelve pendin…
 
   d6df4f1599af [active]
     Name:      광고주 시트 변경 알림 — 평일 09:00–17:30 / 15분 조회
     Schedule:  */15 9-17 * * 1-5
     Repeat:    ∞
-    Next run:  2026-11-13T09:30:00+09:00
+    Next run:  2026-11-13T10:30:00+09:00
     Deliver:   slack:C0BJDF8693K
     Skills:    content-operations-briefings, google-workspace, den-output-contract
     Script:    advertiser_sheet_watch.py
-    Last run:  2026-11-13T09:15:31.379272+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-13T09:15:00+09:00)
-    Execution: completed  99c8575a941548f29fbbd340ad542db8
+    Last run:  2026-11-13T10:15:30.363825+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-13T10:15:00+09:00)
+    Execution: completed  69b99851bd7d41c09d9f05fc0cf3f86c
     ⚠ Last failure at 2026-11-09T09:00:53.934179+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 20605s. Credentials are still valid. — recovered since
 
