@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-14T21:10:49.577289+09:00
+    Next run:  2026-11-14T22:18:26.906492+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-14T20:55:49.577289+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-14T20:53:50.381363+09:00)
-    Execution: completed  2d02322cbbfb41b8a32cc0af46e5ce15
+    Last run:  2026-11-14T21:48:12.009568+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-14T22:03:12.009568+09:00)
+    Execution: running  9f3b3004eb794ee0ac3bc423545f57ad
     ⚠ Last failure at 2026-11-08T11:41:07.618405+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 97390s. Credentials are still valid. — recovered since
 
   a4642e1093eb [active]
@@ -68,14 +68,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-14T21:02:00+09:00
+    Next run:  2026-11-14T22:04:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-14T21:01:27.851378+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-14T21:01:00+09:00)
-    Execution: completed  8520d0ff75db40498687359a2fce4b23
+    Last run:  2026-11-14T22:03:29.338176+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-14T22:03:00+09:00)
+    Execution: completed  b7d7552114d447bfb20759f9c4f4cb83
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
@@ -88,3 +88,6 @@ exit_code=0
     Last run:  2026-10-14T00:12:32.971638+09:00  ok
     Dispatch:  on time (scheduled 2026-10-14T00:11:29.308220+09:00)
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

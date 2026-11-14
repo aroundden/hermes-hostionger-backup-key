@@ -24,7 +24,7 @@ timed_out_after=20s
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/04d0e732d4be42d097da1354ec7ceb06/venv) (active in this process)
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/6ae88fd1509947729e7bd58b8522a8cc/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
@@ -49,7 +49,7 @@ timed_out_after=20s
   ⚠ No API key found in ~/.hermes/profiles/den/.env
   ✓ ~/.hermes/profiles/den/config.yaml exists
   ✓ auxiliary task routing resolves: approval→openai-codex@chatgpt.com, background_review→openai-codex@chatgpt.com, compression→openai-codex@chatgpt.com, curator→openai-codex@chatgpt.com, goal_judge→openai-codex@chatgpt.com, kanban_decomposer→openai-codex@chatgpt.com, memory_query_rewrite→openai-codex@chatgpt.com, monitor→openai-codex@chatgpt.com, review→openai-codex@chatgpt.com, title_generation→openai-codex@chatgpt.com, triage_specifier→openai-codex@chatgpt.com
-  ✓ Config version up to date (v52)
+  ✓ Config version up to date (v53)
   ✓ No deprecated config keys or env vars
 
 ◆ xAI Model Retirement (May 15, 2026)
@@ -78,70 +78,7 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2681 sessions)
-    → state.db logical size 904.4 MB, 231,527 pages, 336 free, WAL 0 B
-    → 68,471 messages, 2,681 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
-    → FTS tables: messages_fts, messages_fts_trigram
-  ✓ ~/.hermes/profiles/den/cron/ store is writable
-
-◆ Command Installation
-  ✓ Hermes entry point exists (/Users/insideden/.hermes/hermes-agent/hermes)
-  ✓ ~/.local/bin/hermes exists (non-symlink)
-
-◆ External Tools
-  ✓ git
-  ✓ ripgrep (rg) (pm store) (faster file search)
-  ✓ Docker (optional)
-  ✓ Node.js
-  ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
-  ✓ Root npm package deps (9 moderate vulnerabilities)
-  ✓ web workspace deps (3 moderate vulnerabilities)
-  ✓ ui-tui workspace deps (no known vulnerabilities)
-
-◆ API Connectivity
-  Running 44 connectivity checks in parallel…
-                                                                      
-  ✓ IPv6 route (no IPv6 route — IPv4 only)
-  ⚠ OpenRouter API (not configured)
-
-◆ Tool Availability
-  ✓ browser
-  ✓ browser-use
-  ✓ catalog
-  ✓ clarify
-  ✓ code_execution
-  ✓ computer_use
-  ✓ cronjob
-  ✓ delegation
-  ✓ desktop_ui
-  ✓ file
-  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
-  ✓ memory
-  ✓ omh
-  ✓ onboarding
-  ✓ project
-  ✓ session_search
-  ✓ skills
-  ✓ terminal
-  ✓ todo
-  ✓ video
-  ✓ vision
-  ✓ web search (parallel)
-  ✓ web extract (parallel)
-  ⚠ a2a (system dependency not met)
-  ⚠ browser-cdp (system dependency not met)
-  ⚠ connections (system dependency not met)
-  ⚠ discord (missing DISCORD_BOT_TOKEN)
-  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
-  ⚠ feishu_doc (system dependency not met)
-  ⚠ feishu_drive (system dependency not met)
-  ⚠ hermes-yuanbao (system dependency not met)
-  ⚠ image_gen (image generation unavailable — check the provider selection and its key or SDK with 'hermes tools')
-  ⚠ omh-lsp (system dependency not met)
-  ⚠ tts (system dependency not met)
-  ⚠ video_gen (system dependency not met)
-  ⚠ x_search (missing XAI_API_KEY)
-
-◆ Skills Hub
-  ✓ Skills Hub directory exists
-  ✓ Lock file OK (24 hub-installed skill(s))
+  ✓ ~/.hermes/profiles/den/state.db exists (2683 sessions)
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
