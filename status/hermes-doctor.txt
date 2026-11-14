@@ -78,9 +78,9 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2678 sessions)
-    → state.db logical size 904.4 MB, 231,527 pages, 475 free, WAL 0 B
-    → 68,455 messages, 2,678 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2681 sessions)
+    → state.db logical size 904.4 MB, 231,527 pages, 336 free, WAL 0 B
+    → 68,471 messages, 2,681 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 14104) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -145,18 +145,3 @@ timed_out_after=20s
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (24 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 5 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   omh-tui: gateway running, ⚠ missing config, no alias
-  ✓   pm: gateway running, gpt-6-sol
-  ✓   smd: gateway running, gpt-6-sol
