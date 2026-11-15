@@ -1,1 +1,14 @@
-# Missing: /Users/insideden/.hermes/profiles/omh-tui/config.yaml
+skills:
+  external_dirs:
+    - /Users/insideden/.local/share/omh/current/skills
+
+plugins:
+  enabled:
+    - omh
+  entries:
+    omh:
+      settings:
+        omh_home: '/Users/insideden/.omh'
+
+memory:
+  provider: omh

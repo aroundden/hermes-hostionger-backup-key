@@ -5,11 +5,13 @@ exit_code=0
 ┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
 ┃ Name             ┃ Category         ┃ Source   ┃ Trust    ┃ Status           ┃
 ┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ aside-browser    │                  │ local    │ local    │ enabled          │
 │ aside-browser-o… │                  │ local    │ local    │ enabled          │
 │ casting-outreac… │                  │ local    │ local    │ enabled          │
 │ clovanote-tickt… │                  │ local    │ local    │ enabled          │
 │ den-gng-intervi… │                  │ local    │ local    │ enabled          │
 │ den-shorts-mult… │                  │ local    │ local    │ enabled          │
+│ den-shorts-subt… │                  │ local    │ local    │ enabled          │
 │ gws-admin-repor… │                  │ local    │ local    │ enabled          │
 │ gws-calendar     │                  │ local    │ local    │ enabled          │
 │ gws-calendar-ag… │                  │ local    │ local    │ enabled          │
@@ -174,6 +176,30 @@ exit_code=0
 │ github-issues    │ github           │ local    │ local    │ enabled          │
 │ github-pr-workf… │ github           │ local    │ local    │ enabled          │
 │ github-repo-man… │ github           │ local    │ local    │ enabled          │
+│ omh-apps         │ guide            │ external │ local    │ enabled          │
+│ omh-browser      │ guide            │ external │ local    │ enabled          │
+│ omh-content-ope… │ guide            │ external │ local    │ enabled          │
+│ omh-data-analys… │ guide            │ external │ local    │ enabled          │
+│ omh-external-co… │ guide            │ external │ local    │ enabled          │
+│ omh-files        │ guide            │ external │ local    │ enabled          │
+│ omh-gateway-int… │ guide            │ external │ local    │ enabled          │
+│ omh-jev-ask      │ guide            │ external │ local    │ enabled          │
+│ omh-jev-route    │ guide            │ external │ local    │ enabled          │
+│ omh-live-info    │ guide            │ external │ local    │ enabled          │
+│ omh-media-input  │ guide            │ external │ local    │ enabled          │
+│ omh-meta-router  │ guide            │ external │ local    │ enabled          │
+│ omh-model-setup  │ guide            │ external │ local    │ enabled          │
+│ omh-morning-bri… │ guide            │ external │ local    │ enabled          │
+│ omh-parallel-to… │ guide            │ external │ local    │ enabled          │
+│ omh-prompt-impo… │ guide            │ external │ local    │ enabled          │
+│ omh-routing      │ guide            │ external │ local    │ enabled          │
+│ omh-spend-gate   │ guide            │ external │ local    │ enabled          │
+│ omh-terminal     │ guide            │ external │ local    │ enabled          │
+│ omh-voice-input  │ guide            │ external │ local    │ enabled          │
+│ omh-websearch-s… │ guide            │ external │ local    │ enabled          │
+│ omh-ai-slop-cle… │ handoff-guide    │ external │ local    │ enabled          │
+│ omh-executor-ru… │ handoff-guide    │ external │ local    │ enabled          │
+│ omh-frontend-re… │ handoff-guide    │ external │ local    │ enabled          │
 │ native-chat-ope… │ integrations     │ local    │ local    │ enabled          │
 │ den-subtitle-pr… │ media            │ local    │ local    │ enabled          │
 │ gif-search       │ media            │ official │ official │ enabled          │
@@ -183,6 +209,11 @@ exit_code=0
 │ songsee          │ media            │ official │ official │ enabled          │
 │ youtube-content  │ media            │ local    │ local    │ enabled          │
 │ youtube-packagi… │ media            │ local    │ local    │ enabled          │
+│ omh-decision-re… │ memory-keeper    │ external │ local    │ enabled          │
+│ omh-memory-new   │ memory-keeper    │ external │ local    │ enabled          │
+│ omh-memory-sync  │ memory-keeper    │ external │ local    │ enabled          │
+│ omh-rules-disti… │ memory-keeper    │ external │ local    │ enabled          │
+│ omh-wiki         │ memory-keeper    │ external │ local    │ enabled          │
 │ audiocraft-audi… │ mlops            │ local    │ local    │ enabled          │
 │ evaluating-llms… │ mlops            │ local    │ local    │ enabled          │
 │ huggingface-hub  │ mlops            │ local    │ local    │ enabled          │
@@ -192,6 +223,70 @@ exit_code=0
 │ weights-and-bia… │ mlops            │ local    │ local    │ enabled          │
 │ obsidian         │ note-taking      │ local    │ local    │ enabled          │
 │ second-brain-op… │ note-taking      │ local    │ local    │ enabled          │
+│ omh-agent-debug  │ operator         │ external │ local    │ enabled          │
+│ omh-agent-evalu… │ operator         │ external │ local    │ enabled          │
+│ omh-ai-job-sear… │ operator         │ external │ local    │ enabled          │
+│ omh-apple-design │ operator         │ external │ local    │ enabled          │
+│ omh-automation-… │ operator         │ external │ local    │ enabled          │
+│ omh-award-bar-s… │ operator         │ external │ local    │ enabled          │
+│ omh-biomedical-… │ operator         │ external │ local    │ enabled          │
+│ omh-cto-loop     │ operator         │ external │ local    │ enabled          │
+│ omh-decide       │ operator         │ external │ local    │ enabled          │
+│ omh-deliverable… │ operator         │ external │ local    │ enabled          │
+│ omh-deploy-and-… │ operator         │ external │ local    │ enabled          │
+│ omh-design-orch… │ operator         │ external │ local    │ enabled          │
+│ omh-design-qual… │ operator         │ external │ local    │ enabled          │
+│ omh-feedback-tr… │ operator         │ external │ local    │ enabled          │
+│ omh-finance-ana… │ operator         │ external │ local    │ enabled          │
+│ omh-frontend     │ operator         │ external │ local    │ enabled          │
+│ omh-geospatial-… │ operator         │ external │ local    │ enabled          │
+│ omh-github-even… │ operator         │ external │ local    │ enabled          │
+│ omh-github-issu… │ operator         │ external │ local    │ enabled          │
+│ omh-idea-to-dep… │ operator         │ external │ local    │ enabled          │
+│ omh-image-cards  │ operator         │ external │ local    │ enabled          │
+│ omh-inference-s… │ operator         │ external │ local    │ enabled          │
+│ omh-lifecycle-g… │ operator         │ external │ local    │ enabled          │
+│ omh-live-incide… │ operator         │ external │ local    │ enabled          │
+│ omh-llm-app-dev  │ operator         │ external │ local    │ enabled          │
+│ omh-materials-p… │ operator         │ external │ local    │ enabled          │
+│ omh-meeting-bri… │ operator         │ external │ local    │ enabled          │
+│ omh-molecular-d… │ operator         │ external │ local    │ enabled          │
+│ omh-operating-r… │ operator         │ external │ local    │ enabled          │
+│ omh-ops-review   │ operator         │ external │ local    │ enabled          │
+│ omh-people-ops   │ operator         │ external │ local    │ enabled          │
+│ omh-physical-de… │ operator         │ external │ local    │ enabled          │
+│ omh-provider-pr… │ operator         │ external │ local    │ enabled          │
+│ omh-reliability… │ operator         │ external │ local    │ enabled          │
+│ omh-report-pack… │ operator         │ external │ local    │ enabled          │
+│ omh-sales-devel… │ operator         │ external │ local    │ enabled          │
+│ omh-sales-pipel… │ operator         │ external │ local    │ enabled          │
+│ omh-show-reel    │ operator         │ external │ local    │ enabled          │
+│ omh-skill-health │ operator         │ external │ local    │ enabled          │
+│ omh-skill-scout  │ operator         │ external │ local    │ enabled          │
+│ omh-sprite-forge │ operator         │ external │ local    │ enabled          │
+│ omh-support-ope… │ operator         │ external │ local    │ enabled          │
+│ omh-visual-qa    │ operator         │ external │ local    │ enabled          │
+│ omh-workspace-a… │ operator         │ external │ local    │ enabled          │
+│ omh-adversarial… │ planner          │ external │ local    │ enabled          │
+│ omh-agent-instr… │ planner          │ external │ local    │ enabled          │
+│ omh-backend      │ planner          │ external │ local    │ enabled          │
+│ omh-codebase-on… │ planner          │ external │ local    │ enabled          │
+│ omh-codebase-uml │ planner          │ external │ local    │ enabled          │
+│ omh-codegraph-r… │ planner          │ external │ local    │ enabled          │
+│ omh-curriculum-… │ planner          │ external │ local    │ enabled          │
+│ omh-data-pipeli… │ planner          │ external │ local    │ enabled          │
+│ omh-decision-pr… │ planner          │ external │ local    │ enabled          │
+│ omh-iac-change   │ planner          │ external │ local    │ enabled          │
+│ omh-mobile-rele… │ planner          │ external │ local    │ enabled          │
+│ omh-model-compr… │ planner          │ external │ local    │ enabled          │
+│ omh-model-finet… │ planner          │ external │ local    │ enabled          │
+│ omh-plan         │ planner          │ external │ local    │ enabled          │
+│ omh-product-bri… │ planner          │ external │ local    │ enabled          │
+│ omh-product-dis… │ planner          │ external │ local    │ enabled          │
+│ omh-refactor-pl… │ planner          │ external │ local    │ enabled          │
+│ omh-relational-… │ planner          │ external │ local    │ enabled          │
+│ omh-release-cut  │ planner          │ external │ local    │ enabled          │
+│ omh-rust         │ planner          │ external │ local    │ enabled          │
 │ airtable         │ productivity     │ local    │ local    │ enabled          │
 │ artist-commerci… │ productivity     │ local    │ local    │ enabled          │
 │ box              │ productivity     │ official │ official │ enabled          │
@@ -241,6 +336,40 @@ exit_code=0
 │ research-paper-… │ research         │ local    │ local    │ enabled          │
 │ rss-feeds        │ research         │ local    │ local    │ enabled          │
 │ youtube-casting… │ research         │ local    │ local    │ enabled          │
+│ omh-docs         │ researcher       │ external │ local    │ enabled          │
+│ omh-jit-learn    │ researcher       │ external │ local    │ enabled          │
+│ omh-long-docume… │ researcher       │ external │ local    │ enabled          │
+│ omh-market-rese… │ researcher       │ external │ local    │ enabled          │
+│ omh-paper-learn… │ researcher       │ external │ local    │ enabled          │
+│ omh-repro-audit  │ researcher       │ external │ local    │ enabled          │
+│ omh-research-br… │ researcher       │ external │ local    │ enabled          │
+│ omh-research-de… │ researcher       │ external │ local    │ enabled          │
+│ omh-source-find… │ researcher       │ external │ local    │ enabled          │
+│ omh-systematic-… │ researcher       │ external │ local    │ enabled          │
+│ omh-web-research │ researcher       │ external │ local    │ enabled          │
+│ omh-accessibili… │ reviewer         │ external │ local    │ enabled          │
+│ omh-app-debuggi… │ reviewer         │ external │ local    │ enabled          │
+│ omh-application… │ reviewer         │ external │ local    │ enabled          │
+│ omh-ask          │ reviewer         │ external │ local    │ enabled          │
+│ omh-build-failu… │ reviewer         │ external │ local    │ enabled          │
+│ omh-code-review  │ reviewer         │ external │ local    │ enabled          │
+│ omh-commit-pr-a… │ reviewer         │ external │ local    │ enabled          │
+│ omh-data-share-… │ reviewer         │ external │ local    │ enabled          │
+│ omh-failure-sig… │ reviewer         │ external │ local    │ enabled          │
+│ omh-git-workflow │ reviewer         │ external │ local    │ enabled          │
+│ omh-internal-au… │ reviewer         │ external │ local    │ enabled          │
+│ omh-jev-action-… │ reviewer         │ external │ local    │ enabled          │
+│ omh-jev-done-ch… │ reviewer         │ external │ local    │ enabled          │
+│ omh-jev-failure… │ reviewer         │ external │ local    │ enabled          │
+│ omh-jev-review-… │ reviewer         │ external │ local    │ enabled          │
+│ omh-legal-compl… │ reviewer         │ external │ local    │ enabled          │
+│ omh-localizatio… │ reviewer         │ external │ local    │ enabled          │
+│ omh-native-debu… │ reviewer         │ external │ local    │ enabled          │
+│ omh-production-… │ reviewer         │ external │ local    │ enabled          │
+│ omh-security-ev… │ reviewer         │ external │ local    │ enabled          │
+│ omh-security-sa… │ reviewer         │ external │ local    │ enabled          │
+│ omh-tech-debt-a… │ reviewer         │ external │ local    │ enabled          │
+│ omh-verificatio… │ reviewer         │ external │ local    │ enabled          │
 │ openhue          │ smart-home       │ local    │ local    │ enabled          │
 │ hermes-summary   │ social-media     │ local    │ local    │ enabled          │
 │ reddit-reading   │ social-media     │ local    │ local    │ enabled          │
@@ -264,7 +393,35 @@ exit_code=0
 │ spike            │ software-develo… │ local    │ local    │ enabled          │
 │ systematic-debu… │ software-develo… │ local    │ local    │ enabled          │
 │ test-driven-dev… │ software-develo… │ local    │ local    │ enabled          │
+│ omh-achievements │ tracker          │ external │ local    │ enabled          │
+│ omh-agent-board  │ tracker          │ external │ local    │ enabled          │
+│ omh-agent-ops-r… │ tracker          │ external │ local    │ enabled          │
+│ omh-buzz         │ tracker          │ external │ local    │ enabled          │
+│ omh-cancel       │ tracker          │ external │ local    │ enabled          │
+│ omh-capability-… │ tracker          │ external │ local    │ enabled          │
+│ omh-context-bud… │ tracker          │ external │ local    │ enabled          │
+│ omh-doctor       │ tracker          │ external │ local    │ enabled          │
+│ omh-harness-ses… │ tracker          │ external │ local    │ enabled          │
+│ omh-instinct-le… │ tracker          │ external │ local    │ enabled          │
+│ omh-model-optim… │ tracker          │ external │ local    │ enabled          │
+│ omh-ops-observa… │ tracker          │ external │ local    │ enabled          │
+│ omh-run-efficie… │ tracker          │ external │ local    │ enabled          │
+│ omh-running-wor… │ tracker          │ external │ local    │ enabled          │
+│ omh-skill        │ tracker          │ external │ local    │ enabled          │
+│ omh-todo-checkl… │ tracker          │ external │ local    │ enabled          │
+│ omh-toolbelt-re… │ tracker          │ external │ local    │ enabled          │
+│ omh-workflow-le… │ tracker          │ external │ local    │ enabled          │
+│ dag-ulw          │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-context      │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-interview    │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-loop         │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-maestro      │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-perf         │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-plan         │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-qa           │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-research     │ ultrawork        │ external │ local    │ enabled          │
+│ ulw-work         │ ultrawork        │ external │ local    │ enabled          │
 │ blocked-page-re… │ web              │ local    │ local    │ enabled          │
 └──────────────────┴──────────────────┴──────────┴──────────┴──────────────────┘
-9 hub-installed, 0 builtin, 245 local — 254 enabled, 0 disabled
+9 hub-installed, 0 builtin, 402 local — 411 enabled, 0 disabled
 
