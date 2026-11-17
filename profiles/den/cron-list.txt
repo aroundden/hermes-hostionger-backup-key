@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-18T04:28:06.422247+09:00
+    Next run:  2026-11-18T05:30:06.435876+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-18T02:28:05.884326+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-18T03:28:05.884326+09:00)
-    Execution: running  b883b6634d6d4e529bae000d58ea4cdb
+    Last run:  2026-11-18T03:29:07.574423+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-18T04:29:07.574423+09:00)
+    Execution: running  9807ecf6a7d7472f8bfebe9545380c43
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-18T03:55:07.545195+09:00
+    Next run:  2026-11-18T04:57:08.084816+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-18T03:25:07.545195+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-18T03:24:07.985772+09:00)
-    Execution: completed  cf3d144b53ab485db7224415ec5f2867
+    Last run:  2026-11-18T04:27:08.084816+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-18T04:26:07.478373+09:00)
+    Execution: completed  23b3d42e4aed4d3ab04af5e0aefc0984
     ⚠ Last failure at 2026-11-11T22:00:32.448410+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
