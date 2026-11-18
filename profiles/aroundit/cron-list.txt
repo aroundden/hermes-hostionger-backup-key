@@ -10,13 +10,13 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-18T10:38:07.720362+09:00
+    Next run:  2026-11-18T11:53:06.424715+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-18T10:23:07.720362+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-18T10:22:01.536667+09:00)
-    Execution: completed  1634af748a9c4763bb186a91766be9e5
+    Last run:  2026-11-18T11:22:20.219586+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-18T11:37:20.219586+09:00)
+    Execution: running  04f701bee26a442191b053e175f86d49
     ⚠ Last failure at 2026-11-14T22:06:00.212853+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
@@ -48,12 +48,12 @@ exit_code=0
     Name:      세상모든이야기 마나미 출연·댓글 초안 모니터링
     Schedule:  every 360m
     Repeat:    ∞
-    Next run:  2026-11-18T11:28:41.651932+09:00
+    Next run:  2026-11-18T17:29:52.000272+09:00
     Deliver:   origin
     Skills:    aside-browser-operations, den-output-contract, manami-youtube-monitoring
-    Last run:  2026-11-18T05:28:41.651932+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-18T05:28:01.702901+09:00)
-    Execution: completed  ad45b66179f94b95a63810b73226a672
+    Last run:  2026-11-18T11:29:52.000272+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-18T11:28:41.651932+09:00)
+    Execution: completed  d95d56cb8d24426bae311701cd74b1aa
     ⚠ Last failure at 2026-11-08T10:38:07.857010+09:00: RuntimeError: Codex token refresh failed: Could not validate your refresh token. Please try signing in again. Run `herm… — recovered since
 
   7b42d002665a [paused]
@@ -68,14 +68,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-18T10:38:00+09:00
+    Next run:  2026-11-18T11:39:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-18T10:37:03.121146+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-18T10:37:00+09:00)
-    Execution: completed  5c603b820e2d4dffa64972a5e2094bfe
+    Last run:  2026-11-18T11:38:07.217733+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-18T11:38:00+09:00)
+    Execution: completed  d561f77217db432298b6dfc11d439a2b
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
