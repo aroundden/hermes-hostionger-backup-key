@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -71,15 +72,15 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 418.3 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 418.7 KB, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2945 sessions)
-    → state.db logical size 935.5 MB, 239,482 pages, 1,001 free, WAL 0 B
-    → 69,497 messages, 2,945 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 76173) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2947 sessions)
+    → state.db logical size 935.5 MB, 239,482 pages, 968 free, WAL 0 B
+    → 69,503 messages, 2,947 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 76173) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -158,14 +159,3 @@ exit_code=1
   ✓   omh-tui: gateway running, no alias
   ✓   pm: gateway running, gpt-6-sol
   ✓   smd: gateway running, gpt-6-sol
-
-────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
-  3. Run 'hermes setup' to configure API keys
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
