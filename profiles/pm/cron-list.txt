@@ -10,15 +10,15 @@ exit_code=0
     Name:      Spidey 자동 업무 관리
     Schedule:  every 1m
     Repeat:    ∞
-    Next run:  2026-11-19T08:59:06.343812+09:00
+    Next run:  2026-11-19T09:59:59.159179+09:00
     Deliver:   slack:D0CF7MG3JRK:1793925663.905169
     Script:    spidey_scan.py
     Timezone:  Asia/Seoul
     Workdir:   /Users/insideden/.hermes/profiles/pm/scripts/spidey_manager
-    Last run:  2026-11-19T08:58:06.343812+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-19T08:57:06.386130+09:00)
-    Execution: completed  b9036a02e6e24810b65db0f4143fd022
-    ⚠ Last failure at 2026-11-14T21:45:13.000248+09:00: OperationalError: database is locked (another Hermes process held the state.db write lock for over 20s — likely a long … — recovered since
+    Last run:  2026-11-19T09:58:59.159179+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-19T09:57:59.101090+09:00)
+    Execution: completed  589185494f884bd19baa6552f4ac88c0
+    ⚠ Last failure at 2026-11-19T09:10:06.469223+09:00: GatewayUnavailableError: Gateway draining: update_paused — recovered since
 
   255d5cdcc227 [active]
     Name:      Spidey 주말 자동화·반복 교정 제안

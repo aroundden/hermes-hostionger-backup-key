@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -23,7 +24,7 @@ exit_code=1
     → projects.db: no other process holds it right now — the offline conversion can run
   ⚠ verification_evidence.db is in WAL mode (40.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/verification_evidence.db`)
     → verification_evidence.db: no other process holds it right now — the offline conversion can run
-  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/6ae88fd1509947729e7bd58b8522a8cc/venv) (active in this process)
+  ✓ Runtime venv staged (/Users/insideden/.hermes/installs/c338e82ec1104bfa/environments/dbc16c588f8a4b458aedb00c6d63ccbb/venv) (active in this process)
   ✓ macOS TCC anchor active (/Users/insideden/.hermes/hermes-agent/venv/bin/python)
   ✓ macOS Full Disk Access granted (no per-folder permission prompts will occur)
   ✓ macOS TCC signing identity is stable (identifier-pinned DR; grants survive rebuilds — for the strongest anchor, see `hermes desktop --setup-tcc-identity`)
@@ -77,9 +78,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (2908 sessions)
-    → state.db logical size 931.7 MB, 238,525 pages, 1,445 free, WAL 0 B
-    → 69,253 messages, 2,908 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 2035) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (2911 sessions)
+    → state.db logical size 931.7 MB, 238,525 pages, 1,256 free, WAL 0 B
+    → 69,280 messages, 2,911 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 76173) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -92,7 +93,7 @@ exit_code=1
   ✓ ripgrep (rg) (pm store) (faster file search)
   ✓ Docker (optional)
   ✓ Node.js
-  ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
+  ✓ Chromium (/Users/insideden/.hermes/tools/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing)
   ✓ Root npm package deps (1 moderate vulnerability)
   ✓ web workspace deps (1 moderate vulnerability)
   ✓ ui-tui workspace deps (no known vulnerabilities)
@@ -158,14 +159,3 @@ exit_code=1
   ✓   omh-tui: gateway running, no alias
   ✓   pm: gateway running, gpt-6-sol
   ✓   smd: gateway running, gpt-6-sol
-
-────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
-  3. Run 'hermes setup' to configure API keys
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
