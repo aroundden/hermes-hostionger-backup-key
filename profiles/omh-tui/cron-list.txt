@@ -3,3 +3,6 @@ exit_code=0
 
 No scheduled jobs in profile 'omh-tui'.
 Create one with 'hermes cron create ...' or the /cron command in chat.
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

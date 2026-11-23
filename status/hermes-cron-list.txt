@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-23T18:53:19.720818+09:00
+    Next run:  2026-11-23T19:55:20.362305+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-23T16:53:15.915470+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-23T17:53:15.915470+09:00)
-    Execution: running  e0c7b5c3b58c4d8e97605fe0cd92341b
+    Last run:  2026-11-23T17:54:24.192113+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-23T18:54:24.192113+09:00)
+    Execution: running  3836e56388bc483b8348cc8b0e827e52
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-23T18:15:20.588482+09:00
+    Next run:  2026-11-23T19:17:21.306432+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-23T17:45:20.588482+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-23T17:45:19.280700+09:00)
-    Execution: completed  296574539bf34db7ba784062d8afe587
+    Last run:  2026-11-23T18:47:21.306432+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-23T18:46:24.492750+09:00)
+    Execution: completed  7d199b6d363d4de98f719a91b5514c06
     ⚠ Last failure at 2026-11-11T22:00:32.448410+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
@@ -101,3 +101,6 @@ exit_code=0
     Skills:    den-shorts-multiplatform-upload, aside-browser-operations, google-workspace, den-output-contract
     Timezone:  Asia/Seoul
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.

@@ -228,6 +228,7 @@ exit_code=0
 │ omh-sales-devel… │ operator         │ external │ local     │ enabled         │
 │ omh-sales-pipel… │ operator         │ external │ local     │ enabled         │
 │ omh-show-reel    │ operator         │ external │ local     │ enabled         │
+│ omh-skill-eval   │ operator         │ external │ local     │ enabled         │
 │ omh-skill-health │ operator         │ external │ local     │ enabled         │
 │ omh-skill-scout  │ operator         │ external │ local     │ enabled         │
 │ omh-sprite-forge │ operator         │ external │ local     │ enabled         │
@@ -372,5 +373,8 @@ exit_code=0
 │ ulw-work         │ ultrawork        │ external │ local     │ enabled         │
 │ blocked-page-re… │ web              │ builtin  │ builtin   │ enabled         │
 └──────────────────┴──────────────────┴──────────┴───────────┴─────────────────┘
-26 hub-installed, 49 builtin, 285 local — 360 enabled, 0 disabled
+26 hub-installed, 49 builtin, 286 local — 361 enabled, 0 disabled
 
+⚠ A previous `hermes update` pulled new code but did not restart running gateways.
+  Gateways may still be serving pre-update modules (mixed sys.modules).
+  Run `hermes update` or `hermes gateway restart`.
