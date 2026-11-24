@@ -1,6 +1,6 @@
 {
   "note": "Slim manifest: key Hermes configuration/extension files only; excludes source checkout, logs, sessions, DBs, token/auth files, venv/node_modules.",
-  "count": 57467,
+  "count": 57471,
   "files": [
     {
       "path": "SOUL.md",
@@ -85,7 +85,7 @@
     {
       "path": "cron/.tick.lock",
       "size": 0,
-      "mtime": 1795516517
+      "mtime": 1795520177
     },
     {
       "path": "cron/dispatch_held.json",
@@ -1134,13 +1134,13 @@
     },
     {
       "path": "cron/ticker_heartbeat",
-      "size": 24,
-      "mtime": 1795516517
+      "size": 23,
+      "mtime": 1795520177
     },
     {
       "path": "cron/ticker_last_success",
-      "size": 18,
-      "mtime": 1795516517
+      "size": 17,
+      "mtime": 1795520177
     },
     {
       "path": "cron/usage_audit.jsonl",
@@ -5795,7 +5795,12 @@
     {
       "path": "profiles/aroundit/.mcp-discovery.lock",
       "size": 0,
-      "mtime": 1795515798
+      "mtime": 1795520119
+    },
+    {
+      "path": "profiles/aroundit/.skills_prompt_snapshot.json",
+      "size": 86918,
+      "mtime": 1795516818
     },
     {
       "path": "profiles/aroundit/.update_check",
@@ -6180,7 +6185,7 @@
     {
       "path": "profiles/aroundit/auth.lock",
       "size": 0,
-      "mtime": 1795515797
+      "mtime": 1795520117
     },
     {
       "path": "profiles/aroundit/automation/kmong/validation.md",
@@ -10409,8 +10414,8 @@
     },
     {
       "path": "profiles/aroundit/cache/scratch/inbox_list.py",
-      "size": 1268,
-      "mtime": 1795451417
+      "size": 890,
+      "mtime": 1795516872
     },
     {
       "path": "profiles/aroundit/cache/scratch/inbox_scan.py",
@@ -10523,6 +10528,11 @@
       "mtime": 1795408125
     },
     {
+      "path": "profiles/aroundit/cache/scratch/payload.json",
+      "size": 1600,
+      "mtime": 1795517149
+    },
+    {
       "path": "profiles/aroundit/cache/scratch/payroll_check.py",
       "size": 2461,
       "mtime": 1795482158
@@ -10561,6 +10571,11 @@
       "path": "profiles/aroundit/cache/scratch/reconcile.py",
       "size": 986,
       "mtime": 1795472159
+    },
+    {
+      "path": "profiles/aroundit/cache/scratch/s.py",
+      "size": 1154,
+      "mtime": 1795517089
     },
     {
       "path": "profiles/aroundit/cache/scratch/santa_body.txt",
@@ -24985,21 +25000,6 @@
     {
       "path": "profiles/aroundit/cache/scratch/tax-google-venv/lib/python3.11/site-packages/numpy/typing/tests/data/fail/lib_version.pyi",
       "size": 154,
-      "mtime": 1791657324
-    },
-    {
-      "path": "profiles/aroundit/cache/scratch/tax-google-venv/lib/python3.11/site-packages/numpy/typing/tests/data/fail/linalg.pyi",
-      "size": 1540,
-      "mtime": 1791657324
-    },
-    {
-      "path": "profiles/aroundit/cache/scratch/tax-google-venv/lib/python3.11/site-packages/numpy/typing/tests/data/fail/ma.pyi",
-      "size": 7006,
-      "mtime": 1791657324
-    },
-    {
-      "path": "profiles/aroundit/cache/scratch/tax-google-venv/lib/python3.11/site-packages/numpy/typing/tests/data/fail/memmap.pyi",
-      "size": 169,
       "mtime": 1791657324
     }
   ],
