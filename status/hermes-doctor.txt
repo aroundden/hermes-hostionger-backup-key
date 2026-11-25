@@ -1,5 +1,6 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=1
+exit_code=124
+timed_out_after=20s
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -77,9 +78,9 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (3237 sessions)
-    → state.db logical size 1019.6 MB, 261,023 pages, 220 free, WAL 0 B
-    → 70,320 messages, 3,237 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 99257) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (3239 sessions)
+    → state.db logical size 1019.6 MB, 261,023 pages, 189 free, WAL 0 B
+    → 70,320 messages, 3,239 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 99257) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
@@ -143,32 +144,6 @@ exit_code=1
 ◆ Skills Hub
   ✓ Skills Hub directory exists
   ✓ Lock file OK (24 hub-installed skill(s))
-  ✓ GitHub authenticated via gh CLI (full API access — no GITHUB_TOKEN needed)
-
-◆ Memory Provider
-  ✓ omh provider active
-
-◆ NeMo Relay Plugins
-  ✓ No Relay plugin files found
-
-◆ Profiles
-  ✓ 5 profile(s) found
-  ✓   aroundit: gateway running, gpt-6-astra
-  ✓   den: gateway running, gpt-6-astra
-  ✓   omh-tui: gateway running, no alias
-  ✓   pm: gateway running, gpt-6-sol
-  ✓   smd: gateway running, gpt-6-sol
-
-────────────────────────────────────────────────────────────
-  Found 4 issue(s) to address:
-
-  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
-  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
-  3. Run 'hermes setup' to configure API keys
-  4. Run 'hermes setup' to configure missing API keys for full tool access
-
-  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
-
 ⚠ A previous `hermes update` pulled new code but did not restart running gateways.
   Gateways may still be serving pre-update modules (mixed sys.modules).
   Run `hermes update` or `hermes gateway restart`.
