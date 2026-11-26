@@ -1,6 +1,5 @@
 $ /Users/insideden/.hermes/hermes-agent/venv/bin/hermes doctor
-exit_code=124
-timed_out_after=20s
+exit_code=1
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -17,7 +16,7 @@ timed_out_after=20s
   ✓ Python 3.11.15
   ✓ SQLite 3.53.1
     → SQLite source id: 2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4…
-    → state.db: rollback journal mode (1023.8 MB)
+    → state.db: rollback journal mode (1.0 GB)
   ⚠ cron/executions.db is in WAL mode (1020.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/cron/executions.db`)
     → cron/executions.db: no other process holds it right now — the offline conversion can run
   ⚠ projects.db is in WAL mode (44.0 KB) despite database.journal_mode=delete (the setting never applied: an existing WAL database is never live-downgraded. Stop every Hermes process for this profile, then run `hermes sessions set-journal-mode delete --db /Users/insideden/.hermes/profiles/den/projects.db`)
@@ -72,16 +71,18 @@ timed_out_after=20s
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 646.9 KB, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 0 B, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (3295 sessions)
-    → state.db logical size 1023.8 MB, 262,087 pages, 124 free, WAL 0 B
-    → 70,380 messages, 3,295 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 99257) serving profiles default, aroundit, den, omh-tui, pm, smd)
+  ✓ ~/.hermes/profiles/den/state.db exists (3299 sessions)
+    → state.db write-health probe skipped: store is held by a live writer and larger than 1 GB (run 'hermes doctor --fix' to probe it)
+    → state.db logical size 1.0 GB, 262,176 pages, 72 free, WAL 0 B
+    → 70,409 messages, 3,299 sessions, journal_mode=delete, 3 process(es) holding the DB open (the host gateway (PID 83411) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
+  ⚠ state.db is large (1.0 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the host gateway stopped) to compact FTS storage)
   ✓ ~/.hermes/profiles/den/cron/ store is writable
 
 ◆ Command Installation
@@ -159,6 +160,15 @@ timed_out_after=20s
   ✓   omh-tui: gateway running, no alias
   ✓   pm: gateway running, gpt-6-sol
   ✓   smd: gateway running, gpt-6-sol
-⚠ A previous `hermes update` pulled new code but did not restart running gateways.
-  Gateways may still be serving pre-update modules (mixed sys.modules).
-  Run `hermes update` or `hermes gateway restart`.
+
+────────────────────────────────────────────────────────────
+  Found 5 issue(s) to address:
+
+  1. Repair OpenAI SDK: Run `hermes pm repair`, then restart Hermes
+  2. Repair the dashboard dependencies: `hermes pm repair`, then restart Hermes
+  3. Run 'hermes setup' to configure API keys
+  4. state.db is large — enable sessions.auto_prune in config.yaml and run 'hermes sessions optimize-storage' offline (gateway stopped)
+  5. Run 'hermes setup' to configure missing API keys for full tool access
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
