@@ -10,15 +10,14 @@ exit_code=0
     Name:      gmail-auto-draft-replies
     Schedule:  every 15m
     Repeat:    ∞
-    Next run:  2026-11-26T14:28:31.707691+09:00
+    Next run:  2026-11-26T15:37:19.407617+09:00
     Deliver:   slack:C0BHVB49WH5
     Skills:    gmail-workflow-automation, google-workspace, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-26T14:13:31.707691+09:00  ran, but the result was not delivered (Gmail report format invalid; delivery held without a fallback post). Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    Dispatch:  on time (scheduled 2026-11-26T14:10:45.139987+09:00)
-    Execution: completed  34edeecf7594438e9e8eff22eacdb8bf
-    ⚠ The result was not delivered: Gmail report format invalid; delivery held without a fallback post. Check the target with `hermes cron status` or change it with `hermes cron edit a74bb2d8bc4c --deliver <target>`.
-    ⚠ Last failure at 2026-11-14T22:06:00.212853+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished.
+    Last run:  2026-11-26T15:07:12.000258+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-26T15:22:12.000258+09:00)
+    Execution: running  42a1300a3d1e4b39aa403ec8a2a0faa1
+    ⚠ Last failure at 2026-11-14T22:06:00.212853+09:00: Gateway shutdown (post-interrupt) killed the job's tool subprocess before the run finished. — recovered since
 
   a4642e1093eb [active]
     Name:      AROUNDit 월 25일 다건이체 사전점검
@@ -69,14 +68,14 @@ exit_code=0
     Name:      Gmail 수신 큐 → 기존 초안 작업 깨우기
     Schedule:  * * * * *
     Repeat:    ∞
-    Next run:  2026-11-26T14:23:00+09:00
+    Next run:  2026-11-26T15:24:00+09:00
     Deliver:   local
     Script:    gmail_event_bridge_once.sh
     Mode:      no-agent (script stdout delivered directly)
     Workdir:   /Users/insideden/.hermes/profiles/aroundit/scripts
-    Last run:  2026-11-26T14:22:20.376860+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-26T14:22:00+09:00)
-    Execution: completed  2a91f51be45f4ba1a24b15748fe02193
+    Last run:  2026-11-26T15:23:20.227074+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-26T15:23:00+09:00)
+    Execution: completed  4ca3a3a7544048ec831c8f166a5f2ad6
     ⚠ Last failure at 2026-10-26T01:42:24.078674+09:00: Script exited with code 1 — recovered since
 
   976238def7f6 [paused]
