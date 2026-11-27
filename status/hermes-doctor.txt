@@ -77,10 +77,10 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (3329 sessions)
+  ✓ ~/.hermes/profiles/den/state.db exists (3331 sessions)
     → state.db write-health probe skipped: store is held by a live writer and larger than 1 GB (run 'hermes doctor --fix' to probe it)
-    → state.db logical size 1.0 GB, 263,328 pages, 556 free, WAL 0 B
-    → 70,471 messages, 3,329 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 83411) serving profiles default, aroundit, den, omh-tui, pm, smd)
+    → state.db logical size 1.0 GB, 263,328 pages, 525 free, WAL 0 B
+    → 70,471 messages, 3,331 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 83411) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ⚠ state.db is large (1.0 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the host gateway stopped) to compact FTS storage)
   ✓ ~/.hermes/profiles/den/cron/ store is writable
