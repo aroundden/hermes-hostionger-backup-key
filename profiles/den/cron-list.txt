@@ -10,28 +10,28 @@ exit_code=0
     Name:      Hermes GitHub sanitized backup
     Schedule:  every 60m
     Repeat:    ∞
-    Next run:  2026-11-28T15:14:58.949078+09:00
+    Next run:  2026-11-28T16:15:57.078519+09:00
     Deliver:   local
     Script:    hermes_github_backup.py
     Mode:      no-agent (script stdout delivered directly)
-    Last run:  2026-11-28T13:13:59.145246+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-28T14:13:59.145246+09:00)
-    Execution: running  8cec4b60a4e94745910e9fa0c295569d
+    Last run:  2026-11-28T14:15:45.204372+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-28T15:15:45.204372+09:00)
+    Execution: running  37b5a52e0fd448f3b511d6144e4e2b8d
     ⚠ Last failure at 2026-10-23T03:50:58.067354+09:00: Script exited with code 4 — recovered since
 
   9ebf43990561 [active]
     Name:      TickTick 에이전트 프로젝트 자동 실행
     Schedule:  every 30m
     Repeat:    ∞
-    Next run:  2026-11-28T14:41:02.171858+09:00
+    Next run:  2026-11-28T15:43:00.954303+09:00
     Deliver:   slack:C0BM6HMVDQB
     Skills:    ticktick-operations, specialist-orchestration, task-board-agent-orchestration, ticktick-automation-reporting, den-output-contract, content-operations-briefings
     Monitor:   ticktick_agent_project_monitor.py (agent runs only on output change)
     Changed:   2026-10-13T01:17:59.380957+09:00
     Workdir:   /Users/insideden/.hermes
-    Last run:  2026-11-28T14:11:02.171858+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-28T14:10:00.447962+09:00)
-    Execution: completed  99ac051644cc496c83895cd8288e4eca
+    Last run:  2026-11-28T15:13:00.954303+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-28T15:12:00.784852+09:00)
+    Execution: completed  3c343f7e15a84853a479ffc2b358cf1f
     ⚠ Last failure at 2026-11-11T22:00:32.448410+09:00: Script exited with code 1 — recovered since
 
   72963b1a5e65 [active]
@@ -51,13 +51,13 @@ exit_code=0
     Name:      새 녹음 요약
     Schedule:  0 9,15,21 * * *
     Repeat:    ∞
-    Next run:  2026-11-28T15:00:00+09:00
+    Next run:  2026-11-28T21:00:00+09:00
     Deliver:   origin
     Skills:    recording-intelligence-operations, second-brain-operations, ticktick-operations, den-output-contract
     Workdir:   /Users/insideden/.hermes/profiles/den/scripts
-    Last run:  2026-11-28T09:02:17.833836+09:00  ok
-    Dispatch:  on time (scheduled 2026-11-28T09:00:00+09:00)
-    Execution: completed  9dab5260415c45c898c9ef25de87b693
+    Last run:  2026-11-28T15:02:36.848209+09:00  ok
+    Dispatch:  on time (scheduled 2026-11-28T15:00:00+09:00)
+    Execution: completed  2a92ce2b0f024fc9b5fc885b4aa6e3ad
     ⚠ Last failure at 2026-11-08T15:00:49.758982+09:00: RuntimeError: Codex provider quota exhausted (429); retry after 85409s. Credentials are still valid. — recovered since
 
   4624d933404b [active]
