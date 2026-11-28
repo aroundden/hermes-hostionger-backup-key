@@ -71,16 +71,16 @@ exit_code=1
   ✓ ~/.hermes/profiles/den/logs/ exists
   ✓ ~/.hermes/profiles/den/skills/ exists
   ✓ ~/.hermes/profiles/den/memories/ exists
-  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 0 B, entries pruned after 24h idle)
+  ✓ ~/.hermes/profiles/den/cache/scratch/ is the scratch dir (TMPDIR; 874 B, entries pruned after 24h idle)
     → TMPDIR=/var/folders/gz/784sslx13bsdtfqj7v7806_80000gn/T/ is set by you or the OS, so Hermes leaves it alone
   ✓ ~/.hermes/profiles/den/SOUL.md exists (persona configured)
   ✓ ~/.hermes/profiles/den/memories/ directory exists
   ✓ MEMORY.md exists (529 chars)
   ✓ USER.md exists (345 chars)
-  ✓ ~/.hermes/profiles/den/state.db exists (3366 sessions)
+  ✓ ~/.hermes/profiles/den/state.db exists (3368 sessions)
     → state.db write-health probe skipped: store is held by a live writer and larger than 1 GB (run 'hermes doctor --fix' to probe it)
-    → state.db logical size 1.0 GB, 264,422 pages, 229 free, WAL 0 B
-    → 70,628 messages, 3,366 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 83411) serving profiles default, aroundit, den, omh-tui, pm, smd)
+    → state.db logical size 1.0 GB, 264,422 pages, 118 free, WAL 0 B
+    → 70,650 messages, 3,368 sessions, journal_mode=delete, 2 process(es) holding the DB open (the host gateway (PID 83411) serving profiles default, aroundit, den, omh-tui, pm, smd)
     → FTS tables: messages_fts, messages_fts_trigram
   ⚠ state.db is large (1.0 GB) (consider enabling sessions.auto_prune in config.yaml to bound growth; run 'hermes sessions optimize-storage' offline (with the host gateway stopped) to compact FTS storage)
   ✓ ~/.hermes/profiles/den/cron/ store is writable
